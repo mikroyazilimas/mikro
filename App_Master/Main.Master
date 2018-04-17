@@ -45,7 +45,9 @@
                         </div>
                         <div class="page-section-contact-container-area">
                             <div class="page-section-contact-container-area-left">
-                                <div class="page-section-contact-container-area-left-form">
+                                <asp:ContentPlaceHolder ID="cpContactFOrm" runat="server">
+                                </asp:ContentPlaceHolder>
+                                <%--<div class="page-section-contact-container-area-left-form">
                                     <div class="page-section-contact-container-area-left-form-textbox">
                                         <div class="page-section-contact-container-area-left-form-textbox-form1">
                                             <label for="">
@@ -64,7 +66,7 @@
                                     <div class="page-section-contact-container-area-left-form-button">
                                         <a href="#" title="Gönder" class="page-section-contact-area-left-form-button__send">Gönder</a>
                                     </div>
-                                </div>
+                                </div>--%>
                             </div>
                             <div class="page-section-contact-container-area-right">
                                 <div class="page-section-contact-container-area-right-content">

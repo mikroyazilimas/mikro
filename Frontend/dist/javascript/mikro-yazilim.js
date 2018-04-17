@@ -5935,7 +5935,7 @@ $(function() {
     //     if (scroll >= 1) { sticky.addClass('fixed'); } else { sticky.removeClass('fixed'); }
     // });
 
-    $('.owl-carousel').owlCarousel({
+    $('.herobanner-owl-carousel').owlCarousel({
         loop: true,
         margin: 0,
         nav: true,
@@ -5944,6 +5944,14 @@ $(function() {
         autoplayTimeout:5000,
         autoplayHoverPause:false
     });
+
+    $('.modules-owl-carousel').owlCarousel({
+        loop: false,
+        margin: 0,
+        nav: true,
+        items: 5,
+    });
+
 
     //$('.wizard-form-row__select').select2();
     //$('.wizard-bottom-left-content-form-row__select').select2();

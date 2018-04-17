@@ -1,5 +1,8 @@
 ﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentDetailsViewModel
 
+
+@Html.Raw(Model.Item.Fields.Detail)
+
 <style>
     .container-description {
         border: none;
@@ -13,6 +16,7 @@
 
 </style>
 
+<!--
 <div class="container-only">
     <div class="container-description">
         <div class="container-description__img">
@@ -65,7 +69,7 @@
     <div class="container-description story-description-reverse">
         <a href="">
             <div class="container-description__img">
-                <!--<img src="dist/images/story-detail/story-video.png" alt="">-->
+                <img src="dist/images/story-detail/story-video.png" alt="">
             </div>
         </a>
         <div class="container-description-other">
@@ -124,3 +128,4 @@
         </div>
     </div>
 </div>
+-->

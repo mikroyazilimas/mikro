@@ -1,0 +1,44 @@
+﻿@model SitefinityWebApp.Mvc.Models.ViewModel.ContactForm
+
+
+@using (@Html.BeginForm("Index", "ContactForm", FormMethod.Post))
+{ }
+@using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" }))
+{
+    <input type=hidden name="oid" value="00D0Y0000035HER">
+    <input type="hidden" id="00N0Y00000RE6zR" name="00N0Y00000RE6zR" />
+    <input type="hidden" id="00N0Y00000RBugB" name="00N0Y00000RBugB" value="Pre-sales channel">
+    @Html.HiddenFor(m => m.retURL, new { Value = Const.FormReturnUrl })
+
+
+    <div class="page-section-contact-container-area-left-form">
+        <div class="page-section-contact-container-area-left-form-textbox">
+            <div class="page-section-contact-container-area-left-form-textbox-form1">
+                <label for="">
+                    
+                    @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Ad Soyad*" })
+                    @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyad*" })
+                </label>
+                <label for="">
+                    @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", placeholder = "Email*" })
+                </label>
+                <label for="">
+                    @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", required = "required", placeholder = "Telefon Numaranız*" })
+                </label>
+            </div>
+            <div class="page-section-contact-container-area-left-form-textbox-form2">
+                <label for="">
+                    @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Şirketinizin ismi*" })
+                </label>
+                @Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp", required = "required", placeholder = "Mesaj*" })
+            </div>
+        </div>
+        <div class="page-section-contact-container-area-left-form-button">
+            @*<a href="#" title="Gönder" class="page-section-contact-area-left-form-button__send">Gönder</a>*@
+            <input type="submit" name="SaveButton" value="Gönder" />
+        </div>
+    </div>
+
+    
+}
+

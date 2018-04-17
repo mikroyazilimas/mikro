@@ -11,4 +11,13 @@ namespace SitefinityWebApp.Library
         DropDown=2,
         Hidden=3
     }
+
+    public enum StoryType
+    {
+        Sektör = 1,
+        Müşteriler= 2,
+        Ürünler = 3
+    }
+
+
 }

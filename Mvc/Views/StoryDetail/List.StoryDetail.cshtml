@@ -1,15 +1,6 @@
 ﻿
+@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentDetailsViewModel
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>DETAY SAYFASI</title>
-</head>
-<body>
-    <div>
-    
-    </div>
-</body>
-</html>
+@Html.Raw(Model.Item.Fields.Detail)
+

@@ -34,12 +34,12 @@
 
             <div class="page-section-demo-request-open-right">
                 <div class="svg-hide"><i class="fas fa-times"></i></div>
-                
-                    @using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post))
-                    { }
-                    @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" }))
-                    {
-<div class="form">
+
+                @using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post))
+                { }
+                @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" }))
+                {
+                    <div class="form">
                         <div class="page-section-demo-request-open-right-form1">
 
                             <input type="hidden" name="oid" value="00D0Y0000035HER">
@@ -84,17 +84,17 @@
                         <div class="page-section-demo-request-open-right-checkbox">
                             @*<label for="check"><input type="checkbox" id="check"><span>6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilgilendirmeyi okudum, kabul ediyorum.</span></label>*@
 
-                            <label for="Contract">@Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract", required = "required"})<span>6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilgilendirmeyi okudum, kabul ediyorum.</span></label>
+                            <label for="Contract">@Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract", required = "required" })<span>6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilgilendirmeyi okudum, kabul ediyorum.</span></label>
 
                         </div>
                         <div class="page-section-demo-request-open-right-button">
                             @*<a href="#">Gönder<i class="fas fa-arrow-right"></i></a>*@
                             <input type="submit" name="SaveButton" value="Gönder" />
                         </div>
-  </div>
-                    }
+                    </div>
+                }
 
-              
+
             </div>
         </div>
     </div>

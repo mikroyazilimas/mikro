@@ -1,0 +1,112 @@
+﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+@{
+    int i = 0;
+    var itemModels = Model.Items.ToList();
+}
+<!-- Haberler -->
+<div class="page-section-news">
+    <div class="page-section-news__title">
+        <h2>Haberler</h2>
+    </div>
+
+        <div class="page-section-news-other">
+
+            @foreach (var item in Model.Items.Take(5))
+            {
+                i = i + 1;
+
+                if (i == 1)
+                {
+                    <div class="page-section-news-other-left">
+                        <a href="#">
+                            <div class="page-section-news-other-left-news">
+                                <img src="/Frontend/source/images/homepage/news1.png" alt="">
+                                <div class="page-section-news-other-left-news-content">
+                                    <div class="page-section-news-other-left-news-content__date">
+                                        <span>04/10/2018</span>
+                                    </div>
+                                    <div class="page-section-news-other-left-news-content__title">
+                                        <span>@item.Fields.Title</span>
+                                    </div>
+                                    @*<div class="page-section-news-other-left-news-content__text">
+                                        <span>@item.Fields.Summary</span>
+                                    </div>*@
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+
+                if (i == 2 || i==3)
+                {
+
+
+                    if (i == 2)
+                    {
+                        @Html.Raw("<div class='page-section-news-other-middle'>")
+                        <a href="#" class="page-section-news-other-middle-news">
+                            <div class="page-section-news-other-middle-news-content">
+                                <div class="page-section-news-other-middle-news-content__title">
+                                    <span>@item.Fields.Title</span>
+                                </div>
+                                @*<div class="page-section-news-other-middle-news-content__text">
+                                    <p>@item.Fields.Summary</p>
+                                </div>*@
+                                <div class="page-section-news-other-middle-news-content__icon news-middle-icon-first">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    }
+                    if (i == 3)
+                    {
+                        <a href="#" class="page-section-news-other-middle-news">
+                            <div class="page-section-news-other-middle-news-content">
+                                <div class="page-section-news-other-middle-news-content__title">
+                                    <span>@item.Fields.Title</span>
+                                </div>
+                                @*<div class="page-section-news-other-middle-news-content__text">
+                                    <p>@item.Fields.Summary</p>
+                                </div>*@
+                                <div class="page-section-news-other-middle-news-content__icon news-middle-icon-first">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                            @Html.Raw("</div>")
+                    }
+
+
+                }
+
+                if (i == 4)
+                {
+
+                    <div class="page-section-news-other-right">
+                        <a href="#">
+                            <div class="page-section-news-other-right-news">
+                                <img src="/Frontend/source/images/homepage/news2.png" alt="">
+                                <div class="page-section-news-other-right-news-content">
+                                    <div class="page-section-news-other-right-news-content__date">
+                                        <span>04/10/2018</span>
+                                    </div>
+                                    <div class="page-section-news-other-right-news-content__title">
+                                        <span>@item.Fields.Title</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+
+            }
+
+
+
+
+
+        </div>
+
+</div>

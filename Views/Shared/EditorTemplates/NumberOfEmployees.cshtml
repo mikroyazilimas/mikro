@@ -1,0 +1,5 @@
+﻿@using SitefinityWebApp.Library.Model;
+@model SitefinityWebApp.Library.Model.DropDownListModel<KeyValue>
+
+@Html.DropDownListFor(m => m.SelectedItem,new SelectList(Model.Items,Model.Text,Model.Value, Model.SelectedItem),"Seçiniz", new { Name = "00N0Y00000QeNYu", id= "00N0Y00000QeNYu" })
+

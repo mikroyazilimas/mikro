@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Pages.Master.cs" Inherits="SitefinityWebApp.App_Master.Page" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="/Frontend/dist/css/app.css">
+    <telerik:RadCodeBlock ID="codeBlock" runat="server">
+        <%
+            if (IsDesignMode == false)
+            {
+        %>
+        <script defer src="/Frontend/dist/javascript/mikro-yazilim.js"></script>
+        <%
+            }
+            else
+            {
+        %>
+        <style>
+            .page-open-menu {
+                max-height: 750px !important;
+            }
+        </style>
+        <%
+            }
+        %>
+    </telerik:RadCodeBlock>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="NavigationPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+        <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
+        <div class="page-container">
+            <div class="page-top">
+                <div class="page-top-img"></div>
+                <h1><%=Page.Title.ToString() %></h1>
+                <asp:ContentPlaceHolder ID="cpBreadcrumb" runat="server">
+                </asp:ContentPlaceHolder>
+                <%--
+                <div class="page-top-breadcrumb">
+                    <a href="#">Ana Sayfa</a>
+                    <a href="#">Hakkımızda</a>
+                    <a href="#">Mikro Hakkında</a>
+                </div>--%>
+            </div>
+            <div class="page-content-container">
+                <asp:ContentPlaceHolder ID="PagesContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        </telerik:RadCodeBlock>
+        <asp:ContentPlaceHolder ID="FooterPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

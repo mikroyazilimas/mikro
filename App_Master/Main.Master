@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="SitefinityWebApp.App_Master.Main" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="/Frontend/dist/css/app.css">
+    <telerik:RadCodeBlock ID="codeBlock" runat="server">
+        <%
+            if (IsDesignMode == false)
+            {
+        %>
+        <script defer src="/Frontend/dist/javascript/mikro-yazilim.js"></script>
+        <%
+            }
+            else
+            {
+        %>
+        <style>
+            .page-open-menu {
+                max-height: 750px !important;
+            }
+        </style>
+        <%
+            }
+        %>
+    </telerik:RadCodeBlock>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navigation-background"></div>
+        <div class="page-container">
+            <asp:ContentPlaceHolder ID="NavigationPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="page-section">
+                <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+
+                <!-- İletişim -->
+                <div class="page-section-contact">
+                    <div class="page-section-contact-container">
+                        <div class="page-section-contact-container__title">
+                            <h2>İletişim</h2>
+                        </div>
+                        <div class="page-section-contact-container-area">
+                            <div class="page-section-contact-container-area-left">
+                                <div class="page-section-contact-container-area-left-form">
+                                    <div class="page-section-contact-container-area-left-form-textbox">
+                                        <div class="page-section-contact-container-area-left-form-textbox-form1">
+                                            <label for="">
+                                                <input type="text" name="" id="" placeholder="Ad Soyad"></label>
+                                            <label for="">
+                                                <input type="text" name="" id="" placeholder="Telefon"></label>
+                                            <label for="">
+                                                <input type="text" name="" id="" placeholder="E-Posta"></label>
+                                        </div>
+                                        <div class="page-section-contact-container-area-left-form-textbox-form2">
+                                            <label for="">
+                                                <input type="text" name="" id="" placeholder="Şirketinizin İsmi"></label>
+                                            <textarea name="" id="" cols="30" rows="10" placeholder="Mesaj"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="page-section-contact-container-area-left-form-button">
+                                        <a href="#" title="Gönder" class="page-section-contact-area-left-form-button__send">Gönder</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-section-contact-container-area-right">
+                                <div class="page-section-contact-container-area-right-content">
+                                    <div class="page-section-contact-container-area-right-content-adress">
+                                        <div class="page-section-contact-container-area-right-content-adress__icon"><i class="fas fa-map-marker-alt"></i></div>
+                                        <div class="page-section-contact-container-area-right-content-adress__text"></div>
+                                        <span>MASLAK MAH. AOS 55. SOK. 42 MASLAK NO: 2 OFİS 3 BLOK D:11-12-13 SARIYER / İSTANBUL PK 34485</span>
+                                    </div>
+                                    <div class="page-section-contact-container-area-right-content-phone contact-right-span-space">
+                                        <div class="page-section-contact-container-area-right-content-phone__icon"><i class="fas fa-phone"></i></div>
+                                        <div class="page-section-contact-container-area-right-content-phone__text">
+                                            <span>+90 (212) 806 45 45 (PBX)</span>
+                                            <span class="phone-hide">+90 (850) 225 ** ** (Çağrı Merkezi)</span>
+                                        </div>
+                                    </div>
+                                    <div class="page-section-contact-container-area-right-content-email">
+                                        <div class="page-section-contact-container-area-right-content-email__icon"><i class="fas fa-envelope"></i></div>
+                                        <div class="page-section-contact-container-area-right-content-email__text">
+                                            <a href="mailto:info@mikro.com.tr">info@mikro.com.tr</a>
+                                            <a href="mailto:satis@mikro.com.tr">satis@mikro.com.tr</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo Talep Form -->
+        <asp:ContentPlaceHolder ID="phDemoRequestForm" runat="server">
+        </asp:ContentPlaceHolder>
+        <!-- ////// -->
+
+        <asp:ContentPlaceHolder ID="FooterPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

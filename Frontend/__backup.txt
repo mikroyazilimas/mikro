@@ -1,0 +1,101 @@
+﻿<div class="page-header">
+            <div class="page-header-logo">
+                <a href="index.html">
+                    <img src="/Frontend/source/images/logo.png" alt=""></a>
+            </div>
+            <div class="page-header-tools">
+                <select name="" id="">
+                    <option value="">TR</option>
+                    <!-- div span ul li hover-->
+                </select>
+                <div class="page-header-tools__search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Ara">
+                </div>
+                <div class="page-header-navigation">
+                    <div class="page-header-navigation-item">
+                        <div class="page-header-navigation-item__link">
+                            <a href="#">Ürünler ve Hizmetler</a>
+                            <a href="#">E-Dönüşüm</a>
+                            <a href="#">Bulut Ürünü</a>
+                            <a href="#">Referanslar</a>
+                            <a href="#">İş Ortaklarımız</a>
+                        </div>
+
+                        <div class="page-header-navigation-item__menu">
+                            <span class="mega-navigation">Menü<i class="fas fa-bars"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-open-menu">
+            <div class="page-open-menu-left">
+                <div class="page-open-menu-left-content">
+                    <div class="page-open-menu-left-content__title">
+                        <h2>Ürünler ve Hizmetler</h2>
+                    </div>
+                    <div class="page-open-menu-left-content__hr"></div>
+                    <div class="page-open-menu-left-content-subheading">
+                        <div class="page-open-menu-left-content-subheading-section">
+                            <asp:ContentPlaceHolder ID="Nav1" runat="server"></asp:ContentPlaceHolder>
+                            <%--<div class="page-open-menu-left-content-subheading-section__sub">
+                                <a href="#"><h3>Genel Bakış</h3></a>
+                                <div class="page-open-menu-left-content-subheading-section__hr"></div>
+                            </div>--%>
+                        </div>
+                        <div class="page-open-menu-left-content-subheading-section">
+                            <asp:ContentPlaceHolder ID="Navigation2" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <%--<div class="page-open-menu-left-content-subheading-section__sub">
+                                <a href="#"><h3>Girişimler</h3></a>
+                                <div class="page-open-menu-left-content-subheading-section__hr"></div>
+                            </div>
+                            <div class="page-open-menu-left-content-subheading-section__sub">
+                                <a href="#"><h3>Esnaf ve Küçük İşletmeler</h3></a>
+                                <div class="page-open-menu-left-content-subheading-section__hr"></div>
+                                <a href="#"><h4>Ürün Detayı</h4></a>
+                            </div>
+                            <div class="page-open-menu-left-content-subheading-section__sub">
+                                <a href="#"><h3>Kobi</h3></a>
+                                <div class="page-open-menu-left-content-subheading-section__hr"></div>
+                                <a href="#"><h4>Ürün Detayı</h4></a>
+                            </div>
+                            <div class="page-open-menu-left-content-subheading-section__sub">
+                                <a href="#"><h3>Büyük İşletmeler</h3></a>
+                                <div class="page-open-menu-left-content-subheading-section__hr"></div>
+                            </div>--%>
+                        </div>
+                        <div class="page-open-menu-left-content-subheading-section">
+                            <asp:ContentPlaceHolder ID="Navigation3" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <%-- <div class="page-open-menu-left-content-subheading-section__sub">
+                                <a href="#"><h3>Teknik Destek</h3></a>
+                                <div class="page-open-menu-left-content-subheading-section__hr"></div>
+                                <a href="#"><h4>Destek Al</h4></a>
+                                <a href="#"><h4>Self Servis Destek</h4></a>
+                                <a href="#"><h4>Kaynaklar</h4></a>
+                            </div>--%>
+                        </div>
+                        <div class="page-open-menu-left-content-subheading-section">
+                            <asp:ContentPlaceHolder ID="Navigation4" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <%--<div class="page-open-menu-left-content-subheading-section__sub">
+                                <a href="#"><h3>Mikro Asistan</h3></a>
+                                <div class="page-open-menu-left-content-subheading-section__hr"></div>
+                            </div>--%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-open-menu-right">
+                <div class="page-open-menu-right-content">
+                    <div class="page-open-menu-right-content__img">
+                        <img src="/Frontend/source/images/homepage/open-menu.png" alt="">
+                    </div>
+                    <div class="page-open-menu-right-content-button">
+                        <a href="#" class="page-open-menu-right-content-button__demo">Demo İçin <span>Bize Ulaşın</span><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>

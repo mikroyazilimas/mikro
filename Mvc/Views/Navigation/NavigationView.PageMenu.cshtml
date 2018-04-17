@@ -1,0 +1,28 @@
+﻿
+
+@using Telerik.Sitefinity.Frontend.Navigation.Mvc.Models;
+@using Telerik.Sitefinity.Pages.Model;
+@using Telerik.Sitefinity.Modules.Pages;
+@using Telerik.Sitefinity.Web;
+
+@{SitefinityWebApp.Library.ToolsSF t = new SitefinityWebApp.Library.ToolsSF();
+
+    var manager = PageManager.GetManager();
+    PageManager pm = new PageManager();
+    PageSiteNode current = SiteMapBase.GetActualCurrentNode();
+    string selectTab = "";
+}
+
+@foreach (var item in t.GetMegaMenu(current.ParentNode.Url))
+{
+    if (item.UrlName == current.UrlName)
+    { selectTab = " select-tab"; }
+    else
+    { selectTab = ""; }
+    <div class="@String.Format("page-right-menu-item{0}",selectTab)">
+        <a href="@item.GetUrl().Replace("~","")">@item.Title</a>
+    </div>
+    
+}
+
+

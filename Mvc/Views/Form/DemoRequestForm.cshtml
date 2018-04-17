@@ -1,0 +1,108 @@
+﻿@model SitefinityWebApp.Mvc.Models.ViewModel.DemoRequestForm
+
+
+<div class="demo-request-container">
+    <div class="demo-request-container-main">
+        <div class="page-section-demo-request">
+            <div class="page-section-demo-request-button">
+                <a class="page-section-demo-request-button__demo">Demo İçin <strong>Bize Ulaşın</strong><i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="page-section-demo-request-open">
+            <div class="page-section-demo-request-open-left">
+                <div class="page-section-demo-request-open-left__title">
+                    <h2>Ücretsiz <span>Demo</span> <strong>Talebi</strong></h2>
+                </div>
+                <div class="page-section-demo-request-open-left__hr">
+
+                </div>
+                <div class="wizard-bottom-left-content-form-row ">
+                    <p style="display: block;
+    font-size: 15px;
+    margin-bottom: 20px;">
+                        Çözüm ortağımız size uygulamalı bir Mikro yazılımları sunumu yapacak. Programlarımızla tanışarak, işletmenizin en iyi şekilde karşılayacak seri ve modülleri tespit etmenizde size yardımcı olacak.
+                    </p>
+                    <div class="wizard-bottom-left-content-form-row-text flex">
+                        <p>Kişisel Veriler Bilgilendirme Metni</p>
+                        <svg class="svg-inline--fa fa-caret-down fa-w-10" aria-hidden="true" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg><!-- <i class="fas fa-caret-down"></i> -->
+                    </div>
+                    <div class="wizard-bottom-left-content-form-row-text__hide">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nulla quis faucibus cursus, orci leo maximus lacus, non volutpat ipsum enim id augue. Morbi rutrum quam nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nulla quis faucibus cursus, orci leo maximus lacus, non volutpat ipsum enim id augue. Morbi rutrum quam nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nulla quis faucibus cursus, orci leo maximus lacus, non volutpat ipsum enim id augue. Morbi rutrum quam nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nulla quis faucibus cursus, orci leo maximus lacus, non volutpat ipsum enim id augue. Morbi rutrum quam nunc.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-section-demo-request-open-right">
+                <div class="svg-hide"><i class="fas fa-times"></i></div>
+                
+                    @using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post))
+                    { }
+                    @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" }))
+                    {
+<div class="form">
+                        <div class="page-section-demo-request-open-right-form1">
+
+                            <input type="hidden" name="oid" value="00D0Y0000035HER">
+                            <input type="hidden" id="00N0Y00000QeNcc" name="00N0Y00000QeNcc" value="Demo Request">
+
+                            @Html.HiddenFor(m => m.retURL, new { Value = Const.FormReturnUrl })
+
+                            <label for="">
+                                @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Ad*" })
+                            </label>
+                            <label for="">
+                                @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyad*" })
+                            </label>
+
+                            @*<label for="">
+                                    @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Şirketinizin ismi*" })
+                                </label>*@
+                            <label for="">
+                                @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", placeholder = "Email*" })
+                            </label>
+                            <label for="">
+                                @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", required = "required", placeholder = "Telefon Numaranız*" })
+                            </label>
+                            @*<label for="">
+                                    @Html.TextBoxFor(m => m.GlobalPhone, new { Name = "00N0Y00000RC79Z", id = "00N0Y00000RC79Z", required = "required", placeholder = "Yurt Dışı Telefon Numaranız" })
+                                </label>*@
+                            @*<label for="">
+                                    @Html.EditorFor(m => m.City)
+                                </label>
+                                <label for="">
+                                    @Html.EditorFor(m => m.County)
+                                </label>
+                                <label for="">
+                                    @Html.EditorFor(m => m.NumberOfEmployees)
+                                </label>*@
+                        </div>
+                        <div class="page-section-demo-request-open-right-form2">
+                            <label for=""> @Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp", required = "required", placeholder = "Mesaj*" })</label>
+
+                            @*<label for=""><textarea name="" id="" cols="30" rows="10" placeholder="Mesajınız"></textarea></label>*@
+                        </div>
+                        <div class="page-section-demo-request-open-right-checkbox">
+                            @*<label for="check"><input type="checkbox" id="check"><span>6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilgilendirmeyi okudum, kabul ediyorum.</span></label>*@
+
+                            <label for="Contract">@Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract", required = "required"})<span>6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilgilendirmeyi okudum, kabul ediyorum.</span></label>
+
+                        </div>
+                        <div class="page-section-demo-request-open-right-button">
+                            @*<a href="#">Gönder<i class="fas fa-arrow-right"></i></a>*@
+                            <input type="submit" name="SaveButton" value="Gönder" />
+                        </div>
+  </div>
+                    }
+
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+

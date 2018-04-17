@@ -1,0 +1,110 @@
+﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+<div class="detail-product">
+    <div class="detail-product-content">
+        <div class="detail-product-content__img">
+            <img src="/Frontend/dist/product-detail-content/product-img.png" alt="">
+        </div>
+        <div class="detail-product-content-other">
+            <div class="detail-product-content-other__title">
+                <span>@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.Title</span>
+            </div>
+            <div class="detail-product-content-other__text">
+                <p>
+                    @Html.Raw(Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.Detail)
+                </p>
+            </div>
+            <div class="products-container-content-left-button product-detail-content-buttons">
+                <a href="#" title="demo" class="products-container-content-left-button__demo">Ücretsiz Demo <span><i class="fas fa-arrow-right"></i></span></a>
+                <a href="#" title="Fiyat ve Nasıl Satın Alabilirim" class="products-container-content-left-button__price">Fiyat ve Nasıl Satın Alabilirim <span><i class="fas fa-arrow-right"></i></span></a></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="management-services">
+
+    @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
+    {
+        <div class="management-services-item">
+            <a href="@item.DefaultUrl.Replace("urunler-ve-hizmetler/","urunler-ve-hizmetler/mikro-run/")">
+                <div class="management-services-item__img">
+                    @if (item.Fields.IconImage != null)
+                    {
+                        foreach (var photo in item.Fields.IconImage)
+                        {
+                            <img src="@photo.Fields.MediaUrl" alt="">
+                        }
+                    }
+
+                </div>
+                <div class="management-services-item__title">
+                    <span>@item.Fields.Title</span>
+                </div>
+            </a>
+        </div>
+    }
+</div>
+<div class="numbers">
+    <div class="numbers-contents">
+        <div class="numbers-contents-item">
+            <div class="numbers-contents-item__img">
+                <img src="/Frontend/dist/images/product-detail/section2-bottom1.png" alt="">
+            </div>
+            <div class="numbers-contents-item-text">
+                <div class="numbers-contents-item-text__text1">
+                    <span data-number-animate data-number="400000">400.000+</span>
+                </div>
+                <div class="numbers-contents-item-text__text2">
+                    <span>Kullanıcı</span>
+                </div>
+            </div>
+        </div>
+        <div class="numbers-contents-item">
+            <div class="numbers-contents-item__img">
+                <img src="/Frontend/dist/images/product-detail/section2-bottom2.png" alt="">
+            </div>
+            <div class="numbers-contents-item-text">
+                <div class="numbers-contents-item-text__text1 ">
+                    <span data-number-animate data-number="2000000">1</span>
+                </div>
+                <div class="numbers-contents-item-text__text2">
+                    <span>Yazılan Satır Kod</span>
+                </div>
+            </div>
+        </div>
+        <div class="numbers-contents-item">
+            <div class="numbers-contents-item__img">
+                <img src="/Frontend/dist/images/product-detail/section2-bottom3.png" alt="">
+            </div>
+            <div class="numbers-contents-item-text">
+                <div class="numbers-contents-item-text__text1">
+                    <span data-number-animate data-number="100">1</span>
+                </div>
+                <div class="numbers-contents-item-text__text2">
+                    <span>Hedeflenen Kullanıcı</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="story-products-wizard">
+    <div class="story-products-wizard-left">
+        <div class="story-products-wizard-left-content">
+            <div class="story-products-wizard-left-content__title">
+                <span>Ürün<strong>Sihirbazı</strong></span>
+            </div>
+            <div class="story-products-wizard-left-content__hr">
+
+            </div>
+            <div class="product-detail-section3-left-content-button">
+                <a href="/urun-secme-sihirbazi" title="Sizin İçin Doğru Ürünü Seçin" class="product-detail-section3-left-content-button__wizard">Sizin İçin Doğru &nbsp;<strong>Ürünü Seçin</strong><span><i class="fas fa-arrow-right"></i></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="story-products-wizard-right">
+        <img src="/Frontend/dist/images/story/product-wizard.png" alt="">
+    </div>
+</div>
+

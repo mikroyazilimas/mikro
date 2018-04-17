@@ -1,0 +1,55 @@
+﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+
+<div class="container-description">
+    <div class="container-description__img">
+        <img src="/frontend/dist/images/story/desc-img.png" alt="">
+    </div>
+    <div class="container-description-other">
+        <div class="container-description-other__title">
+            <span>Lorem Ipsum Dolor Sit Amet</span>
+        </div>
+        <div class="container-description-other__text">
+            <p>Mikro Yazılım olarak yıllardır, dirsek temasında çalıştığımız, ERP projelerini başarıyla tamamladığımız, artık dostluk seviyesine ulaşmış olduğumuz iş ortaklarımızdan bazıları.</p>
+        </div>
+    </div>
+</div>
+<div class="story">
+    <div class="story-group">
+        <div class="story-group-left">
+            <div class="story-group-left__img">
+                <img src="/Frontend/dist/images/story/group-img.png" alt="">
+            </div>
+            <div class="story-group-left__title">
+                <span>Başarı Hikayeleri</span>
+            </div>
+        </div>
+        <div class="story-group-left__icon">
+            <i class="fas fa-angle-down"></i>
+        </div>
+    </div>
+    <div class="story-company">
+        <div class="story-company__combobox">
+            <select name="" id="">
+                <option value="">Sırala</option>
+            </select>
+        </div>
+        <div class="story-company-content">
+            @foreach (var item in Model.Items)
+            {
+                <div class="story-company-content-item">
+                    <a href="@String.Format("/basari-hikayeleri{0}",item.Fields.ItemDefaultUrl)">
+                        <div class="story-company-content-item__img">
+                            @foreach (var photo in item.Fields.image)
+                            {
+                                <img src="@String.Format(photo.Fields.MediaUrl)" alt="">
+                            }
+
+                        </div>
+                    </a>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+

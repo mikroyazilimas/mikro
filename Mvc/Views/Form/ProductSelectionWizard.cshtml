@@ -1,0 +1,183 @@
+﻿@model SitefinityWebApp.Mvc.Models.ViewModel.ProductSelectionWizard
+
+@* @using (@Html.BeginForm("Index", "ProductSelectionWizard", FormMethod.Post))
+{ }
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" }))
+{
+    if (Model.FormItems != null && Model.FormItems.Count > 0)
+    {
+        foreach (var item in Model.FormItems)
+        {
+            if (item.InputType == SitefinityWebApp.Library.InputType.Hidden)
+            {
+                <input type="hidden" id="@item.InputName" name="@item.InputName" value="@item.InputValue" />
+            }
+            else if (item.InputType == SitefinityWebApp.Library.InputType.TextBox)
+            {
+                <label>@item.LabelValue<span>@item.LabelValueShort</span></label>
+                <input type="text" id="@item.InputName" name="@item.InputName" value="" />
+            }
+            else if (item.InputType == SitefinityWebApp.Library.InputType.DropDown)
+            {
+                <label>@item.LabelValue<span>@item.LabelValueShort</span></label>
+                <select id="@item.InputName" name="@item.InputName">
+                    @foreach (var dItem in item.DropDownItem)
+                    {
+                        <option value="@dItem.Value">@dItem.Text</option>
+                    }                
+                </select>
+            }
+        }
+    }
+
+    <label>Adınız</label>
+    @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required"})
+
+    <label>Soyadınız</label>
+    @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required"})
+
+    <label>Firmanızın Ünvanı</label>
+    @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required" })
+
+    <label>E-Posta</label>
+    @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required"})
+
+    <label>Telefon</label>
+    @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", required = "required"})
+
+    <div>Kişisel Veriler Bilgilendirme Metni</div>
+        
+    @Html.CheckBoxFor(m => m.Contract)
+    <label>Kişisel Veriler Bilgilendirme Metni'ni Kabul Ediyorum</label>
+
+    <input type="submit" name="SaveButton" value="Gönder" />
+}
+ *@
+
+ <div class="wizard">
+                <div class="wizard-content">
+                    <div class="wizard-content__text">
+                        <strong>Firmanıza en uygun Mikro yazılımını hemen seçin.</strong>
+                        <p>Mikro ürünleri arasında sizin ihtiyacınıza en uygun ürünler hangileri? Sadece 2 dakikanızı ayırarak Mikro’nun size en uygun ürününü seçin. İster hemen satın alın, isterseniz size özel fiyatlarımız için bizden teklif isteyin.</p>
+                    </div>
+                    
+                    <div class="wizard-form">
+                        <div class="wizard-form-row">
+                            <label for="">Şirketinizin kuruluş yılı nedir?</label>
+                            <input type="text">
+                        </div>
+                        <div class="wizard-form-row">
+                            <label for="">Şirketinizin ana faaliyet alanını nedir?</label>
+                            <select class="wizard-form-row__select">
+                                <option value="">Akaryakıt & Gaz</option>
+                                <option value="">Ambalaj</option>
+                                <option value="">Dayanıklı Tüketim Ürünleri</option>
+                                <option value="">e-Ticaret</option>
+                                <option value="">Eğitim Kurumları</option>
+                                <option value="">Elektrik & Elektronik</option>
+                                <option value="">Finans - Muhasebe</option>
+                                <option value="">Gıda</option>
+                                <option value="">Hizmet</option>
+                                <option value="">İnşaat</option>
+                                <option value="">Kağıt</option>
+
+                            </select>
+                        </div>
+                        <div class="wizard-form-row">
+
+                            <label for="">Şirketinizde kaç kişi çalışıyor?</label>
+                            <select name="" id="" class="wizard-form-row__select">
+                                    <option value="">1-5 kişi arası</option>
+                                    <option value="">6-10 kişi arası</option>
+                                    <option value="">11-20 kişi arası</option>
+                                    <option value="">21-50 kişi arası</option>
+                                    <option value="">51 kişi ve üzeri</option>
+                            </select>
+                        </div>
+                        <div class="wizard-form-row">
+                            <label for="">Seçeneklerden hangisi şirketinizin durumunu <br> en iyi şekilde anlatıyor?</label>
+                            <select name="" id="" class="wizard-form-row__select">
+                                    <option value="">Şu anda temel bir muhasebe paketi veya ticari yazılım kullanmıyoruz.</option>
+                                    <option value="">Mikro yazılımlarını kullanıyoruz ve daha üst bir pakete yükseltmek istiyoruz.</option>
+                                    <option value="">Şu anda kullandığımız yazılımı kullanmaya devam etmek ve yeni fonksiyonlar için bir Mikro yazılımı satın almak istiyoruz.</option>
+                                    <option value="">d- Başka bir firmanın yazılımını kullanıyoruz ve bir Mikro yazılımına geçiş yapmak istiyoruz.</option>
+                            </select>
+                        </div>
+                        <div class="wizard-form-row">
+                            <label for="">Kullandığınız ticari yazılım hangisi?</label>
+                            <select name="" id="" class="wizard-form-row__select">
+                                <option value="">SAP</option>
+                                <option value="">Oracle</option>
+                                <option value="">Microsoft</option>
+                                <option value="">Canias</option>
+                                <option value="">Workcube</option>
+                                <option value="">Logo</option>
+                            </select>
+                        </div>
+                        <div class="wizard-form-row">
+                            <label for="">Firmanızda kaç kişi bu yazılımı kullanıyor?</label>
+                            <select name="" id="" class="wizard-form-row__select">
+                                <option value="">1-5 kişi arası</option>
+                                <option value="">6-10 kişi arası</option>
+                                <option value="">11-20 kişi arası</option>
+                                <option value="">21-50 kişi arası</option>
+                                <option value="">51 kişi ve üzeri</option>
+                            </select>
+                        </div>
+                       
+                        <div class="wizard-form-row">
+                            <div class="wizard-form-row__info">
+                                <label for="">Son adım olarak;</label>
+                                <span>Lütfen aşağıdaki bilgileri doldurarak gönder tuşuna basın. <br>Size en uygun ürünler ve size özel fiyatlar saniyeler içerisinde e-posta adresinize gelsin…</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wizard-bottom">
+                    <div class="wizard-bottom-left">
+                        <div class="wizard-bottom-left-content">
+                            <div class="wizard-bottom-left-content-form">
+                                <div class="wizard-bottom-left-content-form-row">
+                                    <label for="">Adınız</label>
+                                    <input type="text">
+                                </div>
+                                <div class="wizard-bottom-left-content-form-row">
+                                    <label for="">Soyadınız</label>
+                                    <input type="text">
+                                </div>
+                                <div class="wizard-bottom-left-content-form-row">
+                                    <label for="">Firmanızın Ünvanı</label>
+                                    <input type="text">
+                                </div>
+                                <div class="wizard-bottom-left-content-form-row">
+                                    <label for="">E-Posta</label>
+                                    <input type="text">
+                                </div>
+                                <div class="wizard-bottom-left-content-form-row">
+                                    <label for="">Telefon</label>
+                                    <input type="text">
+                                </div>
+                                <div class="wizard-bottom-left-content-form-row">
+                                    <div class="wizard-bottom-left-content-form-row-text">
+                                        <p>Kişisel Veriler Bilgilendirme Metni</p>
+                                        <i class="fas fa-caret-down"></i>
+                                        
+                                    </div>
+                                    <div class="wizard-bottom-left-content-form-row-text__hide">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nulla quis faucibus cursus, orci leo maximus lacus, non volutpat ipsum enim id augue. Morbi rutrum quam nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nulla quis faucibus cursus, orci leo maximus lacus, non volutpat ipsum enim id augue. Morbi rutrum quam nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nulla quis faucibus cursus, orci leo maximus lacus, non volutpat ipsum enim id augue. Morbi rutrum quam nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nulla quis faucibus cursus, orci leo maximus lacus, non volutpat ipsum enim id augue. Morbi rutrum quam nunc.</p>
+                                    </div>
+                                </div>
+                                <div class="wizard-bottom-left-content-form-row">
+                                    <label for="check"><input type="checkbox" id="check">Kişisel Veriler Bilgilendirme Metni'ni kabul ediyorum.</label>
+                                    <a href="#">Gönder<i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="wizard-bottom-right">
+                        <img src="source/images/product-wizard/bottom-img.png" alt="">
+                    </div>
+                </div>
+            </div>

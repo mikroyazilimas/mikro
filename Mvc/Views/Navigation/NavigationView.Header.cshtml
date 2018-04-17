@@ -1,0 +1,102 @@
+﻿
+@using Telerik.Sitefinity.Frontend.Navigation.Mvc.Models;
+
+@using Telerik.Sitefinity.Pages.Model;
+@using Telerik.Sitefinity.Modules.Pages;
+
+@{PageManager pm = new PageManager();
+}
+
+@{
+    
+}
+
+@helper GetMegaMenu(string parentPageUrl)
+{
+List<PageNode> pageNodes;
+if (parentPageUrl != "")
+{
+    SitefinityWebApp.Library.ToolsSF tt = new SitefinityWebApp.Library.ToolsSF();
+
+    pageNodes = Telerik.Sitefinity.App.WorkWith().Pages().Where(ii => ii.Parent != null && ii.ShowInNavigation == true && ii.Parent.UrlName == parentPageUrl).OrderBy(item => item.Ordinal).Get().ToList();
+
+    foreach (var item in pageNodes)
+    {
+            <a href="@item.GetUrl().Replace("~","")" class="page-mega-navigation-content-section__maintitle"><span>@item.Title</span></a>
+
+        foreach (var itemNode in tt.GetMegaMenu(item.UrlName))
+        {
+            <a href="@itemNode.GetUrl().Replace("~","")" class="page-mega-navigation-content-section__subtitle"><span>@itemNode.Title</span></a>
+        }
+
+    }
+
+}
+}
+
+
+
+<div class="page-header fixed">
+    <div class="page-header-logo">
+        <a href="/">
+            <img src="/Frontend/source/images/logo.png" alt="">
+        </a>
+    </div>
+    <div class="page-header-tools">
+        <select name="" id="">
+            <option value="">TR</option>
+            <!-- div span ul li hover-->
+        </select>
+        <div class="page-header-tools__search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Ara">
+        </div>
+        <div class="page-header-navigation">
+            <div class="page-header-navigation-item">
+                <div class="page-header-navigation-item__link">
+                    <a href="/urunler-ve-hizmetler/genel-bakis">Ürünler ve Hizmetler</a>
+                    <a href="#">E-Dönüşüm</a>
+                    <a href="#">Bulut Ürünü</a>
+                    <a href="#">Referanslar</a>
+                    <a href="#">İş Ortaklarımız</a>
+                </div>
+
+                <div class="page-header-navigation-item__menu">
+                    <span class="mega-navigation">Menü<i class="fas fa-bars"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MEGA MENU -->
+<div class="page-mega-navigation">
+    <div class="page-mega-navigation-content">
+
+        <div class="page-mega-navigation-content-section">
+            <a href="#" class="page-mega-navigation-content-section__grouptitle"><span>Kurumsal</span></a>
+            @GetMegaMenu("kurumsal")
+        </div>
+        <div class="page-mega-navigation-content-section">
+            <a href="#" class="page-mega-navigation-content-section__grouptitle"><span>Ürünler ve <br>Hizmetler</span></a>
+            @GetMegaMenu("urunler-ve-hizmetler")
+        </div>
+        <div class="page-mega-navigation-content-section">
+            <a href="#" class="page-mega-navigation-content-section__grouptitle"><span>E-Dönüşüm</span></a>
+            @GetMegaMenu("e-donusum")
+        </div>
+        <div class="page-mega-navigation-content-section">
+            <a href="#" class="page-mega-navigation-content-section__grouptitle"><span>Başarı Hikayeleri</span></a>
+            @GetMegaMenu("basari-hikayeleri")
+        </div>
+        <div class="page-mega-navigation-content-section">
+            <a href="#" class="page-mega-navigation-content-section__grouptitle"><span>İş Ortakları</span></a>
+            @GetMegaMenu("is-ortaklari")
+        </div>
+    </div>
+    <div class="page-mega-navigation-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+</div>
+<!-- ///// -->

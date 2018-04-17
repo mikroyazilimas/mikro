@@ -30,13 +30,17 @@
     <div class="story-company">
         <div class="story-company__combobox">
             <select name="" id="">
-                <option value="">Sırala</option>
+                <option value="">Tümü</option>
+                <option value="Sektör">Sektör</option>
+                <option value="Müşteri">Müşteri</option>
+                <option value="Ürünler">Ürünler</option>
             </select>
         </div>
         <div class="story-company-content">
             @foreach (var item in Model.Items)
             {
-                <div class="story-company-content-item">
+                
+                <div class="@String.Format("story-company-content-item","")" d-story="@item.Fields.StoryType">
                     <a href="@String.Format("/basari-hikayeleri{0}",item.Fields.ItemDefaultUrl)">
                         <div class="story-company-content-item__img">
                             @foreach (var photo in item.Fields.image)

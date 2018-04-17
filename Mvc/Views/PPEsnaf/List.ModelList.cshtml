@@ -28,7 +28,7 @@
     @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
     {
         <div class="management-services-item">
-            <a href="@item.DefaultUrl.Replace("urunler-ve-hizmetler/","urunler/mikro-musavir/")">
+            <a href="@item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-musavir/")">
                 <div class="management-services-item__img">
                     @if (item.Fields.IconImage != null)
                     {

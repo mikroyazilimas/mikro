@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="products-container-content-right">
-        @foreach (var item in Model.Items)
+        @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
             <div class="products-container-content-right-item">
                 <div class="products-container-content-right-item__title">

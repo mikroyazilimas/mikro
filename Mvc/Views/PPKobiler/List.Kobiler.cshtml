@@ -1,4 +1,5 @@
-﻿<div class="products-container-content">
+﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+<div class="products-container-content">
     <div class="products-container-content-left">
         <div class="products-container-content-left__img">   
             <a href="/urunler-ve-hizmetler/mikro-jump/"><img src="/Frontend/dist/images/products/jump-img.svg" alt=""></a>                        
@@ -15,7 +16,7 @@
         </div>
     </div>
     <div class="products-container-content-right">
-        @foreach (var item in Model.Items)
+        @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
         <div class="products-container-content-right-item">
             <div class="products-container-content-right-item__title">

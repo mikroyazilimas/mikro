@@ -25,7 +25,7 @@
             @foreach (var item in Model.Items)
             {
                 <div class="story-company-content-item">
-                    <a href="@String.Format("/videos{0}",item.Fields.ItemDefaultUrl)">
+                    <a href="@String.Format("{0}",item.Fields.VideoUrl)">
                         <div class="story-company-content-item__img">
                             @foreach (var photo in item.Fields.image)
                             {

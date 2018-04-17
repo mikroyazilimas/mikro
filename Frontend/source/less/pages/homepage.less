@@ -1216,9 +1216,9 @@
                             }
 
                             input, textarea {
-                                height: 30px;
+                                height: 35px;
                                 width: 90%;
-                                margin-bottom: 10px;
+                                margin-bottom: 5px;
                                 font-size: 12px;
                                 font-weight: 400;
                                 letter-spacing: -0.3px;
@@ -1227,7 +1227,7 @@
                                 padding-left: 10px;
                                 background-color: transparent;
                                 border: 1px solid #ffffff;
-                                color: white;
+                                color: red;
                                 @media @responsive{
                                     width: 90%;
                                     display: flex;
@@ -1252,7 +1252,7 @@
 
                         &-button {
                             height: 40px;
-                            width: 95%;
+                            width: 90%;
                             background-color: white;
                             border-radius: 5px;
                             font-size: 12px;
@@ -1262,7 +1262,11 @@
                             display: inline-flex;
                             align-items: center;
                             justify-content: center;
-
+                            >input{
+                                font-size: 14px;
+                                font-weight: 700;
+                                color: @dark_blue;
+                            }
                             a {
                                 height: 40px;
                                 width: 95%;
@@ -1494,4 +1498,8 @@
 
 .close{
     display: none;
+}
+
+.hp_btn{
+    font-size: 30px;
 }

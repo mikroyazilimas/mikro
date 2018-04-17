@@ -1,6 +1,7 @@
 ﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
 <div class="products-container-content">
     <div class="products-container-content-left">
+        <div class="scrolldown sticky-two">
         <div class="products-container-content-left__img">   
             <a href="/urunler-ve-hizmetler/mikro-jump/"><img src="/Frontend/dist/images/products/jump-img.svg" alt=""></a>                        
         </div>        
@@ -10,10 +11,11 @@
             <span>Mikro Jump</span>
         </div>
         <div class="products-container-content-left-button">
-            <a href="#" title="Ücretsiz Demo" class="products-container-content-left-button__demo">Ücretsiz Demo<span><i class="fas fa-arrow-right"></i></span></a>
+            <a href="/demo-talep" title="Ücretsiz Demo" class="products-container-content-left-button__demo">Ücretsiz Demo<span><i class="fas fa-arrow-right"></i></span></a>
             <a href="#" title="Fiyat ve Nasıl Satın Alabilirim" class="products-container-content-left-button__price" >Fiyat ve Nasıl Satın Alabilirim
             <span><i class="fas fa-arrow-right"></i></span></a>
         </div>
+    </div>
     </div>
     <div class="products-container-content-right">
         @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
@@ -27,5 +29,6 @@
             </div>
         </div>
         }
+        <div class="sticky-stopper-two"></div>
     </div>
 </div>

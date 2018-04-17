@@ -11,7 +11,7 @@
             if (IsDesignMode == false)
             {
         %>
-        <script defer src="/Frontend/dist/javascript/mikro-yazilim.js"></script>
+        <script defer src="/Frontend/dist/javascript/mikro-yazilim.js?v=1"></script>
         <%
             }
             else

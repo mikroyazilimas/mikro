@@ -32,12 +32,13 @@
                     @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Şirketinizin ismi*" })
                 </label>
                 @Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp", required = "required", placeholder = "Mesaj*" })
+                <div class="page-section-contact-container-area-left-form-button">
+                    @*<a href="#" title="Gönder" class="page-section-contact-area-left-form-button__send">Gönder</a>*@
+                    <input class="hp_btn"type="submit" name="SaveButton" value="Gönder" />
+                </div>
             </div>
         </div>
-        <div class="page-section-contact-container-area-left-form-button">
-            @*<a href="#" title="Gönder" class="page-section-contact-area-left-form-button__send">Gönder</a>*@
-            <input type="submit" name="SaveButton" value="Gönder" />
-        </div>
+        
     </div>
 
 

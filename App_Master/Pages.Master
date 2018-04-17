@@ -1,7 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Pages.Master.cs" Inherits="SitefinityWebApp.App_Master.Page" %>
 
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>

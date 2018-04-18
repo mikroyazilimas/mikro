@@ -5892,6 +5892,35 @@ var doAnimations = function() {
     });
 };
 
+var stickySidebar = function(element, stopper){
+    console.log( "document ready!" );
+
+  var $sticky = $(element);
+  var $stickyrStopper = $(stopper);
+  if (!!$sticky.offset()) { // make sure ".sticky" element exists
+
+    var generalSidebarHeight = $sticky.innerHeight();
+    var stickyTop = $sticky.offset().top;
+    var stickOffset = 100;
+    var stickyStopperPosition = $stickyrStopper.offset().top;
+    var stopPoint = stickyStopperPosition - generalSidebarHeight - stickOffset;
+    var diff = stopPoint + stickOffset;
+
+    $(window).scroll(function(){ // scroll event
+      var windowTop = $(window).scrollTop(); // returns number
+
+      if (stopPoint < windowTop) {
+          $sticky.css({ top: diff  });
+      } else if (stickyTop < windowTop+stickOffset) {
+          $sticky.css({ position: 'fixed', top: stickOffset  });
+      } else {
+          $sticky.css({top: 'initial', position: 'absolute'});
+      }
+    });
+
+  }
+}
+
 $(function() {
     $('[data-number-animate]').each(
         function() {
@@ -6018,6 +6047,7 @@ $(function() {
    });
 
 
+<<<<<<< HEAD
 
    //deneme
 
@@ -6045,6 +6075,12 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+=======
+   stickySidebar('.sticky-one', '.sticky-stopper-one')
+   stickySidebar('.sticky-two', '.sticky-stopper-two')
+   stickySidebar('.sticky-three', '.sticky-stopper-three')
+   stickySidebar('.sticky-four', '.sticky-stopper-four')
+>>>>>>> d47c2ada6756af99fc90a64aba5748199227792b
 
 });
 

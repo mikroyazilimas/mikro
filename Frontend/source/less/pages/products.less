@@ -55,10 +55,12 @@
             width: 100%;
         }
         &-left {
-            .col(5,12);
+            width: 40%;
             display: flex;
             text-align: center;
             flex-direction: column;
+            align-items: center;
+
             @media @responsive{
                 width: 100%;
             }
@@ -88,7 +90,6 @@
                 height: 50px;
                 width: 95%;
                 align-items: center;
-                justify-content: space-evenly;
                 @media @responsive{
                     width: 100%;
                     flex-direction: column;
@@ -102,6 +103,7 @@
                     border-radius: 5px;
                     color: white;
                     text-decoration: none;
+                    margin: 0px 5px;
                     &>svg{
                         margin-left: 5px;
                     }
@@ -114,7 +116,7 @@
                     justify-content: center;
                     align-content: center;
                     align-items: center;
-                    width: 140px;
+                    width: 160px;
                     @media @responsive{
                         width: 240px;
                     }
@@ -134,7 +136,7 @@
                             justify-content: center;
                             align-content: center;
                             align-items: center;
-                            margin-right: -8px;
+                            margin-right: -13px;
                             margin-left: 8px;
                             font-size: 10px;
                             background-color: #16a085;
@@ -157,7 +159,7 @@
                     justify-content: center;
                     align-content: center;
                     align-items: center;
-                    width: 240px;
+                    width: 260px;
                     @media @responsive{
                         width: 240px;
                         margin-top: 10px;
@@ -178,7 +180,7 @@
                             justify-content: center;
                             align-content: center;
                             align-items: center;
-                            margin-right: -10px;
+                            margin-right: -13px;
                             margin-left: 10px;
                             font-size: 10px;
                             background-color: #7a8486;
@@ -213,7 +215,7 @@
         }
 
         &-right {
-            .col(7,12);
+            width: 60%;
             @media @responsive{
                 width: 100%;
                 margin-top: 20px;

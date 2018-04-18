@@ -15,7 +15,7 @@
 <div class="page-section-demo herobanner-owl-carousel owl-carousel">
     @foreach (var item in Model.Items)
     {
-        <a href="#" class="page-section-demo-item">
+        <a href="@item.Fields.RedirectUrl" class="page-section-demo-item">
 
             @foreach (var photo in item.Fields.Photo)
             {

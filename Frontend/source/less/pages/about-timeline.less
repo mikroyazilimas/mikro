@@ -7,7 +7,27 @@
         width: 100%;
         flex-direction: column;
     }
-    
+    > ul {
+        display: block;
+        margin: 10px 0px 0px 20px;
+        > li {
+            display: block;
+            width: 100%;
+            align-items: center;
+            margin: 7px 0px;
+            font-size: 14px;
+            padding: 0px 5px;
+            line-height: 18px;
+            &:before {
+                content: ' ';
+                display: inline-block;
+                width: 10px !important;
+                height: 10px;
+                background: #1abc9c;
+                margin-right: 5px;
+            }
+        }
+    }
     &-sub{
         margin-bottom: 30px;
     }

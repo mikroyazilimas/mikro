@@ -78,8 +78,17 @@ $(function() {
     });
 
     // Hook doAnimations on scroll, and trigger a scroll
-    /*$(window).on('scroll', doAnimations);
-    $(window).trigger('scroll');*/
+    // $(window).on('scroll', doAnimations);
+    // $(window).trigger('scroll');
+
+    $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop()
+        var divOffset = parseInt($('.animatable').offset().top / 2)
+        if(divOffset <= scrollTop) {
+            $('.animatable').addClass('animated');
+        }
+        console.log(divOffset + ' - ' + scrollTop)
+    });
 
     // $(window).scroll(function() {
     //     doAnimations();
@@ -171,10 +180,12 @@ $(function() {
    });
 
 
+
    stickySidebar('.sticky-one', '.sticky-stopper-one')
    stickySidebar('.sticky-two', '.sticky-stopper-two')
    stickySidebar('.sticky-three', '.sticky-stopper-three')
    stickySidebar('.sticky-four', '.sticky-stopper-four')
+
 
 });
 

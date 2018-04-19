@@ -4,9 +4,9 @@
 
 <div class="detail-product">
     <div class="detail-product-content">
-        <div class="detail-product-content__img">
-            <img src="/Frontend/dist/product-detail-content/product-img.png" alt="">
-        </div>
+        <!--<div class="detail-product-content__img">
+        <img src="/Frontend/dist/product-detail-content/product-img.png" alt="">
+    </div>-->
         <div class="detail-product-content-other">
             <div class="detail-product-content-other__title">
                 <span>@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.Title</span>
@@ -23,7 +23,7 @@
         </div>
     </div>
 </div>
-<div class="management-services">
+<div class="management-services modules-owl-carousel owl-carousel">
 
     @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
     {
@@ -65,12 +65,12 @@
             <div class="numbers-contents-item__img">
                 <img src="/Frontend/dist/images/product-detail/section2-bottom2.png" alt="">
             </div>
-            <div class="numbers-contents-item-text">
-                <div class="numbers-contents-item-text__text1 ">
-                    <span data-number-animate data-number="2000000">1</span>
+             <div class="numbers-contents-item-text">
+                <div class="numbers-contents-item-text__text1">
+                    <span data-number-animate data-number="105000">105000+</span>
                 </div>
                 <div class="numbers-contents-item-text__text2">
-                    <span>Yazılan Satır Kod</span>
+                    <span>Kayıtlı Şirket Sayısı</span>
                 </div>
             </div>
         </div>

@@ -1,29 +1,37 @@
-﻿<div class="container-sub">
+﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+
+
+
+<div class="container-sub">
     <div class="container-sub-content">
         <!-- DÖNGÜ -->
-        <div class="container-sub-content-item">
-            <div class="container-sub-content-item-content">
-                <div class="container-sub-content-item-content-left">
-                    <div class="container-sub-content-item-content-left__date">
-                        <span>01.03.2018</span>
-                    </div>
-                    <div class="container-sub-content-item-content-left__title">
-                        <span>Forbes Türkiye Ek</span>
-                    </div>
-                    <div class="container-sub-content-item-content-left__text">
-                        <span>Dijitalleşen Dünyada KOBİ’lerin En Önemli Partnerlerinden Biriyiz</span>
-                    </div>
-                </div>
-                <a href="">
-                    <div class="container-sub-content-item-content-right">
-                        <i class="fas fa-eye container-sub-content-item-content-rigth__icon"></i>
-                        <div class="container-sub-content-item-content-right__title">
-                            <span>Haberi Gör</span>
+        @foreach (var item in Model.Items)
+        {
+            <div class="container-sub-content-item">
+                <div class="container-sub-content-item-content">
+                    <div class="container-sub-content-item-content-left">
+                        <div class="container-sub-content-item-content-left__date">
+                            <span>@item.Fields.DateTime</span>
+                        </div>
+                        <div class="container-sub-content-item-content-left__title">
+                            <span>@item.Fields.Title</span>
+                        </div>
+                        <div class="container-sub-content-item-content-left__text">
+                            <span>Dijitalleşen Dünyada KOBİ’lerin En Önemli Partnerlerinden Biriyiz</span>
                         </div>
                     </div>
-                </a>
+                    <a href="@String.Format("/docs/default-source/basin-bultenleri/{0}.{1}", item.Fields.MediaFileUrlName, "pdf")" target="_blank">
+                        <div class="container-sub-content-item-content-right">
+                            <i class="fas fa-eye container-sub-content-item-content-rigth__icon"></i>
+                            <div class="container-sub-content-item-content-right__title">
+                                <span>Haberi Gör</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </div>
+        }
+
         <!-- //// -->
     </div>
 </div>

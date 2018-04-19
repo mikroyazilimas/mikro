@@ -34,18 +34,18 @@
 
     &-form {
         margin-top: 20px;
-
+        
         label {
             font-size: 20px;
             font-weight: 700;
             color: @dark_blue;
+            width: 550px;
         }
 
         input[type="text"] {
             padding-left: 10px;
-            width: 60px;
-            width: auto;
-
+            width: 525px;
+            font-size: 14px;
             @media @responsive {
                 width: 100%;
             }
@@ -53,9 +53,9 @@
 
         &-row {
             display: flex;
-            align-items: center;
+            
             margin-bottom: 10px;
-
+            flex-direction: column;
             @media @responsive {
                 flex-direction: column;
             }
@@ -68,13 +68,15 @@
                 margin-top: 5px;
                 width: 100%;
                 padding: 0px 10px;
+                
             }
 
             select{
-                width: auto !important;
+                width: 525px!important;
+                font-size: 14px;
             }
             
-            &>label{
+            label{
                 margin-right: 10px;
                 font-size: 16px;
                 font-weight: 700;
@@ -133,6 +135,8 @@
                     padding: 10px;
                 }
                 &-form{
+                    display: flex;
+                    flex-direction: column;
                     &-row{
                         display: flex;
                         flex-direction: column;
@@ -156,7 +160,7 @@
                                 width: 100%!important;
                             }
                         }
-                        &>[for='check']{
+                        &>[for='Contract']{
                             font-size: 14px;
                             font-weight: 400;
                             letter-spacing: -0.35px;
@@ -230,6 +234,9 @@
                                 margin-top: -4px;
                                 height: 200px;
                                 overflow-y: scroll;
+                                &::-webkit-scrollbar { 
+                                    display: none;
+                                }
                                 &>p{
                                     display:block;
                                     background-color: @dark_blue !important;
@@ -239,6 +246,9 @@
                                     color: white !important;
                                     border-bottom-right-radius: 5px;
                                     border-bottom-left-radius: 5px;
+                                    margin-top: -4px;
+                                    line-height: 20px; 
+                                    
                                 }
                             }
                         }

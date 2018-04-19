@@ -13,6 +13,9 @@
             </div>
 
             <div class="wizard-form">
+                <div class="wizard-form-left">
+
+                
 
 
                 @if (Model.FormItems != null && Model.FormItems.Count > 0)
@@ -46,7 +49,10 @@
                     }
                 }
 
-               
+               </div>
+                <div class="wizard-form-right">
+
+                </div>
 
                 @*<div class="wizard-bottom-left-content-form-row">
                     <label for="check"><input type="checkbox" id="check">Kişisel Veriler Bilgilendirme Metni'ni kabul ediyorum.</label>
@@ -93,23 +99,14 @@
                             </div>
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
-                            <label for="check">
+                            <label for="Contract">
                                 @Html.CheckBoxFor(m => m.Contract)
                                 Kişisel Veriler Bilgilendirme Metni'ni Kabul Ediyorum
                             </label>
+                            
                             <input type="submit" name="SaveButton" value="Gönder" />
                         </div>
                     </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    <div class="wizard-bottom-right">
-                        <img src="/Frontend/dist/images/product-wizard/product-wizard-form.svg" alt="">
-                    </div>
-=======
-
->>>>>>> d47c2ada6756af99fc90a64aba5748199227792b
-=======
->>>>>>> 3214f49c0155b4ba7e444caad26524d15de6e238
                 </div>
             </div>
             <div class="wizard-bottom-right">

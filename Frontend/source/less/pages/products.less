@@ -41,10 +41,10 @@
     &-content {
         .wrap;
         .wrap(2);
-        width: 95%;
+        width: 100%;
         height: auto;
         margin: 0px auto;
-        padding: 50px 0px 20px;
+        padding: 50px 0px 20px 0px;
         display: flex;
         border-bottom: 1px solid rgba(0,0,0,0.1);
         @media @responsive{
@@ -60,6 +60,7 @@
             text-align: center;
             flex-direction: column;
             align-items: center;
+            padding: 0px 30px;
 
             @media @responsive{
                 width: 100%;
@@ -76,6 +77,18 @@
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 15px;
+                text-decoration: none;
+                padding: 0px 30px 0px 0px;
+                cursor: pointer;
+                background-image: url('/Frontend/dist/images/211607-48.png');
+                background-position: right center;
+                background-repeat: no-repeat;
+                background-size: 20px;
+                transition: all 0.5s;
+
+                &:hover {
+                    padding-right: 50px;
+                }
                 &>span{
                     margin-bottom: 3px;
                     color: @dark_blue;
@@ -88,7 +101,7 @@
             &-button{
                 display: flex;
                 height: 50px;
-                width: 95%;
+                width: 100%;
                 align-items: center;
                 @media @responsive{
                     width: 100%;
@@ -221,25 +234,49 @@
                 margin-top: 20px;
             }
             &-item {
-                width: 400px;
-                margin-bottom: 30px;
+                width: 100%;
+                margin-bottom: 10px;
                 @media @responsive{
                     width: 100%;
                 }
                 &__title {
-                    font-size: 16px;
-                    font-weight: 700;
-                    color: @dark_blue;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: white;
+                    background-color: #c6c6c6;
+                    padding: 12px 15px;
+                    cursor: pointer;
+                border-radius: 5px;
+                background-image: url('/Frontend/dist/images/accordion-bottom-arrow.png');
+                background-position: 98% center;
+                background-repeat: no-repeat;
+                background-size: 13px;
+
+                    &:hover {
+                        background-color: @dark_blue;
+                    }
+
+                    &.active {
+                        background-color: @dark_blue;
+                        color: white !important;
+                        background-image: url('/Frontend/dist/images/accordion-top-arrow.png');
+                    }
                 }
 
                 &__text {
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 13px;
-                    color: @dark_blue;
-                    margin-top: 10px;
+                    color: white;
                     margin-bottom: 10px;
                     line-height: 22px;
+                    background-color: @dark_blue;
+                    padding: 10px 10px;
+                    border-bottom-right-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    display: none;
+                    margin-top: -5px;
+
                 }
 
                 &-button {
@@ -316,3 +353,10 @@
 }
 
 
+
+.scrolldown {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

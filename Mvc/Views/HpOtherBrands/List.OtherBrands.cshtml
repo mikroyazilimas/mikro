@@ -8,23 +8,26 @@
     @foreach (var item in Model.Items)
     {
         <div class="page-section-products-item">
-            <div class="page-section-products-item-show products-image-mikrox">
-                <div class="page-section-products-item-show-back">
-                    <div class="page-section-products-item-show-content">
-                        <div class="page-section-products-item-show__logo">
-                            @foreach (var photo in item.Fields.Logo)
-                            {
-                                <img src="@photo.Fields.MediaUrl" alt="" />
-                            }
-                        </div>
-                        <div class="page-section-products-item-show__hr"></div>
-                        <div class="page-section-products-item-show-hide">
-                            <p class="page-section-products-item-show-hide__text">@item.Fields.Content</p>
-                            <a href="@item.Fields.ButtonUrl" class="page-section-products-show-hide__button">Detay<i class="fas fa-arrow-right"></i></a>
+            @foreach (var photo in item.Fields.BackgroundImage)
+            {
+                <div class="page-section-products-item-show" style="background-image: url('@photo.Fields.MediaUrl')">
+                    <div class="page-section-products-item-show-back">
+                        <div class="page-section-products-item-show-content">
+                            <div class="page-section-products-item-show__logo">
+                                @foreach (var logo in item.Fields.Logo)
+                                {
+                                    <img src="@logo.Fields.MediaUrl" alt="" />
+                                }
+                            </div>
+                            <div class="page-section-products-item-show__hr"></div>
+                            <div class="page-section-products-item-show-hide">
+                                <p class="page-section-products-item-show-hide__text">@item.Fields.Content</p>
+                                <a href="@item.Fields.ButtonUrl" class="page-section-products-show-hide__button">Detay<i class="fas fa-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            }
         </div>
     }
 

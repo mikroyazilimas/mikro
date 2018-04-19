@@ -1198,6 +1198,12 @@
                                 width: 50%;
                                 display: flex;
                                 flex-direction: column;
+                                >select{
+                                    height: 35px;
+                                    >option{
+                                        color: black;
+                                    }
+                                }
                                 @media @responsive{
                                     width: 100%;
                                     align-items: center;
@@ -1215,7 +1221,7 @@
                                 display: flex;
                             }
 
-                            input, textarea {
+                            input, textarea, select {
                                 height: 35px;
                                 width: 90%;
                                 margin-bottom: 5px;
@@ -1268,6 +1274,7 @@
                                 color: @dark_blue;
                                 margin-bottom: 0;
                                 height: 100%;
+                                width: 100%;
                             }
                             a {
                                 height: 40px;
@@ -1504,4 +1511,5 @@
 
 .hp_btn{
     font-size: 30px;
+    cursor: pointer;
 }

@@ -21,17 +21,23 @@
                     @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyad*" })
                 </label>
                 <label for="">
-                    @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", placeholder = "Email*" })
+                    @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", placeholder = "Email *" })
                 </label>
                 <label for="">
-                    @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", required = "required", placeholder = "Telefon Numaranız*" })
+                    @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", pattern = "/d*", required = "required", placeholder = "Telefon Numaranız*" })
                 </label>
             </div>
             <div class="page-section-contact-container-area-left-form-textbox-form2">
-                <label for="">
-                    @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Şirketinizin ismi*" })
-                </label>
-                @Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp", required = "required", placeholder = "Mesaj*" })
+               
+                    @* @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Şirketinizin ismi*" })*@
+                <select>
+                    <option>Bilgi talep ediyorum.</option>
+                    <option>Öneri / Şikayetim var.</option>
+                    <option>İş ortağınız olmak istiyorum</option>
+                    <option>Teşekkür etmek istiyorum</option>
+                </select>
+                
+                @Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp", placeholder = "Mesaj" })
                 <div class="page-section-contact-container-area-left-form-button">
                     @*<a href="#" title="Gönder" class="page-section-contact-area-left-form-button__send">Gönder</a>*@
                     <input class="hp_btn"type="submit" name="SaveButton" value="Gönder" />

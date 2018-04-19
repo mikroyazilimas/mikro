@@ -6066,6 +6066,21 @@ $(function() {
     });
 
 
+    function handleEnter(e) {
+            if (e.which == 13) {
+                // enter pressed
+                var searchKeyWord = $(".page-header-tools__search > input").val();
+                window.location.href = "arama?indexCatalogue=arama&wordsMode=0&searchQuery=" + searchKeyWord;
+            }
+        }
+
+        
+        $(".page-header-tools__search > input").keypress(handleEnter);
+
+
+    // arama?indexCatalogue=arama&wordsMode=0&searchQuery=mikroyazilim
+
+
    // stickySidebar('.sticky-one', '.sticky-stopper-one')
    stickySidebar('.sticky-two', '.sticky-stopper-two')
    stickySidebar('.sticky-three', '.sticky-stopper-three')

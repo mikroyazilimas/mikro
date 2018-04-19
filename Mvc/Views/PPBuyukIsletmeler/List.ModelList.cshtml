@@ -2,27 +2,64 @@
 
 @using Telerik.Sitefinity.Frontend.Mvc.Helpers;
 
+@{
+    var pField = Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields;
+}
+
 <div class="detail-product">
     <div class="detail-product-content">
-        <!--<div class="detail-product-content__img">
-        <img src="/Frontend/dist/product-detail-content/product-img.png" alt="">
-    </div>-->
+
+        @if (pField.MainPhoto != null)
+        {
+            foreach (var pht in pField.MainPhoto)
+            {
+                <div class="detail-product-content__img">
+                    <img src="@pht.Fields.MediaUrl" alt="">
+                </div>
+            }
+
+        }
+
         <div class="detail-product-content-other">
             <div class="detail-product-content-other__title">
-                <span>@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.Title</span>
+                <span>@pField.Title</span>
             </div>
             <div class="detail-product-content-other__text">
+
+                @if (pField.ProductProperties != null)
+                {
+                    foreach (var pItem in pField.ProductProperties)
+                    {
+                        <div>
+                            <span>@pItem.Fields.PropertyName</span>
+                            <p>@pItem.Fields.PropertyDetail</p>
+                        </div>
+                    }
+                }
+
                 <p>
-                    @Html.Raw(Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.Detail)
+                    @Html.Raw(pField.Detail)
                 </p>
             </div>
             <div class="products-container-content-left-button product-detail-content-buttons">
-                <a href="#" title="Ücretsiz Demo" class="products-container-content-left-button__demo">Ücretsiz Demo <span><i class="fas fa-arrow-right"></i></span></a>
-                <a href="#" title="Fiyat ve Nasıl Satın Alabilirim" class="products-container-content-left-button__price">Fiyat ve Nasıl Satın Alabilirim <span><i class="fas fa-arrow-right"></i></span></a>
+                <a href="#" title="demo" class="products-container-content-left-button__demo">Ücretsiz Demo <span><i class="fas fa-arrow-right"></i></span></a>
+                <a href="#" title="Fiyat ve Nasıl Satın Alabilirim" class="products-container-content-left-button__price">Fiyat ve Nasıl Satın Alabilirim <span><i class="fas fa-arrow-right"></i></span></a></a>
             </div>
         </div>
     </div>
+
+    @if (pField.ChartPhoto != null)
+    {
+        foreach (var photo in pField.ChartPhoto)
+        {
+            <div class="">
+                <img src="@photo.Fields.MediaUrl" alt="">
+            </div>
+        }
+    }
+
 </div>
+
 <div class="management-services modules-owl-carousel owl-carousel">
 
     @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))

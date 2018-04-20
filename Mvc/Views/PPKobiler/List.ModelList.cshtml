@@ -21,22 +21,8 @@
         }
 
         <div class="detail-product-content-other">
-            <div class="detail-product-content-other__title">
-                <span>@pField.Title</span>
-            </div>
+            
             <div class="detail-product-content-other__text">
-
-                @if (pField.ProductProperties != null)
-                {
-                    foreach (var pItem in pField.ProductProperties)
-                    {
-                        <div>
-                            <span>@pItem.Fields.PropertyName</span>
-                            <p>@pItem.Fields.PropertyDetail</p>
-                        </div>
-                    }
-                }
-
                 <p>
                     @Html.Raw(pField.Detail)
                 </p>
@@ -47,19 +33,43 @@
             </div>
         </div>
     </div>
-
-    @if (pField.ChartPhoto != null)
-    {
-        foreach (var photo in pField.ChartPhoto)
-        {
-            <div class="">
-                <img src="@photo.Fields.MediaUrl" alt="">
-            </div>
-        }
-    }
-
 </div>
 
+<div class="detail-product-description">
+    <div class="detail-product-description-left">
+        @if (pField.ProductProperties != null)
+        {
+            foreach (var pItem in pField.ProductProperties)
+            {
+                <div class="products-container-content-right-item">
+                    <div class="products-container-content-right-item__title">
+
+                        <div>
+                            <span>@pItem.Fields.PropertyName</span>
+
+                        </div>
+
+                    </div>
+                    <div class="products-container-content-right-item__text">
+                        <p>@pItem.Fields.PropertyDetail</p>
+                    </div>
+                </div>
+            }
+        }
+
+    </div>
+    <div class="detail-product-description-right">
+        @if (pField.ChartPhoto != null)
+        {
+            foreach (var photo in pField.ChartPhoto)
+            {
+                <div class="detail-product-description-right-content">
+                    <img src="@photo.Fields.MediaUrl" alt="">
+                </div>
+            }
+        }
+    </div>
+</div>
 
 <div class="management-services modules-owl-carousel owl-carousel">
 
@@ -84,7 +94,7 @@
         </div>
     }
 </div>
-<div class="numbers">
+<!--<div class="numbers">
     <div class="numbers-contents">
         <div class="numbers-contents-item">
             <div class="numbers-contents-item__img">
@@ -126,7 +136,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <div class="story-products-wizard">
     <div class="story-products-wizard-left">
         <div class="story-products-wizard-left-content">

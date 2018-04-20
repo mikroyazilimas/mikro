@@ -86,7 +86,7 @@
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">Telefon</label>
-                            @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", required = "required" })
+                            @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", pattern = ".{11,11}", maxlength = "11", minlenght = "11", required = "required", @class = "phones" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <div class="wizard-bottom-left-content-form-row-text">

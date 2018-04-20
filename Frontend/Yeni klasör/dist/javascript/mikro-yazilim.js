@@ -5957,7 +5957,14 @@ $(function() {
     // $(window).on('scroll', doAnimations);
     // $(window).trigger('scroll');
 
-    
+    $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop()
+        var divOffset = parseInt($('.animatable').offset().top / 2)
+        if(divOffset <= scrollTop) {
+            $('.animatable').addClass('animated');
+        }
+        console.log(divOffset + ' - ' + scrollTop)
+    });
 
     // $(window).scroll(function() {
     //     doAnimations();
@@ -6049,94 +6056,12 @@ $(function() {
    });
 
 
-    $(".homepage-new-product-item").hover(
-        function() {
-      $(this).animate({
-        marginLeft: 0,
-      }, 500, function() {
-        $(this).find('.homepage-new-product-item-link').fadeIn();
-      });
-      $('.homepage-new-product-right-wrapper > img').attr('src', $(this).data('image'))
-    },function() {
-       $(this).animate({
-        marginLeft: -220,
-      }, 500, function() {
-        $(this).find('.homepage-new-product-item-link').fadeOut();
-      });
-    });
 
-
-    function handleEnter(e) {
-            if (e.which == 13) {
-                // enter pressed
-                var searchKeyWord = $(".page-header-tools__search > input").val();
-                window.location.href = "arama?indexCatalogue=arama&wordsMode=0&searchQuery=" + searchKeyWord;
-            }
-        }
-
-        
-        $(".page-header-tools__search > input").keypress(handleEnter);
-
-
-    // arama?indexCatalogue=arama&wordsMode=0&searchQuery=mikroyazilim
-
-
-   // stickySidebar('.sticky-one', '.sticky-stopper-one')
+   stickySidebar('.sticky-one', '.sticky-stopper-one')
    stickySidebar('.sticky-two', '.sticky-stopper-two')
    stickySidebar('.sticky-three', '.sticky-stopper-three')
    stickySidebar('.sticky-four', '.sticky-stopper-four')
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 99b0d13b0698d76e3dc6267935bef98b929fc5d5
-
-=======
->>>>>>> 6b03d3edd6b990a8b5ce31bd726a5a20344cfed9
-
-   $(function() {
-    $('.phones').on('keydown', function(e){-1!==$.inArray(e.keyCode,[46,8,9,27,13,110,190])||(/65|67|86|88/.test(e.keyCode)&&(e.ctrlKey===true||e.metaKey===true))&&(!0===e.ctrlKey||!0===e.metaKey)||35<=e.keyCode&&40>=e.keyCode||(e.shiftKey||48>e.keyCode||57<e.keyCode)&&(96>e.keyCode||105<e.keyCode)&&e.preventDefault()});
-});
-
- 
-        
-<<<<<<< HEAD
-     
-<<<<<<< HEAD
-=======
-
-
-=======
-$(window).scroll(function() {
-        var scrollTop = $(window).scrollTop()
-        var divOffset = parseInt($('.animatable').offset().top / 2)
-        if(divOffset <= scrollTop) {
-            $('.animatable').addClass('animated');
-        }
-        console.log(divOffset + ' - ' + scrollTop)
-    });
->>>>>>> parent of 5f970d7... frontend geliştirm
-
-=======
-$(window).scroll(function() {
-        var scrollTop = $(window).scrollTop()
-        var divOffset = parseInt($('.animatable').offset().top / 2)
-        if(divOffset <= scrollTop) {
-            $('.animatable').addClass('animated');
-        }
-        console.log(divOffset + ' - ' + scrollTop)
-    });
-
-$('.products-container-content-right-item__title').click(function(){
-  $('.products-container-content-right-item__title').removeClass('active');
-  $('.products-container-content-right-item__text').hide();
-  $(this).addClass('active');
-  $(this).next('.products-container-content-right-item__text').fadeIn();
-});
->>>>>>> 6b03d3edd6b990a8b5ce31bd726a5a20344cfed9
-
->>>>>>> 775540bc56c72dbde04777adb3ef855577ba676e
 });
 

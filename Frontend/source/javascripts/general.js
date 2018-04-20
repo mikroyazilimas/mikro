@@ -211,6 +211,8 @@ $(function() {
    stickySidebar('.sticky-four', '.sticky-stopper-four')
 
 
+<<<<<<< HEAD
+
 
 
    $(function() {
@@ -220,7 +222,22 @@ $(function() {
  
         
      
+<<<<<<< HEAD
+=======
 
 
+=======
+$(window).scroll(function() {
+        var scrollTop = $(window).scrollTop()
+        var divOffset = parseInt($('.animatable').offset().top / 2)
+        if(divOffset <= scrollTop) {
+            $('.animatable').addClass('animated');
+        }
+        console.log(divOffset + ' - ' + scrollTop)
+    });
+>>>>>>> parent of 5f970d7... frontend geliştirm
+
+
+>>>>>>> 775540bc56c72dbde04777adb3ef855577ba676e
 });
 

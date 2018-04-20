@@ -6088,6 +6088,10 @@ $(function() {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99b0d13b0698d76e3dc6267935bef98b929fc5d5
 
 =======
 >>>>>>> 6b03d3edd6b990a8b5ce31bd726a5a20344cfed9
@@ -6100,6 +6104,20 @@ $(function() {
         
 <<<<<<< HEAD
      
+<<<<<<< HEAD
+=======
+
+
+=======
+$(window).scroll(function() {
+        var scrollTop = $(window).scrollTop()
+        var divOffset = parseInt($('.animatable').offset().top / 2)
+        if(divOffset <= scrollTop) {
+            $('.animatable').addClass('animated');
+        }
+        console.log(divOffset + ' - ' + scrollTop)
+    });
+>>>>>>> parent of 5f970d7... frontend geliştirm
 
 =======
 $(window).scroll(function() {
@@ -6119,5 +6137,6 @@ $('.products-container-content-right-item__title').click(function(){
 });
 >>>>>>> 6b03d3edd6b990a8b5ce31bd726a5a20344cfed9
 
+>>>>>>> 775540bc56c72dbde04777adb3ef855577ba676e
 });
 

@@ -95,7 +95,7 @@
                                 @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", placeholder = "Email*" })
                             </label>
                             <label for="">
-                                @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", required = "required", placeholder = "Telefon Numaranız*" })
+                                @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", pattern = ".{11,11}", maxlength = "11", required = "required", placeholder = "Telefon Numaranız*", @class="phones"})
                             </label>
                             @*<label for="">
                                     @Html.TextBoxFor(m => m.GlobalPhone, new { Name = "00N0Y00000RC79Z", id = "00N0Y00000RC79Z", required = "required", placeholder = "Yurt Dışı Telefon Numaranız" })

@@ -20,12 +20,21 @@
                 if (i == 1)
                 {
                     <div class="page-section-news-other-left">
-                        <a href="#">
+                        <a href="@item.Fields.NewUrl">
                             <div class="page-section-news-other-left-news">
-                                <img src="/Frontend/source/images/homepage/news1.png" alt="">
+                                @if (item.Fields.Photo != null)
+                                {
+                                    foreach (var pht in item.Fields.Photo)
+                                    {
+                                            <img src="@pht.Fields.MediaUrl" alt="">                                        
+                                    }
+                                }
                                 <div class="page-section-news-other-left-news-content">
                                     <div class="page-section-news-other-left-news-content__date">
-                                        <span>04/10/2018</span>
+                                        @if (item.Fields.Date != null && (DateTime?)item.Fields.Date != null)
+                                        {
+                                            <span>@(((DateTime?)item.Fields.Date).Value.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("tr-TR")))</span>
+                                        }
                                     </div>
                                     <div class="page-section-news-other-left-news-content__title">
                                         <span>@item.Fields.Title</span>
@@ -46,7 +55,7 @@
                     if (i == 2)
                     {
                         @Html.Raw("<div class='page-section-news-other-middle'>")
-                        <a href="#" class="page-section-news-other-middle-news">
+                        <a href="@item.Fields.NewUrl" class="page-section-news-other-middle-news">
                             <div class="page-section-news-other-middle-news-content">
                                 <div class="page-section-news-other-middle-news-content__title">
                                     <span>@item.Fields.Title</span>
@@ -62,7 +71,7 @@
                     }
                     if (i == 3)
                     {
-                        <a href="#" class="page-section-news-other-middle-news">
+                        <a href="@item.Fields.NewUrl" class="page-section-news-other-middle-news">
                             <div class="page-section-news-other-middle-news-content">
                                 <div class="page-section-news-other-middle-news-content__title">
                                     <span>@item.Fields.Title</span>
@@ -85,12 +94,21 @@
                 {
 
                     <div class="page-section-news-other-right">
-                        <a href="#">
+                        <a href="@item.Fields.NewUrl">
                             <div class="page-section-news-other-right-news">
-                                <img src="/Frontend/source/images/homepage/news2.png" alt="">
+                                @if (item.Fields.Photo != null)
+                                {
+                                    foreach (var pht in item.Fields.Photo)
+                                    {
+                                        <img src="@pht.Fields.MediaUrl" alt="">
+                                    }
+                                }
                                 <div class="page-section-news-other-right-news-content">
                                     <div class="page-section-news-other-right-news-content__date">
-                                        <span>04/10/2018</span>
+                                        @if (item.Fields.Date != null && (DateTime?)item.Fields.Date != null)
+                                        {
+                                            <span>@(((DateTime?)item.Fields.Date).Value.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("tr-TR")))</span>
+                                        }
                                     </div>
                                     <div class="page-section-news-other-right-news-content__title">
                                         <span>@item.Fields.Title</span>

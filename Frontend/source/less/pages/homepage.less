@@ -1507,6 +1507,10 @@
 
 .hp_btn{
     font-size: 30px;
+<<<<<<< HEAD
+=======
+    cursor: pointer;
+>>>>>>> 6b03d3edd6b990a8b5ce31bd726a5a20344cfed9
 }
 
 
@@ -1518,6 +1522,12 @@
         width: 100%;
         height: 500px;
         background-color: white;
+
+        @media @responsive{
+           
+            flex-direction: column;
+        }
+
     }
 
     &-left-wrapper {
@@ -1526,24 +1536,45 @@
         justify-content: center;
         width: 50%;
         height: 100%;
-        border: 1px solid red;
         overflow: hidden;
+         @media @responsive{
+           
+           width: 100%;
+           height: 500px;
+        }
+
     }
 
     &-right-wrapper {
         display: flex;
         width: 50%;
         height: 100%;
-        border: 1px solid red;
+        justify-content: center;
+        align-items: center;
+
+        > img {
+            height: 60%;
+        }
     }
 
     &-item {
         position: relative;
         display: flex;
-        width: 600px;
-        border: 1px solid red;
+        // width: ~"calc(100% - 50px)";
         height: 100px;
         margin: 20px 0px 20px -220px;
+        cursor: pointer;
+
+        > img {
+            height: 100%;
+        }
+
+         @media @responsive{
+           
+           > img {
+                width: 100%;
+           }
+        }
         
         &-link {
             display: none;
@@ -1551,11 +1582,10 @@
             top: 0px;
             bottom: 0px;
             margin: auto;
-            left: 200px;
-            border: 1px solid red;
+            left: 240px;
             width: 100px;
             height: 30px;
-            padding: 7px 0px;
+            padding: 9px 0px 5px 0px;
             justify-content: center;
             align-items: center;
             text-align: center;

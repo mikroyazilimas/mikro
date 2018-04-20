@@ -22,7 +22,13 @@
                     <div class="page-section-news-other-left">
                         <a href="#">
                             <div class="page-section-news-other-left-news">
-                                <img src="/Frontend/source/images/homepage/news1.png" alt="">
+                                @if (item.Fields.Photo != null)
+                                {
+                                    foreach (var pht in item.Fields.Photo)
+                                    {
+                                            <img src="@pht.Fields.MediaUrl" alt="">                                        
+                                    }
+                                }
                                 <div class="page-section-news-other-left-news-content">
                                     <div class="page-section-news-other-left-news-content__date">
                                         <span>04/10/2018</span>
@@ -87,7 +93,13 @@
                     <div class="page-section-news-other-right">
                         <a href="#">
                             <div class="page-section-news-other-right-news">
-                                <img src="/Frontend/source/images/homepage/news2.png" alt="">
+                                @if (item.Fields.Photo != null)
+                                {
+                                    foreach (var pht in item.Fields.Photo)
+                                    {
+                                        <img src="@pht.Fields.MediaUrl" alt="">
+                                    }
+                                }
                                 <div class="page-section-news-other-right-news-content">
                                     <div class="page-section-news-other-right-news-content__date">
                                         <span>04/10/2018</span>

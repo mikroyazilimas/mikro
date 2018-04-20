@@ -6087,28 +6087,12 @@ $(function() {
    stickySidebar('.sticky-four', '.sticky-stopper-four')
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 99b0d13b0698d76e3dc6267935bef98b929fc5d5
-
-=======
->>>>>>> 6b03d3edd6b990a8b5ce31bd726a5a20344cfed9
-
    $(function() {
     $('.phones').on('keydown', function(e){-1!==$.inArray(e.keyCode,[46,8,9,27,13,110,190])||(/65|67|86|88/.test(e.keyCode)&&(e.ctrlKey===true||e.metaKey===true))&&(!0===e.ctrlKey||!0===e.metaKey)||35<=e.keyCode&&40>=e.keyCode||(e.shiftKey||48>e.keyCode||57<e.keyCode)&&(96>e.keyCode||105<e.keyCode)&&e.preventDefault()});
 });
 
  
-        
-<<<<<<< HEAD
-     
-<<<<<<< HEAD
-=======
 
-
-=======
 $(window).scroll(function() {
         var scrollTop = $(window).scrollTop()
         var divOffset = parseInt($('.animatable').offset().top / 2)
@@ -6117,9 +6101,7 @@ $(window).scroll(function() {
         }
         console.log(divOffset + ' - ' + scrollTop)
     });
->>>>>>> parent of 5f970d7... frontend geliştirm
 
-=======
 $(window).scroll(function() {
         var scrollTop = $(window).scrollTop()
         var divOffset = parseInt($('.animatable').offset().top / 2)
@@ -6135,8 +6117,6 @@ $('.products-container-content-right-item__title').click(function(){
   $(this).addClass('active');
   $(this).next('.products-container-content-right-item__text').fadeIn();
 });
->>>>>>> 6b03d3edd6b990a8b5ce31bd726a5a20344cfed9
 
->>>>>>> 775540bc56c72dbde04777adb3ef855577ba676e
 });
 

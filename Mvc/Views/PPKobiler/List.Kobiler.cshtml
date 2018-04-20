@@ -19,7 +19,9 @@
     </div>
     <div class="products-container-content-right">
         
-        <div class="shortText">@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText</div>
+                <div class="shortText">
+            @Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText)
+        </div>
 
         @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {

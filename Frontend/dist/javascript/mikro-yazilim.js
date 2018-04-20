@@ -6082,9 +6082,9 @@ $(function() {
 
 
    // stickySidebar('.sticky-one', '.sticky-stopper-one')
-   stickySidebar('.sticky-two', '.sticky-stopper-two')
-   stickySidebar('.sticky-three', '.sticky-stopper-three')
-   stickySidebar('.sticky-four', '.sticky-stopper-four')
+   // stickySidebar('.sticky-two', '.sticky-stopper-two')
+   // stickySidebar('.sticky-three', '.sticky-stopper-three')
+   // stickySidebar('.sticky-four', '.sticky-stopper-four')
 
 
    $(function() {

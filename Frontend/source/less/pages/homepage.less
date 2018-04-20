@@ -1507,7 +1507,10 @@
 
 .hp_btn{
     font-size: 30px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9b723abbfe44807a5c53c070e7220b1ba612cd1e
     cursor: pointer;
 }
 
@@ -1523,7 +1526,7 @@
         background-color: white;
 
         @media @responsive{
-           
+           height: auto !important;
             flex-direction: column;
         }
 
@@ -1539,7 +1542,6 @@
          @media @responsive{
            
            width: 100%;
-           height: 500px;
         }
 
     }
@@ -1554,6 +1556,19 @@
         > img {
             height: 60%;
         }
+
+        @media @responsive{
+           
+          height: auto !important;
+          width: 100%;
+          padding: 50px 20px;
+
+          > img {
+            height: auto !important;
+            width: 100%;
+          }
+        }
+
     }
 
     &-item {
@@ -1569,10 +1584,9 @@
         }
 
          @media @responsive{
-           
-           > img {
-                width: 100%;
-           }
+           height: auto !important;
+           width: 100%;
+          
         }
         
         &-link {

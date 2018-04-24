@@ -6,7 +6,9 @@
     }
 </style>
 
-<p>@Html.Raw(Model.Item.Fields.Content)</p>
+<div class="sfContentBlock">
+<p>@Html.Raw(Model.Item.Fields.Detail)</p>
+</div>
 
 @if (Model.Item.Fields.Photos != null)
 {

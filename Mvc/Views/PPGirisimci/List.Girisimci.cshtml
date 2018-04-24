@@ -8,10 +8,10 @@
             <div class="products-container-content-left__img">   
                 <a href="/urunler-ve-hizmetler/mikro-run/"><img src="/Frontend/dist/images/products/mikro-run.svg" alt=""></a>                 
             </div> 
-            <div class="products-container-content-left__text">
+            <a href="/urunler-ve-hizmetler/mikro-run/" class="products-container-content-left__text">
                 <span>Girişimciler İçin</span>
                 <span>Mikro Run</span>
-            </div>
+            </a>
             <div class="products-container-content-left-button">
                 <a href="/demo-talep" title="demo" class="products-container-content-left-button__demo">Ücretsiz Demo <span><i class="fas fa-arrow-right"></i></span></a>
                 <a href="#" title="Fiyat ve Nasıl Satın Alabilirim" class="products-container-content-left-button__price" >Fiyat ve Nasıl Satın Alabilirim
@@ -21,7 +21,9 @@
     </div>
     <div class="products-container-content-right">
 
-        <div class="shortText">@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText</div>
+        <div class="shortText">
+            @Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText)
+        </div>
 
         @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
@@ -30,7 +32,7 @@
                     <span>@item.Fields.Title</span>
                 </div>
                 <div class="products-container-content-right-item__text">
-                    @Html.Raw(item.Fields.Detail)
+                    @Html.Raw(item.Fields.ShortText)
                 </div>
             </div>
         }

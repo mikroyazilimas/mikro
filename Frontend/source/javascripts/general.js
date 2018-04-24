@@ -44,6 +44,7 @@ var stickySidebar = function(element, stopper){
 
   }
 }
+//Mask_Input
 
 $(function() {
     $('[data-number-animate]').each(
@@ -104,10 +105,25 @@ $(function() {
         loop: false,
         margin: 0,
         nav: true,
-        items: 5,
+        
+        responsive:{
+            960:{
+                items:5,
+                nav:true
+            },
+            768:{
+                items:3,
+                nav:false
+            },
+            320:{
+                items:1,
+                nav:true
+            }
+        }
+    
     });
 
-
+   
     //$('.wizard-form-row__select').select2();
     //$('.wizard-bottom-left-content-form-row__select').select2();
 
@@ -138,7 +154,7 @@ $(function() {
             $('.page-mega-navigation-content-section__subtitle').hide();
             $(this).nextAll('.page-mega-navigation-content-section__subtitle').hide();
         })
-
+        
     //Contact-telefon son 2 hane
     $('.phone-hide').click(function(){
         $('.phone-hide').text("+90 (850) 225 10 10 (Çağrı Merkezi)");
@@ -172,22 +188,27 @@ $(function() {
     $('.wizard-bottom-left-content-form-row-text__hide').fadeToggle();
    });
 
+   $(".homepage-new-product-item").hover( function (){
+    if ($(window).width() > 768) {
+        $(this).hover(
+            function() {
+          $(this).animate({
+            marginLeft: 0,
+          }, 500, function() {
+            $(this).find('.homepage-new-product-item-link').fadeIn();
+          });
+          $('.homepage-new-product-right-wrapper > img').attr('src', $(this).data('image'))
+        },function() {
+           $(this).animate({
+            marginLeft: -220,
+          }, 500, function() {
+            $(this).find('.homepage-new-product-item-link').fadeOut();
+          });
+        });
+    }
+});
 
-    $(".homepage-new-product-item").hover(
-        function() {
-      $(this).animate({
-        marginLeft: 0,
-      }, 500, function() {
-        $(this).find('.homepage-new-product-item-link').fadeIn();
-      });
-      $('.homepage-new-product-right-wrapper > img').attr('src', $(this).data('image'))
-    },function() {
-       $(this).animate({
-        marginLeft: -220,
-      }, 500, function() {
-        $(this).find('.homepage-new-product-item-link').fadeOut();
-      });
-    });
+    
 
 
     function handleEnter(e) {
@@ -211,9 +232,9 @@ $(function() {
    // stickySidebar('.sticky-four', '.sticky-stopper-four')
 
 
-   $(function() {
+   /*$(function() {
     $('.phones').on('keydown', function(e){-1!==$.inArray(e.keyCode,[46,8,9,27,13,110,190])||(/65|67|86|88/.test(e.keyCode)&&(e.ctrlKey===true||e.metaKey===true))&&(!0===e.ctrlKey||!0===e.metaKey)||35<=e.keyCode&&40>=e.keyCode||(e.shiftKey||48>e.keyCode||57<e.keyCode)&&(96>e.keyCode||105<e.keyCode)&&e.preventDefault()});
-});
+});*/
 
  
 
@@ -235,12 +256,24 @@ $(window).scroll(function() {
         console.log(divOffset + ' - ' + scrollTop)
     });
 
-$('.products-container-content-right-item__title').click(function(){
-  $('.products-container-content-right-item__title').removeClass('active');
-  $('.products-container-content-right-item__text').hide();
-  $(this).addClass('active');
-  $(this).next('.products-container-content-right-item__text').fadeIn();
-});
+//$('.page-mega-navigation-content-section__grouptitle').click(function(){
+  
+ // $(this).nextAll('.page-mega-navigation-content-section__maintitle').toggle('slow');
+//});
 
+
+
+    $(".page-mega-navigation-content-section__grouptitle").click(function(){
+        //this.parent(".page-mega-navigation-content-section__maintitle").addClass("show");
+        $('.page-mega-navigation-content-section').find('a.page-mega-navigation-content-section__maintitle').hide(750);
+        $(this).parent().find('a.page-mega-navigation-content-section__maintitle').show(750);
+        //$(".page-mega-navigation-content-section__maintitle").removeClass("show");
+        //$(this).nextAll('.page-mega-navigation-content-section__maintitle').addClass("show");
+    
+    });
+   
+   
+
+   
 });
 

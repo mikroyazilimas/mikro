@@ -64,6 +64,7 @@
             flex-direction: column;
             @media @responsive {
                 flex-direction: column;
+                width: 355px;
             }
 
             input, select {
@@ -74,12 +75,17 @@
                 margin-top: 5px;
                 width: 100%;
                 padding: 0px 10px;
-                
+                @media @responsive{
+                    width: 355px;
+                }
             }
 
             select{
                 width: 525px!important;
                 font-size: 14px;
+                @media @responsive{
+                    width: 355px!important;
+                }
             }
             
             label{
@@ -89,6 +95,7 @@
                 @media @responsive{
                     font-size: 15px;
                     margin-right: 0px;
+                    width: 100%;
                 }
             }
             
@@ -272,12 +279,13 @@
             justify-content: center;
             @media @responsive{
                 width: 100%;
+                height: 120px;
             }
             &>img{
                 width: 50%;
                 height: auto;
                 @media @responsive{
-                    width: 100%;
+                    width: 30%;
                     height: 100px;
                 }
             }

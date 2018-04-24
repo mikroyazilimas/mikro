@@ -66,6 +66,7 @@
             }
             img {
                 background-size: auto;
+                width: 200px;
             }
 
             &__text {
@@ -116,6 +117,10 @@
                     color: white;
                     text-decoration: none;
                     margin: 0px 5px;
+                    
+                    @media @responsive{
+                        margin-bottom: 10px;
+                    }
                     &>svg{
                         margin-left: 5px;
                     }
@@ -131,7 +136,9 @@
                     width: 160px;
                     @media @responsive{
                         width: 240px;
+                        
                     }
+                    
                     &>span{
                         .wrap("flexbox");
                        transition: all 0.5s;

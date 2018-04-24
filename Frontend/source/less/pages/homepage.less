@@ -1555,13 +1555,13 @@
         height: 100%;
         justify-content: center;
         align-items: center;
-
+        
         > img {
             height: 60%;
         }
 
         @media @responsive{
-           
+        display: none;   
           height: auto !important;
           width: 100%;
           padding: 50px 20px;
@@ -1581,7 +1581,9 @@
         height: 100px;
         margin: 20px 0px 20px -220px;
         cursor: pointer;
-
+        @media @responsive{
+            margin: 20px 0px 20px -90px;
+        }
         > img {
             height: 100%;
         }
@@ -1734,3 +1736,32 @@
             color: #ffffff;
             font-weight: 600;
         }
+
+.responsive-new-product{
+    display: none;
+    @media @responsive{
+        display: inline-block;
+        
+    }
+}
+.homepage-new-product-wrapper{
+    @media @responsive{
+        display: none;
+    }
+}
+
+.homepage-contact-description-text{
+    width: 250px!important;
+    font-size: 11px;
+    height: 30px!important;
+}
+
+.homepage-contact-description-p{
+    height: 80px!important;
+    >p{
+    width: 250px!important;
+    font-size: 10px!important;
+    
+    line-height: 15px!important;
+    }
+}

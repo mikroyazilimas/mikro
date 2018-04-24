@@ -7,22 +7,34 @@
     &-description{
         display: flex;
         margin-top: 30px;
+        @media @responsive{
+            flex-direction: column;
+        }
         &-left{
             width: 70%;
             height: auto;
             padding: 0 30px;
+            @media @responsive{
+                width: 100%;
+            }
         }
         &-right{
             width: 30%;
             height: auto;
             display: flex;
             justify-content: center;
+            @media @responsive{
+                width: 100%;
+            }
             &-content{
                 width: 320px;
                 height: 320px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @media @responsive{
+                    width: 100%;
+                }
             }
             img{
                 height: 100%;

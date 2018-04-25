@@ -65,17 +65,17 @@
                             @Html.HiddenFor(m => m.retURL, new { Value = Const.FormReturnUrl })
 
                             <label for="">
-                                @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Ad*" })
+                                @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*" })
                             </label>
                             <label for="">
-                                @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyad*" })
+                                @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*" })
                             </label>
 
                             @*<label for="">
                                     @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Şirketinizin ismi*" })
                                 </label>*@
                             <label for="">
-                                @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", placeholder = "Email*" })
+                                @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", placeholder = "E-Postanız*" })
                             </label>
                             <label for="">
                                 @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", pattern = ".{11,11}", maxlength = "11", required = "required", placeholder = "Telefon Numaranız*", @class="phones"})
@@ -94,7 +94,7 @@
                                 </label>*@
                         </div>
                         <div class="page-section-demo-request-open-right-form2">
-                            <label for=""> @Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp",  placeholder = "Mesaj" })</label>
+                            <label for=""> @Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp",  placeholder = "Mesajınız" })</label>
 
                             @*<label for=""><textarea name="" id="" cols="30" rows="10" placeholder="Mesajınız"></textarea></label>*@
                         </div>

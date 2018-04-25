@@ -47,6 +47,19 @@
         padding: 50px 20px;
         display: flex;
         border-bottom: 1px solid rgba(0,0,0,0.1);
+        > h2 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #34495e;
+            display: block;
+        }
+    
+        > p {
+            display: block;
+            padding: 10px 0px;
+            font-size: 14px;
+            line-height: 22px;
+        }
         @media @responsive{
             display: flex;
             flex-direction: column;
@@ -243,6 +256,12 @@
             &-item {
                 width: 100%;
                 margin-bottom: 10px;
+                &:nth-child(1)>.products-container-content-right-item__text{
+                    display: block;
+                }
+                &:nth-child(1)>.products-container-content-right-item__title{
+                    color: @dark_blue;
+                }
                 @media @responsive{
                     width: 100%;
                 }
@@ -283,7 +302,7 @@
                     border-bottom-left-radius: 5px;
                     display: none;
                     margin-top: -5px;
-
+                    
                 }
 
                 &-button {

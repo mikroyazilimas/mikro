@@ -1,7 +1,6 @@
 ﻿@model SitefinityWebApp.Mvc.Models.ViewModel.ProductSelectionWizard
 
-@using (@Html.BeginForm("Index", "ProductSelectionWizard", FormMethod.Post))
-{ }
+
 
 <div class="wizard">
     @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" }))
@@ -70,23 +69,23 @@
                     <div class="wizard-bottom-left-content-form">
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">Adınız</label>
-                            @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required" })
+                            @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">Soyadınız</label>
-                            @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required" })
+                            @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">Firmanızın Ünvanı</label>
-                            @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required" })
+                            @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Firmanızın Ünvanı*" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">E-Posta</label>
-                            @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", required = "required" })
+                            @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", required = "required", placeholder="E-Postanız*" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">Telefon</label>
-                            @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", pattern = ".{11,11}", maxlength = "11", minlenght = "11", required = "required", @class = "phones" })
+                            @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", pattern = ".{11,11}", maxlength = "11", minlenght = "11", required = "required", @class = "phones", placeholder = "Telefonunuz" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <div class="wizard-bottom-left-content-form-row-text">
@@ -117,7 +116,7 @@
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="Contract">
-                                @Html.CheckBoxFor(m => m.Contract)
+                                @Html.CheckBoxFor(m => m.Contract, new { required="required" })
                                 Kişisel Veriler Bilgilendirme Metni'ni Kabul Ediyorum
                             </label>
                             

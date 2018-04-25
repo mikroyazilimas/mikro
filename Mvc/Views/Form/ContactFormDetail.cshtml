@@ -17,16 +17,16 @@
             <div class="wizard-bottom-left-content-form">
                 <div class="wizard-bottom-left-content-form-row">
                     <label for="">Adınız</label>
-                    @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Ad*" })
+                    @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*" })
                     
                 </div>
                 <div class="wizard-bottom-left-content-form-row">
                     <label for="">Soyadınız</label>
-                    @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyad*" })
+                    @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*" })
                 </div>
                 <div class="wizard-bottom-left-content-form-row">
-                    <label for="">E-Posta</label>
-                    <input type="text">
+                    <label for="">E-Postanız</label>
+                    @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", placeholder = "E-Postanız*" })
                 </div>
                 <div class="wizard-bottom-left-content-form-row">
                     <label for="">Şirketinizin İsmi</label>
@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <div class="wizard-bottom-left-content-form-row">
-                    <label for="check"><input type="checkbox" id="check">Kişisel Veriler Bilgilendirme Metni'ni kabul ediyorum.</label>
+                    <label for="check"><input type="checkbox" id="check" required="required">Kişisel Veriler Bilgilendirme Metni'ni kabul ediyorum.</label>
                     <input type="submit" name="SaveButton" value="Gönder" />
                     @* <a href="#">Gönder<svg class="svg-inline--fa fa-arrow-right fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg><!-- <i class="fas fa-arrow-right"></i> --></a> *@
                 </div>

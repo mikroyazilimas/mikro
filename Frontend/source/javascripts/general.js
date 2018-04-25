@@ -150,10 +150,10 @@ $(function() {
     });
 
 
-        $('.page-mega-navigation-content-section__maintitle').click(function(){
+        /*$('.page-mega-navigation-content-section__maintitle').click(function(){
             $('.page-mega-navigation-content-section__subtitle').hide();
             $(this).nextAll('.page-mega-navigation-content-section__subtitle').hide();
-        })
+        })*/
         
     //Contact-telefon son 2 hane
     $('.phone-hide').click(function(){
@@ -189,7 +189,7 @@ $(function() {
    });
 
    $(".homepage-new-product-item").hover( function (){
-    if ($(window).width() > 768) {
+    
         $(this).hover(
             function() {
           $(this).animate({
@@ -205,7 +205,6 @@ $(function() {
             $(this).find('.homepage-new-product-item-link').fadeOut();
           });
         });
-    }
 });
 
     
@@ -263,14 +262,14 @@ $(window).scroll(function() {
 
 
 
-    $(".page-mega-navigation-content-section__grouptitle").click(function(){
+  /*  $(".page-mega-navigation-content-section__grouptitle").click(function(){
         //this.parent(".page-mega-navigation-content-section__maintitle").addClass("show");
         $('.page-mega-navigation-content-section').find('a.page-mega-navigation-content-section__maintitle').hide(750);
         $(this).parent().find('a.page-mega-navigation-content-section__maintitle').show(750);
         //$(".page-mega-navigation-content-section__maintitle").removeClass("show");
         //$(this).nextAll('.page-mega-navigation-content-section__maintitle').addClass("show");
     
-    });
+    });*/
    
    
 
@@ -296,6 +295,10 @@ delete a.maskWatchers[this.selector];return this.each(function(){var b=a(this).d
 h("input"),watchDataMask:!1,byPassKeys:[9,16,17,18,36,37,38,39,40,91],translation:{0:{pattern:/\d/},9:{pattern:/\d/,optional:!0},"#":{pattern:/\d/,recursive:!0},A:{pattern:/[a-zA-Z0-9]/},S:{pattern:/[a-zA-Z]/}}};a.jMaskGlobals=a.jMaskGlobals||{};h=a.jMaskGlobals=a.extend(!0,{},h,a.jMaskGlobals);h.dataMask&&a.applyDataMask();setInterval(function(){a.jMaskGlobals.watchDataMask&&a.applyDataMask()},h.watchInterval)},window.jQuery,window.Zepto);
 
 
-$('.phones').mask('(000) 000-0000');
+    
+
+
+    $('.phones').mask('(000) 000 00 00');
+
 });
 

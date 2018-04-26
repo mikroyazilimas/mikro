@@ -58,7 +58,7 @@
                 {
                     <div class="form">
                         <div class="page-section-demo-request-open-right-form1">
-
+                            <input type="hidden" id="00N0Y00000QeNmD" name="00N0Y00000QeNmD" value="Run">
                             <input type="hidden" name="oid" value="00D0Y0000035HER">
                             <input type="hidden" id="00N0Y00000QeNcc" name="00N0Y00000QeNcc" value="Demo Request">
 
@@ -72,26 +72,26 @@
                             </label>
 
                             @*<label for="">
-                                    @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Şirketinizin ismi*" })
-                                </label>*@
+            @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Şirketinizin ismi*" })
+        </label>*@
                             <label for="">
                                 @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", placeholder = "E-Postanız*" })
                             </label>
                             <label for="">
-                                @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", required = "required", placeholder = "Telefon Numaranız*", @class="phones"})
+                                @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", required = "required", placeholder = "Telefon Numaranız*", @class = "phones" })
                             </label>
                             @*<label for="">
-                                    @Html.TextBoxFor(m => m.GlobalPhone, new { Name = "00N0Y00000RC79Z", id = "00N0Y00000RC79Z", required = "required", placeholder = "Yurt Dışı Telefon Numaranız" })
-                                </label>*@
+            @Html.TextBoxFor(m => m.GlobalPhone, new { Name = "00N0Y00000RC79Z", id = "00N0Y00000RC79Z", required = "required", placeholder = "Yurt Dışı Telefon Numaranız" })
+        </label>*@
                             @*<label for="">
-                                    @Html.EditorFor(m => m.City)
-                                </label>
-                                <label for="">
-                                    @Html.EditorFor(m => m.County)
-                                </label>
-                                <label for="">
-                                    @Html.EditorFor(m => m.NumberOfEmployees)
-                                </label>*@
+            @Html.EditorFor(m => m.City)
+        </label>
+        <label for="">
+            @Html.EditorFor(m => m.County)
+        </label>
+        <label for="">
+            @Html.EditorFor(m => m.NumberOfEmployees)
+        </label>*@
                         </div>
                         
                         <div class="page-section-demo-request-open-right-form2">

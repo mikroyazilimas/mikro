@@ -6042,7 +6042,10 @@ $(function() {
         $('.page-section-business-left__button__detail').attr('href', $(this).data('link'));
         $(this).addClass('products-select-tabs');
     });
-
+    $('.products-container-content-right-item').click(function(){
+         $(this).find('.products-container-content-right-item__text').slideToggle('slow');
+         $(this).find('.products-container-content-right-item__title').toggleClass('products-detail-select');
+    });
 
     //Demo-request-open
    $('.page-section-demo-request-button__demo').click(function(){
@@ -6174,7 +6177,7 @@ h("input"),watchDataMask:!1,byPassKeys:[9,16,17,18,36,37,38,39,40,91],translatio
     
 
 
-    $('.phones').mask('(000) 000 00 00');
-
+    $('.phones').mask("(999)9999999");
+    
 });
 

@@ -37,6 +37,8 @@ namespace SitefinityWebApp.Library
                         formModel = new FormModel()
                         {
                             InputName = (Lstring)(cItem.GetValue("InputName")),
+                            InputClass = (Lstring)(cItem.GetValue("InputClass")),
+                            InputNotVisible = cItem.GetValue("InputNotVisible") != null ? (bool)cItem.GetValue("InputNotVisible") : false,
                             InputValue = (Lstring)(cItem.GetValue("InputValue")),
                             LabelValue = (Lstring)(cItem.GetValue("LabelValue")),
                             LabelValueShort = (Lstring)(cItem.GetValue("LabelValueShort")),
@@ -59,6 +61,8 @@ namespace SitefinityWebApp.Library
                                     {
                                         Text = (Lstring)(videoContent.GetValue("DropDownText")),
                                         Value = (Lstring)(videoContent.GetValue("DropDownValue")),
+                                        FieldValue = (Lstring)(videoContent.GetValue("OptionFieldValue")),
+                                        
                                     };
                                     formModelDropDowns.Add(formModelDropDown);
                                 }

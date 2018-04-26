@@ -15,11 +15,14 @@ namespace SitefinityWebApp.Library.Model
         public bool IsRequired { get; set; }
         public InputType InputType { get; set; }
         public List<FormModelDropDown> DropDownItem { get; set; }
+        public string InputClass { get; set; }
+        public bool InputNotVisible { get; set; }
     }
 
     public class FormModelDropDown
     {
         public string Text { get; set; }
         public string Value { get; set; }
+        public string FieldValue { get; set; }
     }
 }

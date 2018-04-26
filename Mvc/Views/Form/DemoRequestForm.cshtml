@@ -93,6 +93,7 @@
                                     @Html.EditorFor(m => m.NumberOfEmployees)
                                 </label>*@
                         </div>
+                        
                         <div class="page-section-demo-request-open-right-form2">
                             <label for=""> @Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp",  placeholder = "Mesajınız" })</label>
 
@@ -100,9 +101,7 @@
                         </div>
                         <div class="page-section-demo-request-open-right-checkbox">
                             @*<label for="check"><input type="checkbox" id="check"><span>6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilgilendirmeyi okudum, kabul ediyorum.</span></label>*@
-
-                            <label for="Contract">@Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract", required = "required" })<span>6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilgilendirmeyi okudum, kabul ediyorum.</span></label>
-
+                            <label for="Contract">@Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract", required = "required" })<span id="Contract">6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilgilendirmeyi okudum, kabul ediyorum.</span></label>
                         </div>
                         <div class="page-section-demo-request-open-right-button">
                             @*<a href="#">Gönder<i class="fas fa-arrow-right"></i></a>*@

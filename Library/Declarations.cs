@@ -15,6 +15,7 @@ public struct Names
         public const string ProductSelectionWizard = "~/Mvc/Views/Form/ProductSelectionWizard.cshtml";
         public const string ContactForm = "~/Mvc/Views/Form/ContactForm.cshtml";
         public const string ContactFormDetail = "~/Mvc/Views/Form/ContactFormDetail.cshtml";
+        public const string ProductProposal = "~/Mvc/Views/General/ProductProposal.cshtml";
     }
 
     public struct Pages

@@ -8,13 +8,14 @@
     align-content: space-around;
     z-index: 10;
     transition: height 0.5s;
-    overflow: scroll;
+    
     position: fixed;
     top: 85px;
     z-index: 1001;
     @media @responsive{
         height: 0px;
         display: block;
+        overflow: scroll;
     }
     &.active {
         height: ~"calc(100vh - 85px)";

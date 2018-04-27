@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SitefinityWebApp.Mvc.Models.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,6 +15,16 @@ namespace SitefinityWebApp.Mvc.Controllers.General
         // GET: ProductProposal
         public ActionResult Index()
         {
+            
+            if (!String.IsNullOrEmpty(Request.QueryString["product"]))
+            {
+                ProductProposal productProposal = new ProductProposal()
+                {
+                    Product = Request.QueryString["product"]
+                };
+                return View(Names.PagesView.ProductProposal,productProposal);
+            }
+
             return View(Names.PagesView.ProductProposal);
         }
     }

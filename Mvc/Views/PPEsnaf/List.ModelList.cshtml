@@ -48,7 +48,7 @@
         </div>
     </div>
 
-    
+
 
 </div>
 
@@ -89,30 +89,31 @@
 
     </div>
 </div>
+@*
+    <div class="management-services modules-owl-carousel owl-carousel">
 
-<div class="management-services modules-owl-carousel owl-carousel">
-
-    @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
-    {
-        <div class="management-services-item">
-            <a href="@item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-musavir/")">
-                <div class="management-services-item__img">
-                    @if (item.Fields.IconImage != null)
-                    {
-                        foreach (var photo in item.Fields.IconImage)
+        @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
+        {
+            <div class="management-services-item">
+                <a href="@item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-musavir/")">
+                    <div class="management-services-item__img">
+                        @if (item.Fields.IconImage != null)
                         {
-                            <img src="@photo.Fields.MediaUrl" alt="">
+                            foreach (var photo in item.Fields.IconImage)
+                            {
+                                <img src="@photo.Fields.MediaUrl" alt="">
+                            }
                         }
-                    }
 
-                </div>
-                <div class="management-services-item__title">
-                    <span>@item.Fields.Title</span>
-                </div>
-            </a>
-        </div>
-    }
-</div>
+                    </div>
+                    <div class="management-services-item__title">
+                        <span>@item.Fields.Title</span>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+*@
 <!--<div class="numbers">
     <div class="numbers-contents">
         <div class="numbers-contents-item">

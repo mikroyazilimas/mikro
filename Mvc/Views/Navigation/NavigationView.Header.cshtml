@@ -61,7 +61,10 @@ if (parentPageUrl != "")
                 </div>
 
                 <div class="page-header-navigation-item__menu">
-                    <span class="mega-navigation">Menü<i class="fas fa-bars"></i></span>
+                    <a href="#">
+                        Menü <div class="open"><i class="fas fa-bars"></i></div>
+                        <div class="close"><i class="fas fa-times"></i></div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -84,6 +87,10 @@ if (parentPageUrl != "")
             <a href="#" class="page-mega-navigation-content-section__grouptitle"><span>E-Dönüşüm</span></a>
             @GetMegaMenu("e-donusum")
         </div>
+        <div class="page-mega-navigation-content-section">
+            <a href="/iletisim" class="page-mega-navigation-content-section__grouptitle"><span>İletişim</span></a>
+            @GetMegaMenu("iletisim")
+        </div>
         @*<div class="page-mega-navigation-content-section">
             <a href="#" class="page-mega-navigation-content-section__grouptitle"><span>İş Ortakları</span></a>
             @GetMegaMenu("is-ortaklari")
@@ -94,12 +101,19 @@ if (parentPageUrl != "")
         </div>*@
     </div>
     <div class="page-mega-navigation-social">
-        <a href="http://forum.mikro.com.tr" target="_blank">Forum Mikro</a>
-        <a href="#">Blog</a>
-        <a href="https://www.facebook.com/mikroyazilimas" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com/mikroyazilimas" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/company/2955583/?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2955583%2Cidx%3A1-1-1%2CtarId%3A1445523595929%2Ctas%3AMikro%20Y" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.youtube.com/channel/UCWSwAVu6dwATfiTAo6KYAvg" target="_blank"><i class="fab fa-youtube"></i></a>
+        <div class="page-mega-navigation-social-text">
+            <a href="http://forum.mikro.com.tr" target="_blank">Forum Mikro</a>
+            <a href="#">Blog</a>
+            <a href="/gizlilik-bildirgesi">Gizlilik Bildirgesi</a>
+            <a href="/kullanim-sozlesmesi">Kullanım Sözleşmesi</a>
+            <a href="/bilgi-guvenligi-ve-cerez-politikasi">Bilgi Güvenliği ve Çerez Politikası</a>
+        </div>
+        <div class="page-mega-navigation-social-icons">
+            <a href="https://www.facebook.com/mikroyazilimas" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/mikroyazilimas" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/2955583/?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2955583%2Cidx%3A1-1-1%2CtarId%3A1445523595929%2Ctas%3AMikro%20Y" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCWSwAVu6dwATfiTAo6KYAvg" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
     </div>
 </div>
 <!-- ///// -->

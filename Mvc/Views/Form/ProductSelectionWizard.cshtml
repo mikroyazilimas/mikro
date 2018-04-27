@@ -27,21 +27,21 @@
                     {
                         if (item.InputType == SitefinityWebApp.Library.InputType.Hidden)
                         {
-                            <input type="hidden" id="@item.InputName" name="@item.InputName" value="@item.InputValue" />
+                            <input type="hidden" id="@item.InputName" name="@item.InputName" value="@item.InputValue" required="required"/>
 
                         }
                         else if (item.InputType == SitefinityWebApp.Library.InputType.TextBox)
                         {
                             <div class="wizard-form-row @item.InputClass @String.Format(item.InputNotVisible? "wizardhide" : "")" >
                                 <label>@item.LabelValue<span>@item.LabelValueShort</span></label>
-                                <input type="text" id="@item.InputName" name="@item.InputName" value="" />
+                                <input type="text" id="@item.InputName" name="@item.InputName" value="" required="required" maxlength="4" pattern= "[0-9]+"/>
                             </div>
                         }
                         else if (item.InputType == SitefinityWebApp.Library.InputType.DropDown)
                         {
                             <div class="wizard-form-row @item.InputClass @String.Format(item.InputNotVisible? "wizardhide" : "")">
                                 <label>@item.LabelValue<span>@item.LabelValueShort</span></label>
-                                <select id="@item.InputName" name="@item.InputName">
+                                <select id="@item.InputName" name="@item.InputName" required="required">
                                     <option value="">Seçiniz</option>
                                     @foreach (var dItem in item.DropDownItem)
                                     {

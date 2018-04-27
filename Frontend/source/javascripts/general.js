@@ -301,9 +301,9 @@ h("input"),watchDataMask:!1,byPassKeys:[9,16,17,18,36,37,38,39,40,91],translatio
     
 
 
-    $('.phones').mask("(999)9999999");
+    $('.phones').mask("+90(999)9999999");
     
-
+    $(".detail-product-description-left").next(".products-container-content-right-item__title").addClass("products-detail-select")
     
     
     
@@ -311,11 +311,10 @@ $('select').change(function(){
     $('.wizard-form-left > div').removeClass('wizardshow');
     if($("#00N0Y00000QeR9j option:selected").attr('data-field') != null)
     {
-        
         $("."+$("#00N0Y00000QeR9j option:selected").attr('data-field')).addClass('wizardshow');
     }
 });
 
-    
+$('.products-container-content-right-item').next('.products-container-content-right-item__text').addClass('products-detail-select');
 });
 

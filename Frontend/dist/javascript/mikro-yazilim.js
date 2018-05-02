@@ -6178,7 +6178,7 @@ h("input"),watchDataMask:!1,byPassKeys:[9,16,17,18,36,37,38,39,40,91],translatio
 $(".phones").mask("(0999) 999 99 99");
 
 
-   //$('.phones').mask("1-(5##)#######");
+   //$('.phones').mask("1-(5##)#######");ssss
 
 
     $(".detail-product-description-left").next(".products-container-content-right-item__title").addClass("products-detail-select")

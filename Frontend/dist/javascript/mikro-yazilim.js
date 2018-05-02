@@ -6264,8 +6264,10 @@ $('#fly').on('click', function() {
   
   //YONETIM SAYFASI
   $(".management-main-item").on('click', function(){
-      $(".overlay").fadeIn(600, function() {});
-      $(".yonetim-popup > .popup").fadeIn(900, function() {});
+        $(".overlay").fadeIn(600, function() {});
+        $(".yonetim-popup > .popup").fadeIn(900, function() {});
+        var value = $(this).data('data-text');
+        $('.popup-content-management-right__description > p').html(value);
   });
 });
 

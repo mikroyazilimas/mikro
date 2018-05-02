@@ -1,21 +1,69 @@
 ﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
-@using Telerik.Sitefinity.Frontend.Mvc.Helpers; 
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
 
+<!-- Popup Run-->
+<div class="run-popup">
+    <div class="popup">
+        <div class="popup-price">
+            <div class="popup-price-buy run-top-buy">
+                <span class="popup-price__pricetext">1265 TL + KDV</span>
+                <span class="popup-price__text">Başlayan Fiyatlarla Satın Alın</span>
+            </div>
+            <div class="popup-price-rent run-top-rent">
+                <span class="popup-price__pricetext">440 TL + KDV/Yıl</span>
+                <span class="popup-price__text">Fiyatlarla Kiralayın.</span>
+            </div>
+        </div>
+        <div class="popup-tabs">
+            <div class="popup-tabs-buy">
+                <span>Satın Al</span>
+            </div>
+            <div class="popup-tabs-rent">
+                <span>Kirala</span>
+            </div>
+        </div>
+        <div class="popup-content">
+            <div class="popup-content-left">
+                <img src="/Frontend/dist/images/products/pop-up/products-run-chart.png" alt="">
+            </div>
+            <div class="popup-content-right">
+                <div class="popup-content-right__logo">
+                    <img src="/Frontend/dist/images/products/pop-up/products-run-logo.svg" alt="">
+                </div>
+                <div class="popup-content-right__description">
+                    <p>Sektör bağımsız çalışıyorsanız, birden fazla lokasyonda ya da sektörde faaliyet gösteriyorsanız, uçtan uca tüm ticari işlemlerinizi bir çatı altında toplamak istiyorsanız Mikro Jump tam size göre!</p>
+                    <ul>
+                        <li>Genişletilebilir modüler yapı</li>
+                        <li>Sektörel çözüm seçenekleri </li>
+                        <li>Çoklu Dil Desteği</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-button">
+            <a href="">Demo Talep Formu</a>
+        </div>
+        <div class="close-popup">X</div>
+    </div>
+</div>
+<!--Popup Finish-->
 
 <div class="products-container-content">
     <div class="products-container-content-left">
         <div class="scrolldown sticky-one">
-            <div class="products-container-content-left__img">   
-                <a href="/urunler-ve-hizmetler/mikro-run/"><img src="~/Frontend/dist/images/run-big-banner.png" alt=""></a>                 
-            </div> 
+            <div class="products-container-content-left__img">
+                <a href="/urunler-ve-hizmetler/mikro-run/"><img src="~/Frontend/dist/images/run-big-banner.png" alt=""></a>
+            </div>
             <a href="/urunler-ve-hizmetler/mikro-run/" class="products-container-content-left__text">
                 <span>Girişimciler İçin</span>
                 <span>Mikro Run</span>
             </a>
             <div class="products-container-content-left-button">
                 <a href="/ucretsiz-demo-talep" title="demo" class="products-container-content-left-button__demo">Ücretsiz Demo <span><i class="fas fa-arrow-right"></i></span></a>
-                <a href="#" title="Fiyat ve Nasıl Satın Alabilirim" class="products-container-content-left-button__price" >Fiyat ve Nasıl Satın Alabilirim
-                <span><i class="fas fa-arrow-right"></i></span></a>
+                <a href="#" title="Fiyat ve Nasıl Satın Alabilirim" class="products-container-content-left-button__price" id="run">
+                    Fiyat ve Nasıl Satın Alabilirim
+                    <span><i class="fas fa-arrow-right"></i></span>
+                </a>
             </div>
         </div>
     </div>
@@ -42,6 +90,6 @@
 
 <script>
 
-   
+
 
 </script>

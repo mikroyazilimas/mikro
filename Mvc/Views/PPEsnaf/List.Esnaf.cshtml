@@ -1,18 +1,69 @@
-﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel 
+﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+
+<!-- Popup Musavir-->
+<div class="musavir-popup">
+    <div class="popup">
+        <div class="popup-price">
+            <div class="popup-price-buy musavir-top-buy">
+                <span class="popup-price__pricetext">xxxx TL + KDV</span>
+                <span class="popup-price__text">Başlayan Fiyatlarla Satın Alın</span>
+            </div>
+            <div class="popup-price-rent musavir-top-rent">
+                <span class="popup-price__pricetext">xxx TL + KDV/Yıl</span>
+                <span class="popup-price__text">Fiyatlarla Kiralayın.</span>
+            </div>
+        </div>
+        <div class="popup-tabs">
+            <div class="popup-tabs-buy">
+                <span>Satın Al</span>
+            </div>
+            <div class="popup-tabs-rent">
+                <span>Kirala</span>
+            </div>
+        </div>
+        <div class="popup-content">
+            <div class="popup-content-right__description">
+                <p>
+                    Tüm muhasebe işlemlerinizi güvenle takip etmek istiyorsanız Mikro Müşavir tam size göre!
+
+                    Kolay kullanımı ve işlevselliği ile genel muhasebeden personele, işletme defterinden amortisman takibine kadar geniş bir yelpazede çözüm sunuyor.
+
+                </p>
+                <ul>
+                    <li>Muhasebe Yönetimi</li>
+                    <li>Sabit Kıymetler Yönetimi</li>
+                    <li>Enflasyon Muhasebesi (IAS-29 ve SPK Uyumlu)</li>
+                    <li>Mükellefler için Stok Yönetimi</li>
+                    <li>Finans Yönetimi</li>
+                    <li>Konsolide İşlemler</li>
+                    <li>Bildirge, beyanname, yazışma ve genel amaçlı programlar</li>
+                </ul>
+            </div>
+        </div>
+        <div class="popup-button">
+            <a href="">Demo Talep Formu</a>
+        </div>
+        <div class="close-popup">X</div>
+    </div>
+</div>
+<!--Popup Finish-->
+
 <div class="products-container-content">
     <div class="products-container-content-left">
-        <div class="products-container-content-left__img">   
-            <a href="/urunler-ve-hizmetler/mikro-musavir"><img src="/Frontend/dist/images/products/musavir-img.svg" alt=""></a>                        
-        </div>        
-                
+        <div class="products-container-content-left__img">
+            <a href="/urunler-ve-hizmetler/mikro-musavir"><img src="/Frontend/dist/images/products/musavir-img.svg" alt=""></a>
+        </div>
+
         <a href="/urunler-ve-hizmetler/mikro-musavir" class="products-container-content-left__text">
             <span>Mali Müşavirler için</span>
             <span>Mikro Müşavir</span>
         </a>
         <div class="products-container-content-left-button">
             <a href="/ucretsiz-demo-talep" title="Ücretsiz Demo" class="products-container-content-left-button__demo">Ücretsiz Demo <span><i class="fas fa-arrow-right"></i></span></a>
-            <a href="#" title="Fiyat ve Nasıl Satın Alabilirim" class="products-container-content-left-button__price" >Fiyat ve Nasıl Satın Alabilirim
-            <span><i class="fas fa-arrow-right"></i></span></a>
+            <a href="#" title="Fiyat ve Nasıl Satın Alabilirim" class="products-container-content-left-button__price" id="musavir">
+                Fiyat ve Nasıl Satın Alabilirim
+                <span><i class="fas fa-arrow-right"></i></span>
+            </a>
         </div>
     </div>
     <div class="products-container-content-right">
@@ -23,14 +74,14 @@
 
         @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
-        <div class="products-container-content-right-item">
-            <div class="products-container-content-right-item__title">
-                <span>@item.Fields.Title</span>
+            <div class="products-container-content-right-item">
+                <div class="products-container-content-right-item__title">
+                    <span>@item.Fields.Title</span>
+                </div>
+                <div class="products-container-content-right-item__text">
+                    @Html.Raw(item.Fields.ShortText)
+                </div>
             </div>
-            <div class="products-container-content-right-item__text">
-                @Html.Raw(item.Fields.ShortText)
-            </div>
-        </div>
         }
     </div>
 </div>

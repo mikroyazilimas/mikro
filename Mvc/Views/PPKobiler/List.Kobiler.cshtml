@@ -1,38 +1,89 @@
 ﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+<!-- Overlay -->
+<div class="overlay"></div>
+<!-- Popup Jump-->
+<div class="jump-popup">
+    <div class="popup">
+        <div class="popup-price">
+            <div class="popup-price-buy jump-top-buy">
+                <span class="popup-price__pricetext">4.313 TL + KDV</span>
+                <span class="popup-price__text">Başlayan Fiyatlarla Satın Alın</span>
+            </div>
+            <div class="popup-price-rent jump-top-rent">
+                <span class="popup-price__pricetext">938 TL + KDV/Yıl</span>
+                <span class="popup-price__text">Fiyatlarla Kiralayın.</span>
+            </div>
+        </div>
+        <div class="popup-tabs">
+            <div class="popup-tabs-buy">
+                <span>Satın Al</span>
+            </div>
+            <div class="popup-tabs-rent">
+                <span>Kirala</span>
+            </div>
+        </div>
+        <div class="popup-content">
+            <div class="popup-content-left">
+                <img src="/Frontend/dist/images/products/pop-up/products-jump-chart.png" alt="">
+            </div>
+            <div class="popup-content-right">
+                <div class="popup-content-right__logo">
+                    <img src="/Frontend/dist/images/products/pop-up/products-jump-logo.svg" alt="">
+                </div>
+                <div class="popup-content-right__description">
+                    <p>Sektör bağımsız çalışıyorsanız, birden fazla lokasyonda ya da sektörde faaliyet gösteriyorsanız, uçtan uca tüm ticari işlemlerinizi bir çatı altında toplamak istiyorsanız Mikro Jump tam size göre!</p>
+                    <ul>
+                        <li>Genişletilebilir modüler yapı</li>
+                        <li>Sektörel çözüm seçenekleri </li>
+                        <li>Çoklu Dil Desteği</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-button">
+            <a href="">Demo Talep Formu</a>
+        </div>
+        <div class="close-popup">X</div>
+    </div>
+</div>
+<!--Popup Finish-->
+
 <div class="products-container-content">
     <div class="products-container-content-left">
         <div class="scrolldown sticky-two">
-        <div class="products-container-content-left__img">   
-            <a href="/urunler-ve-hizmetler/mikro-jump/"><img src="/Frontend/dist/images/jump-big-banner.png" alt=""></a>                        
-        </div>        
-                    
-        <a href="/urunler-ve-hizmetler/mikro-jump/" class="products-container-content-left__text">
-            <span>Kobiler İçin</span>
-            <span>Mikro Jump</span>
-        </a>
-        <div class="products-container-content-left-button">
-            <a href="/ucretsiz-demo-talep" title="Ücretsiz Demo" class="products-container-content-left-button__demo">Ücretsiz Demo<span><i class="fas fa-arrow-right"></i></span></a>
-            <a href="#" title="Fiyat ve Nasıl Satın Alabilirim" class="products-container-content-left-button__price" >Fiyat ve Nasıl Satın Alabilirim
-            <span><i class="fas fa-arrow-right"></i></span></a>
+            <div class="products-container-content-left__img">
+                <a href="/urunler-ve-hizmetler/mikro-jump/"><img src="/Frontend/dist/images/jump-big-banner.png" alt=""></a>
+            </div>
+
+            <a href="/urunler-ve-hizmetler/mikro-jump/" class="products-container-content-left__text">
+                <span>Kobiler İçin</span>
+                <span>Mikro Jump</span>
+            </a>
+            <div class="products-container-content-left-button">
+                <a href="/ucretsiz-demo-talep" title="Ücretsiz Demo" class="products-container-content-left-button__demo">Ücretsiz Demo<span><i class="fas fa-arrow-right"></i></span></a>
+                <a href="#" title="Fiyat ve Nasıl Satın Alabilirim" class="products-container-content-left-button__price" id="jump">
+                    Fiyat ve Nasıl Satın Alabilirim
+                    <span><i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
         </div>
     </div>
-    </div>
     <div class="products-container-content-right">
-        
-                <div class="shortText">
+
+        <div class="shortText">
             @Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText)
         </div>
 
         @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
-        <div class="products-container-content-right-item">
-            <div class="products-container-content-right-item__title">
-                <span>@item.Fields.Title</span>
+            <div class="products-container-content-right-item">
+                <div class="products-container-content-right-item__title">
+                    <span>@item.Fields.Title</span>
+                </div>
+                <div class="products-container-content-right-item__text">
+                    @Html.Raw(item.Fields.ShortText)
+                </div>
             </div>
-            <div class="products-container-content-right-item__text">
-                @Html.Raw(item.Fields.ShortText)
-            </div>
-        </div>
         }
         <div class="sticky-stopper-two"></div>
     </div>

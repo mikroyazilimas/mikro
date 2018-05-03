@@ -169,8 +169,6 @@ $(function() {
     $('.products-container-content-right-item').click(function(){
          $(this).find('.products-container-content-right-item__text').slideToggle('slow');
          $(this).find('.products-container-content-right-item__title').toggleClass('products-detail-select');
-         
-        
     });
 
     //Ürün detay sayfası ilk item click'leniyor. 

@@ -6195,6 +6195,12 @@ $('select').change(function(){
     {
         $("."+$("#00N0Y00000QeR9j option:selected").attr('data-field')).addClass('wizardshow');
     }
+
+    if ($("#00N0Y00000QeNYu option:selected").attr('data-field') != null) {
+
+        //$("#retURL").val("http://mikroyazilim.local/tesekkurler?product=" + $("#00N0Y00000QeNYu option:selected").val());
+        $("#retURL").val("http://mikroyazilim.phtools.net/tesekkurler?product=" + $("#00N0Y00000QeNYu option:selected").val());
+    }
 });
 
 $('.products-container-content-right-item').next('.products-container-content-right-item__text').addClass('products-detail-select');

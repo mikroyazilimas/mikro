@@ -1,6 +1,8 @@
-﻿using SitefinityWebApp.Mvc.Models.ViewModel;
+﻿using SitefinityWebApp.Library;
+using SitefinityWebApp.Mvc.Models.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -17,6 +19,9 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
             try
             {
 
+                
+
+
                 ContactForm m = new ContactForm() { };                
 
                 return View(Names.PagesView.ContactForm, m);
@@ -27,5 +32,8 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
             }
             return View();
         }
+
+
+        
     }
 }

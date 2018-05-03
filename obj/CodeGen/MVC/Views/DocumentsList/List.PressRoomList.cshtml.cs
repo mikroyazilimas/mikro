@@ -54,7 +54,7 @@ WriteLiteral(">\r\n        <!-- DÖNGÜ -->\r\n");
             #line hidden
             
             #line 8 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
-         foreach (var item in Model.Items)
+         foreach (var item in Model.Items.OrderByDescending(x => (DateTime?)x.Fields.DateTime))
         {
 
             
@@ -101,7 +101,7 @@ WriteLiteral("                                <span>");
             
             #line default
             #line hidden
-WriteLiteral("</span>\r\n");
+WriteLiteral(" </span>\r\n");
 
             
             #line 17 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
@@ -131,14 +131,14 @@ WriteLiteral(">\r\n                            <span>Dijitalleşen Dünyada KOB�
 "rtnerlerinden Biriyiz</span>\r\n                        </div>\r\n                  " +
 "  </div>\r\n                    <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 1319), Tuple.Create("\"", 1426)
+WriteAttribute("href", Tuple.Create(" href=\"", 1373), Tuple.Create("\"", 1480)
             
             #line 26 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
-, Tuple.Create(Tuple.Create("", 1326), Tuple.Create<System.Object, System.Int32>(String.Format("/docs/default-source/basin-bultenleri/{0}.{1}", item.Fields.MediaFileUrlName, "pdf")
+, Tuple.Create(Tuple.Create("", 1380), Tuple.Create<System.Object, System.Int32>(String.Format("/docs/default-source/basin-bultenleri/{0}.{1}", item.Fields.MediaFileUrlName, "pdf")
             
             #line default
             #line hidden
-, 1326), false)
+, 1380), false)
 );
 
 WriteLiteral(" target=\"_blank\"");

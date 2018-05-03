@@ -1,9 +1,29 @@
 ﻿@model SitefinityWebApp.Mvc.Models.ViewModel.ContactForm
 
 
+<script type="text/javascript">
+
+    function formSubmit(formId) {
+        //you code 
+        var dt = $('#' + formId + '').serialize();          
+        $.ajax({
+            type: 'POST',
+            url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
+            data: dt,
+            success: function (msg) {
+                
+            }
+        });
+        return true;
+        //return false;
+    }
+    
+
+</script>
+
 @using (@Html.BeginForm("Index", "ContactForm", FormMethod.Post))
 { }
-@using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" }))
+@using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", id = "contactForm" }))
 {
 
 <input type=hidden name="oid" value="00D0Y0000035HER">
@@ -57,12 +77,13 @@
             <div class="page-section-contact-container-area-left-form-textbox-form2">
 
                 @* @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Şirketinizin ismi*" })*@
-                <select required>
+                <select required id="subject" name="subject">
                     <option value="">Seçiniz...</option>
-                    <option>Bilgi talep ediyorum.</option>
-                    <option>Öneri / Şikayetim var.</option>
-                    <option>İş ortağınız olmak istiyorum</option>
-                    <option>Teşekkür etmek istiyorum</option>
+                    <option value="1">Bilgi talep ediyorum</option>
+                    <option value="2">Öneri / Şikayetim var</option>
+                    <option value="3">Ürünlerle ilgili önerim var</option>
+                    <option value="4">İş ortağınız olmak istiyorum</option>
+                    <option value="5">Teşekkür etmek istiyorum</option>
                 </select>
 
                 @Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp", placeholder = "Mesajınız" })
@@ -91,14 +112,14 @@
                         <p><b>Açık Rıza</b></p>
                         <p>Sizler, internet sitemize girerek tarafımıza sağlamış olduğunuz kişisel verilerinizin Kanun’a ve işbu 6698 Sayılı Kişisel Verilerin Korunması Kanunu’ne uygun bir şekilde ve belirtilen amaçlarla işlenebileceğini bilmekte, kabul etmekte ve ayrıca işbu 6698 Sayılı Kişisel Verilerin Korunması Kanunu ile Kanun kapsamında yapılması gereken aydınlatma yükümlülüğü yerine getirildiğini, Sözleşme’yi okuduğunuzu, anladığınızı, haklarınızın ve yükümlülüklerinin bilincinde olduğunuzu beyan etmektesiniz.</p>
                     </div>
-                    <label for="Contract" class="hp-contract">
-                        @Html.CheckBoxFor(m => m.Contract, new { required = "required" })
+                    @*<label for="Contract" class="hp-contract">
+                        @Html.CheckBoxFor(m => m.hpContract, new { required = "required" })
                         Kişisel Veriler Bilgilendirme Metni'ni Kabul Ediyorum
-                    </label>
+                    </label>*@
                 </div>
                 <div class="page-section-contact-container-area-left-form-button">
                     @*<a href="#" title="Gönder" class="page-section-contact-area-left-form-button__send">Gönder</a>*@
-                    <input class="hp_btn" type="submit" name="SaveButton" value="Gönder" />
+                    <input class="hp_btn" type="submit" name="SaveButton" value="Gönder" onclick="return formSubmit('contactForm');"/>
                 </div>
                 
                 <label for="Contract-hp" class="hp-contract desktop-contract-text">

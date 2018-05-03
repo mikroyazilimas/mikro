@@ -1,7 +1,6 @@
 ﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
 @using Telerik.Sitefinity.Frontend.Mvc.Helpers;
-<!-- Overlay -->
-<div class="overlay"></div>
+
 <!-- Popup Fly-->
 <div class="fly-popup">
     <div class="popup">
@@ -9,12 +8,16 @@
             <span>Proje Bazlı Tekliflendirilmektedir.</span>
         </div>
         <div class="popup-tabs">
-            <div class="popup-tabs-buy">
-                <span>Satın Al</span>
-            </div>
-            <div class="popup-tabs-rent">
-                <span>Kirala</span>
-            </div>
+            <a href="/iletisim/bize-ulasin">
+                <div class="popup-tabs-buy">
+                    <span>Satın Al</span>
+                </div>
+            </a>
+            <a href="/iletisim/bize-ulasin">
+                <div class="popup-tabs-rent">
+                    <span>Kirala</span>
+                </div>
+            </a>
         </div>
         <div class="popup-content">
             <div class="popup-content-left">
@@ -35,7 +38,7 @@
             </div>
         </div>
         <div class="popup-button">
-            <a href="/ucretsiz-demo-talep">Demo Talep Formu</a>
+            <a href="/iletisim/bize-ulasin">Demo Talep Formu</a>
         </div>
         <div class="close-popup">X</div>
     </div>

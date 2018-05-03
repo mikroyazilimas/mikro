@@ -20,21 +20,37 @@
     }
 
     &-demo {
-        background-color: #e74c3c;
+       // background-color: #e74c3c;
         display: flex;
         width: 100%;
         position: relative;
-        height: 600px;
-
-        >img{
-            height: 100%;
-            width: 100%;
+        &-banner-responsive{
+            display: none;
+            @media @responsive{
+                display: block;
+                >a{
+                    >img{
+                        width: 100%;
+                        }
+                }
+                
+            }
         }
+        >a{
+            @media @responsive{
+                display: none;
+            }
+            >img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
         @media @responsive {
             width: 100%;
             display: flex;
             flex-direction: column;
-            height: 200px;
+            height: auto;
         }
 
 

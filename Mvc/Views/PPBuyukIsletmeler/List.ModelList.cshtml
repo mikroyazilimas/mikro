@@ -14,195 +14,195 @@
             <span>Proje Bazlı Tekliflendirilmektedir.</span>
         </div>
         <div class="popup-tabs">
-            <a href="/ucretsiz-demo-talep">
+            <a href="/iletisim/bize-ulasin">
                 <div class="popup-tabs-buy">
                     <span>Satın Al</span>
                 </div>
             </a>
-            <a href="/ucretsiz-demo-talep">
+            <a href="/iletisim/bize-ulasin">
                 <div class="popup-tabs-rent">
                     <span>Kirala</span>
                 </div>
             </a>
         </div>
-    <div class="popup-content">
-        <div class="popup-content-left">
-            <img src="/Frontend/dist/images/products/pop-up/products-fly-chart.png" alt="">
-        </div>
-        <div class="popup-content-right">
-            <div class="popup-content-right__logo">
-                <img src="/Frontend/dist/images/products/pop-up/products-fly-logo.svg" alt="">
+        <div class="popup-content">
+            <div class="popup-content-left">
+                <img src="/Frontend/dist/images/products/pop-up/products-fly-chart.png" alt="">
             </div>
-            <div class="popup-content-right__description">
-                <p>Sektör bağımsız çalışıyorsanız, birden fazla lokasyonda ya da sektörde faaliyet gösteriyorsanız, uçtan uca tüm ticari işlemlerinizi bir çatı altında toplamak istiyorsanız Mikro Jump tam size göre!</p>
-                <ul>
-                    <li>Genişletilebilir modüler yapı</li>
-                    <li>Sektörel çözüm seçenekleri </li>
-                    <li>Çoklu Dil Desteği</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="popup-button">
-        <a href="/ucretsiz-demo-talep">Demo Talep Formu</a>
-    </div>
-    <div class="close-popup">X</div>
-</div>
-
-<!--Popup Finish-->
-
-
-<div class="detail-product">
-    <div class="detail-product-content">
-
-        @if (pField.MainPhoto != null)
-        {
-            foreach (var pht in pField.MainPhoto)
-            {
-                <div class="detail-product-content__img">
-                    <img src="@pht.Fields.MediaUrl" alt="">
+            <div class="popup-content-right">
+                <div class="popup-content-right__logo">
+                    <img src="/Frontend/dist/images/products/pop-up/products-fly-logo.svg" alt="">
                 </div>
+                <div class="popup-content-right__description">
+                    <p>Sektör bağımsız çalışıyorsanız, birden fazla lokasyonda ya da sektörde faaliyet gösteriyorsanız, uçtan uca tüm ticari işlemlerinizi bir çatı altında toplamak istiyorsanız Mikro Jump tam size göre!</p>
+                    <ul>
+                        <li>Genişletilebilir modüler yapı</li>
+                        <li>Sektörel çözüm seçenekleri </li>
+                        <li>Çoklu Dil Desteği</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-button">
+            <a href="/iletisim/bize-ulasin">Demo Talep Formu</a>
+        </div>
+        <div class="close-popup">X</div>
+    </div>
+
+    <!--Popup Finish-->
+
+
+    <div class="detail-product">
+        <div class="detail-product-content">
+
+            @if (pField.MainPhoto != null)
+            {
+                foreach (var pht in pField.MainPhoto)
+                {
+                    <div class="detail-product-content__img">
+                        <img src="@pht.Fields.MediaUrl" alt="">
+                    </div>
+                }
+
             }
 
-        }
+            <div class="detail-product-content-other">
 
-        <div class="detail-product-content-other">
-
-            <div class="detail-product-content-other__text">
-                <p>
-                    @Html.Raw(pField.Detail)
-                </p>
-            </div>
-            <div class="products-container-content-left-button product-detail-content-buttons">
-                <a href="/ucretsiz-demo-talep" title="demo" class="products-container-content-left-button__demo">Ücretsiz Demo <span><i class="fas fa-arrow-right"></i></span></a>
-                <a href="#" title="Fiyat ve Nasıl Satın Alabilirim" class="products-container-content-left-button__price" id="fly">Fiyat ve Nasıl Satın Alabilirim <span><i class="fas fa-arrow-right"></i></span></a></a>
+                <div class="detail-product-content-other__text">
+                    <p>
+                        @Html.Raw(pField.Detail)
+                    </p>
+                </div>
+                <div class="products-container-content-left-button product-detail-content-buttons">
+                    <a href="/ucretsiz-demo-talep" title="demo" class="products-container-content-left-button__demo">Ücretsiz Demo <span><i class="fas fa-arrow-right"></i></span></a>
+                    <a href="#" title="Fiyat ve Nasıl Satın Alabilirim" class="products-container-content-left-button__price" id="fly">Fiyat ve Nasıl Satın Alabilirim <span><i class="fas fa-arrow-right"></i></span></a></a>
+                </div>
             </div>
         </div>
+
+
     </div>
 
-
-</div>
-
-<div class="detail-product-description">
-    <div class="detail-product-description-left">
-        @if (pField.ProductProperties != null)
-        {
-            foreach (var pItem in pField.ProductProperties)
+    <div class="detail-product-description">
+        <div class="detail-product-description-left">
+            @if (pField.ProductProperties != null)
             {
-                <div class="products-container-content-right-item">
-                    <div class="products-container-content-right-item__title">
+                foreach (var pItem in pField.ProductProperties)
+                {
+                    <div class="products-container-content-right-item">
+                        <div class="products-container-content-right-item__title">
 
-                        <div>
-                            <span>@pItem.Fields.PropertyName</span>
+                            <div>
+                                <span>@pItem.Fields.PropertyName</span>
+
+                            </div>
 
                         </div>
-
+                        <div class="products-container-content-right-item__text">
+                            <p>@Html.Raw(pItem.Fields.Detailinfo)</p>
+                        </div>
                     </div>
-                    <div class="products-container-content-right-item__text">
-                        <p>@Html.Raw(pItem.Fields.Detailinfo)</p>
-                    </div>
-                </div>
+                }
             }
-        }
 
-    </div>
-    <div class="detail-product-description-right">
-        @if (pField.ChartPhoto != null)
-        {
-            foreach (var photo in pField.ChartPhoto)
+        </div>
+        <div class="detail-product-description-right">
+            @if (pField.ChartPhoto != null)
             {
-                <div class="detail-product-description-right-content">
-                    <img src="@photo.Fields.MediaUrl" alt="">
-                </div>
+                foreach (var photo in pField.ChartPhoto)
+                {
+                    <div class="detail-product-description-right-content">
+                        <img src="@photo.Fields.MediaUrl" alt="">
+                    </div>
+                }
             }
-        }
 
 
+        </div>
     </div>
-</div>
-<div class="management-services modules-owl-carousel owl-carousel">
+    <div class="management-services modules-owl-carousel owl-carousel">
 
-    @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
-    {
-        <div class="management-services-item">
+        @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
+        {
+            <div class="management-services-item">
 
-            <a href="@item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-fly/")">
-                <div class="management-services-item__img">
-                    @if (item.Fields.IconImage != null)
-                    {
-                        foreach (var photo in item.Fields.IconImage)
+                <a href="@item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-fly/")">
+                    <div class="management-services-item__img">
+                        @if (item.Fields.IconImage != null)
                         {
-                            <img src="@photo.Fields.MediaUrl" alt="">
+                            foreach (var photo in item.Fields.IconImage)
+                            {
+                                <img src="@photo.Fields.MediaUrl" alt="">
+                            }
                         }
-                    }
+
+                    </div>
+                    <div class="management-services-item__title">
+                        <span>@item.Fields.Title</span>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+    <!--<div class="numbers">
+        <div class="numbers-contents">
+            <div class="numbers-contents-item">
+                <div class="numbers-contents-item__img">
+                    <img src="/Frontend/dist/images/product-detail/section2-bottom1.png" alt="">
+                </div>
+                 <div class="numbers-contents-item-text">
+                    <div class="numbers-contents-item-text__text1">
+                        <span data-number-animate data-number="105000">105000+</span>
+                    </div>
+                    <div class="numbers-contents-item-text__text2">
+                        <span>Kayıtlı Şirket Sayısı</span>
+                    </div>
+                </div>
+            </div>
+            <div class="numbers-contents-item">
+                <div class="numbers-contents-item__img">
+                    <img src="/Frontend/dist/images/product-detail/section2-bottom2.png" alt="">
+                </div>
+                <div class="numbers-contents-item-text">
+                    <div class="numbers-contents-item-text__text1 ">
+                        <span data-number-animate data-number="2000000">1</span>
+                    </div>
+                    <div class="numbers-contents-item-text__text2">
+                        <span>Yazılan Satır Kod</span>
+                    </div>
+                </div>
+            </div>
+            <div class="numbers-contents-item">
+                <div class="numbers-contents-item__img">
+                    <img src="/Frontend/dist/images/product-detail/section2-bottom3.png" alt="">
+                </div>
+                <div class="numbers-contents-item-text">
+                    <div class="numbers-contents-item-text__text1">
+                        <span data-number-animate data-number="100">1</span>
+                    </div>
+                    <div class="numbers-contents-item-text__text2">
+                        <span>Hedeflenen Kullanıcı</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div class="story-products-wizard">
+        <div class="story-products-wizard-left">
+            <div class="story-products-wizard-left-content">
+                <div class="story-products-wizard-left-content__title">
+                    <span>Ürün<strong>Sihirbazı</strong></span>
+                </div>
+                <div class="story-products-wizard-left-content__hr">
 
                 </div>
-                <div class="management-services-item__title">
-                    <span>@item.Fields.Title</span>
-                </div>
-            </a>
-        </div>
-    }
-</div>
-<!--<div class="numbers">
-    <div class="numbers-contents">
-        <div class="numbers-contents-item">
-            <div class="numbers-contents-item__img">
-                <img src="/Frontend/dist/images/product-detail/section2-bottom1.png" alt="">
-            </div>
-             <div class="numbers-contents-item-text">
-                <div class="numbers-contents-item-text__text1">
-                    <span data-number-animate data-number="105000">105000+</span>
-                </div>
-                <div class="numbers-contents-item-text__text2">
-                    <span>Kayıtlı Şirket Sayısı</span>
+                <div class="product-detail-section3-left-content-button">
+                    <a href="/urun-secme-sihirbazi" title="Sizin İçin Doğru Ürünü Seçin" class="product-detail-section3-left-content-button__wizard">Sizin İçin Doğru &nbsp;<strong>Ürünü Seçin</strong><span><i class="fas fa-arrow-right"></i></span></a>
                 </div>
             </div>
         </div>
-        <div class="numbers-contents-item">
-            <div class="numbers-contents-item__img">
-                <img src="/Frontend/dist/images/product-detail/section2-bottom2.png" alt="">
-            </div>
-            <div class="numbers-contents-item-text">
-                <div class="numbers-contents-item-text__text1 ">
-                    <span data-number-animate data-number="2000000">1</span>
-                </div>
-                <div class="numbers-contents-item-text__text2">
-                    <span>Yazılan Satır Kod</span>
-                </div>
-            </div>
-        </div>
-        <div class="numbers-contents-item">
-            <div class="numbers-contents-item__img">
-                <img src="/Frontend/dist/images/product-detail/section2-bottom3.png" alt="">
-            </div>
-            <div class="numbers-contents-item-text">
-                <div class="numbers-contents-item-text__text1">
-                    <span data-number-animate data-number="100">1</span>
-                </div>
-                <div class="numbers-contents-item-text__text2">
-                    <span>Hedeflenen Kullanıcı</span>
-                </div>
-            </div>
+        <div class="story-products-wizard-right">
+            <img src="/Frontend/dist/images/story/product-wizard.png" alt="">
         </div>
     </div>
-</div>-->
-<div class="story-products-wizard">
-    <div class="story-products-wizard-left">
-        <div class="story-products-wizard-left-content">
-            <div class="story-products-wizard-left-content__title">
-                <span>Ürün<strong>Sihirbazı</strong></span>
-            </div>
-            <div class="story-products-wizard-left-content__hr">
-
-            </div>
-            <div class="product-detail-section3-left-content-button">
-                <a href="/urun-secme-sihirbazi" title="Sizin İçin Doğru Ürünü Seçin" class="product-detail-section3-left-content-button__wizard">Sizin İçin Doğru &nbsp;<strong>Ürünü Seçin</strong><span><i class="fas fa-arrow-right"></i></span></a>
-            </div>
-        </div>
-    </div>
-    <div class="story-products-wizard-right">
-        <img src="/Frontend/dist/images/story/product-wizard.png" alt="">
-    </div>
-</div>
 

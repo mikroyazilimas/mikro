@@ -6,16 +6,28 @@
     }
 </style>
 
+<!-- Overlay -->
+<div class="overlay"></div>
+<!-- Popup Musavir-->
+<div class="news-popup">
+    <div class="popup">
+        <img src="" />
+        
+        <div class="close-popup">X</div>
+    </div>
+</div>
+<!--Popup Finish-->
+
 <div class="sfContentBlock">
-<p>@Html.Raw(Model.Item.Fields.Content)</p>
+    <p>@Html.Raw(Model.Item.Fields.Content)</p>
 </div>
 
 @if (Model.Item.Fields.Photos != null)
 {
     foreach (var photo in Model.Item.Fields.Photos)
     {
-        <div class="">
-            <img src="@photo.Fields.MediaUrl" alt="">
+        <div class="news">
+            <img src="@photo.Fields.MediaUrl" data-img="@photo.Fields.MediaUrl" alt="">
         </div>
     }
 }

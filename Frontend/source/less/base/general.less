@@ -54,3 +54,25 @@ body{
       color: @dark_blue;
     }
 }
+
+.news{
+  width: 50%;
+  >img{
+    transition: all 1s;
+    opacity: 1;
+    width: 100%;
+    cursor: pointer;
+  }
+  >img:hover{
+    opacity: 0.5;
+  }
+  &-popup{
+    >.popup{
+      height: 78vh;
+      >img{
+        height: 100%;
+      width: 100%;
+      }
+    }
+  }
+}

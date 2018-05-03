@@ -5,7 +5,7 @@
 <div class="container-sub">
     <div class="container-sub-content">
         <!-- DÖNGÜ -->
-        @foreach (var item in Model.Items)
+        @foreach (var item in Model.Items.OrderByDescending(x => (DateTime?)x.Fields.DateTime))
         {
             <div class="container-sub-content-item">
                 <div class="container-sub-content-item-content">
@@ -13,7 +13,7 @@
                         <div class="container-sub-content-item-content-left__date">
                             @if (item.Fields.DateTime != null && (DateTime?)item.Fields.DateTime != null)
                             {
-                                <span>@(((DateTime?)item.Fields.DateTime).Value.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("tr-TR")))</span>
+                                <span>@(((DateTime?)item.Fields.DateTime).Value.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("tr-TR"))) </span>
                             }
                         </div>
                         <div class="container-sub-content-item-content-left__title">

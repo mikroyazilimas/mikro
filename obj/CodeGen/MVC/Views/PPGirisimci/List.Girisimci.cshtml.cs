@@ -42,7 +42,123 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("<!-- Overlay -->\r\n<div");
+
+WriteLiteral(" class=\"overlay\"");
+
+WriteLiteral("></div>\r\n<!-- Popup Run-->\r\n<div");
+
+WriteLiteral(" class=\"run-popup\"");
+
+WriteLiteral(">\r\n    <div");
+
+WriteLiteral(" class=\"popup\"");
+
+WriteLiteral(">\r\n        <div");
+
+WriteLiteral(" class=\"popup-price\"");
+
+WriteLiteral(">\r\n            <div");
+
+WriteLiteral(" class=\"popup-price-buy run-top-buy\"");
+
+WriteLiteral(">\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__pricetext\"");
+
+WriteLiteral(">1265 TL + KDV</span>\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__text\"");
+
+WriteLiteral(">Başlayan Fiyatlarla Satın Alın</span>\r\n            </div>\r\n            <div");
+
+WriteLiteral(" class=\"popup-price-rent run-top-rent\"");
+
+WriteLiteral(">\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__pricetext\"");
+
+WriteLiteral(">440 TL + KDV/Yıl</span>\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__text\"");
+
+WriteLiteral(">Fiyatlarla Kiralayın.</span>\r\n            </div>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"popup-tabs\"");
+
+WriteLiteral(">\r\n            <a");
+
+WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+
+WriteLiteral(">\r\n                <div");
+
+WriteLiteral(" class=\"popup-tabs-buy\"");
+
+WriteLiteral(">\r\n                    <span>Satın Al</span>\r\n                </div>\r\n           " +
+" </a>\r\n            <a");
+
+WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+
+WriteLiteral(">\r\n                <div");
+
+WriteLiteral(" class=\"popup-tabs-rent\"");
+
+WriteLiteral(">\r\n                    <span>Kirala</span>\r\n                </div>\r\n            <" +
+"/a>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"popup-content\"");
+
+WriteLiteral(">\r\n            <div");
+
+WriteLiteral(" class=\"popup-content-left\"");
+
+WriteLiteral(">\r\n                <img");
+
+WriteLiteral(" src=\"/Frontend/dist/images/products/pop-up/products-run-chart.png\"");
+
+WriteLiteral(" alt=\"\"");
+
+WriteLiteral(">\r\n            </div>\r\n            <div");
+
+WriteLiteral(" class=\"popup-content-right\"");
+
+WriteLiteral(">\r\n                <div");
+
+WriteLiteral(" class=\"popup-content-right__logo\"");
+
+WriteLiteral(">\r\n                    <img");
+
+WriteLiteral(" src=\"/Frontend/dist/images/products/pop-up/products-run-logo.svg\"");
+
+WriteLiteral(" alt=\"\"");
+
+WriteLiteral(">\r\n                </div>\r\n                <div");
+
+WriteLiteral(" class=\"popup-content-right__description\"");
+
+WriteLiteral(@">
+                    <p>Sektör bağımsız çalışıyorsanız, birden fazla lokasyonda ya da sektörde faaliyet gösteriyorsanız, uçtan uca tüm ticari işlemlerinizi bir çatı altında toplamak istiyorsanız Mikro Jump tam size göre!</p>
+                    <ul>
+                        <li>Genişletilebilir modüler yapı</li>
+                        <li>Sektörel çözüm seçenekleri </li>
+                        <li>Çoklu Dil Desteği</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div");
+
+WriteLiteral(" class=\"popup-button\"");
+
+WriteLiteral(">\r\n            <a");
+
+WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+
+WriteLiteral(">Demo Talep Formu</a>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"close-popup\"");
+
+WriteLiteral(">X</div>\r\n    </div>\r\n</div>\r\n<!--Popup Finish-->\r\n\r\n<div");
 
 WriteLiteral(" class=\"products-container-content\"");
 
@@ -58,20 +174,20 @@ WriteLiteral(">\r\n            <div");
 
 WriteLiteral(" class=\"products-container-content-left__img\"");
 
-WriteLiteral(">   \r\n                <a");
+WriteLiteral(">\r\n                <a");
 
 WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run/\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 390), Tuple.Create("\"", 437)
-, Tuple.Create(Tuple.Create("", 396), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/run-big-banner.png")
-, 396), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2630), Tuple.Create("\"", 2677)
+, Tuple.Create(Tuple.Create("", 2636), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/run-big-banner.png")
+, 2636), false)
 );
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral("></a>                 \r\n            </div> \r\n            <a");
+WriteLiteral("></a>\r\n            </div>\r\n            <a");
 
 WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run/\"");
 
@@ -102,11 +218,15 @@ WriteLiteral(" title=\"Fiyat ve Nasıl Satın Alabilirim\"");
 
 WriteLiteral(" class=\"products-container-content-left-button__price\"");
 
-WriteLiteral(" >Fiyat ve Nasıl Satın Alabilirim\r\n                <span><i");
+WriteLiteral(" id=\"run\"");
+
+WriteLiteral(">\r\n                    Fiyat ve Nasıl Satın Alabilirim\r\n                    <span" +
+"><i");
 
 WriteLiteral(" class=\"fas fa-arrow-right\"");
 
-WriteLiteral("></i></span></a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div");
+WriteLiteral("></i></span>\r\n                </a>\r\n            </div>\r\n        </div>\r\n    </div" +
+">\r\n    <div");
 
 WriteLiteral(" class=\"products-container-content-right\"");
 
@@ -119,7 +239,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("            ");
 
             
-            #line 25 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 78 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
        Write(Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText));
 
             
@@ -128,13 +248,13 @@ WriteLiteral("            ");
 WriteLiteral("\r\n        </div>\r\n\r\n");
 
             
-            #line 28 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 81 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 28 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 81 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
          foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
 
@@ -152,7 +272,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n                    <span>");
 
             
-            #line 32 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 85 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
                      Write(item.Fields.Title);
 
             
@@ -167,7 +287,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 35 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 88 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
                Write(Html.Raw(item.Fields.ShortText));
 
             
@@ -176,7 +296,7 @@ WriteLiteral("                    ");
 WriteLiteral("\r\n                </div>\r\n            </div>\r\n");
 
             
-            #line 38 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 91 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
         }
 
             
@@ -186,7 +306,7 @@ WriteLiteral("        <div");
 
 WriteLiteral(" class=\"sticky-stopper-one\"");
 
-WriteLiteral("></div>\r\n    </div>\r\n</div>\r\n\r\n<script>\r\n\r\n   \r\n\r\n</script>");
+WriteLiteral("></div>\r\n    </div>\r\n</div>\r\n\r\n<script>\r\n\r\n\r\n\r\n</script>");
 
         }
     }

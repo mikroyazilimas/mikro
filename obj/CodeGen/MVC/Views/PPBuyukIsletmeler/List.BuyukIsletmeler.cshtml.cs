@@ -42,7 +42,91 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("\r\n<div");
+WriteLiteral("<!-- Overlay -->\r\n<div");
+
+WriteLiteral(" class=\"overlay\"");
+
+WriteLiteral("></div>\r\n<!-- Popup Fly-->\r\n<div");
+
+WriteLiteral(" class=\"fly-popup\"");
+
+WriteLiteral(">\r\n    <div");
+
+WriteLiteral(" class=\"popup\"");
+
+WriteLiteral(">\r\n        <div");
+
+WriteLiteral(" class=\"popup-price fly-top\"");
+
+WriteLiteral(">\r\n            <span>Proje Bazlı Tekliflendirilmektedir.</span>\r\n        </div>\r\n" +
+"        <div");
+
+WriteLiteral(" class=\"popup-tabs\"");
+
+WriteLiteral(">\r\n            <div");
+
+WriteLiteral(" class=\"popup-tabs-buy\"");
+
+WriteLiteral(">\r\n                <span>Satın Al</span>\r\n            </div>\r\n            <div");
+
+WriteLiteral(" class=\"popup-tabs-rent\"");
+
+WriteLiteral(">\r\n                <span>Kirala</span>\r\n            </div>\r\n        </div>\r\n     " +
+"   <div");
+
+WriteLiteral(" class=\"popup-content\"");
+
+WriteLiteral(">\r\n            <div");
+
+WriteLiteral(" class=\"popup-content-left\"");
+
+WriteLiteral(">\r\n                <img");
+
+WriteLiteral(" src=\"/Frontend/dist/images/products/pop-up/products-fly-chart.png\"");
+
+WriteLiteral(" alt=\"\"");
+
+WriteLiteral(">\r\n            </div>\r\n            <div");
+
+WriteLiteral(" class=\"popup-content-right\"");
+
+WriteLiteral(">\r\n                <div");
+
+WriteLiteral(" class=\"popup-content-right__logo\"");
+
+WriteLiteral(">\r\n                    <img");
+
+WriteLiteral(" src=\"/Frontend/dist/images/products/pop-up/products-fly-logo.svg\"");
+
+WriteLiteral(" alt=\"\"");
+
+WriteLiteral(">\r\n                </div>\r\n                <div");
+
+WriteLiteral(" class=\"popup-content-right__description\"");
+
+WriteLiteral(@">
+                    <p>Sektör bağımsız çalışıyorsanız, birden fazla lokasyonda ya da sektörde faaliyet gösteriyorsanız, uçtan uca tüm ticari işlemlerinizi bir çatı altında toplamak istiyorsanız Mikro Jump tam size göre!</p>
+                    <ul>
+                        <li>Genişletilebilir modüler yapı</li>
+                        <li>Sektörel çözüm seçenekleri </li>
+                        <li>Çoklu Dil Desteği</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div");
+
+WriteLiteral(" class=\"popup-button\"");
+
+WriteLiteral(">\r\n            <a");
+
+WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+
+WriteLiteral(">Demo Talep Formu</a>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"close-popup\"");
+
+WriteLiteral(">X</div>\r\n    </div>\r\n</div>\r\n<!--Popup Finish-->\r\n\r\n<div");
 
 WriteLiteral(" class=\"products-container-content\"");
 
@@ -64,9 +148,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-fly/\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 386), Tuple.Create("\"", 433)
-, Tuple.Create(Tuple.Create("", 392), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/fly-big-banner.png")
-, 392), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2082), Tuple.Create("\"", 2129)
+, Tuple.Create(Tuple.Create("", 2088), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/fly-big-banner.png")
+, 2088), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -102,6 +186,8 @@ WriteLiteral(" title=\"Fiyat ve Nasıl Satın Alabilirim\"");
 
 WriteLiteral(" class=\"products-container-content-left-button__price\"");
 
+WriteLiteral(" id=\"fly\"");
+
 WriteLiteral(">\r\n                    Fiyat ve Nasıl Satın Alabilirim\r\n                    <span" +
 "><i");
 
@@ -121,7 +207,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("            ");
 
             
-            #line 26 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 67 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
        Write(Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText));
 
             
@@ -130,13 +216,13 @@ WriteLiteral("            ");
 WriteLiteral("\r\n        </div>\r\n\r\n");
 
             
-            #line 29 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 70 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 29 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 70 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
          foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
 
@@ -154,7 +240,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n                    <span>");
 
             
-            #line 33 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 74 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
                      Write(item.Fields.Title);
 
             
@@ -169,7 +255,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 36 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 77 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
                Write(Html.Raw(item.Fields.ShortText));
 
             
@@ -178,7 +264,7 @@ WriteLiteral("                    ");
 WriteLiteral("\r\n                </div>\r\n            </div>\r\n");
 
             
-            #line 39 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 80 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
         }
 
             

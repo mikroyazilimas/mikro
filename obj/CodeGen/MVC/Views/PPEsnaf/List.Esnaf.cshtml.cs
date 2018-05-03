@@ -36,7 +36,107 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("<div");
+WriteLiteral("<!-- Overlay -->\r\n<div");
+
+WriteLiteral(" class=\"overlay\"");
+
+WriteLiteral("></div>\r\n<!-- Popup Musavir-->\r\n<div");
+
+WriteLiteral(" class=\"musavir-popup\"");
+
+WriteLiteral(">\r\n    <div");
+
+WriteLiteral(" class=\"popup\"");
+
+WriteLiteral(">\r\n        <div");
+
+WriteLiteral(" class=\"popup-price\"");
+
+WriteLiteral(">\r\n            <div");
+
+WriteLiteral(" class=\"popup-price-buy musavir-top-buy\"");
+
+WriteLiteral(">\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__pricetext\"");
+
+WriteLiteral(">xxxx TL + KDV</span>\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__text\"");
+
+WriteLiteral(">Başlayan Fiyatlarla Satın Alın</span>\r\n            </div>\r\n            <div");
+
+WriteLiteral(" class=\"popup-price-rent musavir-top-rent\"");
+
+WriteLiteral(">\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__pricetext\"");
+
+WriteLiteral(">xxx TL + KDV/Yıl</span>\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__text\"");
+
+WriteLiteral(">Fiyatlarla Kiralayın.</span>\r\n            </div>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"popup-tabs\"");
+
+WriteLiteral(">\r\n            <a");
+
+WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+
+WriteLiteral(">\r\n                <div");
+
+WriteLiteral(" class=\"popup-tabs-buy\"");
+
+WriteLiteral(">\r\n                    <span>Satın Al</span>\r\n                </div>\r\n           " +
+" </a>\r\n            <a");
+
+WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+
+WriteLiteral(">\r\n                <div");
+
+WriteLiteral(" class=\"popup-tabs-rent\"");
+
+WriteLiteral(">\r\n                    <span>Kirala</span>\r\n                </div>\r\n            <" +
+"/a>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"popup-content\"");
+
+WriteLiteral(">\r\n            <div");
+
+WriteLiteral(" class=\"popup-content-right__description\"");
+
+WriteLiteral(@">
+                <p>
+                    Tüm muhasebe işlemlerinizi güvenle takip etmek istiyorsanız Mikro Müşavir tam size göre!
+
+                    Kolay kullanımı ve işlevselliği ile genel muhasebeden personele, işletme defterinden amortisman takibine kadar geniş bir yelpazede çözüm sunuyor.
+
+                </p>
+                <ul>
+                    <li>Muhasebe Yönetimi</li>
+                    <li>Sabit Kıymetler Yönetimi</li>
+                    <li>Enflasyon Muhasebesi (IAS-29 ve SPK Uyumlu)</li>
+                    <li>Mükellefler için Stok Yönetimi</li>
+                    <li>Finans Yönetimi</li>
+                    <li>Konsolide İşlemler</li>
+                    <li>Bildirge, beyanname, yazışma ve genel amaçlı programlar</li>
+                </ul>
+            </div>
+        </div>
+        <div");
+
+WriteLiteral(" class=\"popup-button\"");
+
+WriteLiteral(">\r\n            <a");
+
+WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+
+WriteLiteral(">Demo Talep Formu</a>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"close-popup\"");
+
+WriteLiteral(">X</div>\r\n    </div>\r\n</div>\r\n<!--Popup Finish-->\r\n\r\n<div");
 
 WriteLiteral(" class=\"products-container-content\"");
 
@@ -48,18 +148,20 @@ WriteLiteral(">\r\n        <div");
 
 WriteLiteral(" class=\"products-container-content-left__img\"");
 
-WriteLiteral(">   \r\n            <a");
+WriteLiteral(">\r\n            <a");
 
 WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-musavir\"");
 
 WriteLiteral("><img");
 
-WriteLiteral(" src=\"/Frontend/dist/images/products/musavir-img.svg\"");
+WriteAttribute("src", Tuple.Create(" src=\"", 2460), Tuple.Create("\"", 2515)
+, Tuple.Create(Tuple.Create("", 2466), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-musavir.svg")
+, 2466), false)
+);
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral("></a>                        \r\n        </div>        \r\n                \r\n        " +
-"<a");
+WriteLiteral("></a>\r\n        </div>\r\n\r\n        <a");
 
 WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-musavir\"");
 
@@ -90,11 +192,13 @@ WriteLiteral(" title=\"Fiyat ve Nasıl Satın Alabilirim\"");
 
 WriteLiteral(" class=\"products-container-content-left-button__price\"");
 
-WriteLiteral(" >Fiyat ve Nasıl Satın Alabilirim\r\n            <span><i");
+WriteLiteral(" id=\"musavir\"");
+
+WriteLiteral(">\r\n                Fiyat ve Nasıl Satın Alabilirim\r\n                <span><i");
 
 WriteLiteral(" class=\"fas fa-arrow-right\"");
 
-WriteLiteral("></i></span></a>\r\n        </div>\r\n    </div>\r\n    <div");
+WriteLiteral("></i></span>\r\n            </a>\r\n        </div>\r\n    </div>\r\n    <div");
 
 WriteLiteral(" class=\"products-container-content-right\"");
 
@@ -107,7 +211,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("            ");
 
             
-            #line 21 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 77 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
        Write(Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText));
 
             
@@ -116,55 +220,55 @@ WriteLiteral("            ");
 WriteLiteral("\r\n        </div>\r\n\r\n");
 
             
-            #line 24 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 80 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 24 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 80 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
          foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
 
             
             #line default
             #line hidden
-WriteLiteral("        <div");
+WriteLiteral("            <div");
 
 WriteLiteral(" class=\"products-container-content-right-item\"");
 
-WriteLiteral(">\r\n            <div");
+WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" class=\"products-container-content-right-item__title\"");
 
-WriteLiteral(">\r\n                <span>");
+WriteLiteral(">\r\n                    <span>");
 
             
-            #line 28 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
-                 Write(item.Fields.Title);
+            #line 84 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+                     Write(item.Fields.Title);
 
             
             #line default
             #line hidden
-WriteLiteral("</span>\r\n            </div>\r\n            <div");
+WriteLiteral("</span>\r\n                </div>\r\n                <div");
 
 WriteLiteral(" class=\"products-container-content-right-item__text\"");
 
 WriteLiteral(">\r\n");
 
-WriteLiteral("                ");
+WriteLiteral("                    ");
 
             
-            #line 31 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
-           Write(Html.Raw(item.Fields.ShortText));
+            #line 87 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+               Write(Html.Raw(item.Fields.ShortText));
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n            </div>\r\n        </div>\r\n");
+WriteLiteral("\r\n                </div>\r\n            </div>\r\n");
 
             
-            #line 34 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 90 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
         }
 
             

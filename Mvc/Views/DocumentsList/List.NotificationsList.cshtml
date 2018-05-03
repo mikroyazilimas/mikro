@@ -5,7 +5,7 @@
 <div class="container-sub">
     <div class="container-sub-content">
         <!-- DÖNGÜ -->
-        @foreach (var item in Model.Items)
+        @foreach (var item in Model.Items.OrderByDescending(x=> (DateTime?)x.Fields.DateTime))
         {
             <div class="container-sub-content-item">
                 <div class="container-sub-content-item-content">

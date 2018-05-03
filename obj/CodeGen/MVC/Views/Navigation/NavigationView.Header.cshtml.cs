@@ -251,7 +251,9 @@ WriteLiteral(" href=\"/e-donusum/e-fatura\"");
 
 WriteLiteral(">E-Dönüşüm</a>\r\n                    <a");
 
-WriteLiteral(" href=\"/mikrox\"");
+WriteLiteral(" href=\"https://mikrox.com.tr\"");
+
+WriteLiteral(" target=\"_blank\"");
 
 WriteLiteral(">MikroX</a>\r\n                    <!--<a href=\"#\">Referanslar</a>-->\r\n            " +
 "    </div>\r\n\r\n                <div");

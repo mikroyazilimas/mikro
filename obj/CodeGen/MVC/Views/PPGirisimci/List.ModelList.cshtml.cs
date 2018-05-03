@@ -52,7 +52,123 @@ WriteLiteral("\r\n");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\r\n\r\n<!-- Overlay -->\r\n<div");
+
+WriteLiteral(" class=\"overlay\"");
+
+WriteLiteral("></div>\r\n<!-- Popup Run-->\r\n<div");
+
+WriteLiteral(" class=\"run-popup\"");
+
+WriteLiteral(">\r\n    <div");
+
+WriteLiteral(" class=\"popup\"");
+
+WriteLiteral(">\r\n        <div");
+
+WriteLiteral(" class=\"popup-price\"");
+
+WriteLiteral(">\r\n            <div");
+
+WriteLiteral(" class=\"popup-price-buy run-top-buy\"");
+
+WriteLiteral(">\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__pricetext\"");
+
+WriteLiteral(">1265 TL + KDV</span>\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__text\"");
+
+WriteLiteral(">Başlayan Fiyatlarla Satın Alın</span>\r\n            </div>\r\n            <div");
+
+WriteLiteral(" class=\"popup-price-rent run-top-rent\"");
+
+WriteLiteral(">\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__pricetext\"");
+
+WriteLiteral(">440 TL + KDV/Yıl</span>\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__text\"");
+
+WriteLiteral(">Fiyatlarla Kiralayın.</span>\r\n            </div>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"popup-tabs\"");
+
+WriteLiteral(">\r\n            <a");
+
+WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+
+WriteLiteral(">\r\n                <div");
+
+WriteLiteral(" class=\"popup-tabs-buy\"");
+
+WriteLiteral(">\r\n                    <span>Satın Al</span>\r\n                </div>\r\n           " +
+" </a>\r\n            <a");
+
+WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+
+WriteLiteral(">\r\n                <div");
+
+WriteLiteral(" class=\"popup-tabs-rent\"");
+
+WriteLiteral(">\r\n                    <span>Kirala</span>\r\n                </div>\r\n            <" +
+"/a>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"popup-content\"");
+
+WriteLiteral(">\r\n            <div");
+
+WriteLiteral(" class=\"popup-content-left\"");
+
+WriteLiteral(">\r\n                <img");
+
+WriteLiteral(" src=\"/Frontend/dist/images/products/pop-up/products-run-chart.png\"");
+
+WriteLiteral(" alt=\"\"");
+
+WriteLiteral(">\r\n            </div>\r\n            <div");
+
+WriteLiteral(" class=\"popup-content-right\"");
+
+WriteLiteral(">\r\n                <div");
+
+WriteLiteral(" class=\"popup-content-right__logo\"");
+
+WriteLiteral(">\r\n                    <img");
+
+WriteLiteral(" src=\"/Frontend/dist/images/products/pop-up/products-run-logo.svg\"");
+
+WriteLiteral(" alt=\"\"");
+
+WriteLiteral(">\r\n                </div>\r\n                <div");
+
+WriteLiteral(" class=\"popup-content-right__description\"");
+
+WriteLiteral(@">
+                    <p>Sektör bağımsız çalışıyorsanız, birden fazla lokasyonda ya da sektörde faaliyet gösteriyorsanız, uçtan uca tüm ticari işlemlerinizi bir çatı altında toplamak istiyorsanız Mikro Jump tam size göre!</p>
+                    <ul>
+                        <li>Genişletilebilir modüler yapı</li>
+                        <li>Sektörel çözüm seçenekleri </li>
+                        <li>Çoklu Dil Desteği</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div");
+
+WriteLiteral(" class=\"popup-button\"");
+
+WriteLiteral(">\r\n            <a");
+
+WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+
+WriteLiteral(">Demo Talep Formu</a>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"close-popup\"");
+
+WriteLiteral(">X</div>\r\n    </div>\r\n</div>\r\n<!--Popup Finish-->\r\n\r\n\r\n<div");
 
 WriteLiteral(" class=\"detail-product\"");
 
@@ -63,13 +179,13 @@ WriteLiteral(" class=\"detail-product-content\"");
 WriteLiteral(">\r\n\r\n");
 
             
-            #line 12 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 66 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 12 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 66 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
          if (pField.MainPhoto != null)
         {
             foreach (var pht in pField.MainPhoto)
@@ -84,14 +200,14 @@ WriteLiteral(" class=\"detail-product-content__img\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 502), Tuple.Create("\"", 528)
+WriteAttribute("src", Tuple.Create(" src=\"", 2752), Tuple.Create("\"", 2778)
             
-            #line 17 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 508), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
+            #line 71 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+, Tuple.Create(Tuple.Create("", 2758), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
             
             #line default
             #line hidden
-, 508), false)
+, 2758), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -99,7 +215,7 @@ WriteLiteral(" alt=\"\"");
 WriteLiteral(">\r\n                </div>\r\n");
 
             
-            #line 19 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 73 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
             }
         }
 
@@ -110,16 +226,16 @@ WriteLiteral("\r\n        <div");
 
 WriteLiteral(" class=\"detail-product-content-other\"");
 
-WriteLiteral(">\r\n            \r\n            <div");
+WriteLiteral(">\r\n\r\n            <div");
 
 WriteLiteral(" class=\"detail-product-content-other__text\"");
 
-WriteLiteral(">\r\n\r\n               \r\n                <p>\r\n");
+WriteLiteral(">\r\n\r\n\r\n                <p>\r\n");
 
 WriteLiteral("                    ");
 
             
-            #line 28 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 82 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
                Write(Html.Raw(pField.Detail));
 
             
@@ -149,12 +265,14 @@ WriteLiteral(" title=\"Fiyat ve Nasıl Satın Alabilirim\"");
 
 WriteLiteral(" class=\"products-container-content-left-button__price\"");
 
+WriteLiteral(" id=\"run\"");
+
 WriteLiteral(">Fiyat ve Nasıl Satın Alabilirim <span><i");
 
 WriteLiteral(" class=\"fas fa-arrow-right\"");
 
-WriteLiteral("></i></span></a></a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n        \r\n<" +
-"/div>\r\n<div");
+WriteLiteral("></i></span></a></a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</div>\r\n<" +
+"div");
 
 WriteLiteral(" class=\"detail-product-description\"");
 
@@ -165,13 +283,13 @@ WriteLiteral(" class=\"detail-product-description-left\"");
 WriteLiteral(">\r\n");
 
             
-            #line 41 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 95 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 41 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 95 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
          if (pField.ProductProperties != null)
         {
             foreach (var pItem in pField.ProductProperties)
@@ -191,7 +309,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n\r\n                        <div>\r\n                            <span>");
 
             
-            #line 49 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 103 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
                              Write(pItem.Fields.PropertyName);
 
             
@@ -205,7 +323,7 @@ WriteLiteral(" class=\"products-container-content-right-item__text\"");
 WriteLiteral(">\r\n                        <p>");
 
             
-            #line 55 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 109 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
                       Write(Html.Raw(pItem.Fields.Detailinfo));
 
             
@@ -214,7 +332,7 @@ WriteLiteral(">\r\n                        <p>");
 WriteLiteral("</p>\r\n                    </div>\r\n                </div>\r\n");
 
             
-            #line 58 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 112 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
             }
         }
 
@@ -228,13 +346,13 @@ WriteLiteral(" class=\"detail-product-description-right\"");
 WriteLiteral(">\r\n");
 
             
-            #line 63 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 117 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 63 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 117 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
          if (pField.ChartPhoto != null)
         {
             foreach (var photo in pField.ChartPhoto)
@@ -243,48 +361,48 @@ WriteLiteral(">\r\n");
             
             #line default
             #line hidden
-WriteLiteral("            <div");
+WriteLiteral("                <div");
 
 WriteLiteral(" class=\"detail-product-description-right-content\"");
 
-WriteLiteral(">\r\n                <img");
+WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2442), Tuple.Create("\"", 2470)
+WriteAttribute("src", Tuple.Create(" src=\"", 4674), Tuple.Create("\"", 4702)
             
-            #line 68 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 2448), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+            #line 122 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+, Tuple.Create(Tuple.Create("", 4680), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 2448), false)
+, 4680), false)
 );
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral(">\r\n            </div>\r\n");
+WriteLiteral(">\r\n                </div>\r\n");
 
             
-            #line 70 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 124 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
             }
         }
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n       \r\n    </div>\r\n</div>\r\n\r\n<div");
+WriteLiteral("\r\n\r\n    </div>\r\n</div>\r\n\r\n<div");
 
 WriteLiteral(" class=\"management-services modules-owl-carousel owl-carousel\"");
 
 WriteLiteral(">\r\n\r\n");
 
             
-            #line 79 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 133 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
     
             
             #line default
             #line hidden
             
-            #line 79 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 133 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
      foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
     {
 
@@ -297,14 +415,14 @@ WriteLiteral(" class=\"management-services-item\"");
 
 WriteLiteral(">\r\n            <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 2783), Tuple.Create("\"", 2885)
+WriteAttribute("href", Tuple.Create(" href=\"", 5012), Tuple.Create("\"", 5114)
             
-            #line 82 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 2790), Tuple.Create<System.Object, System.Int32>(item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-run/")
+            #line 136 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+, Tuple.Create(Tuple.Create("", 5019), Tuple.Create<System.Object, System.Int32>(item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-run/")
             
             #line default
             #line hidden
-, 2790), false)
+, 5019), false)
 );
 
 WriteLiteral(">\r\n                <div");
@@ -314,13 +432,13 @@ WriteLiteral(" class=\"management-services-item__img\"");
 WriteLiteral(">\r\n");
 
             
-            #line 84 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 138 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
                     
             
             #line default
             #line hidden
             
-            #line 84 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 138 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
                      if (item.Fields.IconImage != null)
                     {
                         foreach (var photo in item.Fields.IconImage)
@@ -331,14 +449,14 @@ WriteLiteral(">\r\n");
             #line hidden
 WriteLiteral("                            <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 3159), Tuple.Create("\"", 3187)
+WriteAttribute("src", Tuple.Create(" src=\"", 5388), Tuple.Create("\"", 5416)
             
-            #line 88 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 3165), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+            #line 142 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+, Tuple.Create(Tuple.Create("", 5394), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 3165), false)
+, 5394), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -346,7 +464,7 @@ WriteLiteral(" alt=\"\"");
 WriteLiteral(">\r\n");
 
             
-            #line 89 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 143 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
                         }
                     }
 
@@ -360,7 +478,7 @@ WriteLiteral(" class=\"management-services-item__title\"");
 WriteLiteral(">\r\n                    <span>");
 
             
-            #line 94 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 148 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
                      Write(item.Fields.Title);
 
             
@@ -369,7 +487,7 @@ WriteLiteral(">\r\n                    <span>");
 WriteLiteral("</span>\r\n                </div>\r\n            </a>\r\n        </div>\r\n");
 
             
-            #line 98 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
+            #line 152 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
     }
 
             

@@ -52,7 +52,107 @@ WriteLiteral("\r\n");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\r\n<!-- Overlay -->\r\n<div");
+
+WriteLiteral(" class=\"overlay\"");
+
+WriteLiteral("></div>\r\n<!-- Popup Musavir-->\r\n<div");
+
+WriteLiteral(" class=\"musavir-popup\"");
+
+WriteLiteral(">\r\n    <div");
+
+WriteLiteral(" class=\"popup\"");
+
+WriteLiteral(">\r\n        <div");
+
+WriteLiteral(" class=\"popup-price\"");
+
+WriteLiteral(">\r\n            <div");
+
+WriteLiteral(" class=\"popup-price-buy musavir-top-buy\"");
+
+WriteLiteral(">\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__pricetext\"");
+
+WriteLiteral(">xxxx TL + KDV</span>\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__text\"");
+
+WriteLiteral(">Başlayan Fiyatlarla Satın Alın</span>\r\n            </div>\r\n            <div");
+
+WriteLiteral(" class=\"popup-price-rent musavir-top-rent\"");
+
+WriteLiteral(">\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__pricetext\"");
+
+WriteLiteral(">xxx TL + KDV/Yıl</span>\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__text\"");
+
+WriteLiteral(">Fiyatlarla Kiralayın.</span>\r\n            </div>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"popup-tabs\"");
+
+WriteLiteral(">\r\n            <a");
+
+WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+
+WriteLiteral(">\r\n                <div");
+
+WriteLiteral(" class=\"popup-tabs-buy\"");
+
+WriteLiteral(">\r\n                    <span>Satın Al</span>\r\n                </div>\r\n           " +
+" </a>\r\n            <a");
+
+WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+
+WriteLiteral(">\r\n                <div");
+
+WriteLiteral(" class=\"popup-tabs-rent\"");
+
+WriteLiteral(">\r\n                    <span>Kirala</span>\r\n                </div>\r\n            <" +
+"/a>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"popup-content\"");
+
+WriteLiteral(">\r\n            <div");
+
+WriteLiteral(" class=\"popup-content-right__description\"");
+
+WriteLiteral(@">
+                <p>
+                    Tüm muhasebe işlemlerinizi güvenle takip etmek istiyorsanız Mikro Müşavir tam size göre!
+
+                    Kolay kullanımı ve işlevselliği ile genel muhasebeden personele, işletme defterinden amortisman takibine kadar geniş bir yelpazede çözüm sunuyor.
+
+                </p>
+                <ul>
+                    <li>Muhasebe Yönetimi</li>
+                    <li>Sabit Kıymetler Yönetimi</li>
+                    <li>Enflasyon Muhasebesi (IAS-29 ve SPK Uyumlu)</li>
+                    <li>Mükellefler için Stok Yönetimi</li>
+                    <li>Finans Yönetimi</li>
+                    <li>Konsolide İşlemler</li>
+                    <li>Bildirge, beyanname, yazışma ve genel amaçlı programlar</li>
+                </ul>
+            </div>
+        </div>
+        <div");
+
+WriteLiteral(" class=\"popup-button\"");
+
+WriteLiteral(">\r\n            <a");
+
+WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+
+WriteLiteral(">Demo Talep Formu</a>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"close-popup\"");
+
+WriteLiteral(">X</div>\r\n    </div>\r\n</div>\r\n<!--Popup Finish-->\r\n\r\n\r\n<div");
 
 WriteLiteral(" class=\"detail-product\"");
 
@@ -63,13 +163,13 @@ WriteLiteral(" class=\"detail-product-content\"");
 WriteLiteral(">\r\n\r\n");
 
             
-            #line 12 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 66 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 12 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 66 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
          if (pField.MainPhoto != null)
         {
             foreach (var pht in pField.MainPhoto)
@@ -84,14 +184,14 @@ WriteLiteral(" class=\"detail-product-content__img\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 502), Tuple.Create("\"", 528)
+WriteAttribute("src", Tuple.Create(" src=\"", 2679), Tuple.Create("\"", 2705)
             
-            #line 17 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 508), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
+            #line 71 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+, Tuple.Create(Tuple.Create("", 2685), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
             
             #line default
             #line hidden
-, 508), false)
+, 2685), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -99,7 +199,7 @@ WriteLiteral(" alt=\"\"");
 WriteLiteral(">\r\n                </div>\r\n");
 
             
-            #line 19 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 73 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
             }
 
         }
@@ -118,7 +218,7 @@ WriteLiteral(" class=\"detail-product-content-other__title\"");
 WriteLiteral(">\r\n                <span>");
 
             
-            #line 25 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 79 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                  Write(pField.Title);
 
             
@@ -131,13 +231,13 @@ WriteLiteral(" class=\"detail-product-content-other__text\"");
 WriteLiteral(">\r\n\r\n");
 
             
-            #line 29 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 83 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                 
             
             #line default
             #line hidden
             
-            #line 29 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 83 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                  if (pField.ProductProperties != null)
                 {
                     foreach (var pItem in pField.ProductProperties)
@@ -149,7 +249,7 @@ WriteLiteral(">\r\n\r\n");
 WriteLiteral("                        <div>\r\n                            <span>");
 
             
-            #line 34 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 88 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                              Write(pItem.Fields.PropertyName);
 
             
@@ -158,7 +258,7 @@ WriteLiteral("                        <div>\r\n                            <span
 WriteLiteral("</span>\r\n                            <p>");
 
             
-            #line 35 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 89 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                           Write(pItem.Fields.Detail);
 
             
@@ -167,7 +267,7 @@ WriteLiteral("</span>\r\n                            <p>");
 WriteLiteral("</p>\r\n                        </div>\r\n");
 
             
-            #line 37 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 91 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                     }
                 }
 
@@ -179,7 +279,7 @@ WriteLiteral("\r\n                <p>\r\n");
 WriteLiteral("                    ");
 
             
-            #line 41 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 95 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                Write(Html.Raw(pField.Detail));
 
             
@@ -209,6 +309,8 @@ WriteLiteral(" title=\"Fiyat ve Nasıl Satın Alabilirim\"");
 
 WriteLiteral(" class=\"products-container-content-left-button__price\"");
 
+WriteLiteral(" id=\"musavir\"");
+
 WriteLiteral(">Fiyat ve Nasıl Satın Alabilirim <span><i");
 
 WriteLiteral(" class=\"fas fa-arrow-right\"");
@@ -225,13 +327,13 @@ WriteLiteral(" class=\"detail-product-description-left\"");
 WriteLiteral(">\r\n");
 
             
-            #line 57 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 111 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 57 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 111 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
          if (pField.ProductProperties != null)
         {
             foreach (var pItem in pField.ProductProperties)
@@ -251,7 +353,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n\r\n                        <div>\r\n                            <span>");
 
             
-            #line 65 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 119 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                              Write(pItem.Fields.PropertyName);
 
             
@@ -265,7 +367,7 @@ WriteLiteral(" class=\"products-container-content-right-item__text\"");
 WriteLiteral(">\r\n                        <p>");
 
             
-            #line 71 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 125 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                       Write(pItem.Fields.PropertyDetail);
 
             
@@ -274,7 +376,7 @@ WriteLiteral(">\r\n                        <p>");
 WriteLiteral("</p>\r\n                    </div>\r\n                </div>\r\n");
 
             
-            #line 74 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 128 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
             }
         }
 
@@ -288,13 +390,13 @@ WriteLiteral(" class=\"detail-product-description-right\"");
 WriteLiteral(">\r\n");
 
             
-            #line 79 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 133 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 79 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 133 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
          if (pField.ChartPhoto != null)
         {
             foreach (var photo in pField.ChartPhoto)
@@ -309,14 +411,14 @@ WriteLiteral(" class=\"detail-product-description-right-content\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2941), Tuple.Create("\"", 2969)
+WriteAttribute("src", Tuple.Create(" src=\"", 5131), Tuple.Create("\"", 5159)
             
-            #line 84 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 2947), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+            #line 138 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+, Tuple.Create(Tuple.Create("", 5137), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 2947), false)
+, 5137), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -324,7 +426,7 @@ WriteLiteral(" alt=\"\"");
 WriteLiteral(">\r\n                </div>\r\n");
 
             
-            #line 86 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 140 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
             }
         }
 

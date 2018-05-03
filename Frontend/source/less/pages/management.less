@@ -4,7 +4,7 @@
     justify-content: center;
     margin-top: 50px;
     &-item{
-        //width: 195px;
+        width: 260px;
         
         display: inline-block;
         align-items: center;
@@ -92,6 +92,7 @@
 
 .popup-content{
     align-items: flex-start;
+    padding: 30px;
     &-management-left{
         width: 260px;
         height: 165px;
@@ -110,12 +111,33 @@
             }
         }
     }
+    &-management-left{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        >a{
+            margin-top: 10px;
+            color: #415993;
+        }
+        >img{
+            height: 100%;
+        }
+    }
 }
 
 .mng-popup{
-    width: 900px!important;
+    width: 750px!important;
+    min-height: 250px;
 }
 
 .mng-popup-close{
     color: black!important;
+}
+
+.popup-content-management-right__description{
+    color: @dark_blue;
+}
+
+.mng-popup-content{
+    padding: 30px;
 }

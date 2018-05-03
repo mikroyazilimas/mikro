@@ -390,8 +390,10 @@ $('#fly').on('click', function() {
   $(".management-main-item").on('click', function(){
         $(".overlay").fadeIn(600, function() {});
         $(".yonetim-popup > .popup").fadeIn(900, function() {});
-        var value = $(this).data('data-text');
-        $('.popup-content-management-right__description > p').html(value);
+        var text = $(this).data('text');
+        $('.popup-content-management-right__description').html(text);
+        var img = $(this).data('img');
+        $('.popup-content-management-left > img').attr('src',img);
   });
 });
 

@@ -169,8 +169,12 @@ $(function() {
     $('.products-container-content-right-item').click(function(){
          $(this).find('.products-container-content-right-item__text').slideToggle('slow');
          $(this).find('.products-container-content-right-item__title').toggleClass('products-detail-select');
+         
+        
     });
 
+    //Ürün detay sayfası ilk item click'leniyor. 
+    $(".products-container-content-right-item:nth-child(1)").click();
     //Demo-request-open
    $('.page-section-demo-request-button__demo').click(function(){
        $('.page-section-demo-request').slideToggle('slow');

@@ -43,143 +43,18 @@ namespace ASP
         public override void Execute()
         {
 WriteLiteral("\r\n<style>\r\n    .owl-dots {\r\n        position: absolute;\r\n        bottom: 0px;\r\n  " +
-"  }\r\n\r\n    .owl-nav {\r\n        display: none;\r\n    }\r\n</style>\r\n\r\n<div");
+"  }\r\n\r\n    .owl-nav {\r\n        display: none;\r\n    }\r\n</style>\r\n<div");
 
-WriteLiteral(" class=\"page-section-demo herobanner-owl-carousel owl-carousel\"");
+WriteLiteral(" class=\"page-section-demo\"");
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\r\n   <img");
 
-            
-            #line 16 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-    
-            
-            #line default
-            #line hidden
-            
-            #line 16 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-     foreach (var item in Model.Items)
-    {
-
-            
-            #line default
-            #line hidden
-WriteLiteral("        <a");
-
-WriteAttribute("href", Tuple.Create(" href=\"", 391), Tuple.Create("\"", 422)
-            
-            #line 18 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-, Tuple.Create(Tuple.Create("", 398), Tuple.Create<System.Object, System.Int32>(item.Fields.RedirectUrl
-            
-            #line default
-            #line hidden
-, 398), false)
+WriteAttribute("src", Tuple.Create("  src=\"", 302), Tuple.Create("\"", 356)
+, Tuple.Create(Tuple.Create("", 309), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/demo-banner.png")
+, 309), false)
 );
 
-WriteLiteral(" class=\"page-section-demo-item\"");
-
-WriteLiteral(">\r\n\r\n");
-
-            
-            #line 20 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-            
-            
-            #line default
-            #line hidden
-            
-            #line 20 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-             foreach (var photo in item.Fields.Photo)
-            {
-
-            
-            #line default
-            #line hidden
-WriteLiteral("                <img");
-
-WriteAttribute("src", Tuple.Create(" src=\"", 549), Tuple.Create("\"", 577)
-            
-            #line 22 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-, Tuple.Create(Tuple.Create("", 555), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
-            
-            #line default
-            #line hidden
-, 555), false)
-);
-
-WriteLiteral(" />\r\n");
-
-            
-            #line 23 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-            }
-
-            
-            #line default
-            #line hidden
-WriteLiteral("            ");
-
-            
-            #line 24 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-             if (item.Fields.FullPhotoBanner != true)
-            {
-
-            
-            #line default
-            #line hidden
-WriteLiteral("                <div");
-
-WriteLiteral(" class=\"page-section-demo-item-content\"");
-
-WriteLiteral(">\r\n                    <div");
-
-WriteLiteral(" class=\"page-section-demo-item-content-title\"");
-
-WriteLiteral(">\r\n                        <div");
-
-WriteLiteral(" class=\"page-section-demo-item-content-title__text1\"");
-
-WriteLiteral(">\r\n                            <span>");
-
-            
-            #line 29 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-                             Write(item.Fields.Title);
-
-            
-            #line default
-            #line hidden
-WriteLiteral("</span>\r\n                        </div>\r\n                    </div>\r\n            " +
-"        <div");
-
-WriteLiteral(" class=\"page-section-demo-item-content-text2\"");
-
-WriteLiteral(">\r\n                        <p>");
-
-            
-            #line 33 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-                      Write(item.Fields.SubTitle);
-
-            
-            #line default
-            #line hidden
-WriteLiteral("</p>\r\n                    </div>\r\n                </div>\r\n");
-
-            
-            #line 36 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-            }
-
-            
-            #line default
-            #line hidden
-WriteLiteral("            \r\n        </a>\r\n");
-
-            
-            #line 39 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-
-        
-    }
-
-            
-            #line default
-            #line hidden
-WriteLiteral("\r\n</div>");
+WriteLiteral(" />\r\n</div>\r\n\r\n");
 
         }
     }

@@ -36,7 +36,123 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("<div");
+WriteLiteral("<!-- Overlay -->\r\n<div");
+
+WriteLiteral(" class=\"overlay\"");
+
+WriteLiteral("></div>\r\n<!-- Popup Jump-->\r\n<div");
+
+WriteLiteral(" class=\"jump-popup\"");
+
+WriteLiteral(">\r\n    <div");
+
+WriteLiteral(" class=\"popup\"");
+
+WriteLiteral(">\r\n        <div");
+
+WriteLiteral(" class=\"popup-price\"");
+
+WriteLiteral(">\r\n            <div");
+
+WriteLiteral(" class=\"popup-price-buy jump-top-buy\"");
+
+WriteLiteral(">\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__pricetext\"");
+
+WriteLiteral(">4.313 TL + KDV</span>\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__text\"");
+
+WriteLiteral(">Başlayan Fiyatlarla Satın Alın</span>\r\n            </div>\r\n            <div");
+
+WriteLiteral(" class=\"popup-price-rent jump-top-rent\"");
+
+WriteLiteral(">\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__pricetext\"");
+
+WriteLiteral(">938 TL + KDV/Yıl</span>\r\n                <span");
+
+WriteLiteral(" class=\"popup-price__text\"");
+
+WriteLiteral(">Fiyatlarla Kiralayın.</span>\r\n            </div>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"popup-tabs\"");
+
+WriteLiteral(">\r\n            <a");
+
+WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+
+WriteLiteral(">\r\n                <div");
+
+WriteLiteral(" class=\"popup-tabs-buy\"");
+
+WriteLiteral(">\r\n                    <span>Satın Al</span>\r\n                </div>\r\n           " +
+" </a>\r\n            <a");
+
+WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+
+WriteLiteral(">\r\n                <div");
+
+WriteLiteral(" class=\"popup-tabs-rent\"");
+
+WriteLiteral(">\r\n                    <span>Kirala</span>\r\n                </div>\r\n            <" +
+"/a>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"popup-content\"");
+
+WriteLiteral(">\r\n            <div");
+
+WriteLiteral(" class=\"popup-content-left\"");
+
+WriteLiteral(">\r\n                <img");
+
+WriteLiteral(" src=\"/Frontend/dist/images/products/pop-up/products-jump-chart.png\"");
+
+WriteLiteral(" alt=\"\"");
+
+WriteLiteral(">\r\n            </div>\r\n            <div");
+
+WriteLiteral(" class=\"popup-content-right\"");
+
+WriteLiteral(">\r\n                <div");
+
+WriteLiteral(" class=\"popup-content-right__logo\"");
+
+WriteLiteral(">\r\n                    <img");
+
+WriteLiteral(" src=\"/Frontend/dist/images/products/pop-up/products-jump-logo.svg\"");
+
+WriteLiteral(" alt=\"\"");
+
+WriteLiteral(">\r\n                </div>\r\n                <div");
+
+WriteLiteral(" class=\"popup-content-right__description\"");
+
+WriteLiteral(@">
+                    <p>Sektör bağımsız çalışıyorsanız, birden fazla lokasyonda ya da sektörde faaliyet gösteriyorsanız, uçtan uca tüm ticari işlemlerinizi bir çatı altında toplamak istiyorsanız Mikro Jump tam size göre!</p>
+                    <ul>
+                        <li>Genişletilebilir modüler yapı</li>
+                        <li>Sektörel çözüm seçenekleri </li>
+                        <li>Çoklu Dil Desteği</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div");
+
+WriteLiteral(" class=\"popup-button\"");
+
+WriteLiteral(">\r\n            <a");
+
+WriteLiteral(" href=\"\"");
+
+WriteLiteral(">Demo Talep Formu</a>\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"close-popup\"");
+
+WriteLiteral(">X</div>\r\n    </div>\r\n</div>\r\n<!--Popup Finish-->\r\n\r\n<div");
 
 WriteLiteral(" class=\"products-container-content\"");
 
@@ -48,11 +164,11 @@ WriteLiteral(">\r\n        <div");
 
 WriteLiteral(" class=\"scrolldown sticky-two\"");
 
-WriteLiteral(">\r\n        <div");
+WriteLiteral(">\r\n            <div");
 
 WriteLiteral(" class=\"products-container-content-left__img\"");
 
-WriteLiteral(">   \r\n            <a");
+WriteLiteral(">\r\n                <a");
 
 WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-jump/\"");
 
@@ -62,19 +178,18 @@ WriteLiteral(" src=\"/Frontend/dist/images/jump-big-banner.png\"");
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral("></a>                        \r\n        </div>        \r\n                    \r\n    " +
-"    <a");
+WriteLiteral("></a>\r\n            </div>\r\n\r\n            <a");
 
 WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-jump/\"");
 
 WriteLiteral(" class=\"products-container-content-left__text\"");
 
-WriteLiteral(">\r\n            <span>Kobiler İçin</span>\r\n            <span>Mikro Jump</span>\r\n  " +
-"      </a>\r\n        <div");
+WriteLiteral(">\r\n                <span>Kobiler İçin</span>\r\n                <span>Mikro Jump</s" +
+"pan>\r\n            </a>\r\n            <div");
 
 WriteLiteral(" class=\"products-container-content-left-button\"");
 
-WriteLiteral(">\r\n            <a");
+WriteLiteral(">\r\n                <a");
 
 WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
 
@@ -86,7 +201,7 @@ WriteLiteral(">Ücretsiz Demo<span><i");
 
 WriteLiteral(" class=\"fas fa-arrow-right\"");
 
-WriteLiteral("></i></span></a>\r\n            <a");
+WriteLiteral("></i></span></a>\r\n                <a");
 
 WriteLiteral(" href=\"#\"");
 
@@ -94,15 +209,19 @@ WriteLiteral(" title=\"Fiyat ve Nasıl Satın Alabilirim\"");
 
 WriteLiteral(" class=\"products-container-content-left-button__price\"");
 
-WriteLiteral(" >Fiyat ve Nasıl Satın Alabilirim\r\n            <span><i");
+WriteLiteral(" id=\"jump\"");
+
+WriteLiteral(">\r\n                    Fiyat ve Nasıl Satın Alabilirim\r\n                    <span" +
+"><i");
 
 WriteLiteral(" class=\"fas fa-arrow-right\"");
 
-WriteLiteral("></i></span></a>\r\n        </div>\r\n    </div>\r\n    </div>\r\n    <div");
+WriteLiteral("></i></span>\r\n                </a>\r\n            </div>\r\n        </div>\r\n    </div" +
+">\r\n    <div");
 
 WriteLiteral(" class=\"products-container-content-right\"");
 
-WriteLiteral(">\r\n        \r\n                <div");
+WriteLiteral(">\r\n\r\n        <div");
 
 WriteLiteral(" class=\"shortText\"");
 
@@ -111,7 +230,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("            ");
 
             
-            #line 23 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+            #line 78 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
        Write(Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText));
 
             
@@ -120,55 +239,55 @@ WriteLiteral("            ");
 WriteLiteral("\r\n        </div>\r\n\r\n");
 
             
-            #line 26 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+            #line 81 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 26 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+            #line 81 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
          foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
 
             
             #line default
             #line hidden
-WriteLiteral("        <div");
+WriteLiteral("            <div");
 
 WriteLiteral(" class=\"products-container-content-right-item\"");
 
-WriteLiteral(">\r\n            <div");
+WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" class=\"products-container-content-right-item__title\"");
 
-WriteLiteral(">\r\n                <span>");
+WriteLiteral(">\r\n                    <span>");
 
             
-            #line 30 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
-                 Write(item.Fields.Title);
+            #line 85 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+                     Write(item.Fields.Title);
 
             
             #line default
             #line hidden
-WriteLiteral("</span>\r\n            </div>\r\n            <div");
+WriteLiteral("</span>\r\n                </div>\r\n                <div");
 
 WriteLiteral(" class=\"products-container-content-right-item__text\"");
 
 WriteLiteral(">\r\n");
 
-WriteLiteral("                ");
+WriteLiteral("                    ");
 
             
-            #line 33 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
-           Write(Html.Raw(item.Fields.ShortText));
+            #line 88 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+               Write(Html.Raw(item.Fields.ShortText));
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n            </div>\r\n        </div>\r\n");
+WriteLiteral("\r\n                </div>\r\n            </div>\r\n");
 
             
-            #line 36 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+            #line 91 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
         }
 
             

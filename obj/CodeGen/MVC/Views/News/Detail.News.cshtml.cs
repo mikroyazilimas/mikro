@@ -45,7 +45,7 @@ WriteLiteral(">\r\n<p>");
 
             
             #line 10 "..\..\MVC\Views\News\Detail.News.cshtml"
-Write(Html.Raw(Model.Item.Fields.Detail));
+Write(Html.Raw(Model.Item.Fields.Content));
 
             
             #line default
@@ -68,14 +68,14 @@ WriteLiteral(" class=\"\"");
 
 WriteLiteral(">\r\n            <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 387), Tuple.Create("\"", 415)
+WriteAttribute("src", Tuple.Create(" src=\"", 388), Tuple.Create("\"", 416)
             
             #line 18 "..\..\MVC\Views\News\Detail.News.cshtml"
-, Tuple.Create(Tuple.Create("", 393), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 394), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 393), false)
+, 394), false)
 );
 
 WriteLiteral(" alt=\"\"");

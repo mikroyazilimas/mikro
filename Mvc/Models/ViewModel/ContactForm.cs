@@ -18,5 +18,6 @@ namespace SitefinityWebApp.Mvc.Models.ViewModel
 
         public string Message { get; set; }
         public bool Contract { get; set; }
+        public bool hpContract { get; set; }
     }
 }

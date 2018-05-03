@@ -36,20 +36,21 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("<style>\r\n.products-container-content {\r\n    display: none;\r\n}\r\n</style>\r\n\r\n<div");
+WriteLiteral("\r\n<style>\r\n.products-container-content {\r\n    display: none;\r\n}\r\n</style>\r\n\r\n<div" +
+"");
 
 WriteLiteral(" class=\"sfContentBlock\"");
 
 WriteLiteral(">\r\n    <p>");
 
             
-            #line 10 "..\..\MVC\Views\PPKobiler\Detail.Kobiler.cshtml"
+            #line 11 "..\..\MVC\Views\PPKobiler\Detail.Kobiler.cshtml"
   Write(Html.Raw(Model.Item.Fields.Detail));
 
             
             #line default
             #line hidden
-WriteLiteral("</p>\r\n</div>\r\n\r\n\r\n\r\n    <div");
+WriteLiteral("</p>\r\n</div>\r\n\r\n    <div");
 
 WriteLiteral(" class=\"story-products-wizard\"");
 

@@ -54,7 +54,7 @@ WriteLiteral(">\r\n        <!-- DÖNGÜ -->\r\n");
             #line hidden
             
             #line 7 "..\..\MVC\Views\News\List.News.cshtml"
-         foreach (var item in Model.Items)
+         foreach (var item in Model.Items.OrderByDescending(x => (DateTime?)x.Fields.DateTime))
         {
 
             
@@ -147,14 +147,14 @@ WriteLiteral(">\r\n                            <span>Dijitalleşen Dünyada KOB�
             #line hidden
 WriteLiteral("                        <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 1448), Tuple.Create("\"", 1583)
+WriteAttribute("href", Tuple.Create(" href=\"", 1501), Tuple.Create("\"", 1636)
             
             #line 28 "..\..\MVC\Views\News\List.News.cshtml"
-, Tuple.Create(Tuple.Create("", 1455), Tuple.Create<System.Object, System.Int32>(String.Format("basinda-mikro/{0}{1}", (((DateTime?)item.Fields.DateCreated).Value.ToString("yyyy/MM/dd/")),item.Fields.UrlName)
+, Tuple.Create(Tuple.Create("", 1508), Tuple.Create<System.Object, System.Int32>(String.Format("basinda-mikro/{0}{1}", (((DateTime?)item.Fields.DateCreated).Value.ToString("yyyy/MM/dd/")),item.Fields.UrlName)
             
             #line default
             #line hidden
-, 1455), false)
+, 1508), false)
 );
 
 WriteLiteral(">\r\n                            <div");

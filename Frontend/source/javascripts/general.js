@@ -316,7 +316,14 @@ $('select').change(function(){
     if($("#00N0Y00000QeR9j option:selected").attr('data-field') != null)
     {
         $("."+$("#00N0Y00000QeR9j option:selected").attr('data-field')).addClass('wizardshow');
+    
     }
+    
+    if ($("#00N0Y00000QeNYu option:selected").attr('data-field') != null) {
+
+        $("#retURL").val("http://mikroyazilim.phtools.net/tesekkurler?product=" + $("#00N0Y00000QeNYu option:selected").val());        
+    }
+    
 });
 
 $('.products-container-content-right-item').next('.products-container-content-right-item__text').addClass('products-detail-select');
@@ -396,6 +403,8 @@ $('#fly').on('click', function() {
         $('.popup-content-management-right__description').html(text);
         var img = $(this).data('img');
         $('.popup-content-management-left > img').attr('src',img);
+        var link = $(this).data('link');
+        $('.popup-content-management-left > a').attr('href',link);
   });
 });
 

@@ -46,61 +46,73 @@ WriteLiteral(">\r\n    <div");
 
 WriteLiteral(" class=\"homepage-new-product-left-wrapper\"");
 
-WriteLiteral(">\r\n        <div");
+WriteLiteral(">\r\n        <a");
+
+WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run\"");
+
+WriteLiteral(">\r\n            <div");
 
 WriteLiteral(" class=\"homepage-new-product-item\"");
 
 WriteLiteral(" data-image=\"/Frontend/dist/images/run-big-banner.png\"");
 
-WriteLiteral(">\r\n            <img");
+WriteLiteral(">\r\n                <img");
 
 WriteLiteral(" src=\"/Frontend/dist/images/run-banner.png\"");
 
 WriteLiteral(" alt=\"#\"");
 
-WriteLiteral(">\r\n            <a");
+WriteLiteral(">\r\n                <a");
 
 WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run\"");
 
 WriteLiteral(" class=\"homepage-new-product-item-link\"");
 
-WriteLiteral(">Detay</a>\r\n        </div>\r\n        <div");
+WriteLiteral(">Detay</a>\r\n            </div>\r\n        </a>\r\n        <a");
+
+WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-jump\"");
+
+WriteLiteral(">\r\n            <div");
 
 WriteLiteral(" class=\"homepage-new-product-item\"");
 
 WriteLiteral(" data-image=\"/Frontend/dist/images/jump-big-banner.png\"");
 
-WriteLiteral(">\r\n            <img");
+WriteLiteral(">\r\n                <img");
 
 WriteLiteral(" src=\"/Frontend/dist/images/jump-banner.png\"");
 
 WriteLiteral(" alt=\"#\"");
 
-WriteLiteral(">\r\n            <a");
+WriteLiteral(">\r\n                <a");
 
 WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-jump\"");
 
 WriteLiteral(" class=\"homepage-new-product-item-link\"");
 
-WriteLiteral(">Detay</a>\r\n        </div>\r\n        <div");
+WriteLiteral(">Detay</a>\r\n            </div>\r\n        </a>\r\n        <a");
+
+WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-fly\"");
+
+WriteLiteral(">\r\n            <div");
 
 WriteLiteral(" class=\"homepage-new-product-item\"");
 
 WriteLiteral(" data-image=\"/Frontend/dist/images/fly-big-banner.png\"");
 
-WriteLiteral(">\r\n            <img");
+WriteLiteral(">\r\n                <img");
 
 WriteLiteral(" src=\"/Frontend/dist/images/fly-banner.png\"");
 
 WriteLiteral(" alt=\"#\"");
 
-WriteLiteral(">\r\n            <a");
+WriteLiteral(">\r\n                <a");
 
 WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-fly\"");
 
 WriteLiteral(" class=\"homepage-new-product-item-link\"");
 
-WriteLiteral(">Detay</a>\r\n        </div>\r\n    </div>\r\n    <div");
+WriteLiteral(">Detay</a>\r\n            </div>\r\n        </a>\r\n    </div>\r\n    <div");
 
 WriteLiteral(" class=\"homepage-new-product-right-wrapper\"");
 
@@ -130,9 +142,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 3686), Tuple.Create("\"", 3740)
-, Tuple.Create(Tuple.Create("", 3692), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-run.png")
-, 3692), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 3933), Tuple.Create("\"", 3987)
+, Tuple.Create(Tuple.Create("", 3939), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-run.png")
+, 3939), false)
 );
 
 WriteLiteral(" alt=\"#\"");
@@ -149,9 +161,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-jump\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 3935), Tuple.Create("\"", 3990)
-, Tuple.Create(Tuple.Create("", 3941), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-jump.png")
-, 3941), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 4182), Tuple.Create("\"", 4237)
+, Tuple.Create(Tuple.Create("", 4188), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-jump.png")
+, 4188), false)
 );
 
 WriteLiteral(" alt=\"#\"");
@@ -168,9 +180,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-fly\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 4183), Tuple.Create("\"", 4237)
-, Tuple.Create(Tuple.Create("", 4189), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-fly.png")
-, 4189), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 4430), Tuple.Create("\"", 4484)
+, Tuple.Create(Tuple.Create("", 4436), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-fly.png")
+, 4436), false)
 );
 
 WriteLiteral(" alt=\"#\"");

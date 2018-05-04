@@ -157,6 +157,8 @@ WriteAttribute("href", Tuple.Create(" href=\"", 1501), Tuple.Create("\"", 1636)
 , 1508), false)
 );
 
+WriteLiteral(" target=\"_blank\"");
+
 WriteLiteral(">\r\n                            <div");
 
 WriteLiteral(" class=\"container-sub-content-item-content-right\"");

@@ -96,5 +96,83 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 return null;
             }
         }
+
+        [HttpPost]
+        public JsonResult ContactSendMail()
+        {
+            try
+            {
+                if (!String.IsNullOrEmpty(Request["first_name"]) && !String.IsNullOrEmpty(Request["last_name"]) && !String.IsNullOrEmpty(Request["phone"]) && !String.IsNullOrEmpty(Request["subject"]) && !String.IsNullOrEmpty(Request["00N0Y00000QeRBp"]) && !String.IsNullOrEmpty(Request["email"]))
+                {
+                    string name = Request["first_name"];
+                    string surname = Request["last_name"];
+                    string phone = Request["phone"];
+                    string subject = Request["subject"];
+                    string message = Request["00N0Y00000QeRBp"];
+                    string email = Request["email"];
+
+                    MailHelper mail = new MailHelper();
+
+                    mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr" };
+                    switch (subject)
+                    {
+                        case "1":
+                            mail.CC = new List<string>() { "satissonrasi@mikro.com.tr" };
+                            break;
+                        case "2":
+                            mail.CC = new List<string>() { "Serpil.EREN@mikro.com.tr" };
+                            break;
+                        case "3":
+                            mail.CC = new List<string>() { "urungelistirme@mikro.com.tr" };
+                            break;
+                        case "4":
+                            mail.CC = new List<string>() { "satis@mikro.com.tr" };
+                            break;
+                        case "5":
+                            mail.CC = new List<string>() { "satis@mikro.com.tr" };
+                            break;
+                        default:
+                            break;
+                    }
+
+                    mail.CC = new List<string>() { "aykut.saridede@ph.com.tr" };
+                    mail.From = "no-reply@e-mail.mikro.com.tr";
+                    mail.FromDisplayName = "Mikro";
+
+                    string body = String.Empty;
+                    using (StreamReader sr = new StreamReader(Server.MapPath("~/Html/contact.html"), System.Text.Encoding.UTF8))
+                        body = sr.ReadToEnd();
+
+
+                    body = body.Replace("@@ad@@", name);
+                    body = body.Replace("@@soyad@@", surname);
+                    body = body.Replace("@@telefon@@", phone);
+                    body = body.Replace("@@mesaj@@", message);
+                    body = body.Replace("@@eposta@@", email);
+
+                    mail.Body = body;
+                    mail.Subject = "İletişim Formu";
+                    bool rtn = mail.SendMail();
+                    if (rtn)
+                    {
+                        return Json(true);
+                    }
+                    else
+                    {
+                        return Json(false);
+                    }
+                }
+                else
+                {
+                    return Json(false);
+                }
+
+                
+            }
+            catch (Exception ex)
+            {
+                return Json(false);
+            }
+        }
     }
 }

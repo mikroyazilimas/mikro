@@ -17,12 +17,37 @@
         return true;
         //return false;
     }
+
+    function contactFormSubmit(formId) {
+        //you code 
+        var dt = $('#' + formId + '').serialize();
+        $.ajax({
+            type: 'POST',
+            url: '/urun-secme-sihirbazi/ContactSendMail?formId=' + formId,
+            data: dt,
+            success: function (msg) {
+                if (msg == true) {
+                    window.location.href = "/tesekkurler";
+                   
+                } else
+                {
+                    return false;
+                }
+            }
+        });
+        return false;
+        //return false;
+    }
+
+
+    
     
 
 </script>
 
 @using (@Html.BeginForm("Index", "ContactForm", FormMethod.Post))
 { }
+@*@using (@Html.BeginForm("Index", "ContactForm", FormMethod.Post))*@
 @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", id = "contactForm" }))
 {
 
@@ -45,7 +70,7 @@
                     @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", placeholder = "E-Postanız*" })
                 </label>
                 <label for="">
-                    @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", maxlength = "11", required = "required", placeholder = "Telefon Numaranız*", @class = "phones", type = "text"})
+                    @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", maxlength = "11", required = "required", placeholder = "Telefon Numaranız*", @class = "phones", type = "text" })
                 </label>
                 <div class="wizard-bottom-left-content-form-row-text flex homepage-contact-description-text desktop-contract-text">
                     <p>Kişisel Veriler Bilgilendirme Metni</p>
@@ -119,11 +144,11 @@
                 </div>
                 <div class="page-section-contact-container-area-left-form-button">
                     @*<a href="#" title="Gönder" class="page-section-contact-area-left-form-button__send">Gönder</a>*@
-                    <input class="hp_btn" type="submit" name="SaveButton" value="Gönder" onclick="return formSubmit('contactForm');"/>
+                    <input class="hp_btn" type="submit" name="SaveButton" value="Gönder" onclick="return contactFormSubmit('contactForm');"/>
                 </div>
                 
                 <label for="Contract-hp" class="hp-contract desktop-contract-text">
-                    @Html.CheckBoxFor(m => m.Contract, new { required = "required", id= "Contract-hp" })
+                    @Html.CheckBoxFor(m => m.Contract, new { required = "required", id = "Contract-hp" })
                     Kişisel Veriler Bilgilendirme Metni'ni Kabul Ediyorum
                 </label>
             </div>
@@ -132,6 +157,6 @@
     </div>
 
 
-    
+
 }
 

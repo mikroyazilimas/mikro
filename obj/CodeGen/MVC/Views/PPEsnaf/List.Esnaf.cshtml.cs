@@ -36,11 +36,7 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("<!-- Overlay -->\r\n<div");
-
-WriteLiteral(" class=\"overlay\"");
-
-WriteLiteral("></div>\r\n<!-- Popup Musavir-->\r\n<div");
+WriteLiteral("<!-- Popup Musavir-->\r\n<div");
 
 WriteLiteral(" class=\"musavir-popup\"");
 
@@ -60,7 +56,7 @@ WriteLiteral(">\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__pricetext\"");
 
-WriteLiteral(">xxxx TL + KDV</span>\r\n                <span");
+WriteLiteral(">1290 TL + KDV</span>\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__text\"");
 
@@ -72,7 +68,7 @@ WriteLiteral(">\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__pricetext\"");
 
-WriteLiteral(">xxx TL + KDV/Yıl</span>\r\n                <span");
+WriteLiteral(">516 TL + KDV/Yıl</span>\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__text\"");
 
@@ -106,7 +102,18 @@ WriteLiteral(">\r\n            <div");
 
 WriteLiteral(" class=\"popup-content-right__description\"");
 
+WriteLiteral(">\r\n                <div");
+
+WriteLiteral(" class=\"popup-content-right__logo\"");
+
+WriteLiteral(">\r\n                    <img");
+
+WriteLiteral(" src=\"/Frontend/dist/images/products/mikro-musavir.png\"");
+
+WriteLiteral(" alt=\"\"");
+
 WriteLiteral(@">
+                </div>
                 <p>
                     Tüm muhasebe işlemlerinizi güvenle takip etmek istiyorsanız Mikro Müşavir tam size göre!
 
@@ -154,9 +161,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-musavir\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2460), Tuple.Create("\"", 2515)
-, Tuple.Create(Tuple.Create("", 2466), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-musavir.svg")
-, 2466), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2585), Tuple.Create("\"", 2640)
+, Tuple.Create(Tuple.Create("", 2591), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-musavir.png")
+, 2591), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -211,7 +218,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("            ");
 
             
-            #line 77 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 79 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
        Write(Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText));
 
             
@@ -220,13 +227,13 @@ WriteLiteral("            ");
 WriteLiteral("\r\n        </div>\r\n\r\n");
 
             
-            #line 80 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 82 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 80 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 82 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
          foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
 
@@ -244,7 +251,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n                    <span>");
 
             
-            #line 84 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 86 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
                      Write(item.Fields.Title);
 
             
@@ -259,7 +266,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 87 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 89 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
                Write(Html.Raw(item.Fields.ShortText));
 
             
@@ -268,7 +275,7 @@ WriteLiteral("                    ");
 WriteLiteral("\r\n                </div>\r\n            </div>\r\n");
 
             
-            #line 90 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 92 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
         }
 
             

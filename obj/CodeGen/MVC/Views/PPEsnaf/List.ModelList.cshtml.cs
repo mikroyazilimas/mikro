@@ -76,7 +76,7 @@ WriteLiteral(">\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__pricetext\"");
 
-WriteLiteral(">xxxx TL + KDV</span>\r\n                <span");
+WriteLiteral(">1290 TL + KDV</span>\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__text\"");
 
@@ -88,7 +88,7 @@ WriteLiteral(">\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__pricetext\"");
 
-WriteLiteral(">xxx TL + KDV/Yıl</span>\r\n                <span");
+WriteLiteral(">516 TL + KDV/Yıl</span>\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__text\"");
 

@@ -129,11 +129,28 @@
                 transition: all 0.25s;
                 margin: 3px 0px 3px 10px;
                 color: rgba(255, 255, 255, 0.2);
+                position: relative;
                 &:hover{
                     color: #ffffff;
+                    &::after{
+                        width: 30px;
+                    }
                 }
                 @media @responsive {
                     display: none;
+                }
+                &::after {
+                    content: "";
+                    bottom: -2px;
+                    left: 0;
+                    width: 10px;
+                    height: 1px;
+                    background-color: white;
+                    position: absolute;
+                    transition: all 1s;
+                    @media @responsive{
+                        top: 27px;
+                    }
                 }
             }
         }

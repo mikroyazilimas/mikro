@@ -14,6 +14,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
     [ControllerToolboxItem(Name = "DemoRequestForm", Title = "Demo Talep Formu", SectionName = "FormModel")]
     public class DemoRequestFormController : Controller
     {
+        
         // GET: DemoRequestForm
         public ActionResult Index()
         {
@@ -25,7 +26,9 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
 
                 sf.GetProductForm();
 
-                DemoRequestForm m = new DemoRequestForm(){};
+                DemoRequestForm m = new DemoRequestForm(){
+                    Product= Request.QueryString["product"]
+                };
                 
                 m.City = new DropDownListModel<Library.Model.City>
                 {

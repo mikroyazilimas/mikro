@@ -277,7 +277,7 @@ WriteLiteral("                ");
 
             
             #line 57 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                 using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" }))
+                 using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",id= "demoForm" }))
                 {
 
             
@@ -299,7 +299,15 @@ WriteLiteral(" id=\"00N0Y00000QeNmD\"");
 
 WriteLiteral(" name=\"00N0Y00000QeNmD\"");
 
-WriteLiteral(" value=\"Run\"");
+WriteAttribute("value", Tuple.Create(" value=\"", 12374), Tuple.Create("\"", 12396)
+            
+            #line 61 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+                   , Tuple.Create(Tuple.Create("", 12382), Tuple.Create<System.Object, System.Int32>(Model.Product
+            
+            #line default
+            #line hidden
+, 12382), false)
+);
 
 WriteLiteral(">\r\n                            <input");
 
@@ -455,7 +463,9 @@ WriteLiteral(" name=\"SaveButton\"");
 
 WriteLiteral(" value=\"Gönder\"");
 
-WriteLiteral(" />\r\n                        </div>\r\n                    </div>\r\n");
+WriteLiteral(" onclick=\"return formSubmit(\'demoForm\');\"");
+
+WriteLiteral("/>\r\n                        </div>\r\n                    </div>\r\n");
 
             
             #line 111 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"

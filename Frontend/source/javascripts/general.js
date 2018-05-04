@@ -74,6 +74,7 @@ $(function() {
 
     $('.page-header-navigation-item__menu').click(function() {
         $('.page-mega-navigation').toggleClass('active');
+        //$('.page-mega-navigation').animate({"height":"~calc(100vh - 85px)"},1000);
         $('.open').toggle('slow');
         $('.close').toggle('slow');
     });
@@ -194,11 +195,8 @@ $(function() {
    });
 
    $(".homepage-new-product-item").hover( function (){
-<<<<<<< HEAD
-=======
     
 
->>>>>>> 581c16201c22757f7714f2ec1182af3a33d3146a
           $(this).animate({
             marginLeft: 0,
           }, 500, function() {
@@ -211,10 +209,6 @@ $(function() {
           }, 500, function() {
             $(this).find('.homepage-new-product-item-link').fadeOut();
           });
-<<<<<<< HEAD
-=======
-
->>>>>>> 581c16201c22757f7714f2ec1182af3a33d3146a
 });
 
     
@@ -411,11 +405,6 @@ $('.news').on('click', function() {
     $('.news-popup > .popup > img').attr('src',news_img); 
 });
 
-<<<<<<< HEAD
-//$('.news > img').hover(function)
-=======
-
->>>>>>> 581c16201c22757f7714f2ec1182af3a33d3146a
 
   //YONETIM SAYFASI
   $(".management-main-item").on('click', function(){

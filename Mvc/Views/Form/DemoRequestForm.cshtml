@@ -54,11 +54,11 @@
 
                 @using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post))
                 { }
-                @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" }))
+                @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",id= "demoForm" }))
                 {
                     <div class="form">
                         <div class="page-section-demo-request-open-right-form1">
-                            <input type="hidden" id="00N0Y00000QeNmD" name="00N0Y00000QeNmD" value="Run">
+                            <input type="hidden" id="00N0Y00000QeNmD" name="00N0Y00000QeNmD" value="@Model.Product">
                             <input type="hidden" name="oid" value="00D0Y0000035HER">
                             <input type="hidden" id="00N0Y00000QeNcc" name="00N0Y00000QeNcc" value="Demo Request">
 
@@ -105,7 +105,7 @@
                         </div>
                         <div class="page-section-demo-request-open-right-button">
                             @*<a href="#">Gönder<i class="fas fa-arrow-right"></i></a>*@
-                            <input type="submit" name="SaveButton" value="Gönder" />
+                            <input type="submit" name="SaveButton" value="Gönder" onclick="return formSubmit('demoForm');"/>
                         </div>
                     </div>
                 }

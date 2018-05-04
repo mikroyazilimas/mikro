@@ -6099,7 +6099,23 @@ $(function() {
             }
 
             
-        }
+   }
+
+
+    function formSubmit(formId) {
+        //you code 
+        var dt = $('#' + formId + '').serialize();
+        $.ajax({
+            type: 'POST',
+            url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
+            data: dt,
+            success: function (msg) {
+
+            }
+        });
+        return true;
+        //return false;
+    }
 
         
         $(".page-header-tools__search > input").keypress(handleEnter);

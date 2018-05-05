@@ -5958,8 +5958,9 @@ $(function() {
    
         //     "height":newHeight
         // },500);
-        $('.open').toggle("slow");
-        $('.spanx').toggle("slow");
+        $('.spanx').toggleClass("active");
+        //$('.open').toggle("slow");
+        //$('.spanx').toggle("slow");
         
         
     });

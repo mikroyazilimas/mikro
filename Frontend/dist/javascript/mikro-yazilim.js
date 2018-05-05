@@ -5958,8 +5958,10 @@ $(function() {
    
         //     "height":newHeight
         // },500);
-        // $('.open').toggle('slow');
-        // $('.close').toggle('slow');
+        $('.open').toggle("slow");
+        $('.spanx').toggle("slow");
+        
+        
     });
 
     // Hook doAnimations on scroll, and trigger a scroll

@@ -1719,7 +1719,10 @@
 
 
     .pagination > li {
-        display: inline-block;
+        display: inline-block !important;
+        &:before {
+            display: none;
+        }
     }
 
         .pagination > li > a {

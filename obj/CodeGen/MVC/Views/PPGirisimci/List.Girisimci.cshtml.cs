@@ -42,11 +42,7 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("<!-- Overlay -->\r\n<div");
-
-WriteLiteral(" class=\"overlay\"");
-
-WriteLiteral("></div>\r\n<!-- Popup Run-->\r\n<div");
+WriteLiteral("\r\n<!-- Popup Run-->\r\n<div");
 
 WriteLiteral(" class=\"run-popup\"");
 
@@ -152,7 +148,7 @@ WriteLiteral(" class=\"popup-button\"");
 
 WriteLiteral(">\r\n            <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+WriteLiteral(" href=\"/ucretsiz-demo-talep?product=RUN\"");
 
 WriteLiteral(">Demo Talep Formu</a>\r\n        </div>\r\n        <div");
 
@@ -180,9 +176,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run/\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2630), Tuple.Create("\"", 2677)
-, Tuple.Create(Tuple.Create("", 2636), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/run-big-banner.png")
-, 2636), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2597), Tuple.Create("\"", 2644)
+, Tuple.Create(Tuple.Create("", 2603), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/run-big-banner.png")
+, 2603), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -239,7 +235,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("            ");
 
             
-            #line 78 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 77 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
        Write(Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText));
 
             
@@ -248,13 +244,13 @@ WriteLiteral("            ");
 WriteLiteral("\r\n        </div>\r\n\r\n");
 
             
-            #line 81 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 80 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 81 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 80 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
          foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
 
@@ -272,7 +268,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n                    <span>");
 
             
-            #line 85 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 84 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
                      Write(item.Fields.Title);
 
             
@@ -287,7 +283,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 88 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 87 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
                Write(Html.Raw(item.Fields.ShortText));
 
             
@@ -296,7 +292,7 @@ WriteLiteral("                    ");
 WriteLiteral("\r\n                </div>\r\n            </div>\r\n");
 
             
-            #line 91 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 90 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
         }
 
             

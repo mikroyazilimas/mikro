@@ -75,7 +75,7 @@ WriteLiteral(" class=\"popup-tabs\"");
 
 WriteLiteral(">\r\n            <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+WriteLiteral(" href=\"/iletisim/bize-ulasin\"");
 
 WriteLiteral(">\r\n                <div");
 
@@ -84,72 +84,72 @@ WriteLiteral(" class=\"popup-tabs-buy\"");
 WriteLiteral(">\r\n                    <span>Satın Al</span>\r\n                </div>\r\n           " +
 " </a>\r\n            <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+WriteLiteral(" href=\"/iletisim/bize-ulasin\"");
 
 WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" class=\"popup-tabs-rent\"");
 
 WriteLiteral(">\r\n                    <span>Kirala</span>\r\n                </div>\r\n            <" +
-"/a>\r\n        </div>\r\n    <div");
+"/a>\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"popup-content\"");
 
-WriteLiteral(">\r\n        <div");
+WriteLiteral(">\r\n            <div");
 
 WriteLiteral(" class=\"popup-content-left\"");
 
-WriteLiteral(">\r\n            <img");
+WriteLiteral(">\r\n                <img");
 
 WriteLiteral(" src=\"/Frontend/dist/images/products/pop-up/products-fly-chart.png\"");
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral(">\r\n        </div>\r\n        <div");
+WriteLiteral(">\r\n            </div>\r\n            <div");
 
 WriteLiteral(" class=\"popup-content-right\"");
 
-WriteLiteral(">\r\n            <div");
+WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" class=\"popup-content-right__logo\"");
 
-WriteLiteral(">\r\n                <img");
+WriteLiteral(">\r\n                    <img");
 
 WriteLiteral(" src=\"/Frontend/dist/images/products/pop-up/products-fly-logo.svg\"");
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral(">\r\n            </div>\r\n            <div");
+WriteLiteral(">\r\n                </div>\r\n                <div");
 
 WriteLiteral(" class=\"popup-content-right__description\"");
 
 WriteLiteral(@">
-                <p>Sektör bağımsız çalışıyorsanız, birden fazla lokasyonda ya da sektörde faaliyet gösteriyorsanız, uçtan uca tüm ticari işlemlerinizi bir çatı altında toplamak istiyorsanız Mikro Jump tam size göre!</p>
-                <ul>
-                    <li>Genişletilebilir modüler yapı</li>
-                    <li>Sektörel çözüm seçenekleri </li>
-                    <li>Çoklu Dil Desteği</li>
-                </ul>
+                    <p>Sektör bağımsız çalışıyorsanız, birden fazla lokasyonda ya da sektörde faaliyet gösteriyorsanız, uçtan uca tüm ticari işlemlerinizi bir çatı altında toplamak istiyorsanız Mikro Jump tam size göre!</p>
+                    <ul>
+                        <li>Genişletilebilir modüler yapı</li>
+                        <li>Sektörel çözüm seçenekleri </li>
+                        <li>Çoklu Dil Desteği</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div");
+        <div");
 
 WriteLiteral(" class=\"popup-button\"");
 
-WriteLiteral(">\r\n        <a");
+WriteLiteral(">\r\n            <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+WriteLiteral(" href=\"/iletisim/bize-ulasin\"");
 
-WriteLiteral(">Demo Talep Formu</a>\r\n    </div>\r\n    <div");
+WriteLiteral(">Demo Talep Formu</a>\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"close-popup\"");
 
-WriteLiteral(">X</div>\r\n</div>\r\n\r\n<!--Popup Finish-->\r\n\r\n\r\n<div");
+WriteLiteral(">X</div>\r\n    </div>\r\n\r\n    <!--Popup Finish-->\r\n\r\n\r\n    <div");
 
 WriteLiteral(" class=\"detail-product\"");
 
-WriteLiteral(">\r\n    <div");
+WriteLiteral(">\r\n        <div");
 
 WriteLiteral(" class=\"detail-product-content\"");
 
@@ -157,73 +157,73 @@ WriteLiteral(">\r\n\r\n");
 
             
             #line 58 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-        
+            
             
             #line default
             #line hidden
             
             #line 58 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-         if (pField.MainPhoto != null)
-        {
-            foreach (var pht in pField.MainPhoto)
+             if (pField.MainPhoto != null)
             {
+                foreach (var pht in pField.MainPhoto)
+                {
 
             
             #line default
             #line hidden
-WriteLiteral("                <div");
+WriteLiteral("                    <div");
 
 WriteLiteral(" class=\"detail-product-content__img\"");
 
-WriteLiteral(">\r\n                    <img");
+WriteLiteral(">\r\n                        <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2252), Tuple.Create("\"", 2278)
+WriteAttribute("src", Tuple.Create(" src=\"", 2383), Tuple.Create("\"", 2409)
             
             #line 63 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 2258), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 2389), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
             
             #line default
             #line hidden
-, 2258), false)
+, 2389), false)
 );
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral(">\r\n                </div>\r\n");
+WriteLiteral(">\r\n                    </div>\r\n");
 
             
             #line 65 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-            }
+                }
 
-        }
+            }
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n        <div");
+WriteLiteral("\r\n            <div");
 
 WriteLiteral(" class=\"detail-product-content-other\"");
 
-WriteLiteral(">\r\n\r\n            <div");
+WriteLiteral(">\r\n\r\n                <div");
 
 WriteLiteral(" class=\"detail-product-content-other__text\"");
 
-WriteLiteral(">\r\n                <p>\r\n");
+WriteLiteral(">\r\n                    <p>\r\n");
 
-WriteLiteral("                    ");
+WriteLiteral("                        ");
 
             
             #line 73 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-               Write(Html.Raw(pField.Detail));
+                   Write(Html.Raw(pField.Detail));
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n                </p>\r\n            </div>\r\n            <div");
+WriteLiteral("\r\n                    </p>\r\n                </div>\r\n                <div");
 
 WriteLiteral(" class=\"products-container-content-left-button product-detail-content-buttons\"");
 
-WriteLiteral(">\r\n                <a");
+WriteLiteral(">\r\n                    <a");
 
 WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
 
@@ -235,7 +235,7 @@ WriteLiteral(">Ücretsiz Demo <span><i");
 
 WriteLiteral(" class=\"fas fa-arrow-right\"");
 
-WriteLiteral("></i></span></a>\r\n                <a");
+WriteLiteral("></i></span></a>\r\n                    <a");
 
 WriteLiteral(" href=\"#\"");
 
@@ -249,12 +249,12 @@ WriteLiteral(">Fiyat ve Nasıl Satın Alabilirim <span><i");
 
 WriteLiteral(" class=\"fas fa-arrow-right\"");
 
-WriteLiteral("></i></span></a></a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n\r\n</div>\r" +
-"\n\r\n<div");
+WriteLiteral("></i></span></a></a>\r\n                </div>\r\n            </div>\r\n        </div>\r" +
+"\n\r\n\r\n    </div>\r\n\r\n    <div");
 
 WriteLiteral(" class=\"detail-product-description\"");
 
-WriteLiteral(">\r\n    <div");
+WriteLiteral(">\r\n        <div");
 
 WriteLiteral(" class=\"detail-product-description-left\"");
 
@@ -262,62 +262,62 @@ WriteLiteral(">\r\n");
 
             
             #line 88 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-        
+            
             
             #line default
             #line hidden
             
             #line 88 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-         if (pField.ProductProperties != null)
-        {
-            foreach (var pItem in pField.ProductProperties)
+             if (pField.ProductProperties != null)
             {
+                foreach (var pItem in pField.ProductProperties)
+                {
 
             
             #line default
             #line hidden
-WriteLiteral("                <div");
+WriteLiteral("                    <div");
 
 WriteLiteral(" class=\"products-container-content-right-item\"");
 
-WriteLiteral(">\r\n                    <div");
+WriteLiteral(">\r\n                        <div");
 
 WriteLiteral(" class=\"products-container-content-right-item__title\"");
 
-WriteLiteral(">\r\n\r\n                        <div>\r\n                            <span>");
+WriteLiteral(">\r\n\r\n                            <div>\r\n                                <span>");
 
             
             #line 96 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-                             Write(pItem.Fields.PropertyName);
+                                 Write(pItem.Fields.PropertyName);
 
             
             #line default
             #line hidden
-WriteLiteral("</span>\r\n\r\n                        </div>\r\n\r\n                    </div>\r\n        " +
-"            <div");
+WriteLiteral("</span>\r\n\r\n                            </div>\r\n\r\n                        </div>\r\n" +
+"                        <div");
 
 WriteLiteral(" class=\"products-container-content-right-item__text\"");
 
-WriteLiteral(">\r\n                        <p>");
+WriteLiteral(">\r\n                            <p>");
 
             
             #line 102 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-                      Write(Html.Raw(pItem.Fields.Detailinfo));
+                          Write(Html.Raw(pItem.Fields.Detailinfo));
 
             
             #line default
             #line hidden
-WriteLiteral("</p>\r\n                    </div>\r\n                </div>\r\n");
+WriteLiteral("</p>\r\n                        </div>\r\n                    </div>\r\n");
 
             
             #line 105 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+                }
             }
-        }
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n    </div>\r\n    <div");
+WriteLiteral("\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"detail-product-description-right\"");
 
@@ -325,49 +325,49 @@ WriteLiteral(">\r\n");
 
             
             #line 110 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-        
+            
             
             #line default
             #line hidden
             
             #line 110 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-         if (pField.ChartPhoto != null)
-        {
-            foreach (var photo in pField.ChartPhoto)
+             if (pField.ChartPhoto != null)
             {
+                foreach (var photo in pField.ChartPhoto)
+                {
 
             
             #line default
             #line hidden
-WriteLiteral("                <div");
+WriteLiteral("                    <div");
 
 WriteLiteral(" class=\"detail-product-description-right-content\"");
 
-WriteLiteral(">\r\n                    <img");
+WriteLiteral(">\r\n                        <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 4177), Tuple.Create("\"", 4205)
+WriteAttribute("src", Tuple.Create(" src=\"", 4476), Tuple.Create("\"", 4504)
             
             #line 115 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 4183), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 4482), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 4183), false)
+, 4482), false)
 );
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral(">\r\n                </div>\r\n");
+WriteLiteral(">\r\n                    </div>\r\n");
 
             
             #line 117 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+                }
             }
-        }
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n    </div>\r\n</div>\r\n<div");
+WriteLiteral("\r\n\r\n        </div>\r\n    </div>\r\n    <div");
 
 WriteLiteral(" class=\"management-services modules-owl-carousel owl-carousel\"");
 
@@ -375,35 +375,35 @@ WriteLiteral(">\r\n\r\n");
 
             
             #line 125 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-    
+        
             
             #line default
             #line hidden
             
             #line 125 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-     foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
-    {
+         foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
+        {
 
             
             #line default
             #line hidden
-WriteLiteral("        <div");
+WriteLiteral("            <div");
 
 WriteLiteral(" class=\"management-services-item\"");
 
-WriteLiteral(">\r\n\r\n            <a");
+WriteLiteral(">\r\n\r\n                <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 4515), Tuple.Create("\"", 4617)
+WriteAttribute("href", Tuple.Create(" href=\"", 4854), Tuple.Create("\"", 4956)
             
             #line 129 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 4522), Tuple.Create<System.Object, System.Int32>(item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-fly/")
+, Tuple.Create(Tuple.Create("", 4861), Tuple.Create<System.Object, System.Int32>(item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-fly/")
             
             #line default
             #line hidden
-, 4522), false)
+, 4861), false)
 );
 
-WriteLiteral(">\r\n                <div");
+WriteLiteral(">\r\n                    <div");
 
 WriteLiteral(" class=\"management-services-item__img\"");
 
@@ -411,30 +411,30 @@ WriteLiteral(">\r\n");
 
             
             #line 131 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-                    
+                        
             
             #line default
             #line hidden
             
             #line 131 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-                     if (item.Fields.IconImage != null)
-                    {
-                        foreach (var photo in item.Fields.IconImage)
+                         if (item.Fields.IconImage != null)
                         {
+                            foreach (var photo in item.Fields.IconImage)
+                            {
 
             
             #line default
             #line hidden
-WriteLiteral("                            <img");
+WriteLiteral("                                <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 4891), Tuple.Create("\"", 4919)
+WriteAttribute("src", Tuple.Create(" src=\"", 5254), Tuple.Create("\"", 5282)
             
             #line 135 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 4897), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 5260), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 4897), false)
+, 5260), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -443,84 +443,86 @@ WriteLiteral(">\r\n");
 
             
             #line 136 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+                            }
                         }
-                    }
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n                </div>\r\n                <div");
+WriteLiteral("\r\n                    </div>\r\n                    <div");
 
 WriteLiteral(" class=\"management-services-item__title\"");
 
-WriteLiteral(">\r\n                    <span>");
+WriteLiteral(">\r\n                        <span>");
 
             
             #line 141 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-                     Write(item.Fields.Title);
+                         Write(item.Fields.Title);
 
             
             #line default
             #line hidden
-WriteLiteral("</span>\r\n                </div>\r\n            </a>\r\n        </div>\r\n");
+WriteLiteral("</span>\r\n                    </div>\r\n                </a>\r\n            </div>\r\n");
 
             
             #line 145 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-    }
+        }
 
             
             #line default
             #line hidden
-WriteLiteral("</div>\r\n<!--<div class=\"numbers\">\r\n    <div class=\"numbers-contents\">\r\n        <d" +
-"iv class=\"numbers-contents-item\">\r\n            <div class=\"numbers-contents-item" +
-"__img\">\r\n                <img src=\"/Frontend/dist/images/product-detail/section2" +
-"-bottom1.png\" alt=\"\">\r\n            </div>\r\n             <div class=\"numbers-cont" +
-"ents-item-text\">\r\n                <div class=\"numbers-contents-item-text__text1\"" +
-">\r\n                    <span data-number-animate data-number=\"105000\">105000+</s" +
-"pan>\r\n                </div>\r\n                <div class=\"numbers-contents-item-" +
-"text__text2\">\r\n                    <span>Kayıtlı Şirket Sayısı</span>\r\n         " +
-"       </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"numbers-c" +
-"ontents-item\">\r\n            <div class=\"numbers-contents-item__img\">\r\n          " +
-"      <img src=\"/Frontend/dist/images/product-detail/section2-bottom2.png\" alt=\"" +
-"\">\r\n            </div>\r\n            <div class=\"numbers-contents-item-text\">\r\n  " +
-"              <div class=\"numbers-contents-item-text__text1 \">\r\n                " +
-"    <span data-number-animate data-number=\"2000000\">1</span>\r\n                </" +
-"div>\r\n                <div class=\"numbers-contents-item-text__text2\">\r\n         " +
-"           <span>Yazılan Satır Kod</span>\r\n                </div>\r\n            <" +
-"/div>\r\n        </div>\r\n        <div class=\"numbers-contents-item\">\r\n            " +
-"<div class=\"numbers-contents-item__img\">\r\n                <img src=\"/Frontend/di" +
-"st/images/product-detail/section2-bottom3.png\" alt=\"\">\r\n            </div>\r\n    " +
-"        <div class=\"numbers-contents-item-text\">\r\n                <div class=\"nu" +
-"mbers-contents-item-text__text1\">\r\n                    <span data-number-animate" +
-" data-number=\"100\">1</span>\r\n                </div>\r\n                <div class=" +
-"\"numbers-contents-item-text__text2\">\r\n                    <span>Hedeflenen Kulla" +
-"nıcı</span>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </d" +
-"iv>\r\n</div>-->\r\n<div");
+WriteLiteral("    </div>\r\n    <!--<div class=\"numbers\">\r\n        <div class=\"numbers-contents\">" +
+"\r\n            <div class=\"numbers-contents-item\">\r\n                <div class=\"n" +
+"umbers-contents-item__img\">\r\n                    <img src=\"/Frontend/dist/images" +
+"/product-detail/section2-bottom1.png\" alt=\"\">\r\n                </div>\r\n         " +
+"        <div class=\"numbers-contents-item-text\">\r\n                    <div class" +
+"=\"numbers-contents-item-text__text1\">\r\n                        <span data-number" +
+"-animate data-number=\"105000\">105000+</span>\r\n                    </div>\r\n      " +
+"              <div class=\"numbers-contents-item-text__text2\">\r\n                 " +
+"       <span>Kayıtlı Şirket Sayısı</span>\r\n                    </div>\r\n         " +
+"       </div>\r\n            </div>\r\n            <div class=\"numbers-contents-item" +
+"\">\r\n                <div class=\"numbers-contents-item__img\">\r\n                  " +
+"  <img src=\"/Frontend/dist/images/product-detail/section2-bottom2.png\" alt=\"\">\r\n" +
+"                </div>\r\n                <div class=\"numbers-contents-item-text\">" +
+"\r\n                    <div class=\"numbers-contents-item-text__text1 \">\r\n        " +
+"                <span data-number-animate data-number=\"2000000\">1</span>\r\n      " +
+"              </div>\r\n                    <div class=\"numbers-contents-item-text" +
+"__text2\">\r\n                        <span>Yazılan Satır Kod</span>\r\n             " +
+"       </div>\r\n                </div>\r\n            </div>\r\n            <div clas" +
+"s=\"numbers-contents-item\">\r\n                <div class=\"numbers-contents-item__i" +
+"mg\">\r\n                    <img src=\"/Frontend/dist/images/product-detail/section" +
+"2-bottom3.png\" alt=\"\">\r\n                </div>\r\n                <div class=\"numb" +
+"ers-contents-item-text\">\r\n                    <div class=\"numbers-contents-item-" +
+"text__text1\">\r\n                        <span data-number-animate data-number=\"10" +
+"0\">1</span>\r\n                    </div>\r\n                    <div class=\"numbers" +
+"-contents-item-text__text2\">\r\n                        <span>Hedeflenen Kullanıcı" +
+"</span>\r\n                    </div>\r\n                </div>\r\n            </div>\r" +
+"\n        </div>\r\n    </div>-->\r\n    <div");
 
 WriteLiteral(" class=\"story-products-wizard\"");
 
-WriteLiteral(">\r\n    <div");
+WriteLiteral(">\r\n        <div");
 
 WriteLiteral(" class=\"story-products-wizard-left\"");
 
-WriteLiteral(">\r\n        <div");
+WriteLiteral(">\r\n            <div");
 
 WriteLiteral(" class=\"story-products-wizard-left-content\"");
 
-WriteLiteral(">\r\n            <div");
+WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" class=\"story-products-wizard-left-content__title\"");
 
-WriteLiteral(">\r\n                <span>Ürün<strong>Sihirbazı</strong></span>\r\n            </div" +
-">\r\n            <div");
+WriteLiteral(">\r\n                    <span>Ürün<strong>Sihirbazı</strong></span>\r\n             " +
+"   </div>\r\n                <div");
 
 WriteLiteral(" class=\"story-products-wizard-left-content__hr\"");
 
-WriteLiteral(">\r\n\r\n            </div>\r\n            <div");
+WriteLiteral(">\r\n\r\n                </div>\r\n                <div");
 
 WriteLiteral(" class=\"product-detail-section3-left-content-button\"");
 
-WriteLiteral(">\r\n                <a");
+WriteLiteral(">\r\n                    <a");
 
 WriteLiteral(" href=\"/urun-secme-sihirbazi\"");
 
@@ -532,17 +534,18 @@ WriteLiteral(">Sizin İçin Doğru &nbsp;<strong>Ürünü Seçin</strong><span><
 
 WriteLiteral(" class=\"fas fa-arrow-right\"");
 
-WriteLiteral("></i></span></a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div");
+WriteLiteral("></i></span></a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n   " +
+"     <div");
 
 WriteLiteral(" class=\"story-products-wizard-right\"");
 
-WriteLiteral(">\r\n        <img");
+WriteLiteral(">\r\n            <img");
 
 WriteLiteral(" src=\"/Frontend/dist/images/story/product-wizard.png\"");
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral(">\r\n    </div>\r\n</div>\r\n\r\n");
+WriteLiteral(">\r\n        </div>\r\n    </div>\r\n\r\n");
 
         }
     }

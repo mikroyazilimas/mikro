@@ -5950,6 +5950,7 @@ $(function() {
 
     $('.page-header-navigation-item__menu').click(function() {
         $('.page-mega-navigation').toggleClass('active');
+        //$('.page-mega-navigation').animate({"height":"~calc(100vh - 85px)"},1000);
         $('.open').toggle('slow');
         $('.close').toggle('slow');
     });
@@ -6084,7 +6085,6 @@ $(function() {
           }, 500, function() {
             $(this).find('.homepage-new-product-item-link').fadeOut();
           });
-
 });
 
     
@@ -6099,7 +6099,23 @@ $(function() {
             }
 
             
-        }
+   }
+
+
+    function formSubmit(formId) {
+        //you code 
+        var dt = $('#' + formId + '').serialize();
+        $.ajax({
+            type: 'POST',
+            url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
+            data: dt,
+            success: function (msg) {
+
+            }
+        });
+        return true;
+        //return false;
+    }
 
         
         $(".page-header-tools__search > input").keypress(handleEnter);
@@ -6280,7 +6296,6 @@ $('.news').on('click', function() {
     var news_img = $(this).children('img').data('img');
     $('.news-popup > .popup > img').attr('src',news_img); 
 });
-
 
 
   //YONETIM SAYFASI

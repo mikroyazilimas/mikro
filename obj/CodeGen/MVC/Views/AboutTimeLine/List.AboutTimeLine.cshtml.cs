@@ -52,11 +52,11 @@ WriteLiteral(">\r\n        <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date\"");
 
-WriteLiteral(">\r\n            <a");
+WriteLiteral(">\r\n            <span");
 
 WriteLiteral(" href=\"#\"");
 
-WriteLiteral(">2018</a>\r\n            <div");
+WriteLiteral(">2018</span>\r\n            <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide\"");
 
@@ -64,8 +64,8 @@ WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide__title\"");
 
-WriteLiteral(">\r\n                    <span>Yeni Yatırım...</span>\r\n                </div>\r\n    " +
-"            <div");
+WriteLiteral(">\r\n                    <span>Yeni Ürün Gamı</span>\r\n                </div>\r\n     " +
+"           <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide__text\"");
 
@@ -74,11 +74,11 @@ WriteLiteral(">\r\n                    <p>Müşteri İhtiyaçlarına Tam Uyumlu 
 
 WriteLiteral(" class=\"about-content-item-timeline__date\"");
 
-WriteLiteral(">\r\n            <a");
+WriteLiteral(">\r\n            <span");
 
 WriteLiteral(" href=\"#\"");
 
-WriteLiteral(">2017</a>\r\n            <div");
+WriteLiteral(">2017</span>\r\n            <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide\"");
 
@@ -97,11 +97,11 @@ WriteLiteral(">\r\n                    <p>Türkiye’nin en büyük girişim ser
 
 WriteLiteral(" class=\"about-content-item-timeline__date\"");
 
-WriteLiteral(">\r\n            <a");
+WriteLiteral(">\r\n            <span");
 
 WriteLiteral(" href=\"#\"");
 
-WriteLiteral(">2015</a>\r\n            <div");
+WriteLiteral(">2015</span>\r\n            <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide\"");
 
@@ -109,22 +109,21 @@ WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide__title\"");
 
-WriteLiteral(">\r\n                    <span>Yeni Yatırım...</span>\r\n                </div>\r\n    " +
-"            <div");
+WriteLiteral(">\r\n                    <span>100.000’den Fazla ‘Mutlu’ Müşteri</span>\r\n          " +
+"      </div>\r\n                <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide__text\"");
 
-WriteLiteral(">\r\n                    <p>Türkiye’nin en büyük girişim sermayesi şirketi Turkven " +
-"ve Earlybird Venture Capital, Mikro Yazılım’ın yatırımcısı oldu.</p>\r\n          " +
-"      </div>\r\n            </div>\r\n        </div>\r\n        <div");
+WriteLiteral(@">
+                    <p>Kurulduğu günden bu yana her sektörden pek çok işletmeyle dirsek temasını sürdüren Mikro için, 100 binden fazla müşterisinin mutlak memnuniyetini sağlamak ve onların yıllardır güvendiği iş ortağı olmak büyük bir gurur kaynağı...</p>
+                </div>
+            </div>
+        </div>
+        <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date\"");
 
-WriteLiteral(">\r\n            <a");
-
-WriteLiteral(" href=\"#\"");
-
-WriteLiteral(">2013</a>\r\n            <div");
+WriteLiteral(">\r\n            <span>2013</span>\r\n            <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide\"");
 
@@ -132,22 +131,21 @@ WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide__title\"");
 
-WriteLiteral(">\r\n                    <span>Yeni Yatırım...</span>\r\n                </div>\r\n    " +
-"            <div");
+WriteLiteral(">\r\n                    <span>E-Fatura ‘Özel Entegratör’ü Mikro</span>\r\n          " +
+"      </div>\r\n                <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide__text\"");
 
-WriteLiteral(">\r\n                    <p>Türkiye’nin en büyük girişim sermayesi şirketi Turkven " +
-"ve Earlybird Venture Capital, Mikro Yazılım’ın yatırımcısı oldu.</p>\r\n          " +
-"      </div>\r\n            </div>\r\n        </div>\r\n        <div");
+WriteLiteral(@">
+                    <p>Mikro, e-devlet uygulamalarının hız kazandığı 2013 yılında, GİB tarafından verilen ‘e-fatura özel entegratörü’ unvanını almayı başardı. Bu sayede Mikro, sektörde e-devlet uygulamalarını kendi altyapısı üzerinden sağlama yetkisine sahip sayılı firmalar arasına girdi.</p>
+                </div>
+            </div>
+        </div>
+        <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date\"");
 
-WriteLiteral(">\r\n            <a");
-
-WriteLiteral(" href=\"#\"");
-
-WriteLiteral(">2009</a>\r\n            <div");
+WriteLiteral(">\r\n            <span>2009</span>\r\n            <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide\"");
 
@@ -155,24 +153,23 @@ WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide__title\"");
 
-WriteLiteral(">\r\n                    <span>Yeni Yatırım...</span>\r\n                </div>\r\n    " +
-"            <div");
+WriteLiteral(">\r\n                    <span>Yurtdışında İlk Proje</span>\r\n                </div>" +
+"\r\n                <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide__text\"");
 
-WriteLiteral(">\r\n                    <p>Türkiye’nin en büyük girişim sermayesi şirketi Turkven " +
-"ve Earlybird Venture Capital, Mikro Yazılım’ın yatırımcısı oldu.</p>\r\n          " +
-"      </div>\r\n            </div>\r\n        </div>\r\n        ");
+WriteLiteral(@">
+                    <p>Mikro 2009 yılında ilk kez Türkiye dışında bir pazara açılarak, ürün ve çözümlerini Azerbaycan’a taşıdı. Bu tarihten itibaren yurtdışı projelerinin sayısı hızla arttı.</p>
+                </div>
+            </div>
+        </div>
+        ");
 
 WriteLiteral("\r\n        <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date\"");
 
-WriteLiteral(">\r\n            <a");
-
-WriteLiteral(" href=\"#\"");
-
-WriteLiteral(">1988</a>\r\n            <div");
+WriteLiteral(">\r\n            <span>1988</span>\r\n            <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide\"");
 
@@ -180,14 +177,14 @@ WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide__title\"");
 
-WriteLiteral(">\r\n                    <span>Yeni Yatırım...</span>\r\n                </div>\r\n    " +
-"            <div");
+WriteLiteral(">\r\n                    <span>Mikro’nun Doğuşu</span>\r\n                </div>\r\n   " +
+"             <div");
 
 WriteLiteral(" class=\"about-content-item-timeline__date-hide__text\"");
 
-WriteLiteral(">\r\n                    <p>Türkiye’nin en büyük girişim sermayesi şirketi Turkven " +
-"ve Earlybird Venture Capital, Mikro Yazılım’ın yatırımcısı oldu.</p>\r\n          " +
-"      </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
+WriteLiteral(">\r\n                    <p>Mikro Yazılım, Türkiye’nin en köklü yazılım üreticileri" +
+"nden biri olarak 1988 yılında %100 yerli sermaye ile kuruldu.</p>\r\n             " +
+"   </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
 
         }
     }

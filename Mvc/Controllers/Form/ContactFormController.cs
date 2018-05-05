@@ -17,10 +17,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
         public ActionResult Index()
         {
             try
-            {
-
-                
-
+            {   
 
                 ContactForm m = new ContactForm() { };                
 

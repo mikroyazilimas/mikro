@@ -29,6 +29,7 @@ namespace SitefinityWebApp.Mvc.Models.ViewModel
         public DropDownListModel<KeyValue> NumberOfEmployees { get; set; }
 
         public string Message { get; set; }
+        public string Product { get; set; }
         public bool Contract { get; set; }
     }
 }

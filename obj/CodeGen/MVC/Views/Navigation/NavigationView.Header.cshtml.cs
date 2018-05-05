@@ -262,7 +262,7 @@ WriteLiteral(" class=\"page-header-navigation-item__menu\"");
 
 WriteLiteral(">\r\n                    <a");
 
-WriteLiteral(" href=\"#\"");
+WriteLiteral(" href=\"javascript:void(0)\"");
 
 WriteLiteral(">\r\n                        Menü <div");
 
@@ -393,7 +393,9 @@ WriteLiteral(" target=\"_blank\"");
 
 WriteLiteral(">Forum Mikro</a>\r\n            <a");
 
-WriteLiteral(" href=\"#\"");
+WriteLiteral(" href=\"http://blog.mikro.com.tr\"");
+
+WriteLiteral(" target=\"_blank\"");
 
 WriteLiteral(">Blog</a>\r\n            <a");
 

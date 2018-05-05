@@ -73,9 +73,17 @@ $(function() {
     }); */
 
     $('.page-header-navigation-item__menu').click(function() {
-        $('.page-mega-navigation').toggleClass('active');
-        $('.open').toggle('slow');
-        $('.close').toggle('slow');
+        
+        //$('.page-mega-navigation').toggleClass('active');
+        var newHeight = $('#form1').height() - 200;
+        $('.page-mega-navigation').slideToggle("slow");
+        
+        //.animate({
+   
+        //     "height":newHeight
+        // },500);
+        // $('.open').toggle('slow');
+        // $('.close').toggle('slow');
     });
 
     // Hook doAnimations on scroll, and trigger a scroll
@@ -208,7 +216,6 @@ $(function() {
           }, 500, function() {
             $(this).find('.homepage-new-product-item-link').fadeOut();
           });
-
 });
 
     
@@ -404,7 +411,6 @@ $('.news').on('click', function() {
     var news_img = $(this).children('img').data('img');
     $('.news-popup > .popup > img').attr('src',news_img); 
 });
-
 
 
   //YONETIM SAYFASI

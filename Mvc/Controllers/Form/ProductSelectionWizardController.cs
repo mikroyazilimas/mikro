@@ -96,5 +96,80 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 return null;
             }
         }
+
+        [HttpPost]
+        public JsonResult ContactSendMail()
+        {
+            try
+            {
+                if (!String.IsNullOrEmpty(Request["first_name"]) && !String.IsNullOrEmpty(Request["last_name"]) && !String.IsNullOrEmpty(Request["phone"]) && !String.IsNullOrEmpty(Request["00N0Y00000QeRBp"]) && !String.IsNullOrEmpty(Request["email"]))
+                {
+                    
+                    string formId = Request["formId"];
+                    string name = Request["first_name"];
+                    string surname = Request["last_name"];
+                    string phone = Request["phone"];
+                    string subject = Request["subject"];
+                    string message = Request["00N0Y00000QeRBp"];
+                    string email = Request["email"];
+                    string product = Request["00N0Y00000QeNmD"];
+
+                    string fileHtml,formTitle;
+
+
+                    switch (formId)
+                    {
+                        case "demoForm":
+                            fileHtml = "demo-request";
+                            formTitle = "Demo Talep Formu";
+                                break;
+                        default:
+                            fileHtml = "contact";
+                            formTitle = "İletişim Formu";
+                            break;
+                    }
+
+                    MailHelper mail = new MailHelper();
+
+                    mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr" };
+                    mail.CC = new List<string>() { "aykut.saridede@ph.com.tr" };
+                    mail.From = "no-reply@e-mail.mikro.com.tr";
+                    mail.FromDisplayName = "Mikro";
+
+                    string body = String.Empty;
+                    using (StreamReader sr = new StreamReader(Server.MapPath("~/Html/"+fileHtml+".html"), System.Text.Encoding.UTF8))
+                        body = sr.ReadToEnd();
+                    
+                    body = body.Replace("@@ad@@", name);
+                    body = body.Replace("@@soyad@@", surname);
+                    body = body.Replace("@@telefon@@", phone);
+                    body = body.Replace("@@mesaj@@", message);
+                    body = body.Replace("@@eposta@@", email);
+                    body = body.Replace("@@urun@@", product);
+
+                    mail.Body = body;
+                    mail.Subject = formTitle;
+                    bool rtn = mail.SendMail();
+                    if (rtn)
+                    {
+                        return Json(true);
+                    }
+                    else
+                    {
+                        return Json(false);
+                    }
+                }
+                else
+                {
+                    return Json(false);
+                }
+
+                
+            }
+            catch (Exception ex)
+            {
+                return Json(false);
+            }
+        }
     }
 }

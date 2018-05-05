@@ -48,7 +48,6 @@ namespace SitefinityWebApp.Library
                 mail.IsBodyHtml = true;
                 mail.Body = Body;
                 smtpClient.Send(mail);
-
                 return true;
             }
             catch (Exception)

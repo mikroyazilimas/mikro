@@ -47,14 +47,33 @@ WriteLiteral("\r\n<style>\r\n    .owl-dots {\r\n        position: absolute;\r\n 
 
 WriteLiteral(" class=\"page-section-demo\"");
 
-WriteLiteral(">\r\n   <img");
+WriteLiteral(">\r\n    <a");
 
-WriteAttribute("src", Tuple.Create("  src=\"", 302), Tuple.Create("\"", 356)
-, Tuple.Create(Tuple.Create("", 309), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/demo-banner.png")
-, 309), false)
+WriteLiteral(" href=\"/urunler-ve-hizmetler/genel-bakis\"");
+
+WriteLiteral("><img");
+
+WriteAttribute("src", Tuple.Create(" src=\"", 347), Tuple.Create("\"", 400)
+, Tuple.Create(Tuple.Create("", 353), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/demo-banner.png")
+, 353), false)
 );
 
-WriteLiteral(" />\r\n</div>\r\n\r\n");
+WriteLiteral(" /></a>\r\n    <div");
+
+WriteLiteral(" class=\"page-section-demo-banner-responsive\"");
+
+WriteLiteral("><a");
+
+WriteLiteral(" href=\"/urunler-ve-hizmetler/genel-bakis\"");
+
+WriteLiteral("><img");
+
+WriteAttribute("src", Tuple.Create(" src=\"", 511), Tuple.Create("\"", 570)
+, Tuple.Create(Tuple.Create("", 517), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/demo-banner-mobil.png")
+, 517), false)
+);
+
+WriteLiteral(" /></a></div>\r\n</div>\r\n\r\n");
 
         }
     }

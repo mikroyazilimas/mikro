@@ -37,15 +37,35 @@ namespace ASP
         public override void Execute()
         {
 WriteLiteral("<style>\r\n    .products-container-content {\r\n        display: none;\r\n    }\r\n</styl" +
-"e>\r\n\r\n<div");
+"e>\r\n\r\n<!-- Overlay -->\r\n<div");
+
+WriteLiteral(" class=\"overlay\"");
+
+WriteLiteral("></div>\r\n<!-- Popup Musavir-->\r\n<div");
+
+WriteLiteral(" class=\"news-popup\"");
+
+WriteLiteral(">\r\n    <div");
+
+WriteLiteral(" class=\"popup\"");
+
+WriteLiteral(">\r\n        <img");
+
+WriteLiteral(" src=\"\"");
+
+WriteLiteral(" />\r\n        \r\n        <div");
+
+WriteLiteral(" class=\"close-popup\"");
+
+WriteLiteral(">X</div>\r\n    </div>\r\n</div>\r\n<!--Popup Finish-->\r\n\r\n<div");
 
 WriteLiteral(" class=\"sfContentBlock\"");
 
-WriteLiteral(">\r\n<p>");
+WriteLiteral(">\r\n    <p>");
 
             
-            #line 10 "..\..\MVC\Views\News\Detail.News.cshtml"
-Write(Html.Raw(Model.Item.Fields.Content));
+            #line 22 "..\..\MVC\Views\News\Detail.News.cshtml"
+  Write(Html.Raw(Model.Item.Fields.Content));
 
             
             #line default
@@ -53,7 +73,7 @@ Write(Html.Raw(Model.Item.Fields.Content));
 WriteLiteral("</p>\r\n</div>\r\n\r\n");
 
             
-            #line 13 "..\..\MVC\Views\News\Detail.News.cshtml"
+            #line 25 "..\..\MVC\Views\News\Detail.News.cshtml"
  if (Model.Item.Fields.Photos != null)
 {
     foreach (var photo in Model.Item.Fields.Photos)
@@ -64,26 +84,37 @@ WriteLiteral("</p>\r\n</div>\r\n\r\n");
             #line hidden
 WriteLiteral("        <div");
 
-WriteLiteral(" class=\"\"");
+WriteLiteral(" class=\"news\"");
 
 WriteLiteral(">\r\n            <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 388), Tuple.Create("\"", 416)
+WriteAttribute("src", Tuple.Create(" src=\"", 636), Tuple.Create("\"", 664)
             
-            #line 18 "..\..\MVC\Views\News\Detail.News.cshtml"
-, Tuple.Create(Tuple.Create("", 394), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+            #line 30 "..\..\MVC\Views\News\Detail.News.cshtml"
+, Tuple.Create(Tuple.Create("", 642), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 394), false)
+, 642), false)
 );
+
+WriteLiteral(" data-img=\"");
+
+            
+            #line 30 "..\..\MVC\Views\News\Detail.News.cshtml"
+                                                   Write(photo.Fields.MediaUrl);
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\"");
 
 WriteLiteral(" alt=\"\"");
 
 WriteLiteral(">\r\n        </div>\r\n");
 
             
-            #line 20 "..\..\MVC\Views\News\Detail.News.cshtml"
+            #line 32 "..\..\MVC\Views\News\Detail.News.cshtml"
     }
 }
 

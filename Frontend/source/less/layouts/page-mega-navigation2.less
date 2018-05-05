@@ -1,29 +1,22 @@
 .page-mega-navigation {
     .wrap("flexbox");
-    height: 0px;
+    height: ~"calc(100vh - 85px)";
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0,1);
+    background-color: rgba(0, 0, 0, 0.8) !important;
     align-content: space-around;
     z-index: 10;
-    transition: height 0.5s;
     overflow: hidden;
     position: fixed;
     top: 85px;
     z-index: 1001;
+    display: none;
     @media @responsive{
         
         display: block;
         overflow-y: scroll;
         
-    }
-    &.active {
-        height: ~"calc(100vh - 85px)";
-        background-color: rgba(0, 0, 0,0.8);
-        @media @responsive{
-            height: ~"calc(100vh - 85px)";
-        }
     }
 
 
@@ -129,11 +122,28 @@
                 transition: all 0.25s;
                 margin: 3px 0px 3px 10px;
                 color: rgba(255, 255, 255, 0.2);
+                position: relative;
                 &:hover{
                     color: #ffffff;
+                    &::after{
+                        width: 30px;
+                    }
                 }
                 @media @responsive {
                     display: none;
+                }
+                &::after {
+                    content: "";
+                    bottom: -2px;
+                    left: 0;
+                    width: 10px;
+                    height: 1px;
+                    background-color: white;
+                    position: absolute;
+                    transition: all 1s;
+                    @media @responsive{
+                        top: 27px;
+                    }
                 }
             }
         }
@@ -149,6 +159,7 @@
         position: absolute;
         bottom: 0;
         padding: 0 30px;
+        left: 0;
         @media @responsive{
             display: none;
         }

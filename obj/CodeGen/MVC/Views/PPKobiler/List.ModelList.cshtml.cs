@@ -98,7 +98,7 @@ WriteLiteral(" class=\"popup-tabs\"");
 
 WriteLiteral(">\r\n            <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+WriteLiteral(" href=\"/ucretsiz-demo-talep?products=JUMP\"");
 
 WriteLiteral(">\r\n                <div");
 
@@ -107,7 +107,7 @@ WriteLiteral(" class=\"popup-tabs-buy\"");
 WriteLiteral(">\r\n                    <span>Satın Al</span>\r\n                </div>\r\n           " +
 " </a>\r\n            <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+WriteLiteral(" href=\"/ucretsiz-demo-talep?products=JUMP\"");
 
 WriteLiteral(">\r\n                <div");
 
@@ -162,7 +162,7 @@ WriteLiteral(" class=\"popup-button\"");
 
 WriteLiteral(">\r\n            <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+WriteLiteral(" href=\"/ucretsiz-demo-talep?products=JUMP\"");
 
 WriteLiteral(">Demo Talep Formu</a>\r\n        </div>\r\n        <div");
 
@@ -200,14 +200,14 @@ WriteLiteral(" class=\"detail-product-content__img\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2757), Tuple.Create("\"", 2783)
+WriteAttribute("src", Tuple.Create(" src=\"", 2799), Tuple.Create("\"", 2825)
             
             #line 70 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 2763), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 2805), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
             
             #line default
             #line hidden
-, 2763), false)
+, 2805), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -248,7 +248,7 @@ WriteLiteral(" class=\"products-container-content-left-button product-detail-con
 
 WriteLiteral(">\r\n                <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+WriteLiteral(" href=\"/ucretsiz-demo-talep?products=JUMP\"");
 
 WriteLiteral(" title=\"demo\"");
 
@@ -371,14 +371,14 @@ WriteLiteral(" class=\"detail-product-description-right-content\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 4735), Tuple.Create("\"", 4763)
+WriteAttribute("src", Tuple.Create(" src=\"", 4791), Tuple.Create("\"", 4819)
             
             #line 122 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 4741), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 4797), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 4741), false)
+, 4797), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -419,14 +419,14 @@ WriteLiteral(" class=\"management-services-item\"");
 
 WriteLiteral(">\r\n            <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 5069), Tuple.Create("\"", 5172)
+WriteAttribute("href", Tuple.Create(" href=\"", 5125), Tuple.Create("\"", 5228)
             
             #line 134 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 5076), Tuple.Create<System.Object, System.Int32>(item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-jump/")
+, Tuple.Create(Tuple.Create("", 5132), Tuple.Create<System.Object, System.Int32>(item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-jump/")
             
             #line default
             #line hidden
-, 5076), false)
+, 5132), false)
 );
 
 WriteLiteral(">\r\n                <div");
@@ -453,14 +453,14 @@ WriteLiteral(">\r\n");
             #line hidden
 WriteLiteral("                            <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 5446), Tuple.Create("\"", 5474)
+WriteAttribute("src", Tuple.Create(" src=\"", 5502), Tuple.Create("\"", 5530)
             
             #line 140 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 5452), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 5508), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 5452), false)
+, 5508), false)
 );
 
 WriteLiteral(" alt=\"\"");

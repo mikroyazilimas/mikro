@@ -84,7 +84,7 @@ WriteLiteral(" class=\"popup-tabs\"");
 
 WriteLiteral(">\r\n            <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+WriteLiteral(" href=\"/ucretsiz-demo-talep?product=RUN\"");
 
 WriteLiteral(">\r\n                <div");
 
@@ -93,7 +93,7 @@ WriteLiteral(" class=\"popup-tabs-buy\"");
 WriteLiteral(">\r\n                    <span>Satın Al</span>\r\n                </div>\r\n           " +
 " </a>\r\n            <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+WriteLiteral(" href=\"/ucretsiz-demo-talep?product=RUN\"");
 
 WriteLiteral(">\r\n                <div");
 
@@ -176,9 +176,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run/\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2597), Tuple.Create("\"", 2644)
-, Tuple.Create(Tuple.Create("", 2603), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/run-big-banner.png")
-, 2603), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2621), Tuple.Create("\"", 2668)
+, Tuple.Create(Tuple.Create("", 2627), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/run-big-banner.png")
+, 2627), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -196,7 +196,7 @@ WriteLiteral(" class=\"products-container-content-left-button\"");
 
 WriteLiteral(">\r\n                <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+WriteLiteral(" href=\"/ucretsiz-demo-talep?product=RUN\"");
 
 WriteLiteral(" title=\"demo\"");
 

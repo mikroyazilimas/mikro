@@ -264,24 +264,13 @@ WriteLiteral(">\r\n                    <a");
 
 WriteLiteral(" href=\"javascript:void(0)\"");
 
-WriteLiteral(">\r\n                        Menü <div");
+WriteLiteral(">\r\n                        <span");
 
-WriteLiteral(" class=\"open\"");
+WriteLiteral(" class=\"spanx\"");
 
-WriteLiteral("><i");
-
-WriteLiteral(" class=\"fas fa-bars\"");
-
-WriteLiteral("></i></div>\r\n                        <div");
-
-WriteLiteral(" class=\"close\"");
-
-WriteLiteral("><i");
-
-WriteLiteral(" class=\"fas fa-times\"");
-
-WriteLiteral("></i></div>\r\n                    </a>\r\n                </div>\r\n            </div>" +
-"\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<!-- MEGA MENU -->\r\n<div");
+WriteLiteral(">Menü </span></div>\r\n                 \r\n                    </a>\r\n               " +
+" </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<!-- MEGA MEN" +
+"U -->\r\n<div");
 
 WriteLiteral(" class=\"page-mega-navigation\"");
 

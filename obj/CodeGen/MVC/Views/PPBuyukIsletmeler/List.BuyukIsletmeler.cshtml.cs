@@ -125,7 +125,7 @@ WriteLiteral(" class=\"popup-button\"");
 
 WriteLiteral(">\r\n            <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep?product=FLY\"");
+WriteLiteral(" href=\"/iletisim/bize-ulasin\"");
 
 WriteLiteral(">Demo Talep Formu</a>\r\n        </div>\r\n        <div");
 
@@ -153,9 +153,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-fly/\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2201), Tuple.Create("\"", 2248)
-, Tuple.Create(Tuple.Create("", 2207), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/fly-big-banner.png")
-, 2207), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2190), Tuple.Create("\"", 2237)
+, Tuple.Create(Tuple.Create("", 2196), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/fly-big-banner.png")
+, 2196), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -173,7 +173,7 @@ WriteLiteral(" class=\"products-container-content-left-button\"");
 
 WriteLiteral(">\r\n                <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep?product=FLY\"");
+WriteLiteral(" href=\"/iletisim/bize-ulasin\"");
 
 WriteLiteral(" title=\"Ücretsiz Demo\"");
 

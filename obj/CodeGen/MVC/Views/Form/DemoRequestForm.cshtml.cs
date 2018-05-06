@@ -327,12 +327,12 @@ WriteLiteral(" name=\"00N0Y00000QeNcc\"");
 
 WriteLiteral(" value=\"Demo Request\"");
 
-WriteLiteral(">\r\n\r\n");
+WriteLiteral(">\r\n");
 
 WriteLiteral("                            ");
 
             
-            #line 65 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 64 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                        Write(Html.HiddenFor(m => m.retURL, new { Value = Const.FormReturnUrl }));
 
             
@@ -347,7 +347,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                                ");
 
             
-            #line 68 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 67 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                            Write(Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*" }));
 
             
@@ -362,7 +362,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                                ");
 
             
-            #line 71 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 70 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                            Write(Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*" }));
 
             
@@ -379,7 +379,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                                ");
 
             
-            #line 78 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 77 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                            Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", placeholder = "E-Postanız*" }));
 
             
@@ -394,7 +394,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                                ");
 
             
-            #line 81 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 80 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                            Write(Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", required = "required", placeholder = "Telefon Numaranız*", @class = "phones" }));
 
             
@@ -416,7 +416,7 @@ WriteLiteral(" for=\"\"");
 WriteLiteral("> ");
 
             
-            #line 98 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 97 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                                       Write(Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp",  placeholder = "Mesajınız" }));
 
             
@@ -437,7 +437,7 @@ WriteLiteral(" for=\"Contract-demo\"");
 WriteLiteral(">");
 
             
-            #line 104 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 103 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                                                   Write(Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required" }));
 
             
@@ -468,7 +468,7 @@ WriteLiteral(" onclick=\"return formSubmit(\'demoForm\');\"");
 WriteLiteral("/>\r\n                        </div>\r\n                    </div>\r\n");
 
             
-            #line 111 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 110 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                 }
 
             

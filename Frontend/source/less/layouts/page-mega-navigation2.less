@@ -1,29 +1,22 @@
 .page-mega-navigation {
     .wrap("flexbox");
-    height: 0px;
+    height: ~"calc(100vh - 85px)";
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0,1);
+    background-color: rgba(0, 0, 0, 0.8) !important;
     align-content: space-around;
     z-index: 10;
-    transition: height 0.5s;
     overflow: hidden;
     position: fixed;
     top: 85px;
     z-index: 1001;
+    display: none;
     @media @responsive{
         
         display: block;
         overflow-y: scroll;
         
-    }
-    &.active {
-        height: ~"calc(100vh - 85px)";
-        background-color: rgba(0, 0, 0,0.8);
-        @media @responsive{
-            height: ~"calc(100vh - 85px)";
-        }
     }
 
 

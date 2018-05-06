@@ -5949,10 +5949,20 @@ $(function() {
     }); */
 
     $('.page-header-navigation-item__menu').click(function() {
-        $('.page-mega-navigation').toggleClass('active');
-        //$('.page-mega-navigation').animate({"height":"~calc(100vh - 85px)"},1000);
-        $('.open').toggle('slow');
-        $('.close').toggle('slow');
+        
+        //$('.page-mega-navigation').toggleClass('active');
+        var newHeight = $('#form1').height() - 200;
+        $('.page-mega-navigation').slideToggle("slow");
+        
+        //.animate({
+   
+        //     "height":newHeight
+        // },500);
+        $('.spanx').toggleClass("active");
+        //$('.open').toggle("slow");
+        //$('.spanx').toggle("slow");
+        
+        
     });
 
     // Hook doAnimations on scroll, and trigger a scroll
@@ -6099,23 +6109,7 @@ $(function() {
             }
 
             
-   }
-
-
-    function formSubmit(formId) {
-        //you code 
-        var dt = $('#' + formId + '').serialize();
-        $.ajax({
-            type: 'POST',
-            url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
-            data: dt,
-            success: function (msg) {
-
-            }
-        });
-        return true;
-        //return false;
-    }
+        }
 
         
         $(".page-header-tools__search > input").keypress(handleEnter);

@@ -162,12 +162,12 @@ WriteLiteral(">\r\n                <label");
 
 WriteLiteral(" for=\"\"");
 
-WriteLiteral(">\r\n\r\n");
+WriteLiteral(">\r\n");
 
 WriteLiteral("                    ");
 
             
-            #line 52 "..\..\MVC\Views\Form\ContactForm.cshtml"
+            #line 51 "..\..\MVC\Views\Form\ContactForm.cshtml"
                Write(Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*" }));
 
             
@@ -178,7 +178,7 @@ WriteLiteral("\r\n");
 WriteLiteral("                    ");
 
             
-            #line 53 "..\..\MVC\Views\Form\ContactForm.cshtml"
+            #line 52 "..\..\MVC\Views\Form\ContactForm.cshtml"
                Write(Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*" }));
 
             
@@ -193,8 +193,8 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 57 "..\..\MVC\Views\Form\ContactForm.cshtml"
-               Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", placeholder = "E-Postanız*" }));
+            #line 56 "..\..\MVC\Views\Form\ContactForm.cshtml"
+               Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" }));
 
             
             #line default
@@ -208,7 +208,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 60 "..\..\MVC\Views\Form\ContactForm.cshtml"
+            #line 59 "..\..\MVC\Views\Form\ContactForm.cshtml"
                Write(Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", maxlength = "11", required = "required", placeholder = "Telefon Numaranız*", @class = "phones", type = "text" }));
 
             
@@ -391,7 +391,7 @@ WriteLiteral(">Teşekkür etmek istiyorum</option>\r\n                </select>\
 WriteLiteral("                ");
 
             
-            #line 101 "..\..\MVC\Views\Form\ContactForm.cshtml"
+            #line 100 "..\..\MVC\Views\Form\ContactForm.cshtml"
            Write(Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp", placeholder = "Mesajınız" }));
 
             
@@ -562,7 +562,25 @@ WriteLiteral(">\r\n                        <p>İşbu 6698 Sayılı Kişisel Veri
 "olduğunuzu beyan etmektesiniz.</p>\r\n                    </div>\r\n                " +
 "    ");
 
-WriteLiteral("\r\n                </div>\r\n                <div");
+WriteLiteral("\r\n                </div>\r\n                <label");
+
+WriteLiteral(" for=\"Contract-hp\"");
+
+WriteLiteral(" class=\"hp-contract\"");
+
+WriteLiteral(">\r\n");
+
+WriteLiteral("                    ");
+
+            
+            #line 132 "..\..\MVC\Views\Form\ContactForm.cshtml"
+               Write(Html.CheckBoxFor(m => m.Contract, new { required = "required", id = "Contract-hp" }));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\r\n                    Kişisel Veriler Bilgilendirme Metni\'ni Kabul Ediyorum\r\n    " +
+"            </label>\r\n                <div");
 
 WriteLiteral(" class=\"page-section-contact-container-area-left-form-button\"");
 
@@ -580,26 +598,8 @@ WriteLiteral(" value=\"Gönder\"");
 
 WriteLiteral(" onclick=\"return contactFormSubmit(\'contactForm\');\"");
 
-WriteLiteral("/>\r\n                </div>\r\n                \r\n                <label");
-
-WriteLiteral(" for=\"Contract-hp\"");
-
-WriteLiteral(" class=\"hp-contract desktop-contract-text\"");
-
-WriteLiteral(">\r\n");
-
-WriteLiteral("                    ");
-
-            
-            #line 138 "..\..\MVC\Views\Form\ContactForm.cshtml"
-               Write(Html.CheckBoxFor(m => m.Contract, new { required = "required", id = "Contract-hp" }));
-
-            
-            #line default
-            #line hidden
-WriteLiteral("\r\n                    Kişisel Veriler Bilgilendirme Metni\'ni Kabul Ediyorum\r\n    " +
-"            </label>\r\n            </div>\r\n            \r\n        </div>\r\n    </di" +
-"v>\r\n");
+WriteLiteral(" />\r\n                </div>\r\n\r\n\r\n            </div>\r\n            \r\n        </div>" +
+"\r\n    </div>\r\n");
 
             
             #line 145 "..\..\MVC\Views\Form\ContactForm.cshtml"

@@ -536,7 +536,7 @@ WriteLiteral("                            ");
 
             
             #line 89 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-                       Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", required = "required", placeholder="E-Postanız*" }));
+                       Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", required = "required", placeholder="E-Postanız*" }));
 
             
             #line default

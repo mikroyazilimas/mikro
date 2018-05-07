@@ -134,7 +134,7 @@ WriteLiteralTo(__razor_helper_writer, "</span></a>\r\n");
 
 #line 30 "..\..\MVC\Views\Navigation\NavigationView.Header.cshtml"
         }
-
+             
     }
 
 }
@@ -193,9 +193,9 @@ WriteLiteral(" href=\"/\"");
 
 WriteLiteral(">\r\n            <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 1147), Tuple.Create("\"", 1184)
-, Tuple.Create(Tuple.Create("", 1153), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/logo.svg")
-, 1153), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 1160), Tuple.Create("\"", 1197)
+, Tuple.Create(Tuple.Create("", 1166), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/logo.svg")
+, 1166), false)
 );
 
 WriteLiteral(" alt=\"\"");

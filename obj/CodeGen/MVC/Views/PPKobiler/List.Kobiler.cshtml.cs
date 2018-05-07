@@ -82,7 +82,7 @@ WriteLiteral(" class=\"popup-tabs\"");
 
 WriteLiteral(">\r\n            <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+WriteLiteral(" href=\"/ucretsiz-demo-talep?product=JUMP\"");
 
 WriteLiteral(">\r\n                <div");
 
@@ -91,7 +91,7 @@ WriteLiteral(" class=\"popup-tabs-buy\"");
 WriteLiteral(">\r\n                    <span>Satın Al</span>\r\n                </div>\r\n           " +
 " </a>\r\n            <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+WriteLiteral(" href=\"/ucretsiz-demo-talep?product=JUMP\"");
 
 WriteLiteral(">\r\n                <div");
 
@@ -146,7 +146,7 @@ WriteLiteral(" class=\"popup-button\"");
 
 WriteLiteral(">\r\n            <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+WriteLiteral(" href=\"/ucretsiz-demo-talep?product=JUMP\"");
 
 WriteLiteral(">Demo Talep Formu</a>\r\n        </div>\r\n        <div");
 
@@ -191,7 +191,7 @@ WriteLiteral(" class=\"products-container-content-left-button\"");
 
 WriteLiteral(">\r\n                <a");
 
-WriteLiteral(" href=\"/ucretsiz-demo-talep\"");
+WriteLiteral(" href=\"/ucretsiz-demo-talep?product=JUMP\"");
 
 WriteLiteral(" title=\"Ücretsiz Demo\"");
 

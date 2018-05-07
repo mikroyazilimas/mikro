@@ -176,7 +176,7 @@ WriteLiteral("                    ");
 
             
             #line 29 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
-               Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", placeholder = "E-Postanız*" }));
+               Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" }));
 
             
             #line default

@@ -145,10 +145,10 @@ WriteLiteral("</a>\r\n");
             #line hidden
 WriteLiteral("            <div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 993), Tuple.Create("\"", 1052)
+WriteAttribute("class", Tuple.Create(" class=\"", 993), Tuple.Create("\"", 1072)
             
             #line 30 "..\..\MVC\Views\Navigation\NavigationView.PageMenu.cshtml"
-, Tuple.Create(Tuple.Create("", 1001), Tuple.Create<System.Object, System.Int32>(String.Format("page-right-menu-item{0}",selectTab)
+, Tuple.Create(Tuple.Create("", 1001), Tuple.Create<System.Object, System.Int32>(String.Format("page-right-menu-item{0} {1}",selectTab,"menu-subtitle")
             
             #line default
             #line hidden
@@ -157,14 +157,14 @@ WriteAttribute("class", Tuple.Create(" class=\"", 993), Tuple.Create("\"", 1052)
 
 WriteLiteral(">\r\n                <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 1074), Tuple.Create("\"", 1112)
+WriteAttribute("href", Tuple.Create(" href=\"", 1094), Tuple.Create("\"", 1132)
             
             #line 31 "..\..\MVC\Views\Navigation\NavigationView.PageMenu.cshtml"
-, Tuple.Create(Tuple.Create("", 1081), Tuple.Create<System.Object, System.Int32>(item2.GetUrl().Replace("~","")
+, Tuple.Create(Tuple.Create("", 1101), Tuple.Create<System.Object, System.Int32>(item2.GetUrl().Replace("~","")
             
             #line default
             #line hidden
-, 1081), false)
+, 1101), false)
 );
 
 WriteLiteral(">");

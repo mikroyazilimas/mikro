@@ -86,7 +86,7 @@ WriteLiteral(">\r\n                    <p");
 WriteLiteral(" style=\"display: block;\r\n    font-size: 15px;\r\n    margin-bottom: 20px;\"");
 
 WriteLiteral(@">
-                        Çözüm ortağımız size uygulamalı bir Mikro yazılımları sunumu yapacak. Programlarımızla tanışarak, işletmenizin en iyi şekilde karşılayacak seri ve modülleri tespit etmenizde size yardımcı olacak.
+                        Demo Talebi-İş Ortağımız size uygulamalı Mikro Yazılım programları sunumu yapacak. Programlarımızla tanışarak, işletmenizin ihtiyaçlarını en doğru şekilde karşılayacak ürünü tespit edebilirsiniz.
                     </p>
                     <div");
 
@@ -371,7 +371,7 @@ WriteLiteral("                                ");
 
             
             #line 74 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                           Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", placeholder = "E-Postanız*" }));
+                           Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" }));
 
             
             #line default

@@ -27,7 +27,7 @@
             { selectTab = " select-tab"; }
             else
             { selectTab = ""; }
-            <div class="@String.Format("page-right-menu-item{0}",selectTab)">
+            <div class="@String.Format("page-right-menu-item{0} {1}",selectTab,"menu-subtitle")">
                 <a href="@item2.GetUrl().Replace("~","")">@item2.Title</a>
             </div>
 

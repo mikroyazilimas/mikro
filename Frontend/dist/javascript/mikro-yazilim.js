@@ -5920,6 +5920,36 @@ var stickySidebar = function(element, stopper){
 
   }
 }
+<<<<<<< HEAD
+=======
+
+function formSubmit(formId,formPost=false) {
+    //you code 
+    var dt = $('#' + formId + '').serialize();
+    $.ajax({
+        type: 'POST',
+        url: '/urun-secme-sihirbazi/ContactSendMail?formId=' + formId,
+        data: dt,
+        success: function (msg) {
+            if (msg == true) {
+                if (formPost) {
+                    $("#" + formId).submit();
+                    return true;
+                } else {
+                    window.location.href = "/tesekkurler";
+                }
+            } else {
+                $(".errorMessage").show();
+                $(".errorMessage").html("Teknik bir hata oluþtu daha sonra tekrar deneyiniz");
+                return false;
+            }
+        }
+    });
+    return false;
+    //return false;
+}
+
+>>>>>>> b32222c09c7d109bff975c599dace237436b53f6
 //Mask_Input
 
 $(function() {

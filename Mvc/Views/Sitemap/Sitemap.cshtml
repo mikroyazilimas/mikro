@@ -1,0 +1,28 @@
+﻿
+@using Telerik.Sitefinity.Frontend.Navigation.Mvc.Models;
+
+@using Telerik.Sitefinity.Pages.Model;
+@using Telerik.Sitefinity.Modules.Pages;
+
+@helper GetMegaMenu(string parentPageUrl)
+    {
+        List<PageNode> pageNodes;
+        if (parentPageUrl != "")
+        {
+            SitefinityWebApp.Library.ToolsSF tt = new SitefinityWebApp.Library.ToolsSF();
+
+            pageNodes = Telerik.Sitefinity.App.WorkWith().Pages().Where(ii => ii.Parent != null && ii.ShowInNavigation == true && ii.Parent.UrlName == parentPageUrl).OrderBy(item => item.Ordinal).Get().ToList();
+
+            foreach (var item in pageNodes)
+            {
+                <a href="@item.GetUrl().Replace("~","")" class="page-mega-navigation-content-section__maintitle"><span>@item.Title</span></a>
+
+                foreach (var itemNode in tt.GetMegaMenu(item.UrlName))
+                {
+                    <a href="@itemNode.GetUrl().Replace("~","")" class="page-mega-navigation-content-section__subtitle"><span>@itemNode.Title</span></a>
+                }
+
+            }
+
+        }
+}

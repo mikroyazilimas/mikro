@@ -48,13 +48,12 @@
         <div class="page-section-contact-container-area-left-form-textbox">
             <div class="page-section-contact-container-area-left-form-textbox-form1">
                 <label for="">
-
                     @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*" })
                     @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*" })
                 </label>
 
                 <label for="">
-                    @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", placeholder = "E-Postanız*" })
+                    @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" })
                 </label>
                 <label for="">
                     @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", maxlength = "11", required = "required", placeholder = "Telefon Numaranız*", @class = "phones", type = "text" })
@@ -125,19 +124,20 @@
                         <p>Sizler, internet sitemize girerek tarafımıza sağlamış olduğunuz kişisel verilerinizin Kanun’a ve işbu 6698 Sayılı Kişisel Verilerin Korunması Kanunu’ne uygun bir şekilde ve belirtilen amaçlarla işlenebileceğini bilmekte, kabul etmekte ve ayrıca işbu 6698 Sayılı Kişisel Verilerin Korunması Kanunu ile Kanun kapsamında yapılması gereken aydınlatma yükümlülüğü yerine getirildiğini, Sözleşme’yi okuduğunuzu, anladığınızı, haklarınızın ve yükümlülüklerinin bilincinde olduğunuzu beyan etmektesiniz.</p>
                     </div>
                     @*<label for="Contract" class="hp-contract">
-                        @Html.CheckBoxFor(m => m.hpContract, new { required = "required" })
-                        Kişisel Veriler Bilgilendirme Metni'ni Kabul Ediyorum
-                    </label>*@
+                @Html.CheckBoxFor(m => m.hpContract, new { required = "required" })
+                Kişisel Veriler Bilgilendirme Metni'ni Kabul Ediyorum
+            </label>*@
                 </div>
-                <div class="page-section-contact-container-area-left-form-button">
-                    @*<a href="#" title="Gönder" class="page-section-contact-area-left-form-button__send">Gönder</a>*@
-                    <input class="hp_btn" type="submit" name="SaveButton" value="Gönder" onclick="return contactFormSubmit('contactForm');"/>
-                </div>
-                
-                <label for="Contract-hp" class="hp-contract desktop-contract-text">
+                <label for="Contract-hp" class="hp-contract">
                     @Html.CheckBoxFor(m => m.Contract, new { required = "required", id = "Contract-hp" })
                     Kişisel Veriler Bilgilendirme Metni'ni Kabul Ediyorum
                 </label>
+                <div class="page-section-contact-container-area-left-form-button">
+                    @*<a href="#" title="Gönder" class="page-section-contact-area-left-form-button__send">Gönder</a>*@
+                    <input class="hp_btn" type="submit" name="SaveButton" value="Gönder" onclick="return contactFormSubmit('contactForm');" />
+                </div>
+
+
             </div>
             
         </div>

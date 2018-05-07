@@ -86,7 +86,7 @@
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">E-Posta</label>
-                            @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", required = "required", placeholder="E-Postanız*" })
+                            @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", required = "required", placeholder="E-Postanız*" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">Telefon</label>

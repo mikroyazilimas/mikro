@@ -21,11 +21,11 @@
 
 
     &-content {
-        //width: ~"calc(100% - 200px)";
-        //margin: 130px auto auto auto;
+        width: ~"calc(100% - 200px)";
+        margin: 130px auto auto auto;
         display: flex;
-        //align-items: flex-start;
-        //justify-content: center;
+        align-items: flex-start;
+        justify-content: center;
         @media @responsive {
             flex-direction: column;
             width: 100%;
@@ -37,8 +37,10 @@
         }
         &-section {
             width: calc(100% / 5);
+           //width: calc(100% / 4);
             flex-direction: column;
             display: flex;
+            //padding : 40px;//yeni
             @media @responsive{
                 width: 100%;
                 margin-bottom: 15px;
@@ -51,12 +53,15 @@
             &__grouptitle {
                 font-size: 20px;
                 font-weight: 700;
-                // line-height: 39px;
+                 line-height: 32px;
                 text-transform: uppercase;
                 position: relative;
                 //border-bottom: 4px solid white;
                 width: 100%;
+                //margin-bottom: 20px;//yeni
+                transition: all 1s;
                 &:hover{
+                    //color: #e30613;//yeni
                     &::after{
                         width: 100px;
                     }
@@ -91,6 +96,15 @@
                 line-height: 31px;
                 text-transform: uppercase;
                 position: relative;
+
+                >span{
+                    //color: lightgray;
+                    transition: all 1s;
+                    &:hover{
+                        //color: #e30613;
+                    }    
+                }
+                
                 &:hover{
                     &::after{
                         width: 40px;
@@ -123,8 +137,9 @@
                 margin: 3px 0px 3px 10px;
                 color: rgba(255, 255, 255, 0.2);
                 position: relative;
+                //color: lightgray;//yeni
                 &:hover{
-                    color: #ffffff;
+                    //color: #e30613;
                     &::after{
                         width: 30px;
                     }

@@ -38,27 +38,96 @@ namespace ASP
         {
             
             #line 3 "..\..\MVC\Views\General\ProductProposal.cshtml"
- if (Model!=null && Model.Product!=null)
+ if (Model != null && Model.Product != null)
 {
 
             
             #line default
             #line hidden
-WriteLiteral("    <div>\r\n");
-
-WriteLiteral("        ");
+WriteLiteral("<div>\r\n\r\n");
 
             
-            #line 6 "..\..\MVC\Views\General\ProductProposal.cshtml"
-   Write(Model.Product);
+            #line 7 "..\..\MVC\Views\General\ProductProposal.cshtml"
+    
+            
+            #line default
+            #line hidden
+            
+            #line 7 "..\..\MVC\Views\General\ProductProposal.cshtml"
+      if (Model.Product == "1-5 Employees")
+        {
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n    </div>\r\n");
+WriteLiteral("            <div");
+
+WriteLiteral(" class=\"product-proposal-image\"");
+
+WriteLiteral(">\r\n                <img");
+
+WriteAttribute("src", Tuple.Create(" src=\"", 248), Tuple.Create("\"", 295)
+, Tuple.Create(Tuple.Create("", 254), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/run-big-banner.png")
+, 254), false)
+);
+
+WriteLiteral(" />\r\n            </div>\r\n");
 
             
-            #line 8 "..\..\MVC\Views\General\ProductProposal.cshtml"
+            #line 12 "..\..\MVC\Views\General\ProductProposal.cshtml"
+        }
+        else if (Model.Product == "6-50 Employees")
+        {
+
+            
+            #line default
+            #line hidden
+WriteLiteral("            <div");
+
+WriteLiteral(" class=\"product-proposal-image\"");
+
+WriteLiteral(">\r\n                <img");
+
+WriteAttribute("src", Tuple.Create(" src=\"", 466), Tuple.Create("\"", 514)
+, Tuple.Create(Tuple.Create("", 472), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/jump-big-banner.png")
+, 472), false)
+);
+
+WriteLiteral(" />\r\n            </div>\r\n");
+
+            
+            #line 18 "..\..\MVC\Views\General\ProductProposal.cshtml"
+        }
+        else if (Model.Product == "More Than 51 Employees")
+        {
+
+            
+            #line default
+            #line hidden
+WriteLiteral("            <div");
+
+WriteLiteral(" class=\"product-proposal-image\"");
+
+WriteLiteral(">\r\n                <img");
+
+WriteAttribute("src", Tuple.Create(" src=\"", 693), Tuple.Create("\"", 740)
+, Tuple.Create(Tuple.Create("", 699), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/fly-big-banner.png")
+, 699), false)
+);
+
+WriteLiteral(" />\r\n            </div>\r\n");
+
+            
+            #line 24 "..\..\MVC\Views\General\ProductProposal.cshtml"
+        }
+    
+            
+            #line default
+            #line hidden
+WriteLiteral("\r\n</div>\r\n");
+
+            
+            #line 27 "..\..\MVC\Views\General\ProductProposal.cshtml"
 }
 
             

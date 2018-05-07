@@ -254,23 +254,15 @@ $(function() {
 
  
 
-$(window).scroll(function() {
-        var scrollTop = $(window).scrollTop()
-        var divOffset = parseInt($('.animatable').offset().top / 2)
-        if(divOffset <= scrollTop) {
-            $('.animatable').addClass('animated');
-        }
-        console.log(divOffset + ' - ' + scrollTop)
-    });
+// $(window).scroll(function() {
+//         var scrollTop = $(window).scrollTop()
+//         var divOffset = parseInt($('.animatable').offset().top / 2)
+//         if(divOffset <= scrollTop) {
+//             $('.animatable').addClass('animated');
+//         }
+//         console.log(divOffset + ' - ' + scrollTop)
+//     });
 
-$(window).scroll(function() {
-        var scrollTop = $(window).scrollTop()
-        var divOffset = parseInt($('.animatable').offset().top / 2)
-        if(divOffset <= scrollTop) {
-            $('.animatable').addClass('animated');
-        }
-        console.log(divOffset + ' - ' + scrollTop)
-    });
 
 //$('.page-mega-navigation-content-section__grouptitle').click(function(){
   

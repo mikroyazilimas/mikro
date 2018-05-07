@@ -58,7 +58,7 @@
                 {
                     <div class="form">
                         <div class="page-section-demo-request-open-right-form1">
-                            <input type="hidden" id="00N0Y00000QeNmD" name="00N0Y00000QeNmD" value="@Model.Product">
+                            <input type="hidden" id="00N0Y00000QeNmD" name="00N0Y00000QeNmD" value="">
                             <input type="hidden" name="oid" value="00D0Y0000035HER">
                             <input type="hidden" id="00N0Y00000QeNcc" name="00N0Y00000QeNcc" value="Demo Request">
                             @Html.HiddenFor(m => m.retURL, new { Value = Const.FormReturnUrl })
@@ -69,41 +69,24 @@
                             <label for="">
                                 @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*" })
                             </label>
-
-                            @*<label for="">
-            @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Şirketinizin ismi*" })
-        </label>*@
+                                                        
                             <label for="">
                                 @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", placeholder = "E-Postanız*" })
                             </label>
                             <label for="">
                                 @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", required = "required", placeholder = "Telefon Numaranız*", @class = "phones" })
                             </label>
-                            @*<label for="">
-            @Html.TextBoxFor(m => m.GlobalPhone, new { Name = "00N0Y00000RC79Z", id = "00N0Y00000RC79Z", required = "required", placeholder = "Yurt Dışı Telefon Numaranız" })
-        </label>*@
-                            @*<label for="">
-            @Html.EditorFor(m => m.City)
-        </label>
-        <label for="">
-            @Html.EditorFor(m => m.County)
-        </label>
-        <label for="">
-            @Html.EditorFor(m => m.NumberOfEmployees)
-        </label>*@
+                            
                         </div>
                         
                         <div class="page-section-demo-request-open-right-form2">
                             <label for=""> @Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp",  placeholder = "Mesajınız" })</label>
 
-                            @*<label for=""><textarea name="" id="" cols="30" rows="10" placeholder="Mesajınız"></textarea></label>*@
                         </div>
                         <div class="page-section-demo-request-open-right-checkbox">
-                            @*<label for="check"><input type="checkbox" id="check"><span>6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilgilendirmeyi okudum, kabul ediyorum.</span></label>*@
                             <label for="Contract-demo">@Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required" })<span id="Contract">6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilgilendirmeyi okudum, kabul ediyorum.</span></label>
                         </div>
                         <div class="page-section-demo-request-open-right-button">
-                            @*<a href="#">Gönder<i class="fas fa-arrow-right"></i></a>*@
                             <input type="submit" name="SaveButton" value="Gönder" onclick="return formSubmit('demoForm');"/>
                         </div>
                     </div>

@@ -18,6 +18,8 @@
                    
                 } else
                 {
+                    $(".errorMessage").show();
+                    $(".errorMessage").html("Teknik bir hata oluştu daha sonra tekrar deneyiniz");
                     return false;
                 }
             }
@@ -136,7 +138,7 @@
                     @*<a href="#" title="Gönder" class="page-section-contact-area-left-form-button__send">Gönder</a>*@
                     <input class="hp_btn" type="submit" name="SaveButton" value="Gönder" onclick="return contactFormSubmit('contactForm');" />
                 </div>
-
+                <div class="errorMessage"></div>
 
             </div>
             

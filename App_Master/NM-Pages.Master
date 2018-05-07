@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Pages.Master.cs" Inherits="SitefinityWebApp.App_Master.Page" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Pages.Master.cs" Inherits="SitefinityWebApp.App_Master.Page" %>
 
 <!DOCTYPE html>
 <html lang="tr">

@@ -60,9 +60,9 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.SubscribeForm
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 9 "..\..MVC\Views\SubscribeForm\SubscribeForm.SubscribeForm.cshtml"
@@ -71,7 +71,7 @@ Write(Html.Script(ScriptRef.JQuery, "top", false));
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 10 "..\..MVC\Views\SubscribeForm\SubscribeForm.SubscribeForm.cshtml"
@@ -80,7 +80,7 @@ Write(Html.Script("//ajax.aspnetcdn.com/ajax/jquery.validate/1.8.1/jquery.valida
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 11 "..\..MVC\Views\SubscribeForm\SubscribeForm.SubscribeForm.cshtml"
@@ -89,19 +89,19 @@ Write(Html.Script("//ajax.aspnetcdn.com/ajax/mvc/4.0/jquery.validate.unobtrusive
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\n\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 535), Tuple.Create("\"", 558)
+WriteAttribute("class", Tuple.Create(" class=\"", 523), Tuple.Create("\"", 546)
             
             #line 13 "..\..MVC\Views\SubscribeForm\SubscribeForm.SubscribeForm.cshtml"
-, Tuple.Create(Tuple.Create("", 543), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 531), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 543), false)
+, 531), false)
 );
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
             
             #line 14 "..\..MVC\Views\SubscribeForm\SubscribeForm.SubscribeForm.cshtml"
@@ -126,7 +126,7 @@ WriteLiteral("\t\t<h3>");
             
             #line default
             #line hidden
-WriteLiteral("</h3>\r\n");
+WriteLiteral("</h3>\n");
 
             
             #line 17 "..\..MVC\Views\SubscribeForm\SubscribeForm.SubscribeForm.cshtml"
@@ -139,7 +139,7 @@ WriteLiteral("\t\t<p");
 
 WriteLiteral(" class=\"text-muted\"");
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
 WriteLiteral("\t\t\t");
 
@@ -150,7 +150,7 @@ WriteLiteral("\t\t\t");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\t\t</p>\r\n");
+WriteLiteral("\n\t\t</p>\n");
 
             
             #line 21 "..\..MVC\Views\SubscribeForm\SubscribeForm.SubscribeForm.cshtml"
@@ -165,7 +165,7 @@ WriteLiteral("\t\t\t<div");
 
 WriteLiteral(" class=\"alert alert-success\"");
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
 WriteLiteral("\t\t\t\t");
 
@@ -194,7 +194,7 @@ WriteLiteral(" (");
             
             #line default
             #line hidden
-WriteLiteral(")\r\n\t\t\t</div>\r\n");
+WriteLiteral(")\n\t\t\t</div>\n");
 
             
             #line 27 "..\..MVC\Views\SubscribeForm\SubscribeForm.SubscribeForm.cshtml"
@@ -224,7 +224,7 @@ WriteLiteral("\t\t\t<div");
 
 WriteLiteral(" class=\"alert alert-warning\"");
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
 WriteLiteral("\t\t\t\t");
 
@@ -235,7 +235,7 @@ WriteLiteral("\t\t\t\t");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\t\t\t</div>\r\n");
+WriteLiteral("\n\t\t\t</div>\n");
 
             
             #line 35 "..\..MVC\Views\SubscribeForm\SubscribeForm.SubscribeForm.cshtml"
@@ -257,7 +257,7 @@ WriteLiteral("\t<div");
 
 WriteLiteral(" class=\"form-group\"");
 
-WriteLiteral(">\r\n\r\n\t\t<label>\r\n");
+WriteLiteral(">\n\n\t\t<label>\n");
 
 WriteLiteral("\t\t   ");
 
@@ -268,11 +268,11 @@ WriteLiteral("\t\t   ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\t\t</label>\r\n\r\n\t\t<div");
+WriteLiteral("\n\t\t</label>\n\n\t\t<div");
 
 WriteLiteral(" class=\"form-inline\"");
 
-WriteLiteral(">\r\n\t\t   \r\n");
+WriteLiteral(">\n\t\t   \n");
 
 WriteLiteral("\t\t\t");
 
@@ -283,7 +283,7 @@ WriteLiteral("\t\t\t");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n\t\t\t<button");
+WriteLiteral("\n\n\t\t\t<button");
 
 WriteLiteral(" class=\"btn btn-primary\"");
 
@@ -298,7 +298,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</button>\r\n\t\t\t\r\n\t\t</div>\r\n\r\n");
+WriteLiteral("</button>\n\t\t\t\n\t\t</div>\n\n");
 
             
             #line 72 "..\..MVC\Views\SubscribeForm\SubscribeForm.SubscribeForm.cshtml"
@@ -318,7 +318,7 @@ WriteLiteral("\t\t\t<div");
 
 WriteLiteral(" class=\"has-error\"");
 
-WriteLiteral(">\r\n\t\t\t\t<span");
+WriteLiteral(">\n\t\t\t\t<span");
 
 WriteLiteral(" class=\"help-block\"");
 
@@ -331,7 +331,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</span>\r\n\t\t\t</div>\r\n");
+WriteLiteral("</span>\n\t\t\t</div>\n");
 
             
             #line 77 "..\..MVC\Views\SubscribeForm\SubscribeForm.SubscribeForm.cshtml"
@@ -340,7 +340,7 @@ WriteLiteral("</span>\r\n\t\t\t</div>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\t</div>\r\n");
+WriteLiteral("\n\t</div>\n");
 
             
             #line 80 "..\..MVC\Views\SubscribeForm\SubscribeForm.SubscribeForm.cshtml"
@@ -350,7 +350,7 @@ WriteLiteral("\r\n\t</div>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("</div>\r\n");
+WriteLiteral("</div>\n");
 
         }
     }

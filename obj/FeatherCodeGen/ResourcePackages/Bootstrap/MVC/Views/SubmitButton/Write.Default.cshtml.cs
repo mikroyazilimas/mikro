@@ -54,7 +54,7 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.SubmitButton
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 7 "..\..MVC\Views\SubmitButton\Write.Default.cshtml"
@@ -63,20 +63,20 @@ Write(Html.Script(ScriptRef.JQuery, "top", false));
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\n\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 297), Tuple.Create("\"", 331)
+WriteAttribute("class", Tuple.Create(" class=\"", 289), Tuple.Create("\"", 323)
             
             #line 9 "..\..MVC\Views\SubmitButton\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 305), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 297), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 305), false)
-, Tuple.Create(Tuple.Create(" ", 320), Tuple.Create("form-group", 321), true)
+, 297), false)
+, Tuple.Create(Tuple.Create(" ", 312), Tuple.Create("form-group", 313), true)
 );
 
-WriteLiteral(">\r\n\t<button");
+WriteLiteral(">\n\t<button");
 
 WriteLiteral(" type=\"submit\"");
 
@@ -98,7 +98,7 @@ WriteLiteral(" class=\"sf-SubmitButton btn btn-primary\">");
             
             #line default
             #line hidden
-WriteLiteral("</button>\r\n");
+WriteLiteral("</button>\n");
 
             
             #line 11 "..\..MVC\Views\SubmitButton\Write.Default.cshtml"
@@ -129,7 +129,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral(" </a>\r\n");
+WriteLiteral(" </a>\n");
 
             
             #line 14 "..\..MVC\Views\SubmitButton\Write.Default.cshtml"
@@ -138,7 +138,7 @@ WriteLiteral(" </a>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("</div>\r\n\r\n");
+WriteLiteral("</div>\n\n");
 
             
             #line 17 "..\..MVC\Views\SubmitButton\Write.Default.cshtml"
@@ -147,7 +147,7 @@ Write(Html.Script(Url.WidgetContent("Mvc/Scripts/SubmitButton/submit-button.js")
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
         }
     }

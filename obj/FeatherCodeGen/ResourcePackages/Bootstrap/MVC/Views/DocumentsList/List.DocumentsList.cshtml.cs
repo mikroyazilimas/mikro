@@ -53,19 +53,19 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.DocumentsList
         }
         public override void Execute()
         {
-WriteLiteral("\r\n<div");
+WriteLiteral("\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 231), Tuple.Create("\"", 254)
+WriteAttribute("class", Tuple.Create(" class=\"", 225), Tuple.Create("\"", 248)
             
             #line 7 "..\..MVC\Views\DocumentsList\List.DocumentsList.cshtml"
-, Tuple.Create(Tuple.Create("", 239), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 233), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 239), false)
+, 233), false)
 );
 
-WriteLiteral(">\r\n\r\n");
+WriteLiteral(">\n\n");
 
             
             #line 9 "..\..MVC\Views\DocumentsList\List.DocumentsList.cshtml"
@@ -85,25 +85,25 @@ WriteLiteral("\t\t\t<div");
 
 WriteLiteral(" class=\"media\"");
 
-WriteLiteral(">\r\n\t\t\t\t<div");
+WriteLiteral(">\n\t\t\t\t<div");
 
 WriteLiteral(" class=\"media-left\"");
 
-WriteLiteral(">\r\n\t\t\t\t\t<i");
+WriteLiteral(">\n\t\t\t\t\t<i");
 
 WriteLiteral(" class=\"icon-file icon-txt icon-md\"");
 
-WriteLiteral(">\r\n\t\t\t\t\t\t<span");
+WriteLiteral(">\n\t\t\t\t\t\t<span");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 413), Tuple.Create("\"", 472)
-, Tuple.Create(Tuple.Create("", 421), Tuple.Create("icon-txt-", 421), true)
+WriteAttribute("class", Tuple.Create(" class=\"", 400), Tuple.Create("\"", 459)
+, Tuple.Create(Tuple.Create("", 408), Tuple.Create("icon-txt-", 408), true)
             
             #line 14 "..\..MVC\Views\DocumentsList\List.DocumentsList.cshtml"
-, Tuple.Create(Tuple.Create("", 430), Tuple.Create<System.Object, System.Int32>(((DocumentItemViewModel)item).Extension
+, Tuple.Create(Tuple.Create("", 417), Tuple.Create<System.Object, System.Int32>(((DocumentItemViewModel)item).Extension
             
             #line default
             #line hidden
-, 430), false)
+, 417), false)
 );
 
 WriteLiteral(">");
@@ -115,23 +115,23 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</span>\r\n\t\t\t\t\t</i>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div");
+WriteLiteral("</span>\n\t\t\t\t\t</i>\n\t\t\t\t</div>\n\t\t\t\t<div");
 
 WriteLiteral(" class=\"media-body\"");
 
-WriteLiteral(">\r\n\t\t\t\t\t<a");
+WriteLiteral(">\n\t\t\t\t\t<a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 585), Tuple.Create("\"", 699)
+WriteAttribute("href", Tuple.Create(" href=\"", 568), Tuple.Create("\"", 682)
             
             #line 18 "..\..MVC\Views\DocumentsList\List.DocumentsList.cshtml"
-, Tuple.Create(Tuple.Create("", 592), Tuple.Create<System.Object, System.Int32>(HyperLinkHelpers.GetDetailPageUrl(item, ViewBag.DetailsPageId, ViewBag.OpenInSamePage, Model.UrlKeyPrefix)
+, Tuple.Create(Tuple.Create("", 575), Tuple.Create<System.Object, System.Int32>(HyperLinkHelpers.GetDetailPageUrl(item, ViewBag.DetailsPageId, ViewBag.OpenInSamePage, Model.UrlKeyPrefix)
             
             #line default
             #line hidden
-, 592), false)
+, 575), false)
 );
 
-WriteLiteral(">\r\n\t\t\t\t\t\t\t<strong>");
+WriteLiteral(">\n\t\t\t\t\t\t\t<strong>");
 
             
             #line 19 "..\..MVC\Views\DocumentsList\List.DocumentsList.cshtml"
@@ -140,7 +140,7 @@ WriteLiteral(">\r\n\t\t\t\t\t\t\t<strong>");
             
             #line default
             #line hidden
-WriteLiteral("</strong>\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t<span");
+WriteLiteral("</strong>\n\t\t\t\t\t</a>\n\t\t\t\t\t<span");
 
 WriteLiteral(" class=\"text-muted\"");
 
@@ -153,21 +153,21 @@ WriteLiteral(">(");
             
             #line default
             #line hidden
-WriteLiteral(")</span>\r\n\r\n\t\t\t\t\t<div>\r\n\t\t\t\t\t\t<a");
+WriteLiteral(")</span>\n\n\t\t\t\t\t<div>\n\t\t\t\t\t\t<a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 863), Tuple.Create("\"", 891)
+WriteAttribute("href", Tuple.Create(" href=\"", 840), Tuple.Create("\"", 868)
             
             #line 24 "..\..MVC\Views\DocumentsList\List.DocumentsList.cshtml"
-, Tuple.Create(Tuple.Create("", 870), Tuple.Create<System.Object, System.Int32>(item.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 847), Tuple.Create<System.Object, System.Int32>(item.Fields.MediaUrl
             
             #line default
             #line hidden
-, 870), false)
+, 847), false)
 );
 
 WriteLiteral(" target=\"_blank\"");
 
-WriteLiteral(">Download</a>\r\n\t\t\t\t\t\t<span");
+WriteLiteral(">Download</a>\n\t\t\t\t\t\t<span");
 
 WriteLiteral(" class=\"text-muted\"");
 
@@ -180,7 +180,7 @@ WriteLiteral(">(");
             
             #line default
             #line hidden
-WriteLiteral(")</span>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n");
+WriteLiteral(")</span>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n");
 
             
             #line 29 "..\..MVC\Views\DocumentsList\List.DocumentsList.cshtml"
@@ -189,7 +189,7 @@ WriteLiteral(")</span>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n
             
             #line default
             #line hidden
-WriteLiteral("\r\n</div>\r\n\r\n");
+WriteLiteral("\n</div>\n\n");
 
             
             #line 33 "..\..MVC\Views\DocumentsList\List.DocumentsList.cshtml"
@@ -219,7 +219,7 @@ WriteLiteral("\r\n</div>\r\n\r\n");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n");
+WriteLiteral("\n\n");
 
         }
     }

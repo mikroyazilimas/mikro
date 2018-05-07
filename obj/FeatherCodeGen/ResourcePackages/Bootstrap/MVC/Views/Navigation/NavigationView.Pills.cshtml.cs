@@ -65,18 +65,18 @@ return new System.Web.WebPages.HelperResult(__razor_helper_writer => {
 #line hidden
 WriteLiteralTo(__razor_helper_writer, "    <li");
 
-WriteAttributeTo(__razor_helper_writer, "class", Tuple.Create(" class=\"", 790), Tuple.Create("\"", 822)
-, Tuple.Create(Tuple.Create("", 798), Tuple.Create("dropdown", 798), true)
+WriteAttributeTo(__razor_helper_writer, "class", Tuple.Create(" class=\"", 766), Tuple.Create("\"", 798)
+, Tuple.Create(Tuple.Create("", 774), Tuple.Create("dropdown", 774), true)
 
 #line 25 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
-, Tuple.Create(Tuple.Create(" ", 806), Tuple.Create<System.Object, System.Int32>(GetClass(node)
+, Tuple.Create(Tuple.Create(" ", 782), Tuple.Create<System.Object, System.Int32>(GetClass(node)
 
 #line default
 #line hidden
-, 807), false)
+, 783), false)
 );
 
-WriteLiteralTo(__razor_helper_writer, ">\r\n");
+WriteLiteralTo(__razor_helper_writer, ">\n");
 
 
 #line 26 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
@@ -109,17 +109,17 @@ WriteLiteralTo(__razor_helper_writer, ">");
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "\r\n                <span");
+WriteLiteralTo(__razor_helper_writer, "\n                <span");
 
 WriteLiteralTo(__razor_helper_writer, " class=\"caret\"");
 
-WriteLiteralTo(__razor_helper_writer, "></span>\r\n            </a>\r\n");
+WriteLiteralTo(__razor_helper_writer, "></span>\n            </a>\n");
 
 WriteLiteralTo(__razor_helper_writer, "            <ul");
 
 WriteLiteralTo(__razor_helper_writer, " class=\"dropdown-menu\"");
 
-WriteLiteralTo(__razor_helper_writer, ">\r\n");
+WriteLiteralTo(__razor_helper_writer, ">\n");
 
 WriteLiteralTo(__razor_helper_writer, "                ");
 
@@ -130,7 +130,7 @@ WriteTo(__razor_helper_writer, RenderSubLevelsRecursive(node));
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "\r\n            </ul>\r\n");
+WriteLiteralTo(__razor_helper_writer, "\n            </ul>\n");
 
 
 #line 34 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
@@ -143,24 +143,24 @@ WriteLiteralTo(__razor_helper_writer, "\r\n            </ul>\r\n");
 #line hidden
 WriteLiteralTo(__razor_helper_writer, "            <a");
 
-WriteAttributeTo(__razor_helper_writer, "href", Tuple.Create(" href=\"", 1199), Tuple.Create("\"", 1215)
+WriteAttributeTo(__razor_helper_writer, "href", Tuple.Create(" href=\"", 1163), Tuple.Create("\"", 1179)
 
 #line 37 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
-, Tuple.Create(Tuple.Create("", 1206), Tuple.Create<System.Object, System.Int32>(node.Url
+, Tuple.Create(Tuple.Create("", 1170), Tuple.Create<System.Object, System.Int32>(node.Url
 
 #line default
 #line hidden
-, 1206), false)
+, 1170), false)
 );
 
-WriteAttributeTo(__razor_helper_writer, "target", Tuple.Create(" target=\"", 1216), Tuple.Create("\"", 1241)
+WriteAttributeTo(__razor_helper_writer, "target", Tuple.Create(" target=\"", 1180), Tuple.Create("\"", 1205)
 
 #line 37 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
-, Tuple.Create(Tuple.Create("", 1225), Tuple.Create<System.Object, System.Int32>(node.LinkTarget
+, Tuple.Create(Tuple.Create("", 1189), Tuple.Create<System.Object, System.Int32>(node.LinkTarget
 
 #line default
 #line hidden
-, 1225), false)
+, 1189), false)
 );
 
 WriteLiteralTo(__razor_helper_writer, ">");
@@ -172,7 +172,7 @@ WriteLiteralTo(__razor_helper_writer, ">");
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "</a>\r\n");
+WriteLiteralTo(__razor_helper_writer, "</a>\n");
 
 
 #line 38 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
@@ -181,7 +181,7 @@ WriteLiteralTo(__razor_helper_writer, "</a>\r\n");
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "    </li>\r\n");
+WriteLiteralTo(__razor_helper_writer, "    </li>\n");
 
 
 #line 40 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
@@ -215,37 +215,37 @@ return new System.Web.WebPages.HelperResult(__razor_helper_writer => {
 #line hidden
 WriteLiteralTo(__razor_helper_writer, "             <li");
 
-WriteAttributeTo(__razor_helper_writer, "class", Tuple.Create(" class=\"", 1528), Tuple.Create("\"", 1573)
-, Tuple.Create(Tuple.Create("", 1536), Tuple.Create("dropdown-submenu", 1536), true)
+WriteAttributeTo(__razor_helper_writer, "class", Tuple.Create(" class=\"", 1480), Tuple.Create("\"", 1525)
+, Tuple.Create(Tuple.Create("", 1488), Tuple.Create("dropdown-submenu", 1488), true)
 
 #line 49 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
-, Tuple.Create(Tuple.Create(" ", 1552), Tuple.Create<System.Object, System.Int32>(GetClass(childNode)
+, Tuple.Create(Tuple.Create(" ", 1504), Tuple.Create<System.Object, System.Int32>(GetClass(childNode)
+
+#line default
+#line hidden
+, 1505), false)
+);
+
+WriteLiteralTo(__razor_helper_writer, ">\n                <a");
+
+WriteAttributeTo(__razor_helper_writer, "href", Tuple.Create(" href=\"", 1546), Tuple.Create("\"", 1567)
+
+#line 50 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
+, Tuple.Create(Tuple.Create("", 1553), Tuple.Create<System.Object, System.Int32>(childNode.Url
 
 #line default
 #line hidden
 , 1553), false)
 );
 
-WriteLiteralTo(__razor_helper_writer, ">\r\n                <a");
-
-WriteAttributeTo(__razor_helper_writer, "href", Tuple.Create(" href=\"", 1595), Tuple.Create("\"", 1616)
+WriteAttributeTo(__razor_helper_writer, "target", Tuple.Create(" target=\"", 1568), Tuple.Create("\"", 1598)
 
 #line 50 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
-, Tuple.Create(Tuple.Create("", 1602), Tuple.Create<System.Object, System.Int32>(childNode.Url
+, Tuple.Create(Tuple.Create("", 1577), Tuple.Create<System.Object, System.Int32>(childNode.LinkTarget
 
 #line default
 #line hidden
-, 1602), false)
-);
-
-WriteAttributeTo(__razor_helper_writer, "target", Tuple.Create(" target=\"", 1617), Tuple.Create("\"", 1647)
-
-#line 50 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
-, Tuple.Create(Tuple.Create("", 1626), Tuple.Create<System.Object, System.Int32>(childNode.LinkTarget
-
-#line default
-#line hidden
-, 1626), false)
+, 1577), false)
 );
 
 WriteLiteralTo(__razor_helper_writer, ">");
@@ -257,15 +257,15 @@ WriteLiteralTo(__razor_helper_writer, ">");
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "\r\n                    <span");
+WriteLiteralTo(__razor_helper_writer, "\n                    <span");
 
 WriteLiteralTo(__razor_helper_writer, " class=\"right-caret\"");
 
-WriteLiteralTo(__razor_helper_writer, "></span>\r\n                </a>\r\n                <ul");
+WriteLiteralTo(__razor_helper_writer, "></span>\n                </a>\n                <ul");
 
 WriteLiteralTo(__razor_helper_writer, " class=\"dropdown-menu\"");
 
-WriteLiteralTo(__razor_helper_writer, ">\r\n");
+WriteLiteralTo(__razor_helper_writer, ">\n");
 
 WriteLiteralTo(__razor_helper_writer, "                    ");
 
@@ -276,7 +276,7 @@ WriteTo(__razor_helper_writer, RenderSubLevelsRecursive(childNode));
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "\r\n                </ul>\r\n            </li>\r\n");
+WriteLiteralTo(__razor_helper_writer, "\n                </ul>\n            </li>\n");
 
 
 #line 57 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
@@ -289,36 +289,36 @@ WriteLiteralTo(__razor_helper_writer, "\r\n                </ul>\r\n            
 #line hidden
 WriteLiteralTo(__razor_helper_writer, "            <li");
 
-WriteAttributeTo(__razor_helper_writer, "class", Tuple.Create(" class=\"", 1939), Tuple.Create("\"", 1967)
+WriteAttributeTo(__razor_helper_writer, "class", Tuple.Create(" class=\"", 1880), Tuple.Create("\"", 1908)
 
 #line 60 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
-, Tuple.Create(Tuple.Create("", 1947), Tuple.Create<System.Object, System.Int32>(GetClass(childNode)
+, Tuple.Create(Tuple.Create("", 1888), Tuple.Create<System.Object, System.Int32>(GetClass(childNode)
 
 #line default
 #line hidden
-, 1947), false)
+, 1888), false)
 );
 
-WriteLiteralTo(__razor_helper_writer, ">\r\n                <a");
+WriteLiteralTo(__razor_helper_writer, ">\n                <a");
 
-WriteAttributeTo(__razor_helper_writer, "href", Tuple.Create(" href=\"", 1989), Tuple.Create("\"", 2010)
+WriteAttributeTo(__razor_helper_writer, "href", Tuple.Create(" href=\"", 1929), Tuple.Create("\"", 1950)
 
 #line 61 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
-, Tuple.Create(Tuple.Create("", 1996), Tuple.Create<System.Object, System.Int32>(childNode.Url
+, Tuple.Create(Tuple.Create("", 1936), Tuple.Create<System.Object, System.Int32>(childNode.Url
 
 #line default
 #line hidden
-, 1996), false)
+, 1936), false)
 );
 
-WriteAttributeTo(__razor_helper_writer, "target", Tuple.Create(" target=\"", 2011), Tuple.Create("\"", 2041)
+WriteAttributeTo(__razor_helper_writer, "target", Tuple.Create(" target=\"", 1951), Tuple.Create("\"", 1981)
 
 #line 61 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
-, Tuple.Create(Tuple.Create("", 2020), Tuple.Create<System.Object, System.Int32>(childNode.LinkTarget
+, Tuple.Create(Tuple.Create("", 1960), Tuple.Create<System.Object, System.Int32>(childNode.LinkTarget
 
 #line default
 #line hidden
-, 2020), false)
+, 1960), false)
 );
 
 WriteLiteralTo(__razor_helper_writer, ">");
@@ -330,7 +330,7 @@ WriteLiteralTo(__razor_helper_writer, ">");
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "</a>\r\n            </li>\r\n");
+WriteLiteralTo(__razor_helper_writer, "</a>\n            </li>\n");
 
 
 #line 63 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
@@ -407,9 +407,9 @@ WriteTo(__razor_helper_writer, Html.Raw("active"));
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 8 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
@@ -418,7 +418,7 @@ Write(Html.Script(ScriptRef.JQuery, "top", false));
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 9 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
@@ -427,25 +427,25 @@ Write(Html.Script(Url.WidgetContent("Mvc/Scripts/Bootstrap/js/bootstrap.min.js")
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\n\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 406), Tuple.Create("\"", 429)
+WriteAttribute("class", Tuple.Create(" class=\"", 396), Tuple.Create("\"", 419)
             
             #line 11 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
-, Tuple.Create(Tuple.Create("", 414), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 404), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 414), false)
+, 404), false)
 );
 
-WriteLiteral(">\r\n    ");
+WriteLiteral(">\n    ");
 
-WriteLiteral("\r\n\r\n    <ul");
+WriteLiteral("\n\n    <ul");
 
 WriteLiteral(" class=\"nav nav-pills\"");
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
             
             #line 15 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"
@@ -476,19 +476,19 @@ WriteLiteral(">\r\n");
             
             #line default
             #line hidden
-WriteLiteral("    </ul>\r\n</div>\r\n\r\n");
+WriteLiteral("    </ul>\n</div>\n\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 81 "..\..MVC\Views\Navigation\NavigationView.Pills.cshtml"

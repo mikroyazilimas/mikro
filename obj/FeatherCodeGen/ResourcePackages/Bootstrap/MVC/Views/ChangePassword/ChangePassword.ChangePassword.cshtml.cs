@@ -48,19 +48,19 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.ChangePassword
         }
         public override void Execute()
         {
-WriteLiteral("\r\n<div");
+WriteLiteral("\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 186), Tuple.Create("\"", 209)
+WriteAttribute("class", Tuple.Create(" class=\"", 181), Tuple.Create("\"", 204)
             
             #line 6 "..\..MVC\Views\ChangePassword\ChangePassword.ChangePassword.cshtml"
-, Tuple.Create(Tuple.Create("", 194), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 189), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 194), false)
+, 189), false)
 );
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
             
             #line 7 "..\..MVC\Views\ChangePassword\ChangePassword.ChangePassword.cshtml"
@@ -85,7 +85,7 @@ WriteLiteral("        <h3>");
             
             #line default
             #line hidden
-WriteLiteral("</h3>\r\n");
+WriteLiteral("</h3>\n");
 
             
             #line 10 "..\..MVC\Views\ChangePassword\ChangePassword.ChangePassword.cshtml"
@@ -105,7 +105,7 @@ WriteLiteral("        <h3>");
             
             #line default
             #line hidden
-WriteLiteral("</h3>\r\n");
+WriteLiteral("</h3>\n");
 
             
             #line 14 "..\..MVC\Views\ChangePassword\ChangePassword.ChangePassword.cshtml"
@@ -116,7 +116,7 @@ WriteLiteral("</h3>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("            <div>\r\n");
+WriteLiteral("            <div>\n");
 
 WriteLiteral("                ");
 
@@ -127,7 +127,7 @@ WriteLiteral("                ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n            </div>\r\n");
+WriteLiteral("\n            </div>\n");
 
             
             #line 20 "..\..MVC\Views\ChangePassword\ChangePassword.ChangePassword.cshtml"
@@ -147,7 +147,7 @@ WriteLiteral("\t\t\t\t\t<div");
 
 WriteLiteral(" class=\"alert alert-danger\"");
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
 WriteLiteral("\t\t\t\t\t\t");
 
@@ -158,7 +158,7 @@ WriteLiteral("\t\t\t\t\t\t");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\t\t\t\t\t</div>\r\n");
+WriteLiteral("\n\t\t\t\t\t</div>\n");
 
             
             #line 31 "..\..MVC\Views\ChangePassword\ChangePassword.ChangePassword.cshtml"
@@ -173,7 +173,7 @@ WriteLiteral("\t\t\t\t<div");
 
 WriteLiteral(" class=\"form-group\"");
 
-WriteLiteral(">\r\n\t\t\t\t\t<label>\r\n");
+WriteLiteral(">\n\t\t\t\t\t<label>\n");
 
 WriteLiteral("\t\t\t\t\t\t");
 
@@ -184,7 +184,7 @@ WriteLiteral("\t\t\t\t\t\t");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\t\t\t\t\t</label>\r\n");
+WriteLiteral("\n\t\t\t\t\t</label>\n");
 
 WriteLiteral("\t\t\t\t   ");
 
@@ -195,13 +195,13 @@ WriteLiteral("\t\t\t\t   ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n\t\t\t\t</div>\r\n");
+WriteLiteral("\n\n\t\t\t\t</div>\n");
 
 WriteLiteral("\t\t\t\t<div");
 
 WriteLiteral(" class=\"form-group\"");
 
-WriteLiteral(">\r\n\t\t\t\t\t<label>\r\n");
+WriteLiteral(">\n\t\t\t\t\t<label>\n");
 
 WriteLiteral("\t\t\t\t\t\t");
 
@@ -212,7 +212,7 @@ WriteLiteral("\t\t\t\t\t\t");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\t\t\t\t\t</label>\r\n\r\n");
+WriteLiteral("\n\t\t\t\t\t</label>\n\n");
 
 WriteLiteral("\t\t\t\t\t");
 
@@ -223,13 +223,13 @@ WriteLiteral("\t\t\t\t\t");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n\t\t\t\t</div>\r\n");
+WriteLiteral("\n\n\t\t\t\t</div>\n");
 
 WriteLiteral("\t\t\t\t<div");
 
 WriteLiteral(" class=\"form-group\"");
 
-WriteLiteral(">\r\n\t\t\t\t\t<label>\r\n");
+WriteLiteral(">\n\t\t\t\t\t<label>\n");
 
 WriteLiteral("\t\t\t\t\t\t");
 
@@ -240,7 +240,7 @@ WriteLiteral("\t\t\t\t\t\t");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\t\t\t\t\t</label>\r\n\r\n");
+WriteLiteral("\n\t\t\t\t\t</label>\n\n");
 
 WriteLiteral("\t\t\t\t\t");
 
@@ -251,7 +251,7 @@ WriteLiteral("\t\t\t\t\t");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n\t\t\t\t</div>    \r\n");
+WriteLiteral("\n\n\t\t\t\t</div>    \n");
 
             
             #line 57 "..\..MVC\Views\ChangePassword\ChangePassword.ChangePassword.cshtml"
@@ -275,7 +275,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</button> \r\n");
+WriteLiteral("</button> \n");
 
             
             #line 59 "..\..MVC\Views\ChangePassword\ChangePassword.ChangePassword.cshtml"
@@ -286,7 +286,7 @@ WriteLiteral("</button> \r\n");
             
             #line default
             #line hidden
-WriteLiteral("</div>\r\n\r\n");
+WriteLiteral("</div>\n\n");
 
         }
     }

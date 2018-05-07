@@ -60,7 +60,7 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.ParagraphTextFie
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 8 "..\..MVC\Views\ParagraphTextField\Write.Default.cshtml"
@@ -69,59 +69,59 @@ Write(Html.Script(ScriptRef.JQuery, "top", false));
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\n\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 344), Tuple.Create("\"", 378)
-, Tuple.Create(Tuple.Create("", 352), Tuple.Create("form-group", 352), true)
+WriteAttribute("class", Tuple.Create(" class=\"", 335), Tuple.Create("\"", 369)
+, Tuple.Create(Tuple.Create("", 343), Tuple.Create("form-group", 343), true)
             
             #line 10 "..\..MVC\Views\ParagraphTextField\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create(" ", 362), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create(" ", 353), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 363), false)
+, 354), false)
 );
 
 WriteLiteral(" data-sf-role=\"paragraph-text-field-container\"");
 
-WriteLiteral(">\r\n    <input");
+WriteLiteral(">\n    <input");
 
 WriteLiteral(" type=\"hidden\"");
 
 WriteLiteral(" data-sf-role=\"violation-messages\"");
 
-WriteAttribute("value", Tuple.Create(" value=\'", 486), Tuple.Create("\'", 589)
-, Tuple.Create(Tuple.Create("", 494), Tuple.Create("{\"maxLength\":\"", 494), true)
+WriteAttribute("value", Tuple.Create(" value=\'", 476), Tuple.Create("\'", 579)
+, Tuple.Create(Tuple.Create("", 484), Tuple.Create("{\"maxLength\":\"", 484), true)
             
             #line 11 "..\..MVC\Views\ParagraphTextField\Write.Default.cshtml"
- , Tuple.Create(Tuple.Create("", 508), Tuple.Create<System.Object, System.Int32>(Model.MaxLengthViolationMessage
+ , Tuple.Create(Tuple.Create("", 498), Tuple.Create<System.Object, System.Int32>(Model.MaxLengthViolationMessage
             
             #line default
             #line hidden
-, 508), false)
-, Tuple.Create(Tuple.Create("", 540), Tuple.Create("\",", 540), true)
-, Tuple.Create(Tuple.Create(" ", 542), Tuple.Create("\"required\":", 543), true)
-, Tuple.Create(Tuple.Create(" ", 554), Tuple.Create("\"", 555), true)
+, 498), false)
+, Tuple.Create(Tuple.Create("", 530), Tuple.Create("\",", 530), true)
+, Tuple.Create(Tuple.Create(" ", 532), Tuple.Create("\"required\":", 533), true)
+, Tuple.Create(Tuple.Create(" ", 544), Tuple.Create("\"", 545), true)
             
             #line 11 "..\..MVC\Views\ParagraphTextField\Write.Default.cshtml"
-                                                 , Tuple.Create(Tuple.Create("", 556), Tuple.Create<System.Object, System.Int32>(Model.RequiredViolationMessage
+                                                 , Tuple.Create(Tuple.Create("", 546), Tuple.Create<System.Object, System.Int32>(Model.RequiredViolationMessage
             
             #line default
             #line hidden
-, 556), false)
-, Tuple.Create(Tuple.Create("", 587), Tuple.Create("\"}", 587), true)
+, 546), false)
+, Tuple.Create(Tuple.Create("", 577), Tuple.Create("\"}", 577), true)
 );
 
-WriteLiteral(" />\r\n    <label");
+WriteLiteral(" />\n    <label");
 
-WriteAttribute("for", Tuple.Create(" for=\'", 605), Tuple.Create("\'", 637)
+WriteAttribute("for", Tuple.Create(" for=\'", 594), Tuple.Create("\'", 626)
             
             #line 12 "..\..MVC\Views\ParagraphTextField\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 611), Tuple.Create<System.Object, System.Int32>(Html.UniqueId("Textarea")
+, Tuple.Create(Tuple.Create("", 600), Tuple.Create<System.Object, System.Int32>(Html.UniqueId("Textarea")
             
             #line default
             #line hidden
-, 611), false)
+, 600), false)
 );
 
 WriteLiteral(">");
@@ -133,16 +133,16 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral(" </label>\r\n    <textarea");
+WriteLiteral(" </label>\n    <textarea");
 
-WriteAttribute("id", Tuple.Create(" id=\'", 685), Tuple.Create("\'", 716)
+WriteAttribute("id", Tuple.Create(" id=\'", 673), Tuple.Create("\'", 704)
             
             #line 13 "..\..MVC\Views\ParagraphTextField\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 690), Tuple.Create<System.Object, System.Int32>(Html.UniqueId("Textarea")
+, Tuple.Create(Tuple.Create("", 678), Tuple.Create<System.Object, System.Int32>(Html.UniqueId("Textarea")
             
             #line default
             #line hidden
-, 690), false)
+, 678), false)
 );
 
 WriteLiteral(" class=\"form-control\"");
@@ -151,24 +151,24 @@ WriteLiteral(" rows=\"4\"");
 
 WriteLiteral(" data-sf-role=\"paragraph-text-field-textarea\"");
 
-WriteAttribute("name", Tuple.Create(" name=\"", 792), Tuple.Create("\"", 825)
+WriteAttribute("name", Tuple.Create(" name=\"", 780), Tuple.Create("\"", 813)
             
             #line 13 "..\..MVC\Views\ParagraphTextField\Write.Default.cshtml"
-                                                , Tuple.Create(Tuple.Create("", 799), Tuple.Create<System.Object, System.Int32>(Model.MetaField.FieldName
+                                                , Tuple.Create(Tuple.Create("", 787), Tuple.Create<System.Object, System.Int32>(Model.MetaField.FieldName
             
             #line default
             #line hidden
-, 799), false)
+, 787), false)
 );
 
-WriteAttribute("placeholder", Tuple.Create(" placeholder=\"", 826), Tuple.Create("\"", 862)
+WriteAttribute("placeholder", Tuple.Create(" placeholder=\"", 814), Tuple.Create("\"", 850)
             
             #line 13 "..\..MVC\Views\ParagraphTextField\Write.Default.cshtml"
-                                                                                         , Tuple.Create(Tuple.Create("", 840), Tuple.Create<System.Object, System.Int32>(Model.PlaceholderText
+                                                                                         , Tuple.Create(Tuple.Create("", 828), Tuple.Create<System.Object, System.Int32>(Model.PlaceholderText
             
             #line default
             #line hidden
-, 840), false)
+, 828), false)
 );
 
 WriteLiteral(" ");
@@ -189,7 +189,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</textarea>\r\n  \r\n");
+WriteLiteral("</textarea>\n  \n");
 
             
             #line 15 "..\..MVC\Views\ParagraphTextField\Write.Default.cshtml"
@@ -218,7 +218,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</p>\r\n");
+WriteLiteral("</p>\n");
 
             
             #line 18 "..\..MVC\Views\ParagraphTextField\Write.Default.cshtml"
@@ -227,7 +227,7 @@ WriteLiteral("</p>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("</div>\r\n\r\n");
+WriteLiteral("</div>\n\n");
 
             
             #line 21 "..\..MVC\Views\ParagraphTextField\Write.Default.cshtml"
@@ -236,7 +236,7 @@ Write(Html.Script(Url.WidgetContent("Mvc/Scripts/ParagraphTextField/paragraph-te
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
         }
     }

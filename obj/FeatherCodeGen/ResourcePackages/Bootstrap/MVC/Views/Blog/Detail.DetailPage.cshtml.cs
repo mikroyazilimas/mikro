@@ -60,16 +60,16 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.Blog
         }
         public override void Execute()
         {
-WriteLiteral("\r\n<div");
+WriteLiteral("\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 265), Tuple.Create("\"", 288)
+WriteAttribute("class", Tuple.Create(" class=\"", 258), Tuple.Create("\"", 281)
             
             #line 8 "..\..MVC\Views\Blog\Detail.DetailPage.cshtml"
-, Tuple.Create(Tuple.Create("", 273), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 266), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 273), false)
+, 266), false)
 );
 
 WriteLiteral(" ");
@@ -81,7 +81,7 @@ WriteLiteral(" ");
             
             #line default
             #line hidden
-WriteLiteral(">\r\n    <h3>\r\n        <span ");
+WriteLiteral(">\n    <h3>\n        <span ");
 
             
             #line 10 "..\..MVC\Views\Blog\Detail.DetailPage.cshtml"
@@ -99,7 +99,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</span>\r\n    </h3>\r\n\t\r\n\t\t<p");
+WriteLiteral("</span>\n    </h3>\n\t\n\t\t<p");
 
 WriteLiteral(" class=\"text-muted\"");
 
@@ -112,7 +112,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</p>\r\n");
+WriteLiteral("</p>\n");
 
             
             #line 14 "..\..MVC\Views\Blog\Detail.DetailPage.cshtml"
@@ -152,7 +152,7 @@ WriteLiteral(" : ");
             
             #line default
             #line hidden
-WriteLiteral(" </p>\r\n");
+WriteLiteral(" </p>\n");
 
             
             #line 19 "..\..MVC\Views\Blog\Detail.DetailPage.cshtml"
@@ -161,7 +161,7 @@ WriteLiteral(" </p>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n    <div ");
+WriteLiteral("\n\n    <div ");
 
             
             #line 22 "..\..MVC\Views\Blog\Detail.DetailPage.cshtml"
@@ -179,7 +179,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</div>\r\n\r\n</div>");
+WriteLiteral("</div>\n\n</div>");
 
         }
     }

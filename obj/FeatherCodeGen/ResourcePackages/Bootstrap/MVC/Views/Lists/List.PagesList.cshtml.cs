@@ -48,19 +48,19 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.Lists
         }
         public override void Execute()
         {
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\n\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 181), Tuple.Create("\"", 204)
+WriteAttribute("class", Tuple.Create(" class=\"", 175), Tuple.Create("\"", 198)
             
             #line 7 "..\..MVC\Views\Lists\List.PagesList.cshtml"
-, Tuple.Create(Tuple.Create("", 189), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 183), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 189), false)
+, 183), false)
 );
 
-WriteLiteral(">\r\n\r\n");
+WriteLiteral(">\n\n");
 
             
             #line 9 "..\..MVC\Views\Lists\List.PagesList.cshtml"
@@ -85,7 +85,7 @@ WriteLiteral("        <h3 ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
 WriteLiteral("            ");
 
@@ -96,7 +96,7 @@ WriteLiteral("            ");
             
             #line default
             #line hidden
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
 WriteLiteral("            ");
 
@@ -107,9 +107,9 @@ WriteLiteral("            ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n        </h3>\r\n");
+WriteLiteral("\n        </h3>\n");
 
-WriteLiteral("        <ul>\r\n");
+WriteLiteral("        <ul>\n");
 
             
             #line 16 "..\..MVC\Views\Lists\List.PagesList.cshtml"
@@ -136,16 +136,16 @@ WriteLiteral("                <li ");
             
             #line default
             #line hidden
-WriteLiteral(">\r\n                    <a");
+WriteLiteral(">\n                    <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 921), Tuple.Create("\"", 940)
+WriteAttribute("href", Tuple.Create(" href=\"", 901), Tuple.Create("\"", 920)
             
             #line 21 "..\..MVC\Views\Lists\List.PagesList.cshtml"
-, Tuple.Create(Tuple.Create("", 928), Tuple.Create<System.Object, System.Int32>(navigateUrl
+, Tuple.Create(Tuple.Create("", 908), Tuple.Create<System.Object, System.Int32>(navigateUrl
             
             #line default
             #line hidden
-, 928), false)
+, 908), false)
 );
 
 WriteLiteral(" ");
@@ -166,7 +166,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</a>\r\n\t\t\t\t\t\r\n");
+WriteLiteral("</a>\n\t\t\t\t\t\n");
 
 WriteLiteral("                    ");
 
@@ -177,7 +177,7 @@ WriteLiteral("                    ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n                </li>\r\n");
+WriteLiteral("\n                </li>\n");
 
             
             #line 25 "..\..MVC\Views\Lists\List.PagesList.cshtml"
@@ -186,7 +186,7 @@ WriteLiteral("\r\n                </li>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("        </ul>\r\n");
+WriteLiteral("        </ul>\n");
 
             
             #line 27 "..\..MVC\Views\Lists\List.PagesList.cshtml"
@@ -195,7 +195,7 @@ WriteLiteral("        </ul>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("\r\n</div>\r\n");
+WriteLiteral("\n</div>\n");
 
         }
     }

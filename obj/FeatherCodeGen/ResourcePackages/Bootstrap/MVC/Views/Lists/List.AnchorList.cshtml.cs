@@ -53,19 +53,19 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.Lists
         }
         public override void Execute()
         {
-WriteLiteral("\r\n<div");
+WriteLiteral("\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 200), Tuple.Create("\"", 223)
+WriteAttribute("class", Tuple.Create(" class=\"", 194), Tuple.Create("\"", 217)
             
             #line 7 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
-, Tuple.Create(Tuple.Create("", 208), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 202), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 208), false)
+, 202), false)
 );
 
-WriteLiteral(">\r\n\r\n");
+WriteLiteral(">\n\n");
 
             
             #line 9 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -90,20 +90,20 @@ WriteLiteral("        <h1 ");
             
             #line default
             #line hidden
-WriteLiteral(">\r\n            <a");
+WriteLiteral(">\n            <a");
 
-WriteAttribute("id", Tuple.Create(" id=\"", 404), Tuple.Create("\"", 428)
+WriteAttribute("id", Tuple.Create(" id=\"", 393), Tuple.Create("\"", 417)
             
             #line 12 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
-, Tuple.Create(Tuple.Create("", 409), Tuple.Create<System.Object, System.Int32>(item.Fields.Id
+, Tuple.Create(Tuple.Create("", 398), Tuple.Create<System.Object, System.Int32>(item.Fields.Id
             
             #line default
             #line hidden
-, 409), false)
-, Tuple.Create(Tuple.Create("", 424), Tuple.Create("-Top", 424), true)
+, 398), false)
+, Tuple.Create(Tuple.Create("", 413), Tuple.Create("-Top", 413), true)
 );
 
-WriteLiteral("\r\n               ");
+WriteLiteral("\n               ");
 
             
             #line 13 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -112,7 +112,7 @@ WriteLiteral("\r\n               ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n               href=\"#");
+WriteLiteral("\n               href=\"#");
 
             
             #line 14 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -130,7 +130,7 @@ WriteLiteral("\">");
             
             #line default
             #line hidden
-WriteLiteral("</a>\r\n        </h1>\r\n");
+WriteLiteral("</a>\n        </h1>\n");
 
             
             #line 16 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -139,7 +139,7 @@ WriteLiteral("</a>\r\n        </h1>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("        <ul>\r\n");
+WriteLiteral("        <ul>\n");
 
             
             #line 18 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -164,7 +164,7 @@ WriteLiteral("                <li ");
             
             #line default
             #line hidden
-WriteLiteral(">\r\n                    <a ");
+WriteLiteral(">\n                    <a ");
 
             
             #line 21 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -173,7 +173,7 @@ WriteLiteral(">\r\n                    <a ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n                       href=\"#");
+WriteLiteral("\n                       href=\"#");
 
             
             #line 22 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -191,7 +191,7 @@ WriteLiteral("\">");
             
             #line default
             #line hidden
-WriteLiteral("</a>\r\n                </li>\r\n");
+WriteLiteral("</a>\n                </li>\n");
 
             
             #line 24 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -200,7 +200,7 @@ WriteLiteral("</a>\r\n                </li>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("        </ul>\r\n");
+WriteLiteral("        </ul>\n");
 
             
             #line 26 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -209,7 +209,7 @@ WriteLiteral("        </ul>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 28 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -234,7 +234,7 @@ WriteLiteral("        <h1 ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
 WriteLiteral("            ");
 
@@ -245,7 +245,7 @@ WriteLiteral("            ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n            id=\"");
+WriteLiteral("\n            id=\"");
 
             
             #line 32 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -254,7 +254,7 @@ WriteLiteral("\r\n            id=\"");
             
             #line default
             #line hidden
-WriteLiteral("\">\r\n");
+WriteLiteral("\">\n");
 
 WriteLiteral("            ");
 
@@ -265,7 +265,7 @@ WriteLiteral("            ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n        </h1>\r\n");
+WriteLiteral("\n        </h1>\n");
 
             
             #line 35 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -285,7 +285,7 @@ WriteLiteral("            <div ");
             
             #line default
             #line hidden
-WriteLiteral(">\r\n                <h3 ");
+WriteLiteral(">\n                <h3 ");
 
             
             #line 39 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -294,7 +294,7 @@ WriteLiteral(">\r\n                <h3 ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n                    id=\"");
+WriteLiteral("\n                    id=\"");
 
             
             #line 40 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -303,7 +303,7 @@ WriteLiteral("\r\n                    id=\"");
             
             #line default
             #line hidden
-WriteLiteral("\">\r\n");
+WriteLiteral("\">\n");
 
 WriteLiteral("                    ");
 
@@ -314,7 +314,7 @@ WriteLiteral("                    ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n                </h3>\r\n\r\n                <div ");
+WriteLiteral("\n                </h3>\n\n                <div ");
 
             
             #line 44 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -332,18 +332,18 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</div>\r\n\r\n                <p><a");
+WriteLiteral("</div>\n\n                <p><a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 1999), Tuple.Create("\"", 2026)
-, Tuple.Create(Tuple.Create("", 2006), Tuple.Create("#", 2006), true)
+WriteAttribute("href", Tuple.Create(" href=\"", 1954), Tuple.Create("\"", 1981)
+, Tuple.Create(Tuple.Create("", 1961), Tuple.Create("#", 1961), true)
             
             #line 46 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
-, Tuple.Create(Tuple.Create("", 2007), Tuple.Create<System.Object, System.Int32>(item.Fields.Id
+, Tuple.Create(Tuple.Create("", 1962), Tuple.Create<System.Object, System.Int32>(item.Fields.Id
             
             #line default
             #line hidden
-, 2007), false)
-, Tuple.Create(Tuple.Create("", 2022), Tuple.Create("-Top", 2022), true)
+, 1962), false)
+, Tuple.Create(Tuple.Create("", 1977), Tuple.Create("-Top", 1977), true)
 );
 
 WriteLiteral(">");
@@ -355,7 +355,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</a></p>\r\n            </div>\r\n");
+WriteLiteral("</a></p>\n            </div>\n");
 
             
             #line 48 "..\..MVC\Views\Lists\List.AnchorList.cshtml"
@@ -365,7 +365,7 @@ WriteLiteral("</a></p>\r\n            </div>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("\r\n</div>\r\n");
+WriteLiteral("\n</div>\n");
 
         }
     }

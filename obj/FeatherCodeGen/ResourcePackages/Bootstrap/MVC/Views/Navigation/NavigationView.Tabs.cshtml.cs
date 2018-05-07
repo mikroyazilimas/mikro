@@ -67,7 +67,7 @@ WriteLiteralTo(__razor_helper_writer, "    <ul");
 
 WriteLiteralTo(__razor_helper_writer, " class=\"nav nav-tabs\"");
 
-WriteLiteralTo(__razor_helper_writer, ">\r\n");
+WriteLiteralTo(__razor_helper_writer, ">\n");
 
 
 #line 20 "..\..MVC\Views\Navigation\NavigationView.Tabs.cshtml"
@@ -85,36 +85,36 @@ WriteLiteralTo(__razor_helper_writer, ">\r\n");
 #line hidden
 WriteLiteralTo(__razor_helper_writer, "            <li");
 
-WriteAttributeTo(__razor_helper_writer, "class", Tuple.Create(" class=\"", 682), Tuple.Create("\"", 705)
+WriteAttributeTo(__razor_helper_writer, "class", Tuple.Create(" class=\"", 661), Tuple.Create("\"", 684)
 
 #line 22 "..\..MVC\Views\Navigation\NavigationView.Tabs.cshtml"
-, Tuple.Create(Tuple.Create("", 690), Tuple.Create<System.Object, System.Int32>(GetClass(node)
+, Tuple.Create(Tuple.Create("", 669), Tuple.Create<System.Object, System.Int32>(GetClass(node)
 
 #line default
 #line hidden
-, 690), false)
+, 669), false)
 );
 
-WriteLiteralTo(__razor_helper_writer, ">\r\n                <a");
+WriteLiteralTo(__razor_helper_writer, ">\n                <a");
 
-WriteAttributeTo(__razor_helper_writer, "href", Tuple.Create(" href=\"", 727), Tuple.Create("\"", 743)
+WriteAttributeTo(__razor_helper_writer, "href", Tuple.Create(" href=\"", 705), Tuple.Create("\"", 721)
 
 #line 23 "..\..MVC\Views\Navigation\NavigationView.Tabs.cshtml"
-, Tuple.Create(Tuple.Create("", 734), Tuple.Create<System.Object, System.Int32>(node.Url
+, Tuple.Create(Tuple.Create("", 712), Tuple.Create<System.Object, System.Int32>(node.Url
 
 #line default
 #line hidden
-, 734), false)
+, 712), false)
 );
 
-WriteAttributeTo(__razor_helper_writer, "target", Tuple.Create(" target=\"", 744), Tuple.Create("\"", 769)
+WriteAttributeTo(__razor_helper_writer, "target", Tuple.Create(" target=\"", 722), Tuple.Create("\"", 747)
 
 #line 23 "..\..MVC\Views\Navigation\NavigationView.Tabs.cshtml"
-, Tuple.Create(Tuple.Create("", 753), Tuple.Create<System.Object, System.Int32>(node.LinkTarget
+, Tuple.Create(Tuple.Create("", 731), Tuple.Create<System.Object, System.Int32>(node.LinkTarget
 
 #line default
 #line hidden
-, 753), false)
+, 731), false)
 );
 
 WriteLiteralTo(__razor_helper_writer, ">");
@@ -126,7 +126,7 @@ WriteLiteralTo(__razor_helper_writer, ">");
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "</a>\r\n            </li>\r\n");
+WriteLiteralTo(__razor_helper_writer, "</a>\n            </li>\n");
 
 
 #line 25 "..\..MVC\Views\Navigation\NavigationView.Tabs.cshtml"
@@ -135,7 +135,7 @@ WriteLiteralTo(__razor_helper_writer, "</a>\r\n            </li>\r\n");
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "    </ul>\r\n");
+WriteLiteralTo(__razor_helper_writer, "    </ul>\n");
 
 
 #line 27 "..\..MVC\Views\Navigation\NavigationView.Tabs.cshtml"
@@ -171,7 +171,7 @@ WriteLiteralTo(__razor_helper_writer, "         <ul");
 
 WriteLiteralTo(__razor_helper_writer, " class=\"nav nav-pills\"");
 
-WriteLiteralTo(__razor_helper_writer, ">\r\n");
+WriteLiteralTo(__razor_helper_writer, ">\n");
 
 
 #line 37 "..\..MVC\Views\Navigation\NavigationView.Tabs.cshtml"
@@ -189,36 +189,36 @@ WriteLiteralTo(__razor_helper_writer, ">\r\n");
 #line hidden
 WriteLiteralTo(__razor_helper_writer, "                <li");
 
-WriteAttributeTo(__razor_helper_writer, "class", Tuple.Create(" class=\"", 1226), Tuple.Create("\"", 1249)
+WriteAttributeTo(__razor_helper_writer, "class", Tuple.Create(" class=\"", 1188), Tuple.Create("\"", 1211)
 
 #line 39 "..\..MVC\Views\Navigation\NavigationView.Tabs.cshtml"
-, Tuple.Create(Tuple.Create("", 1234), Tuple.Create<System.Object, System.Int32>(GetClass(node)
+, Tuple.Create(Tuple.Create("", 1196), Tuple.Create<System.Object, System.Int32>(GetClass(node)
 
 #line default
 #line hidden
-, 1234), false)
+, 1196), false)
 );
 
-WriteLiteralTo(__razor_helper_writer, ">\r\n                    <a");
+WriteLiteralTo(__razor_helper_writer, ">\n                    <a");
 
-WriteAttributeTo(__razor_helper_writer, "href", Tuple.Create(" href=\"", 1275), Tuple.Create("\"", 1291)
+WriteAttributeTo(__razor_helper_writer, "href", Tuple.Create(" href=\"", 1236), Tuple.Create("\"", 1252)
 
 #line 40 "..\..MVC\Views\Navigation\NavigationView.Tabs.cshtml"
-, Tuple.Create(Tuple.Create("", 1282), Tuple.Create<System.Object, System.Int32>(node.Url
+, Tuple.Create(Tuple.Create("", 1243), Tuple.Create<System.Object, System.Int32>(node.Url
 
 #line default
 #line hidden
-, 1282), false)
+, 1243), false)
 );
 
-WriteAttributeTo(__razor_helper_writer, "target", Tuple.Create(" target=\"", 1292), Tuple.Create("\"", 1317)
+WriteAttributeTo(__razor_helper_writer, "target", Tuple.Create(" target=\"", 1253), Tuple.Create("\"", 1278)
 
 #line 40 "..\..MVC\Views\Navigation\NavigationView.Tabs.cshtml"
-, Tuple.Create(Tuple.Create("", 1301), Tuple.Create<System.Object, System.Int32>(node.LinkTarget
+, Tuple.Create(Tuple.Create("", 1262), Tuple.Create<System.Object, System.Int32>(node.LinkTarget
 
 #line default
 #line hidden
-, 1301), false)
+, 1262), false)
 );
 
 WriteLiteralTo(__razor_helper_writer, ">");
@@ -230,7 +230,7 @@ WriteLiteralTo(__razor_helper_writer, ">");
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "</a>\r\n                </li>\r\n");
+WriteLiteralTo(__razor_helper_writer, "</a>\n                </li>\n");
 
 
 #line 42 "..\..MVC\Views\Navigation\NavigationView.Tabs.cshtml"
@@ -239,7 +239,7 @@ WriteLiteralTo(__razor_helper_writer, "</a>\r\n                </li>\r\n");
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "        </ul>\r\n");
+WriteLiteralTo(__razor_helper_writer, "        </ul>\n");
 
 
 #line 44 "..\..MVC\Views\Navigation\NavigationView.Tabs.cshtml"
@@ -328,23 +328,23 @@ WriteTo(__razor_helper_writer, Html.Raw("active"));
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\n\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 268), Tuple.Create("\"", 291)
+WriteAttribute("class", Tuple.Create(" class=\"", 260), Tuple.Create("\"", 283)
             
             #line 9 "..\..MVC\Views\Navigation\NavigationView.Tabs.cshtml"
-, Tuple.Create(Tuple.Create("", 276), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 268), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 276), false)
+, 268), false)
 );
 
-WriteLiteral(">\r\n    ");
+WriteLiteral(">\n    ");
 
-WriteLiteral("\r\n\r\n");
+WriteLiteral("\n\n");
 
 WriteLiteral("    ");
 
@@ -355,7 +355,7 @@ Write(RenderRootLevelNode(@Model.Nodes));
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
 WriteLiteral("    ");
 
@@ -366,17 +366,17 @@ Write(RenderSubLevelsRecursive(@Model.Nodes));
             
             #line default
             #line hidden
-WriteLiteral("\r\n</div>\r\n\r\n");
+WriteLiteral("\n</div>\n\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
         }
     }

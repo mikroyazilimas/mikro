@@ -54,23 +54,23 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.News
         }
         public override void Execute()
         {
-WriteLiteral("\r\n<div");
+WriteLiteral("\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 213), Tuple.Create("\"", 236)
+WriteAttribute("class", Tuple.Create(" class=\"", 207), Tuple.Create("\"", 230)
             
             #line 7 "..\..MVC\Views\News\List.NewsList.cshtml"
-, Tuple.Create(Tuple.Create("", 221), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 215), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 221), false)
+, 215), false)
 );
 
-WriteLiteral(">\r\n    <ul");
+WriteLiteral(">\n    <ul");
 
 WriteLiteral(" class=\"list-unstyled\"");
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
             
             #line 9 "..\..MVC\Views\News\List.NewsList.cshtml"
@@ -97,7 +97,7 @@ WriteLiteral("            <li ");
             
             #line default
             #line hidden
-WriteLiteral(">\r\n\t\t\t\t<h3>\r\n\t\t\t\t\t<a ");
+WriteLiteral(">\n\t\t\t\t<h3>\n\t\t\t\t\t<a ");
 
             
             #line 15 "..\..MVC\Views\News\List.NewsList.cshtml"
@@ -124,11 +124,11 @@ WriteLiteral("\">");
             
             #line default
             #line hidden
-WriteLiteral("</a>\r\n\t\t\t\t</h3>\r\n                \r\n                <div>\r\n\t\t\t\t    <span");
+WriteLiteral("</a>\n\t\t\t\t</h3>\n                \n                <div>\n\t\t\t\t    <span");
 
 WriteLiteral(" class=\"text-muted\"");
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
 WriteLiteral("\t\t\t\t\t    ");
 
@@ -139,7 +139,7 @@ WriteLiteral("\t\t\t\t\t    ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
 WriteLiteral("\t\t\t\t\t    ");
 
@@ -150,7 +150,7 @@ WriteLiteral("\t\t\t\t\t    ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
 WriteLiteral("\t\t\t\t\t    ");
 
@@ -161,7 +161,7 @@ WriteLiteral("\t\t\t\t\t    ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\t\t\t\t    </span>\r\n");
+WriteLiteral("\n\t\t\t\t    </span>\n");
 
 WriteLiteral("                    ");
 
@@ -172,7 +172,7 @@ WriteLiteral("                    ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n                </div>\r\n\r\n\t\t\t\t<div ");
+WriteLiteral("\n                </div>\n\n\t\t\t\t<div ");
 
             
             #line 27 "..\..MVC\Views\News\List.NewsList.cshtml"
@@ -190,16 +190,16 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</div>\r\n\r\n\t\t\t\t<a");
+WriteLiteral("</div>\n\n\t\t\t\t<a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 1221), Tuple.Create("\"", 1240)
+WriteAttribute("href", Tuple.Create(" href=\"", 1193), Tuple.Create("\"", 1212)
             
             #line 29 "..\..MVC\Views\News\List.NewsList.cshtml"
-, Tuple.Create(Tuple.Create("", 1228), Tuple.Create<System.Object, System.Int32>(navigateUrl
+, Tuple.Create(Tuple.Create("", 1200), Tuple.Create<System.Object, System.Int32>(navigateUrl
             
             #line default
             #line hidden
-, 1228), false)
+, 1200), false)
 );
 
 WriteLiteral(">");
@@ -211,7 +211,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</a>\r\n\t\t\t</li>\r\n");
+WriteLiteral("</a>\n\t\t\t</li>\n");
 
             
             #line 31 "..\..MVC\Views\News\List.NewsList.cshtml"
@@ -220,7 +220,7 @@ WriteLiteral("</a>\r\n\t\t\t</li>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("    </ul>\r\n\r\n");
+WriteLiteral("    </ul>\n\n");
 
             
             #line 34 "..\..MVC\Views\News\List.NewsList.cshtml"
@@ -253,7 +253,7 @@ WriteLiteral("    </ul>\r\n\r\n");
             
             #line default
             #line hidden
-WriteLiteral("\r\n</div>\r\n");
+WriteLiteral("\n</div>\n");
 
         }
     }

@@ -60,9 +60,9 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.UnsubscribeForm
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 9 "..\..MVC\Views\UnsubscribeForm\UnsubscribeFormByEmailAddress.UnsubscribeForm.cshtml"
@@ -71,7 +71,7 @@ Write(Html.Script(ScriptRef.JQuery, "top", false));
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 10 "..\..MVC\Views\UnsubscribeForm\UnsubscribeFormByEmailAddress.UnsubscribeForm.cshtml"
@@ -80,7 +80,7 @@ Write(Html.Script("//ajax.aspnetcdn.com/ajax/jquery.validate/1.8.1/jquery.valida
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 11 "..\..MVC\Views\UnsubscribeForm\UnsubscribeFormByEmailAddress.UnsubscribeForm.cshtml"
@@ -89,19 +89,19 @@ Write(Html.Script("//ajax.aspnetcdn.com/ajax/mvc/4.0/jquery.validate.unobtrusive
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\n\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 553), Tuple.Create("\"", 576)
+WriteAttribute("class", Tuple.Create(" class=\"", 541), Tuple.Create("\"", 564)
             
             #line 13 "..\..MVC\Views\UnsubscribeForm\UnsubscribeFormByEmailAddress.UnsubscribeForm.cshtml"
-, Tuple.Create(Tuple.Create("", 561), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 549), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 561), false)
+, 549), false)
 );
 
-WriteLiteral(">    \r\n");
+WriteLiteral(">    \n");
 
             
             #line 14 "..\..MVC\Views\UnsubscribeForm\UnsubscribeFormByEmailAddress.UnsubscribeForm.cshtml"
@@ -126,7 +126,7 @@ WriteLiteral("\t\t<h3>");
             
             #line default
             #line hidden
-WriteLiteral("</h3>\r\n");
+WriteLiteral("</h3>\n");
 
             
             #line 17 "..\..MVC\Views\UnsubscribeForm\UnsubscribeFormByEmailAddress.UnsubscribeForm.cshtml"
@@ -148,7 +148,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</p>\r\n");
+WriteLiteral("</p>\n");
 
             
             #line 19 "..\..MVC\Views\UnsubscribeForm\UnsubscribeFormByEmailAddress.UnsubscribeForm.cshtml"
@@ -172,7 +172,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</div>\r\n");
+WriteLiteral("</div>\n");
 
             
             #line 23 "..\..MVC\Views\UnsubscribeForm\UnsubscribeFormByEmailAddress.UnsubscribeForm.cshtml"
@@ -203,7 +203,7 @@ WriteLiteral("\t\t\t<div");
 
 WriteLiteral(" class=\"alert alert-danger\"");
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
 WriteLiteral("\t\t\t\t");
 
@@ -214,7 +214,7 @@ WriteLiteral("\t\t\t\t");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\t\t\t</div>\r\n");
+WriteLiteral("\n\t\t\t</div>\n");
 
             
             #line 32 "..\..MVC\Views\UnsubscribeForm\UnsubscribeFormByEmailAddress.UnsubscribeForm.cshtml"
@@ -228,7 +228,7 @@ WriteLiteral("\t\t<div");
 
 WriteLiteral(" class=\"form-group\"");
 
-WriteLiteral(">\r\n\t\t\t<label>\r\n");
+WriteLiteral(">\n\t\t\t<label>\n");
 
 WriteLiteral("\t\t\t\t");
 
@@ -239,11 +239,11 @@ WriteLiteral("\t\t\t\t");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\t\t\t</label>\r\n\r\n\t\t\t<div");
+WriteLiteral("\n\t\t\t</label>\n\n\t\t\t<div");
 
 WriteLiteral(" class=\"form-inline\"");
 
-WriteLiteral(">\r\n\r\n");
+WriteLiteral(">\n\n");
 
 WriteLiteral("\t\t\t\t");
 
@@ -254,7 +254,7 @@ WriteLiteral("\t\t\t\t");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n\t\t\t\t<button");
+WriteLiteral("\n\n\t\t\t\t<button");
 
 WriteLiteral(" type=\"submit\"");
 
@@ -269,7 +269,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</button>\r\n\t\r\n\t\t\t</div>\r\n\r\n");
+WriteLiteral("</button>\n\t\n\t\t\t</div>\n\n");
 
             
             #line 47 "..\..MVC\Views\UnsubscribeForm\UnsubscribeFormByEmailAddress.UnsubscribeForm.cshtml"
@@ -289,7 +289,7 @@ WriteLiteral("\t\t\t\t<div");
 
 WriteLiteral(" class=\"has-error\"");
 
-WriteLiteral(">\r\n\t\t\t\t\t<span");
+WriteLiteral(">\n\t\t\t\t\t<span");
 
 WriteLiteral(" class=\"help-block\"");
 
@@ -302,7 +302,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</span>\r\n\t\t\t\t</div>\r\n");
+WriteLiteral("</span>\n\t\t\t\t</div>\n");
 
             
             #line 52 "..\..MVC\Views\UnsubscribeForm\UnsubscribeFormByEmailAddress.UnsubscribeForm.cshtml"
@@ -311,7 +311,7 @@ WriteLiteral("</span>\r\n\t\t\t\t</div>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\t\t</div>\t\t\r\n");
+WriteLiteral("\n\t\t</div>\t\t\n");
 
             
             #line 55 "..\..MVC\Views\UnsubscribeForm\UnsubscribeFormByEmailAddress.UnsubscribeForm.cshtml"

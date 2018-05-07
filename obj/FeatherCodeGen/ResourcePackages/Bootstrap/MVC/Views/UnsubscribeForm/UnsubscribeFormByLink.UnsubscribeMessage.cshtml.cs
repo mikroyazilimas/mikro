@@ -42,19 +42,19 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.UnsubscribeForm
         }
         public override void Execute()
         {
-WriteLiteral("\r\n<div");
+WriteLiteral("\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 160), Tuple.Create("\"", 183)
+WriteAttribute("class", Tuple.Create(" class=\"", 156), Tuple.Create("\"", 179)
             
             #line 5 "..\..MVC\Views\UnsubscribeForm\UnsubscribeFormByLink.UnsubscribeMessage.cshtml"
-, Tuple.Create(Tuple.Create("", 168), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 164), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 168), false)
+, 164), false)
 );
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
             
             #line 6 "..\..MVC\Views\UnsubscribeForm\UnsubscribeFormByLink.UnsubscribeMessage.cshtml"
@@ -79,7 +79,7 @@ WriteLiteral("        <h3>");
             
             #line default
             #line hidden
-WriteLiteral("</h3>\r\n");
+WriteLiteral("</h3>\n");
 
             
             #line 9 "..\..MVC\Views\UnsubscribeForm\UnsubscribeFormByLink.UnsubscribeMessage.cshtml"
@@ -97,7 +97,7 @@ WriteLiteral("    <pre>");
             
             #line default
             #line hidden
-WriteLiteral("</pre>\r\n</div>");
+WriteLiteral("</pre>\n</div>");
 
         }
     }

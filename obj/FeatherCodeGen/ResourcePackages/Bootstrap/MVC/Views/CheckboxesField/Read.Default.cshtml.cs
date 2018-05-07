@@ -38,19 +38,19 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.CheckboxesField
         {
 WriteLiteral("<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 115), Tuple.Create("\"", 138)
+WriteAttribute("class", Tuple.Create(" class=\"", 113), Tuple.Create("\"", 136)
             
             #line 3 "..\..MVC\Views\CheckboxesField\Read.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 123), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 121), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 123), false)
+, 121), false)
 );
 
 WriteLiteral(" data-sf-role=\"text-field-container\"");
 
-WriteLiteral(">\r\n    <label>");
+WriteLiteral(">\n    <label>");
 
             
             #line 4 "..\..MVC\Views\CheckboxesField\Read.Default.cshtml"
@@ -59,7 +59,7 @@ WriteLiteral(">\r\n    <label>");
             
             #line default
             #line hidden
-WriteLiteral("</label>\r\n    <p");
+WriteLiteral("</label>\n    <p");
 
 WriteLiteral(" class=\"text-muted\"");
 
@@ -72,7 +72,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</p>\r\n</div>\r\n");
+WriteLiteral("</p>\n</div>\n");
 
         }
     }

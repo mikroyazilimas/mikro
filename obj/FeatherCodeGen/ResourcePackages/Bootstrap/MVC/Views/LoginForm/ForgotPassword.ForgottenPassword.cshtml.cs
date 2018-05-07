@@ -48,19 +48,19 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.LoginForm
         }
         public override void Execute()
         {
-WriteLiteral("\r\n<div");
+WriteLiteral("\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 181), Tuple.Create("\"", 204)
+WriteAttribute("class", Tuple.Create(" class=\"", 176), Tuple.Create("\"", 199)
             
             #line 6 "..\..MVC\Views\LoginForm\ForgotPassword.ForgottenPassword.cshtml"
-, Tuple.Create(Tuple.Create("", 189), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 184), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 189), false)
+, 184), false)
 );
 
-WriteLiteral(">\r\n\r\n<h3>");
+WriteLiteral(">\n\n<h3>");
 
             
             #line 8 "..\..MVC\Views\LoginForm\ForgotPassword.ForgottenPassword.cshtml"
@@ -69,7 +69,7 @@ Write(Html.Resource("ForgotPasswordHeader"));
             
             #line default
             #line hidden
-WriteLiteral("</h3>\r\n\r\n");
+WriteLiteral("</h3>\n\n");
 
             
             #line 10 "..\..MVC\Views\LoginForm\ForgotPassword.ForgottenPassword.cshtml"
@@ -97,7 +97,7 @@ WriteLiteral(" <i>");
             
             #line default
             #line hidden
-WriteLiteral("</i></p>\r\n");
+WriteLiteral("</i></p>\n");
 
             
             #line 13 "..\..MVC\Views\LoginForm\ForgotPassword.ForgottenPassword.cshtml"
@@ -115,7 +115,7 @@ WriteLiteral("    <p>");
             
             #line default
             #line hidden
-WriteLiteral("</p>\r\n");
+WriteLiteral("</p>\n");
 
             
             #line 15 "..\..MVC\Views\LoginForm\ForgotPassword.ForgottenPassword.cshtml"
@@ -126,14 +126,14 @@ WriteLiteral("</p>\r\n");
             #line hidden
 WriteLiteral("    <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 449), Tuple.Create("\"", 475)
+WriteAttribute("href", Tuple.Create(" href=\"", 434), Tuple.Create("\"", 460)
             
             #line 16 "..\..MVC\Views\LoginForm\ForgotPassword.ForgottenPassword.cshtml"
-, Tuple.Create(Tuple.Create("", 456), Tuple.Create<System.Object, System.Int32>(Model.LoginPageUrl
+, Tuple.Create(Tuple.Create("", 441), Tuple.Create<System.Object, System.Int32>(Model.LoginPageUrl
             
             #line default
             #line hidden
-, 456), false)
+, 441), false)
 );
 
 WriteLiteral(" class=\"btn btn-default\"");
@@ -147,7 +147,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</a>\r\n");
+WriteLiteral("</a>\n");
 
             
             #line 17 "..\..MVC\Views\LoginForm\ForgotPassword.ForgottenPassword.cshtml"
@@ -170,7 +170,7 @@ WriteLiteral("        <p>");
             
             #line default
             #line hidden
-WriteLiteral("</p>\r\n");
+WriteLiteral("</p>\n");
 
             
             #line 24 "..\..MVC\Views\LoginForm\ForgotPassword.ForgottenPassword.cshtml"
@@ -183,7 +183,7 @@ WriteLiteral("\t\t<div");
 
 WriteLiteral(" class=\"form-group\"");
 
-WriteLiteral(">\r\n\t\t\t<label>");
+WriteLiteral(">\n\t\t\t<label>");
 
             
             #line 26 "..\..MVC\Views\LoginForm\ForgotPassword.ForgottenPassword.cshtml"
@@ -192,7 +192,7 @@ WriteLiteral(">\r\n\t\t\t<label>");
             
             #line default
             #line hidden
-WriteLiteral("</label>\r\n");
+WriteLiteral("</label>\n");
 
 WriteLiteral("\t\t\t");
 
@@ -203,7 +203,7 @@ WriteLiteral("\t\t\t");
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n            </div>\r\n");
+WriteLiteral("\n\n            </div>\n");
 
             
             #line 30 "..\..MVC\Views\LoginForm\ForgotPassword.ForgottenPassword.cshtml"
@@ -227,7 +227,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</button>\r\n");
+WriteLiteral("</button>\n");
 
             
             #line 32 "..\..MVC\Views\LoginForm\ForgotPassword.ForgottenPassword.cshtml"
@@ -237,7 +237,7 @@ WriteLiteral("</button>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("\r\n</div>\r\n");
+WriteLiteral("\n</div>\n");
 
         }
     }

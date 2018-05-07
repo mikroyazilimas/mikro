@@ -72,7 +72,7 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.EventScheduler
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 9 "..\..MVC\Views\EventScheduler\List.Calendar.cshtml"
@@ -81,7 +81,7 @@ Write(Html.StyleSheet(Url.EmbeddedResource("Telerik.Sitefinity.Resources.Referen
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 10 "..\..MVC\Views\EventScheduler\List.Calendar.cshtml"
@@ -138,14 +138,14 @@ WriteLiteral("\'");
 
 WriteLiteral(" data-sf-role=\"scheduler-wrapper\"");
 
-WriteAttribute("class", Tuple.Create(" class=\'", 1071), Tuple.Create("\'", 1098)
+WriteAttribute("class", Tuple.Create(" class=\'", 1054), Tuple.Create("\'", 1081)
             
             #line 18 "..\..MVC\Views\EventScheduler\List.Calendar.cshtml"
-   , Tuple.Create(Tuple.Create("", 1079), Tuple.Create<System.Object, System.Int32>(Model.ListCssClass
+   , Tuple.Create(Tuple.Create("", 1062), Tuple.Create<System.Object, System.Int32>(Model.ListCssClass
             
             #line default
             #line hidden
-, 1079), false)
+, 1062), false)
 );
 
 WriteLiteral(" data-sf-controller-events=\'");
@@ -181,7 +181,7 @@ WriteLiteral(" data-sf-siteid=\"");
             #line hidden
 WriteLiteral("\"");
 
-WriteLiteral("\r\n    data-sf-defaultview=\'");
+WriteLiteral("\n    data-sf-defaultview=\'");
 
             
             #line 19 "..\..MVC\Views\EventScheduler\List.Calendar.cshtml"
@@ -227,7 +227,7 @@ WriteLiteral("\'");
 
 WriteLiteral(" data-sf-loaded=\'false\'");
 
-WriteLiteral(" \r\n\tdata-sf-mincalendarlength=\'2\'");
+WriteLiteral(" \n\tdata-sf-mincalendarlength=\'2\'");
 
 WriteLiteral(" data-sf-calendarlist-class-active=\'active\'");
 
@@ -266,19 +266,19 @@ WriteLiteral("\"");
 
 WriteLiteral(" data-sf-localtimezoneoffset=\"\"");
 
-WriteLiteral(">\r\n    <div");
+WriteLiteral(">\n    <div");
 
 WriteLiteral(" class=\"row\"");
 
-WriteLiteral(">\r\n        <div");
+WriteLiteral(">\n        <div");
 
 WriteLiteral(" class=\"col-md-10\"");
 
-WriteLiteral(">\r\n            <div");
+WriteLiteral(">\n            <div");
 
 WriteLiteral(" data-sf-role=\"scheduler\"");
 
-WriteLiteral("></div>\r\n        </div>\r\n");
+WriteLiteral("></div>\n        </div>\n");
 
             
             #line 25 "..\..MVC\Views\EventScheduler\List.Calendar.cshtml"
@@ -297,13 +297,13 @@ WriteLiteral("        <div");
 
 WriteLiteral(" class=\"col-md-2\"");
 
-WriteLiteral(">\r\n            <div");
+WriteLiteral(">\n            <div");
 
 WriteLiteral(" data-sf-role=\"calendarlist\"");
 
 WriteLiteral(" style=\"display: none;\"");
 
-WriteLiteral(">\r\n                <h4");
+WriteLiteral(">\n                <h4");
 
 WriteLiteral(" class=\"sf-calendarList-title\"");
 
@@ -316,7 +316,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</h4>\r\n            </div>\r\n        </div>\r\n");
+WriteLiteral("</h4>\n            </div>\n        </div>\n");
 
             
             #line 31 "..\..MVC\Views\EventScheduler\List.Calendar.cshtml"
@@ -325,15 +325,15 @@ WriteLiteral("</h4>\r\n            </div>\r\n        </div>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("    </div>\r\n    <script");
+WriteLiteral("    </div>\n    <script");
 
 WriteLiteral(" data-sf-role=\"event-alldayeventtemplate\"");
 
 WriteLiteral(" type=\"text/x-kendo-tmpl\"");
 
-WriteLiteral(">\r\n        <div class=\"sf-event-item\" data-sf-eventid=\"#= taskId #\" data-sf-date-" +
-"start=#= JSON.stringify(start) # data-sf-date-end=#= JSON.stringify(end) # data-" +
-"sf-allday=\"#= isAllDay #\">\r\n\t\t\t<a class=\"sf-event-link\" href=\"");
+WriteLiteral(">\n        <div class=\"sf-event-item\" data-sf-eventid=\"#= taskId #\" data-sf-date-s" +
+"tart=#= JSON.stringify(start) # data-sf-date-end=#= JSON.stringify(end) # data-s" +
+"f-allday=\"#= isAllDay #\">\n\t\t\t<a class=\"sf-event-link\" href=\"");
 
             
             #line 35 "..\..MVC\Views\EventScheduler\List.Calendar.cshtml"
@@ -342,16 +342,16 @@ WriteLiteral(">\r\n        <div class=\"sf-event-item\" data-sf-eventid=\"#= tas
             
             #line default
             #line hidden
-WriteLiteral("#= eventUrl #\" title=\"#= title #\">#= title #</a>\r\n\t\t</div>\r\n    </script>\r\n    <s" +
-"cript");
+WriteLiteral("#= eventUrl #\" title=\"#= title #\">#= title #</a>\n\t\t</div>\n    </script>\n    <scri" +
+"pt");
 
 WriteLiteral(" data-sf-role=\"event-eventtemplate\"");
 
 WriteLiteral(" type=\"text/x-kendo-tmpl\"");
 
-WriteLiteral(">\r\n\t\t<div class=\"sf-event-item\" data-sf-eventid=\"#= taskId #\" data-sf-date-start=" +
-"#= JSON.stringify(start) # data-sf-date-end=#= JSON.stringify(end) # data-sf-all" +
-"day=\"#= isAllDay #\">\r\n\t\t\t<a class=\"sf-event-link\" href=\"");
+WriteLiteral(">\n\t\t<div class=\"sf-event-item\" data-sf-eventid=\"#= taskId #\" data-sf-date-start=#" +
+"= JSON.stringify(start) # data-sf-date-end=#= JSON.stringify(end) # data-sf-alld" +
+"ay=\"#= isAllDay #\">\n\t\t\t<a class=\"sf-event-link\" href=\"");
 
             
             #line 40 "..\..MVC\Views\EventScheduler\List.Calendar.cshtml"
@@ -360,17 +360,16 @@ WriteLiteral(">\r\n\t\t<div class=\"sf-event-item\" data-sf-eventid=\"#= taskId 
             
             #line default
             #line hidden
-WriteLiteral("#= eventUrl #\" title=\"#= title #\">#= title #</a>\r\n\t\t</div>\r\n    </script>\r\n    <s" +
-"cript");
+WriteLiteral("#= eventUrl #\" title=\"#= title #\">#= title #</a>\n\t\t</div>\n    </script>\n    <scri" +
+"pt");
 
 WriteLiteral(" data-sf-role=\"event-calendarlist-template-wrapper\"");
 
 WriteLiteral(" type=\"text/x-kendo-tmpl\"");
 
-WriteLiteral(">\r\n        <div data-sf-role=\"calendarlist-wrapper\" class=\"list-unstyled nav nav-" +
-"pills nav-stacked\">\r\n            <div data-sf-role=\"calendarlist-item\" class=\"sf" +
-"-calendarList-item active\"><span class=\"sf-event-type sf-event-type--all\"></span" +
-">");
+WriteLiteral(">\n        <div data-sf-role=\"calendarlist-wrapper\" class=\"list-unstyled nav nav-p" +
+"ills nav-stacked\">\n            <div data-sf-role=\"calendarlist-item\" class=\"sf-c" +
+"alendarList-item active\"><span class=\"sf-event-type sf-event-type--all\"></span>");
 
             
             #line 45 "..\..MVC\Views\EventScheduler\List.Calendar.cshtml"
@@ -379,15 +378,15 @@ WriteLiteral(">\r\n        <div data-sf-role=\"calendarlist-wrapper\" class=\"li
             
             #line default
             #line hidden
-WriteLiteral("</div>\r\n        </div>\r\n    </script>\r\n    <script");
+WriteLiteral("</div>\n        </div>\n    </script>\n    <script");
 
 WriteLiteral(" data-sf-role=\"event-calendarlist-template-item\"");
 
 WriteLiteral(" type=\"text/x-kendo-tmpl\"");
 
-WriteLiteral(">\r\n        <div data-sf-role=\"calendarlist-item\" class=\"sf-calendarList-item\" dat" +
-"a-sf-id=\"#= calendarId #\"><span class=\"sf-event-type\" style=\"background-color: #" +
-"= color #;\"></span>#= title #</div>\r\n    </script>\t\r\n</div>\r\n");
+WriteLiteral(">\n        <div data-sf-role=\"calendarlist-item\" class=\"sf-calendarList-item\" data" +
+"-sf-id=\"#= calendarId #\"><span class=\"sf-event-type\" style=\"background-color: #=" +
+" color #;\"></span>#= title #</div>\n    </script>\t\n</div>\n");
 
             
             #line 52 "..\..MVC\Views\EventScheduler\List.Calendar.cshtml"
@@ -403,17 +402,17 @@ WriteLiteral("    <script");
 
 WriteLiteral(" type=\"text/javascript\"");
 
-WriteAttribute("src", Tuple.Create(" src=\'", 4184), Tuple.Create("\'", 4204)
+WriteAttribute("src", Tuple.Create(" src=\'", 4129), Tuple.Create("\'", 4149)
             
             #line 56 "..\..MVC\Views\EventScheduler\List.Calendar.cshtml"
-, Tuple.Create(Tuple.Create("", 4190), Tuple.Create<System.Object, System.Int32>(fullScriptUrl
+, Tuple.Create(Tuple.Create("", 4135), Tuple.Create<System.Object, System.Int32>(fullScriptUrl
             
             #line default
             #line hidden
-, 4190), false)
+, 4135), false)
 );
 
-WriteLiteral("></script>\r\n");
+WriteLiteral("></script>\n");
 
             
             #line 57 "..\..MVC\Views\EventScheduler\List.Calendar.cshtml"

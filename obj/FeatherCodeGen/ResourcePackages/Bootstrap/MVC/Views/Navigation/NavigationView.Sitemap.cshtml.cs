@@ -63,26 +63,26 @@ return new System.Web.WebPages.HelperResult(__razor_helper_writer => {
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "    <li>\r\n        <a");
+WriteLiteralTo(__razor_helper_writer, "    <li>\n        <a");
 
-WriteAttributeTo(__razor_helper_writer, "href", Tuple.Create(" href=\"", 665), Tuple.Create("\"", 681)
+WriteAttributeTo(__razor_helper_writer, "href", Tuple.Create(" href=\"", 643), Tuple.Create("\"", 659)
 
 #line 23 "..\..MVC\Views\Navigation\NavigationView.Sitemap.cshtml"
-, Tuple.Create(Tuple.Create("", 672), Tuple.Create<System.Object, System.Int32>(node.Url
+, Tuple.Create(Tuple.Create("", 650), Tuple.Create<System.Object, System.Int32>(node.Url
 
 #line default
 #line hidden
-, 672), false)
+, 650), false)
 );
 
-WriteAttributeTo(__razor_helper_writer, "target", Tuple.Create(" target=\"", 682), Tuple.Create("\"", 707)
+WriteAttributeTo(__razor_helper_writer, "target", Tuple.Create(" target=\"", 660), Tuple.Create("\"", 685)
 
 #line 23 "..\..MVC\Views\Navigation\NavigationView.Sitemap.cshtml"
-, Tuple.Create(Tuple.Create("", 691), Tuple.Create<System.Object, System.Int32>(node.LinkTarget
+, Tuple.Create(Tuple.Create("", 669), Tuple.Create<System.Object, System.Int32>(node.LinkTarget
 
 #line default
 #line hidden
-, 691), false)
+, 669), false)
 );
 
 WriteLiteralTo(__razor_helper_writer, "><strong>");
@@ -94,7 +94,7 @@ WriteLiteralTo(__razor_helper_writer, "><strong>");
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "</strong></a>\r\n");
+WriteLiteralTo(__razor_helper_writer, "</strong></a>\n");
 
 
 #line 24 "..\..MVC\Views\Navigation\NavigationView.Sitemap.cshtml"
@@ -114,7 +114,7 @@ WriteLiteralTo(__razor_helper_writer, "            <ul");
 
 WriteLiteralTo(__razor_helper_writer, " class=\"nav nav-stacked\"");
 
-WriteLiteralTo(__razor_helper_writer, ">\r\n");
+WriteLiteralTo(__razor_helper_writer, ">\n");
 
 
 #line 27 "..\..MVC\Views\Navigation\NavigationView.Sitemap.cshtml"
@@ -145,7 +145,7 @@ WriteTo(__razor_helper_writer, RenderSubLevelsRecursive(childNode));
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "            </ul>\r\n");
+WriteLiteralTo(__razor_helper_writer, "            </ul>\n");
 
 
 #line 32 "..\..MVC\Views\Navigation\NavigationView.Sitemap.cshtml"
@@ -154,7 +154,7 @@ WriteLiteralTo(__razor_helper_writer, "            </ul>\r\n");
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "    </li>\r\n");
+WriteLiteralTo(__razor_helper_writer, "    </li>\n");
 
 
 #line 34 "..\..MVC\Views\Navigation\NavigationView.Sitemap.cshtml"
@@ -182,16 +182,16 @@ return new System.Web.WebPages.HelperResult(__razor_helper_writer => {
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "    <li>\r\n        <a");
+WriteLiteralTo(__razor_helper_writer, "    <li>\n        <a");
 
-WriteAttributeTo(__razor_helper_writer, "href", Tuple.Create(" href=\"", 1173), Tuple.Create("\"", 1189)
+WriteAttributeTo(__razor_helper_writer, "href", Tuple.Create(" href=\"", 1134), Tuple.Create("\"", 1150)
 
 #line 40 "..\..MVC\Views\Navigation\NavigationView.Sitemap.cshtml"
-, Tuple.Create(Tuple.Create("", 1180), Tuple.Create<System.Object, System.Int32>(node.Url
+, Tuple.Create(Tuple.Create("", 1141), Tuple.Create<System.Object, System.Int32>(node.Url
 
 #line default
 #line hidden
-, 1180), false)
+, 1141), false)
 );
 
 WriteLiteralTo(__razor_helper_writer, " target =\"");
@@ -212,7 +212,7 @@ WriteLiteralTo(__razor_helper_writer, "\">");
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "</a>\r\n");
+WriteLiteralTo(__razor_helper_writer, "</a>\n");
 
 
 #line 41 "..\..MVC\Views\Navigation\NavigationView.Sitemap.cshtml"
@@ -232,7 +232,7 @@ WriteLiteralTo(__razor_helper_writer, "            <ul");
 
 WriteLiteralTo(__razor_helper_writer, " class=\"nav\"");
 
-WriteLiteralTo(__razor_helper_writer, ">\r\n");
+WriteLiteralTo(__razor_helper_writer, ">\n");
 
 
 #line 44 "..\..MVC\Views\Navigation\NavigationView.Sitemap.cshtml"
@@ -263,7 +263,7 @@ WriteTo(__razor_helper_writer, RenderSubLevelsRecursive(childNode));
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "            </ul>\r\n");
+WriteLiteralTo(__razor_helper_writer, "            </ul>\n");
 
 
 #line 49 "..\..MVC\Views\Navigation\NavigationView.Sitemap.cshtml"
@@ -272,7 +272,7 @@ WriteLiteralTo(__razor_helper_writer, "            </ul>\r\n");
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "    </li>\r\n");
+WriteLiteralTo(__razor_helper_writer, "    </li>\n");
 
 
 #line 51 "..\..MVC\Views\Navigation\NavigationView.Sitemap.cshtml"
@@ -292,27 +292,27 @@ WriteLiteralTo(__razor_helper_writer, "    </li>\r\n");
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\n\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 268), Tuple.Create("\"", 291)
+WriteAttribute("class", Tuple.Create(" class=\"", 260), Tuple.Create("\"", 283)
             
             #line 9 "..\..MVC\Views\Navigation\NavigationView.Sitemap.cshtml"
-, Tuple.Create(Tuple.Create("", 276), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 268), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 276), false)
+, 268), false)
 );
 
-WriteLiteral(">\r\n    ");
+WriteLiteral(">\n    ");
 
-WriteLiteral("\r\n\r\n    <ul");
+WriteLiteral("\n\n    <ul");
 
 WriteLiteral(" class=\"nav nav-sitemap\"");
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
             
             #line 13 "..\..MVC\Views\Navigation\NavigationView.Sitemap.cshtml"
@@ -343,13 +343,13 @@ WriteLiteral(">\r\n");
             
             #line default
             #line hidden
-WriteLiteral("    </ul>\r\n</div>\r\n");
+WriteLiteral("    </ul>\n</div>\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
         }
     }

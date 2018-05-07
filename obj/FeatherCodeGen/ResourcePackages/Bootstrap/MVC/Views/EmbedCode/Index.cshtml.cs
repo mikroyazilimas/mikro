@@ -54,7 +54,7 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.EmbedCode
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 7 "..\..MVC\Views\EmbedCode\Index.cshtml"
@@ -68,7 +68,7 @@ WriteLiteral("    <div");
 
 WriteLiteral(" class=\"sf-Code\"");
 
-WriteLiteral(">\r\n        <pre>");
+WriteLiteral(">\n        <pre>");
 
             
             #line 10 "..\..MVC\Views\EmbedCode\Index.cshtml"
@@ -77,7 +77,7 @@ WriteLiteral(">\r\n        <pre>");
             
             #line default
             #line hidden
-WriteLiteral("</pre>\r\n    </div>\r\n");
+WriteLiteral("</pre>\n    </div>\n");
 
             
             #line 12 "..\..MVC\Views\EmbedCode\Index.cshtml"

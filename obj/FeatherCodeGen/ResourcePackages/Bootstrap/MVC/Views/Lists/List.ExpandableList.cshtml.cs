@@ -54,7 +54,7 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.Lists
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 7 "..\..MVC\Views\Lists\List.ExpandableList.cshtml"
@@ -63,29 +63,29 @@ Write(Html.Script(ScriptRef.JQuery));
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\n\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 255), Tuple.Create("\"", 278)
+WriteAttribute("class", Tuple.Create(" class=\"", 247), Tuple.Create("\"", 270)
             
             #line 9 "..\..MVC\Views\Lists\List.ExpandableList.cshtml"
-, Tuple.Create(Tuple.Create("", 263), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 255), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 263), false)
+, 255), false)
 );
 
 WriteLiteral(" data-sf-role=\"lists\"");
 
-WriteLiteral(">\r\n\r\n    <div");
+WriteLiteral(">\n\n    <div");
 
 WriteLiteral(" class=\"sf-list sf-list--expandable clearfix\"");
 
-WriteLiteral(">\r\n    \r\n        <div");
+WriteLiteral(">\n    \n        <div");
 
 WriteLiteral(" class=\"pull-right\"");
 
-WriteLiteral(">\r\n            <a");
+WriteLiteral(">\n            <a");
 
 WriteLiteral("  href=\"#\"");
 
@@ -100,7 +100,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</a>\r\n            <a");
+WriteLiteral("</a>\n            <a");
 
 WriteLiteral(" class=\"pull-right\"");
 
@@ -119,11 +119,11 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</a>\r\n        </div>\r\n\r\n        <div");
+WriteLiteral("</a>\n        </div>\n\n        <div");
 
 WriteLiteral(" class=\"sf-list-item pull-left\"");
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
             
             #line 19 "..\..MVC\Views\Lists\List.ExpandableList.cshtml"
@@ -158,7 +158,7 @@ WriteLiteral(" ");
             
             #line default
             #line hidden
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
 WriteLiteral("                    ");
 
@@ -169,7 +169,7 @@ WriteLiteral("                    ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n                </h3>\r\n");
+WriteLiteral("\n                </h3>\n");
 
             
             #line 25 "..\..MVC\Views\Lists\List.ExpandableList.cshtml"
@@ -190,7 +190,7 @@ WriteLiteral("                    <div ");
             
             #line default
             #line hidden
-WriteLiteral(">\r\n                        <a");
+WriteLiteral(">\n                        <a");
 
 WriteLiteral(" href=\"javascript:void(0)\"");
 
@@ -216,7 +216,7 @@ WriteLiteral("></i>");
             
             #line default
             #line hidden
-WriteLiteral("</a>\r\n                        <div ");
+WriteLiteral("</a>\n                        <div ");
 
             
             #line 31 "..\..MVC\Views\Lists\List.ExpandableList.cshtml"
@@ -225,7 +225,7 @@ WriteLiteral("</a>\r\n                        <div ");
             
             #line default
             #line hidden
-WriteLiteral(" style=\"display:none;\" class=\"sf-list-content\">\r\n");
+WriteLiteral(" style=\"display:none;\" class=\"sf-list-content\">\n");
 
 WriteLiteral("                            ");
 
@@ -236,7 +236,7 @@ WriteLiteral("                            ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n                        </div>\r\n                    </div>\r\n");
+WriteLiteral("\n                        </div>\n                    </div>\n");
 
             
             #line 35 "..\..MVC\Views\Lists\List.ExpandableList.cshtml"
@@ -246,7 +246,7 @@ WriteLiteral("\r\n                        </div>\r\n                    </div>\r
             
             #line default
             #line hidden
-WriteLiteral("        </div>\r\n    </div>\r\n</div>\r\n\r\n");
+WriteLiteral("        </div>\n    </div>\n</div>\n\n");
 
             
             #line 41 "..\..MVC\Views\Lists\List.ExpandableList.cshtml"
@@ -255,7 +255,7 @@ Write(Html.Script(Url.WidgetContent("Mvc/Scripts/Lists/lists.js")));
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n<script");
+WriteLiteral("\n\n<script");
 
 WriteLiteral(" type=\"text/javascript\"");
 

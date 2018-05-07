@@ -10,6 +10,7 @@ bin/SitefinityWebApp.ResourcePackages.Bootstrap.dll
 bin/SitefinityWebApp.ResourcePackages.Bootstrap.dll
 bin/SitefinityWebApp.ResourcePackages.Bootstrap.dll
 bin/SitefinityWebApp.ResourcePackages.Bootstrap.pdb
+obj/*
 obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 obj/Debug/SitefinityWebApp.csproj.FileListAbsolute.txt
 obj/Debug/SitefinityWebApp.dll

@@ -66,7 +66,7 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.ImageGallery
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 9 "..\..MVC\Views\ImageGallery\List.SimpleList.cshtml"
@@ -75,19 +75,19 @@ Write(Html.Script(ScriptRef.JQuery, "top"));
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\n\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 358), Tuple.Create("\"", 381)
+WriteAttribute("class", Tuple.Create(" class=\"", 348), Tuple.Create("\"", 371)
             
             #line 11 "..\..MVC\Views\ImageGallery\List.SimpleList.cshtml"
-, Tuple.Create(Tuple.Create("", 366), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 356), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 366), false)
+, 356), false)
 );
 
-WriteLiteral(">\r\n\r\n");
+WriteLiteral(">\n\n");
 
             
             #line 13 "..\..MVC\Views\ImageGallery\List.SimpleList.cshtml"
@@ -109,39 +109,39 @@ WriteLiteral("    <a");
 
 WriteLiteral(" class=\"text-center\"");
 
-WriteAttribute("title", Tuple.Create(" title=\"", 522), Tuple.Create("\"", 624)
+WriteAttribute("title", Tuple.Create(" title=\"", 506), Tuple.Create("\"", 608)
             
             #line 17 "..\..MVC\Views\ImageGallery\List.SimpleList.cshtml"
-, Tuple.Create(Tuple.Create("", 530), Tuple.Create<System.Object, System.Int32>(string.IsNullOrEmpty(item.Fields.Description) ? item.Fields.Title : item.Fields.Description
+, Tuple.Create(Tuple.Create("", 514), Tuple.Create<System.Object, System.Int32>(string.IsNullOrEmpty(item.Fields.Description) ? item.Fields.Title : item.Fields.Description
             
             #line default
             #line hidden
-, 530), false)
+, 514), false)
 );
 
-WriteLiteral(">\r\n      <img");
+WriteLiteral(">\n      <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 638), Tuple.Create("\"", 678)
+WriteAttribute("src", Tuple.Create(" src=\"", 621), Tuple.Create("\"", 661)
             
             #line 18 "..\..MVC\Views\ImageGallery\List.SimpleList.cshtml"
-, Tuple.Create(Tuple.Create("", 644), Tuple.Create<System.Object, System.Int32>(thumbnailViewModel.ThumbnailUrl
+, Tuple.Create(Tuple.Create("", 627), Tuple.Create<System.Object, System.Int32>(thumbnailViewModel.ThumbnailUrl
             
             #line default
             #line hidden
-, 644), false)
+, 627), false)
 );
 
-WriteAttribute("alt", Tuple.Create(" alt=\'", 679), Tuple.Create("\'", 777)
+WriteAttribute("alt", Tuple.Create(" alt=\'", 662), Tuple.Create("\'", 760)
             
             #line 18 "..\..MVC\Views\ImageGallery\List.SimpleList.cshtml"
-, Tuple.Create(Tuple.Create("", 685), Tuple.Create<System.Object, System.Int32>(System.Text.RegularExpressions.Regex.Replace(item.Fields.AlternativeText, @"[^\w\d_-]", "")
+, Tuple.Create(Tuple.Create("", 668), Tuple.Create<System.Object, System.Int32>(System.Text.RegularExpressions.Regex.Replace(item.Fields.AlternativeText, @"[^\w\d_-]", "")
             
             #line default
             #line hidden
-, 685), false)
+, 668), false)
 );
 
-WriteLiteral(" \r\n                ");
+WriteLiteral(" \n                ");
 
             
             #line 19 "..\..MVC\Views\ImageGallery\List.SimpleList.cshtml"
@@ -150,7 +150,7 @@ WriteLiteral(" \r\n                ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
 WriteLiteral("                ");
 
@@ -161,7 +161,7 @@ WriteLiteral("                ");
             
             #line default
             #line hidden
-WriteLiteral(" />\r\n    </a>\r\n");
+WriteLiteral(" />\n    </a>\n");
 
             
             #line 22 "..\..MVC\Views\ImageGallery\List.SimpleList.cshtml"
@@ -170,7 +170,7 @@ WriteLiteral(" />\r\n    </a>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("</div>\r\n");
+WriteLiteral("</div>\n");
 
             
             #line 24 "..\..MVC\Views\ImageGallery\List.SimpleList.cshtml"

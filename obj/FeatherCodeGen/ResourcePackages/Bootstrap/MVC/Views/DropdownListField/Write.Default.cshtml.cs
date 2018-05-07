@@ -60,7 +60,7 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.DropdownListFiel
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 8 "..\..MVC\Views\DropdownListField\Write.Default.cshtml"
@@ -69,54 +69,54 @@ Write(Html.Script(ScriptRef.JQuery, "top", false));
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\n\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 342), Tuple.Create("\"", 376)
+WriteAttribute("class", Tuple.Create(" class=\"", 333), Tuple.Create("\"", 367)
             
             #line 10 "..\..MVC\Views\DropdownListField\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 350), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 341), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 350), false)
-, Tuple.Create(Tuple.Create(" ", 365), Tuple.Create("form-group", 366), true)
+, 341), false)
+, Tuple.Create(Tuple.Create(" ", 356), Tuple.Create("form-group", 357), true)
 );
 
 WriteLiteral(" data-sf-role=\"dropdown-list-field-container\"");
 
-WriteLiteral(">\r\n    <input");
+WriteLiteral(">\n    <input");
 
 WriteLiteral(" type=\"hidden\"");
 
 WriteLiteral(" data-sf-role=\"violation-messages\"");
 
-WriteAttribute("value", Tuple.Create(" value=\'", 483), Tuple.Create("\'", 539)
-, Tuple.Create(Tuple.Create("", 491), Tuple.Create("{", 491), true)
-, Tuple.Create(Tuple.Create(" ", 492), Tuple.Create("\"required\":", 493), true)
-, Tuple.Create(Tuple.Create(" ", 504), Tuple.Create("\"", 505), true)
+WriteAttribute("value", Tuple.Create(" value=\'", 473), Tuple.Create("\'", 529)
+, Tuple.Create(Tuple.Create("", 481), Tuple.Create("{", 481), true)
+, Tuple.Create(Tuple.Create(" ", 482), Tuple.Create("\"required\":", 483), true)
+, Tuple.Create(Tuple.Create(" ", 494), Tuple.Create("\"", 495), true)
             
             #line 11 "..\..MVC\Views\DropdownListField\Write.Default.cshtml"
-  , Tuple.Create(Tuple.Create("", 506), Tuple.Create<System.Object, System.Int32>(Model.RequiredViolationMessage
+  , Tuple.Create(Tuple.Create("", 496), Tuple.Create<System.Object, System.Int32>(Model.RequiredViolationMessage
             
             #line default
             #line hidden
-, 506), false)
-, Tuple.Create(Tuple.Create("", 537), Tuple.Create("\"}", 537), true)
+, 496), false)
+, Tuple.Create(Tuple.Create("", 527), Tuple.Create("\"}", 527), true)
 );
 
-WriteLiteral(" />\r\n    <label");
+WriteLiteral(" />\n    <label");
 
-WriteAttribute("for", Tuple.Create(" for=\'", 555), Tuple.Create("\'", 587)
+WriteAttribute("for", Tuple.Create(" for=\'", 544), Tuple.Create("\'", 576)
             
             #line 12 "..\..MVC\Views\DropdownListField\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 561), Tuple.Create<System.Object, System.Int32>(Html.UniqueId("Dropdown")
+, Tuple.Create(Tuple.Create("", 550), Tuple.Create<System.Object, System.Int32>(Html.UniqueId("Dropdown")
             
             #line default
             #line hidden
-, 561), false)
+, 550), false)
 );
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
 WriteLiteral("        ");
 
@@ -127,7 +127,7 @@ WriteLiteral("        ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n    </label>\r\n");
+WriteLiteral("\n    </label>\n");
 
             
             #line 15 "..\..MVC\Views\DropdownListField\Write.Default.cshtml"
@@ -156,7 +156,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</p>\r\n");
+WriteLiteral("</p>\n");
 
             
             #line 18 "..\..MVC\Views\DropdownListField\Write.Default.cshtml"
@@ -165,28 +165,28 @@ WriteLiteral("</p>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("\r\n    <select");
+WriteLiteral("\n    <select");
 
-WriteAttribute("id", Tuple.Create(" id=\'", 793), Tuple.Create("\'", 824)
+WriteAttribute("id", Tuple.Create(" id=\'", 774), Tuple.Create("\'", 805)
             
             #line 20 "..\..MVC\Views\DropdownListField\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 798), Tuple.Create<System.Object, System.Int32>(Html.UniqueId("Dropdown")
+, Tuple.Create(Tuple.Create("", 779), Tuple.Create<System.Object, System.Int32>(Html.UniqueId("Dropdown")
             
             #line default
             #line hidden
-, 798), false)
+, 779), false)
 );
 
 WriteLiteral(" data-sf-role=\"dropdown-list-field-select\"");
 
-WriteAttribute("name", Tuple.Create(" name=\"", 867), Tuple.Create("\"", 900)
+WriteAttribute("name", Tuple.Create(" name=\"", 848), Tuple.Create("\"", 881)
             
             #line 20 "..\..MVC\Views\DropdownListField\Write.Default.cshtml"
-             , Tuple.Create(Tuple.Create("", 874), Tuple.Create<System.Object, System.Int32>(Model.MetaField.FieldName
+             , Tuple.Create(Tuple.Create("", 855), Tuple.Create<System.Object, System.Int32>(Model.MetaField.FieldName
             
             #line default
             #line hidden
-, 874), false)
+, 855), false)
 );
 
 WriteLiteral(" ");
@@ -198,7 +198,7 @@ WriteLiteral(" ");
             
             #line default
             #line hidden
-WriteLiteral(" class=\"form-control\">\r\n");
+WriteLiteral(" class=\"form-control\">\n");
 
             
             #line 21 "..\..MVC\Views\DropdownListField\Write.Default.cshtml"
@@ -248,7 +248,7 @@ WriteLiteral("\">");
             
             #line default
             #line hidden
-WriteLiteral("</option>\r\n");
+WriteLiteral("</option>\n");
 
             
             #line 31 "..\..MVC\Views\DropdownListField\Write.Default.cshtml"
@@ -257,7 +257,7 @@ WriteLiteral("</option>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("    </select>\r\n    \r\n</div>\r\n\r\n");
+WriteLiteral("    </select>\n    \n</div>\n\n");
 
             
             #line 36 "..\..MVC\Views\DropdownListField\Write.Default.cshtml"

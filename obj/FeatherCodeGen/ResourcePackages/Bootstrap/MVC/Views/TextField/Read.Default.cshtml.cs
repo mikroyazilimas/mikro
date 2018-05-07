@@ -38,20 +38,20 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.TextField
         {
 WriteLiteral("<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 95), Tuple.Create("\"", 129)
+WriteAttribute("class", Tuple.Create(" class=\"", 93), Tuple.Create("\"", 127)
             
             #line 3 "..\..MVC\Views\TextField\Read.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 103), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 101), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 103), false)
-, Tuple.Create(Tuple.Create(" ", 118), Tuple.Create("form-group", 119), true)
+, 101), false)
+, Tuple.Create(Tuple.Create(" ", 116), Tuple.Create("form-group", 117), true)
 );
 
 WriteLiteral(" data-sf-role=\"text-field-container\"");
 
-WriteLiteral(">\r\n    <strong>");
+WriteLiteral(">\n    <strong>");
 
             
             #line 4 "..\..MVC\Views\TextField\Read.Default.cshtml"
@@ -60,7 +60,7 @@ WriteLiteral(">\r\n    <strong>");
             
             #line default
             #line hidden
-WriteLiteral("</strong>\r\n    <p>");
+WriteLiteral("</strong>\n    <p>");
 
             
             #line 5 "..\..MVC\Views\TextField\Read.Default.cshtml"
@@ -69,7 +69,7 @@ WriteLiteral("</strong>\r\n    <p>");
             
             #line default
             #line hidden
-WriteLiteral("</p>\r\n</div>\r\n");
+WriteLiteral("</p>\n</div>\n");
 
         }
     }

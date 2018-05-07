@@ -38,19 +38,19 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.FlatTaxonomy
         {
 WriteLiteral("<ul");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 81), Tuple.Create("\"", 126)
+WriteAttribute("class", Tuple.Create(" class=\"", 79), Tuple.Create("\"", 124)
             
             #line 3 "..\..MVC\Views\FlatTaxonomy\FlatTaxonomy.CloudList.cshtml"
-, Tuple.Create(Tuple.Create("", 89), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 87), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 89), false)
-, Tuple.Create(Tuple.Create(" ", 104), Tuple.Create("sf-Tags", 105), true)
-, Tuple.Create(Tuple.Create(" ", 112), Tuple.Create("list-unstyled", 113), true)
+, 87), false)
+, Tuple.Create(Tuple.Create(" ", 102), Tuple.Create("sf-Tags", 103), true)
+, Tuple.Create(Tuple.Create(" ", 110), Tuple.Create("list-unstyled", 111), true)
 );
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
             
             #line 4 "..\..MVC\Views\FlatTaxonomy\FlatTaxonomy.CloudList.cshtml"
@@ -68,26 +68,26 @@ WriteLiteral(">\r\n");
             
             #line default
             #line hidden
-WriteLiteral("<li>\r\n            <a");
+WriteLiteral("<li>\n            <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 274), Tuple.Create("\"", 290)
+WriteAttribute("href", Tuple.Create(" href=\"", 266), Tuple.Create("\"", 282)
             
             #line 9 "..\..MVC\Views\FlatTaxonomy\FlatTaxonomy.CloudList.cshtml"
-, Tuple.Create(Tuple.Create("", 281), Tuple.Create<System.Object, System.Int32>(taxa.Url
+, Tuple.Create(Tuple.Create("", 273), Tuple.Create<System.Object, System.Int32>(taxa.Url
             
             #line default
             #line hidden
-, 281), false)
+, 273), false)
 );
 
-WriteAttribute("class", Tuple.Create(" class=\"", 291), Tuple.Create("\"", 314)
+WriteAttribute("class", Tuple.Create(" class=\"", 283), Tuple.Create("\"", 306)
             
             #line 9 "..\..MVC\Views\FlatTaxonomy\FlatTaxonomy.CloudList.cshtml"
-, Tuple.Create(Tuple.Create("", 299), Tuple.Create<System.Object, System.Int32>(cloudSizeClass
+, Tuple.Create(Tuple.Create("", 291), Tuple.Create<System.Object, System.Int32>(cloudSizeClass
             
             #line default
             #line hidden
-, 299), false)
+, 291), false)
 );
 
 WriteLiteral(">");
@@ -99,11 +99,11 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</a>\r\n            <span");
+WriteLiteral("</a>\n            <span");
 
 WriteLiteral(" class=\"small text-muted\"");
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
             
             #line 11 "..\..MVC\Views\FlatTaxonomy\FlatTaxonomy.CloudList.cshtml"
@@ -130,7 +130,7 @@ WriteLiteral("(");
             
             #line default
             #line hidden
-WriteLiteral(")\r\n");
+WriteLiteral(")\n");
 
             
             #line 14 "..\..MVC\Views\FlatTaxonomy\FlatTaxonomy.CloudList.cshtml"
@@ -139,7 +139,7 @@ WriteLiteral(")\r\n");
             
             #line default
             #line hidden
-WriteLiteral("            </span>\r\n        </li>\r\n");
+WriteLiteral("            </span>\n        </li>\n");
 
             
             #line 17 "..\..MVC\Views\FlatTaxonomy\FlatTaxonomy.CloudList.cshtml"

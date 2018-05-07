@@ -48,19 +48,19 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.Lists
         }
         public override void Execute()
         {
-WriteLiteral("\r\n<div");
+WriteLiteral("\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 179), Tuple.Create("\"", 202)
+WriteAttribute("class", Tuple.Create(" class=\"", 174), Tuple.Create("\"", 197)
             
             #line 6 "..\..MVC\Views\Lists\List.ExpandedList.cshtml"
-, Tuple.Create(Tuple.Create("", 187), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 182), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 187), false)
+, 182), false)
 );
 
-WriteLiteral(">\r\n\r\n");
+WriteLiteral(">\n\n");
 
             
             #line 8 "..\..MVC\Views\Lists\List.ExpandedList.cshtml"
@@ -85,7 +85,7 @@ WriteLiteral("        <h1 ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
 WriteLiteral("            ");
 
@@ -96,7 +96,7 @@ WriteLiteral("            ");
             
             #line default
             #line hidden
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
 WriteLiteral("            ");
 
@@ -107,7 +107,7 @@ WriteLiteral("            ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n        </h1>\r\n");
+WriteLiteral("\n        </h1>\n");
 
             
             #line 14 "..\..MVC\Views\Lists\List.ExpandedList.cshtml"
@@ -127,7 +127,7 @@ WriteLiteral("            <div ");
             
             #line default
             #line hidden
-WriteLiteral(">\r\n                <h3 ");
+WriteLiteral(">\n                <h3 ");
 
             
             #line 18 "..\..MVC\Views\Lists\List.ExpandedList.cshtml"
@@ -145,7 +145,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</h3>\r\n                <p ");
+WriteLiteral("</h3>\n                <p ");
 
             
             #line 19 "..\..MVC\Views\Lists\List.ExpandedList.cshtml"
@@ -163,7 +163,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</p>\r\n            </div>\r\n");
+WriteLiteral("</p>\n            </div>\n");
 
             
             #line 21 "..\..MVC\Views\Lists\List.ExpandedList.cshtml"
@@ -173,7 +173,7 @@ WriteLiteral("</p>\r\n            </div>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("\r\n</div>\r\n");
+WriteLiteral("\n</div>\n");
 
         }
     }

@@ -38,17 +38,17 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.Document
         {
 WriteLiteral("<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 86), Tuple.Create("\"", 109)
+WriteAttribute("class", Tuple.Create(" class=\"", 84), Tuple.Create("\"", 107)
             
             #line 3 "..\..MVC\Views\Document\DocumentLink.cshtml"
-, Tuple.Create(Tuple.Create("", 94), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 92), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 94), false)
+, 92), false)
 );
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
             
             #line 4 "..\..MVC\Views\Document\DocumentLink.cshtml"
@@ -68,25 +68,25 @@ WriteLiteral("        <div");
 
 WriteLiteral(" class=\"media\"");
 
-WriteLiteral(">\r\n          <div");
+WriteLiteral(">\n          <div");
 
 WriteLiteral(" class=\"media-left\"");
 
-WriteLiteral(">\r\n            <i");
+WriteLiteral(">\n            <i");
 
 WriteLiteral(" class=\"icon-file icon-txt icon-md\"");
 
-WriteLiteral(">\r\n                <span");
+WriteLiteral(">\n                <span");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 306), Tuple.Create("\"", 339)
-, Tuple.Create(Tuple.Create("", 314), Tuple.Create("icon-txt-", 314), true)
+WriteAttribute("class", Tuple.Create(" class=\"", 298), Tuple.Create("\"", 331)
+, Tuple.Create(Tuple.Create("", 306), Tuple.Create("icon-txt-", 306), true)
             
             #line 9 "..\..MVC\Views\Document\DocumentLink.cshtml"
-, Tuple.Create(Tuple.Create("", 323), Tuple.Create<System.Object, System.Int32>(Model.Extension
+, Tuple.Create(Tuple.Create("", 315), Tuple.Create<System.Object, System.Int32>(Model.Extension
             
             #line default
             #line hidden
-, 323), false)
+, 315), false)
 );
 
 WriteLiteral(">");
@@ -98,30 +98,30 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</span>\r\n            </i>\r\n          </div>\r\n          <div");
+WriteLiteral("</span>\n            </i>\n          </div>\n          <div");
 
 WriteLiteral(" class=\"media-body\"");
 
-WriteLiteral(">\r\n              <div>\r\n                <a");
+WriteLiteral(">\n              <div>\n                <a");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 477), Tuple.Create("\"", 522)
+WriteAttribute("class", Tuple.Create(" class=\"", 464), Tuple.Create("\"", 509)
             
             #line 14 "..\..MVC\Views\Document\DocumentLink.cshtml"
-, Tuple.Create(Tuple.Create("", 485), Tuple.Create<System.Object, System.Int32>(String.Concat("sf", Model.Extension)
+, Tuple.Create(Tuple.Create("", 472), Tuple.Create<System.Object, System.Int32>(String.Concat("sf", Model.Extension)
             
             #line default
             #line hidden
-, 485), false)
+, 472), false)
 );
 
-WriteAttribute("href", Tuple.Create(" href=\"", 523), Tuple.Create("\"", 545)
+WriteAttribute("href", Tuple.Create(" href=\"", 510), Tuple.Create("\"", 532)
             
             #line 14 "..\..MVC\Views\Document\DocumentLink.cshtml"
-, Tuple.Create(Tuple.Create("", 530), Tuple.Create<System.Object, System.Int32>(Model.MediaUrl
+, Tuple.Create(Tuple.Create("", 517), Tuple.Create<System.Object, System.Int32>(Model.MediaUrl
             
             #line default
             #line hidden
-, 530), false)
+, 517), false)
 );
 
 WriteLiteral(">");
@@ -133,7 +133,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</a> \r\n                <span");
+WriteLiteral("</a> \n                <span");
 
 WriteLiteral(" class=\"text-muted\"");
 
@@ -146,7 +146,7 @@ WriteLiteral(">(");
             
             #line default
             #line hidden
-WriteLiteral(")</span>\r\n              </div>\r\n            <span");
+WriteLiteral(")</span>\n              </div>\n            <span");
 
 WriteLiteral(" class=\"text-muted\"");
 
@@ -159,7 +159,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral(" KB</span>\r\n          </div>\r\n        </div>\r\n");
+WriteLiteral(" KB</span>\n          </div>\n        </div>\n");
 
             
             #line 20 "..\..MVC\Views\Document\DocumentLink.cshtml"

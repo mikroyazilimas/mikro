@@ -48,7 +48,7 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.NavigationField
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 6 "..\..MVC\Views\NavigationField\Read.ProgressBar.cshtml"
@@ -57,7 +57,7 @@ Write(Html.Script(ScriptRef.JQuery, "top", false));
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 7 "..\..MVC\Views\NavigationField\Read.ProgressBar.cshtml"
@@ -66,41 +66,41 @@ Write(Html.StyleSheet(Url.WidgetContent("assets/dist/css/sf-form-nav.min.css"), 
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n\r\n<div");
+WriteLiteral("\n\n\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 341), Tuple.Create("\"", 364)
+WriteAttribute("class", Tuple.Create(" class=\"", 332), Tuple.Create("\"", 355)
             
             #line 10 "..\..MVC\Views\NavigationField\Read.ProgressBar.cshtml"
-, Tuple.Create(Tuple.Create("", 349), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 340), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 349), false)
+, 340), false)
 );
 
 WriteLiteral(" data-sf-role=\"navigation-field-container\"");
 
-WriteLiteral(">\r\n\r\n    <div");
+WriteLiteral(">\n\n    <div");
 
 WriteLiteral(" class=\"progress\"");
 
-WriteLiteral(">\r\n        <div");
+WriteLiteral(">\n        <div");
 
 WriteLiteral(" class=\"progress-bar\"");
 
 WriteLiteral(" data-sf-role=\"progress-bar\"");
 
-WriteLiteral("></div>\r\n    </div>\r\n\r\n    <span");
+WriteLiteral("></div>\n    </div>\n\n    <span");
 
 WriteLiteral(" class=\"sf-Progress-percent\"");
 
 WriteLiteral(" data-sf-role=\"progress-percent\"");
 
-WriteLiteral("> </span>\r\n\r\n    <ul");
+WriteLiteral("> </span>\n\n    <ul");
 
 WriteLiteral(" class=\"sf-Progress-page-title\"");
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
             
             #line 19 "..\..MVC\Views\NavigationField\Read.ProgressBar.cshtml"
@@ -129,7 +129,7 @@ WriteLiteral("  data-sf-navigation-index=\"");
             #line hidden
 WriteLiteral("\"");
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
 WriteLiteral("                ");
 
@@ -140,7 +140,7 @@ WriteLiteral("                ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n            </li>\r\n");
+WriteLiteral("\n            </li>\n");
 
             
             #line 24 "..\..MVC\Views\NavigationField\Read.ProgressBar.cshtml"
@@ -149,7 +149,7 @@ WriteLiteral("\r\n            </li>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("    </ul>\r\n\r\n\r\n</div>\r\n\r\n");
+WriteLiteral("    </ul>\n\n\n</div>\n\n");
 
             
             #line 30 "..\..MVC\Views\NavigationField\Read.ProgressBar.cshtml"
@@ -158,7 +158,7 @@ Write(Html.Script(Url.WidgetContent("Mvc/Scripts/NavigationField/navigation-fiel
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
         }
     }

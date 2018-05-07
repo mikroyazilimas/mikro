@@ -52,47 +52,47 @@ return new System.Web.WebPages.HelperResult(__razor_helper_writer => {
 #line hidden
 WriteLiteralTo(__razor_helper_writer, "    <img");
 
-WriteAttributeTo(__razor_helper_writer, "class", Tuple.Create(" class=\"", 164), Tuple.Create("\"", 187)
+WriteAttributeTo(__razor_helper_writer, "class", Tuple.Create(" class=\"", 160), Tuple.Create("\"", 183)
 
 #line 5 "..\..MVC\Views\Image\Image.cshtml"
-, Tuple.Create(Tuple.Create("", 172), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 168), Tuple.Create<System.Object, System.Int32>(Model.CssClass
 
 #line default
 #line hidden
-, 172), false)
+, 168), false)
 );
 
-WriteAttributeTo(__razor_helper_writer, "src", Tuple.Create(" src=\"", 188), Tuple.Create("\"", 216)
+WriteAttributeTo(__razor_helper_writer, "src", Tuple.Create(" src=\"", 184), Tuple.Create("\"", 212)
 
 #line 5 "..\..MVC\Views\Image\Image.cshtml"
-, Tuple.Create(Tuple.Create("", 194), Tuple.Create<System.Object, System.Int32>(Model.SelectedSizeUrl
+, Tuple.Create(Tuple.Create("", 190), Tuple.Create<System.Object, System.Int32>(Model.SelectedSizeUrl
 
 #line default
 #line hidden
-, 194), false)
+, 190), false)
 );
 
-WriteAttributeTo(__razor_helper_writer, "title", Tuple.Create(" title=\"", 217), Tuple.Create("\"", 237)
+WriteAttributeTo(__razor_helper_writer, "title", Tuple.Create(" title=\"", 213), Tuple.Create("\"", 233)
 
 #line 5 "..\..MVC\Views\Image\Image.cshtml"
-, Tuple.Create(Tuple.Create("", 225), Tuple.Create<System.Object, System.Int32>(Model.Title
+, Tuple.Create(Tuple.Create("", 221), Tuple.Create<System.Object, System.Int32>(Model.Title
 
 #line default
 #line hidden
-, 225), false)
+, 221), false)
 );
 
-WriteAttributeTo(__razor_helper_writer, "alt", Tuple.Create(" alt=\"", 238), Tuple.Create("\"", 266)
+WriteAttributeTo(__razor_helper_writer, "alt", Tuple.Create(" alt=\"", 234), Tuple.Create("\"", 262)
 
 #line 5 "..\..MVC\Views\Image\Image.cshtml"
-         , Tuple.Create(Tuple.Create("", 244), Tuple.Create<System.Object, System.Int32>(Model.AlternativeText
+         , Tuple.Create(Tuple.Create("", 240), Tuple.Create<System.Object, System.Int32>(Model.AlternativeText
 
 #line default
 #line hidden
-, 244), false)
+, 240), false)
 );
 
-WriteLiteralTo(__razor_helper_writer, " \r\n                ");
+WriteLiteralTo(__razor_helper_writer, " \n                ");
 
 
 #line 6 "..\..MVC\Views\Image\Image.cshtml"
@@ -101,7 +101,7 @@ WriteTo(__razor_helper_writer, Html.GetWidthAttributeForVectorGraphics(Model.Cus
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, "\r\n");
+WriteLiteralTo(__razor_helper_writer, "\n");
 
 WriteLiteralTo(__razor_helper_writer, "                ");
 
@@ -112,7 +112,7 @@ WriteTo(__razor_helper_writer, Html.GetHeightAttributeForVectorGraphics(Model.Cu
 
 #line default
 #line hidden
-WriteLiteralTo(__razor_helper_writer, " /> \r\n");
+WriteLiteralTo(__razor_helper_writer, " /> \n");
 
 
 #line 8 "..\..MVC\Views\Image\Image.cshtml"
@@ -132,7 +132,7 @@ WriteLiteralTo(__razor_helper_writer, " /> \r\n");
         }
         public override void Execute()
         {
-WriteLiteral(" \r\n");
+WriteLiteral(" \n");
 
             
             #line 10 "..\..MVC\Views\Image\Image.cshtml"
@@ -161,17 +161,17 @@ else
             #line hidden
 WriteLiteral("    <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 572), Tuple.Create("\"", 602)
+WriteAttribute("href", Tuple.Create(" href=\"", 557), Tuple.Create("\"", 587)
             
             #line 16 "..\..MVC\Views\Image\Image.cshtml"
-, Tuple.Create(Tuple.Create("", 579), Tuple.Create<System.Object, System.Int32>(Model.LinkedContentUrl
+, Tuple.Create(Tuple.Create("", 564), Tuple.Create<System.Object, System.Int32>(Model.LinkedContentUrl
             
             #line default
             #line hidden
-, 579), false)
+, 564), false)
 );
 
-WriteLiteral("> \r\n");
+WriteLiteral("> \n");
 
 WriteLiteral("        ");
 
@@ -182,7 +182,7 @@ WriteLiteral("        ");
             
             #line default
             #line hidden
-WriteLiteral(" \r\n    </a> \r\n");
+WriteLiteral(" \n    </a> \n");
 
             
             #line 19 "..\..MVC\Views\Image\Image.cshtml"

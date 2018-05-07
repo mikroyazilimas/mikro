@@ -44,16 +44,21 @@ namespace ASP
             
             #line default
             #line hidden
-WriteLiteral("<div>\r\n\r\n");
+WriteLiteral("<div");
+
+WriteLiteral(" class=\"product-proposal\"");
+
+WriteLiteral(">\r\n    <span>Doldurmuş olduğunuz bilgilere göre size aşağıdaki ürünleri öneriyoru" +
+"z.</span>\r\n    \r\n");
 
             
-            #line 7 "..\..\MVC\Views\General\ProductProposal.cshtml"
+            #line 8 "..\..\MVC\Views\General\ProductProposal.cshtml"
     
             
             #line default
             #line hidden
             
-            #line 7 "..\..\MVC\Views\General\ProductProposal.cshtml"
+            #line 8 "..\..\MVC\Views\General\ProductProposal.cshtml"
       if (Model.Product == "1-5 Employees")
         {
 
@@ -66,15 +71,15 @@ WriteLiteral(" class=\"product-proposal-image\"");
 
 WriteLiteral(">\r\n                <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 248), Tuple.Create("\"", 295)
-, Tuple.Create(Tuple.Create("", 254), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/run-big-banner.png")
-, 254), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 366), Tuple.Create("\"", 413)
+, Tuple.Create(Tuple.Create("", 372), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/run-big-banner.png")
+, 372), false)
 );
 
 WriteLiteral(" />\r\n            </div>\r\n");
 
             
-            #line 12 "..\..\MVC\Views\General\ProductProposal.cshtml"
+            #line 13 "..\..\MVC\Views\General\ProductProposal.cshtml"
         }
         else if (Model.Product == "6-50 Employees")
         {
@@ -88,15 +93,15 @@ WriteLiteral(" class=\"product-proposal-image\"");
 
 WriteLiteral(">\r\n                <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 466), Tuple.Create("\"", 514)
-, Tuple.Create(Tuple.Create("", 472), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/jump-big-banner.png")
-, 472), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 584), Tuple.Create("\"", 632)
+, Tuple.Create(Tuple.Create("", 590), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/jump-big-banner.png")
+, 590), false)
 );
 
 WriteLiteral(" />\r\n            </div>\r\n");
 
             
-            #line 18 "..\..\MVC\Views\General\ProductProposal.cshtml"
+            #line 19 "..\..\MVC\Views\General\ProductProposal.cshtml"
         }
         else if (Model.Product == "More Than 51 Employees")
         {
@@ -110,15 +115,15 @@ WriteLiteral(" class=\"product-proposal-image\"");
 
 WriteLiteral(">\r\n                <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 693), Tuple.Create("\"", 740)
-, Tuple.Create(Tuple.Create("", 699), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/fly-big-banner.png")
-, 699), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 811), Tuple.Create("\"", 858)
+, Tuple.Create(Tuple.Create("", 817), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/fly-big-banner.png")
+, 817), false)
 );
 
 WriteLiteral(" />\r\n            </div>\r\n");
 
             
-            #line 24 "..\..\MVC\Views\General\ProductProposal.cshtml"
+            #line 25 "..\..\MVC\Views\General\ProductProposal.cshtml"
         }
     
             
@@ -127,7 +132,7 @@ WriteLiteral(" />\r\n            </div>\r\n");
 WriteLiteral("\r\n</div>\r\n");
 
             
-            #line 27 "..\..\MVC\Views\General\ProductProposal.cshtml"
+            #line 28 "..\..\MVC\Views\General\ProductProposal.cshtml"
 }
 
             

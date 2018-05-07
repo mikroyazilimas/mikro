@@ -60,7 +60,7 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.BlogPost
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 8 "..\..MVC\Views\BlogPost\List.BlogPostList.cshtml"
@@ -69,23 +69,23 @@ Write(Html.Script(ScriptRef.JQuery, "top", false));
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\n\n<div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 289), Tuple.Create("\"", 312)
+WriteAttribute("class", Tuple.Create(" class=\"", 280), Tuple.Create("\"", 303)
             
             #line 10 "..\..MVC\Views\BlogPost\List.BlogPostList.cshtml"
-, Tuple.Create(Tuple.Create("", 297), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 288), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 297), false)
+, 288), false)
 );
 
-WriteLiteral(">\r\n    <ul");
+WriteLiteral(">\n    <ul");
 
 WriteLiteral(" class=\"list-unstyled\"");
 
-WriteLiteral(">\r\n\r\n");
+WriteLiteral(">\n\n");
 
             
             #line 13 "..\..MVC\Views\BlogPost\List.BlogPostList.cshtml"
@@ -112,7 +112,7 @@ WriteLiteral("            <li ");
             
             #line default
             #line hidden
-WriteLiteral(">\r\n                <h3>\r\n                    <a ");
+WriteLiteral(">\n                <h3>\n                    <a ");
 
             
             #line 19 "..\..MVC\Views\BlogPost\List.BlogPostList.cshtml"
@@ -139,11 +139,11 @@ WriteLiteral("\">");
             
             #line default
             #line hidden
-WriteLiteral("</a>\r\n                </h3>\r\n\r\n\r\n                <div");
+WriteLiteral("</a>\n                </h3>\n\n\n                <div");
 
 WriteLiteral(" class=\"text-muted\"");
 
-WriteLiteral(">\r\n");
+WriteLiteral(">\n");
 
 WriteLiteral("                    ");
 
@@ -154,7 +154,7 @@ WriteLiteral("                    ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
 WriteLiteral("                    ");
 
@@ -165,7 +165,7 @@ WriteLiteral("                    ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
 WriteLiteral("                    ");
 
@@ -176,7 +176,7 @@ WriteLiteral("                    ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
 WriteLiteral("\t\t\t\t\t");
 
@@ -187,7 +187,7 @@ WriteLiteral("\t\t\t\t\t");
             
             #line default
             #line hidden
-WriteLiteral("\r\n                </div>\r\n\r\n                <div ");
+WriteLiteral("\n                </div>\n\n                <div ");
 
             
             #line 30 "..\..MVC\Views\BlogPost\List.BlogPostList.cshtml"
@@ -205,16 +205,16 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</div>\r\n\r\n                <a");
+WriteLiteral("</div>\n\n                <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 1314), Tuple.Create("\"", 1333)
+WriteAttribute("href", Tuple.Create(" href=\"", 1283), Tuple.Create("\"", 1302)
             
             #line 32 "..\..MVC\Views\BlogPost\List.BlogPostList.cshtml"
-, Tuple.Create(Tuple.Create("", 1321), Tuple.Create<System.Object, System.Int32>(navigateUrl
+, Tuple.Create(Tuple.Create("", 1290), Tuple.Create<System.Object, System.Int32>(navigateUrl
             
             #line default
             #line hidden
-, 1321), false)
+, 1290), false)
 );
 
 WriteLiteral(">");
@@ -226,7 +226,7 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</a>\r\n            </li>\r\n");
+WriteLiteral("</a>\n            </li>\n");
 
             
             #line 34 "..\..MVC\Views\BlogPost\List.BlogPostList.cshtml"
@@ -235,7 +235,7 @@ WriteLiteral("</a>\r\n            </li>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("    </ul>\r\n\r\n");
+WriteLiteral("    </ul>\n\n");
 
             
             #line 37 "..\..MVC\Views\BlogPost\List.BlogPostList.cshtml"
@@ -271,7 +271,7 @@ WriteLiteral("    </ul>\r\n\r\n");
             
             #line default
             #line hidden
-WriteLiteral("</div>\r\n");
+WriteLiteral("</div>\n");
 
         }
     }

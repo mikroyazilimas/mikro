@@ -66,7 +66,7 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.ImageGallery
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 9 "..\..MVC\Views\ImageGallery\List.ImageGallery.cshtml"
@@ -75,24 +75,24 @@ Write(Html.Script(ScriptRef.JQuery, "top"));
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\n\n<div");
 
 WriteLiteral(" class=\"sf-Gallery-thumbs-container\"");
 
-WriteLiteral(">\r\n  <div");
+WriteLiteral(">\n  <div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 403), Tuple.Create("\"", 444)
-, Tuple.Create(Tuple.Create("", 411), Tuple.Create("sf-Gallery-thumbs", 411), true)
+WriteAttribute("class", Tuple.Create(" class=\"", 392), Tuple.Create("\"", 433)
+, Tuple.Create(Tuple.Create("", 400), Tuple.Create("sf-Gallery-thumbs", 400), true)
             
             #line 12 "..\..MVC\Views\ImageGallery\List.ImageGallery.cshtml"
-, Tuple.Create(Tuple.Create(" ", 428), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create(" ", 417), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 429), false)
+, 418), false)
 );
 
-WriteLiteral(">\r\n\r\n");
+WriteLiteral(">\n\n");
 
             
             #line 14 "..\..MVC\Views\ImageGallery\List.ImageGallery.cshtml"
@@ -119,49 +119,49 @@ WriteLiteral("      <a");
 
 WriteLiteral(" class=\"text-center\"");
 
-WriteAttribute("href", Tuple.Create("\r\n             href=\"", 1025), Tuple.Create("\"", 1060)
+WriteAttribute("href", Tuple.Create("\n             href=\"", 1003), Tuple.Create("\"", 1037)
             
             #line 24 "..\..MVC\Views\ImageGallery\List.ImageGallery.cshtml"
-, Tuple.Create(Tuple.Create("", 1046), Tuple.Create<System.Object, System.Int32>(detailPageUrl
+, Tuple.Create(Tuple.Create("", 1023), Tuple.Create<System.Object, System.Int32>(detailPageUrl
             
             #line default
             #line hidden
-, 1046), false)
+, 1023), false)
 );
 
-WriteAttribute("title", Tuple.Create("\r\n       title=\"", 1061), Tuple.Create("\"", 1171)
+WriteAttribute("title", Tuple.Create("\n       title=\"", 1038), Tuple.Create("\"", 1147)
             
             #line 25 "..\..MVC\Views\ImageGallery\List.ImageGallery.cshtml"
-, Tuple.Create(Tuple.Create("", 1077), Tuple.Create<System.Object, System.Int32>(string.IsNullOrEmpty(item.Fields.Description) ? item.Fields.Title : item.Fields.Description
+, Tuple.Create(Tuple.Create("", 1053), Tuple.Create<System.Object, System.Int32>(string.IsNullOrEmpty(item.Fields.Description) ? item.Fields.Title : item.Fields.Description
             
             #line default
             #line hidden
-, 1077), false)
+, 1053), false)
 );
 
-WriteLiteral(">\r\n            <img");
+WriteLiteral(">\n            <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 1191), Tuple.Create("\"", 1231)
+WriteAttribute("src", Tuple.Create(" src=\"", 1166), Tuple.Create("\"", 1206)
             
             #line 26 "..\..MVC\Views\ImageGallery\List.ImageGallery.cshtml"
-, Tuple.Create(Tuple.Create("", 1197), Tuple.Create<System.Object, System.Int32>(thumbnailViewModel.ThumbnailUrl
+, Tuple.Create(Tuple.Create("", 1172), Tuple.Create<System.Object, System.Int32>(thumbnailViewModel.ThumbnailUrl
             
             #line default
             #line hidden
-, 1197), false)
+, 1172), false)
 );
 
-WriteAttribute("alt", Tuple.Create(" alt=\'", 1232), Tuple.Create("\'", 1330)
+WriteAttribute("alt", Tuple.Create(" alt=\'", 1207), Tuple.Create("\'", 1305)
             
             #line 26 "..\..MVC\Views\ImageGallery\List.ImageGallery.cshtml"
-, Tuple.Create(Tuple.Create("", 1238), Tuple.Create<System.Object, System.Int32>(System.Text.RegularExpressions.Regex.Replace(item.Fields.AlternativeText, @"[^\w\d_-]", "")
+, Tuple.Create(Tuple.Create("", 1213), Tuple.Create<System.Object, System.Int32>(System.Text.RegularExpressions.Regex.Replace(item.Fields.AlternativeText, @"[^\w\d_-]", "")
             
             #line default
             #line hidden
-, 1238), false)
+, 1213), false)
 );
 
-WriteLiteral("\r\n                      ");
+WriteLiteral("\n                      ");
 
             
             #line 27 "..\..MVC\Views\ImageGallery\List.ImageGallery.cshtml"
@@ -170,7 +170,7 @@ WriteLiteral("\r\n                      ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
 WriteLiteral("                      ");
 
@@ -181,7 +181,7 @@ WriteLiteral("                      ");
             
             #line default
             #line hidden
-WriteLiteral(" />\r\n      </a>\r\n");
+WriteLiteral(" />\n      </a>\n");
 
             
             #line 30 "..\..MVC\Views\ImageGallery\List.ImageGallery.cshtml"
@@ -190,7 +190,7 @@ WriteLiteral(" />\r\n      </a>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("  </div>\r\n</div>\r\n\r\n");
+WriteLiteral("  </div>\n</div>\n\n");
 
             
             #line 34 "..\..MVC\Views\ImageGallery\List.ImageGallery.cshtml"

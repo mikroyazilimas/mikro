@@ -54,7 +54,7 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Views.Captcha
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("\n");
 
             
             #line 7 "..\..MVC\Views\Captcha\Write.Default.cshtml"
@@ -63,38 +63,38 @@ Write(Html.Script(ScriptRef.JQuery, "top", false));
             
             #line default
             #line hidden
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\n\n<div");
 
 WriteLiteral(" data-sf-role=\"field-captcha-container\"");
 
 WriteLiteral(" style=\"display:none;\"");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 330), Tuple.Create("\"", 364)
+WriteAttribute("class", Tuple.Create(" class=\"", 322), Tuple.Create("\"", 356)
             
             #line 9 "..\..MVC\Views\Captcha\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 338), Tuple.Create<System.Object, System.Int32>(Model.CssClass
+, Tuple.Create(Tuple.Create("", 330), Tuple.Create<System.Object, System.Int32>(Model.CssClass
             
             #line default
             #line hidden
-, 338), false)
-, Tuple.Create(Tuple.Create(" ", 353), Tuple.Create("form-group", 354), true)
+, 330), false)
+, Tuple.Create(Tuple.Create(" ", 345), Tuple.Create("form-group", 346), true)
 );
 
-WriteLiteral(">\r\n    <div>\r\n        <img");
+WriteLiteral(">\n    <div>\n        <img");
 
 WriteLiteral(" data-sf-role=\"captcha-image\"");
 
-WriteAttribute("src", Tuple.Create(" src=\'", 420), Tuple.Create("\'", 473)
+WriteAttribute("src", Tuple.Create(" src=\'", 410), Tuple.Create("\'", 463)
             
             #line 11 "..\..MVC\Views\Captcha\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 426), Tuple.Create<System.Object, System.Int32>(Url.WidgetContent("assets/dist/img/dummy.jpg")
+, Tuple.Create(Tuple.Create("", 416), Tuple.Create<System.Object, System.Int32>(Url.WidgetContent("assets/dist/img/dummy.jpg")
             
             #line default
             #line hidden
-, 426), false)
+, 416), false)
 );
 
-WriteLiteral("/>\r\n    </div>\r\n\r\n    <a");
+WriteLiteral("/>\n    </div>\n\n    <a");
 
 WriteLiteral(" data-sf-role=\"captcha-refresh-button\"");
 
@@ -107,43 +107,43 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</a>\r\n\r\n    <div");
+WriteLiteral("</a>\n\n    <div");
 
 WriteLiteral(" class=\"form-inline\"");
 
-WriteLiteral(">\r\n        <div");
+WriteLiteral(">\n        <div");
 
 WriteLiteral(" class=\"form-group\"");
 
-WriteLiteral(">\r\n\t\t\t<input");
+WriteLiteral(">\n\t\t\t<input");
 
 WriteLiteral(" data-sf-role=\"violation-messages\"");
 
 WriteLiteral(" type=\"hidden\"");
 
-WriteAttribute("value", Tuple.Create(" value=\'", 692), Tuple.Create("\'", 767)
-, Tuple.Create(Tuple.Create("", 700), Tuple.Create("{\"required\":", 700), true)
-, Tuple.Create(Tuple.Create(" ", 712), Tuple.Create("\"", 713), true)
+WriteAttribute("value", Tuple.Create(" value=\'", 675), Tuple.Create("\'", 750)
+, Tuple.Create(Tuple.Create("", 683), Tuple.Create("{\"required\":", 683), true)
+, Tuple.Create(Tuple.Create(" ", 695), Tuple.Create("\"", 696), true)
             
             #line 18 "..\..MVC\Views\Captcha\Write.Default.cshtml"
-         , Tuple.Create(Tuple.Create("", 714), Tuple.Create<System.Object, System.Int32>(Model.ValidatorDefinition.RequiredViolationMessage
+         , Tuple.Create(Tuple.Create("", 697), Tuple.Create<System.Object, System.Int32>(Model.ValidatorDefinition.RequiredViolationMessage
             
             #line default
             #line hidden
-, 714), false)
-, Tuple.Create(Tuple.Create("", 765), Tuple.Create("\"}", 765), true)
+, 697), false)
+, Tuple.Create(Tuple.Create("", 748), Tuple.Create("\"}", 748), true)
 );
 
-WriteLiteral(" />\r\n            <label");
+WriteLiteral(" />\n            <label");
 
-WriteAttribute("for", Tuple.Create(" for=\'", 791), Tuple.Create("\'", 822)
+WriteAttribute("for", Tuple.Create(" for=\'", 773), Tuple.Create("\'", 804)
             
             #line 19 "..\..MVC\Views\Captcha\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 797), Tuple.Create<System.Object, System.Int32>(Html.UniqueId("Textbox")
+, Tuple.Create(Tuple.Create("", 779), Tuple.Create<System.Object, System.Int32>(Html.UniqueId("Textbox")
             
             #line default
             #line hidden
-, 797), false)
+, 779), false)
 );
 
 WriteLiteral(">");
@@ -155,101 +155,101 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral(" </label>\r\n            <input");
+WriteLiteral(" </label>\n            <input");
 
-WriteAttribute("id", Tuple.Create(" id=\'", 884), Tuple.Create("\'", 914)
+WriteAttribute("id", Tuple.Create(" id=\'", 865), Tuple.Create("\'", 895)
             
             #line 20 "..\..MVC\Views\Captcha\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 889), Tuple.Create<System.Object, System.Int32>(Html.UniqueId("Textbox")
+, Tuple.Create(Tuple.Create("", 870), Tuple.Create<System.Object, System.Int32>(Html.UniqueId("Textbox")
             
             #line default
             #line hidden
-, 889), false)
+, 870), false)
 );
 
 WriteLiteral(" type=\"text\"");
 
 WriteLiteral(" data-sf-role=\"captcha-input\"");
 
-WriteAttribute("name", Tuple.Create(" name=\"", 956), Tuple.Create("\"", 990)
+WriteAttribute("name", Tuple.Create(" name=\"", 937), Tuple.Create("\"", 971)
             
             #line 20 "..\..MVC\Views\Captcha\Write.Default.cshtml"
-                  , Tuple.Create(Tuple.Create("", 963), Tuple.Create<System.Object, System.Int32>(Model.CaptchaAnswerFormKey
+                  , Tuple.Create(Tuple.Create("", 944), Tuple.Create<System.Object, System.Int32>(Model.CaptchaAnswerFormKey
             
             #line default
             #line hidden
-, 963), false)
+, 944), false)
 );
 
 WriteLiteral(" required=\"required\"");
 
 WriteLiteral(" class=\"form-control input-sm\"");
 
-WriteLiteral("/>\r\n        </div>\r\n    </div>\r\n    <input");
+WriteLiteral("/>\n        </div>\n    </div>\n    <input");
 
 WriteLiteral(" type=\"hidden\"");
 
 WriteLiteral(" data-sf-role=\"captcha-ca\"");
 
-WriteAttribute("name", Tuple.Create(" name=\"", 1123), Tuple.Create("\"", 1164)
+WriteAttribute("name", Tuple.Create(" name=\"", 1101), Tuple.Create("\"", 1142)
             
             #line 23 "..\..MVC\Views\Captcha\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 1130), Tuple.Create<System.Object, System.Int32>(Model.CaptchaCorrectAnswerFormKey
+, Tuple.Create(Tuple.Create("", 1108), Tuple.Create<System.Object, System.Int32>(Model.CaptchaCorrectAnswerFormKey
             
             #line default
             #line hidden
-, 1130), false)
+, 1108), false)
 );
 
-WriteLiteral(" />\r\n    <input");
+WriteLiteral(" />\n    <input");
 
 WriteLiteral(" type=\"hidden\"");
 
 WriteLiteral(" data-sf-role=\"captcha-iv\"");
 
-WriteAttribute("name", Tuple.Create(" name=\"", 1220), Tuple.Create("\"", 1268)
+WriteAttribute("name", Tuple.Create(" name=\"", 1197), Tuple.Create("\"", 1245)
             
             #line 24 "..\..MVC\Views\Captcha\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 1227), Tuple.Create<System.Object, System.Int32>(Model.CaptchaInitializationVectorFormKey
+, Tuple.Create(Tuple.Create("", 1204), Tuple.Create<System.Object, System.Int32>(Model.CaptchaInitializationVectorFormKey
             
             #line default
             #line hidden
-, 1227), false)
+, 1204), false)
 );
 
-WriteLiteral(" />\r\n    <input");
+WriteLiteral(" />\n    <input");
 
 WriteLiteral(" type=\"hidden\"");
 
 WriteLiteral(" data-sf-role=\"captcha-k\"");
 
-WriteAttribute("name", Tuple.Create(" name=\"", 1323), Tuple.Create("\"", 1354)
+WriteAttribute("name", Tuple.Create(" name=\"", 1299), Tuple.Create("\"", 1330)
             
             #line 25 "..\..MVC\Views\Captcha\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 1330), Tuple.Create<System.Object, System.Int32>(Model.CaptchaKeyFormKey
+, Tuple.Create(Tuple.Create("", 1306), Tuple.Create<System.Object, System.Int32>(Model.CaptchaKeyFormKey
             
             #line default
             #line hidden
-, 1330), false)
+, 1306), false)
 );
 
-WriteLiteral(" />\r\n\r\n    <input");
+WriteLiteral(" />\n\n    <input");
 
 WriteLiteral(" type=\"hidden\"");
 
 WriteLiteral(" data-sf-role=\"captcha-settings\"");
 
-WriteAttribute("value", Tuple.Create(" value=\"", 1418), Tuple.Create("\"", 1444)
+WriteAttribute("value", Tuple.Create(" value=\"", 1392), Tuple.Create("\"", 1418)
             
             #line 27 "..\..MVC\Views\Captcha\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 1426), Tuple.Create<System.Object, System.Int32>(Model.GenerateUrl
+, Tuple.Create(Tuple.Create("", 1400), Tuple.Create<System.Object, System.Int32>(Model.GenerateUrl
             
             #line default
             #line hidden
-, 1426), false)
+, 1400), false)
 );
 
-WriteLiteral(" />\r\n</div>\r\n\r\n");
+WriteLiteral(" />\n</div>\n\n");
 
             
             #line 30 "..\..MVC\Views\Captcha\Write.Default.cshtml"
@@ -267,17 +267,17 @@ WriteLiteral("    <script");
 
 WriteLiteral(" type=\"text/javascript\"");
 
-WriteAttribute("src", Tuple.Create(" src=\'", 1784), Tuple.Create("\'", 1804)
+WriteAttribute("src", Tuple.Create(" src=\'", 1749), Tuple.Create("\'", 1769)
             
             #line 36 "..\..MVC\Views\Captcha\Write.Default.cshtml"
-, Tuple.Create(Tuple.Create("", 1790), Tuple.Create<System.Object, System.Int32>(fullScriptUrl
+, Tuple.Create(Tuple.Create("", 1755), Tuple.Create<System.Object, System.Int32>(fullScriptUrl
             
             #line default
             #line hidden
-, 1790), false)
+, 1755), false)
 );
 
-WriteLiteral("></script>\r\n");
+WriteLiteral("></script>\n");
 
             
             #line 37 "..\..MVC\Views\Captcha\Write.Default.cshtml"

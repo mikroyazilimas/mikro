@@ -169,11 +169,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-<<<<<<< HEAD
             #line 53 "..\..\MVC\Views\Form\ContactForm.cshtml"
-=======
-            #line 51 "..\..\MVC\Views\Form\ContactForm.cshtml"
->>>>>>> 69f11600b7c9826f2aae025189d89e920138f1a3
                Write(Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*" }));
 
             
@@ -184,11 +180,7 @@ WriteLiteral("\r\n");
 WriteLiteral("                    ");
 
             
-<<<<<<< HEAD
             #line 54 "..\..\MVC\Views\Form\ContactForm.cshtml"
-=======
-            #line 52 "..\..\MVC\Views\Form\ContactForm.cshtml"
->>>>>>> 69f11600b7c9826f2aae025189d89e920138f1a3
                Write(Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*" }));
 
             
@@ -203,11 +195,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-<<<<<<< HEAD
             #line 58 "..\..\MVC\Views\Form\ContactForm.cshtml"
-=======
-            #line 56 "..\..\MVC\Views\Form\ContactForm.cshtml"
->>>>>>> 69f11600b7c9826f2aae025189d89e920138f1a3
                Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" }));
 
             
@@ -222,11 +210,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-<<<<<<< HEAD
             #line 61 "..\..\MVC\Views\Form\ContactForm.cshtml"
-=======
-            #line 59 "..\..\MVC\Views\Form\ContactForm.cshtml"
->>>>>>> 69f11600b7c9826f2aae025189d89e920138f1a3
                Write(Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", maxlength = "11", required = "required", placeholder = "Telefon Numaranız*", @class = "phones", type = "text" }));
 
             
@@ -409,11 +393,7 @@ WriteLiteral(">Teşekkür etmek istiyorum</option>\r\n                </select>\
 WriteLiteral("                ");
 
             
-<<<<<<< HEAD
             #line 102 "..\..\MVC\Views\Form\ContactForm.cshtml"
-=======
-            #line 100 "..\..\MVC\Views\Form\ContactForm.cshtml"
->>>>>>> 69f11600b7c9826f2aae025189d89e920138f1a3
            Write(Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp", placeholder = "Mesajınız" }));
 
             
@@ -595,11 +575,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-<<<<<<< HEAD
             #line 134 "..\..\MVC\Views\Form\ContactForm.cshtml"
-=======
-            #line 132 "..\..\MVC\Views\Form\ContactForm.cshtml"
->>>>>>> 69f11600b7c9826f2aae025189d89e920138f1a3
                Write(Html.CheckBoxFor(m => m.Contract, new { required = "required", id = "Contract-hp" }));
 
             
@@ -624,16 +600,11 @@ WriteLiteral(" value=\"Gönder\"");
 
 WriteLiteral(" onclick=\"return contactFormSubmit(\'contactForm\');\"");
 
-<<<<<<< HEAD
 WriteLiteral(" />\r\n                </div>\r\n                <div");
 
 WriteLiteral(" class=\"errorMessage\"");
 
 WriteLiteral("></div>\r\n\r\n            </div>\r\n            \r\n        </div>\r\n    </div>\r\n");
-=======
-WriteLiteral(" />\r\n                </div>\r\n\r\n\r\n            </div>\r\n            \r\n        </div>" +
-"\r\n    </div>\r\n");
->>>>>>> 69f11600b7c9826f2aae025189d89e920138f1a3
 
             
             #line 147 "..\..\MVC\Views\Form\ContactForm.cshtml"

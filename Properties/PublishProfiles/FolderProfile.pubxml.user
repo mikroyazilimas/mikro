@@ -20,13 +20,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/30/2017 08:34:14</publishTime>
     </File>
     <File Include="App_Master/Main.Master">
-      <publishTime>05/04/2018 20:24:14</publishTime>
+      <publishTime>05/07/2018 16:40:45</publishTime>
     </File>
     <File Include="App_Master/NM-Pages.Master">
-      <publishTime>05/04/2018 20:24:14</publishTime>
+      <publishTime>05/07/2018 15:05:51</publishTime>
     </File>
     <File Include="App_Master/Pages.Master">
-      <publishTime>05/04/2018 20:24:14</publishTime>
+      <publishTime>05/07/2018 15:05:43</publishTime>
     </File>
     <File Include="bin/AjaxControlToolkit.dll">
       <publishTime>04/04/2014 15:59:20</publishTime>
@@ -44,7 +44,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/12/2014 12:20:26</publishTime>
     </File>
     <File Include="bin/Autofac.Integration.WebApi.dll">
-      <publishTime>08/17/2014 06:17:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/AWSSDK.dll">
       <publishTime>11/30/2017 08:36:58</publishTime>
@@ -254,13 +254,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/06/2017 03:37:30</publishTime>
     </File>
     <File Include="bin/SitefinityWebApp.dll">
-      <publishTime>05/07/2018 14:02:31</publishTime>
+      <publishTime>05/07/2018 22:52:40</publishTime>
     </File>
     <File Include="bin/SitefinityWebApp.pdb">
-      <publishTime>05/07/2018 14:02:31</publishTime>
+      <publishTime>05/07/2018 22:52:40</publishTime>
     </File>
     <File Include="bin/SitefinityWebApp.xml">
-      <publishTime>05/07/2018 14:02:30</publishTime>
+      <publishTime>05/07/2018 22:52:40</publishTime>
     </File>
     <File Include="bin/stdole.dll">
       <publishTime>08/14/2017 15:10:46</publishTime>
@@ -680,7 +680,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/12/2018 22:57:51</publishTime>
     </File>
     <File Include="Frontend/dist/css/app.css">
-      <publishTime>05/07/2018 13:41:16</publishTime>
+      <publishTime>05/07/2018 22:43:25</publishTime>
     </File>
     <File Include="Frontend/dist/images/demo.png">
       <publishTime>03/27/2018 15:07:42</publishTime>
@@ -836,7 +836,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/27/2018 15:07:42</publishTime>
     </File>
     <File Include="Frontend/dist/javascript/mikro-yazilim.js">
-      <publishTime>05/07/2018 11:56:41</publishTime>
+      <publishTime>05/07/2018 22:43:25</publishTime>
     </File>
     <File Include="Frontend/gulpfile.js">
       <publishTime>04/05/2018 16:41:22</publishTime>
@@ -989,7 +989,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/21/2018 11:01:57</publishTime>
     </File>
     <File Include="Frontend/source/javascripts/general.js">
-      <publishTime>05/07/2018 11:56:41</publishTime>
+      <publishTime>05/07/2018 22:43:25</publishTime>
     </File>
     <File Include="Frontend/source/javascripts/jquery-3.3.1.min.js">
       <publishTime>03/21/2018 11:01:57</publishTime>
@@ -1088,7 +1088,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/21/2018 11:01:57</publishTime>
     </File>
     <File Include="Frontend/source/less/layouts/page-mega-navigation2.less">
-      <publishTime>05/06/2018 05:44:59</publishTime>
+      <publishTime>05/07/2018 22:43:25</publishTime>
     </File>
     <File Include="Frontend/source/less/layouts/page-top.less">
       <publishTime>05/04/2018 11:09:04</publishTime>
@@ -1106,10 +1106,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/19/2018 14:45:28</publishTime>
     </File>
     <File Include="Frontend/source/less/pages/homepage.less">
-      <publishTime>05/07/2018 13:41:16</publishTime>
+      <publishTime>05/07/2018 15:01:24</publishTime>
     </File>
     <File Include="Frontend/source/less/pages/press-room.less">
-      <publishTime>04/20/2018 11:15:32</publishTime>
+      <publishTime>05/07/2018 16:01:34</publishTime>
     </File>
     <File Include="Frontend/source/less/pages/product-detail-content.less">
       <publishTime>05/04/2018 16:11:43</publishTime>
@@ -1124,7 +1124,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/02/2018 14:40:48</publishTime>
     </File>
     <File Include="Frontend/source/less/pages/sfContentBlock.less">
-      <publishTime>05/07/2018 13:41:16</publishTime>
+      <publishTime>05/07/2018 22:43:25</publishTime>
     </File>
     <File Include="Frontend/source/less/pages/story.less">
       <publishTime>05/07/2018 13:41:16</publishTime>
@@ -1139,7 +1139,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/03/2018 20:45:17</publishTime>
     </File>
     <File Include="Html/demo-request.html">
-      <publishTime>05/04/2018 21:23:23</publishTime>
+      <publishTime>05/07/2018 17:20:25</publishTime>
+    </File>
+    <File Include="Html/product.html">
+      <publishTime>05/07/2018 19:23:11</publishTime>
     </File>
     <File Include="Mvc/Views/AboutTimeLine/List.AboutTimeLine.cshtml">
       <publishTime>05/04/2018 16:11:43</publishTime>
@@ -1154,25 +1157,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/04/2018 11:09:04</publishTime>
     </File>
     <File Include="Mvc/Views/Form/ContactForm.cshtml">
-      <publishTime>05/04/2018 20:39:08</publishTime>
+      <publishTime>05/07/2018 17:09:20</publishTime>
     </File>
     <File Include="Mvc/Views/Form/ContactFormDetail.cshtml">
-      <publishTime>04/26/2018 17:53:48</publishTime>
+      <publishTime>05/07/2018 16:40:45</publishTime>
     </File>
     <File Include="Mvc/Views/Form/DemoRequestForm.cshtml">
-      <publishTime>05/07/2018 11:44:25</publishTime>
+      <publishTime>05/07/2018 18:58:24</publishTime>
     </File>
     <File Include="Mvc/Views/Form/DemoRequestFormDetail.cshtml">
-      <publishTime>05/07/2018 11:44:50</publishTime>
+      <publishTime>05/07/2018 17:09:13</publishTime>
     </File>
     <File Include="Mvc/Views/Form/ProductSelectionWizard.cshtml">
-      <publishTime>04/27/2018 15:47:07</publishTime>
+      <publishTime>05/07/2018 19:38:04</publishTime>
     </File>
     <File Include="Mvc/Views/General/ProductProposal.cshtml">
-      <publishTime>05/07/2018 13:41:16</publishTime>
+      <publishTime>05/07/2018 22:43:25</publishTime>
     </File>
     <File Include="Mvc/Views/General/SiteMap.cshtml">
-      <publishTime>05/07/2018 11:54:00</publishTime>
+      <publishTime>05/07/2018 21:11:19</publishTime>
     </File>
     <File Include="Mvc/Views/HpBrands/List.Brands.cshtml">
       <publishTime>04/19/2018 14:45:28</publishTime>
@@ -1199,10 +1202,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/27/2018 15:47:07</publishTime>
     </File>
     <File Include="Mvc/Views/Navigation/NavigationView.Header.cshtml">
-      <publishTime>05/06/2018 05:44:59</publishTime>
+      <publishTime>05/07/2018 15:49:41</publishTime>
     </File>
     <File Include="Mvc/Views/Navigation/NavigationView.PageMenu.cshtml">
-      <publishTime>05/07/2018 13:37:45</publishTime>
+      <publishTime>05/07/2018 16:01:34</publishTime>
     </File>
     <File Include="Mvc/Views/News/Detail.News.cshtml">
       <publishTime>05/04/2018 11:09:04</publishTime>
@@ -1223,7 +1226,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/21/2018 13:45:03</publishTime>
     </File>
     <File Include="Mvc/Views/PPEsnaf/List.Esnaf.cshtml">
-      <publishTime>05/04/2018 21:39:32</publishTime>
+      <publishTime>05/07/2018 19:07:02</publishTime>
     </File>
     <File Include="Mvc/Views/PPEsnaf/List.ModelList.cshtml">
       <publishTime>05/04/2018 11:09:04</publishTime>
@@ -1241,7 +1244,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/03/2018 17:17:33</publishTime>
     </File>
     <File Include="Mvc/Views/PPKobiler/List.Kobiler.cshtml">
-      <publishTime>05/04/2018 11:09:04</publishTime>
+      <publishTime>05/07/2018 19:05:20</publishTime>
     </File>
     <File Include="Mvc/Views/PPKobiler/List.ModelList.cshtml">
       <publishTime>05/04/2018 21:39:32</publishTime>

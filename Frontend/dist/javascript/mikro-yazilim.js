@@ -5921,7 +5921,7 @@ var stickySidebar = function(element, stopper){
   }
 }
 
-function formSubmit(formId) {
+function formSubmit(formId,formPost=false) {
     //you code 
     var dt = $('#' + formId + '').serialize();
     $.ajax({
@@ -5930,8 +5930,12 @@ function formSubmit(formId) {
         data: dt,
         success: function (msg) {
             if (msg == true) {
-                window.location.href = "/tesekkurler";
-
+                if (formPost) {
+                    $("#" + formId).submit();
+                    return true;
+                } else {
+                    window.location.href = "/tesekkurler";
+                }
             } else {
                 $(".errorMessage").show();
                 $(".errorMessage").html("Teknik bir hata oluþtu daha sonra tekrar deneyiniz");

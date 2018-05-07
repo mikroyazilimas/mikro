@@ -3,7 +3,7 @@
 <div class="wizard">
     @using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post))
     { }
-    @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" }))
+    @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",id= "productForm" }))
     {
         <input type="hidden" id="00N0Y00000SJktR" maxlength="255" name="00N0Y00000SJktR" size="20" />
         <input type="hidden" id="00N0Y00000SJktb" maxlength="255" name="00N0Y00000SJktb" size="20" />
@@ -125,7 +125,7 @@
                                 Kişisel Veriler Bilgilendirme Metni'ni Kabul Ediyorum
                             </label>
                             
-                            <input type="submit" name="SaveButton" value="Gönder" />
+                            <input type="submit" name="SaveButton" value="Gönder"  onclick="formSubmit('productForm', true);" />
                         </div>
                     </div>
                 </div>

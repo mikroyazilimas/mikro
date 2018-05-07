@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 public struct Const
 {
-    public const string FormReturnUrl = "http://mikroyazilim.local/tesekkurler";
+    public const string FormReturnUrl = "http://mikroyazilim.phtools.net/tesekkurler";
 }
 
 public struct Names

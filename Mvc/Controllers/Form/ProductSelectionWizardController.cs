@@ -1,4 +1,5 @@
 ﻿using SitefinityWebApp.Library;
+using SitefinityWebApp.Library.Model;
 using SitefinityWebApp.Mvc.Models.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -102,7 +103,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
         {
             try
             {
-                if (!String.IsNullOrEmpty(Request["first_name"]) && !String.IsNullOrEmpty(Request["last_name"]) && !String.IsNullOrEmpty(Request["phone"]) && !String.IsNullOrEmpty(Request["00N0Y00000QeRBp"]) && !String.IsNullOrEmpty(Request["email"]))
+                if (!String.IsNullOrEmpty(Request["first_name"]) && !String.IsNullOrEmpty(Request["last_name"]) && !String.IsNullOrEmpty(Request["phone"]) && !String.IsNullOrEmpty(Request["email"]))
                 {
                     
                     string formId = Request["formId"];
@@ -123,6 +124,10 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                             fileHtml = "demo-request";
                             formTitle = "Demo Talep Formu";
                                 break;
+                        case "productForm":
+                            fileHtml = "product";
+                            formTitle = "Ürün Seçme Sihirbazı";
+                            break;
                         default:
                             fileHtml = "contact";
                             formTitle = "İletişim Formu";
@@ -146,6 +151,25 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     body = body.Replace("@@mesaj@@", message);
                     body = body.Replace("@@eposta@@", email);
                     body = body.Replace("@@urun@@", product);
+
+                    if (formId=="productForm")
+                    {
+                        SFProcess sf = new SFProcess();
+                        List<FormModel> fModel = new List<FormModel>();
+                        fModel=sf.GetProductForm();
+                        string pContent = "";
+                        if (fModel!=null && fModel.Count > 0)
+                        {
+                            foreach (var item in fModel)
+                            {
+                                pContent += item.LabelValue + " : " + Request.Form["" + item.InputName + ""] + "</br>";
+                            }
+                        }
+
+                        body = body.Replace("@@urunler@@", pContent);
+
+
+                    }
 
                     mail.Body = body;
                     mail.Subject = formTitle;

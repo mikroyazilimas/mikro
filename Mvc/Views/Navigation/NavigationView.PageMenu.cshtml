@@ -21,6 +21,17 @@
     { selectTab = ""; }
     <div class="@String.Format("page-right-menu-item{0}",selectTab)">
         <a href="@item.GetUrl().Replace("~","")">@item.Title</a>
+        @foreach (var item2 in t.GetMegaMenu(item.UrlName))
+        {
+            if (item2.UrlName == current.UrlName)
+            { selectTab = " select-tab"; }
+            else
+            { selectTab = ""; }
+            <div class="@String.Format("page-right-menu-item{0}",selectTab)">
+                <a href="@item2.GetUrl().Replace("~","")">@item2.Title</a>
+            </div>
+
+        }
     </div>
     
 }

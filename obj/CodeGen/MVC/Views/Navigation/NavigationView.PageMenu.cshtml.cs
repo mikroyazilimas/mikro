@@ -123,10 +123,73 @@ WriteLiteral(">");
             
             #line default
             #line hidden
-WriteLiteral("</a>\r\n    </div>\r\n");
+WriteLiteral("</a>\r\n");
 
             
-            #line 25 "..\..\MVC\Views\Navigation\NavigationView.PageMenu.cshtml"
+            #line 24 "..\..\MVC\Views\Navigation\NavigationView.PageMenu.cshtml"
+        
+            
+            #line default
+            #line hidden
+            
+            #line 24 "..\..\MVC\Views\Navigation\NavigationView.PageMenu.cshtml"
+         foreach (var item2 in t.GetMegaMenu(item.UrlName))
+        {
+            if (item2.UrlName == current.UrlName)
+            { selectTab = " select-tab"; }
+            else
+            { selectTab = ""; }
+
+            
+            #line default
+            #line hidden
+WriteLiteral("            <div");
+
+WriteAttribute("class", Tuple.Create(" class=\"", 993), Tuple.Create("\"", 1052)
+            
+            #line 30 "..\..\MVC\Views\Navigation\NavigationView.PageMenu.cshtml"
+, Tuple.Create(Tuple.Create("", 1001), Tuple.Create<System.Object, System.Int32>(String.Format("page-right-menu-item{0}",selectTab)
+            
+            #line default
+            #line hidden
+, 1001), false)
+);
+
+WriteLiteral(">\r\n                <a");
+
+WriteAttribute("href", Tuple.Create(" href=\"", 1074), Tuple.Create("\"", 1112)
+            
+            #line 31 "..\..\MVC\Views\Navigation\NavigationView.PageMenu.cshtml"
+, Tuple.Create(Tuple.Create("", 1081), Tuple.Create<System.Object, System.Int32>(item2.GetUrl().Replace("~","")
+            
+            #line default
+            #line hidden
+, 1081), false)
+);
+
+WriteLiteral(">");
+
+            
+            #line 31 "..\..\MVC\Views\Navigation\NavigationView.PageMenu.cshtml"
+                                                     Write(item2.Title);
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</a>\r\n            </div>\r\n");
+
+            
+            #line 33 "..\..\MVC\Views\Navigation\NavigationView.PageMenu.cshtml"
+
+        }
+
+            
+            #line default
+            #line hidden
+WriteLiteral("    </div>\r\n");
+
+            
+            #line 36 "..\..\MVC\Views\Navigation\NavigationView.PageMenu.cshtml"
     
 }
 

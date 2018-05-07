@@ -235,6 +235,33 @@ $(function() {
             
         }
 
+
+    function formSubmit(formId, formPost = false) {
+        //you code 
+        var dt = $('#' + formId + '').serialize();
+        $.ajax({
+            type: 'POST',
+            url: '/urun-secme-sihirbazi/ContactSendMail?formId=' + formId,
+            data: dt,
+            success: function (msg) {
+                if (msg == true) {
+                    if (formPost) {
+                        $("#" + formId).submit();
+                        return true;
+                    } else {
+                        window.location.href = "/tesekkurler";
+                    }
+                } else {
+                    $(".errorMessage").show();
+                    $(".errorMessage").html("Teknik bir hata oluştu daha sonra tekrar deneyiniz");
+                    return false;
+                }
+            }
+        });
+        return false;
+        //return false;
+    }
+
         
         $(".page-header-tools__search > input").keypress(handleEnter);
 

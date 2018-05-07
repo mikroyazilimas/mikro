@@ -299,15 +299,7 @@ WriteLiteral(" id=\"00N0Y00000QeNmD\"");
 
 WriteLiteral(" name=\"00N0Y00000QeNmD\"");
 
-WriteAttribute("value", Tuple.Create(" value=\"", 12374), Tuple.Create("\"", 12396)
-            
-            #line 61 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                   , Tuple.Create(Tuple.Create("", 12382), Tuple.Create<System.Object, System.Int32>(Model.Product
-            
-            #line default
-            #line hidden
-, 12382), false)
-);
+WriteLiteral(" value=\"\"");
 
 WriteLiteral(">\r\n                            <input");
 
@@ -368,9 +360,8 @@ WriteLiteral("                                ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n                            </label>\r\n\r\n                            ");
-
-WriteLiteral("\r\n                            <label");
+WriteLiteral("\r\n                            </label>\r\n                                         " +
+"               \r\n                            <label");
 
 WriteLiteral(" for=\"\"");
 
@@ -379,7 +370,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                                ");
 
             
-            #line 77 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 74 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                            Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$", placeholder = "E-Postanız*" }));
 
             
@@ -394,18 +385,14 @@ WriteLiteral(">\r\n");
 WriteLiteral("                                ");
 
             
-            #line 80 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 77 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                            Write(Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", required = "required", placeholder = "Telefon Numaranız*", @class = "phones" }));
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n                            </label>\r\n                            ");
-
-WriteLiteral("\r\n                            ");
-
-WriteLiteral("\r\n                        </div>\r\n                        \r\n                     " +
-"   <div");
+WriteLiteral("\r\n                            </label>\r\n                            \r\n           " +
+"             </div>\r\n                        \r\n                        <div");
 
 WriteLiteral(" class=\"page-section-demo-request-open-right-form2\"");
 
@@ -416,28 +403,24 @@ WriteLiteral(" for=\"\"");
 WriteLiteral("> ");
 
             
-            #line 97 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 83 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                                       Write(Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp",  placeholder = "Mesajınız" }));
 
             
             #line default
             #line hidden
-WriteLiteral("</label>\r\n\r\n                            ");
-
-WriteLiteral("\r\n                        </div>\r\n                        <div");
+WriteLiteral("</label>\r\n\r\n                        </div>\r\n                        <div");
 
 WriteLiteral(" class=\"page-section-demo-request-open-right-checkbox\"");
 
-WriteLiteral(">\r\n                            ");
-
-WriteLiteral("\r\n                            <label");
+WriteLiteral(">\r\n                            <label");
 
 WriteLiteral(" for=\"Contract-demo\"");
 
 WriteLiteral(">");
 
             
-            #line 103 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 87 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                                                   Write(Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required" }));
 
             
@@ -453,9 +436,7 @@ WriteLiteral(">6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilg
 
 WriteLiteral(" class=\"page-section-demo-request-open-right-button\"");
 
-WriteLiteral(">\r\n                            ");
-
-WriteLiteral("\r\n                            <input");
+WriteLiteral(">\r\n                            <input");
 
 WriteLiteral(" type=\"submit\"");
 
@@ -468,7 +449,7 @@ WriteLiteral(" onclick=\"return formSubmit(\'demoForm\');\"");
 WriteLiteral("/>\r\n                        </div>\r\n                    </div>\r\n");
 
             
-            #line 110 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 93 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                 }
 
             

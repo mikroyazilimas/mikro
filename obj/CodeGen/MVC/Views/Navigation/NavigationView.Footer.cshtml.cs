@@ -60,7 +60,7 @@ WriteLiteral(" class=\"page-footer-text-menu\"");
 WriteLiteral(">\r\n            <!--<a href=\"/iletisim\">İletişim</a>\r\n                <a href=\"/il" +
 "etisim/bize-ulasin\">İletişime Geç</a>-->\r\n            <a");
 
-WriteLiteral(" href=\"#\"");
+WriteLiteral(" href=\"/site-haritasi\"");
 
 WriteLiteral(">Site Haritası</a>\r\n        </div>\r\n        <div");
 
@@ -74,7 +74,9 @@ WriteLiteral(" target=\"_blank\"");
 
 WriteLiteral(">Forum</a>\r\n            <a");
 
-WriteLiteral(" href=\"#\"");
+WriteLiteral(" href=\"http://blog.mikro.com.tr\"");
+
+WriteLiteral(" target=\"_blank\"");
 
 WriteLiteral(">Blog</a>\r\n            <a");
 

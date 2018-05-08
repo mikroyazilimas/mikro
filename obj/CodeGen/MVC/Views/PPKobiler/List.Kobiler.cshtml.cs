@@ -174,7 +174,7 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-jump/\"");
 
 WriteLiteral("><img");
 
-WriteLiteral(" src=\"/Frontend/dist/images/jump-big-banner.png\"");
+WriteLiteral(" src=\"/Frontend/dist/images/products/jump-banner.png\"");
 
 WriteLiteral(" alt=\"\"");
 

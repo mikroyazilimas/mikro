@@ -176,8 +176,8 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run/\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2621), Tuple.Create("\"", 2668)
-, Tuple.Create(Tuple.Create("", 2627), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/run-big-banner.png")
+WriteAttribute("src", Tuple.Create(" src=\"", 2621), Tuple.Create("\"", 2673)
+, Tuple.Create(Tuple.Create("", 2627), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/run-banner.png")
 , 2627), false)
 );
 

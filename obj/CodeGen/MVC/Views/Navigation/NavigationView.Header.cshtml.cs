@@ -309,7 +309,7 @@ WriteLiteral(" href=\"#\"");
 
 WriteLiteral(" class=\"page-mega-navigation-content-section__grouptitle\"");
 
-WriteLiteral("><span>Ürünler ve <br>Hizmetler</span></a>\r\n");
+WriteLiteral("><span>Ürünler ve Hizmetler</span></a>\r\n");
 
 WriteLiteral("            ");
 

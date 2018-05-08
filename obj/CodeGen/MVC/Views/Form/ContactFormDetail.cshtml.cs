@@ -48,7 +48,7 @@ WriteLiteral("\r\n");
             #line hidden
             
             #line 6 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
- using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" }))
+ using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", id= "contactDetailForm" }))
 {
 
             
@@ -424,7 +424,9 @@ WriteLiteral(" name=\"SaveButton\"");
 
 WriteLiteral(" value=\"Gönder\"");
 
-WriteLiteral(" />\r\n                    ");
+WriteLiteral(" onclick=\"return formSubmit(\'contactDetailForm\');\"");
+
+WriteLiteral("/>\r\n                    ");
 
 WriteLiteral("\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <di" +
 "v");

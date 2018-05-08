@@ -69,14 +69,18 @@ WriteLiteral("            <div");
 
 WriteLiteral(" class=\"product-proposal-image\"");
 
-WriteLiteral(">\r\n                <img");
+WriteLiteral(">\r\n                <a");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 366), Tuple.Create("\"", 413)
-, Tuple.Create(Tuple.Create("", 372), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/run-big-banner.png")
-, 372), false)
+WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run\"");
+
+WriteLiteral("><img");
+
+WriteAttribute("src", Tuple.Create(" src=\"", 408), Tuple.Create("\"", 455)
+, Tuple.Create(Tuple.Create("", 414), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/run-big-banner.png")
+, 414), false)
 );
 
-WriteLiteral(" />\r\n            </div>\r\n");
+WriteLiteral(" /></a>\r\n            </div>\r\n");
 
             
             #line 13 "..\..\MVC\Views\General\ProductProposal.cshtml"
@@ -91,14 +95,18 @@ WriteLiteral("            <div");
 
 WriteLiteral(" class=\"product-proposal-image\"");
 
-WriteLiteral(">\r\n                <img");
+WriteLiteral(">\r\n                <a");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 584), Tuple.Create("\"", 632)
-, Tuple.Create(Tuple.Create("", 590), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/jump-big-banner.png")
-, 590), false)
+WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-jump\"");
+
+WriteLiteral("><img");
+
+WriteAttribute("src", Tuple.Create(" src=\"", 673), Tuple.Create("\"", 721)
+, Tuple.Create(Tuple.Create("", 679), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/jump-big-banner.png")
+, 679), false)
 );
 
-WriteLiteral(" />\r\n            </div>\r\n");
+WriteLiteral(" /></a>\r\n            </div>\r\n");
 
             
             #line 19 "..\..\MVC\Views\General\ProductProposal.cshtml"
@@ -113,14 +121,18 @@ WriteLiteral("            <div");
 
 WriteLiteral(" class=\"product-proposal-image\"");
 
-WriteLiteral(">\r\n                <img");
+WriteLiteral(">\r\n                <a");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 811), Tuple.Create("\"", 858)
-, Tuple.Create(Tuple.Create("", 817), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/fly-big-banner.png")
-, 817), false)
+WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-fly\"");
+
+WriteLiteral("><img");
+
+WriteAttribute("src", Tuple.Create(" src=\"", 946), Tuple.Create("\"", 993)
+, Tuple.Create(Tuple.Create("", 952), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/fly-big-banner.png")
+, 952), false)
 );
 
-WriteLiteral(" />\r\n            </div>\r\n");
+WriteLiteral(" /></a>\r\n            </div>\r\n");
 
             
             #line 25 "..\..\MVC\Views\General\ProductProposal.cshtml"

@@ -386,7 +386,18 @@ WriteLiteral("                                ");
 
             
             #line 77 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                           Write(Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", required = "required", placeholder = "Telefon Numaranız*", @class = "phones" }));
+                           Write(Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" }));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\r\n");
+
+WriteLiteral("                                ");
+
+            
+            #line 78 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+                           Write(Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", required = "required", placeholder = "Telefon Numaranız*", @class = "phones" }));
 
             
             #line default
@@ -403,7 +414,7 @@ WriteLiteral(" for=\"\"");
 WriteLiteral("> ");
 
             
-            #line 83 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 84 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                                       Write(Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp",  placeholder = "Mesajınız" }));
 
             
@@ -420,7 +431,7 @@ WriteLiteral(" for=\"Contract-demo\"");
 WriteLiteral(">");
 
             
-            #line 87 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 88 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                                                   Write(Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required" }));
 
             
@@ -449,7 +460,7 @@ WriteLiteral(" onclick=\"return formSubmit(\'demoForm\');\"");
 WriteLiteral("/>\r\n                        </div>\r\n                    </div>\r\n");
 
             
-            #line 93 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 94 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                 }
 
             

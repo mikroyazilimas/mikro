@@ -153,8 +153,8 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-fly/\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2190), Tuple.Create("\"", 2237)
-, Tuple.Create(Tuple.Create("", 2196), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/fly-big-banner.png")
+WriteAttribute("src", Tuple.Create(" src=\"", 2190), Tuple.Create("\"", 2242)
+, Tuple.Create(Tuple.Create("", 2196), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/fly-banner.png")
 , 2196), false)
 );
 

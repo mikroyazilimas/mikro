@@ -2,11 +2,21 @@
     padding: 30px;
     display: flex;
     min-height: 500px;
+    @media @responsive{
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
     &-section{
         width: calc(100% / 5);
         height: 300px;
         display: flex;
         flex-direction: column;
+        @media @responsive{
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
         a{
             text-decoration: none;
             color: @dark_blue;
@@ -25,20 +35,34 @@
                 border: 2px solid #e74c3c;
                 bottom: -20px;
                 left: 0;
+                @media @responsive{
+                    left: 150px;
+                }
+            }
+            @media @responsive{
+                font-size: 28px;
             }
         }
         &-maintitle{
+            margin-bottom: 10px;
             >a{
             font-size: 16px;
             font-weight: 400;
-            line-height: 29px;
+            
             color: @dark_blue;
+            @media @responsive{
+                font-size: 20px;
+            }
             }
         }
         &-subtitle{
             font-size: 14px;
             font-weight: 400;
             margin-left: 10px;
+            @media @responsive{
+                font-size: 16px;
+                margin-bottom: 3px;
+            }
         }
     }
 }

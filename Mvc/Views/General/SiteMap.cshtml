@@ -22,11 +22,11 @@ List<PageNode>
 
     foreach (var item in pageNodes)
     {
-    <a href="@item.GetUrl().Replace(" ~","")" class="sitemap-section-maintitle">@item.Title</a>
+    <span class="sitemap-section-maintitle"><a href="@item.GetUrl().Replace(" ~","")">@item.Title</a></span>
 
     foreach (var itemNode in tt.GetMegaMenu(item.UrlName))
     {
-    <a href="@itemNode.GetUrl().Replace(" ~","")" class="sitemap-section-subtitle">@itemNode.Title</a>
+    <span class="sitemap-section-subtitle"><a href="@itemNode.GetUrl().Replace(" ~","")">@itemNode.Title</a></span>
     }
 
     }
@@ -34,21 +34,28 @@ List<PageNode>
     }
 }
 
-<div class="sitemap">
-    <div class="sitemap-section">
-        <a href="#" class="sitemap-section-grouptitle">Kurumsal</a>
-        @GetMegaMenu("kurumsal")
+    <div class="sitemap">
+        <div class="sitemap-section">
+            <span class="sitemap-section-grouptitle"><a href="">Kurumsal</a></span>
+            @GetMegaMenu("kurumsal")
+        </div>
+        <div class="sitemap-section">
+            <span href="#" class="sitemap-section-grouptitle"><a href="">Ürünler ve Hizmetler</a></span>
+            @GetMegaMenu("urunler-ve-hizmetler")
+        </div>
+        <div class="sitemap-section">
+            <span href="#" class="sitemap-section-grouptitle"><a href="">E-Dönüşüm</a></span>
+            @GetMegaMenu("e-donusum")
+        </div>
+        <div class="sitemap-section">
+            <span class="sitemap-section-grouptitle"><a href="">Gizlilik <br />Bildirgesi</a></span>
+            <span class="sitemap-section-grouptitle"><a href="">Kullanım <br />Sözleşmesi</a></span>
+            <span class="sitemap-section-grouptitle"><a href="">Bilgi Güvenliği ve Çerez Politikası</a></span>
+        </div>
+        <div class="sitemap-section">
+            <span class="sitemap-section-grouptitle"><a href="">İletişim</a></span>
+            @GetMegaMenu("iletisim")
+            <span class="sitemap-section-grouptitle"><a href="">Forum Mikro</a></span>
+            <span class="sitemap-section-grouptitle"><a href="">Blog</a></span>
+        </div>
     </div>
-    <div class="sitemap-section">
-        <a href="#" class="sitemap-section-grouptitle"><span>Ürünler ve Hizmetler</span></a>
-        @GetMegaMenu("urunler-ve-hizmetler")
-    </div>
-    <div class="sitemap-section">
-        <a href="#" class="sitemap-section-grouptitle"><span>E-Dönüşüm</span></a>
-        @GetMegaMenu("e-donusum")
-    </div>
-    <div class="sitemap-section">
-        <a href="/iletisim" class="sitemap-section-grouptitle"><span>İletişim</span></a>
-        @GetMegaMenu("iletisim")
-    </div>
-</div>

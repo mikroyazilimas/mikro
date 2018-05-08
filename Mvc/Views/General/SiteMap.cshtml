@@ -1,40 +1,122 @@
-﻿
-@using Telerik.Sitefinity.Frontend.Navigation.Mvc.Models;
+﻿@using Telerik.Sitefinity.Frontend.Navigation.Mvc.Models;
+
 @using Telerik.Sitefinity.Pages.Model;
 @using Telerik.Sitefinity.Modules.Pages;
-@using Telerik.Sitefinity.Web;
 
-@{SitefinityWebApp.Library.ToolsSF t = new SitefinityWebApp.Library.ToolsSF();+
-
-    var manager = PageManager.GetManager();
-    PageManager pm = new PageManager();
-    PageSiteNode current = SiteMapBase.GetActualCurrentNode();
-    string selectTab = "";
+@{PageManager pm = new PageManager();
 }
 
-@foreach (var item in t.GetMegaMenu(current.ParentNode.Url))
+@{
+
+}
+
+@helper GetMegaMenu(string parentPageUrl)
 {
-    if (item.UrlName == current.UrlName)
-    { selectTab = " select-tab"; }
-    else
-    { selectTab = ""; }
-<div class="@String.Format(" page-right-menu-item{0}",selectTab)">
-    <a href="@item.GetUrl().Replace(" ~","")">@item.Title</a>
-    @foreach (var item2 in t.GetMegaMenu(item.UrlName))
+List<PageNode> pageNodes;
+if (parentPageUrl != "")
+{
+    SitefinityWebApp.Library.ToolsSF tt = new SitefinityWebApp.Library.ToolsSF();
+
+    pageNodes = Telerik.Sitefinity.App.WorkWith().Pages().Where(ii => ii.Parent != null && ii.ShowInNavigation == true && ii.Parent.UrlName == parentPageUrl).OrderBy(item => item.Ordinal).Get().ToList();
+
+    foreach (var item in pageNodes)
     {
-    if (item2.UrlName == current.UrlName)
-    { selectTab = " select-tab"; }
-    else
-    { selectTab = ""; }
-    <div class="@String.Format(" page-right-menu-item{0} {1}",selectTab,"menu-subtitle")">
-        <a href="@item2.GetUrl().Replace(" ~","")">@item2.Title</a>
-    </div>
+            <a href="@item.GetUrl().Replace("~","")" class="page-mega-navigation-content-section__maintitle"><span>@item.Title</span></a>
+
+        foreach (var itemNode in tt.GetMegaMenu(item.UrlName))
+        {
+                <a href="@itemNode.GetUrl().Replace("~","")" class="page-mega-navigation-content-section__subtitle"><span>@itemNode.Title</span></a>
+        }
 
     }
-</div>
 
 }
+}
 
+
+
+<div class="page-header fixed">
+    <div class="page-header-logo">
+        <a href="/">
+            <img src="~/Frontend/dist/images/logo.svg" alt="">
+        </a>
+    </div>
+    <div class="page-header-tools">
+        <select name="" id="">
+            <option value="">TR</option>
+            <!-- div span ul li hover-->
+        </select>
+        <div class="page-header-tools__search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Ara">
+        </div>
+        <div class="page-header-navigation">
+            <div class="page-header-navigation-item">
+                <div class="page-header-navigation-item__link">
+                    <a href="/urunler-ve-hizmetler/genel-bakis">Ürünler ve Hizmetler</a>
+                    <a href="/e-donusum/e-fatura">E-Dönüşüm</a>
+                    <a href="https://mikrox.com.tr" target="_blank">MikroX</a>
+                    <!--<a href="#">Referanslar</a>-->
+                </div>
+
+                <div class="page-header-navigation-item__menu">
+                    <a href="javascript:void(0)">
+                        <span class="spanx">Menü </span>
+                </div>
+
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- MEGA MENU -->
+<div class="page-mega-navigation">
+    <div class="page-mega-navigation-content">
+
+        <div class="page-mega-navigation-content-section">
+            <a href="#" class="page-mega-navigation-content-section__grouptitle"><span>Kurumsal</span></a>
+            @GetMegaMenu("kurumsal")
+        </div>
+        <div class="page-mega-navigation-content-section">
+            <a href="#" class="page-mega-navigation-content-section__grouptitle"><span>Ürünler ve <br>Hizmetler</span></a>
+            @GetMegaMenu("urunler-ve-hizmetler")
+        </div>
+        <div class="page-mega-navigation-content-section">
+            <a href="#" class="page-mega-navigation-content-section__grouptitle"><span>E-Dönüşüm</span></a>
+            @GetMegaMenu("e-donusum")
+        </div>
+        <div class="page-mega-navigation-content-section">
+            <a href="/iletisim" class="page-mega-navigation-content-section__grouptitle"><span>İletişim</span></a>
+            @GetMegaMenu("iletisim")
+        </div>
+        @*<div class="page-mega-navigation-content-section">
+                <a href="#" class="page-mega-navigation-content-section__grouptitle"><span>İş Ortakları</span></a>
+                @GetMegaMenu("is-ortaklari")
+            </div>*@
+        @*<div class="page-mega-navigation-content-section">
+                <a href="/mikrox" class="page-mega-navigation-content-section__grouptitle"><span>Mikrox</span></a>
+                @GetMegaMenu("mikrox")
+            </div>*@
+    </div>
+    <div class="page-mega-navigation-social">
+        <div class="page-mega-navigation-social-text">
+            <a href="http://forum.mikro.com.tr" target="_blank">Forum Mikro</a>
+            <a href="http://blog.mikro.com.tr" target="_blank">Blog</a>
+            <a href="/gizlilik-bildirgesi">Gizlilik Bildirgesi</a>
+            <a href="/kullanim-sozlesmesi">Kullanım Sözleşmesi</a>
+            <a href="/bilgi-guvenligi-ve-cerez-politikasi">Bilgi Güvenliği ve Çerez Politikası</a>
+        </div>
+        <div class="page-mega-navigation-social-icons">
+            <a href="https://www.facebook.com/mikroyazilimas" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/mikroyazilimas" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/2955583/?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2955583%2Cidx%3A1-1-1%2CtarId%3A1445523595929%2Ctas%3AMikro%20Y" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCWSwAVu6dwATfiTAo6KYAvg" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+<!-- ///// -->
 
 <div class="sitemap">
     <div class="sitemap-section">

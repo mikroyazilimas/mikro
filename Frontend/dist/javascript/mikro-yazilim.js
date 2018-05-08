@@ -6135,7 +6135,7 @@ $(function() {
                 e.preventDefault();
                 // enter pressed
                 var searchKeyWord = $(".page-header-tools__search > input").val();
-                window.location = "arama?indexCatalogue=arama&wordsMode=0&searchQuery=" + searchKeyWord;
+                window.location = "/arama?indexCatalogue=arama&wordsMode=0&searchQuery=" + searchKeyWord;
             }
 
             

@@ -469,7 +469,7 @@ function formSubmit(formId, formPost = false) {
 
     $.ajax({
         type: 'POST',
-        url: '/urun-secme-sihirbazi/ContactSendMail?formId=' + formId,
+        url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
         data: dt,
         success: function (msg) {
             if (msg == true) {

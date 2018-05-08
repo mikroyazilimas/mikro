@@ -3,8 +3,12 @@
 <div class="wizard">
     @using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post))
     { }
-    @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",id= "productForm" }))
+    @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", id = "productForm" }))
     {
+        <input type=hidden name="oid" value="00D0Y0000035HER">
+        <input type="hidden" id="00N0Y00000RBugB" name="00N0Y00000RBugB" value="Pre-sales channel">
+        <input type="hidden" id="00N0Y00000RE6zR" name="00N0Y00000RE6zR" />
+        <input type="hidden" name="UrunAdi" value="" id="urun">
         <input type="hidden" id="00N0Y00000SJktR" maxlength="255" name="00N0Y00000SJktR" size="20" />
         <input type="hidden" id="00N0Y00000SJktb" maxlength="255" name="00N0Y00000SJktb" size="20" />
         <input type="hidden" id="00N0Y00000SJktl" maxlength="255" name="00N0Y00000SJktl" size="20" />
@@ -41,7 +45,7 @@
                         {
                             <div class="wizard-form-row @item.InputClass @String.Format(item.InputNotVisible? "wizardhide" : "")">
                                 <label>@item.LabelValue<span>@item.LabelValueShort</span></label>
-                                <select id="@item.InputName" name="@item.InputName" required="required">
+                                <select id="@item.InputName" name="@item.InputName" >
                                     <option value="">Seçiniz</option>
                                     @foreach (var dItem in item.DropDownItem)
                                     {

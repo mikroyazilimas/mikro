@@ -30,7 +30,8 @@
                     </div>
                     <div class="wizard-bottom-left-content-form-row">
                         <label for="">Telefon</label>
-                        @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", required = "required", placeholder = "Telefon Numaranız*", @class = "phones" })
+                        @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
+                        @Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", required = "required", placeholder = "Telefon Numaranız*", @class = "phones" })
                     </div>
                     <div class="wizard-bottom-left-content-form-row responsive-textarea">
                         <label for="">Mesajınız</label>

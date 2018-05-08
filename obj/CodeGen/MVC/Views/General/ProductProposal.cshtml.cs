@@ -65,25 +65,31 @@ WriteLiteral(">\r\n    <span>Doldurmuş olduğunuz bilgilere göre size aşağı
             
             #line default
             #line hidden
-WriteLiteral("            <div");
+WriteLiteral("    <div");
 
 WriteLiteral(" class=\"product-proposal-image\"");
 
-WriteLiteral(">\r\n                <a");
+WriteLiteral(">\r\n        <a");
 
 WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 408), Tuple.Create("\"", 455)
-, Tuple.Create(Tuple.Create("", 414), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/run-big-banner.png")
-, 414), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 392), Tuple.Create("\"", 439)
+, Tuple.Create(Tuple.Create("", 398), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/run-big-banner.png")
+, 398), false)
 );
 
-WriteLiteral(" /></a>\r\n            </div>\r\n");
+WriteLiteral(" /></a>\r\n        <a");
+
+WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run\"");
+
+WriteLiteral(" class=\"homepage-new-product-item-link\"");
+
+WriteLiteral(">Detay</a>\r\n    </div>\r\n");
 
             
-            #line 13 "..\..\MVC\Views\General\ProductProposal.cshtml"
+            #line 14 "..\..\MVC\Views\General\ProductProposal.cshtml"
         }
         else if (Model.Product == "6-50 Employees")
         {
@@ -91,25 +97,31 @@ WriteLiteral(" /></a>\r\n            </div>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("            <div");
+WriteLiteral("    <div");
 
 WriteLiteral(" class=\"product-proposal-image\"");
 
-WriteLiteral(">\r\n                <a");
+WriteLiteral(">\r\n        <a");
 
 WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-jump\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 673), Tuple.Create("\"", 721)
-, Tuple.Create(Tuple.Create("", 679), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/jump-big-banner.png")
-, 679), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 733), Tuple.Create("\"", 781)
+, Tuple.Create(Tuple.Create("", 739), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/jump-big-banner.png")
+, 739), false)
 );
 
-WriteLiteral(" /></a>\r\n            </div>\r\n");
+WriteLiteral(" /></a>\r\n        <a");
+
+WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-jump\"");
+
+WriteLiteral(" class=\"homepage-new-product-item-link\"");
+
+WriteLiteral(">Detay</a>\r\n    </div>\r\n");
 
             
-            #line 19 "..\..\MVC\Views\General\ProductProposal.cshtml"
+            #line 21 "..\..\MVC\Views\General\ProductProposal.cshtml"
         }
         else if (Model.Product == "More Than 51 Employees")
         {
@@ -117,25 +129,31 @@ WriteLiteral(" /></a>\r\n            </div>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("            <div");
+WriteLiteral("    <div");
 
 WriteLiteral(" class=\"product-proposal-image\"");
 
-WriteLiteral(">\r\n                <a");
+WriteLiteral(">\r\n        <a");
 
 WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-fly\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 946), Tuple.Create("\"", 993)
-, Tuple.Create(Tuple.Create("", 952), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/fly-big-banner.png")
-, 952), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 1083), Tuple.Create("\"", 1130)
+, Tuple.Create(Tuple.Create("", 1089), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/fly-big-banner.png")
+, 1089), false)
 );
 
-WriteLiteral(" /></a>\r\n            </div>\r\n");
+WriteLiteral(" /></a>\r\n        <a");
+
+WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-fly\"");
+
+WriteLiteral(" class=\"homepage-new-product-item-link\"");
+
+WriteLiteral(">Detay</a>\r\n    </div>\r\n");
 
             
-            #line 25 "..\..\MVC\Views\General\ProductProposal.cshtml"
+            #line 28 "..\..\MVC\Views\General\ProductProposal.cshtml"
         }
     
             
@@ -144,7 +162,7 @@ WriteLiteral(" /></a>\r\n            </div>\r\n");
 WriteLiteral("\r\n</div>\r\n");
 
             
-            #line 28 "..\..\MVC\Views\General\ProductProposal.cshtml"
+            #line 31 "..\..\MVC\Views\General\ProductProposal.cshtml"
 }
 
             

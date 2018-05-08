@@ -124,10 +124,11 @@ WriteLiteral(">\r\n                </div>\r\n                <div");
 WriteLiteral(" class=\"popup-content-right__description\"");
 
 WriteLiteral(@">
-                    <p>Sektör bağımsız çalışıyorsanız, birden fazla lokasyonda ya da sektörde faaliyet gösteriyorsanız, uçtan uca tüm ticari işlemlerinizi bir çatı altında toplamak istiyorsanız Mikro Jump tam size göre!</p>
+                    <p>Büyük Bir işletmeye sahipseniz ama en büyük olmak istiyorsunuz, rekabetin dışında kalmak değil, önünde yer almak istiyorsanız Mikro FLY tam size göre! Mikro FLY ile grup içindeki tüm şirketlerinizi tek yönetimde birleştirebilir, tedarikçinizden müşterilerinize kadar uzanan bütünleşik bir yapı kurabilirsiniz. </p>
                     <ul>
-                        <li>Genişletilebilir modüler yapı</li>
-                        <li>Sektörel çözüm seçenekleri </li>
+                        <li>Limitsiz Kullanıcı Arttırımı</li>
+                        <li>En Geniş Fonksiyonalite</li>
+                        <li>Tüm İş Süreçlerinin Otomasyonu</li>
                         <li>Çoklu Dil Desteği</li>
                     </ul>
                 </div>
@@ -141,7 +142,8 @@ WriteLiteral(">\r\n            <a");
 
 WriteLiteral(" href=\"/iletisim/bize-ulasin\"");
 
-WriteLiteral(">Demo Talep Formu</a>\r\n        </div>\r\n        <div");
+WriteLiteral(">Şirketinize ücretsiz demo sunumu için formu doldurun.</a>\r\n        </div>\r\n     " +
+"   <div");
 
 WriteLiteral(" class=\"close-popup\"");
 
@@ -156,13 +158,13 @@ WriteLiteral(" class=\"detail-product-content\"");
 WriteLiteral(">\r\n\r\n");
 
             
-            #line 58 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 59 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
             
             
             #line default
             #line hidden
             
-            #line 58 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 59 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
              if (pField.MainPhoto != null)
             {
                 foreach (var pht in pField.MainPhoto)
@@ -177,14 +179,14 @@ WriteLiteral(" class=\"detail-product-content__img\"");
 
 WriteLiteral(">\r\n                        <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2383), Tuple.Create("\"", 2409)
+WriteAttribute("src", Tuple.Create(" src=\"", 2594), Tuple.Create("\"", 2620)
             
-            #line 63 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 2389), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
+            #line 64 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+, Tuple.Create(Tuple.Create("", 2600), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
             
             #line default
             #line hidden
-, 2389), false)
+, 2600), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -192,7 +194,7 @@ WriteLiteral(" alt=\"\"");
 WriteLiteral(">\r\n                    </div>\r\n");
 
             
-            #line 65 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 66 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
                 }
 
             }
@@ -213,7 +215,7 @@ WriteLiteral(">\r\n                    <p>\r\n");
 WriteLiteral("                        ");
 
             
-            #line 73 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 74 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
                    Write(Html.Raw(pField.Detail));
 
             
@@ -261,13 +263,13 @@ WriteLiteral(" class=\"detail-product-description-left\"");
 WriteLiteral(">\r\n");
 
             
-            #line 88 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 89 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
             
             
             #line default
             #line hidden
             
-            #line 88 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 89 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
              if (pField.ProductProperties != null)
             {
                 foreach (var pItem in pField.ProductProperties)
@@ -287,7 +289,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n\r\n                            <div>\r\n                                <span>");
 
             
-            #line 96 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 97 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
                                  Write(pItem.Fields.PropertyName);
 
             
@@ -301,7 +303,7 @@ WriteLiteral(" class=\"products-container-content-right-item__text\"");
 WriteLiteral(">\r\n                            <p>");
 
             
-            #line 102 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 103 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
                           Write(Html.Raw(pItem.Fields.Detailinfo));
 
             
@@ -310,7 +312,7 @@ WriteLiteral(">\r\n                            <p>");
 WriteLiteral("</p>\r\n                        </div>\r\n                    </div>\r\n");
 
             
-            #line 105 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 106 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
                 }
             }
 
@@ -324,13 +326,13 @@ WriteLiteral(" class=\"detail-product-description-right\"");
 WriteLiteral(">\r\n");
 
             
-            #line 110 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 111 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
             
             
             #line default
             #line hidden
             
-            #line 110 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 111 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
              if (pField.ChartPhoto != null)
             {
                 foreach (var photo in pField.ChartPhoto)
@@ -345,14 +347,14 @@ WriteLiteral(" class=\"detail-product-description-right-content\"");
 
 WriteLiteral(">\r\n                        <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 4477), Tuple.Create("\"", 4505)
+WriteAttribute("src", Tuple.Create(" src=\"", 4688), Tuple.Create("\"", 4716)
             
-            #line 115 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 4483), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+            #line 116 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+, Tuple.Create(Tuple.Create("", 4694), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 4483), false)
+, 4694), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -360,7 +362,7 @@ WriteLiteral(" alt=\"\"");
 WriteLiteral(">\r\n                    </div>\r\n");
 
             
-            #line 117 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 118 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
                 }
             }
 
@@ -374,13 +376,13 @@ WriteLiteral(" class=\"management-services modules-owl-carousel owl-carousel\"")
 WriteLiteral(">\r\n\r\n");
 
             
-            #line 125 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 126 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 125 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 126 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
          foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
 
@@ -393,14 +395,14 @@ WriteLiteral(" class=\"management-services-item\"");
 
 WriteLiteral(">\r\n\r\n                <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 4855), Tuple.Create("\"", 4957)
+WriteAttribute("href", Tuple.Create(" href=\"", 5066), Tuple.Create("\"", 5168)
             
-            #line 129 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 4862), Tuple.Create<System.Object, System.Int32>(item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-fly/")
+            #line 130 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+, Tuple.Create(Tuple.Create("", 5073), Tuple.Create<System.Object, System.Int32>(item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-fly/")
             
             #line default
             #line hidden
-, 4862), false)
+, 5073), false)
 );
 
 WriteLiteral(">\r\n                    <div");
@@ -410,13 +412,13 @@ WriteLiteral(" class=\"management-services-item__img\"");
 WriteLiteral(">\r\n");
 
             
-            #line 131 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 132 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
                         
             
             #line default
             #line hidden
             
-            #line 131 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 132 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
                          if (item.Fields.IconImage != null)
                         {
                             foreach (var photo in item.Fields.IconImage)
@@ -427,14 +429,14 @@ WriteLiteral(">\r\n");
             #line hidden
 WriteLiteral("                                <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 5255), Tuple.Create("\"", 5283)
+WriteAttribute("src", Tuple.Create(" src=\"", 5466), Tuple.Create("\"", 5494)
             
-            #line 135 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 5261), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+            #line 136 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+, Tuple.Create(Tuple.Create("", 5472), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 5261), false)
+, 5472), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -442,7 +444,7 @@ WriteLiteral(" alt=\"\"");
 WriteLiteral(">\r\n");
 
             
-            #line 136 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 137 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
                             }
                         }
 
@@ -456,7 +458,7 @@ WriteLiteral(" class=\"management-services-item__title\"");
 WriteLiteral(">\r\n                        <span>");
 
             
-            #line 141 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 142 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
                          Write(item.Fields.Title);
 
             
@@ -465,7 +467,7 @@ WriteLiteral(">\r\n                        <span>");
 WriteLiteral("</span>\r\n                    </div>\r\n                </a>\r\n            </div>\r\n");
 
             
-            #line 145 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
+            #line 146 "..\..\MVC\Views\PPBuyukIsletmeler\List.ModelList.cshtml"
         }
 
             

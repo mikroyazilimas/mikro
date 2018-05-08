@@ -6322,17 +6322,20 @@ function formSubmit(formId, formPost = false) {
    
     //you code 
     var dt = $('#' + formId + '').serialize();
-    
+
     var values = {};
+    
     $.each($('#' + formId + '').serializeArray(), function (i, field) {
         values[field.name] = field.value;
     });
+    
     var getValue = function (valueName) {
         return values[valueName];
     };
+
     var stringPhone = getValue("_phone");
     var phoneReplace = stringPhone.replace("(", "").replace(")", "").replace(" ", "").replace(" ", "").replace(" ", "");
-    $('.normal_phone').val(phoneReplace);
+    $('.normal_phone').val('0' + phoneReplace);
 
     this.on("invalid", function (e) {
         e.preventDefault();

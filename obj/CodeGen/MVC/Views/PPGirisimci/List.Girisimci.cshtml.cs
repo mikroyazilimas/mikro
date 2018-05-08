@@ -133,11 +133,12 @@ WriteLiteral(">\r\n                </div>\r\n                <div");
 WriteLiteral(" class=\"popup-content-right__description\"");
 
 WriteLiteral(@">
-                    <p>Sektör bağımsız çalışıyorsanız, birden fazla lokasyonda ya da sektörde faaliyet gösteriyorsanız, uçtan uca tüm ticari işlemlerinizi bir çatı altında toplamak istiyorsanız Mikro Jump tam size göre!</p>
+                    <p>Esnaf veya serbest meslek sahibiyseniz ya da küçük bir işletmeniz varsa, Mikro Run tam size göre! Günlük koşuşturmalarınız arasında, bir de kağıda deftere yazmakla ödemeleri ve tahsilatları kontrol etmekle uğraşmayın. Bırakın, Mikro Run tüm bu işleri sizin için halletsin. </p>
                     <ul>
-                        <li>Genişletilebilir modüler yapı</li>
-                        <li>Sektörel çözüm seçenekleri </li>
-                        <li>Çoklu Dil Desteği</li>
+                        <li>Tek Kullanıcı</li>
+                        <li>Kullanıma Hazır Şirket Veri Tabanı</li>
+                        <li>Kolay Kullanım Arayüz</li>
+                        <li>İhtiyaç Kadar Fonksiyonalite</li>
                     </ul>
                 </div>
             </div>
@@ -176,9 +177,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run/\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2621), Tuple.Create("\"", 2673)
-, Tuple.Create(Tuple.Create("", 2627), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/run-banner.png")
-, 2627), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2756), Tuple.Create("\"", 2808)
+, Tuple.Create(Tuple.Create("", 2762), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/run-banner.png")
+, 2762), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -235,7 +236,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("            ");
 
             
-            #line 77 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 78 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
        Write(Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText));
 
             
@@ -244,13 +245,13 @@ WriteLiteral("            ");
 WriteLiteral("\r\n        </div>\r\n\r\n");
 
             
-            #line 80 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 81 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 80 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 81 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
          foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
 
@@ -268,7 +269,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n                    <span>");
 
             
-            #line 84 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 85 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
                      Write(item.Fields.Title);
 
             
@@ -283,7 +284,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 87 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 88 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
                Write(Html.Raw(item.Fields.ShortText));
 
             
@@ -292,7 +293,7 @@ WriteLiteral("                    ");
 WriteLiteral("\r\n                </div>\r\n            </div>\r\n");
 
             
-            #line 90 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 91 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
         }
 
             

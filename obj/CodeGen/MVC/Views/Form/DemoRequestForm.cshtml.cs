@@ -86,7 +86,7 @@ WriteLiteral(">\r\n                    <p");
 WriteLiteral(" style=\"display: block;\r\n    font-size: 15px;\r\n    margin-bottom: 20px;\"");
 
 WriteLiteral(@">
-                        Demo Talebi-İş Ortağımız size uygulamalı Mikro Yazılım programları sunumu yapacak. Programlarımızla tanışarak, işletmenizin ihtiyaçlarını en doğru şekilde karşılayacak ürünü tespit edebilirsiniz.
+                        İş Ortağımız size uygulamalı Mikro Yazılım programları sunumu yapacak. Programlarımızla tanışarak, işletmenizin ihtiyaçlarını en doğru şekilde karşılayacak ürünü tespit edebilirsiniz.
                     </p>
                     <div");
 

@@ -110,10 +110,11 @@ WriteLiteral(">\r\n                </div>\r\n                <div");
 WriteLiteral(" class=\"popup-content-right__description\"");
 
 WriteLiteral(@">
-                    <p>Sektör bağımsız çalışıyorsanız, birden fazla lokasyonda ya da sektörde faaliyet gösteriyorsanız, uçtan uca tüm ticari işlemlerinizi bir çatı altında toplamak istiyorsanız Mikro Jump tam size göre!</p>
+                    <p>Büyük Bir işletmeye sahipseniz ama en büyük olmak istiyorsunuz, rekabetin dışında kalmak değil, önünde yer almak istiyorsanız Mikro FLY tam size göre! Mikro FLY ile grup içindeki tüm şirketlerinizi tek yönetimde birleştirebilir, tedarikçinizden müşterilerinize kadar uzanan bütünleşik bir yapı kurabilirsiniz. </p>
                     <ul>
-                        <li>Genişletilebilir modüler yapı</li>
-                        <li>Sektörel çözüm seçenekleri </li>
+                        <li>Limitsiz Kullanıcı Arttırımı</li>
+                        <li>En Geniş Fonksiyonalite</li>
+                        <li>Tüm İş Süreçlerinin Otomasyonu</li>
                         <li>Çoklu Dil Desteği</li>
                     </ul>
                 </div>
@@ -127,7 +128,8 @@ WriteLiteral(">\r\n            <a");
 
 WriteLiteral(" href=\"/iletisim/bize-ulasin\"");
 
-WriteLiteral(">Demo Talep Formu</a>\r\n        </div>\r\n        <div");
+WriteLiteral(">\r\n                Şirketinize ücretsiz demo sunumu için\r\n                formu d" +
+"oldurun.\r\n            </a>\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"close-popup\"");
 
@@ -153,9 +155,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-fly/\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2190), Tuple.Create("\"", 2242)
-, Tuple.Create(Tuple.Create("", 2196), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/fly-banner.png")
-, 2196), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2450), Tuple.Create("\"", 2502)
+, Tuple.Create(Tuple.Create("", 2456), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/fly-banner.png")
+, 2456), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -212,7 +214,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("            ");
 
             
-            #line 70 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 74 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
        Write(Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText));
 
             
@@ -221,13 +223,13 @@ WriteLiteral("            ");
 WriteLiteral("\r\n        </div>\r\n\r\n");
 
             
-            #line 73 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 77 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 73 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 77 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
          foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
 
@@ -245,7 +247,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n                    <span>");
 
             
-            #line 77 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 81 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
                      Write(item.Fields.Title);
 
             
@@ -260,7 +262,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 80 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 84 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
                Write(Html.Raw(item.Fields.ShortText));
 
             
@@ -269,7 +271,7 @@ WriteLiteral("                    ");
 WriteLiteral("\r\n                </div>\r\n            </div>\r\n");
 
             
-            #line 83 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 87 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
         }
 
             

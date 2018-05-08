@@ -8,7 +8,10 @@
     <input type=hidden name="oid" value="00D0Y0000035HER">
     <input type="hidden" id="00N0Y00000RE6zR" name="00N0Y00000RE6zR" />
     <input type="hidden" id="00N0Y00000RBugB" name="00N0Y00000RBugB" value="Pre-sales channel">
-    @Html.HiddenFor(m => m.retURL, new { Value = Const.FormReturnUrl })
+    <input type="hidden" id="mesaj" name="00N0Y00000QeNcc" value="ContactUs" />
+
+
+   @Html.HiddenFor(m => m.retURL, new { Value = Const.FormReturnUrl })
 
     
  <div class="wizard-bottom contact-us-area">
@@ -34,7 +37,8 @@
                 </div>
                 <div class="wizard-bottom-left-content-form-row">
                     <label for="">Telefon</label>
-                    @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone",maxlenght="11", required = "required", placeholder = "Telefon Numaranız*", @class = "phones" })
+                    @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
+                    @Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", required = "required", placeholder = "Telefon Numaranız*", @class = "phones" })
                 </div>
                 <div class="wizard-bottom-left-content-form-row responsive-textarea">
                     <label for="">Mesajınız</label>

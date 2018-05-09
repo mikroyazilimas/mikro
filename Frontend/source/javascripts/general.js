@@ -260,33 +260,17 @@ $(function() {
                 // enter pressed
                 var searchKeyWord = $(".page-header-tools__search > input").val();
                 window.location = "/arama?indexCatalogue=arama&wordsMode=0&searchQuery=" + searchKeyWord;
-            }
-
-            
+            }   
         }
-
-
-    
-
-        
         $(".page-header-tools__search > input").keypress(handleEnter);
-
-
     // arama?indexCatalogue=arama&wordsMode=0&searchQuery=mikroyazilim
-
-
    // stickySidebar('.sticky-one', '.sticky-stopper-one')
    // stickySidebar('.sticky-two', '.sticky-stopper-two')
    // stickySidebar('.sticky-three', '.sticky-stopper-three')
    // stickySidebar('.sticky-four', '.sticky-stopper-four')
-
-
    /*$(function() {
     $('.phones').on('keydown', function(e){-1!==$.inArray(e.keyCode,[46,8,9,27,13,110,190])||(/65|67|86|88/.test(e.keyCode)&&(e.ctrlKey===true||e.metaKey===true))&&(!0===e.ctrlKey||!0===e.metaKey)||35<=e.keyCode&&40>=e.keyCode||(e.shiftKey||48>e.keyCode||57<e.keyCode)&&(96>e.keyCode||105<e.keyCode)&&e.preventDefault()});
 });*/
-
- 
-
 // $(window).scroll(function() {
 //         var scrollTop = $(window).scrollTop()
 //         var divOffset = parseInt($('.animatable').offset().top / 2)
@@ -439,11 +423,13 @@ $('.news').on('click', function() {
     console.log(e.type);
 });
 
+
+
 });
 
 
-function formSubmit(formId, formPost = false) {
-   
+function formSubmit(formId, formPost) {
+   formPost = false;
     //you code 
     var dt = $('#' + formId + '').serialize();
 

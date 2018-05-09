@@ -5,21 +5,21 @@
 <div class="product-proposal">
     <span>Doldurmuş olduğunuz bilgilere göre size aşağıdaki ürünleri öneriyoruz.</span>
     
-    @{if (Model.Product == "1-5 Employees")
+    @{if (Model.Product.IndexOf("1-5") != -1)
         {
     <div class="product-proposal-image">
         <a href="/urunler-ve-hizmetler/mikro-run"><img src="~/Frontend/dist/images/run-big-banner.png" /></a>
         <a href="/urunler-ve-hizmetler/mikro-run" class="homepage-new-product-item-link">Detay</a>
     </div>
         }
-        else if (Model.Product == "6-50 Employees")
+        else if (Model.Product.IndexOf("6-50") != -1)
         {
     <div class="product-proposal-image">
         <a href="/urunler-ve-hizmetler/mikro-jump"><img src="~/Frontend/dist/images/jump-big-banner.png" /></a>
         <a href="/urunler-ve-hizmetler/mikro-jump" class="homepage-new-product-item-link">Detay</a>
     </div>
         }
-        else if (Model.Product == "More Than 51 Employees")
+        else if (Model.Product.IndexOf("51") != -1)
         {
     <div class="product-proposal-image">
         <a href="/urunler-ve-hizmetler/mikro-fly"><img src="~/Frontend/dist/images/fly-big-banner.png" /></a>

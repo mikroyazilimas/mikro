@@ -52,122 +52,142 @@ WriteLiteral(">\r\n        <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content\"");
 
-WriteLiteral(">\r\n            <div");
+WriteLiteral(">\r\n            <a");
 
-WriteLiteral(" class=\"page-section-experience-right-content-item\"");
+WriteLiteral(" href=\"/kurumsal/hakkimizda\"");
 
 WriteLiteral(">\r\n                <div");
 
+WriteLiteral(" class=\"page-section-experience-right-content-item\"");
+
+WriteLiteral(">\r\n                    <div");
+
 WriteLiteral(" class=\"page-section-experience-right-content-item__img\"");
 
-WriteLiteral(">\r\n                    <img");
+WriteLiteral(">\r\n                        <img");
 
 WriteLiteral(" src=\"/frontend/dist/images/homepage/deneyim.svg\"");
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral(">\r\n                </div>\r\n                <div");
+WriteLiteral(">\r\n                    </div>\r\n                    <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other\"");
 
-WriteLiteral(">\r\n                    <div");
+WriteLiteral(">\r\n                        <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__title\"");
 
-WriteLiteral(">\r\n                        <div");
+WriteLiteral(">\r\n                            <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__title__first\"");
 
-WriteLiteral(">\r\n                            <span>30</span>\r\n                        </div>\r\n " +
-"                       <div");
+WriteLiteral(">\r\n                                <span>30</span>\r\n                            <" +
+"/div>\r\n                            <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__title__second\"");
 
-WriteLiteral(">\r\n                            <span>Yıllık Deneyim</span>\r\n                     " +
-"   </div>\r\n                    </div>\r\n                    <div");
+WriteLiteral(">\r\n                                <span>Yıllık Deneyim</span>\r\n                 " +
+"           </div>\r\n                        </div>\r\n                        <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__text\"");
 
-WriteLiteral(">\r\n                        <p>Mikro yaklaşık 30 yıldır, kurumların iş süreçlerine" +
-" değer katan çözümler üretmeye devam ediyor.</p>\r\n                    </div>\r\n  " +
-"              </div>\r\n            </div>\r\n            <div");
+WriteLiteral(">\r\n                            <p>Mikro yaklaşık 30 yıldır, kurumların iş süreçle" +
+"rine değer katan çözümler üretmeye devam ediyor.</p>\r\n                        </" +
+"div>\r\n                    </div>\r\n                </div>\r\n            </a>\r\n    " +
+"        <a");
 
-WriteLiteral(" class=\"page-section-experience-right-content-item\"");
+WriteLiteral(" href=\"/kurumsal/hakkimizda\"");
 
 WriteLiteral(">\r\n                <div");
 
+WriteLiteral(" class=\"page-section-experience-right-content-item\"");
+
+WriteLiteral(">\r\n                    <div");
+
 WriteLiteral(" class=\"page-section-experience-right-content-item__img\"");
 
-WriteLiteral(">\r\n                    <img");
+WriteLiteral(">\r\n                        <img");
 
 WriteLiteral(" src=\"/frontend/dist/images/homepage/musteri.svg\"");
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral(">\r\n                </div>\r\n                <div");
+WriteLiteral(">\r\n                    </div>\r\n                    <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other\"");
 
-WriteLiteral(">\r\n                    <div");
+WriteLiteral(">\r\n                        <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__title\"");
 
-WriteLiteral(">\r\n                        <div");
+WriteLiteral(">\r\n                            <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__title__first\"");
 
-WriteLiteral(">\r\n                            <span>105</span>\r\n                        </div>\r\n" +
-"                        <div");
+WriteLiteral(">\r\n                                <span>105</span>\r\n                            " +
+"</div>\r\n                            <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__title__second\"");
 
-WriteLiteral(">\r\n                            <span>Bin Müşteri</span>\r\n                        " +
-"</div>\r\n                    </div>\r\n                    <div");
+WriteLiteral(">\r\n                                <span>Bin Müşteri</span>\r\n                    " +
+"        </div>\r\n                        </div>\r\n                        <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__text\"");
 
-WriteLiteral(">\r\n                        <p>Mikro yaklaşık 30 yıldır, kurumların iş süreçlerine" +
-" değer katan çözümler üretmeye devam ediyor.</p>\r\n                    </div>\r\n  " +
-"              </div>\r\n            </div>\r\n            <div");
+WriteLiteral(">\r\n                            <p>Mikro yaklaşık 30 yıldır, kurumların iş süreçle" +
+"rine değer katan çözümler üretmeye devam ediyor.</p>\r\n                        </" +
+"div>\r\n                    </div>\r\n                </div>\r\n            </a>\r\n    " +
+"        <a");
 
-WriteLiteral(" class=\"page-section-experience-right-content-item\"");
+WriteLiteral(" href=\"/kurumsal/hakkimizda\"");
 
 WriteLiteral(">\r\n                <div");
 
+WriteLiteral(" class=\"page-section-experience-right-content-item\"");
+
+WriteLiteral(">\r\n                    <div");
+
 WriteLiteral(" class=\"page-section-experience-right-content-item__img\"");
 
-WriteLiteral(">\r\n                    <img");
+WriteLiteral(">\r\n                        <img");
 
 WriteLiteral(" src=\"/frontend/dist/images/homepage/ortaklik.svg\"");
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral(">\r\n                </div>\r\n                <div");
+WriteLiteral(">\r\n                    </div>\r\n                    <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other\"");
 
-WriteLiteral(">\r\n                    <div");
+WriteLiteral(">\r\n                        <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__title\"");
 
-WriteLiteral(">\r\n                        <div");
+WriteLiteral(">\r\n                            <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__title__first\"");
 
-WriteLiteral(">\r\n                            <span>300</span>\r\n                        </div>\r\n" +
-"                        <div");
+WriteLiteral(">\r\n                                <span>300</span>\r\n                            " +
+"</div>\r\n                            <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__title__second\"");
 
-WriteLiteral(">\r\n                            <span>İş Ortaklığı</span>\r\n                       " +
-" </div>\r\n                    </div>\r\n                    <div");
+WriteLiteral(">\r\n                                <span>İş Ortaklığı</span>\r\n                   " +
+"         </div>\r\n                        </div>\r\n                        <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__text\"");
 
-WriteLiteral(">\r\n                        <p>Mikro yaklaşık 30 yıldır, kurumların iş süreçlerine" +
-" değer katan çözümler üretmeye devam ediyor.</p>\r\n                    </div>\r\n  " +
-"              </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<!" +
-"-- ///// -->");
+WriteLiteral(@">
+                            <p>Mikro yaklaşık 30 yıldır, kurumların iş süreçlerine değer katan çözümler üretmeye devam ediyor.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- ///// -->");
 
         }
     }

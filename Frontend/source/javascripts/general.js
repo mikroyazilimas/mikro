@@ -423,11 +423,13 @@ $('.news').on('click', function() {
     console.log(e.type);
 });
 
+
+
 });
 
 
-function formSubmit(formId, formPost = false) {
-   
+function formSubmit(formId, formPost) {
+   formPost = false;
     //you code 
     var dt = $('#' + formId + '').serialize();
 

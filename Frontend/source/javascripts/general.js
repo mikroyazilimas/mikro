@@ -322,7 +322,7 @@ $('select').change(function(){
     
     if ($("#00N0Y00000QeNYu option:selected").attr('data-field') != null) {
 
-        $("#retURL").val("https://www.mikro.com/tesekkurler?product=" + $("#00N0Y00000QeNYu option:selected").val());        
+        $("#retURL").val("https://www.mikro.com.tr/tesekkurler?product=" + $("#00N0Y00000QeNYu option:selected").val());        
     }
     
 });

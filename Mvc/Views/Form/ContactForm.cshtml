@@ -8,6 +8,13 @@
     function contactFormSubmit(formId) {
         //you code 
         var dt = $('#' + formId + '').serialize();
+
+        this.on("invalid", function (e) {
+            e.preventDefault();
+            $(this).css('border-color', 'red');
+            console.log(e.type);
+        });
+        
         $.ajax({
             type: 'POST',
             url: '/urun-secme-sihirbazi/ContactSendMail?formId=' + formId,

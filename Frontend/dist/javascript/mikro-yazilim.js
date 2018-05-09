@@ -6198,7 +6198,7 @@ $('select').change(function(){
     
     if ($("#00N0Y00000QeNYu option:selected").attr('data-field') != null) {
 
-        $("#retURL").val("http://mikroyazilim.phtools.net/tesekkurler?product=" + $("#00N0Y00000QeNYu option:selected").val());        
+        $("#retURL").val("https://www.mikro.com.net/tesekkurler?product=" + $("#00N0Y00000QeNYu option:selected").val());        
     }
     
 });

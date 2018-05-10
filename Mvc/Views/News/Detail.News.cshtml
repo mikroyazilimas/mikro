@@ -20,14 +20,18 @@
 
 <div class="sfContentBlock">
     <p>@Html.Raw(Model.Item.Fields.Content)</p>
-</div>
 
-@if (Model.Item.Fields.Photos != null)
-{
-    foreach (var photo in Model.Item.Fields.Photos)
+    <div class="news-container">
+        @if (Model.Item.Fields.Photos != null)
     {
-        <div class="news">
-            <img src="@photo.Fields.MediaUrl" data-img="@photo.Fields.MediaUrl" alt="">
-        </div>
+
+        foreach (var photo in Model.Item.Fields.Photos)
+        {
+            <div class="news">
+                <img src="@photo.Fields.MediaUrl" data-img="@photo.Fields.MediaUrl" alt="">
+            </div>
     }
+
 }
+    </div>
+    </div>

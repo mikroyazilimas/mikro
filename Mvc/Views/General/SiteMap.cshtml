@@ -22,11 +22,11 @@ List<PageNode>
 
     foreach (var item in pageNodes)
     {
-    <span class="sitemap-section-maintitle"><a href="@item.GetUrl().Replace(" ~","")">@item.Title</a></span>
+    <span class="sitemap-section-maintitle"><a href="@item.GetUrl().Replace("~","")">@item.Title</a></span>
 
     foreach (var itemNode in tt.GetMegaMenu(item.UrlName))
     {
-    <span class="sitemap-section-subtitle"><a href="@itemNode.GetUrl().Replace(" ~","")">@itemNode.Title</a></span>
+    <span class="sitemap-section-subtitle"><a href="@itemNode.GetUrl().Replace("~","")">@itemNode.Title</a></span>
     }
 
     }

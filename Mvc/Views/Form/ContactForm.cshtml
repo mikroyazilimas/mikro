@@ -62,7 +62,7 @@
                 </label>
 
                 <label for="">
-                    @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" })
+                    @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required" , pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" })
                 </label>
                 <label for="">
                     @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", maxlength = "11", required = "required", placeholder = "Telefon Numaranız*", @class = "phones", type = "text" })
@@ -143,7 +143,7 @@
                 </label>
                 <div class="page-section-contact-container-area-left-form-button">
                     @*<a href="#" title="Gönder" class="page-section-contact-area-left-form-button__send">Gönder</a>*@
-                    <input class="hp_btn" type="submit" name="SaveButton" value="Gönder" onclick="return contactFormSubmit('contactForm');" />
+                    <input class="hp_btn" type="submit" name="SaveButton" value="Gönder" onclick="return contactFormSubmit('contactForm', 'Iletisim');" />
                 </div>
                 <div class="errorMessage"></div>
 

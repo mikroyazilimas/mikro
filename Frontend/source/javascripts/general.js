@@ -428,7 +428,7 @@ $('.news').on('click', function() {
 });
 
 
-function formSubmit(formId, formPost) {
+function formSubmit(formId, formPost, label) {
    formPost = false;
     //you code 
     var dt = $('#' + formId + '').serialize();
@@ -447,6 +447,13 @@ function formSubmit(formId, formPost) {
     var phoneReplace = stringPhone.replace("(", "").replace(")", "").replace(" ", "").replace(" ", "").replace(" ", "");
     $('.normal_phone').val('0' + phoneReplace);
 
+    dataLayer.push({
+        'Category': "form",
+        'Action': "gonder",
+        'Label': label,
+        'event':'gaEvent'
+    });
+    
     this.on("invalid", function (e) {
         e.preventDefault();
         $(this).css('border-color', 'red');

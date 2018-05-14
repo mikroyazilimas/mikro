@@ -9,10 +9,16 @@
         //you code 
         var dt = $('#' + formId + '').serialize();
 
+          dataLayer.push({
+                'Category': "form",
+                'Action': "gonder",
+                'Label': "anasayfa-iletisim-form",
+                'event':'gaEvent'
+            });
+
         this.on("invalid", function (e) {
             e.preventDefault();
             $(this).css('border-color', 'red');
-            console.log(e.type);
         });
         
         $.ajax({

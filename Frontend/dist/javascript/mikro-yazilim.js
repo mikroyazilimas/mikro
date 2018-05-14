@@ -6304,7 +6304,7 @@ $('.news').on('click', function() {
 });
 
 
-function formSubmit(formId, formPost, label) {
+function formSubmit(formId, formPost, dataLayerLabel) {
    formPost = false;
     //you code 
     var dt = $('#' + formId + '').serialize();
@@ -6326,14 +6326,13 @@ function formSubmit(formId, formPost, label) {
     dataLayer.push({
         'Category': "form",
         'Action': "gonder",
-        'Label': label,
+        'Label': dataLayerLabel,
         'event':'gaEvent'
     });
-    
+
     this.on("invalid", function (e) {
         e.preventDefault();
         $(this).css('border-color', 'red');
-        console.log(e.type);
     });
 
     $.ajax({

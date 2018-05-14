@@ -59,7 +59,7 @@ WriteLiteral(">\r\n    <span>Doldurmuş olduğunuz bilgilere göre size aşağı
             #line hidden
             
             #line 8 "..\..\MVC\Views\General\ProductProposal.cshtml"
-      if (Model.Product == "1-5 Employees")
+      if (Model.Product.IndexOf("1-5") != -1)
         {
 
             
@@ -75,9 +75,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 392), Tuple.Create("\"", 439)
-, Tuple.Create(Tuple.Create("", 398), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/run-big-banner.png")
-, 398), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 394), Tuple.Create("\"", 446)
+, Tuple.Create(Tuple.Create("", 400), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/run-banner.png")
+, 400), false)
 );
 
 WriteLiteral(" /></a>\r\n        <a");
@@ -91,7 +91,7 @@ WriteLiteral(">Detay</a>\r\n    </div>\r\n");
             
             #line 14 "..\..\MVC\Views\General\ProductProposal.cshtml"
         }
-        else if (Model.Product == "6-50 Employees")
+        else if (Model.Product.IndexOf("6-50") != -1)
         {
 
             
@@ -107,9 +107,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-jump\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 733), Tuple.Create("\"", 781)
-, Tuple.Create(Tuple.Create("", 739), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/jump-big-banner.png")
-, 739), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 742), Tuple.Create("\"", 795)
+, Tuple.Create(Tuple.Create("", 748), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/jump-banner.png")
+, 748), false)
 );
 
 WriteLiteral(" /></a>\r\n        <a");
@@ -123,7 +123,7 @@ WriteLiteral(">Detay</a>\r\n    </div>\r\n");
             
             #line 21 "..\..\MVC\Views\General\ProductProposal.cshtml"
         }
-        else if (Model.Product == "More Than 51 Employees")
+        else if (Model.Product.IndexOf("51") != -1)
         {
 
             
@@ -139,9 +139,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-fly\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 1083), Tuple.Create("\"", 1130)
-, Tuple.Create(Tuple.Create("", 1089), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/fly-big-banner.png")
-, 1089), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 1089), Tuple.Create("\"", 1141)
+, Tuple.Create(Tuple.Create("", 1095), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/fly-banner.png")
+, 1095), false)
 );
 
 WriteLiteral(" /></a>\r\n        <a");

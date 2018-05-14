@@ -82,7 +82,7 @@
                 <h3>
                     @if (hasLink)
                     {
-                        <a onclick="taniAction('@item.GetValue("Title")', '@item.GetValue("Link")')">@item.GetValue("Title")</a>
+                        <a href="@item.GetValue("Link")" onclick="taniAction('@item.GetValue("Title")', '@item.GetValue("Link")')">@item.GetValue("Title")</a>
                     }
                     else
                     {

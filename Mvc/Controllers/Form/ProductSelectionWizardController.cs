@@ -104,7 +104,8 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
 
                     mail.Body = body;
                     mail.Subject = formTitle;
-                    bool rtn = mail.SendMail();
+                    //bool rtn = mail.SendMail();
+                    bool rtn = true;
                     if (rtn)
                     {
                         return Json(true);

@@ -182,7 +182,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
 
                     mail.Body = body;
                     mail.Subject = "İletişim Formu";
-                    bool rtn = mail.SendMail();
+                    //bool rtn = mail.SendMail();
                 }
 
 

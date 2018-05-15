@@ -611,7 +611,7 @@ WriteLiteral(" name=\"SaveButton\"");
 
 WriteLiteral(" value=\"Gönder\"");
 
-WriteLiteral(" onclick=\"return contactFormSubmit(\'contactForm\', \'Iletisim\');\"");
+WriteLiteral(" onclick=\"return contactFormSubmit(\'contactForm\');\"");
 
 WriteLiteral(" />\r\n                </div>\r\n                <div");
 

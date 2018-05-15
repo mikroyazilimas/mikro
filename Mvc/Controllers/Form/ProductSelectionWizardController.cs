@@ -34,13 +34,13 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
         {
             try
             {
-                if (!String.IsNullOrEmpty(Request["first_name"]) && !String.IsNullOrEmpty(Request["last_name"]) && !String.IsNullOrEmpty(Request["phone"]) && !String.IsNullOrEmpty(Request["email"]))
+                if (!String.IsNullOrEmpty(Request["first_name"]) && !String.IsNullOrEmpty(Request["last_name"]) && !String.IsNullOrEmpty(Request["_phone"]) && !String.IsNullOrEmpty(Request["email"]))
                 {
 
                     string formId = Request["formId"];
                     string name = Request["first_name"];
                     string surname = Request["last_name"];
-                    string phone = Request["phone"];
+                    string phone = Request["_phone"];
                     string subject = Request["subject"];
                     string message = Request["00N0Y00000QeRBp"];
                     string email = Request["email"];
@@ -68,6 +68,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     MailHelper mail = new MailHelper();
 
                     mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr", "satis@mikro.com.tr", "Mert.ALANKAYA@mikro.com.tr" };
+                    //mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr","Mert.ALANKAYA@mikro.com.tr" };
                     mail.Bcc = new List<string>() { "aykut.saridede@ph.com.tr" };
                     mail.From = "no-reply@e-mail.mikro.com.tr";
                     mail.FromDisplayName = "Mikro";
@@ -104,8 +105,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
 
                     mail.Body = body;
                     mail.Subject = formTitle;
-                    //bool rtn = mail.SendMail();
-                    bool rtn = true;
+                    bool rtn = mail.SendMail();
                     if (rtn)
                     {
                         return Json(true);
@@ -183,7 +183,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
 
                     mail.Body = body;
                     mail.Subject = "İletişim Formu";
-                    //bool rtn = mail.SendMail();
+                    bool rtn = mail.SendMail();
                 }
 
 

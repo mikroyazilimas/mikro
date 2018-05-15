@@ -54,7 +54,7 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/genel-bakis\"");
 WriteLiteral("><img");
 
 WriteAttribute("src", Tuple.Create(" src=\"", 347), Tuple.Create("\"", 400)
-, Tuple.Create(Tuple.Create("", 353), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/demo-banner.png")
+, Tuple.Create(Tuple.Create("", 353), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/demo-banner.jpg")
 , 353), false)
 );
 
@@ -69,7 +69,7 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/genel-bakis\"");
 WriteLiteral("><img");
 
 WriteAttribute("src", Tuple.Create(" src=\"", 511), Tuple.Create("\"", 570)
-, Tuple.Create(Tuple.Create("", 517), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/demo-banner-mobil.png")
+, Tuple.Create(Tuple.Create("", 517), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/demo-banner-mobil.jpg")
 , 517), false)
 );
 

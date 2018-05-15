@@ -92,7 +92,7 @@ WriteLiteral(">440 TL + KDV/Yıl</span>\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__text\"");
 
-WriteLiteral(">Fiyatlarla Kiralayın.</span>\r\n            </div>\r\n        </div>\r\n        <div");
+WriteLiteral(">Başlayan Fiyatlarla</span>\r\n            </div>\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"popup-tabs\"");
 
@@ -201,14 +201,14 @@ WriteLiteral(" class=\"detail-product-content__img\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2923), Tuple.Create("\"", 2949)
+WriteAttribute("src", Tuple.Create(" src=\"", 2921), Tuple.Create("\"", 2947)
             
             #line 72 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 2929), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 2927), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
             
             #line default
             #line hidden
-, 2929), false)
+, 2927), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -368,14 +368,14 @@ WriteLiteral(" class=\"detail-product-description-right-content\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 4857), Tuple.Create("\"", 4885)
+WriteAttribute("src", Tuple.Create(" src=\"", 4855), Tuple.Create("\"", 4883)
             
             #line 123 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 4863), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 4861), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 4863), false)
+, 4861), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -416,14 +416,14 @@ WriteLiteral(" class=\"management-services-item\"");
 
 WriteLiteral(">\r\n            <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 5195), Tuple.Create("\"", 5297)
+WriteAttribute("href", Tuple.Create(" href=\"", 5193), Tuple.Create("\"", 5295)
             
             #line 137 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 5202), Tuple.Create<System.Object, System.Int32>(item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-run/")
+, Tuple.Create(Tuple.Create("", 5200), Tuple.Create<System.Object, System.Int32>(item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-run/")
             
             #line default
             #line hidden
-, 5202), false)
+, 5200), false)
 );
 
 WriteLiteral(">\r\n                <div");
@@ -450,14 +450,14 @@ WriteLiteral(">\r\n");
             #line hidden
 WriteLiteral("                            <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 5571), Tuple.Create("\"", 5599)
+WriteAttribute("src", Tuple.Create(" src=\"", 5569), Tuple.Create("\"", 5597)
             
             #line 143 "..\..\MVC\Views\PPGirisimci\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 5577), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 5575), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 5577), false)
+, 5575), false)
 );
 
 WriteLiteral(" alt=\"\"");

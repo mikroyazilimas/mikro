@@ -310,32 +310,42 @@ WriteLiteral(">\r\n\r\n                <h3>\r\n");
             #line hidden
 WriteLiteral("                        <a");
 
-WriteAttribute("onclick", Tuple.Create(" onclick=\"", 3328), Tuple.Create("\"", 3401)
-, Tuple.Create(Tuple.Create("", 3338), Tuple.Create("taniAction(\'", 3338), true)
+WriteAttribute("href", Tuple.Create(" href=\"", 3328), Tuple.Create("\"", 3357)
             
             #line 85 "..\..\MVC\Views\SearchResults\SearchResults.cshtml"
-, Tuple.Create(Tuple.Create("", 3350), Tuple.Create<System.Object, System.Int32>(item.GetValue("Title")
+, Tuple.Create(Tuple.Create("", 3335), Tuple.Create<System.Object, System.Int32>(item.GetValue("Link")
             
             #line default
             #line hidden
-, 3350), false)
-, Tuple.Create(Tuple.Create("", 3373), Tuple.Create("\',", 3373), true)
-, Tuple.Create(Tuple.Create(" ", 3375), Tuple.Create("\'", 3376), true)
+, 3335), false)
+);
+
+WriteAttribute("onclick", Tuple.Create(" onclick=\"", 3358), Tuple.Create("\"", 3431)
+, Tuple.Create(Tuple.Create("", 3368), Tuple.Create("taniAction(\'", 3368), true)
             
             #line 85 "..\..\MVC\Views\SearchResults\SearchResults.cshtml"
-, Tuple.Create(Tuple.Create("", 3377), Tuple.Create<System.Object, System.Int32>(item.GetValue("Link")
+, Tuple.Create(Tuple.Create("", 3380), Tuple.Create<System.Object, System.Int32>(item.GetValue("Title")
             
             #line default
             #line hidden
-, 3377), false)
-, Tuple.Create(Tuple.Create("", 3399), Tuple.Create("\')", 3399), true)
+, 3380), false)
+, Tuple.Create(Tuple.Create("", 3403), Tuple.Create("\',", 3403), true)
+, Tuple.Create(Tuple.Create(" ", 3405), Tuple.Create("\'", 3406), true)
+            
+            #line 85 "..\..\MVC\Views\SearchResults\SearchResults.cshtml"
+                         , Tuple.Create(Tuple.Create("", 3407), Tuple.Create<System.Object, System.Int32>(item.GetValue("Link")
+            
+            #line default
+            #line hidden
+, 3407), false)
+, Tuple.Create(Tuple.Create("", 3429), Tuple.Create("\')", 3429), true)
 );
 
 WriteLiteral(">");
 
             
             #line 85 "..\..\MVC\Views\SearchResults\SearchResults.cshtml"
-                                                                                                Write(item.GetValue("Title"));
+                                                                                                                              Write(item.GetValue("Title"));
 
             
             #line default
@@ -393,14 +403,14 @@ WriteLiteral("</p>\r\n");
             #line hidden
 WriteLiteral("                    <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 3743), Tuple.Create("\"", 3772)
+WriteAttribute("href", Tuple.Create(" href=\"", 3773), Tuple.Create("\"", 3802)
             
             #line 96 "..\..\MVC\Views\SearchResults\SearchResults.cshtml"
-, Tuple.Create(Tuple.Create("", 3750), Tuple.Create<System.Object, System.Int32>(item.GetValue("Link")
+, Tuple.Create(Tuple.Create("", 3780), Tuple.Create<System.Object, System.Int32>(item.GetValue("Link")
             
             #line default
             #line hidden
-, 3750), false)
+, 3780), false)
 );
 
 WriteLiteral(">");
@@ -477,14 +487,14 @@ WriteLiteral(" type=\"hidden\"");
 
 WriteLiteral(" data-sf-role=\"searchResOrderBy\"");
 
-WriteAttribute("value", Tuple.Create(" value=\"", 4653), Tuple.Create("\"", 4692)
+WriteAttribute("value", Tuple.Create(" value=\"", 4683), Tuple.Create("\"", 4722)
             
             #line 125 "..\..\MVC\Views\SearchResults\SearchResults.cshtml"
-, Tuple.Create(Tuple.Create("", 4661), Tuple.Create<System.Object, System.Int32>(Request.QueryString["orderBy"]
+, Tuple.Create(Tuple.Create("", 4691), Tuple.Create<System.Object, System.Int32>(Request.QueryString["orderBy"]
             
             #line default
             #line hidden
-, 4661), false)
+, 4691), false)
 );
 
 WriteLiteral(" />\r\n<input");
@@ -493,14 +503,14 @@ WriteLiteral(" type=\"hidden\"");
 
 WriteLiteral(" data-sf-role=\"searchResLanguage\"");
 
-WriteAttribute("value", Tuple.Create(" value=\"", 4751), Tuple.Create("\"", 4791)
+WriteAttribute("value", Tuple.Create(" value=\"", 4781), Tuple.Create("\"", 4821)
             
             #line 126 "..\..\MVC\Views\SearchResults\SearchResults.cshtml"
-, Tuple.Create(Tuple.Create("", 4759), Tuple.Create<System.Object, System.Int32>(Request.QueryString["language"]
+, Tuple.Create(Tuple.Create("", 4789), Tuple.Create<System.Object, System.Int32>(Request.QueryString["language"]
             
             #line default
             #line hidden
-, 4759), false)
+, 4789), false)
 );
 
 WriteLiteral(" />\r\n<input");
@@ -509,14 +519,14 @@ WriteLiteral(" type=\"hidden\"");
 
 WriteLiteral(" data-sf-role=\"searchResIndexCatalogue\"");
 
-WriteAttribute("value", Tuple.Create(" value=\"", 4856), Tuple.Create("\"", 4902)
+WriteAttribute("value", Tuple.Create(" value=\"", 4886), Tuple.Create("\"", 4932)
             
             #line 127 "..\..\MVC\Views\SearchResults\SearchResults.cshtml"
-, Tuple.Create(Tuple.Create("", 4864), Tuple.Create<System.Object, System.Int32>(Request.QueryString["indexCatalogue"]
+, Tuple.Create(Tuple.Create("", 4894), Tuple.Create<System.Object, System.Int32>(Request.QueryString["indexCatalogue"]
             
             #line default
             #line hidden
-, 4864), false)
+, 4894), false)
 );
 
 WriteLiteral(" />\r\n<input");
@@ -525,14 +535,14 @@ WriteLiteral(" type=\"hidden\"");
 
 WriteLiteral(" data-sf-role=\"searchResQuery\"");
 
-WriteAttribute("value", Tuple.Create(" value=\'", 4958), Tuple.Create("\'", 5001)
+WriteAttribute("value", Tuple.Create(" value=\'", 4988), Tuple.Create("\'", 5031)
             
             #line 128 "..\..\MVC\Views\SearchResults\SearchResults.cshtml"
-, Tuple.Create(Tuple.Create("", 4966), Tuple.Create<System.Object, System.Int32>(Request.QueryString["searchQuery"]
+, Tuple.Create(Tuple.Create("", 4996), Tuple.Create<System.Object, System.Int32>(Request.QueryString["searchQuery"]
             
             #line default
             #line hidden
-, 4966), false)
+, 4996), false)
 );
 
 WriteLiteral(" />\r\n<input");
@@ -541,14 +551,14 @@ WriteLiteral(" type=\"hidden\"");
 
 WriteLiteral(" data-sf-role=\"searchResWordsMode\"");
 
-WriteAttribute("value", Tuple.Create(" value=\'", 5061), Tuple.Create("\'", 5102)
+WriteAttribute("value", Tuple.Create(" value=\'", 5091), Tuple.Create("\'", 5132)
             
             #line 129 "..\..\MVC\Views\SearchResults\SearchResults.cshtml"
-, Tuple.Create(Tuple.Create("", 5069), Tuple.Create<System.Object, System.Int32>(Request.QueryString["wordsMode"]
+, Tuple.Create(Tuple.Create("", 5099), Tuple.Create<System.Object, System.Int32>(Request.QueryString["wordsMode"]
             
             #line default
             #line hidden
-, 5069), false)
+, 5099), false)
 );
 
 WriteLiteral(" />\r\n\r\n\r\n\r\n");

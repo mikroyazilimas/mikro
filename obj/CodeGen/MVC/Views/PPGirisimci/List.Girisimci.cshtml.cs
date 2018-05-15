@@ -78,7 +78,7 @@ WriteLiteral(">440 TL + KDV/Yıl</span>\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__text\"");
 
-WriteLiteral(">Fiyatlarla Kiralayın.</span>\r\n            </div>\r\n        </div>\r\n        <div");
+WriteLiteral(">Başlayan Fiyatlarla</span>\r\n            </div>\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"popup-tabs\"");
 
@@ -177,9 +177,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run/\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2756), Tuple.Create("\"", 2808)
-, Tuple.Create(Tuple.Create("", 2762), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/run-banner.png")
-, 2762), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2754), Tuple.Create("\"", 2805)
+, Tuple.Create(Tuple.Create("", 2760), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-run.svg")
+, 2760), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -190,8 +190,8 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run/\"");
 
 WriteLiteral(" class=\"products-container-content-left__text\"");
 
-WriteLiteral(">\r\n                <span>Girişimciler İçin</span>\r\n                <span>Mikro Ru" +
-"n</span>\r\n            </a>\r\n            <div");
+WriteLiteral(">\r\n                <span>Küçük Ölçekli İşletmeler İçin</span>\r\n                <s" +
+"pan>Mikro Run</span>\r\n            </a>\r\n            <div");
 
 WriteLiteral(" class=\"products-container-content-left-button\"");
 

@@ -449,7 +449,7 @@ WriteLiteral(" name=\"SaveButton\"");
 
 WriteLiteral(" value=\"Gönder\"");
 
-WriteLiteral(" onclick=\"return formSubmit(\'contactDetailForm\');\"");
+WriteLiteral(" onclick=\"return formSubmit(\'contactDetailForm\' , \'bize-ulasin\');\"");
 
 WriteLiteral("/>\r\n                    ");
 

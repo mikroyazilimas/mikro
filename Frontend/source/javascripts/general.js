@@ -454,29 +454,33 @@ function formSubmit(formId, formPost, dataLayerLabel) {
         'event':'gaEvent'
     });
 
+    
+
+    
+
     this.on("invalid", function (e) {
         e.preventDefault();
         $(this).css('border-color', 'red');
-    });
 
-    $.ajax({
+        $.ajax({
         type: 'POST',
         url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
         data: dt,
-        success: function (msg) {
-            if (msg == true) {
-                if (formPost) {
-                    $("#" + formId).submit();
-                    return true;
+            success: function (msg) {
+                if (msg == true) {
+                    if (formPost) {
+                        $("#" + formId).submit();
+                        return true;
+                    } else {
+                        window.location.href = "/tesekkurler";
+                    }
                 } else {
-                    window.location.href = "/tesekkurler";
+                    $(".errorMessage").show();
+                    $(".errorMessage").html("Teknik bir hata oluştu daha sonra tekrar deneyiniz");
+                    return false;
                 }
-            } else {
-                $(".errorMessage").show();
-                $(".errorMessage").html("Teknik bir hata oluştu daha sonra tekrar deneyiniz");
-                return false;
             }
-        }
+        });
     });
     return false;
     //return false;

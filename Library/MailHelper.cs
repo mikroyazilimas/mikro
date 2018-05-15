@@ -12,7 +12,7 @@ namespace SitefinityWebApp.Library
         public string From { get; set; }
         public List<string> To { get; set; }
         public List<string> CC { get; set; }
-        public string[] Bcc { get; set; }
+        public List<string> Bcc { get; set; }
         public string Subject { get; set; }
         public string Body { get; set; }
         public string FromDisplayName { get; set; }

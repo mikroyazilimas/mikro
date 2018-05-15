@@ -73,7 +73,6 @@ $(function() {
     $('input, input[required], select[required], textarea[required]').on("invalid", function (e) {
         e.preventDefault();
         $(this).css('border-color', 'red');
-        console.log(e.type);
     });
 
 
@@ -420,7 +419,6 @@ $('.news').on('click', function() {
   $('input, input[required], select[required], textarea[required]').on("invalid", function (e) {
     e.preventDefault();
     $(this).css('border-color', 'red');
-    console.log(e.type);
 });
 
 
@@ -429,59 +427,51 @@ $('.news').on('click', function() {
 
 
 function formSubmit(formId, formPost, dataLayerLabel) {
-   formPost = false;
-    //you code 
-    var dt = $('#' + formId + '').serialize();
+    $('#' + formId).submit(function(e){     
+        if(!$(this).attr('validated')) {
+            // disabled form post
+            e.preventDefault();
+            //you code 
+            var dt = $('#' + formId + '').serialize();
+            var values = {};
 
-    var values = {};
-    
-    $.each($('#' + formId + '').serializeArray(), function (i, field) {
-        values[field.name] = field.value;
-    });
-    
-    var getValue = function (valueName) {
-        return values[valueName];
-    };
+            $.each($('#' + formId + '').serializeArray(), function (i, field) {
+                values[field.name] = field.value;
+            });
 
-    var stringPhone = getValue("_phone");
-    var phoneReplace = stringPhone.replace("(", "").replace(")", "").replace(" ", "").replace(" ", "").replace(" ", "");
-    $('.normal_phone').val('0' + phoneReplace);
+            var getValue = function (valueName) {
+                return values[valueName];
+            };
 
-    dataLayer.push({
-        'Category': "form",
-        'Action': "gonder",
-        'Label': dataLayerLabel,
-        'event':'gaEvent'
-    });
+            var stringPhone = getValue("_phone");
+            var phoneReplace = stringPhone.replace("(", "").replace(")", "").replace(" ", "").replace(" ", "").replace(" ", "");
+            $('.normal_phone').val('0' + phoneReplace);
 
-    
+            dataLayer.push({
+                'Category': "form",
+                'Action': "gonder",
+                'Label': dataLayerLabel,
+                'event':'gaEvent'
+            });
 
-    
-
-    this.on("invalid", function (e) {
-        e.preventDefault();
-        $(this).css('border-color', 'red');
-
-        $.ajax({
-        type: 'POST',
-        url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
-        data: dt,
-            success: function (msg) {
-                if (msg == true) {
-                    if (formPost) {
-                        $("#" + formId).submit();
-                        return true;
-                    } else {
-                        window.location.href = "/tesekkurler";
+            $.ajax({
+                type: 'POST',
+                url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
+                data: dt,
+                    success: function (msg) {
+                        if (msg == true) {
+                            // $('#PostControl').val('true');
+                            // return true;
+                            $('#' + formId).attr('validated',true);
+                            $('#' + formId).submit();
+                        } else {
+                           console.log(msg);
+                            return false;
+                        }
                     }
-                } else {
-                    $(".errorMessage").show();
-                    $(".errorMessage").html("Teknik bir hata oluştu daha sonra tekrar deneyiniz");
-                    return false;
-                }
-            }
-        });
+            });
+            return false;  
+        }                            
+        return true;
     });
-    return false;
-    //return false;
 }

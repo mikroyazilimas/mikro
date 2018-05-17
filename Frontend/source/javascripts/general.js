@@ -73,7 +73,6 @@ $(function() {
     $('input, input[required], select[required], textarea[required]').on("invalid", function (e) {
         e.preventDefault();
         $(this).css('border-color', 'red');
-        console.log(e.type);
     });
 
 
@@ -420,7 +419,6 @@ $('.news').on('click', function() {
   $('input, input[required], select[required], textarea[required]').on("invalid", function (e) {
     e.preventDefault();
     $(this).css('border-color', 'red');
-    console.log(e.type);
 });
 
 
@@ -428,50 +426,52 @@ $('.news').on('click', function() {
 });
 
 
-function formSubmit(formId, formPost) {
-   formPost = false;
-    //you code 
-    var dt = $('#' + formId + '').serialize();
+function formSubmit(formId, formPost, dataLayerLabel) {
+    $('#' + formId).submit(function(e){     
+        if(!$(this).attr('validated')) {
+            // disabled form post
+            e.preventDefault();
+            //you code 
+            var dt = $('#' + formId + '').serialize();
+            var values = {};
 
-    var values = {};
-    
-    $.each($('#' + formId + '').serializeArray(), function (i, field) {
-        values[field.name] = field.value;
+            $.each($('#' + formId + '').serializeArray(), function (i, field) {
+                values[field.name] = field.value;
+            });
+
+            var getValue = function (valueName) {
+                return values[valueName];
+            };
+
+            var stringPhone = getValue("_phone");
+            var phoneReplace = stringPhone.replace("(", "").replace(")", "").replace(" ", "").replace(" ", "").replace(" ", "");
+            $('.normal_phone').val('0' + phoneReplace);
+
+            dataLayer.push({
+                'Category': "form",
+                'Action': "gonder",
+                'Label': dataLayerLabel,
+                'event':'gaEvent'
+            });
+
+            $.ajax({
+                type: 'POST',
+                url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
+                data: dt,
+                    success: function (msg) {
+                        if (msg == true) {
+                            // $('#PostControl').val('true');
+                            // return true;
+                            $('#' + formId).attr('validated',true);
+                            $('#' + formId).submit();
+                        } else {
+                           console.log(msg);
+                            return false;
+                        }
+                    }
+            });
+            return false;  
+        }                            
+        return true;
     });
-    
-    var getValue = function (valueName) {
-        return values[valueName];
-    };
-
-    var stringPhone = getValue("_phone");
-    var phoneReplace = stringPhone.replace("(", "").replace(")", "").replace(" ", "").replace(" ", "").replace(" ", "");
-    $('.normal_phone').val('0' + phoneReplace);
-
-    this.on("invalid", function (e) {
-        e.preventDefault();
-        $(this).css('border-color', 'red');
-        console.log(e.type);
-    });
-
-    $.ajax({
-        type: 'POST',
-        url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
-        data: dt,
-        success: function (msg) {
-            if (msg == true) {
-                if (formPost) {
-                    $("#" + formId).submit();
-                    return true;
-                } else {
-                    window.location.href = "/tesekkurler";
-                }
-            } else {
-                $(".errorMessage").show();
-                $(".errorMessage").html("Teknik bir hata oluştu daha sonra tekrar deneyiniz");
-                return false;
-            }
-        }
-    });
-    return false;
-    //return false;
 }

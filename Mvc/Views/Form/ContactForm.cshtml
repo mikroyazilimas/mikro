@@ -9,10 +9,16 @@
         //you code 
         var dt = $('#' + formId + '').serialize();
 
+          dataLayer.push({
+                'Category': "form",
+                'Action': "gonder",
+                'Label': "anasayfa-iletisim-form",
+                'event':'gaEvent'
+            });
+
         this.on("invalid", function (e) {
             e.preventDefault();
             $(this).css('border-color', 'red');
-            console.log(e.type);
         });
         
         $.ajax({
@@ -143,7 +149,7 @@
                 </label>
                 <div class="page-section-contact-container-area-left-form-button">
                     @*<a href="#" title="Gönder" class="page-section-contact-area-left-form-button__send">Gönder</a>*@
-                    <input class="hp_btn" type="submit" name="SaveButton" value="Gönder" onclick="return contactFormSubmit('contactForm', 'Iletisim');" />
+                    <input class="hp_btn" type="submit" name="SaveButton" value="Gönder" onclick="return contactFormSubmit('contactForm');" />
                 </div>
                 <div class="errorMessage"></div>
 

@@ -76,7 +76,7 @@ WriteLiteral(">938 TL + KDV/Yıl</span>\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__text\"");
 
-WriteLiteral(">Fiyatlarla Kiralayın.</span>\r\n            </div>\r\n        </div>\r\n        <div");
+WriteLiteral(">Başlayan Fiyatlarla</span>\r\n            </div>\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"popup-tabs\"");
 
@@ -174,7 +174,7 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-jump/\"");
 
 WriteLiteral("><img");
 
-WriteLiteral(" src=\"/Frontend/dist/images/products/jump-banner.png\"");
+WriteLiteral(" src=\"/Frontend/dist/images/products/mikro-jump.svg\"");
 
 WriteLiteral(" alt=\"\"");
 

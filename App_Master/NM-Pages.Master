@@ -7,6 +7,7 @@
     <title></title>
     <link rel="stylesheet" href="/Frontend/dist/css/app.css">
     <link href="/Frontend/dist/images/favicon.png" rel="shortcut icon">
+    <script>var dataLayer   = [];</script>
     <telerik:RadCodeBlock ID="codeBlock" runat="server">
         <%
             if (IsDesignMode == false)

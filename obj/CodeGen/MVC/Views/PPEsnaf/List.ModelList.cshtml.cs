@@ -92,7 +92,7 @@ WriteLiteral(">516 TL + KDV/Yıl</span>\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__text\"");
 
-WriteLiteral(">Fiyatlarla Kiralayın.</span>\r\n            </div>\r\n        </div>\r\n        <div");
+WriteLiteral(">Başlayan Fiyatlarla</span>\r\n            </div>\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"popup-tabs\"");
 
@@ -184,14 +184,14 @@ WriteLiteral(" class=\"detail-product-content__img\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2679), Tuple.Create("\"", 2705)
+WriteAttribute("src", Tuple.Create(" src=\"", 2677), Tuple.Create("\"", 2703)
             
             #line 71 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 2685), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 2683), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
             
             #line default
             #line hidden
-, 2685), false)
+, 2683), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -411,14 +411,14 @@ WriteLiteral(" class=\"detail-product-description-right-content\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 5131), Tuple.Create("\"", 5159)
+WriteAttribute("src", Tuple.Create(" src=\"", 5129), Tuple.Create("\"", 5157)
             
             #line 138 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 5137), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 5135), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 5137), false)
+, 5135), false)
 );
 
 WriteLiteral(" alt=\"\"");

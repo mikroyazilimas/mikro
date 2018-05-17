@@ -72,7 +72,7 @@ WriteLiteral(">516 TL + KDV/Yıl</span>\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__text\"");
 
-WriteLiteral(">Fiyatlarla Kiralayın.</span>\r\n            </div>\r\n        </div>\r\n        <div");
+WriteLiteral(">Başlayan Fiyatlarla</span>\r\n            </div>\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"popup-tabs\"");
 
@@ -108,7 +108,7 @@ WriteLiteral(" class=\"popup-content-right__logo\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteLiteral(" src=\"/Frontend/dist/images/products/mikro-musavir.png\"");
+WriteLiteral(" src=\"/Frontend/dist/images/products/pop-up/products-musavir-logo.svg\"");
 
 WriteLiteral(" alt=\"\"");
 
@@ -161,14 +161,14 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-musavir\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2633), Tuple.Create("\"", 2688)
-, Tuple.Create(Tuple.Create("", 2639), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-musavir.png")
-, 2639), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2646), Tuple.Create("\"", 2701)
+, Tuple.Create(Tuple.Create("", 2652), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-musavir.svg")
+, 2652), false)
 );
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral("></a>\r\n        </div>\r\n\r\n        <a");
+WriteLiteral(" /></a>\r\n        </div>\r\n\r\n        <a");
 
 WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-musavir\"");
 

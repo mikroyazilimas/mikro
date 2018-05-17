@@ -70,39 +70,50 @@ WriteLiteral(">\r\n    <p>");
             
             #line default
             #line hidden
-WriteLiteral("</p>\r\n</div>\r\n\r\n");
+WriteLiteral("</p>\r\n\r\n    <div");
+
+WriteLiteral(" class=\"news-container\"");
+
+WriteLiteral(">\r\n");
 
             
             #line 25 "..\..\MVC\Views\News\Detail.News.cshtml"
- if (Model.Item.Fields.Photos != null)
-{
-    foreach (var photo in Model.Item.Fields.Photos)
+        
+            
+            #line default
+            #line hidden
+            
+            #line 25 "..\..\MVC\Views\News\Detail.News.cshtml"
+         if (Model.Item.Fields.Photos != null)
     {
+
+        foreach (var photo in Model.Item.Fields.Photos)
+        {
 
             
             #line default
             #line hidden
-WriteLiteral("        <div");
+WriteLiteral("            <div");
 
 WriteLiteral(" class=\"news\"");
 
-WriteLiteral(">\r\n            <img");
+WriteLiteral(">\r\n                <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 636), Tuple.Create("\"", 664)
+WriteAttribute("src", Tuple.Create(" src=\"", 692), Tuple.Create("\"", 720)
             
-            #line 30 "..\..\MVC\Views\News\Detail.News.cshtml"
-, Tuple.Create(Tuple.Create("", 642), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+            #line 31 "..\..\MVC\Views\News\Detail.News.cshtml"
+, Tuple.Create(Tuple.Create("", 698), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 642), false)
+, 698), false)
 );
 
 WriteLiteral(" data-img=\"");
 
             
-            #line 30 "..\..\MVC\Views\News\Detail.News.cshtml"
-                                                   Write(photo.Fields.MediaUrl);
+            #line 31 "..\..\MVC\Views\News\Detail.News.cshtml"
+                                                       Write(photo.Fields.MediaUrl);
 
             
             #line default
@@ -111,16 +122,19 @@ WriteLiteral("\"");
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral(">\r\n        </div>\r\n");
+WriteLiteral(">\r\n            </div>\r\n");
 
             
-            #line 32 "..\..\MVC\Views\News\Detail.News.cshtml"
+            #line 33 "..\..\MVC\Views\News\Detail.News.cshtml"
     }
+
 }
 
             
             #line default
             #line hidden
+WriteLiteral("    </div>\r\n    </div>");
+
         }
     }
 }

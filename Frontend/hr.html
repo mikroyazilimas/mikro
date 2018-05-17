@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>İnsan Kaynakları</title>
     <link rel="stylesheet" href="dist/css/app.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="sfContentBlock">
+    <div class="page-content-container">
+    
         <div class="hr">
             <div class="hr-text">
                 <span>İnsan Kaynakları Politikası</span>
@@ -16,9 +18,564 @@
             </div>
             <div class="hr-text">
                 <span>Kimler Mutlaka Mikro Ailesi’ne Katılmalı?</span>
-                <p>Bir şirket politikası olarak, çalışanlarının katkısıyla büyüdüğüne inanan Mikro, bu anlamda, sektörde çalışan memnuniyetini en üst düzeyde tutan şirketler arasındadır. Yerli yazılım üretimiyle Türkiye’nin gelişim vizyonunun bir parçası olmayı hedefleyen Mikro, 1988 yılından bugüne kadar taşıdığı sinerjiyi ve dinamizmi ileriye taşıyacak ve çeyrek asırlık bu köklü yapının bir parçası olarak bu başarıyı ve gururu sahiplenecek iş arkadaşlarıyla çalışmayı arzu etmektedir.</p>
+                <ul>
+                    <li>İş yazılımları alanında uzun süre çalışmış, konusunda tecrübeli mühendisler,</li>
+                    <li>Satış kanallarında tecrübeli satış elemanları ve satış grup yöneticileri,</li>
+                    <li>Dikey sektörlerde deneyimli iş geliştime uzmanları,</li>
+                    <li>Türkiye’de 100.000’i aşkın ticari kurumun tercihi olan bir ticari programın uzmanı olacak ve tüm bu müşterilerimize verdiğimiz hizmet kalitesini artırmamızda bize yardımcı olacak müşteri destek uzmanları,</li>
+                    <li>Üniversitelerin ‘iktisat’ ve ‘idari bilimler’ bölümlerinden yeni mezun, iş hayatına, bir ticari program üzerinde uzmanlaşarak katma değer sağlamak isteyen gençler,</li>
+                    <li>Türkiye’nin içerisinde bulunduğu e-fatura/e-defter/e-arşiv dönüşüm sürecinde önemli bir rol üstlenen ve en büyük entegratör şirketlerden birisi olan Mikro’da yeni bir kariyer yapmak isteyenler…</li>
+                </ul>
+                <p>Siz de Mikro ailesine katılmak için bu formu doldurabilirsiniz. İnsan kaynakları birimi en kısa sürede size ulaşacaktır.</p>
+            </div>
+        </div>
+        <div class="hr-form">
+            <div class="hr-form-section">
+                <div class="hr-form-title">
+                    <span>Kişisel <strong>Bilgiler</strong></span>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-left">
+                        <div class="hr-form-input-item">
+                            <label for="">Adınız</label>
+                            <input type="text">
+                        </div>
+                        <div class="hr-form-input-item">
+                            <label for="">Doğum Yeriniz</label>
+                            <input type="text">
+                        </div>
+                        <div class="hr-form-input-item">
+                            <label for="">Cinsiyetiniz</label>
+                            <div class="hr-form-input-item-radio">
+                                <label for="erkek"><input type="radio" value="erkek" name="cinsiyet" id="erkek">Erkek</label>
+                                <label for="kadin"><input type="radio" value="kadin" name="cinsiyet" id="kadin">Kadın</label>
+                            </div>
+                        </div>
+                        <div class="hr-form-input-item">
+                            <label for="">Askerlik Durumunuz</label>
+                            <select name="" id="">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="hr-form-input-item">
+                            <label for="">Sürücü Belgesi</label>
+                            <select name="" id="">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="hr-form-input-item">
+                            <label for="">Notunuz</label>
+                            <textarea name="" id="" cols="20" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="hr-form-input-right">
+                        <div class="hr-form-input-item">
+                            <label for="">Soyadınız</label>
+                            <input type="text">
+                        </div>
+                        <div class="hr-form-input-item">
+                            <label for="">Doğum Tarihi</label>
+                            <div class="hr-form-input-item-birth">
+                                <input type="text">
+                                <input type="text">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="hr-form-input-item">
+                            <label for="">Medeni Haliniz</label>
+                            <div class="hr-form-input-item-radio">
+                                <label for="evli"><input type="radio" value="erkek" name="medeni-hal" id="evli">Evli</label>
+                                <label for="bekar"><input type="radio" value="kadin" name="medeni-hal" id="bekar">Bekar</label>
+                            </div>
+                        </div>
+                        <div class="hr-form-input-item">
+                            <label for="">Çalışmak İstediğiniz Departman</label>
+                            <select name="" id="">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="hr-form-input-item">
+                            <label for="">Maaş Beklentiniz</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-form-section">
+                <div class="hr-form-title">
+                    <span>Ürün <strong>Sihirbazı</strong></span>
+                </div>
+                <div class="hr-form-input-item">
+                    <label for="">Adres</label>
+                    <input type="text">
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-left">
+                        <div class="hr-form-input-item">
+                            <label for="">Ülke</label>
+                            <select name="" id="">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        
+                        <div class="hr-form-input-item">
+                            <label for="">İlçe</label>
+                            <select name="" id="">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="hr-form-input-item">
+                            <label for="">Telefonunuz</label>
+                            <input type="text">
+                        </div>
+                        <div class="hr-form-input-item">
+                            <label for="">E-Posta Adresiniz</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="hr-form-input-right">
+                        <div class="hr-form-input-item">
+                            <label for="">İl</label>
+                            <select name="" id="">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="hr-form-input-item">
+                            <label for="">Posta Kodu</label>
+                            <input type="text">
+                        </div>
+                        <div class="hr-form-input-item">
+                            <label for="">Cep Telefonunuz</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-form-section education">
+                <div class="hr-form-title">
+                    <span>Öğrenim <strong>Durumu</strong></span>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Okul Türü</label>
+                        <select name="" id="">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Okul Adı</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Bölüm</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Mezuniyet Yılı</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Derece</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Okul Türü</label>
+                        <select name="" id="">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Okul Adı</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Bölüm</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Mezuniyet Yılı</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Derece</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Okul Türü</label>
+                        <select name="" id="">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Okul Adı</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Bölüm</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Mezuniyet Yılı</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Derece</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Okul Türü</label>
+                        <select name="" id="">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Okul Adı</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Bölüm</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Mezuniyet Yılı</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Derece</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="hr-form-section course">
+                <div class="hr-form-title">
+                    <span>Kurs</span>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Konu</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Kurum</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Açıklama</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Yıl</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Konu</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Kurum</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Açıklama</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Yıl</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Konu</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Kurum</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Açıklama</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Yıl</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Konu</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Kurum</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Açıklama</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Yıl</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="hr-form-section">
+                <div class="hr-form-title">
+                    <span>Yabancı <strong>Dil</strong></span>
+                </div>
+                <div class="hr-form-input lang">
+                    <div class="hr-form-input-left">
+                        <div class="hr-form-input-item">
+                            <label for="">Dil</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="hr-form-input-right">
+                        <div class="hr-form-input-item">
+                            <label for="">Derece</label>
+                            <div class="hr-form-input-item-radio">
+                                <label for="az1"><input type="radio" id="az1" name="degree1">Az</label>
+                                <label for="orta1"> <input type="radio" id="orta1" name="degree1">Orta</label>
+                                <label for="iyi1"> <input type="radio" id="iyi1" name="degree1">İyi</label>
+                                <label for="cok_iyi1"><input type="radio" id="cok_iyi1" name="degree1">Çok İyi</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-form-input lang">
+                    <div class="hr-form-input-left">
+                        <div class="hr-form-input-item">
+                            <label for="">Dil</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="hr-form-input-right">
+                        <div class="hr-form-input-item">
+                            <label for="">Derece</label>
+                            <div class="hr-form-input-item-radio">
+                                <label for="az2"><input type="radio" id="az2" name="degree2">Az</label>
+                                <label for="orta2"> <input type="radio" id="orta2" name="degree2">Orta</label>
+                                <label for="iyi2"> <input type="radio" id="iyi2" name="degree2">İyi</label>
+                                <label for="cok_iyi2"><input type="radio" id="cok_iyi2" name="degree2">Çok İyi</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-form-input lang">
+                    <div class="hr-form-input-left">
+                        <div class="hr-form-input-item">
+                            <label for="">Dil</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="hr-form-input-right">
+                        <div class="hr-form-input-item">
+                            <label for="">Derece</label>
+                            <div class="hr-form-input-item-radio">
+                                <label for="az3"><input type="radio" id="az3" name="degree3">Az</label>
+                                <label for="orta3"> <input type="radio" id="orta3" name="degree3">Orta</label>
+                                <label for="iyi3"> <input type="radio" id="iyi3" name="degree3">İyi</label>
+                                <label for="cok_iyi3"><input type="radio" id="cok_iyi3" name="degree3">Çok İyi</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-form-input lang">
+                    <div class="hr-form-input-left">
+                        <div class="hr-form-input-item">
+                            <label for="">Dil</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="hr-form-input-right">
+                        <div class="hr-form-input-item">
+                            <label for="">Derece</label>
+                            <div class="hr-form-input-item-radio">
+                                <label for="az4"><input type="radio" id="az4" name="degree4">Az</label>
+                                <label for="orta4"> <input type="radio" id="orta4" name="degree4">Orta</label>
+                                <label for="iyi4"> <input type="radio" id="iyi4" name="degree4">İyi</label>
+                                <label for="cok_iyi4"><input type="radio" id="cok_iyi4" name="degree4">Çok İyi</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            
+            </div>
+            <div class="hr-form-section experience">
+                <div class="hr-form-title">
+                    <span>Önceki İş Tecrübeleri</span>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Firma Adı</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Giriş Tarihi</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Çıkış Tarihi</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Açıklama</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Firma Adı</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Giriş Tarihi</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Çıkış Tarihi</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Açıklama</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Firma Adı</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Giriş Tarihi</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Çıkış Tarihi</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Açıklama</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Konu</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Kurum</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Çıkış Tarihi</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Açıklama</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="hr-form-section reference">
+                <div class="hr-form-title">
+                    <span>Referanslar</span>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Referans Adı Soyadı</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Meslek</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">İletişim</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Referans Adı Soyadı</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Meslek</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">İletişim</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Referans Adı Soyadı</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Meslek</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">İletişim</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="hr-form-input">
+                    <div class="hr-form-input-item">
+                        <label for="">Referans Adı Soyadı</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">Meslek</label>
+                        <input type="text">
+                    </div>
+                    <div class="hr-form-input-item">
+                        <label for="">İletişim</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="hr-form-section cv">
+                <div class="hr-form-title">
+                    <span>CV</span>
+                </div>
+                <div class="hr-form-cv">
+                    <label for="">CV Ekle</label>
+                        <div class="hr-form-cv-input">
+                        <input type="text"><i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-form-section">
+               <div class="hr-form-input-item">
+                    <div class="hr-form-input-item-text">
+                        <p>İşbu 6698 Sayılı Kişisel Verilerin Korunması Kanunu ile yürürlükteki yasal mevzuata uygun olarak ve 6698 sayılı Kişisel Verilerin Korunması Kanunu (“Kanun”) kapsamında “Veri Sorumlusu” sıfatıyla Mikro Yazılımevi Yazılım Hizmetleri Bilgisayar Sanayi ve Ticaret A.Ş.’ye (“Şirket”) ait www.mikro.com.tr alan adlı internet sitesinin kullanması ile bağlantılı olarak elde edilen ve tarafımızca sağlanan verilerin toplanması, işlenmesi ve kullanım türü, derecesi ve amacı ile ilgili olarak siz kullanıcılarımıza bilgilendirme yapılması amaçlanmaktadır.</p>                   
+                    </div>
+                    <div class="hr-form-input-item-check">
+                       <label for="check"> <input type="checkbox" id="check">6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilgilendirmeyi okudum, kabul ediyorum.</label>
+                    </div>
+                    <div class="hr-form-input-item-button"> 
+                        <a href="">Gönder<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 </body>
 </html>

@@ -18,10 +18,8 @@
                     <div class="hr-form-input-left">
                         <div class="hr-form-input-item">
                             <label for="">Firma Adı</label>
-                            <input type="text">
+                            <input type="text" required="required">
                         </div>
-                        
-                        
                         <div class="hr-form-input-item">
                             <label for="">İl</label>
                             <select name="" id="">
@@ -36,10 +34,9 @@
                             <label for="">Fax</label>
                             <input type="text">
                         </div>
-                        
                         <div class="hr-form-input-item">
-                            <label for="">Adres</label>
-                            <textarea name="" id="" cols="20" rows="5"></textarea>
+                            <label for="">Telefon</label>
+                            <input type="text">
                         </div>
                     </div>
                     <div class="hr-form-input-right">
@@ -60,8 +57,8 @@
                             <input type="text">
                         </div>
                         <div class="hr-form-input-item">
-                            <label for="">Telefon</label>
-                            <input type="text">
+                            <label for="">Adres</label>
+                            <textarea name="" id="" cols="20" rows="5"></textarea>
                         </div>
                     </div>
                 </div>
@@ -134,30 +131,23 @@
                 <div class="hr-form-title">
                     <span>İşyeri <strong>Bilgileri</strong></span>
                 </div>
-                <div class="hr-form-input">
-                    <div class="hr-form-input-left">
-                        <div class="hr-form-input-item">
-                            <label for="">Muhasebe Sorumlusu</label>
-                            <input type="text">
+                <div class="hr-form-input workplace_info">
+                    <div class="hr-form-input-item">
+                        <div class="hr-form-input-item__text">
+                            <label>*İş yeri Firmaya mı ait?</label>
                         </div>
-                        
-                        <div class="hr-form-input-item">
-                            <label for="">Vergi Dairesi</label>
-                            <input type="text">
-                        </div>
-                        <div class="hr-form-input-item">
-                            <label for="">Vergi Numarası</label>
-                            <input type="text">
+                        <div class="hr-form-input-item__radio">
+                            <label for="evet"><input type="radio" id="evet" name="onay1">Evet</label>
+                            <label for="hayir"><input type="radio" id="hayir" name="onay1">Hayır</label>
                         </div>
                     </div>
-                    <div class="hr-form-input-right">
-                        <div class="hr-form-input-item">
-                            <label for="">Kuruluş Yılı</label>
-                            <input type="text">
+                    <div class="hr-form-input-item">
+                        <div class="hr-form-input-item__text">
+                            <label>*İş Yerinde Showroom Var mı?</label>
                         </div>
-                        <div class="hr-form-input-item">
-                            <label for="">Kayıt Sermayesi</label>
-                            <input type="text">
+                        <div class="hr-form-input-item__radio">
+                            <label for="var"><input type="radio" id="var" name="onay2">Var</label>
+                            <label for="yok"><input type="radio" id="yok" name="onay2">Yok</label>
                         </div>
                     </div>
                 </div>
@@ -274,13 +264,23 @@
                     <span>Sattığınız Diğer Programlar</span>
                 </div>
                 <div class="hr-form-input-item other-program">
-                        <input type="text">
-                    </div>
-               
+                    <input type="text">
+                </div>
             </div>
             <div class="hr-form-section">
                 <div class="hr-form-title">
                     <span>Destek <strong>Bilgisi</strong></span>
+                </div>
+                <div class="hr-form-input workplace_info">
+                    <div class="hr-form-input-item">
+                        <div class="hr-form-input-item__text">
+                            <label>* Mikro Programlarının Eğitimini Üstlenmeyi Düşünüyor musunuz?</label>
+                        </div>
+                        <div class="hr-form-input-item__radio">
+                            <label for="evet2"><input type="radio" id="evet2" name="onay">Evet</label>
+                            <label for="hayir2"><input type="radio" id="hayir2" name="onay">Hayır</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="hr-form-input bank">
                     <div class="hr-form-input-item">
@@ -335,4 +335,5 @@
         </div>
     </div>
 </body>
+<script src="dist/javascript/mikro-yazilim.js"></script>
 </html>

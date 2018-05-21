@@ -4,12 +4,15 @@
     margin-right: auto;
     display: flex;
     flex-direction: column;
-
+    @media @responsive{
+        width: 100%;
+    }
     &-filter{
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         >select:invalid{
             color: #3b475a;
             font-style: italic;
@@ -30,6 +33,10 @@
             margin-right: 20px;
             padding-left: 10px;
             font-style: italic;
+            @media @responsive{
+                margin-bottom: 10px;
+                width: 100%;
+            }
         }
     }
     &-content{
@@ -38,6 +45,11 @@
         padding: 30px;
         justify-content: space-between;
         flex-wrap: wrap;
+        @media @responsive{
+            padding: 0;
+            flex-direction: column;
+            margin-top: 20px;
+        }
         &-item{
             width: 30%;
             height: 200px;
@@ -47,6 +59,9 @@
             color: @dark_blue;
             padding: 20px;
             height: auto;
+            @media @responsive{
+                width: 100%;
+            }
             &__title{
                 font-size: 16px;
                 font-weight: 700;

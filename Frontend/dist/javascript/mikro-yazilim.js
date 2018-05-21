@@ -6302,6 +6302,15 @@ $('.news').on('click', function() {
 
 
 
+  $('.phones').on('keypress', function(e) {
+    if (!$(this).val() && e.which == 48) {
+      return false;
+    }
+    var x = $(this).val().replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+    $(this).val(!x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? + x[3] : ''));
+});
+
+
 });
 
 

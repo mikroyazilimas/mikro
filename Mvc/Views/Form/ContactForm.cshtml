@@ -71,7 +71,7 @@
                     @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required" , pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" })
                 </label>
                 <label for="">
-                    @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", maxlength = "11", required = "required", placeholder = "Telefon Numaranız*", @class = "phones", type = "text" })
+                    @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", maxlength = "16", required = "required", placeholder = "Telefon Numaranız*", @class = "phones", type = "text" })
                 </label>
                 <div class="wizard-bottom-left-content-form-row-text flex homepage-contact-description-text desktop-contract-text">
                     <p>Kişisel Veriler Bilgilendirme Metni</p>

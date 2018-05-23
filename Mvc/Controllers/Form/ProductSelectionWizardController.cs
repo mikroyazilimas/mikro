@@ -144,14 +144,14 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
 
                     MailHelper mail = new MailHelper();
 
-                    mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr" };
+                    mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr", "Mert.ALANKAYA@mikro.com.tr" };
                     switch (subject)
                     {
                         case "1":
                             mail.CC = new List<string>() { "satissonrasi@mikro.com.tr" };
                             break;
                         case "2":
-                            mail.CC = new List<string>() { "Serpil.EREN@mikro.com.tr" };
+                            mail.CC = new List<string>() { "Serpil.EREN@mikro.com.tr"};
                             break;
                         case "3":
                             mail.CC = new List<string>() { "urungelistirme@mikro.com.tr" };

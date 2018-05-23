@@ -99,8 +99,9 @@ WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" class=\"popup-tabs-rent\"");
 
-WriteLiteral(">\r\n                    <span>Kirala</span>\r\n                </div>\r\n            <" +
-"/a>\r\n        </div>\r\n        <div");
+WriteLiteral(">\r\n                    <span>Kirala</span>\r\n                    <span>*Tek seferl" +
+"ik bir giriş bedeli alınmaktadır.</span>\r\n                </div>\r\n            </" +
+"a>\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"popup-content\"");
 
@@ -177,9 +178,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run/\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2754), Tuple.Create("\"", 2805)
-, Tuple.Create(Tuple.Create("", 2760), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-run.svg")
-, 2760), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2833), Tuple.Create("\"", 2884)
+, Tuple.Create(Tuple.Create("", 2839), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-run.svg")
+, 2839), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -236,7 +237,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("            ");
 
             
-            #line 78 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 79 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
        Write(Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText));
 
             
@@ -245,13 +246,13 @@ WriteLiteral("            ");
 WriteLiteral("\r\n        </div>\r\n\r\n");
 
             
-            #line 81 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 82 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 81 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 82 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
          foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
 
@@ -269,7 +270,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n                    <span>");
 
             
-            #line 85 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 86 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
                      Write(item.Fields.Title);
 
             
@@ -284,7 +285,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 88 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 89 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
                Write(Html.Raw(item.Fields.ShortText));
 
             
@@ -293,7 +294,7 @@ WriteLiteral("                    ");
 WriteLiteral("\r\n                </div>\r\n            </div>\r\n");
 
             
-            #line 91 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 92 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
         }
 
             

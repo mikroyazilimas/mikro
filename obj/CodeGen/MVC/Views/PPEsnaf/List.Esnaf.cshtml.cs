@@ -93,8 +93,9 @@ WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" class=\"popup-tabs-rent\"");
 
-WriteLiteral(">\r\n                    <span>Kirala</span>\r\n                </div>\r\n            <" +
-"/a>\r\n        </div>\r\n        <div");
+WriteLiteral(">\r\n                    <span>Kirala</span>\r\n                    <span>*Tek seferl" +
+"ik bir giriş bedeli alınmaktadır.</span>\r\n                </div>\r\n            </" +
+"a>\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"popup-content\"");
 
@@ -161,9 +162,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-musavir\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2646), Tuple.Create("\"", 2701)
-, Tuple.Create(Tuple.Create("", 2652), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-musavir.svg")
-, 2652), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2725), Tuple.Create("\"", 2780)
+, Tuple.Create(Tuple.Create("", 2731), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-musavir.svg")
+, 2731), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -218,7 +219,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("            ");
 
             
-            #line 79 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 80 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
        Write(Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText));
 
             
@@ -227,13 +228,13 @@ WriteLiteral("            ");
 WriteLiteral("\r\n        </div>\r\n\r\n");
 
             
-            #line 82 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 83 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 82 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 83 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
          foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
 
@@ -251,7 +252,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n                    <span>");
 
             
-            #line 86 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 87 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
                      Write(item.Fields.Title);
 
             
@@ -266,7 +267,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 89 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 90 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
                Write(Html.Raw(item.Fields.ShortText));
 
             
@@ -275,7 +276,7 @@ WriteLiteral("                    ");
 WriteLiteral("\r\n                </div>\r\n            </div>\r\n");
 
             
-            #line 92 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 93 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
         }
 
             

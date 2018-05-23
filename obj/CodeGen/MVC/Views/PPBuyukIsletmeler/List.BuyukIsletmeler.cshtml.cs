@@ -76,8 +76,9 @@ WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" class=\"popup-tabs-rent\"");
 
-WriteLiteral(">\r\n                    <span>Kirala</span>\r\n                </div>\r\n            <" +
-"/a>\r\n        </div>\r\n        <div");
+WriteLiteral(">\r\n                    <span>Kirala</span>\r\n                    <span>*Tek seferl" +
+"ik bir giriş bedeli alınmaktadır.</span>\r\n                </div>\r\n            </" +
+"a>\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"popup-content\"");
 
@@ -155,9 +156,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-fly/\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2450), Tuple.Create("\"", 2501)
-, Tuple.Create(Tuple.Create("", 2456), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-fly.svg")
-, 2456), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2529), Tuple.Create("\"", 2580)
+, Tuple.Create(Tuple.Create("", 2535), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-fly.svg")
+, 2535), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -214,7 +215,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("            ");
 
             
-            #line 74 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 75 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
        Write(Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText));
 
             
@@ -223,13 +224,13 @@ WriteLiteral("            ");
 WriteLiteral("\r\n        </div>\r\n\r\n");
 
             
-            #line 77 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 78 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 77 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 78 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
          foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
 
@@ -247,7 +248,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n                    <span>");
 
             
-            #line 81 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 82 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
                      Write(item.Fields.Title);
 
             
@@ -262,7 +263,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 84 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 85 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
                Write(Html.Raw(item.Fields.ShortText));
 
             
@@ -271,7 +272,7 @@ WriteLiteral("                    ");
 WriteLiteral("\r\n                </div>\r\n            </div>\r\n");
 
             
-            #line 87 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
+            #line 88 "..\..\MVC\Views\PPBuyukIsletmeler\List.BuyukIsletmeler.cshtml"
         }
 
             

@@ -113,8 +113,9 @@ WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" class=\"popup-tabs-rent\"");
 
-WriteLiteral(">\r\n                    <span>Kirala</span>\r\n                </div>\r\n            <" +
-"/a>\r\n        </div>\r\n        <div");
+WriteLiteral(">\r\n                    <span>Kirala</span>\r\n                    <span>*Tek seferl" +
+"ik bir giriş bedeli alınmaktadır.</span>\r\n                </div>\r\n            </" +
+"a>\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"popup-content\"");
 
@@ -163,13 +164,13 @@ WriteLiteral(" class=\"detail-product-content\"");
 WriteLiteral(">\r\n\r\n");
 
             
-            #line 66 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 67 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 66 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 67 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
          if (pField.MainPhoto != null)
         {
             foreach (var pht in pField.MainPhoto)
@@ -184,14 +185,14 @@ WriteLiteral(" class=\"detail-product-content__img\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2677), Tuple.Create("\"", 2703)
+WriteAttribute("src", Tuple.Create(" src=\"", 2756), Tuple.Create("\"", 2782)
             
-            #line 71 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 2683), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
+            #line 72 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+, Tuple.Create(Tuple.Create("", 2762), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
             
             #line default
             #line hidden
-, 2683), false)
+, 2762), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -199,7 +200,7 @@ WriteLiteral(" alt=\"\"");
 WriteLiteral(">\r\n                </div>\r\n");
 
             
-            #line 73 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 74 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
             }
 
         }
@@ -218,7 +219,7 @@ WriteLiteral(" class=\"detail-product-content-other__title\"");
 WriteLiteral(">\r\n                <span>");
 
             
-            #line 79 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 80 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                  Write(pField.Title);
 
             
@@ -231,13 +232,13 @@ WriteLiteral(" class=\"detail-product-content-other__text\"");
 WriteLiteral(">\r\n\r\n");
 
             
-            #line 83 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 84 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                 
             
             #line default
             #line hidden
             
-            #line 83 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 84 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                  if (pField.ProductProperties != null)
                 {
                     foreach (var pItem in pField.ProductProperties)
@@ -249,7 +250,7 @@ WriteLiteral(">\r\n\r\n");
 WriteLiteral("                        <div>\r\n                            <span>");
 
             
-            #line 88 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 89 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                              Write(pItem.Fields.PropertyName);
 
             
@@ -258,7 +259,7 @@ WriteLiteral("                        <div>\r\n                            <span
 WriteLiteral("</span>\r\n                            <p>");
 
             
-            #line 89 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 90 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                           Write(pItem.Fields.Detail);
 
             
@@ -267,7 +268,7 @@ WriteLiteral("</span>\r\n                            <p>");
 WriteLiteral("</p>\r\n                        </div>\r\n");
 
             
-            #line 91 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 92 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                     }
                 }
 
@@ -279,7 +280,7 @@ WriteLiteral("\r\n                <p>\r\n");
 WriteLiteral("                    ");
 
             
-            #line 95 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 96 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                Write(Html.Raw(pField.Detail));
 
             
@@ -327,13 +328,13 @@ WriteLiteral(" class=\"detail-product-description-left\"");
 WriteLiteral(">\r\n");
 
             
-            #line 111 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 112 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 111 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 112 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
          if (pField.ProductProperties != null)
         {
             foreach (var pItem in pField.ProductProperties)
@@ -353,7 +354,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n\r\n                        <div>\r\n                            <span>");
 
             
-            #line 119 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 120 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                              Write(pItem.Fields.PropertyName);
 
             
@@ -367,7 +368,7 @@ WriteLiteral(" class=\"products-container-content-right-item__text\"");
 WriteLiteral(">\r\n                        <p>");
 
             
-            #line 125 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 126 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
                       Write(pItem.Fields.PropertyDetail);
 
             
@@ -376,7 +377,7 @@ WriteLiteral(">\r\n                        <p>");
 WriteLiteral("</p>\r\n                    </div>\r\n                </div>\r\n");
 
             
-            #line 128 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 129 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
             }
         }
 
@@ -390,13 +391,13 @@ WriteLiteral(" class=\"detail-product-description-right\"");
 WriteLiteral(">\r\n");
 
             
-            #line 133 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 134 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 133 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 134 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
          if (pField.ChartPhoto != null)
         {
             foreach (var photo in pField.ChartPhoto)
@@ -411,14 +412,14 @@ WriteLiteral(" class=\"detail-product-description-right-content\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 5129), Tuple.Create("\"", 5157)
+WriteAttribute("src", Tuple.Create(" src=\"", 5208), Tuple.Create("\"", 5236)
             
-            #line 138 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 5135), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+            #line 139 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+, Tuple.Create(Tuple.Create("", 5214), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 5135), false)
+, 5214), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -426,7 +427,7 @@ WriteLiteral(" alt=\"\"");
 WriteLiteral(">\r\n                </div>\r\n");
 
             
-            #line 140 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
+            #line 141 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
             }
         }
 

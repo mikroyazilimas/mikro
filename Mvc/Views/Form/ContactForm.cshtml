@@ -6,39 +6,49 @@
     
 
     function contactFormSubmit(formId) {
-        //you code 
-        var dt = $('#' + formId + '').serialize();
 
-          dataLayer.push({
-                'Category': "form",
-                'Action': "gonder",
-                'Label': "anasayfa-iletisim-form",
-                'event':'gaEvent'
-            });
+        $('#' + formId).submit(function (e) {
+            if (!$(this).attr('validated')) {
+                // disabled form post
+                e.preventDefault();
+                //you code 
+                var dt = $('#' + formId + '').serialize();
+                var values = {};
 
-        this.on("invalid", function (e) {
-            e.preventDefault();
-            $(this).css('border-color', 'red');
-        });
-        
-        $.ajax({
-            type: 'POST',
-            url: '/urun-secme-sihirbazi/ContactSendMail?formId=' + formId,
-            data: dt,
-            success: function (msg) {
-                if (msg == true) {
-                    window.location.href = "/tesekkurler";
-                   
-                } else
-                {
-                    $(".errorMessage").show();
-                    $(".errorMessage").html("Teknik bir hata oluştu daha sonra tekrar deneyiniz");
-                    return false;
-                }
+                $.each($('#' + formId + '').serializeArray(), function (i, field) {
+                    values[field.name] = field.value;
+                });
+
+                var getValue = function (valueName) {
+                    return values[valueName];
+                };
+                
+                dataLayer.push({
+                    'Category': "form",
+                    'Action': "gonder",
+                    'Label': "Anasayfa - İletişim Formu",
+                    'event': 'gaEvent'
+                });
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/urun-secme-sihirbazi/ContactSendMail?formId=' + formId,
+                    data: dt,
+                    success: function (msg) {
+                        if (msg == true) {
+                            window.location.href = "/tesekkurler";
+
+                        } else {
+                            $(".errorMessage").show();
+                            $(".errorMessage").html("Teknik bir hata oluştu daha sonra tekrar deneyiniz");
+                            return false;
+                        }
+                    }
+                });
+                return false;
             }
+            return true;
         });
-        return false;
-        //return false;
     }
 
 

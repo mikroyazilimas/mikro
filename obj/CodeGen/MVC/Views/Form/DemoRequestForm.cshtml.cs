@@ -405,7 +405,7 @@ WriteLiteral("                                ");
 
             
             #line 80 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                           Write(Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", required = "required", placeholder = "Telefon Numaranız*", @class = "phones" }));
+                           Write(Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones" }));
 
             
             #line default

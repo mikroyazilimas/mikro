@@ -105,9 +105,14 @@ WriteLiteral(">\r\n                    <span>TELEFON</span>\r\n                <
 
 WriteLiteral(" class=\"contact-left-item__text\"");
 
-WriteLiteral(">\r\n                    <span>+90 (212) 806 45 45 (PBX)</span>\r\n                  " +
-"  <span>+90 (850) 225 10 10 (Çağrı Merkezi)</span>\r\n                </div>\r\n    " +
-"        </div>\r\n            <div");
+WriteLiteral(@">
+                    <span>+90 (212) 806 45 45 (PBX)</span>
+                    <span>+90 (850) 225 10 10 (Çağrı Merkezi)</span>
+                    <span><strong>Faks 1:</strong> +90 (212) 939 08 10</span>
+                    <span><strong>Faks 2:</strong> +90 (212) 401 06 71</span>
+                </div>
+            </div>
+            <div");
 
 WriteLiteral(" class=\"contact-left-item\"");
 
@@ -135,10 +140,14 @@ WriteLiteral(">\r\n                    <span>TELEFON</span>\r\n                <
 
 WriteLiteral(" class=\"contact-left-item__text\"");
 
-WriteLiteral(">\r\n                    <span>+90 (212) 806 45 45 (PBX) </span>\r\n                 " +
-"   <span>+90 (212) 806 45 45 (PBX) </span>\r\n                    <span>+90 (212) " +
-"806 45 45 (PBX) </span>\r\n                </div>\r\n            </div>\r\n           " +
-" <div");
+WriteLiteral(@">
+                    <span>+90 (212) 806 45 45 (PBX) </span>
+                    <span>+90 (232) 441 74 24 (PBX) </span>
+                    <span>+90 (222) 446 02 31 (PBX) </span>
+                    <span><strong>Faks : </strong>+90 (232) 445 07 65</span>
+                </div>
+            </div>
+            <div");
 
 WriteLiteral(" class=\"contact-left-item\"");
 

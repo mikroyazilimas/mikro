@@ -73,6 +73,7 @@ $(function() {
     $('input, input[required], select[required], textarea[required]').on("invalid", function (e) {
         e.preventDefault();
         $(this).css('border-color', 'red');
+        //$(this).parent('label').css('text-shadow','-1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;');
     });
 
 

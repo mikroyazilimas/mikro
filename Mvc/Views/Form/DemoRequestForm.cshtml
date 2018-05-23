@@ -77,7 +77,7 @@
                             </label>
                             <label for="">
                                 @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
-                                @Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern=".{5,10}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones" })
+                                @Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern=".{5,10}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones", title= "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
                             </label>
                         </div>
                         

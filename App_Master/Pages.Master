@@ -7,13 +7,16 @@
     <title></title>
     <link rel="stylesheet" href="/Frontend/dist/css/app.css">
     <link href="/Frontend/dist/images/favicon.png" rel="shortcut icon">
-        <script>var dataLayer   = [];</script>
+    <script>var dataLayer = [];</script>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PF4LDGM');</script>
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PF4LDGM');</script>
     <!-- End Google Tag Manager -->
     <telerik:RadCodeBlock ID="codeBlock" runat="server">
         <%
@@ -41,23 +44,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <asp:ContentPlaceHolder ID="NavigationPlaceHolder" runat="server">
         </asp:ContentPlaceHolder>
         <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
-        <div class="page-container">
-            <div class="page-top">
-                <div class="page-top-img"></div>
-                <h1><%=Page.Title.ToString() %></h1>
-                <asp:ContentPlaceHolder ID="cpBreadcrumb" runat="server">
-                </asp:ContentPlaceHolder>
-            </div>
-            <div class="container">
-                <div class="container-sub">
-                    <asp:ContentPlaceHolder ID="PagesContentPlaceHolder" runat="server">
+            <div class="page-container">
+                <div class="page-top">
+                    <div class="page-top-img"></div>
+                    <h1><%=Page.Title.ToString() %></h1>
+                    <asp:ContentPlaceHolder ID="cpBreadcrumb" runat="server">
                     </asp:ContentPlaceHolder>
                 </div>
-                <div class="page-right">
-                    <div class="page-right-menu">
-                        <asp:ContentPlaceHolder ID="PageRightNavigation" runat="server">
+                <div class="container">
+                    <div class="container-sub">
+                        <asp:ContentPlaceHolder ID="PagesContentPlaceHolder" runat="server">
                         </asp:ContentPlaceHolder>
-                        <%--<div class="page-right-menu-item select-tab">
+                    </div>
+                    <div class="page-right">
+                        <div class="page-right-menu">
+                            <asp:ContentPlaceHolder ID="PageRightNavigation" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <%--<div class="page-right-menu-item select-tab">
                             <a href="#">Mikro Hakkında</a>
                         </div>
                         <div class="page-right-menu-item">
@@ -72,23 +75,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="page-right-menu-item">
                             <a href="#">Kullanım Sözleşmesi</a>
                         </div>--%>
-                    </div>
-                    <div class="page-right-demo">
-                        <div class="page-right-demo-content">
-                            <div class="page-right-demo-content__title">
-                                <span>Demo<span class="title-bold">Talebi</span></span>
+                        </div>
+                        <div class="page-right-demo">
+                            <div class="page-right-demo-content">
+                                <div class="page-right-demo-content__title">
+                                    <span>Demo<span class="title-bold">Talebi</span></span>
+                                </div>
+                                <div class="page-right-demo-content__hr"></div>
+                                <div class="page-right-demo-content__text">
+                                    <p>Çözüm ortağımız size uygulamalı bir Mikro yazılımları sunumu yapacak. Programlarımızla tanışarak, işletmenizin ihtiyaçlarını en iyi şekilde karşılayacak seri ve modülleri tespit etmenizde size yardımcı olacak.</p>
+                                </div>
+                                <a href="/ucretsiz-demo-talep">Bize Ulaşın<i class="fas fa-arrow-right"></i></a>
                             </div>
-                            <div class="page-right-demo-content__hr"></div>
-                            <div class="page-right-demo-content__text">
-                                <p>Çözüm ortağımız size uygulamalı bir Mikro yazılımları sunumu yapacak. Programlarımızla tanışarak, işletmenizin ihtiyaçlarını en iyi şekilde karşılayacak seri ve modülleri tespit etmenizde size yardımcı olacak.</p>
-                            </div>
-                            <a href="/ucretsiz-demo-talep">Bize Ulaşın<i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-            </telerik:RadCodeBlock>
+        </telerik:RadCodeBlock>
         <asp:ContentPlaceHolder ID="FooterPlaceHolder" runat="server">
         </asp:ContentPlaceHolder>
     </form>

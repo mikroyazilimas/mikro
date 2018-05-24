@@ -1,0 +1,27 @@
+﻿<div class="page-top-breadcrumb test" itemprop="breadcrumb">
+    @{string pageTitle = ""; string pageCat = ""; }
+    @for (int i = 0; i < Model.SiteMapNodes.Count; i++)
+    {
+        var node = Model.SiteMapNodes[i];
+
+        <div class="page-top-breadcrumb">
+
+            <a href="/">Anasayfa </a>
+            <span> / </span>
+            İletişim
+        </div>
+
+        if (i == Model.SiteMapNodes.Count - 1 && Model.ShowCurrentPageInTheEnd)
+        {
+            pageTitle = node.Title;
+            <span> @node.Title</span>
+
+        }
+        else
+        {
+            pageCat = node.Title;
+            <a href="@node.Url" title="@node.Title">@node.Title</a>
+            <span class="arrow"></span>
+        }
+    }
+</div>

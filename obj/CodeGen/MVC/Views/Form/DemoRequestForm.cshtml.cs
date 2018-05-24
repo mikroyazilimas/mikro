@@ -72,8 +72,8 @@ WriteLiteral(">\r\n                <div");
 
 WriteLiteral(" class=\"page-section-demo-request-open-left__title\"");
 
-WriteLiteral(">\r\n                    <h2>Ücretsiz <span>Demo</span> <strong>Talebi</strong></h2" +
-">\r\n                </div>\r\n                <div");
+WriteLiteral(">\r\n                    <h2>Ücretsiz <span>Demo</span> <strong>Formu</strong></h2>" +
+"\r\n                </div>\r\n                <div");
 
 WriteLiteral(" class=\"page-section-demo-request-open-left__hr\"");
 
@@ -405,13 +405,13 @@ WriteLiteral("                                ");
 
             
             #line 80 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                           Write(Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones" }));
+                           Write(Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern=".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones", title= "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" }));
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n                            </label>\r\n                            \r\n           " +
-"             </div>\r\n                        \r\n                        <div");
+WriteLiteral("\r\n                            </label>\r\n                        </div>\r\n         " +
+"               \r\n                        <div");
 
 WriteLiteral(" class=\"page-section-demo-request-open-right-form2\"");
 
@@ -422,7 +422,7 @@ WriteLiteral(" for=\"\"");
 WriteLiteral("> ");
 
             
-            #line 86 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 85 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                                       Write(Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp",  placeholder = "Mesajınız" }));
 
             
@@ -439,7 +439,7 @@ WriteLiteral(" for=\"Contract-demo\"");
 WriteLiteral(">");
 
             
-            #line 90 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 89 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                                                   Write(Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required" }));
 
             
@@ -468,7 +468,7 @@ WriteLiteral(" onclick=\"return formSubmit(\'demoForm\', \'\', \'ucretsiz-demo-t
 WriteLiteral("/>\r\n                        </div>\r\n                    </div>\r\n");
 
             
-            #line 96 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 95 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                 }
 
             

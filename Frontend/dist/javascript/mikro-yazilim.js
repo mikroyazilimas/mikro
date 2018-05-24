@@ -5942,10 +5942,10 @@ b.attr("data-mask-reverse")&&(e.reverse=!0);b.attr("data-mask-clearifnotmatch")&
 delete a.maskWatchers[this.selector];return this.each(function(){var b=a(this).data("mask");b&&b.remove().removeData("mask")})};a.fn.cleanVal=function(){return this.data("mask").getCleanVal()};a.applyDataMask=function(b){b=b||a.jMaskGlobals.maskElements;(b instanceof a?b:a(b)).filter(a.jMaskGlobals.dataMaskAttr).each(d)};h={maskElements:"input,td,span,div",dataMaskAttr:"*[data-mask]",dataMask:!0,watchInterval:300,watchInputs:!0,keyStrokeCompensation:10,useInput:!/Chrome\/[2-4][0-9]|SamsungBrowser/.test(window.navigator.userAgent)&&
 h("input"),watchDataMask:!1,byPassKeys:[9,16,17,18,36,37,38,39,40,91],translation:{0:{pattern:/\d/},9:{pattern:/\d/,optional:!0},"#":{pattern:/\d/,recursive:!0},A:{pattern:/[a-zA-Z0-9]/},S:{pattern:/[a-zA-Z]/}}};a.jMaskGlobals=a.jMaskGlobals||{};h=a.jMaskGlobals=a.extend(!0,{},h,a.jMaskGlobals);h.dataMask&&a.applyDataMask();setInterval(function(){a.jMaskGlobals.watchDataMask&&a.applyDataMask()},h.watchInterval)},window.jQuery,window.Zepto);
 
- 
+
+var isFormSubmit = false;
 $(function() {
     $(".phones").mask("(999) 9999999");
-    var isFormSubmit = false;
     $( "form" ).submit(function( event ) {
         if(!isFormSubmit)
         {
@@ -6423,7 +6423,8 @@ function formSubmit(formId, formPost, dataLayerLabel) {
                         if (msg == true) {
                             // $('#PostControl').val('true');
                             // return true;
-                            $('#' + formId).attr('validated',true);
+                            $('#' + formId).attr('validated', true);
+                            isFormSubmit = false;
                             $('#' + formId).submit();
                         } else {
                            console.log(msg);

@@ -198,7 +198,7 @@ WriteLiteral("                    ");
 
             
             #line 84 "..\..\MVC\Views\Form\ContactForm.cshtml"
-               Write(Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", maxlength = "16", required = "required", placeholder = "Telefon Numaranız*", @class = "phones", type = "text" }));
+               Write(Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", maxlength = "16", pattern=".{0}|.{13,13}",  required = "required", placeholder = "Telefon Numaranız*", @class = "phones", type = "text", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" }));
 
             
             #line default

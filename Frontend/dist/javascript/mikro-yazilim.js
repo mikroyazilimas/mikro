@@ -6013,8 +6013,12 @@ var demoTalepJsonData = {
 }
 
 
+var hangiFormAction = null;
+
 
 function formSubmit(formId, formPost, formType, dataLayerLabel) {
+
+    hangiFormAction = formType;
 
     $('#' + formId).submit(function (e) {
 
@@ -6064,14 +6068,14 @@ function formSubmit(formId, formPost, formType, dataLayerLabel) {
             var getmon = getPath(document.referrer)
 
 
-            if (formType == "demotalepanasayfa") {
+            if (formType == "demo-talep-anasayfa") {
                 $.each(demoTalepJsonData, function (k, v) {
                     if (k == window.location.pathname) { pushDataLayerContent = v }
                 });
-                console.log('demotalepanasayfa')
+                console.log('demo-talep-anasayfa')
             }
 
-            if (formType == "demotalepdetay") {
+            if (formType == "demo-talep-form-sayfa") {
                 $.each(demoTalepJsonData, function (k, v) {
                     if (k == getmon) { pushDataLayerContent = v }
                 });
@@ -6085,7 +6089,7 @@ function formSubmit(formId, formPost, formType, dataLayerLabel) {
                 console.log('demotalepanasayfa')
             }
 
-            if (formType == "iletisimdetaysayfa") {
+            if (formType == "iletisim-form-sayfa") {
                 pushDataLayerContent = "iletisimFormu_bize-ulasim"
             }
 
@@ -6121,6 +6125,8 @@ function formSubmit(formId, formPost, formType, dataLayerLabel) {
 
 
 function contactFormSubmit(formId) {
+
+    hangiFormAction = "iletişim-form-anasayfa";
 
     $('#' + formId).submit(function (e) {
         if (!$(this).attr('validated')) {
@@ -6243,19 +6249,60 @@ $(function () {
 
 
 
-    $('input, input[required], select[required], textarea[required]').on("invalid", function (e) {
-        e.preventDefault();
-        $(this).css('border-color', 'red');
-        //$(this).parent().css('text-shadow','-1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;');
-    });
+    //$('input, input[required], select[required], textarea[required]').on("invalid", function (e) {
+
+    //    e.preventDefault();
+
+    //    $(this).each(function () {
+    //        console.log($(this).attr("message"))
+    //        $(".data-message").append('<span id="message">' + $(this).data("message") + "</span>")
+    //    })
+
+    //    // $(this).css('border-color', 'red');
+    //    //$(this).parent().css('text-shadow','-1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;');
+    //});
 
 
-    $('select[required]').on("change", function (e) {
-        if ($(this)[0].selectedIndex == 0) {
-            e.preventDefault();
-            $(this).css('border-color', 'red');
-        }
+    $('body').append(
+        '<div class="modal-alert">' +
+            '<div class="modal-content"></div>'+
+            '<span id="modal-close">Tamam</a>' +
+        '</div>' +
+        '<div class="modal-bg"></div>'
+    );
+
+    $("input, select, textarea").on("invalid", function (t) {
+        t.preventDefault();
+        $(this).each(function () {
+            $('.modal-content').append('<span>' + $(this).attr("message") + '</span>');
+
+            dataLayer.push({
+                'Category': hangiFormAction,
+                'Action': "formError",
+                'Label': $(this).attr("message"),
+                'event': 'gaEvent'
+            });
+
+        });
+        $('.modal-bg').show();
+        $(".modal-alert").fadeIn();
+        // $(this).css("border-color", "red") 
     });
+
+    $('body').on("click", "#modal-close", function () {
+
+        $('.modal-bg').hide();
+        $(".modal-alert").hide();
+        $('.modal-content').html("");
+        
+    })
+
+    //$('select[required]').on("change", function (e) {
+    //    if ($(this)[0].selectedIndex == 0) {
+    //        e.preventDefault();
+    //        $(this).css('border-color', 'red');
+    //    }
+    //});
 
 
 
@@ -6548,10 +6595,10 @@ $(function () {
         $('.popup-content-management-left > a').attr('href', link);
     });
 
-    $('input, input[required], select[required], textarea[required]').on("invalid", function (e) {
-        e.preventDefault();
-        $(this).css('border-color', 'red');
-    });
+    //$('input, input[required], select[required], textarea[required]').on("invalid", function (e) {
+    //    e.preventDefault();
+    //    $(this).css('border-color', 'red');
+    //});
 
 
 

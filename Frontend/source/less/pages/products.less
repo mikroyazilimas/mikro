@@ -187,6 +187,49 @@
                         }
                     }
                 }
+                &__download{
+                    background-color: #98a4a6;
+                    position: relative;
+                    .wrap("flexbox");
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    width: 155px;
+                    @media @responsive{
+                        width: 240px;
+                    }
+                    &>span{
+                        .wrap("flexbox");
+                        transition: all 0.5s;
+                        height: 50px;
+                        width: 42px;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: center;
+                        
+                     }
+                     &:hover{
+                         span{
+                             .wrap("flexbox");
+                             justify-content: center;
+                             align-content: center;
+                             align-items: center;
+                             margin-right: -13px;
+                             margin-left: 10px;
+                             font-size: 10px;
+                             background-color: #7a8486;
+                             @media @responsive{
+                                 background-color: transparent;
+                                 margin-left: 0px;
+                                 margin-right: 0px;
+                             }
+                         }
+                         svg{
+                             width: 16px!important;
+                             height: 14px;
+                         }
+                     }
+                }
                 &__price{
                     background-color: #98a4a6;
                     position: relative;

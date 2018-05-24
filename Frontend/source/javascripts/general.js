@@ -513,7 +513,7 @@ $('.phones').tooltipster({
 
 function formSubmit(formId, formPost, dataLayerLabel) {
     $('#' + formId).submit(function(e){     
-        if($(this).attr('validated')) {
+        if(!$(this).attr('validated')) {
             // disabled form post
             e.preventDefault();
             //you code 

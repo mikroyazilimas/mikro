@@ -80,21 +80,69 @@ var doAnimations = function () {
         var $animatable = $(this);
         if (($animatable.offset().top + $animatable.height() - 20) < offset) {
             $animatable.removeClass('animatable').addClass('animated');
-        }
+        } urunler - ve - hizmetler / mikro - jump
     });
 };
 
 
+var iletisimJsonData = {
+    "iletisim/bize-ulasin": "iletisimFormu_bize-ulasim",
+    "/": "iletisimFormu_ana-sayfa"
+}
+
+
+var ussJsonData = {
+    "/": "urunSecmeSihirbazı_ana-sayfa",
+    "urunler-ve-hizmetler/mikro-run/": "urunSecmeSihirbazı_run",
+    "urunler-ve-hizmetler/mikro-run/e-donusum-cozumleri": "urunSecmeSihirbazı_run",
+    "urunler-ve-hizmetler/mikro-run/satis-ve-musteri-yonetimi": "urunSecmeSihirbazı_run",
+    "urunler-ve-hizmetler/mikro-run/gider-ve-parasal-hareketlerin-yonetimi": "urunSecmeSihirbazı_run",
+    "urunler-ve-hizmetler/mikro-run/satinalma-ve-tedarikci-yonetimi": "urunSecmeSihirbazı_run",
+    "urunler-ve-hizmetler/mikro-run/stok-urun-ve-hizmet-yonetimi": "urunSecmeSihirbazı_run",
+    "urunler-ve-hizmetler/mikro-jump": "urunSecmeSihirbazı_jump",
+    "urunler-ve-hizmetler/mikro-jump/ana-paket": "urunSecmeSihirbazı_jump",
+    "urunler-ve-hizmetler/mikro-jump/e-donusum-cozumleri": "urunSecmeSihirbazı_jump",
+    "urunler-ve-hizmetler/mikro-jump/isletme-yonetimi-cozumleri": "urunSecmeSihirbazı_jump",
+    "urunler-ve-hizmetler/mikro-jump/sektorel-cozumler": "urunSecmeSihirbazı_jump",
+    "urunler-ve-hizmetler/mikro-jump/entegrasyon-cozumleri": "urunSecmeSihirbazı_jump",
+    "urunler-ve-hizmetler/mikro-fly": "urunSecmeSihirbazı_fly",
+    "urunler-ve-hizmetler/mikro-fly/ana-paket": "urunSecmeSihirbazı_fly",
+    "urunler-ve-hizmetler/mikro-fly/e-donusum-cozumleri": "urunSecmeSihirbazı_fly",
+    "urunler-ve-hizmetler/mikro-fly/isletme-yonetimi-cozumleri": "urunSecmeSihirbazı_fly",
+    "urunler-ve-hizmetler/mikro-fly/sektorel-cozumler": "urunSecmeSihirbazı_fly",
+    "urunler-ve-hizmetler/mikro-fly/entegrasyon-cozumleri": "urunSecmeSihirbazı_fly",
+    "urunler-ve-hizmetler/mikro-musavir": "urunSecmeSihirbazı_mikro-usvir"
+}
+
+
+var demoTalepJsonData = {
+    "e-donusum/e-fatura": "demoTalebi_e-fatura",
+    "e-donusum/e-arsiv": "demoTalebi_e-arsiv",
+    "e-donusum/e-defter": "demoTalebi_e-defter",
+    "e-donusum/e-bordro": "demoTalebi_e-bordro",
+    "e-donusum/e-mutabakat": "demoTalebi_e-mutabakat",
+    "e-donusum/mikro-kep": "demoTalebi_mikro-kep",
+    "e-donusum/e-irsaliye": "demoTalebi_e-irsaliye",
+    "e-donusum/e-mustahsil-makbuzu": "demoTalebi_e-mustahsil-makbuzu",
+    "e-donusum/e-serbest-meslek-makbuzu": "demoTalebi_e-serbest-meslek-makbuzu",
+    "ucretsiz-demo-talep?product=RUN": "demoTalebi_run",
+    "urunler-ve-hizmetler/mikro-run": "demoTalebi_run",
+    "ucretsiz-demo-talep?product=JUMP": "demoTalebi_jump",
+    "urunler-ve-hizmetler/mikro-jump": "demoTalebi_jump",
+    "urunler-ve-hizmetler/genel-bakis": "demoTalebi_fly",
+    "urunler-ve-hizmetler/mikro-fly": "demoTalebi_fly",
+    "ucretsiz-demo-talep?product=MUSAVIR": "demoTalebi_musavir",
+    "urunler-ve-hizmetler/mikro-musavir": "demoTalebi_musavir",
+    "/": "demoTalebi_ana-sayfa"
+}
 
 
 
-function formSubmit(formId, formPost, dataLayerLabel) {
-
-    
+function formSubmit(formId, formPost, formType, dataLayerLabel) {
 
     $('#' + formId).submit(function (e) {
 
- 
+
         $(this).find('input[type="submit"]').attr("disabled", false);
 
         if (!$(this).attr('validated')) {
@@ -115,7 +163,7 @@ function formSubmit(formId, formPost, dataLayerLabel) {
             var stringPhone = getValue("_phone");
             var phoneReplace = stringPhone.replace("(", "").replace(")", "").replace(" ", "").replace(" ", "").replace(" ", "");
             $('.normal_phone').val('0' + phoneReplace);
-                                                                      
+
             //$(this).find("input[type='checkbox']").on("change", function (e) {
             //    if (!$(this).prop("checked")) {
             //        $(this).prev().css('border', '1px solid red');
@@ -124,10 +172,51 @@ function formSubmit(formId, formPost, dataLayerLabel) {
             //    }
             //});
 
+
+            function getPath(s) {
+                var i = s.indexOf('://') + 3, j;
+                i = s.indexOf('/', i) + 1;  // find first / (ie. after .com) and start at the next char
+                if (i === 0) return '';
+                j = s.indexOf('?', i); // find first ? after first / (as before doesn't matter anyway)
+                if (j == -1) j = s.length; // if no ?, use until end of string
+                while (s[j - 1] === '/') j = j - 1; // get rid of ending /s
+                return s.slice(i, j); // return what we've ended up at
+            }
+
+
+            var pushDataLayerContent = null;
+            var getmon = getPath(document.referrer)
+
+
+            if (formType == "demotalepanasayfa") {
+                $.each(demoTalepJsonData, function (k, v) {
+                    if (k == window.location.pathname) { pushDataLayerContent = v }
+                });
+                console.log('demotalepanasayfa')
+            }
+
+            if (formType == "demotalepdetay") {
+                $.each(demoTalepJsonData, function (k, v) {
+                    if (k == getmon) { pushDataLayerContent = v }
+                });
+                console.log('demotalepanasayfa')
+            }
+
+            if (formType == "ussform") {
+                $.each(ussJsonData, function (k, v) {
+                    if (k == getmon) { pushDataLayerContent = v }
+                });
+                console.log('demotalepanasayfa')
+            }
+
+            if (formType == "iletisimdetaysayfa") {
+                pushDataLayerContent = "iletisimFormu_bize-ulasim"
+            }
+
             dataLayer.push({
                 'Category': "form",
                 'Action': "gonder",
-                'Label': dataLayerLabel,
+                'Label': pushDataLayerContent,
                 'event': 'gaEvent'
             });
 
@@ -154,6 +243,52 @@ function formSubmit(formId, formPost, dataLayerLabel) {
     });
 }
 
+
+function contactFormSubmit(formId) {
+
+    $('#' + formId).submit(function (e) {
+        if (!$(this).attr('validated')) {
+            // disabled form post
+            e.preventDefault();
+            //you code 
+            var dt = $('#' + formId + '').serialize();
+            var values = {};
+
+            $.each($('#' + formId + '').serializeArray(), function (i, field) {
+                values[field.name] = field.value;
+            });
+
+            var getValue = function (valueName) {
+                return values[valueName];
+            };
+
+            dataLayer.push({
+                'Category': "form",
+                'Action': "gonder",
+                'Label': "iletisimFormu_ana-sayfa",
+                'event': 'gaEvent'
+            });
+
+            $.ajax({
+                type: 'POST',
+                url: '/urun-secme-sihirbazi/ContactSendMail?formId=' + formId,
+                data: dt,
+                success: function (msg) {
+                    if (msg == true) {
+                        window.location.href = "/tesekkurler";
+
+                    } else {
+                        $(".errorMessage").show();
+                        $(".errorMessage").html("Teknik bir hata oluştu daha sonra tekrar deneyiniz");
+                        return false;
+                    }
+                }
+            });
+            return false;
+        }
+        return true;
+    });
+}
 
 
 
@@ -188,7 +323,9 @@ var stickySidebar = function (element, stopper) {
 
 var isFormSubmit = false;
 $(function () {
+
     $(".phones").mask("(999) 9999999");
+
     //$( "form" ).submit(function( event ) {
     //    if(!isFormSubmit)
     //    {
@@ -218,14 +355,14 @@ $(function () {
         var charCode = (evt.which) ? evt.which : evt.keyCode;
         var v = $(this).val();
         if (v[1] == '0') {
-         $(this).val("");
+            $(this).val("");
             return false;
         }
         if (charCode == 48)
             return false;
 
-        if($(this).val().length > 10)
-            return false;   
+        if ($(this).val().length > 10)
+            return false;
     });
 
 
@@ -238,14 +375,13 @@ $(function () {
 
 
     $('select[required]').on("change", function (e) {
-        if($(this)[0].selectedIndex == 0)
-        {
+        if ($(this)[0].selectedIndex == 0) {
             e.preventDefault();
             $(this).css('border-color', 'red');
         }
     });
 
-    
+
 
     //$('[data-number-animate]').each(
     //    function() {
@@ -434,16 +570,15 @@ $(function () {
 
     $(".detail-product-description-left").next(".products-container-content-right-item__title").addClass("products-detail-select")
 
-    $('select').change(function(){
+    $('select').change(function () {
         $('.wizard-form-left > div').removeClass('wizardshow');
-        if($("#00N0Y00000QeR9j option:selected").attr('data-field') != null)
-        {
-            $("."+$("#00N0Y00000QeR9j option:selected").attr('data-field')).addClass('wizardshow');
+        if ($("#00N0Y00000QeR9j option:selected").attr('data-field') != null) {
+            $("." + $("#00N0Y00000QeR9j option:selected").attr('data-field')).addClass('wizardshow');
 
         }
         if ($("#00N0Y00000QeNYu option:selected").attr('data-field') != null) {
 
-            $("#retURL").val("https://www.mikro.com.tr/tesekkurler?product=" + $("#00N0Y00000QeNYu option:selected").val());        
+            $("#retURL").val("https://www.mikro.com.tr/tesekkurler?product=" + $("#00N0Y00000QeNYu option:selected").val());
         }
     });
 

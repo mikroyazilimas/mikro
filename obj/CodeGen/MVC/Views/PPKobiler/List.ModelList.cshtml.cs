@@ -273,8 +273,22 @@ WriteLiteral(">Fiyat ve Nasıl Satın Alabilirim <span><i");
 
 WriteLiteral(" class=\"fas fa-arrow-right\"");
 
-WriteLiteral("></i></span></a></a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<" +
-"div");
+WriteLiteral("></i></span></a>\r\n                <a");
+
+WriteLiteral(" href=\"https://www.mikro.com.tr/docs/default-source/brosurler/mikrojump_brosur_r." +
+"pdf?sfvrsn=95ce8cc5_2\"");
+
+WriteLiteral(" title=\"Ürün Broşürü\"");
+
+WriteLiteral(" class=\"products-container-content-left-button__download\"");
+
+WriteLiteral(" target=\"_blank\"");
+
+WriteLiteral(">Ürün Broşürü<span><i");
+
+WriteLiteral(" class=\"fas fa-arrow-down\"");
+
+WriteLiteral("></i></span></a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div");
 
 WriteLiteral(" class=\"detail-product-description\"");
 
@@ -285,13 +299,13 @@ WriteLiteral(" class=\"detail-product-description-left\"");
 WriteLiteral(">\r\n");
 
             
-            #line 94 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+            #line 95 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 94 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+            #line 95 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
          if (pField.ProductProperties != null)
         {
             foreach (var pItem in pField.ProductProperties)
@@ -311,7 +325,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n\r\n                        <div>\r\n                            <span>");
 
             
-            #line 102 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+            #line 103 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
                              Write(pItem.Fields.PropertyName);
 
             
@@ -327,7 +341,7 @@ WriteLiteral(">\r\n                        <p>\r\n");
 WriteLiteral("                            ");
 
             
-            #line 109 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+            #line 110 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
                        Write(Html.Raw(pItem.Fields.Detailinfo));
 
             
@@ -337,7 +351,7 @@ WriteLiteral("\r\n                        </p>\r\n                    </div>\r\n
 ">\r\n");
 
             
-            #line 113 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+            #line 114 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
             }
         }
 
@@ -351,13 +365,13 @@ WriteLiteral(" class=\"detail-product-description-right\"");
 WriteLiteral(">\r\n");
 
             
-            #line 118 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+            #line 119 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 118 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+            #line 119 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
          if (pField.ChartPhoto != null)
         {
             foreach (var photo in pField.ChartPhoto)
@@ -372,14 +386,14 @@ WriteLiteral(" class=\"detail-product-description-right-content\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 4868), Tuple.Create("\"", 4896)
+WriteAttribute("src", Tuple.Create(" src=\"", 5144), Tuple.Create("\"", 5172)
             
-            #line 123 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 4874), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+            #line 124 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+, Tuple.Create(Tuple.Create("", 5150), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 4874), false)
+, 5150), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -387,7 +401,7 @@ WriteLiteral(" alt=\"\"");
 WriteLiteral(">\r\n                </div>\r\n");
 
             
-            #line 125 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+            #line 126 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
             }
         }
 
@@ -401,13 +415,13 @@ WriteLiteral(" class=\"management-services modules-owl-carousel owl-carousel\"")
 WriteLiteral(">\r\n\r\n");
 
             
-            #line 132 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+            #line 133 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
     
             
             #line default
             #line hidden
             
-            #line 132 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+            #line 133 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
      foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
     {
 
@@ -420,14 +434,14 @@ WriteLiteral(" class=\"management-services-item\"");
 
 WriteLiteral(">\r\n            <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 5202), Tuple.Create("\"", 5305)
+WriteAttribute("href", Tuple.Create(" href=\"", 5478), Tuple.Create("\"", 5581)
             
-            #line 135 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 5209), Tuple.Create<System.Object, System.Int32>(item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-jump/")
+            #line 136 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+, Tuple.Create(Tuple.Create("", 5485), Tuple.Create<System.Object, System.Int32>(item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-jump/")
             
             #line default
             #line hidden
-, 5209), false)
+, 5485), false)
 );
 
 WriteLiteral(">\r\n                <div");
@@ -437,13 +451,13 @@ WriteLiteral(" class=\"management-services-item__img\"");
 WriteLiteral(">\r\n");
 
             
-            #line 137 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+            #line 138 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
                     
             
             #line default
             #line hidden
             
-            #line 137 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+            #line 138 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
                      if (item.Fields.IconImage != null)
                     {
                         foreach (var photo in item.Fields.IconImage)
@@ -454,14 +468,14 @@ WriteLiteral(">\r\n");
             #line hidden
 WriteLiteral("                            <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 5579), Tuple.Create("\"", 5607)
+WriteAttribute("src", Tuple.Create(" src=\"", 5855), Tuple.Create("\"", 5883)
             
-            #line 141 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 5585), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+            #line 142 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+, Tuple.Create(Tuple.Create("", 5861), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 5585), false)
+, 5861), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -469,7 +483,7 @@ WriteLiteral(" alt=\"\"");
 WriteLiteral(">\r\n");
 
             
-            #line 142 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+            #line 143 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
                         }
                     }
 
@@ -483,7 +497,7 @@ WriteLiteral(" class=\"management-services-item__title\"");
 WriteLiteral(">\r\n                    <span>");
 
             
-            #line 147 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+            #line 148 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
                      Write(item.Fields.Title);
 
             
@@ -492,7 +506,7 @@ WriteLiteral(">\r\n                    <span>");
 WriteLiteral("</span>\r\n                </div>\r\n            </a>\r\n        </div>\r\n");
 
             
-            #line 151 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
+            #line 152 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
     }
 
             

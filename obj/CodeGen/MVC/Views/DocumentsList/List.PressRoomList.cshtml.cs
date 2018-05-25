@@ -127,18 +127,26 @@ WriteLiteral("</span>\r\n                        </div>\r\n                     
 
 WriteLiteral(" class=\"container-sub-content-item-content-left__text\"");
 
-WriteLiteral(">\r\n                            <span>Dijitalleşen Dünyada KOBİ’lerin En Önemli Pa" +
-"rtnerlerinden Biriyiz</span>\r\n                        </div>\r\n                  " +
-"  </div>\r\n                    <a");
+WriteLiteral(">\r\n                            <span>");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 1373), Tuple.Create("\"", 1480)
             
-            #line 26 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
-, Tuple.Create(Tuple.Create("", 1380), Tuple.Create<System.Object, System.Int32>(String.Format("/docs/default-source/basin-bultenleri/{0}.{1}", item.Fields.MediaFileUrlName, "pdf")
+            #line 23 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
+                             Write(item.Fields.ShortText);
+
             
             #line default
             #line hidden
-, 1380), false)
+WriteLiteral("</span>\r\n                        </div>\r\n                    </div>\r\n            " +
+"        <a");
+
+WriteAttribute("href", Tuple.Create(" href=\"", 1330), Tuple.Create("\"", 1437)
+            
+            #line 26 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
+, Tuple.Create(Tuple.Create("", 1337), Tuple.Create<System.Object, System.Int32>(String.Format("/docs/default-source/basin-bultenleri/{0}.{1}", item.Fields.MediaFileUrlName, "pdf")
+            
+            #line default
+            #line hidden
+, 1337), false)
 );
 
 WriteLiteral(" target=\"_blank\"");

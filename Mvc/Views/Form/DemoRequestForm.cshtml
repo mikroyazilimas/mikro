@@ -66,18 +66,18 @@
                             @Html.HiddenFor(m => m.retURL, new { Value = Const.FormReturnUrl })
 
                             <label for="">
-                                @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*" })
+                                @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*", data_error="İsim Girmediniz" })
                             </label>
                             <label for="">
-                                @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*" })
+                                @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*", data_error = "Soyad Girmediniz" })
                             </label>
                                                         
                             <label for="">
-                                @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" })
+                                @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*", data_error = "E-Posta Girmediniz" })
                             </label>
                             <label for="">
                                 @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
-                                @Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern=".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title= "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
+                                @Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern=".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title= "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", data_error = "Telefon No Girmediniz" })
                             </label>
                         </div>
                         
@@ -86,7 +86,7 @@
 
                         </div>
                         <div class="page-section-demo-request-open-right-checkbox">
-                            <label for="Contract-demo">@Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required" })<span id="Contract">6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilgilendirmeyi okudum, kabul ediyorum.</span></label>
+                            <label for="Contract-demo">@Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required" ,  data_error = "Metni Onaylamadınız" })<span id="Contract">6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilgilendirmeyi okudum, kabul ediyorum.</span></label>
                         </div>
                         <div class="page-section-demo-request-open-right-button">
                             <input type="submit" name="SaveButton" value="Gönder" onclick="return formSubmit('demoForm', '', 'ucretsiz-demo-talep');"/>

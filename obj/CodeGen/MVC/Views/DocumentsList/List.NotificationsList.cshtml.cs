@@ -36,7 +36,7 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("\r\n<div");
 
 WriteLiteral(" class=\"container-sub\"");
 
@@ -47,13 +47,13 @@ WriteLiteral(" class=\"container-sub-content\"");
 WriteLiteral(">\r\n        <!-- DÖNGÜ -->\r\n");
 
             
-            #line 8 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
+            #line 7 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 8 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
+            #line 7 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
          foreach (var item in Model.Items.OrderByDescending(x=> (DateTime?)x.Fields.DateTime))
         {
 
@@ -79,13 +79,13 @@ WriteLiteral(" class=\"container-sub-content-item-content-left__date\"");
 WriteLiteral(">\r\n");
 
             
-            #line 14 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
+            #line 13 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
                             
             
             #line default
             #line hidden
             
-            #line 14 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
+            #line 13 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
                              if (item.Fields.DateTime != null && (DateTime?)item.Fields.DateTime != null)
                             {
 
@@ -95,7 +95,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                                <span>");
 
             
-            #line 16 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
+            #line 15 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
                                   Write(((DateTime?)item.Fields.DateTime).Value.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("tr-TR")));
 
             
@@ -104,7 +104,7 @@ WriteLiteral("                                <span>");
 WriteLiteral("</span>\r\n");
 
             
-            #line 17 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
+            #line 16 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
                             }
 
             
@@ -117,7 +117,7 @@ WriteLiteral(" class=\"container-sub-content-item-content-left__title\"");
 WriteLiteral(">\r\n                            <span>");
 
             
-            #line 20 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
+            #line 19 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
                              Write(item.Fields.Title);
 
             
@@ -127,18 +127,26 @@ WriteLiteral("</span>\r\n                        </div>\r\n                     
 
 WriteLiteral(" class=\"container-sub-content-item-content-left__text\"");
 
-WriteLiteral(">\r\n                            <span>Dijitalleşen Dünyada KOBİ’lerin En Önemli Pa" +
-"rtnerlerinden Biriyiz</span>\r\n                        </div>\r\n                  " +
-"  </div>\r\n                    <a");
+WriteLiteral(">\r\n                            <span>");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 1371), Tuple.Create("\"", 1471)
             
-            #line 26 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
-, Tuple.Create(Tuple.Create("", 1378), Tuple.Create<System.Object, System.Int32>(String.Format("/docs/default-source/duyurular/{0}.{1}", item.Fields.MediaFileUrlName, "pdf")
+            #line 22 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
+                             Write(item.Fields.ShortText);
+
             
             #line default
             #line hidden
-, 1378), false)
+WriteLiteral("</span>\r\n                        </div>\r\n                    </div>\r\n            " +
+"        <a");
+
+WriteAttribute("href", Tuple.Create(" href=\"", 1326), Tuple.Create("\"", 1426)
+            
+            #line 25 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
+, Tuple.Create(Tuple.Create("", 1333), Tuple.Create<System.Object, System.Int32>(String.Format("/docs/default-source/duyurular/{0}.{1}", item.Fields.MediaFileUrlName, "pdf")
+            
+            #line default
+            #line hidden
+, 1333), false)
 );
 
 WriteLiteral(" target=\"_blank\"");
@@ -160,7 +168,7 @@ WriteLiteral(">\r\n                                <span>Duyuruyu Gör</span>\r\
 "           </div>\r\n            </div>\r\n");
 
             
-            #line 36 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
+            #line 35 "..\..\MVC\Views\DocumentsList\List.NotificationsList.cshtml"
         }
 
             

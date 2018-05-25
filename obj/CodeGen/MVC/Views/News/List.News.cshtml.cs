@@ -127,9 +127,16 @@ WriteLiteral("</span>\r\n                        </div>\r\n                     
 
 WriteLiteral(" class=\"container-sub-content-item-content-left__text\"");
 
-WriteLiteral(">\r\n                            <span>Dijitalleşen Dünyada KOBİ’lerin En Önemli Pa" +
-"rtnerlerinden Biriyiz</span>\r\n                        </div>\r\n                  " +
-"  </div>\r\n");
+WriteLiteral(">\r\n                            <span>");
+
+            
+            #line 23 "..\..\MVC\Views\News\List.News.cshtml"
+                             Write(item.Fields.ShortText);
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</span>\r\n                        </div>\r\n                    </div>\r\n");
 
             
             #line 26 "..\..\MVC\Views\News\List.News.cshtml"
@@ -147,14 +154,14 @@ WriteLiteral(">\r\n                            <span>Dijitalleşen Dünyada KOB�
             #line hidden
 WriteLiteral("                        <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 1501), Tuple.Create("\"", 1636)
+WriteAttribute("href", Tuple.Create(" href=\"", 1458), Tuple.Create("\"", 1593)
             
             #line 28 "..\..\MVC\Views\News\List.News.cshtml"
-, Tuple.Create(Tuple.Create("", 1508), Tuple.Create<System.Object, System.Int32>(String.Format("basinda-mikro/{0}{1}", (((DateTime?)item.Fields.DateCreated).Value.ToString("yyyy/MM/dd/")),item.Fields.UrlName)
+, Tuple.Create(Tuple.Create("", 1465), Tuple.Create<System.Object, System.Int32>(String.Format("basinda-mikro/{0}{1}", (((DateTime?)item.Fields.DateCreated).Value.ToString("yyyy/MM/dd/")),item.Fields.UrlName)
             
             #line default
             #line hidden
-, 1508), false)
+, 1465), false)
 );
 
 WriteLiteral(" target=\"_blank\"");

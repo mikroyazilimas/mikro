@@ -27,6 +27,12 @@ namespace ASP
     using System.Web.UI;
     using System.Web.WebPages;
     
+    #line 2 "..\..\MVC\Views\PPBuyukIsletmeler\Detail.BuyukIsletmeler.cshtml"
+    using Telerik.Sitefinity.Frontend.DynamicContent.Mvc.Helpers;
+    
+    #line default
+    #line hidden
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("RazorGenerator", "2.0.0.0")]
     [System.Web.WebPages.PageVirtualPathAttribute("~/MVC/Views/PPBuyukIsletmeler/Detail.BuyukIsletmeler.cshtml")]
     public partial class _MVC_Views_PPBuyukIsletmeler_Detail_BuyukIsletmeler_cshtml : System.Web.Mvc.WebViewPage<Telerik.Sitefinity.Frontend.Mvc.Models.ContentDetailsViewModel>
@@ -36,14 +42,15 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("<style>\r\n.products-container-content {\r\n    display: none;\r\n}\r\n</style>\r\n\r\n<div");
+WriteLiteral("\r\n<style>\r\n.products-container-content {\r\n    display: none;\r\n}\r\n</style>\r\n\r\n<div" +
+"");
 
 WriteLiteral(" class=\"sfContentBlock\"");
 
 WriteLiteral(">\r\n<p>");
 
             
-            #line 10 "..\..\MVC\Views\PPBuyukIsletmeler\Detail.BuyukIsletmeler.cshtml"
+            #line 11 "..\..\MVC\Views\PPBuyukIsletmeler\Detail.BuyukIsletmeler.cshtml"
 Write(Html.Raw(Model.Item.Fields.Detail));
 
             
@@ -96,7 +103,7 @@ WriteLiteral(" src=\"/Frontend/dist/images/story/product-wizard.png\"");
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral(">\r\n    </div>\r\n\r\n</div>\r\n");
+WriteLiteral(">\r\n    </div>\r\n\r\n</div>\r\n\r\n\r\n\r\n\r\n");
 
         }
     }

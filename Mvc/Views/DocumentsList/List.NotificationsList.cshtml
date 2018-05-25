@@ -1,7 +1,6 @@
 ﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
 
 
-
 <div class="container-sub">
     <div class="container-sub-content">
         <!-- DÖNGÜ -->
@@ -20,7 +19,7 @@
                             <span>@item.Fields.Title</span>
                         </div>
                         <div class="container-sub-content-item-content-left__text">
-                            <span>Dijitalleşen Dünyada KOBİ’lerin En Önemli Partnerlerinden Biriyiz</span>
+                            <span>@item.Fields.ShortText</span>
                         </div>
                     </div>
                     <a href="@String.Format("/docs/default-source/duyurular/{0}.{1}", item.Fields.MediaFileUrlName, "pdf")" target="_blank">

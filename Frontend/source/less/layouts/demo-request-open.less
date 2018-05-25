@@ -1,54 +1,62 @@
-.page-section-demo-request-open{
+.page-section-demo-request-open {
     .wrap;
     .wrap(2);
     .wrap("left");
     background-image: linear-gradient(104deg, #27ae60 0%, #1abc9c 100%);
     width: 100%;
     position: relative;
-    height: 430px;
+    height: 330px;
     display: none;
-    @media @responsive{
-        
+
+    @media @responsive {
         height: 87vh;
         flex-direction: column;
         display: none;
     }
-    &-left{
+
+    &-left {
         .col(6,12);
         padding: 30px 20px 0 100px;
         color: white;
-        @media @responsive{
+
+        @media @responsive {
             padding: 10px;
             width: 100%;
             text-align: center;
         }
-        &__title{
+
+        &__title {
             font-size: 24px;
             font-weight: 300;
             letter-spacing: -0.6px;
             line-height: 19px;
         }
-        &__hr{
+
+        &__hr {
             margin-top: 15px;
             margin-bottom: 20px;
             width: 60px;
             border: 2px solid #ffffff;
-            @media @responsive{
+
+            @media @responsive {
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: 10px;
                 margin-bottom: 10px;
             }
         }
-        &__text > p{
-                font-size: 14px;
-                font-weight: 400;
-                letter-spacing: -0.35px;
-                line-height: 19px;
+
+        &__text > p {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: -0.35px;
+            line-height: 19px;
         }
-        &__combobox{
+
+        &__combobox {
             margin-top: 15px;
-            select{
+
+            select {
                 height: 40px;
                 width: 100%;
                 font-size: 12px;
@@ -61,36 +69,43 @@
             }
         }
     }
-    &-right{
+
+    &-right {
         .col(6,12);
         height: 100%;
         padding: 30px 60px 0 10px;
-        @media @responsive{
+
+        @media @responsive {
             padding: 10px;
-            width: 100%!important;
+            width: 100% !important;
             height: auto;
         }
-        .svg-hide{
+
+        .svg-hide {
             position: absolute;
             font-size: 20px;
             top: 10px;
             right: 10px;
             color: white;
-            >:hover{
+
+            > :hover {
                 cursor: pointer;
             }
         }
-        .form{
+
+        .form {
             .wrap;
             .wrap(2);
             .wrap("right");
             margin-right: 140px;
-            @media @responsive{
+
+            @media @responsive {
                 display: flex;
                 flex-direction: column;
-                width: 100%!important;
+                width: 100% !important;
             }
-            input,select,textarea{
+
+            input, select, textarea {
                 border: 1px solid #ffffff;
                 background-color: transparent;
                 border-radius: 5px;
@@ -103,62 +118,75 @@
                 margin-bottom: 10px;
                 padding-left: 10px;
                 color: white;
-                @media @responsive{
+
+                @media @responsive {
                     height: 40px;
-                    width: 100%!important;
+                    width: 100% !important;
                     padding: 0px 10px;
                 }
             }
-            input::placeholder,textarea::placeholder{
+
+            input::placeholder, textarea::placeholder {
                 color: white;
             }
-            label{
+
+            label {
                 margin-left: 10px;
                 margin-right: 10px;
-                @media @responsive{
+
+                @media @responsive {
                     margin: 0px;
                 }
             }
-            textarea{
+
+            textarea {
                 height: 140px;
                 padding-top: 15px;
                 padding-bottom: 15px;
-                @media @responsive{
+
+                @media @responsive {
                     width: 100% !important;
                 }
             }
         }
-        &-form1{
-            @media @responsive{
-                width: 100%!important;
+
+        &-form1 {
+            @media @responsive {
+                width: 100% !important;
             }
         }
-        &-form2{
+
+        &-form2 {
             padding-left: 10px;
-            @media @responsive{
-                width: 100%!important;
+
+            @media @responsive {
+                width: 100% !important;
                 padding: 0px;
             }
-            
         }
-        &-checkbox{
+
+        &-checkbox {
             width: 100% !important;
             display: flex;
             margin-bottom: 20px;
-            input[type="checkbox"]{
+
+            input[type="checkbox"] {
                 width: 20px;
                 height: 20px;
                 float: left;
                 margin-bottom: 0;
-                @media @responsive{
-                    width: 20px!important;
+
+                @media @responsive {
+                    width: 20px !important;
                 }
             }
-            label{
+
+            label {
                 display: flex;
                 align-items: center;
             }
-            span{
+
+            span {
                 font-size: 12px;
                 font-style: italic;
                 line-height: 19px;
@@ -167,14 +195,16 @@
                 color: white;
             }
         }
-        &-button{
+
+        &-button {
             width: 100% !important;
             display: flex;
             justify-content: space-around;
             cursor: pointer;
             justify-content: center;
             align-items: center;
-            input[type="submit"]{
+
+            input[type="submit"] {
                 background-color: white;
                 box-shadow: 0 2px 0 rgba(0, 0, 0, 0.11);
                 color: @dark_blue;
@@ -191,7 +221,8 @@
                 text-align: center;
                 cursor: pointer;
             }
-            svg{
+
+            svg {
                 margin-left: 5px;
             }
         }

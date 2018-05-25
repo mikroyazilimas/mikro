@@ -239,7 +239,7 @@ WriteLiteral("                    ");
 
             
             #line 41 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
-               Write(Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern=".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" }));
+               Write(Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern=".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" }));
 
             
             #line default
@@ -449,7 +449,8 @@ WriteLiteral(" name=\"SaveButton\"");
 
 WriteLiteral(" value=\"Gönder\"");
 
-WriteLiteral(" onclick=\"return formSubmit(\'contactDetailForm\',\'\',\'bize-ulasin\');\"");
+WriteLiteral(" onclick=\"return formSubmit(\'contactDetailForm\',\'\',\'iletisim-form-sayfa\', \'bize-u" +
+"lasin\');\"");
 
 WriteLiteral("/>\r\n                    ");
 

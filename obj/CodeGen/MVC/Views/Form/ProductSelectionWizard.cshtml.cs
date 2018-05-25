@@ -795,7 +795,7 @@ WriteLiteral(" name=\"SaveButton\"");
 
 WriteLiteral(" value=\"Gönder\"");
 
-WriteLiteral("  onclick=\"formSubmit(\'productForm\', true , \'urun-secme-sihirbazi\');\"");
+WriteLiteral("  onclick=\"formSubmit(\'productForm\', true, \'ussform\', \'urun-secme-sihirbazi\');\"");
 
 WriteLiteral(" />\r\n                        </div>\r\n                    </div>\r\n                " +
 "</div>\r\n            </div>\r\n            <div");

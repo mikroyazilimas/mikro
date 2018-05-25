@@ -140,110 +140,125 @@ var demoTalepJsonData = {
 var hangiFormAction = null;
 
 
+var formtetik = 0;
+
 function formSubmit(formId, formPost, formType, dataLayerLabel) {
 
     hangiFormAction = formType;
 
+
+
+
     $('#' + formId).submit(function (e) {
 
 
-        $(this).find('input[type="submit"]').attr("disabled", false);
+        if (formtetik == 0) {
 
-        if (!$(this).attr('validated')) {
-            // disabled form post
-            e.preventDefault();
-            //you code 
-            var dt = $('#' + formId + '').serialize();
-            var values = {};
+            formtetik = 1;
 
-            $.each($('#' + formId + '').serializeArray(), function (i, field) {
-                values[field.name] = field.value;
-            });
+            if (!$(this).attr('validated')) {
+                // disabled form post
+                e.preventDefault();
+                //you code 
+                var dt = $('#' + formId + '').serialize();
+                var values = {};
 
-            var getValue = function (valueName) {
-                return values[valueName];
-            };
-
-            var stringPhone = getValue("_phone");
-            var phoneReplace = stringPhone.replace("(", "").replace(")", "").replace(" ", "").replace(" ", "").replace(" ", "");
-            $('.normal_phone').val('0' + phoneReplace);
-
-            //$(this).find("input[type='checkbox']").on("change", function (e) {
-            //    if (!$(this).prop("checked")) {
-            //        $(this).prev().css('border', '1px solid red');
-            //    }
-            //    else {
-            //    }
-            //});
-
-
-            function getPath(s) {
-                var i = s.indexOf('://') + 3, j;
-                i = s.indexOf('/', i) + 1;  // find first / (ie. after .com) and start at the next char
-                if (i === 0) return '';
-                j = s.indexOf('?', i); // find first ? after first / (as before doesn't matter anyway)
-                if (j == -1) j = s.length; // if no ?, use until end of string
-                while (s[j - 1] === '/') j = j - 1; // get rid of ending /s
-                return s.slice(i, j); // return what we've ended up at
-            }
-
-
-            var pushDataLayerContent = null;
-            var getmon = getPath(document.referrer)
-
-
-            if (formType == "demo-talep-anasayfa") {
-                $.each(demoTalepJsonData, function (k, v) {
-                    if (k == window.location.pathname) { pushDataLayerContent = v }
+                $.each($('#' + formId + '').serializeArray(), function (i, field) {
+                    values[field.name] = field.value;
                 });
-                console.log('demo-talep-anasayfa')
-            }
 
-            if (formType == "demo-talep-form-sayfa") {
-                $.each(demoTalepJsonData, function (k, v) {
-                    if (k == getmon) { pushDataLayerContent = v }
-                });
-                console.log('demotalepanasayfa')
-            }
+                var getValue = function (valueName) {
+                    return values[valueName];
+                };
 
-            if (formType == "ussform") {
-                $.each(ussJsonData, function (k, v) {
-                    if (k == getmon) { pushDataLayerContent = v }
-                });
-                console.log('demotalepanasayfa')
-            }
+                var stringPhone = getValue("_phone");
+                var phoneReplace = stringPhone.replace("(", "").replace(")", "").replace(" ", "").replace(" ", "").replace(" ", "");
+                $('.normal_phone').val('0' + phoneReplace);
 
-            if (formType == "iletisim-form-sayfa") {
-                pushDataLayerContent = "iletisimFormu_bize-ulasim"
-            }
+                //$(this).find("input[type='checkbox']").on("change", function (e) {
+                //    if (!$(this).prop("checked")) {
+                //        $(this).prev().css('border', '1px solid red');
+                //    }
+                //    else {
+                //    }
+                //});
 
-            dataLayer.push({
-                'Category': "form",
-                'Action': "gonder",
-                'Label': pushDataLayerContent,
-                'event': 'gaEvent'
-            });
 
-            $.ajax({
-                type: 'POST',
-                url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
-                data: dt,
-                success: function (msg) {
-                    if (msg == true) {
-                        // $('#PostControl').val('true');
-                        // return true;
-                        $('#' + formId).attr('validated', true);
-                        isFormSubmit = false;
-                        $('#' + formId).submit();
-                    } else {
-                        console.log(msg);
-                        return false;
-                    }
+                function getPath(s) {
+                    var i = s.indexOf('://') + 3, j;
+                    i = s.indexOf('/', i) + 1;  // find first / (ie. after .com) and start at the next char
+                    if (i === 0) return '';
+                    j = s.indexOf('?', i); // find first ? after first / (as before doesn't matter anyway)
+                    if (j == -1) j = s.length; // if no ?, use until end of string
+                    while (s[j - 1] === '/') j = j - 1; // get rid of ending /s
+                    return s.slice(i, j); // return what we've ended up at
                 }
-            });
-            return false;
+
+
+                var pushDataLayerContent = null;
+                var getmon = getPath(document.referrer)
+
+
+                if (formType == "demo-talep-anasayfa") {
+                    $.each(demoTalepJsonData, function (k, v) {
+                        if (k == window.location.pathname) { pushDataLayerContent = v }
+                    });
+                    console.log('demo-talep-anasayfa')
+                }
+
+                if (formType == "demo-talep-form-sayfa") {
+                    $.each(demoTalepJsonData, function (k, v) {
+                        if (k == getmon) { pushDataLayerContent = v }
+                    });
+                    console.log('demotalepanasayfa')
+                }
+
+                if (formType == "ussform") {
+                    $.each(ussJsonData, function (k, v) {
+                        if (k == getmon) { pushDataLayerContent = v }
+                    });
+                    console.log('demotalepanasayfa')
+                }
+
+                if (formType == "iletisim-form-sayfa") {
+                    pushDataLayerContent = "iletisimFormu_bize-ulasim"
+                }
+
+                dataLayer.push({
+                    'Category': "form",
+                    'Action': "gonder",
+                    'Label': pushDataLayerContent,
+                    'event': 'gaEvent'
+                });
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
+                    data: dt,
+                    success: function (msg) {
+                        if (msg == true) {
+                            // $('#PostControl').val('true');
+                            // return true;
+                            $('#' + formId).attr('validated', true);
+                            isFormSubmit = false;
+                            $('#' + formId).submit();
+                            formtetik = 0;
+                        } else {
+                            console.log(msg);
+                            return false;
+                        }
+                    }
+                });
+                return false;
+            }
+            return true;
+
         }
-        return true;
+        else {
+            console.log('form tetiklenemez');
+        }
+
+        
     });
 }
 
@@ -251,6 +266,8 @@ function formSubmit(formId, formPost, formType, dataLayerLabel) {
 function contactFormSubmit(formId) {
 
     hangiFormAction = "iletişim-form-anasayfa";
+
+   
 
     $('#' + formId).submit(function (e) {
         if (!$(this).attr('validated')) {
@@ -397,6 +414,8 @@ $(function () {
 
     $("input, select, textarea").on("invalid", function (t) {
         t.preventDefault();
+
+        formtetik = 0;
         $(this).each(function () {
             $('.modal-content').append('<span>' + $(this).attr("message") + '</span>');
 

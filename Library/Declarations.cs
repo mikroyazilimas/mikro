@@ -20,7 +20,7 @@ public struct Names
         public const string SiteMap = "~/Mvc/Views/General/SiteMap.cshtml";
         public const string AuthorizedDealerForm = "~/Mvc/Views/Form/AuthorizedDealerForm.cshtml";
         public const string HumanResourcesForm = "~/Mvc/Views/Form/HumanResourcesForm.cshtml";
-        
+        public const string WorkPartnersForm = "~/Mvc/Views/Form/WorkPartnersForm.cshtml";
 
     }
 

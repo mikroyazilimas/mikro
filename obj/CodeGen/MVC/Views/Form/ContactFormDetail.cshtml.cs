@@ -152,7 +152,7 @@ WriteLiteral("                    ");
 
             
             #line 23 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
-               Write(Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*" }));
+               Write(Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*", message ="Lütfen İsminizi Giriniz"}));
 
             
             #line default
@@ -171,7 +171,7 @@ WriteLiteral("                    ");
 
             
             #line 28 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
-               Write(Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*" }));
+               Write(Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*", message = "Lütfen Soyadınızı Giriniz" }));
 
             
             #line default
@@ -190,7 +190,7 @@ WriteLiteral("                    ");
 
             
             #line 32 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
-               Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" }));
+               Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*", message = "Lütfen E-Postanızı Giriniz" }));
 
             
             #line default
@@ -209,7 +209,7 @@ WriteLiteral("                    ");
 
             
             #line 36 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
-               Write(Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Şirketinizin ismi*" }));
+               Write(Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Şirketinizin ismi*", message = "Lütfen Şirket İsminizi Giriniz" }));
 
             
             #line default
@@ -239,7 +239,7 @@ WriteLiteral("                    ");
 
             
             #line 41 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
-               Write(Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern=".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" }));
+               Write(Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern=".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" }));
 
             
             #line default
@@ -440,6 +440,8 @@ WriteLiteral(" id=\"check\"");
 
 WriteLiteral(" required=\"required\"");
 
+WriteLiteral(" messages=\"KVK Metnini Kabul Etmediniz\"");
+
 WriteLiteral(">Kişisel Veriler Bilgilendirme Metni\'ni kabul ediyorum.</label>\r\n                " +
 "    <input");
 
@@ -449,8 +451,7 @@ WriteLiteral(" name=\"SaveButton\"");
 
 WriteLiteral(" value=\"Gönder\"");
 
-WriteLiteral(" onclick=\"return formSubmit(\'contactDetailForm\',\'\',\'iletisim-form-sayfa\', \'bize-u" +
-"lasin\');\"");
+WriteLiteral(" onclick=\"return formSubmit(\'contactDetailForm\',\'\',\'bize-ulasin\');\"");
 
 WriteLiteral("/>\r\n                    ");
 

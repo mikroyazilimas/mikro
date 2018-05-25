@@ -247,7 +247,7 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/genel-bakis\"");
 
 WriteLiteral(">Ürünler ve Hizmetler</a>\r\n                    <a");
 
-WriteLiteral(" href=\"/e-donusum/e-fatura\"");
+WriteLiteral(" href=\"/e-donusum\"");
 
 WriteLiteral(">E-Dönüşüm</a>\r\n                    <a");
 

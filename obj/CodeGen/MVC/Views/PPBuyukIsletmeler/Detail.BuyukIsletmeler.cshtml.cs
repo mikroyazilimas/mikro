@@ -27,12 +27,6 @@ namespace ASP
     using System.Web.UI;
     using System.Web.WebPages;
     
-    #line 2 "..\..\MVC\Views\PPBuyukIsletmeler\Detail.BuyukIsletmeler.cshtml"
-    using Telerik.Sitefinity.Frontend.DynamicContent.Mvc.Helpers;
-    
-    #line default
-    #line hidden
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("RazorGenerator", "2.0.0.0")]
     [System.Web.WebPages.PageVirtualPathAttribute("~/MVC/Views/PPBuyukIsletmeler/Detail.BuyukIsletmeler.cshtml")]
     public partial class _MVC_Views_PPBuyukIsletmeler_Detail_BuyukIsletmeler_cshtml : System.Web.Mvc.WebViewPage<Telerik.Sitefinity.Frontend.Mvc.Models.ContentDetailsViewModel>

@@ -13,5 +13,6 @@ namespace SitefinityWebApp.Mvc.Models.ViewModel
         public string Email { get; set; }
         public string Phone { get; set; }
         public string Message { get; set; }
+        public bool MyProperty { get; set; }
     }
 }

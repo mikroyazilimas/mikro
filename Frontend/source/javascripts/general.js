@@ -213,6 +213,13 @@ function formSubmit(formId, formPost, formType, dataLayerLabel) {
                     console.log('demotalepanasayfa')
                 }
 
+                if (formType == "ucretsiz-demo-talep") {
+                    $.each(demoTalepJsonData, function (k, v) {
+                        if (k == getmon) { pushDataLayerContent = v }
+                    });
+                    console.log('demotalepanasayfa')
+                }
+
                 if (formType == "ussform") {
                     $.each(ussJsonData, function (k, v) {
                         if (k == getmon) { pushDataLayerContent = v }

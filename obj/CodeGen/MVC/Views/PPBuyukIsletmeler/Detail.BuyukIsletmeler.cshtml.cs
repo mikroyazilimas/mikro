@@ -36,14 +36,15 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("<style>\r\n.products-container-content {\r\n    display: none;\r\n}\r\n</style>\r\n\r\n<div");
+WriteLiteral("\r\n<style>\r\n.products-container-content {\r\n    display: none;\r\n}\r\n</style>\r\n\r\n<div" +
+"");
 
 WriteLiteral(" class=\"sfContentBlock\"");
 
 WriteLiteral(">\r\n<p>");
 
             
-            #line 10 "..\..\MVC\Views\PPBuyukIsletmeler\Detail.BuyukIsletmeler.cshtml"
+            #line 11 "..\..\MVC\Views\PPBuyukIsletmeler\Detail.BuyukIsletmeler.cshtml"
 Write(Html.Raw(Model.Item.Fields.Detail));
 
             
@@ -96,7 +97,7 @@ WriteLiteral(" src=\"/Frontend/dist/images/story/product-wizard.png\"");
 
 WriteLiteral(" alt=\"\"");
 
-WriteLiteral(">\r\n    </div>\r\n\r\n</div>\r\n");
+WriteLiteral(">\r\n    </div>\r\n\r\n</div>\r\n\r\n\r\n\r\n\r\n");
 
         }
     }

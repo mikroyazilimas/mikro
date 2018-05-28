@@ -5,7 +5,7 @@ using System.Web;
 
 namespace SitefinityWebApp.Mvc.Models.ViewModel
 {
-    public class AuthorizedDealerForm
+    public class WorkPartnersForm
     {
         public string Name { get; set; }
         public string Surname { get; set; }
@@ -13,6 +13,5 @@ namespace SitefinityWebApp.Mvc.Models.ViewModel
         public string Email { get; set; }
         public string Phone { get; set; }
         public string Message { get; set; }
-        public bool MyProperty { get; set; }
     }
 }

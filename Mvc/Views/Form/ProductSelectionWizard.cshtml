@@ -32,21 +32,21 @@
                     {
                         if (item.InputType == SitefinityWebApp.Library.InputType.Hidden)
                         {
-                            <input type="hidden" id="@item.InputName" name="@item.InputName" value="@item.InputValue" required="required"/>
+                            <input type="hidden" id="@item.InputName" name="@item.InputName" value="@item.InputValue" required="required" />
 
                         }
                         else if (item.InputType == SitefinityWebApp.Library.InputType.TextBox)
                         {
                             <div class="wizard-form-row @item.InputClass @String.Format(item.InputNotVisible? "wizardhide" : "")" >
                                 <label>@item.LabelValue<span>@item.LabelValueShort</span></label>
-                                <input type="text" id="@item.InputName" name="@item.InputName" value="" required="required" maxlength="4" pattern= "[0-9]+"/>
+                                <input type="text" id="@item.InputName" name="@item.InputName" value="" required="required" maxlength="4" pattern= "[0-9]+" message="Lütfen Şirketinizin Kuruluş Yılını Giriniz"/>
                             </div>
                         }
                         else if (item.InputType == SitefinityWebApp.Library.InputType.DropDown)
                         {
                             <div class="wizard-form-row @item.InputClass @String.Format(item.InputNotVisible? "wizardhide" : "")">
                                 <label>@item.LabelValue<span>@item.LabelValueShort</span></label>
-                                <select id="@item.InputName" name="@item.InputName" >
+                                <select id="@item.InputName" name="@item.InputName"  messages="Lütfen Şirketinizin Kuruluş Yılını Giriniz">
                                     <option value="">Seçiniz</option>
                                     @foreach (var dItem in item.DropDownItem)
                                     {
@@ -79,24 +79,24 @@
                     <div class="wizard-bottom-left-content-form">
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">Adınız</label>
-                            @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*" })
+                            @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*", message = "Lütfen İsminizi Giriniz" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">Soyadınız</label>
-                            @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*" })
+                            @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*", message = "Lütfen Soyadınızı  Giriniz" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">Firmanızın Ünvanı</label>
-                            @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Firmanızın Ünvanı*", value="Seçiniz" })
+                            @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Firmanızın Ünvanı*", value="Seçiniz", message = "Lütfen Firmanızın Ünvanını Giriniz" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">E-Posta</label>
-                            @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", required = "required", placeholder="E-Postanız*" })
+                            @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", required = "required", placeholder="E-Postanız*", message= "Lütfen E-Postanızı Giriniz" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">Telefon</label>
                             @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
-                            @Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern = ".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
+                            @Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern = ".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <div class="wizard-bottom-left-content-form-row-text">
@@ -127,7 +127,7 @@
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="Contract">
-                                @Html.CheckBoxFor(m => m.Contract, new { required="required" })
+                                @Html.CheckBoxFor(m => m.Contract, new { required="required", message = "KVK Metnini Kabul Etmediniz" })
                                 Kişisel Veriler Bilgilendirme Metni'ni Kabul Ediyorum
                             </label>
                             

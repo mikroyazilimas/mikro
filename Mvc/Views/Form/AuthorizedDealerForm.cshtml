@@ -11,17 +11,17 @@
             <div class="hr-form-input-left">
                 <div class="hr-form-input-item">
                     <label for="">Firma Adı</label>
-                    @Html.TextBoxFor(m => m.Name, new { required = "required", placeholder = "Firma Adı*" })
+                    @Html.TextBoxFor(m => m.Name, new { required = "required", placeholder = "Firma Adı*", message="Lütfen Firma Adınızı Seçiniz" })
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">İl</label>
-                    <select name="" id="" required = "required">
+                    <select name="" id="" required = "required" message="Lütfen İl Seçiniz">
                         <option value="1"></option>
                     </select>
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">İlçe</label>
-                    @Html.TextBoxFor(m => m.Name, new { required = "required", placeholder = "İlçe*" })
+                    @Html.TextBoxFor(m => m.Name, new { required = "required", placeholder = "İlçe*", message="Lütfen İlçe Seçiniz" })
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Fax</label>
@@ -29,17 +29,17 @@
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Adres</label>
-                    @Html.TextAreaFor(m => m.Message, new { placeholder = "Mesajınız*" , required = "required"})
+                    @Html.TextAreaFor(m => m.Message, new { placeholder = "Mesajınız*" , required = "required", message="Lütfen Mesajınızı Giriniz"})
                 </div>
             </div>
             <div class="hr-form-input-right">
                 <div class="hr-form-input-item">
                     <label for="">Yetkili</label>
-                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Yetkili*", required = "required" })
+                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Yetkili*", required = "required", message="Lütfen Yetkili Giriniz" })
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Görev</label>
-                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Görev*" , required = "required" })
+                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Görev*" , required = "required", message="Lütfen Görev Giriniz" })
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Posta Kodu</label>
@@ -47,11 +47,11 @@
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">E-Posta</label>
-                    @Html.TextBoxFor(m => m.Name, new { placeholder = "E-Posta*", required = "required" })
+                    @Html.TextBoxFor(m => m.Name, new { placeholder = "E-Posta*", required = "required", message="Lütfen E-Posta Giriniz"})
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Telefon</label>
-                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Telefon*", required = "required" })
+                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Telefon*", required = "required", message="Lütfen Telefon Numaranızı Giriniz" })
                 </div>
             </div>
         </div>
@@ -64,26 +64,26 @@
             <div class="hr-form-input-left">
                 <div class="hr-form-input-item">
                     <label for="">Genel Müdür</label>
-                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Genel Müdür*", required = "required" })
+                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Genel Müdür*", required = "required", message="Lütfen Genel Müdür İsmini Giriniz"  })
                 </div>
 
                 <div class="hr-form-input-item">
                     <label for="">Genel Müdür Yardımcısı</label>
-                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Genel Müdür Yardımcısı*"})
+                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Genel Müdür Yardımcısı"})
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Pazarlama Müdürü</label>
-                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Pazarlama Müdürü*" })
+                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Pazarlama Müdürü" })
                 </div>
             </div>
             <div class="hr-form-input-right">
                 <div class="hr-form-input-item">
                     <label for="">Teknik Servis Müdürü</label>
-                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Teknik Servis Müdürü*" })
+                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Teknik Servis Müdürü" })
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Satış Temsilcileri</label>
-                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Satış Temsilcileri*" })
+                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Satış Temsilcileri" })
                 </div>
             </div>
         </div>
@@ -96,26 +96,26 @@
             <div class="hr-form-input-left">
                 <div class="hr-form-input-item">
                     <label for="">Muhasebe Sorumlusu</label>
-                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Muhasebe Sorumlusu*" })
+                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Muhasebe Sorumlusu" })
                 </div>
 
                 <div class="hr-form-input-item">
                     <label for="">Vergi Dairesi</label>
-                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Vergi Dairesi*" , required = "required" })
+                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Vergi Dairesi*" , required = "required", message="Lütfen Vergi Dairenizi Giriniz" })
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Vergi Numarası</label>
-                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Vergi Numarası*", required = "required" })
+                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Vergi Numarası*", required = "required", message="Lütfen Vergi Numaranızı Giriniz" })
                 </div>
             </div>
             <div class="hr-form-input-right">
                 <div class="hr-form-input-item">
                     <label for="">Kuruluş Yılı</label>
-                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Kuruluş Yılı*" , required = "required"})
+                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Kuruluş Yılı*" , required = "required", message="Lütfen Kuruluş Yılınızı Giriniz"})
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Kayıt Sermayesi</label>
-                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Kayıt Sermayesi*" , required = "required" })
+                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Kayıt Sermayesi*" , required = "required", message="Lütfen Kayıt Sermayesini Giriniz"  })
                 </div>
             </div>
         </div>
@@ -130,7 +130,7 @@
                     <label>*İş yeri Firmaya mı ait?</label>
                 </div>
                 <div class="hr-form-input-item__radio">
-                    <label for="evet"><input type="radio" id="evet" name="onay1">Evet</label>
+                    <label for="evet"><input type="radio" id="evet" name="onay1" required message="Lütfen İşyeri Firmaya mı ait? Sorusunu Cevaplayınız">Evet</label>
                     <label for="hayir"><input type="radio" id="hayir" name="onay1">Hayır</label>
                 </div>
             </div>
@@ -139,7 +139,7 @@
                     <label>*İş Yerinde Showroom Var mı?</label>
                 </div>
                 <div class="hr-form-input-item__radio">
-                    <label for="var"><input type="radio" id="var" name="onay2">Var</label>
+                    <label for="var"><input type="radio" id="var" name="onay2" required message="Lütfen İş Yerinizde Showroom Var Mı? Sorusunu Cevaplayınız">Var</label>
                     <label for="yok"><input type="radio" id="yok" name="onay2">Yok</label>
                 </div>
             </div>
@@ -199,15 +199,15 @@
         <div class="hr-form-input bank">
             <div class="hr-form-input-item">
                 <label for="">Referans Adı Soyadı</label>
-                @Html.TextBoxFor(m => m.Name, new { placeholder = "Referans Adı Soyadı*" , required= "required" })
+                @Html.TextBoxFor(m => m.Name, new { placeholder = "Referans Adı Soyadı*" , required= "required" , message="Lütfen Referansınızın Adını ve Soyadını Giriniz" })
             </div>
             <div class="hr-form-input-item">
                 <label for="">Yetkili</label>
-                @Html.TextBoxFor(m => m.Name, new { placeholder = "Yetkili*" , required = "required"})
+                @Html.TextBoxFor(m => m.Name, new { placeholder = "Yetkili*" , required = "required", message = "Lütfen Referansınızın Yetkilisini Giriniz" })
             </div>
             <div class="hr-form-input-item">
                 <label for="">Telefon</label>
-                @Html.TextBoxFor(m => m.Name, new { placeholder = "Telefon*" , required =  "required"})
+                @Html.TextBoxFor(m => m.Name, new { placeholder = "Telefon*" , required =  "required" , message = "Lütfen Referansınızı Telefonunu Giriniz"})
             </div>
         </div>
         <div class="hr-form-input bank">
@@ -244,7 +244,7 @@
             <span>Firmanızın Faaliyet Alanları</span>
         </div>
         <div class="hr-form-input activity">
-            <fieldset>
+            
                 @*@Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required" })*@
                 <label for="bilgisayar"><input type="checkbox" id="bilgisayar">Bilgisayar Satışı</label>
                 <label for="program"><input type="checkbox" id="program">Program Satışı</label>
@@ -252,7 +252,8 @@
                 <label for="yazilim"><input type="checkbox" id="yazilim">Yazılım Geliştirme</label>
                 <label for="egitim"><input type="checkbox" id="egitim">Eğitim</label>
                 <label for="sistem"><input type="checkbox" id="sistem">Sistem Kurulumu</label>
-            </fieldset>
+                <label for="diger"><input type="checkbox" id="diger" />Diğer</label>
+            
         </div>
     </div>
     <div class="hr-form-section">
@@ -263,68 +264,12 @@
             @Html.TextBoxFor(m => m.Name, new { placeholder = "Sattığınız Diğer Programlar" })
         </div>
     </div>
-    <div class="hr-form-section">
-        <div class="hr-form-title">
-            <span>Destek <strong>Bilgisi</strong></span>
-        </div>
-        <div class="hr-form-input workplace_info">
-            <div class="hr-form-input-item">
-                <div class="hr-form-input-item__text">
-                    <label>* Mikro Programlarının Eğitimini Üstlenmeyi Düşünüyor musunuz?</label>
-                </div>
-                <div class="hr-form-input-item__radio">
-                    <label for="evet2"><input type="radio" id="evet2" name="onay">Evet</label>
-                    <label for="hayir2"><input type="radio" id="hayir2" name="onay">Hayır</label>
-                </div>
-            </div>
-        </div>
-        <div class="hr-form-input bank">
-            <div class="hr-form-input-item">
-                <label for="">Eğitmen</label>
-                @Html.TextBoxFor(m => m.Name, new { placeholder = "Eğitmen*" , required = "required"})
-            </div>
-            <div class="hr-form-input-item">
-                <label for="">Öğrenim Durumu</label>
-                @Html.TextBoxFor(m => m.Name, new { placeholder = "Öğrenim Durumu*" , required = "required"})
-            </div>
-            <div class="hr-form-input-item">
-                <label for="">Tecrübe</label>
-                @Html.TextBoxFor(m => m.Name, new { placeholder = "Tecrübe*" , required = "required" })
-            </div>
-        </div>
-        <div class="hr-form-input bank">
-            <div class="hr-form-input-item">
-                <label for="">Eğitmen</label>
-                @Html.TextBoxFor(m => m.Name, new { placeholder = "Eğitmen" })
-            </div>
-            <div class="hr-form-input-item">
-                <label for="">Öğrenim Durumu</label>
-                @Html.TextBoxFor(m => m.Name, new { placeholder = "Öğrenim Durumu" })
-            </div>
-            <div class="hr-form-input-item">
-                <label for="">Tecrübe</label>
-                @Html.TextBoxFor(m => m.Name, new { placeholder = "Tecrübe" })
-            </div>
-        </div>
-        <div class="hr-form-input bank">
-            <div class="hr-form-input-item">
-                <label for="">Eğitmen</label>
-                @Html.TextBoxFor(m => m.Name, new { placeholder = "Eğitim" })
-            </div>
-            <div class="hr-form-input-item">
-                <label for="">Öğrenim Durumu</label>
-                @Html.TextBoxFor(m => m.Name, new { placeholder = "Öğrenim Durumu" })
-            </div>
-            <div class="hr-form-input-item">
-                <label for="">Tecrübe</label>
-                @Html.TextBoxFor(m => m.Name, new { placeholder = "Tecrübe" })
-            </div>
-        </div>
-    </div>
+   
     <div class="hr-form-section">
         <div class="hr-form-input-item">
             <div class="hr-form-input-item-button">
-                <a href="">Gönder<i class="fas fa-arrow-right"></i></a>
+                @*<a href="">Gönder<i class="fas fa-arrow-right"></i></a>*@
+                <input class="hp_btn" type="submit" name="SaveButton" value="Gönder" onclick="return contactFormSubmit('contactForm');" />
             </div>
         </div>
     </div>

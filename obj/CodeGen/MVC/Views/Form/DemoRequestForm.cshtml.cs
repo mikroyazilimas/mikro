@@ -348,7 +348,7 @@ WriteLiteral("                                ");
 
             
             #line 69 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                           Write(Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", message="Lütfen Adınızı Yazınız", required = "required", placeholder = "Adınız*" }));
+                           Write(Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", message = "Lütfen İsminizi Giriniz", required = "required", placeholder = "Adınız*" }));
 
             
             #line default
@@ -363,7 +363,7 @@ WriteLiteral("                                ");
 
             
             #line 72 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                           Write(Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", message = "Lütfen Soyadınızı Yazınız", required = "required", placeholder = "Soyadınız*" }));
+                           Write(Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", message = "Lütfen Soyadınızı Giriniz", required = "required", placeholder = "Soyadınız*"}));
 
             
             #line default
@@ -379,7 +379,7 @@ WriteLiteral("                                ");
 
             
             #line 76 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                           Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", message = "Lütfen Email Adresinizi Yazınız", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" }));
+                           Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", message = "Lütfen E-Postanızı Giriniz", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*"}));
 
             
             #line default
@@ -405,7 +405,7 @@ WriteLiteral("                                ");
 
             
             #line 80 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                           Write(Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern=".{0}|.{13,13}", required = "required", message = "Lütfen Telefon Numaranızı Yazınız", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title= "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" }));
+                           Write(Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", message = "Lütfen Telefon Numaranızı Giriniz", pattern=".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title= "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız"}));
 
             
             #line default
@@ -440,7 +440,7 @@ WriteLiteral(">");
 
             
             #line 89 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                                                  Write(Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", message = "Lütfen Bilgilendirmeyi Kabul Ediniz", required = "required" }));
+                                                  Write(Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required" , message = "KVK Metnini Kabul Etmediniz" }));
 
             
             #line default

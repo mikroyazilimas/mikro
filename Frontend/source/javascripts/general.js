@@ -93,7 +93,7 @@ var iletisimJsonData = {
 
 var ussJsonData = {
     "/": "urunSecmeSihirbazı_ana-sayfa",
-    "urunler-ve-hizmetler/mikro-run/": "urunSecmeSihirbazı_run",
+    "urunler-ve-hizmetler/mikro-run": "urunSecmeSihirbazı_run",
     "urunler-ve-hizmetler/mikro-run/e-donusum-cozumleri": "urunSecmeSihirbazı_run",
     "urunler-ve-hizmetler/mikro-run/satis-ve-musteri-yonetimi": "urunSecmeSihirbazı_run",
     "urunler-ve-hizmetler/mikro-run/gider-ve-parasal-hareketlerin-yonetimi": "urunSecmeSihirbazı_run",
@@ -207,6 +207,13 @@ function formSubmit(formId, formPost, formType, dataLayerLabel) {
                 }
 
                 if (formType == "demo-talep-form-sayfa") {
+                    $.each(demoTalepJsonData, function (k, v) {
+                        if (k == getmon) { pushDataLayerContent = v }
+                    });
+                    console.log('demotalepanasayfa')
+                }
+
+                if (formType == "ucretsiz-demo-talep") {
                     $.each(demoTalepJsonData, function (k, v) {
                         if (k == getmon) { pushDataLayerContent = v }
                     });

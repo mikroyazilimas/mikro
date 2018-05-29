@@ -180,6 +180,8 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     body = body.Replace("@@telefon@@", phone);
                     body = body.Replace("@@mesaj@@", message);
                     body = body.Replace("@@eposta@@", email);
+                    body = body.Replace("@@subject@@", subject);
+                    
 
                     mail.Body = body;
                     mail.Subject = "İletişim Formu";

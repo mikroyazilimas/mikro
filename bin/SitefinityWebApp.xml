@@ -148,6 +148,15 @@
             To modify move field declaration from designer file to code-behind file.
             </remarks>
         </member>
+        <member name="F:SitefinityWebApp.App_Master.Page.PageRightNavigation">
+            <summary>
+            PageRightNavigation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
         <member name="F:SitefinityWebApp.App_Master.Page.FooterPlaceHolder">
             <summary>
             FooterPlaceHolder control.

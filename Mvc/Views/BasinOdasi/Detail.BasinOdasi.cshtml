@@ -10,9 +10,9 @@
 <div class="sfContentBlock">
     <p>@Html.Raw(Model.Item.Fields.Content)</p>
     <br />
-    @if (Model.Item.Fields.PDFFile != null)
+    @if (Model.Item.Fields.DocumentFile != null)
     {
-        foreach (var pht in Model.Item.Fields.PDFFile)
+        foreach (var pht in Model.Item.Fields.DocumentFile)
         {
             <a class="document-button" href ="@pht.Fields.MediaUrl">Dokümanı Gör<i class="fas fa-arrow-right"></i></a>
 

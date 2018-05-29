@@ -1,6 +1,23 @@
-﻿
+﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentDetailsViewModel
+
+
+<style>
+    .products-container-content {
+        display: none;
+    }
+</style>
 
 <div class="sfContentBlock">
+    <p>@Html.Raw(Model.Item.Fields.Content)</p>
+    <br />
+    @if (Model.Item.Fields.PDFFile != null)
+    {
+        foreach (var pht in Model.Item.Fields.PDFFile)
+        {
+            <a href="@pht.Fields.MediaUrl">Dokümanı Gör</a>
+            
+        }
 
-
+    }
+    
 </div>

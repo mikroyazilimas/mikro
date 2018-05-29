@@ -35,6 +35,8 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
         {
             try
             {
+               
+
                 MailHelper mail = new MailHelper();
 
                 //mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr", "satis@mikro.com.tr", "Mert.ALANKAYA@mikro.com.tr" };
@@ -47,9 +49,51 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 using (StreamReader sr = new StreamReader(Server.MapPath("~/Html/authorized-dealer.html"), System.Text.Encoding.UTF8))
                     body = sr.ReadToEnd();
 
-                body = body.Replace("@@ad@@", m.Name);
-                
+                //Firma Bilgileri
+                body = body.Replace("@@CompanyName@@", m.CompanyName);
+                body = body.Replace("@@Authorized@@", m.Authorized);
+                //city
+                body = body.Replace("@@Town@@", m.Town);
+                body = body.Replace("@@Task@@", m.Task);
+                body = body.Replace("@@PostCode@@", m.PostCode);
+                body = body.Replace("@@Fax@@", m.Fax);
+                body = body.Replace("@@EMail@@", m.EMail);
+                body = body.Replace("@@Adress@@", m.Adress);
+                body = body.Replace("@@_phone@@", m.phone);
+                //Genel Bilgiler
+                body = body.Replace("@@Gmanager@@", m.GManager);
+                body = body.Replace("@@GAsstManager@@", m.GAsstManager);
+                body = body.Replace("@@GMarketManager@@", m.GMarketManager);
+                body = body.Replace("@@GTechManager@@", m.GTechManager);
+                body = body.Replace("@@GSalesRepresentative@@", m.GSalesRepresentative);
+                //Muhasebe Bilgileri
+                body = body.Replace("@@MAccountant@@", m.MAccountant);
+                body = body.Replace("@@MTaxAdmin@@", m.MTaxAdmin);
+                body = body.Replace("@@MTaxNumber@@", m.MTaxNumber);
+                body = body.Replace("@@MYearEstablishment@@", m.MYearEstablishment);
+                body = body.Replace("@@MRecordCapital@@", m.MRecordCapital);
+                //İşyeri Bilgileri
 
+                //Çalıştığınız Bankalar
+                body = body.Replace("@@BName@@", m.BName);
+                body = body.Replace("@@BAccountNo@@", m.BAccountNo);
+                body = body.Replace("@@BPhone@@", m.BPhone);
+                body = body.Replace("@@BName2@@", m.BName2);
+                body = body.Replace("@@BAccountNo2@@", m.BAccountNo2);
+                body = body.Replace("@@BPhone2@@", m.BPhone2);
+                body = body.Replace("@@BName3@@", m.BName3);
+                body = body.Replace("@@BAccountNo3@@", m.BAccountNo3);
+                body = body.Replace("@@BPhone3@@", m.BPhone3);
+                //Referanslar
+                body = body.Replace("@@RName@@", m.RName);
+                body = body.Replace("@@RAuthorized@@", m.RAuthorized);
+                body = body.Replace("@@RPhone@@", m.RPhone);
+                body = body.Replace("@@RName2@@", m.RName2);
+                body = body.Replace("@@RAuthorized2@@", m.RAuthorized2);
+                body = body.Replace("@@RPhone2@@", m.RPhone2);
+                body = body.Replace("@@RName3@@", m.RName3);
+                body = body.Replace("@@RAuthorized3@@", m.RAuthorized3);
+                body = body.Replace("@@RPhone3@@", m.RPhone3);
                 mail.Body = body;
                 mail.Subject = "Yetkili Satıcı";
                 bool rtn = mail.SendMail();

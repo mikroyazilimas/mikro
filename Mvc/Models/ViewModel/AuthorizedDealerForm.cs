@@ -5,7 +5,7 @@ using System.Web;
 
 namespace SitefinityWebApp.Mvc.Models.ViewModel
 {
-    public class AuthorizedDealerForm
+    public class AuthorizedDealerForm : BaseViewModel
     {
         public string CompanyName { get; set; }
         public string Authorized { get; set; }
@@ -53,7 +53,7 @@ namespace SitefinityWebApp.Mvc.Models.ViewModel
         public string RAuthorized3 { get; set; }
         public string RPhone3 { get; set; }
 
-        public string FieldsOfActivity { get; set; }
+        public List<FieldsOfActivityItem> FieldsOfActivity { get; set; }
 
         public string OtherSellPrograms { get; set; }
 
@@ -61,5 +61,10 @@ namespace SitefinityWebApp.Mvc.Models.ViewModel
 
         
 
+    }
+
+    public class FieldsOfActivityItem {
+        public string Text { get; set; }
+        public bool Checked { get; set; }
     }
 }

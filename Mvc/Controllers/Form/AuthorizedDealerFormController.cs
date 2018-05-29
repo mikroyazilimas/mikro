@@ -19,7 +19,20 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
             try
             {
 
-                AuthorizedDealerForm m = new AuthorizedDealerForm() { };
+                AuthorizedDealerForm m = new AuthorizedDealerForm() {
+                    IsAlert = false
+                };
+                m.FieldsOfActivity = new List<FieldsOfActivityItem>
+                {
+                    new FieldsOfActivityItem { Text = "Bilgisayar Satışı" },
+                    new FieldsOfActivityItem { Text = "Program Satışı" },
+                    new FieldsOfActivityItem { Text = "OEM Satış" },
+                    new FieldsOfActivityItem { Text = "Yazılım Geliştirme" },
+                    new FieldsOfActivityItem { Text = "Eğitim" },
+                    new FieldsOfActivityItem { Text = "Sistem Kurulumu" },
+                    new FieldsOfActivityItem { Text = "Diğer" }
+                };
+
 
                 return View(Names.PagesView.AuthorizedDealerForm, m);
             }
@@ -35,7 +48,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
         {
             try
             {
-               
+
 
                 MailHelper mail = new MailHelper();
 
@@ -52,7 +65,8 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 //Firma Bilgileri
                 body = body.Replace("@@CompanyName@@", m.CompanyName);
                 body = body.Replace("@@Authorized@@", m.Authorized);
-                //city
+                body = body.Replace("@@City@@", m.City);
+
                 body = body.Replace("@@Town@@", m.Town);
                 body = body.Replace("@@Task@@", m.Task);
                 body = body.Replace("@@PostCode@@", m.PostCode);
@@ -96,9 +110,34 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 body = body.Replace("@@RPhone3@@", m.RPhone3);
                 //Sattığınız Diğer Programlar
                 body = body.Replace("@@OtherSell@@", m.OtherSellPrograms);
+
+
+                body = body.Replace("@@WorkPlace1@@", m.WorkPlace1 ? "Evet" : "Hayır");
+                body = body.Replace("@@WorkPlace2@@", m.WorkPlace2 ? "Var" : "Yok");
+                string strList = "";
+                m.FieldsOfActivity.ForEach(x=>
+                {
+                    if (x.Checked)
+                    {
+                        strList += x.Text;
+                    }
+                });
+                body = body.Replace("@@FieldsOfActivity@@", strList);
+
                 mail.Body = body;
                 mail.Subject = "Yetkili Satıcı";
                 bool rtn = mail.SendMail();
+                if (rtn)
+                {
+
+                    Response.Redirect(Names.Pages.Thanks);
+                }
+                else
+                {
+                    m.IsAlert = true;
+                    m.AlertTitle = "Hata";
+                    m.AlertMessage = "Teknik bir hata oluştu";
+                }
 
                 return View(Names.PagesView.AuthorizedDealerForm, m);
             }

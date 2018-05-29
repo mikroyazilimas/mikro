@@ -27,6 +27,7 @@ public struct Names
     public struct Pages
     {
         public const string ErrorPage = "/404";
+        public const string Thanks = "/tesekkurler";
     }
 
     public struct Cache

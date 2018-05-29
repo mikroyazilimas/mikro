@@ -2,6 +2,11 @@
 
 
 
+@if (Model.IsAlert)
+{
+    <div class="modal-content" style="display: block;"><span>@Model.AlertMessage</span></div><span id="modal-close">Tamam</span>
+}
+
 <div class="hr-form">
     <div class="hr-form-section">
         <div class="hr-form-title">
@@ -11,17 +16,99 @@
             <div class="hr-form-input-left">
                 <div class="hr-form-input-item">
                     <label for="">Firma Adı</label>
-                    @Html.TextBoxFor(m => m.CompanyName, new { required = "required", placeholder = "Firma Adı*", message="Lütfen Firma Adınızı Seçiniz" })
+                    @Html.TextBoxFor(m => m.CompanyName, new { required = "required", placeholder = "Firma Adı*", message = "Lütfen Firma Adınızı Seçiniz" })
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">İl</label>
-                    <select name="" id="" required = "required" message="Lütfen İl Seçiniz">
-                        <option value="1"></option>
+                    <select name="City" id="city" style="width:150px">
+                        <option value="">İl Seçiniz</option>
+                        <option value="İstanbul">İstanbul</option>
+                        <option value="Ankara">Ankara</option>
+                        <option value="İzmir">İzmir</option>
+                        <option value="Adana">Adana</option>
+                        <option value="Adıyaman">Adıyaman</option>
+                        <option value="Afyonkarahisar">Afyonkarahisar</option>
+                        <option value="Ağrı">Ağrı</option>
+                        <option value="Aksaray">Aksaray</option>
+                        <option value="Amasya">Amasya</option>
+                        <option value="Antalya">Antalya</option>
+                        <option value="Ardahan">Ardahan</option>
+                        <option value="Artvin">Artvin</option>
+                        <option value="Aydın">Aydın</option>
+                        <option value="Balıkesir">Balıkesir</option>
+                        <option value="Bartın">Bartın</option>
+                        <option value="Batman">Batman</option>
+                        <option value="Bayburt">Bayburt</option>
+                        <option value="Bilecik">Bilecik</option>
+                        <option value="Bingöl">Bingöl</option>
+                        <option value="Bitlis">Bitlis</option>
+                        <option value="Bolu">Bolu</option>
+                        <option value="Burdur">Burdur</option>
+                        <option value="Bursa">Bursa</option>
+                        <option value="Çanakkale">Çanakkale</option>
+                        <option value="Çankırı">Çankırı</option>
+                        <option value="Çorum">Çorum</option>
+                        <option value="Denizli">Denizli</option>
+                        <option value="Diyarbakır">Diyarbakır</option>
+                        <option value="Düzce">Düzce</option>
+                        <option value="Edirne">Edirne</option>
+                        <option value="Elazığ">Elazığ</option>
+                        <option value="Erzincan">Erzincan</option>
+                        <option value="Erzurum">Erzurum</option>
+                        <option value="Eskişehir">Eskişehir</option>
+                        <option value="Gaziantep">Gaziantep</option>
+                        <option value="Giresun">Giresun</option>
+                        <option value="Gümüşhane">Gümüşhane</option>
+                        <option value="Hakkâri">Hakkâri</option>
+                        <option value="Hatay">Hatay</option>
+                        <option value="Iğdır">Iğdır</option>
+                        <option value="Isparta">Isparta</option>
+                        <option value="Kahramanmaraş">Kahramanmaraş</option>
+                        <option value="Karabük">Karabük</option>
+                        <option value="Karaman">Karaman</option>
+                        <option value="Kars">Kars</option>
+                        <option value="Kastamonu">Kastamonu</option>
+                        <option value="Kayseri">Kayseri</option>
+                        <option value="Kırıkkale">Kırıkkale</option>
+                        <option value="Kırklareli">Kırklareli</option>
+                        <option value="Kırşehir">Kırşehir</option>
+                        <option value="Kilis">Kilis</option>
+                        <option value="Kocaeli">Kocaeli</option>
+                        <option value="Konya">Konya</option>
+                        <option value="Kütahya">Kütahya</option>
+                        <option value="Malatya">Malatya</option>
+                        <option value="Manisa">Manisa</option>
+                        <option value="Mardin">Mardin</option>
+                        <option value="Mersin">Mersin</option>
+                        <option value="Muğla">Muğla</option>
+                        <option value="Muş">Muş</option>
+                        <option value="Nevşehir">Nevşehir</option>
+                        <option value="Niğde">Niğde</option>
+                        <option value="Ordu">Ordu</option>
+                        <option value="Osmaniye">Osmaniye</option>
+                        <option value="Rize">Rize</option>
+                        <option value="Sakarya">Sakarya</option>
+                        <option value="Samsun">Samsun</option>
+                        <option value="Siirt">Siirt</option>
+                        <option value="Sinop">Sinop</option>
+                        <option value="Sivas">Sivas</option>
+                        <option value="Şırnak">Şırnak</option>
+                        <option value="Tekirdağ">Tekirdağ</option>
+                        <option value="Tokat">Tokat</option>
+                        <option value="Trabzon">Trabzon</option>
+                        <option value="Tunceli">Tunceli</option>
+                        <option value="Şanlıurfa">Şanlıurfa</option>
+                        <option value="Uşak">Uşak</option>
+                        <option value="Van">Van</option>
+                        <option value="Yalova">Yalova</option>
+                        <option value="Yozgat">Yozgat</option>
+                        <option value="Zonguldak">Zonguldak</option>
                     </select>
+
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">İlçe</label>
-                    @Html.TextBoxFor(m => m.Town, new { required = "required", placeholder = "İlçe*", message="Lütfen İlçe Seçiniz" })
+                    @Html.TextBoxFor(m => m.Town, new { required = "required", placeholder = "İlçe*", message = "Lütfen İlçe Seçiniz" })
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Fax</label>
@@ -29,17 +116,17 @@
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Adres</label>
-                    @Html.TextAreaFor(m => m.Adress, new { placeholder = "Mesajınız*" , required = "required", message="Lütfen Mesajınızı Giriniz"})
+                    @Html.TextAreaFor(m => m.Adress, new { placeholder = "Mesajınız*", required = "required", message = "Lütfen Mesajınızı Giriniz" })
                 </div>
             </div>
             <div class="hr-form-input-right">
                 <div class="hr-form-input-item">
                     <label for="">Yetkili</label>
-                    @Html.TextBoxFor(m => m.Authorized, new { placeholder = "Yetkili*", required = "required", message="Lütfen Yetkili Giriniz" })
+                    @Html.TextBoxFor(m => m.Authorized, new { placeholder = "Yetkili*", required = "required", message = "Lütfen Yetkili Giriniz" })
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Görev</label>
-                    @Html.TextBoxFor(m => m.Task, new { placeholder = "Görev*" , required = "required", message="Lütfen Görev Giriniz" })
+                    @Html.TextBoxFor(m => m.Task, new { placeholder = "Görev*", required = "required", message = "Lütfen Görev Giriniz" })
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Posta Kodu</label>
@@ -47,11 +134,11 @@
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">E-Posta</label>
-                    @Html.TextBoxFor(m => m.EMail, new { placeholder = "E-Posta*", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", message ="Lütfen E-Posta Giriniz"})
+                    @Html.TextBoxFor(m => m.EMail, new { placeholder = "E-Posta*", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", message = "Lütfen E-Posta Giriniz" })
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Telefon</label>
-                    
+
                     @Html.TextBoxFor(m => m.phone, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
                 </div>
             </div>
@@ -65,12 +152,12 @@
             <div class="hr-form-input-left">
                 <div class="hr-form-input-item">
                     <label for="">Genel Müdür</label>
-                    @Html.TextBoxFor(m => m.GManager, new { placeholder = "Genel Müdür*", required = "required", message="Lütfen Genel Müdür İsmini Giriniz"  })
+                    @Html.TextBoxFor(m => m.GManager, new { placeholder = "Genel Müdür*", required = "required", message = "Lütfen Genel Müdür İsmini Giriniz" })
                 </div>
 
                 <div class="hr-form-input-item">
                     <label for="">Genel Müdür Yardımcısı</label>
-                    @Html.TextBoxFor(m => m.GAsstManager, new { placeholder = "Genel Müdür Yardımcısı"})
+                    @Html.TextBoxFor(m => m.GAsstManager, new { placeholder = "Genel Müdür Yardımcısı" })
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Pazarlama Müdürü</label>
@@ -102,21 +189,21 @@
 
                 <div class="hr-form-input-item">
                     <label for="">Vergi Dairesi</label>
-                    @Html.TextBoxFor(m => m.MTaxAdmin, new { placeholder = "Vergi Dairesi*" , required = "required", message="Lütfen Vergi Dairenizi Giriniz" })
+                    @Html.TextBoxFor(m => m.MTaxAdmin, new { placeholder = "Vergi Dairesi*", required = "required", message = "Lütfen Vergi Dairenizi Giriniz" })
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Vergi Numarası</label>
-                    @Html.TextBoxFor(m => m.MTaxNumber, new { placeholder = "Vergi Numarası*", required = "required", message="Lütfen Vergi Numaranızı Giriniz" , maxlength = "10", pattern = "[0-9]+" })
+                    @Html.TextBoxFor(m => m.MTaxNumber, new { placeholder = "Vergi Numarası*", required = "required", message = "Lütfen Vergi Numaranızı Giriniz", maxlength = "10", pattern = "[0-9]+" })
                 </div>
             </div>
             <div class="hr-form-input-right">
                 <div class="hr-form-input-item">
                     <label for="">Kuruluş Yılı</label>
-                    @Html.TextBoxFor(m => m.MYearEstablishment, new { placeholder = "Kuruluş Yılı*" , required = "required" ,maxlength = "4", pattern = "[0-9]+" ,message = "Lütfen Şirketinizin Kuruluş Yılını Giriniz" })
+                    @Html.TextBoxFor(m => m.MYearEstablishment, new { placeholder = "Kuruluş Yılı*", required = "required", maxlength = "4", pattern = "[0-9]+", message = "Lütfen Şirketinizin Kuruluş Yılını Giriniz" })
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Kayıt Sermayesi</label>
-                    @Html.TextBoxFor(m => m.MRecordCapital, new { placeholder = "Kayıt Sermayesi*" , required = "required", message="Lütfen Kayıt Sermayesini Giriniz"  })
+                    @Html.TextBoxFor(m => m.MRecordCapital, new { placeholder = "Kayıt Sermayesi*", required = "required", message = "Lütfen Kayıt Sermayesini Giriniz" })
                 </div>
             </div>
         </div>
@@ -131,8 +218,10 @@
                     <label>*İş yeri Firmaya mı ait?</label>
                 </div>
                 <div class="hr-form-input-item__radio">
-                    <label for="evet"><input type="radio" id="evet" name="onay1" required message="Lütfen İşyeri Firmaya mı ait? Sorusunu Cevaplayınız">Evet</label>
-                    <label for="hayir"><input type="radio" id="hayir" name="onay1">Hayır</label>
+                    
+                        @Html.RadioButtonFor(m => m.WorkPlace1, "true" ) Evet
+                        @Html.RadioButtonFor(m => m.WorkPlace1, "false" ) Hayır
+                    
                 </div>
             </div>
             <div class="hr-form-input-item">
@@ -140,8 +229,8 @@
                     <label>*İş Yerinde Showroom Var mı?</label>
                 </div>
                 <div class="hr-form-input-item__radio">
-                    <label for="var"><input type="radio" id="var" name="onay2" required message="Lütfen İş Yerinizde Showroom Var Mı? Sorusunu Cevaplayınız">Var</label>
-                    <label for="yok"><input type="radio" id="yok" name="onay2">Yok</label>
+                    @Html.RadioButtonFor(m => m.WorkPlace2, "true") Var
+                    @Html.RadioButtonFor(m => m.WorkPlace2, "false") Yok
                 </div>
             </div>
         </div>
@@ -189,7 +278,7 @@
             </div>
             <div class="hr-form-input-item">
                 <label for="">Telefon</label>
-                @Html.TextBoxFor(m => m.BPhone3, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}",  maxlength = "16", placeholder = "Telefon Numaranız", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
+                @Html.TextBoxFor(m => m.BPhone3, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", maxlength = "16", placeholder = "Telefon Numaranız", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
             </div>
         </div>
     </div>
@@ -200,15 +289,15 @@
         <div class="hr-form-input bank">
             <div class="hr-form-input-item">
                 <label for="">Referans Adı Soyadı</label>
-                @Html.TextBoxFor(m => m.RName, new { placeholder = "Referans Adı Soyadı*" , required= "required" , message="Lütfen Referansınızın Adını ve Soyadını Giriniz" })
+                @Html.TextBoxFor(m => m.RName, new { placeholder = "Referans Adı Soyadı*", required = "required", message = "Lütfen Referansınızın Adını ve Soyadını Giriniz" })
             </div>
             <div class="hr-form-input-item">
                 <label for="">Yetkili</label>
-                @Html.TextBoxFor(m => m.RAuthorized, new { placeholder = "Yetkili*" ,  message = "Lütfen Referansınızın Yetkilisini Giriniz", required = "required" })
+                @Html.TextBoxFor(m => m.RAuthorized, new { placeholder = "Yetkili*", message = "Lütfen Referansınızın Yetkilisini Giriniz", required = "required" })
             </div>
             <div class="hr-form-input-item">
                 <label for="">Telefon</label>
-                @Html.TextBoxFor(m => m.RPhone, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}",  maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" ,required = "required" })
+                @Html.TextBoxFor(m => m.RPhone, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", required = "required" })
             </div>
         </div>
         <div class="hr-form-input bank">
@@ -222,7 +311,7 @@
             </div>
             <div class="hr-form-input-item">
                 <label for="">Telefon</label>
-                @Html.TextBoxFor(m => m.RPhone2, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}",  maxlength = "16", placeholder = "Telefon Numaranız", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
+                @Html.TextBoxFor(m => m.RPhone2, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", maxlength = "16", placeholder = "Telefon Numaranız", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
             </div>
         </div>
         <div class="hr-form-input bank">
@@ -236,7 +325,7 @@
             </div>
             <div class="hr-form-input-item">
                 <label for="">Telefon</label>
-                @Html.TextBoxFor(m => m.RPhone3, new {  pattern = ".{0}|.{13,13}", maxlength = "16", placeholder = "Telefon Numaranız", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
+                @Html.TextBoxFor(m => m.RPhone3, new { pattern = ".{0}|.{13,13}", maxlength = "16", placeholder = "Telefon Numaranız", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
             </div>
         </div>
     </div>
@@ -245,16 +334,15 @@
             <span>Firmanızın Faaliyet Alanları</span>
         </div>
         <div class="hr-form-input activity">
-            
-                @*@Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required" })*@
-                <label for="bilgisayar"><input type="checkbox" id="bilgisayar">Bilgisayar Satışı</label>
-                <label for="program"><input type="checkbox" id="program">Program Satışı</label>
-                <label for="OEM"><input type="checkbox" id="OEM">OEM Satış</label>
-                <label for="yazilim"><input type="checkbox" id="yazilim">Yazılım Geliştirme</label>
-                <label for="egitim"><input type="checkbox" id="egitim">Eğitim</label>
-                <label for="sistem"><input type="checkbox" id="sistem">Sistem Kurulumu</label>
-                <label for="diger"><input type="checkbox" id="diger" />Diğer</label>
-            
+
+            @for (int i = 0; i < Model.FieldsOfActivity.Count; i++)
+            {
+                @Html.CheckBoxFor(m => m.FieldsOfActivity[i].Checked, new { id = "employmentType_" + i })
+                @Html.HiddenFor(m => m.FieldsOfActivity[i].Text)
+                @Html.DisplayFor(m => m.FieldsOfActivity[i].Text)
+            }
+
+
         </div>
     </div>
     <div class="hr-form-section">

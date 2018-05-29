@@ -106,13 +106,13 @@
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Vergi Numarası</label>
-                    @Html.TextBoxFor(m => m.MTaxNumber, new { placeholder = "Vergi Numarası*", required = "required", message="Lütfen Vergi Numaranızı Giriniz" , pattern = ".{0}|.{10,10}" })
+                    @Html.TextBoxFor(m => m.MTaxNumber, new { placeholder = "Vergi Numarası*", required = "required", message="Lütfen Vergi Numaranızı Giriniz" , maxlength = "10", pattern = "[0-9]+" })
                 </div>
             </div>
             <div class="hr-form-input-right">
                 <div class="hr-form-input-item">
                     <label for="">Kuruluş Yılı</label>
-                    @Html.TextBoxFor(m => m.MYearEstablishment, new { placeholder = "Kuruluş Yılı*" , required = "required", message="Lütfen Kuruluş Yılınızı Giriniz"})
+                    @Html.TextBoxFor(m => m.MYearEstablishment, new { placeholder = "Kuruluş Yılı*" , required = "required" ,maxlength = "4", pattern = "[0-9]+" ,message = "Lütfen Şirketinizin Kuruluş Yılını Giriniz" })
                 </div>
                 <div class="hr-form-input-item">
                     <label for="">Kayıt Sermayesi</label>
@@ -161,7 +161,7 @@
             </div>
             <div class="hr-form-input-item">
                 <label for="">Telefon</label>
-                @Html.TextBoxFor(m => m.BPhone, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
+                @Html.TextBoxFor(m => m.BPhone, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", maxlength = "16", placeholder = "Telefon Numaranız", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
             </div>
         </div>
         <div class="hr-form-input bank">
@@ -175,7 +175,7 @@
             </div>
             <div class="hr-form-input-item">
                 <label for="">Telefon</label>
-                @Html.TextBoxFor(m => m.BPhone2, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
+                @Html.TextBoxFor(m => m.BPhone2, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", maxlength = "16", placeholder = "Telefon Numaranız", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
             </div>
         </div>
         <div class="hr-form-input bank">
@@ -189,7 +189,7 @@
             </div>
             <div class="hr-form-input-item">
                 <label for="">Telefon</label>
-                @Html.TextBoxFor(m => m.BPhone3, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
+                @Html.TextBoxFor(m => m.BPhone3, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}",  maxlength = "16", placeholder = "Telefon Numaranız", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
             </div>
         </div>
     </div>
@@ -204,11 +204,11 @@
             </div>
             <div class="hr-form-input-item">
                 <label for="">Yetkili</label>
-                @Html.TextBoxFor(m => m.RAuthorized, new { placeholder = "Yetkili*" , required = "required", message = "Lütfen Referansınızın Yetkilisini Giriniz" })
+                @Html.TextBoxFor(m => m.RAuthorized, new { placeholder = "Yetkili*" ,  message = "Lütfen Referansınızın Yetkilisini Giriniz", required = "required" })
             </div>
             <div class="hr-form-input-item">
                 <label for="">Telefon</label>
-                @Html.TextBoxFor(m => m.RPhone, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
+                @Html.TextBoxFor(m => m.RPhone, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}",  maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" ,required = "required" })
             </div>
         </div>
         <div class="hr-form-input bank">
@@ -222,7 +222,7 @@
             </div>
             <div class="hr-form-input-item">
                 <label for="">Telefon</label>
-                @Html.TextBoxFor(m => m.RPhone2, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
+                @Html.TextBoxFor(m => m.RPhone2, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}",  maxlength = "16", placeholder = "Telefon Numaranız", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
             </div>
         </div>
         <div class="hr-form-input bank">
@@ -236,7 +236,7 @@
             </div>
             <div class="hr-form-input-item">
                 <label for="">Telefon</label>
-                @Html.TextBoxFor(m => m.RPhone3, new { message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
+                @Html.TextBoxFor(m => m.RPhone3, new {  pattern = ".{0}|.{13,13}", maxlength = "16", placeholder = "Telefon Numaranız", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
             </div>
         </div>
     </div>

@@ -59,7 +59,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 body = body.Replace("@@Fax@@", m.Fax);
                 body = body.Replace("@@EMail@@", m.EMail);
                 body = body.Replace("@@Adress@@", m.Adress);
-                body = body.Replace("@@_phone@@", m.phone);
+                body = body.Replace("@@phone@@", m.phone);
                 //Genel Bilgiler
                 body = body.Replace("@@Gmanager@@", m.GManager);
                 body = body.Replace("@@GAsstManager@@", m.GAsstManager);
@@ -94,6 +94,8 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 body = body.Replace("@@RName3@@", m.RName3);
                 body = body.Replace("@@RAuthorized3@@", m.RAuthorized3);
                 body = body.Replace("@@RPhone3@@", m.RPhone3);
+                //Sattığınız Diğer Programlar
+                body = body.Replace("@@OtherSell@@", m.OtherSellPrograms);
                 mail.Body = body;
                 mail.Subject = "Yetkili Satıcı";
                 bool rtn = mail.SendMail();

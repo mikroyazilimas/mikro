@@ -54,7 +54,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
 
                 //mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr", "satis@mikro.com.tr", "Mert.ALANKAYA@mikro.com.tr" };
                 //mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr","Mert.ALANKAYA@mikro.com.tr" };
-                mail.To = new List<string>() { "kamil.turhan@ph.com.tr" };
+                mail.To = new List<string>() { "satis@mikro.com.tr" };
                 mail.From = "no-reply@e-mail.mikro.com.tr";
                 mail.FromDisplayName = "Mikro";
 

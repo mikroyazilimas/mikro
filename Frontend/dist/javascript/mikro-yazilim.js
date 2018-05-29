@@ -6230,6 +6230,17 @@ var stickySidebar = function (element, stopper) {
     }
 }
 
+function validateNumber(event) {
+    var key = window.event ? event.keyCode : event.which;
+    if (event.keyCode === 8 || event.keyCode === 46) {
+        return true;
+    } else if ( key < 48 || key > 57 ) {
+        return false;
+    } else {
+        return true;
+    }
+};
+
 var isFormSubmit = false;
 $(function () {
 
@@ -6273,8 +6284,8 @@ $(function () {
         if ($(this).val().length > 10)
             return false;
     });
-
-
+    
+    $('[class^=just]').keypress(validateNumber);
 
     $('input, input[required], select[required], textarea[required]').on("invalid", function (e) {
 

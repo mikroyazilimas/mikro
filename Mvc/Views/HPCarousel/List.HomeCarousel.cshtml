@@ -12,25 +12,26 @@
     }
 </style>
 @* <div class="page-section-demo">
-    <a href="/urunler-ve-hizmetler/genel-bakis"><img src="~/Frontend/dist/images/homepage/demo-banner.jpg" /></a>
-    <div class="page-section-demo-banner-responsive"><a href="/urunler-ve-hizmetler/genel-bakis"><img src="~/Frontend/dist/images/homepage/demo-banner-mobil.jpg" /></a></div>
-</div> *@
+        <a href="/urunler-ve-hizmetler/genel-bakis"><img src="~/Frontend/dist/images/homepage/demo-banner.jpg" /></a>
+        <div class="page-section-demo-banner-responsive"><a href="/urunler-ve-hizmetler/genel-bakis"><img src="~/Frontend/dist/images/homepage/demo-banner-mobil.jpg" /></a></div>
+    </div> *@
 
-
-    <div class="page-section-demo herobanner-owl-carousel owl-carousel">
-        @foreach (var item in Model.Items)
+<div class="page-section-demo herobanner-owl-carousel owl-carousel">
+    @foreach (var item in Model.Items.OrderBy(x => x.Fields.Order))
+    {
+        if (item.Fields.Photo != null)
         {
+
             <div class="page-section-demo-item">
+                <a href="@item.Fields.RedirectUrl"><img src="@item.Fields.Photo[0].Fields.MediaUrl" /></a>
+                @if (item.Fields.Responsive != null)
+                {
+                    <div class="page-section-demo-banner-responsive"><a href="@item.Fields.RedirectUrl"><img src="@item.Fields.Responsive[0].Fields.MediaUrl" /></a></div>
+                }
 
-
- 
-                    <a href="#"><img src="~/Frontend/dist/images/homepage/demo-banner.jpg" /></a>
-                    <div class="page-section-demo-banner-responsive"><a href="#"><img src="~/Frontend/dist/images/homepage/demo-banner-mobil.jpg" /></a></div>
-          
 
             </div>
-
-
         }
+    }
 
-    </div>
+</div>

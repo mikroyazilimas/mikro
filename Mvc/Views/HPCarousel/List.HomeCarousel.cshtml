@@ -1,16 +1,9 @@
-﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+﻿
+
+
+@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
 @using Telerik.Sitefinity.Frontend.Mvc.Helpers;
 
-<style>
-    .owl-dots {
-        position: absolute;
-        bottom: 0px;
-    }
-
-    .owl-nav {
-        display: none;
-    }
-</style>
 @* <div class="page-section-demo">
         <a href="/urunler-ve-hizmetler/genel-bakis"><img src="~/Frontend/dist/images/homepage/demo-banner.jpg" /></a>
         <div class="page-section-demo-banner-responsive"><a href="/urunler-ve-hizmetler/genel-bakis"><img src="~/Frontend/dist/images/homepage/demo-banner-mobil.jpg" /></a></div>
@@ -23,10 +16,10 @@
         {
 
             <div class="page-section-demo-item">
-                <a href="@item.Fields.RedirectUrl"><img src="@item.Fields.Photo[0].Fields.MediaUrl" /></a>
+                <a href="@item.Fields.RedirectUrl" class="desktop-banner"><img src="@item.Fields.Photo[0].Fields.MediaUrl" style="width: 100% !important;" /></a>
                 @if (item.Fields.Responsive != null)
                 {
-                    <div class="page-section-demo-banner-responsive"><a href="@item.Fields.RedirectUrl"><img src="@item.Fields.Responsive[0].Fields.MediaUrl" /></a></div>
+                    <a href="@item.Fields.RedirectUrl" class="mobile-banner"><img src="@item.Fields.Responsive[0].Fields.MediaUrl" style="width: 100% !important;" /></a>
                 }
 
 
@@ -35,3 +28,21 @@
     }
 
 </div>
+
+
+
+
+<style>
+    .owl-dots {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .owl-nav {
+        display: none;
+    }
+
+    .mobile-banner {
+        display: none;
+    }
+</style>

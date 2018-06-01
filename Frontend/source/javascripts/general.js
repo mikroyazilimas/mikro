@@ -186,7 +186,6 @@ function formSubmit(formId, formPost, formType, dataLayerLabel) {
                 //    }
                 //});
 
-
                 function getPath(s) {
                     var i = s.indexOf('://') + 3, j;
                     i = s.indexOf('/', i) + 1;  // find first / (ie. after .com) and start at the next char
@@ -197,47 +196,13 @@ function formSubmit(formId, formPost, formType, dataLayerLabel) {
                     return s.slice(i, j); // return what we've ended up at
                 }
 
-
                 var pushDataLayerContent = null;
-                var getmon = getPath(document.referrer)
-
-
-                if (formType == "demo-talep-anasayfa") {
-                    $.each(demoTalepJsonData, function (k, v) {
-                        if (k == window.location.pathname) { pushDataLayerContent = v }
-                    });
-                    console.log('demo-talep-anasayfa')
-                }
-
-                if (formType == "demo-talep-form-sayfa") {
-                    $.each(demoTalepJsonData, function (k, v) {
-                        if (k == getmon) { pushDataLayerContent = v }
-                    });
-                    console.log('demotalepanasayfa')
-                }
-
-                if (formType == "ucretsiz-demo-talep") {
-                    $.each(demoTalepJsonData, function (k, v) {
-                        if (k == getmon) { pushDataLayerContent = v }
-                    });
-                    console.log('demotalepanasayfa')
-                }
-
-                if (formType == "ussform") {
-                    $.each(ussJsonData, function (k, v) {
-                        if (k == getmon) { pushDataLayerContent = v }
-                    });
-                    console.log('demotalepanasayfa')
-                }
-
-                if (formType == "iletisim-form-sayfa") {
-                    pushDataLayerContent = "iletisimFormu_bize-ulasim"
-                }
+                var getmon = (getPath(document.referrer) == "" ? "mikro/anasayfa" : getPath(document.referrer))
 
                 dataLayer.push({
                     'Category': "form",
                     'Action': "gonder",
-                    'Label': pushDataLayerContent,
+                    'Label': formType + ' + ' + getmon,
                     'event': 'gaEvent'
                 });
 
@@ -276,8 +241,6 @@ function formSubmit(formId, formPost, formType, dataLayerLabel) {
 function contactFormSubmit(formId) {
 
     hangiFormAction = "iletişim-form-anasayfa";
-
-   
 
     $('#' + formId).submit(function (e) {
         if (!$(this).attr('validated')) {

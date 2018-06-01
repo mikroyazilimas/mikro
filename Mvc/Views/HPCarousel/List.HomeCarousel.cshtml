@@ -1,5 +1,36 @@
-﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+﻿
+
+
+@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
 @using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+@* <div class="page-section-demo">
+        <a href="/urunler-ve-hizmetler/genel-bakis"><img src="~/Frontend/dist/images/homepage/demo-banner.jpg" /></a>
+        <div class="page-section-demo-banner-responsive"><a href="/urunler-ve-hizmetler/genel-bakis"><img src="~/Frontend/dist/images/homepage/demo-banner-mobil.jpg" /></a></div>
+    </div> *@
+
+<div class="page-section-demo herobanner-owl-carousel owl-carousel">
+    @foreach (var item in Model.Items.OrderBy(x => x.Fields.Order))
+    {
+        if (item.Fields.Photo != null)
+        {
+
+            <div class="page-section-demo-item">
+                <a href="@item.Fields.RedirectUrl" class="desktop-banner"><img src="@item.Fields.Photo[0].Fields.MediaUrl" style="width: 100% !important;" /></a>
+                @if (item.Fields.Responsive != null)
+                {
+                    <a href="@item.Fields.RedirectUrl" class="mobile-banner"><img src="@item.Fields.Responsive[0].Fields.MediaUrl" style="width: 100% !important;" /></a>
+                }
+
+
+            </div>
+        }
+    }
+
+</div>
+
+
+
 
 <style>
     .owl-dots {
@@ -10,40 +41,8 @@
     .owl-nav {
         display: none;
     }
+
+    .mobile-banner {
+        display: none;
+    }
 </style>
-<div class="page-section-demo">
-    <a href="/urunler-ve-hizmetler/genel-bakis"><img src="~/Frontend/dist/images/homepage/demo-banner.jpg" /></a>
-    <div class="page-section-demo-banner-responsive"><a href="/urunler-ve-hizmetler/genel-bakis"><img src="~/Frontend/dist/images/homepage/demo-banner-mobil.jpg" /></a></div>
-</div>
-
-@*
-    <div class="page-section-demo herobanner-owl-carousel owl-carousel">
-        @foreach (var item in Model.Items)
-        {
-            <a href="@item.Fields.RedirectUrl" class="page-section-demo-item">
-
-                @foreach (var photo in item.Fields.Photo)
-                {
-                    <img src="@photo.Fields.MediaUrl" />
-                }
-                @if (item.Fields.FullPhotoBanner != true)
-                {
-                    <div class="page-section-demo-item-content">
-                        <div class="page-section-demo-item-content-title">
-                            <div class="page-section-demo-item-content-title__text1">
-                                <span>@item.Fields.Title</span>
-                            </div>
-                        </div>
-                        <div class="page-section-demo-item-content-text2">
-                            <p>@item.Fields.SubTitle</p>
-                        </div>
-                    </div>
-                }
-
-            </a>
-
-
-        }
-
-    </div>
-*@

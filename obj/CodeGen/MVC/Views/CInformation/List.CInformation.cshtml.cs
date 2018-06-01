@@ -141,9 +141,8 @@ WriteLiteral(">\r\n                    <span>TELEFON</span>\r\n                <
 WriteLiteral(" class=\"contact-left-item__text\"");
 
 WriteLiteral(@">
-                    <span>+90 (212) 806 45 45 (PBX) </span>
                     <span>+90 (232) 441 74 24 (PBX) </span>
-                    <span>+90 (222) 446 02 31 (PBX) </span>
+                    <span>+90 (232) 446 02 31 (PBX) </span>
                     <span><strong>Faks : </strong>+90 (232) 445 07 65</span>
                 </div>
             </div>

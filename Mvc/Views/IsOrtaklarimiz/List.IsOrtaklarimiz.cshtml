@@ -88,8 +88,8 @@
                 }
                 <option data-country-id="az" value="Baku">Bakü</option>
             </select>
-            <input name="ilce" type="text" placeholder="İlçe arayın." value="@(Request.QueryString["ilce"])" />
-            <input name="is-ortagi" type="text" placeholder="İş ortağı arayın." value="@(Request.QueryString["is-ortagi"])" />
+            <input name="ilce" type="text" placeholder="İlçe arayın" value="@(Request.QueryString["ilce"])" />
+            <input name="is-ortagi" type="text" placeholder="İş ortağı arayın" value="@(Request.QueryString["is-ortagi"])" />
             <input type="submit" value="Ara" />
         </form>
     </div>
@@ -114,14 +114,14 @@
                         <span>@Html.Raw(item.Fields.Phone)</span>
                     </div>
                 </div>
-                <div class="work-partners-content-item-right">
+                    <div class="work-partners-content-item-right__img">
+                        <img src="" />
+                    </div>
+                    
                     <div class="work-partners-content-item-right__img">
                         <img alt="" />
                     </div>
-                    <div class="work-partners-content-item-right__img">
-                        <img alt="" />
-                    </div>
-                </div>
+                
             </div>
         }
     </div>

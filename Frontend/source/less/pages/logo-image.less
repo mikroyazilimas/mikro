@@ -1,0 +1,39 @@
+.logo-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: @dark_blue;
+    text-align: center;
+    padding: 30px;
+}
+
+.logo-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    padding: 10px;
+        &-item{
+            width: calc(90% / 4);
+            margin-bottom: 20px;
+            >a{
+                text-decoration: none;
+                color: @dark_blue;
+            }
+            &-img{
+                height: 180px;
+                width: 100%;
+                border: 1px solid #eee;
+                >img{
+                    height: 100%;
+                }
+            }
+            &-title{
+                margin-top: 10px;
+                font-size: 17px;
+                color: @dark_blue;
+            
+            }
+        }
+    
+}

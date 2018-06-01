@@ -1,0 +1,128 @@
+﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+@using Telerik.Sitefinity.Model;
+@using Telerik.Sitefinity.DynamicModules.Model;
+
+@{
+    var items = Model.Items.OrderBy(x => (Lstring)x.Fields.Title).ToList();
+
+    //veriler
+    List<KeyValuePair<string, string>> cities = items.Select(x => new KeyValuePair<string, string>(((ChoiceOption)x.Fields.City).Text, ((ChoiceOption)x.Fields.City).PersistedValue)).Distinct().ToList();
+    List<KeyValuePair<string, string>> countries = items.Select(x => new KeyValuePair<string, string>(((ChoiceOption)x.Fields.Country).Text, ((ChoiceOption)x.Fields.Country).PersistedValue)).Distinct().ToList();
+    List<string> dealerTypes = items.Select(x => ((ChoiceOption)x.Fields.DealerType).Text).Distinct().ToList();
+
+    //filtrelemeler
+    string title = Request.QueryString["is-ortagi"];
+    string city = Request.QueryString["il"];
+    string country = Request.QueryString["ulke"];
+    string district = Request.QueryString["ilce"];
+    string dealerType = Request.QueryString["bayi-tipi"];
+    if (!String.IsNullOrEmpty(title))
+    {
+        items = items.Where(p => p.Fields.Title.ToString().Contains(title)).ToList();
+    }
+    if (!String.IsNullOrEmpty(city))
+    {
+        items = items.Where(p => p.Fields.City.ToString() == city).ToList();
+    }
+    if (!String.IsNullOrEmpty(country))
+    {
+        items = items.Where(p => p.Fields.Country.ToString() == country).ToList();
+    }
+    if (!String.IsNullOrEmpty(district))
+    {
+        items = items.Where(p => p.Fields.Distritct.ToString() == district).ToList();
+    }
+    if (!String.IsNullOrEmpty(dealerType))
+    {
+        items = items.Where(p => p.Fields.DealerType.ToString() == dealerType).ToList();
+    }
+}
+
+<script type="text/javascript">
+    function ChangeCities() {
+        if ($("select[name='ulke']")[0].selectedIndex > 0) {
+            var countryID = $("select[name='ulke']").children("option:selected").data("id");
+            $("select[name='il'] option[data-country-id]").prop('disabled', true);
+            $("select[name='il'] option[data-country-id='" + countryID + "']").prop('disabled', false);
+        }
+        else
+            $("select[name='il'] option[data-country-id]").prop('disabled', false);
+    }
+    window.onload = function () {
+        ChangeCities();
+        $("select[name='ulke']").on("change", function () {
+            ChangeCities();
+        });
+    }
+</script>
+
+<style type="text/css">
+    select option[disabled] {
+        display: none;
+    }
+</style>
+
+<form></form>
+<div class="work-partners">
+    <div class="work-partners-filter">
+        <form method="get" action="">
+            <select name="bayi-tipi">
+                <option value="">İş Ortağı Segmenti</option>
+                @for (int i = 0; i < dealerTypes.Count; i++)
+                {
+                    <option @(Request.QueryString["bayi-tipi"] == dealerTypes[i] ? "selected" : "") value="@dealerTypes[i]">@dealerTypes[i]</option>
+                }
+            </select>
+            <select name="ulke">
+                <option value="">Ülke Seçimi</option>
+                @for (int i = 0; i < countries.Count; i++)
+                {
+                    <option data-id="@countries[i].Value" @(Request.QueryString["ulke"] == countries[i].Key ? "selected" : "") value="@countries[i].Key">@countries[i].Key</option>
+                }
+            </select>
+            <select name="il">
+                <option value="">İl Seçimi</option>
+                @for (int i = 0; i < cities.Count; i++)
+                {
+                    <option data-country-id="@cities[i].Value.Split('_')[0]" @(Request.QueryString["il"] == cities[i].Key ? "selected" : "") value="@cities[i].Key">@cities[i].Key</option>
+                }
+                <option data-country-id="az" value="Baku">Bakü</option>
+            </select>
+            <input name="ilce" type="text" placeholder="İlçe arayın." value="@(Request.QueryString["ilce"])" />
+            <input name="is-ortagi" type="text" placeholder="İş ortağı arayın." value="@(Request.QueryString["is-ortagi"])" />
+            <input type="submit" value="Ara" />
+        </form>
+    </div>
+    <div class="work-partners-content">
+        @foreach (var item in items)
+        {
+            <div class="work-partners-content-item">
+                <div class="work-partners-content-item-left">
+                    <div class="work-partners-content-item__title">
+                        <span>@Html.Raw(item.Fields.Title)</span>
+                    </div>
+                    <div class="work-partners-content-item__description">
+                        <ul>
+                            <li>@Html.Raw(item.Fields.DealerType)</li>
+                            <li>@Html.Raw(item.Fields.AuthorizedPerson)</li>
+                            <li>İl: @Html.Raw(item.Fields.City)</li>
+                            <li>İlçe: @Html.Raw(item.Fields.Distritct)</li>
+                            <li>Ülke: @Html.Raw(item.Fields.Country)</li>
+                        </ul>
+                    </div>
+                    <div class="work-partners-content-item__adress">
+                        <span>@Html.Raw(item.Fields.Phone)</span>
+                    </div>
+                </div>
+                <div class="work-partners-content-item-right">
+                    <div class="work-partners-content-item-right__img">
+                        <img alt="" />
+                    </div>
+                    <div class="work-partners-content-item-right__img">
+                        <img alt="" />
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

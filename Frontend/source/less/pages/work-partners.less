@@ -12,6 +12,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        >a{
+            padding: 10px 30px;
+            background-color: #1abc9c;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+        }
         @media @responsive{
             flex-direction: column;
         }
@@ -53,7 +60,7 @@
             margin-top: 20px;
         }
         &-item{
-            width: 30%;
+            width: 50%;
             height: 200px;
             background-color: white;
             border-radius: 5px;
@@ -61,6 +68,20 @@
             color: @dark_blue;
             padding: 20px;
             height: auto;
+            display: flex;
+            &-right{
+                display: flex;
+                width: 60%;
+                justify-content: space-between;
+                align-items: center;
+                &__img{
+                    width: 40%;
+                    height: 100%;
+                }
+            }
+            &-left{
+                width: 100%;
+            }
             @media @responsive{
                 width: 100%;
             }

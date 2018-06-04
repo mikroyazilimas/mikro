@@ -114,14 +114,16 @@
                         <span>@Html.Raw(item.Fields.Phone)</span>
                     </div>
                 </div>
+                @{
+                    var partnerLogos = ((ChoiceOption[])item.Fields.PartnerLogos).Take(2).ToList();
+                }
+
+                @for (int i = 0; i < partnerLogos.Count; i++)
+                {
                     <div class="work-partners-content-item-right__img">
-                        <img src="" />
+                        <img src="/images/default-source/logolar/partner/@(partnerLogos[i].PersistedValue).png" />
                     </div>
-                    
-                    <div class="work-partners-content-item-right__img">
-                        <img alt="" />
-                    </div>
-                
+                }
             </div>
         }
     </div>

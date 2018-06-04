@@ -129,8 +129,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 bool rtn = mail.SendMail();
                 if (rtn)
                 {
-
-                    Response.Redirect(Names.Pages.Thanks);
+                    return Redirect(Names.Pages.Thanks);
                 }
                 else
                 {

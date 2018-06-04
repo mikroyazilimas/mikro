@@ -555,9 +555,22 @@ $(function () {
     //Contact-telefon son 2 hane
     $('.phone-hide').click(function () {
         $('.phone-hide').text("+90 (850) 225 10 10 (Çağrı Merkezi)");
+        dataLayer.push({
+            'Category': "telefon",
+            'Action': "tiklama",
+            'Label': "cagriMerkezi",
+            'event': 'gaEvent'
+        });
     });
+
     $('.phone-hide-pbx').click(function () {
         $('.phone-hide-pbx').text("+90 (212) 806 45 45 (PBX)");
+        dataLayer.push({
+            'Category': "telefon",
+            'Action': "tiklama",
+            'Label': "pbx",
+            'event': 'gaEvent'
+        });
     });
 
     $('.page-section-business-left__title2__text > span').click(function () {
@@ -573,6 +586,7 @@ $(function () {
 
     //Ürün detay sayfası ilk item click'leniyor. 
     $(".products-container-content-right-item:nth-child(1)").click();
+
     //Demo-request-open
     $('.page-section-demo-request-button__demo').click(function () {
         $('.page-section-demo-request').slideToggle('slow');
@@ -734,6 +748,7 @@ $(function () {
             return false;
         }
     });
+
     $('.phones').tooltipster({
         trigger: 'click'
     });

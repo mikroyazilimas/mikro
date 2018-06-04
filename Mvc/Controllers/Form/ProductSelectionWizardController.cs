@@ -170,7 +170,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                             break;
                     }
 
-                    mail.Bcc = new List<string>() { "aykut.saridede@ph.com.tr", "Arzu.AydemirErgin@ph.com.tr" };
+                    //mail.Bcc = new List<string>() { "aykut.saridede@ph.com.tr", "Arzu.AydemirErgin@ph.com.tr" };
                     mail.From = "no-reply@e-mail.mikro.com.tr";
                     mail.FromDisplayName = "Mikro";
 

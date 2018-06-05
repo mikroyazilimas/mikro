@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link rel="stylesheet" href="/Frontend/dist/css/app.css">
-    <link href="/Frontend/dist/images/favicon.png" rel="shortcut icon">
+    <link href="/Frontend/dist/images/favicon.ico" rel="shortcut icon">
     <script>var dataLayer = [];</script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {

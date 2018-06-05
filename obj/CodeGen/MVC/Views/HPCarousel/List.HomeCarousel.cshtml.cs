@@ -27,7 +27,7 @@ namespace ASP
     using System.Web.UI;
     using System.Web.WebPages;
     
-    #line 2 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
+    #line 5 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
     using Telerik.Sitefinity.Frontend.Mvc.Helpers;
     
     #line default
@@ -42,128 +42,131 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("\r\n<style>\r\n    .owl-dots {\r\n        position: absolute;\r\n        bottom: 0px;\r\n  " +
-"  }\r\n\r\n    .owl-nav {\r\n        display: none;\r\n    }\r\n</style>\r\n");
+WriteLiteral("\r\n\r\n\r\n");
 
-WriteLiteral("\r\n\r\n    <div");
+WriteLiteral("\r\n");
+
+WriteLiteral("\r\n\r\n<div");
 
 WriteLiteral(" class=\"page-section-demo herobanner-owl-carousel owl-carousel\"");
 
 WriteLiteral(">\r\n");
 
             
+            #line 13 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
+    
+            
+            #line default
+            #line hidden
+            
+            #line 13 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
+     foreach (var item in Model.Items.OrderBy(x => x.Fields.Order))
+    {
+        if (item.Fields.Photo != null)
+        {
+
+
+            
+            #line default
+            #line hidden
+WriteLiteral("            <div");
+
+WriteLiteral(" class=\"page-section-demo-item\"");
+
+WriteLiteral(">\r\n                <a");
+
+WriteAttribute("href", Tuple.Create(" href=\"", 744), Tuple.Create("\"", 775)
+            
+            #line 19 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
+, Tuple.Create(Tuple.Create("", 751), Tuple.Create<System.Object, System.Int32>(item.Fields.RedirectUrl
+            
+            #line default
+            #line hidden
+, 751), false)
+);
+
+WriteLiteral(" class=\"desktop-banner\"");
+
+WriteLiteral("><img");
+
+WriteAttribute("src", Tuple.Create(" src=\"", 804), Tuple.Create("\"", 847)
+            
+            #line 19 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
+     , Tuple.Create(Tuple.Create("", 810), Tuple.Create<System.Object, System.Int32>(item.Fields.Photo[0].Fields.MediaUrl
+            
+            #line default
+            #line hidden
+, 810), false)
+);
+
+WriteLiteral(" style=\"width: 100% !important;\"");
+
+WriteLiteral(" /></a>\r\n");
+
+            
             #line 20 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-        
+                
             
             #line default
             #line hidden
             
             #line 20 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-         foreach (var item in Model.Items)
-        {
-            if (item.Fields.Photo != null)
-            {
-                foreach (var photo in item.Fields.Photo)
+                 if (item.Fields.Responsive != null)
                 {
 
             
             #line default
             #line hidden
-WriteLiteral("                    <div");
+WriteLiteral("                    <a");
 
-WriteLiteral(" class=\"page-section-demo-item\"");
-
-WriteLiteral(">\r\n                        <a");
-
-WriteAttribute("href", Tuple.Create(" href=\"", 951), Tuple.Create("\"", 982)
+WriteAttribute("href", Tuple.Create(" href=\"", 984), Tuple.Create("\"", 1015)
             
-            #line 27 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-, Tuple.Create(Tuple.Create("", 958), Tuple.Create<System.Object, System.Int32>(item.Fields.RedirectUrl
+            #line 22 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
+, Tuple.Create(Tuple.Create("", 991), Tuple.Create<System.Object, System.Int32>(item.Fields.RedirectUrl
             
             #line default
             #line hidden
-, 958), false)
+, 991), false)
 );
+
+WriteLiteral(" class=\"mobile-banner\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 988), Tuple.Create("\"", 1016)
+WriteAttribute("src", Tuple.Create(" src=\"", 1043), Tuple.Create("\"", 1091)
             
-            #line 27 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-, Tuple.Create(Tuple.Create("", 994), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+            #line 22 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
+       , Tuple.Create(Tuple.Create("", 1049), Tuple.Create<System.Object, System.Int32>(item.Fields.Responsive[0].Fields.MediaUrl
             
             #line default
             #line hidden
-, 994), false)
+, 1049), false)
 );
+
+WriteLiteral(" style=\"width: 100% !important;\"");
 
 WriteLiteral(" /></a>\r\n");
 
             
-            #line 28 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-                        
-            
-            #line default
-            #line hidden
-            
-            #line 28 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-                         if (item.Fields.Responsive != null && item.Fields.Responsive.Length > 0)
-                        {
-
-            
-            #line default
-            #line hidden
-WriteLiteral("                            <div");
-
-WriteLiteral(" class=\"page-section-demo-banner-responsive\"");
-
-WriteLiteral("><a");
-
-WriteAttribute("href", Tuple.Create(" href=\"", 1231), Tuple.Create("\"", 1262)
-            
-            #line 30 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-      , Tuple.Create(Tuple.Create("", 1238), Tuple.Create<System.Object, System.Int32>(item.Fields.RedirectUrl
-            
-            #line default
-            #line hidden
-, 1238), false)
-);
-
-WriteLiteral("><img");
-
-WriteAttribute("src", Tuple.Create(" src=\"", 1268), Tuple.Create("\"", 1330)
-            
-            #line 30 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-                                          , Tuple.Create(Tuple.Create("", 1274), Tuple.Create<System.Object, System.Int32>(item.Fields.Responsive.FirstOrDefault().Fields.MediaUrl
-            
-            #line default
-            #line hidden
-, 1274), false)
-);
-
-WriteLiteral(" /></a></div>\r\n");
-
-            
-            #line 31 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-                        }
-
-            
-            #line default
-            #line hidden
-WriteLiteral("                                \r\n                        \r\n                    <" +
-"/div>\r\n");
-
-            
-            #line 35 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
-                    
+            #line 23 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
                 }
-            }
-        }
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n    </div>\r\n");
+WriteLiteral("\r\n\r\n            </div>\r\n");
+
+            
+            #line 27 "..\..\MVC\Views\HPCarousel\List.HomeCarousel.cshtml"
+        }
+    }
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\r\n</div>\r\n\r\n\r\n\r\n\r\n<style>\r\n    .owl-dots {\r\n        position: absolute;\r\n        " +
+"bottom: 0px;\r\n    }\r\n\r\n    .owl-nav {\r\n        display: none;\r\n    }\r\n\r\n    .mob" +
+"ile-banner {\r\n        display: none;\r\n    }\r\n</style>");
 
         }
     }

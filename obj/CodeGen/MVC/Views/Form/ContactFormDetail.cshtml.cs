@@ -440,7 +440,7 @@ WriteLiteral(" id=\"check\"");
 
 WriteLiteral(" required=\"required\"");
 
-WriteLiteral(" messages=\"KVK Metnini Kabul Etmediniz\"");
+WriteLiteral(" message=\"KVK Metnini Kabul Etmediniz\"");
 
 WriteLiteral(">Kişisel Veriler Bilgilendirme Metni\'ni kabul ediyorum.</label>\r\n                " +
 "    <input");

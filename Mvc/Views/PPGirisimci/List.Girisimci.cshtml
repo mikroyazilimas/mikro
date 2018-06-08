@@ -2,7 +2,7 @@
 @using Telerik.Sitefinity.Frontend.Mvc.Helpers;
 
 @{
-    var pField = Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields
+    var pField = Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields;
 }
 
 <!-- Popup Run-->
@@ -10,12 +10,12 @@
     <div class="popup">
         <div class="popup-price">
             <div class="popup-price-buy run-top-buy">
-                <span class="popup-price__pricetext">@pField.PriceBuy</span>
+                <span class="popup-price__pricetext">@String.Format("{0} TL + KDV", pField.PriceBuy)</span>
                 
                 <span class="popup-price__text">Başlayan Fiyatlarla Satın Alın</span>
             </div>
             <div class="popup-price-rent run-top-rent">
-                <span class="popup-price__pricetext">@pField.PriceRent TL + KDV/Yıl</span>
+                <span class="popup-price__pricetext">@String.Format("{0} TL + KDV/Yıl", pField.PriceRent)</span>
                 <span class="popup-price__text">Başlayan Fiyatlarla</span>
             </div>
         </div>

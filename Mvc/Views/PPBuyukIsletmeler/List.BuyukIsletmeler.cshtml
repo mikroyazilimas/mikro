@@ -1,14 +1,14 @@
 ﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
 @using Telerik.Sitefinity.Frontend.Mvc.Helpers;
 @{
-    var pField = Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields
+    var pField = Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields;
 }
 
 <!-- Popup Fly-->
 <div class="fly-popup">
     <div class="popup">
         <div class="popup-price fly-top">
-            <span>@pField.PriceBuy TL + KDV</span>
+            <span>@String.Format("{0} TL + KDV", pField.PriceBuy)</span>
         </div>
         <div class="popup-tabs">
             <a href="/iletisim/bize-ulasin">

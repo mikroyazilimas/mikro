@@ -6430,7 +6430,9 @@ $(function () {
 
     //Contact-telefon son 2 hane
     $('.phone-hide').click(function () {
-        $('.phone-hide').text("+90 (850) 225 10 10 (Çağrı Merkezi)");
+        //$('.phone-hide').text("+90 (850) 225 10 10 (Çağrı Merkezi)");
+        var phone = $(this).data('phone');
+        $(this).text(phone);
         dataLayer.push({
             'Category': "telefon",
             'Action': "tiklama",
@@ -6440,7 +6442,9 @@ $(function () {
     });
 
     $('.phone-hide-pbx').click(function () {
-        $('.phone-hide-pbx').text("+90 (212) 806 45 45 (PBX)");
+        var pbx = $(this).data('pbx');
+        //$('.phone-hide-pbx').text("+90 (212) 806 45 45 (PBX)");
+        $(this).text(pbx);
         dataLayer.push({
             'Category': "telefon",
             'Action': "tiklama",

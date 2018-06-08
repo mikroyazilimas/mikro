@@ -1,5 +1,4 @@
 ﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
-
 @using Telerik.Sitefinity.Frontend.Mvc.Helpers;
 
 @{
@@ -12,11 +11,11 @@
     <div class="popup">
         <div class="popup-price">
             <div class="popup-price-buy musavir-top-buy">
-                <span class="popup-price__pricetext">1290 TL + KDV</span>
+                <span class="popup-price__pricetext">@Html.Resource("MikroMusavirPopupPriceBuy", "Labels")</span>
                 <span class="popup-price__text">Başlayan Fiyatlarla Satın Alın</span>
             </div>
             <div class="popup-price-rent musavir-top-rent">
-                <span class="popup-price__pricetext">516 TL + KDV/Yıl</span>
+                <span class="popup-price__pricetext">@Html.Resource("MikroMusavirPopupPriceRent", "Labels")</span>
                 <span class="popup-price__text">Başlayan Fiyatlarla</span>
             </div>
         </div>

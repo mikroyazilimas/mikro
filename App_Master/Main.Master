@@ -90,14 +90,16 @@
                                 <div class="page-section-contact-container-area-right-content">
                                     <div class="page-section-contact-container-area-right-content-adress">
                                         <div class="page-section-contact-container-area-right-content-adress__icon"><i class="fas fa-map-marker-alt"></i></div>
-                                        <div class="page-section-contact-container-area-right-content-adress__text"></div>
-                                        <span>MASLAK MAH. AOS 55. SOK. 42 MASLAK NO: 2 OFİS 3 BLOK D:11-12-13 SARIYER / İSTANBUL PK 34485</span>
+                                        <div class="page-section-contact-container-area-right-content-adress__text">
+                                        <span><asp:Label runat="server" Text='<%$ Resources:Labels, HomepageAdress%>'></asp:Label></span>
+                                            
+                                        </div>
                                     </div>
                                     <div class="page-section-contact-container-area-right-content-phone contact-right-span-space">
                                         <div class="page-section-contact-container-area-right-content-phone__icon"><i class="fas fa-phone"></i></div>
                                         <div class="page-section-contact-container-area-right-content-phone__text">
-                                            <span class="phone-hide-pbx">+90 (212) 806 Tıklayınız (PBX)</span>
-                                            <span class="phone-hide">+90 (850) 225 Tıklayınız (Çağrı Merkezi)</span>
+                                            <span class="phone-hide-pbx" data-pbx="+90 (212) 806 45 45 (PBX)">+90 (212) 806 Tıklayınız (PBX)</span>
+                                            <span class="phone-hide" data-phone="+90 (850) 225 10 10 (Çağrı Merkezi)">+90 (850) 225 Tıklayınız (Çağrı Merkezi)</span>
                                         </div>
                                     </div>
                                     <div class="page-section-contact-container-area-right-content-email">

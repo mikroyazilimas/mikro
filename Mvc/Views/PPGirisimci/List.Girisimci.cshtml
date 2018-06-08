@@ -1,17 +1,21 @@
 ﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
 @using Telerik.Sitefinity.Frontend.Mvc.Helpers;
 
+@{
+    var pField = Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields
+}
+
 <!-- Popup Run-->
 <div class="run-popup">
     <div class="popup">
         <div class="popup-price">
             <div class="popup-price-buy run-top-buy">
-                <span class="popup-price__pricetext">@Html.Resource("MikroRunPopupPriceBuy", "Labels")</span>
+                <span class="popup-price__pricetext">@pField.PriceBuy</span>
                 
                 <span class="popup-price__text">Başlayan Fiyatlarla Satın Alın</span>
             </div>
             <div class="popup-price-rent run-top-rent">
-                <span class="popup-price__pricetext">@Html.Resource("MikroRunPopupPriceRent","Labels")</span>
+                <span class="popup-price__pricetext">@pField.PriceRent TL + KDV/Yıl</span>
                 <span class="popup-price__text">Başlayan Fiyatlarla</span>
             </div>
         </div>
@@ -77,7 +81,7 @@
     <div class="products-container-content-right">
 
         <div class="shortText">
-            @Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText)
+            @Html.Raw(pField.ShortText)
         </div>
 
         @foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))

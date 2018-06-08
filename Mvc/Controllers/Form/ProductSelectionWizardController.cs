@@ -45,6 +45,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     string message = Request["00N0Y00000QeRBp"];
                     string email = Request["email"];
                     string product = Request["00N0Y00000QeNmD"];
+                    string refUrl = Request["refUrl"];
 
                     string fileHtml, formTitle;
 
@@ -69,7 +70,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
 
                     mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr", "satis@mikro.com.tr", "Mert.ALANKAYA@mikro.com.tr" };
                     //mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr","Mert.ALANKAYA@mikro.com.tr" };
-                    //mail.Bcc = new List<string>() { "aykut.saridede@ph.com.tr" };
+                    mail.Bcc = new List<string>() { "aykut.saridede@ph.com.tr" };
                     mail.From = "no-reply@e-mail.mikro.com.tr";
                     mail.FromDisplayName = "Mikro";
 
@@ -84,6 +85,8 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     body = body.Replace("@@eposta@@", email);
                     body = body.Replace("@@urun@@", product);
                     body = body.Replace("@@subject@@", subject);
+                    body = body.Replace("@@refUrl@@", refUrl);
+                    
 
                     if (formId == "productForm")
                     {

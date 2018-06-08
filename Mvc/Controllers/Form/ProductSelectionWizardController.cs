@@ -83,6 +83,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     body = body.Replace("@@mesaj@@", message);
                     body = body.Replace("@@eposta@@", email);
                     body = body.Replace("@@urun@@", product);
+                    body = body.Replace("@@subject@@", subject);
 
                     if (formId == "productForm")
                     {

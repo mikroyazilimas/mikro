@@ -39,7 +39,7 @@
                     @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
                     @Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern=".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" })
                 </div>
-                <div class="wizard-bottom-left-content-form-row responsive-textarea">
+                <div class="wizard-bottom-left-content-form-row ">
                     <label for="">Mesajınız</label>
                     @Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp",  placeholder = "Mesaj" })
                 </div>
@@ -78,12 +78,7 @@
             </div>
         </div>
     </div>
-    <div class="wizard-bottom-left-content">
-        <div class="wizard-bottom-left-content-form-row contact-us-right-textarea">
-            <label for="">Mesajınız</label>
-            <textarea name="" id="" cols="70" rows="18"></textarea>
-        </div>
-    </div>
+    
 </div>
 }
 

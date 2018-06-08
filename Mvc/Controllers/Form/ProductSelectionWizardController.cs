@@ -69,7 +69,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
 
                     mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr", "satis@mikro.com.tr", "Mert.ALANKAYA@mikro.com.tr" };
                     //mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr","Mert.ALANKAYA@mikro.com.tr" };
-                    //mail.Bcc = new List<string>() { "aykut.saridede@ph.com.tr" };
+                    mail.Bcc = new List<string>() { "aykut.saridede@ph.com.tr" };
                     mail.From = "no-reply@e-mail.mikro.com.tr";
                     mail.FromDisplayName = "Mikro";
 
@@ -90,11 +90,23 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                         List<FormModel> fModel = new List<FormModel>();
                         fModel = sf.GetProductForm();
                         string pContent = "";
+                        string nameVal = "";
                         if (fModel != null && fModel.Count > 0)
                         {
                             foreach (var item in fModel)
                             {
-                                pContent += item.LabelValue + " : " + Request.Form["" + item.InputName + ""] + "</br>";
+                                nameVal = Request.Form["" + item.InputName + ""];
+                                if (item.InputType ==Library.InputType.DropDown)
+                                {
+                                    try
+                                    {
+                                        nameVal = item.DropDownItem.Where(x => x.Value == Request.Form["" + item.InputName + ""]).FirstOrDefault().Text;                                        
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                    }                                    
+                                }
+                                pContent += item.LabelValue + " : " + nameVal + "</br>";
                             }
                         }
 

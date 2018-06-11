@@ -31,5 +31,6 @@ namespace SitefinityWebApp.Mvc.Models.ViewModel
         public string Message { get; set; }
         public string Product { get; set; }
         public bool Contract { get; set; }
+        public string refUrl { get; set; }
     }
 }

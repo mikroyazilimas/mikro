@@ -26,6 +26,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
 
                 DemoRequestForm m = new DemoRequestForm()
                 {
+                    refUrl = Request.UrlReferrer.ToString(),
                     Product = Request.QueryString["product"]
                 };
 

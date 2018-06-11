@@ -48,7 +48,7 @@ WriteLiteral(">\r\n        <div");
 
 WriteLiteral(" class=\"contact-left\"");
 
-WriteLiteral(">\r\n\r\n\r\n            <div");
+WriteLiteral(">\r\n            <div");
 
 WriteLiteral(" class=\"contact-left-item\"");
 
@@ -171,8 +171,8 @@ WriteLiteral(" href=\"mailto:satis@mikro.com.tr\"");
 
 WriteLiteral(" target=\"_top\"");
 
-WriteLiteral(">satis@mikro.com.tr</a>\r\n                </div>\r\n            </div>\r\n\r\n\r\n        " +
-"    <div");
+WriteLiteral(">satis@mikro.com.tr</a>\r\n                </div>\r\n            </div>\r\n            " +
+"<div");
 
 WriteLiteral(" class=\"contact-left-item\"");
 
@@ -188,8 +188,8 @@ WriteLiteral(">Bize Ulaşın<i");
 
 WriteLiteral(" class=\"fas fa-arrow-right\"");
 
-WriteLiteral("></i></a>\r\n                </div>\r\n            </div>\r\n\r\n\r\n        </div>\r\n      " +
-"  <div");
+WriteLiteral("></i></a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <d" +
+"iv");
 
 WriteLiteral(" class=\"contact-right\"");
 

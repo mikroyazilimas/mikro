@@ -45,6 +45,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     string message = Request["00N0Y00000QeRBp"];
                     string email = Request["email"];
                     string product = Request["00N0Y00000QeNmD"];
+                    string refUrl = Request["refUrl"];
 
                     string fileHtml, formTitle;
 
@@ -84,6 +85,8 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     body = body.Replace("@@eposta@@", email);
                     body = body.Replace("@@urun@@", product);
                     body = body.Replace("@@subject@@", subject);
+                    body = body.Replace("@@refUrl@@", refUrl);
+                    
 
                     if (formId == "productForm")
                     {

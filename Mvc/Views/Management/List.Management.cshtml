@@ -1,0 +1,58 @@
+﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+<div class="overlay">&nbsp;</div>
+
+<div class="yonetim-popup">
+    <div class="popup mng-popup">
+        <div class="popup-content">
+            <div class="popup-content-management-left">
+                <img alt="">
+                <a target="_blank"><em class="fab fa-linkedin"></em></a>
+            </div>
+            <div class="popup-content-management-right">
+                <div class="popup-content-management-right__description">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="close-popup popup-close mng-popup-close">X</div>
+    
+    <div class="container-sub">
+        <div class="about-content">
+            <div class="about-content-item">
+                <div class="about-content-item__title">
+                    <span>Yönetim Ekibi</span>
+                </div>
+                <div class="about-content-item__text">
+                    <p>Mikro Yazılım’ı bügünlere getiren ve geleceğe taşıyacak yönetim kadromuz.</p>
+                </div>
+            </div>
+            <div class="management-main">
+                @foreach (var item in Model.Items)
+                {
+                    foreach (var photo in item.Fields.Image)
+                    {
+                        <div class="management-main-item" data-text="@item.Fields.ProfileDescription" data-img="@photo.Fields.MediaUrl" data-link="@item.Fields.LinkedinLink">
+                            <a href="#"></a>
+                            <div class="management-main-item__img">
+                                <a href="#">
+                                    <img alt="" src="@photo.Fields.MediaUrl">
+                                </a>
+                            </div>
+                            <div class="management-main-item-description">
+                                <a href="#">
+                                    <span class="management-main-item-description__name">@item.Fields.ImageTitle</span>
+                                </a>
+                                <div class="management-main-item-description__icons">
+                                    <a href="#">
+                                    </a><a href="@item.Fields.LinkedinLink" target="_blank"><em class="fab fa-linkedin"></em></a>
+                                    <a><em class="far fa-address-book"></em></a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>

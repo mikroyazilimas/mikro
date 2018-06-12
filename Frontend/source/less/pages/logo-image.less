@@ -14,23 +14,28 @@
     flex-wrap: wrap;
     padding: 10px;
         &-item{
-            width: calc(90% / 4);
-            margin-bottom: 20px;
+            width: ~"calc((100% / 3) - 12px)";
+            padding: 10px;
+            text-align: center;
             >a{
                 text-decoration: none;
                 color: @dark_blue;
             }
             &-img{
-                height: 180px;
-                width: 100%;
-                border: 1px solid #eee;
+                height: 225px;
+                
+                overflow: hidden;
+                align-items: center;
+                display: flex;
+                
                 >img{
-                    height: 100%;
+                    
+                    width: 100%;
                 }
             }
             &-title{
                 margin-top: 10px;
-                font-size: 17px;
+                font-size: 15px;
                 color: @dark_blue;
             
             }

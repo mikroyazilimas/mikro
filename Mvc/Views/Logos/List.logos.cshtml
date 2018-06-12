@@ -1,0 +1,28 @@
+﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+    
+   
+
+        <div class="logo-title">
+            <h2>MİKRO YAZILIM'DA DEĞİŞİM DÖNEMİ!</h2>
+        </div>
+        <div class="logo-content">
+            @foreach (var item in Model.Items)
+            {
+            <div class="logo-content-item">
+                @foreach (var photo in item.Fields.Image)
+                {
+                <a href="@photo.Fields.MediaUrl" download>
+                    <div class="logo-content-item-img">
+                        <img src="@photo.Fields.MediaUrl" alt="">
+                    </div>
+                    <div class="logo-content-item-title">
+                        <span>@item.Fields.ImageTitle</span>
+                    </div>
+                </a>
+                }
+            </div>
+            }
+
+        </div>
+
+    

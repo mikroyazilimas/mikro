@@ -1,0 +1,43 @@
+.landing-content{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    &-item{
+        display: flex;
+        margin-bottom: 50px;
+        &__img{
+            height: 200px;
+            >img{
+                height: 100%;
+            }
+        }
+        &-other{
+                margin-left: 20px;
+                &__title{
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #34495e;
+                }
+                &__description{
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                &__button{
+                    display: flex;
+                    >a{
+                        padding: 10px 15px;
+                        text-decoration: none;
+                        color: white;
+                        background-color: #34495e;
+                        border-radius: 5px;
+                        >svg{
+                            margin-left: 5px;
+                        }
+                    }
+                }
+        }
+    }
+}

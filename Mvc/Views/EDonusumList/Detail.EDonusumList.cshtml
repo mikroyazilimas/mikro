@@ -1,0 +1,11 @@
+﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentDetailsViewModel
+<div class="sfContentBlock">
+    <div class="donusum-content">
+        <div class="donusum-content-img">
+            <img src="@Html.Raw(Model.Item.Fields.Image)" alt="">
+        </div>
+        <div class="donusum-content-other">
+            @Html.Raw(Model.Item.Fields.Detail)
+        </div>
+    </div>
+</div>

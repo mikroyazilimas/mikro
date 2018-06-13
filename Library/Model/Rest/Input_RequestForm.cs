@@ -40,7 +40,19 @@ namespace SitefinityWebApp.Library.Model
         public string currentSoftware { get; set; }
         [DataMember]
         public string productGroup { get; set; }
+        [DataMember]
+        public string city { get; set; }
+
+        [DataMember]
+        public string numberOfUser { get; set; }
+        [DataMember]
+        public string sector { get; set; }
+        [DataMember]
+        public string currentSituation { get; set; }
         
+
+
+
     }
 }
 

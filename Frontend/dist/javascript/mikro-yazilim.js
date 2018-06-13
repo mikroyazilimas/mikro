@@ -6082,25 +6082,30 @@ function formSubmit(formId, formPost, formType, dataLayerLabel) {
                     'event': 'gaEvent'
                 });
 
-                $.ajax({
-                    type: 'POST',
-                    url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
-                    data: dt,
-                    success: function (msg) {
-                        if (msg == true) {
-                            // $('#PostControl').val('true');
-                            // return true;
-                            $('#' + formId).attr('validated', true);
-                            isFormSubmit = false;
-                            $('#' + formId).submit();
-                            formtetik = 0;
-                        } else {
-                            console.log(msg);
-                            return false;
-                        }
-                    }
-                });
-                return false;
+                $('#' + formId).attr('validated', true);
+                isFormSubmit = false;
+                $('#' + formId).submit();
+                formtetik = 0;
+
+                //$.ajax({
+                //    type: 'POST',
+                //    url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
+                //    data: dt,
+                //    success: function (msg) {
+                //        if (msg == true) {
+                //            // $('#PostControl').val('true');
+                //            // return true;
+                //            $('#' + formId).attr('validated', true);
+                //            isFormSubmit = false;
+                //            $('#' + formId).submit();
+                //            formtetik = 0;
+                //        } else {
+                //            console.log(msg);
+                //            return false;
+                //        }
+                //    }
+                //});
+                //return false;
             }
             return true;
 

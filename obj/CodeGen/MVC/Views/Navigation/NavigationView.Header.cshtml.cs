@@ -347,6 +347,27 @@ WriteLiteral(" class=\"page-mega-navigation-content-section\"");
 
 WriteLiteral(">\r\n            <a");
 
+WriteLiteral(" href=\"/is-ortaklari\"");
+
+WriteLiteral(" class=\"page-mega-navigation-content-section__grouptitle\"");
+
+WriteLiteral("><span>İş Ortakları</span></a>\r\n");
+
+WriteLiteral("            ");
+
+            
+            #line 92 "..\..\MVC\Views\Navigation\NavigationView.Header.cshtml"
+       Write(GetMegaMenu("is-ortaklari"));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\r\n        </div>\r\n        <div");
+
+WriteLiteral(" class=\"page-mega-navigation-content-section\"");
+
+WriteLiteral(">\r\n            <a");
+
 WriteLiteral(" href=\"/iletisim\"");
 
 WriteLiteral(" class=\"page-mega-navigation-content-section__grouptitle\"");
@@ -356,13 +377,13 @@ WriteLiteral("><span>İletişim</span></a>\r\n");
 WriteLiteral("            ");
 
             
-            #line 92 "..\..\MVC\Views\Navigation\NavigationView.Header.cshtml"
+            #line 96 "..\..\MVC\Views\Navigation\NavigationView.Header.cshtml"
        Write(GetMegaMenu("iletisim"));
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n        </div>\r\n        ");
+WriteLiteral("\r\n        </div>\r\n\r\n        ");
 
 WriteLiteral("\r\n        ");
 

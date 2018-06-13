@@ -163,9 +163,9 @@ WriteLiteral("></i>\r\n                            <div");
 
 WriteLiteral(" class=\"container-sub-content-item-content-right__title\"");
 
-WriteLiteral(">\r\n                                <span>Bülteni Gör</span>\r\n                    " +
-"        </div>\r\n                        </div>\r\n                    </a>\r\n      " +
-"          </div>\r\n            </div>\r\n");
+WriteLiteral(">\r\n                                <span>Detayı Gör</span>\r\n                     " +
+"       </div>\r\n                        </div>\r\n                    </a>\r\n       " +
+"         </div>\r\n            </div>\r\n");
 
             
             #line 36 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"

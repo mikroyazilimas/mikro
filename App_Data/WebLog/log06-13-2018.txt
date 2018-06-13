@@ -1,0 +1,268 @@
+ SalesFoce yazarken hata oluştu <br> Hata : Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Lütfen girdiğiniz telefon numarasının formatını kontrol ediniz ve sadece rakam kullanınız.: [] <br> <html>
+<head></head>
+<body>
+	<table>
+		
+		<tr>
+			<td>Ad:</td>
+			<td>test</td>
+		</tr>
+		<tr>
+			<td>Soyad:</td>
+			<td>test1</td>
+		</tr>
+		<tr>
+			<td>Telefon:</td>
+			<td></td>
+		</tr>
+        <tr>
+            <td>il:</td>
+            <td>@@city@@</td>
+        </tr>
+		<tr>
+			<td>Mesaj:</td>
+			<td>testtt</td>
+		</tr>
+        <tr>
+            <td>�r�n:</td>
+            <td>RUN</td>
+        </tr>
+		<tr>
+			<td>E-Posta:</td>
+			<td>test@ph.com.tr</td>
+		</tr>	
+        <tr>
+            <td>Geldi�i Sayfa:</td>
+            <td>@@refUrl@@</td>
+        </tr>	
+        
+	</table>
+</body>
+</html>
+ SalesFoce yazarken hata oluştu <br> Hata : Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Lütfen girdiğiniz telefon numarasının formatını kontrol ediniz ve sadece rakam kullanınız.: [] <br> <html>
+<head></head>
+<body>
+	<table>
+		
+		<tr>
+			<td>Ad:</td>
+			<td>Aykut1</td>
+		</tr>
+		<tr>
+			<td>Soyad:</td>
+			<td>test1</td>
+		</tr>
+		<tr>
+			<td>Telefon:</td>
+			<td></td>
+		</tr>
+        <tr>
+            <td>il:</td>
+            <td>@@city@@</td>
+        </tr>
+		<tr>
+			<td>Mesaj:</td>
+			<td></td>
+		</tr>
+        <tr>
+            <td>�r�n:</td>
+            <td>RUN</td>
+        </tr>
+		<tr>
+			<td>E-Posta:</td>
+			<td>test@ph.com.tr</td>
+		</tr>	
+        <tr>
+            <td>Geldi�i Sayfa:</td>
+            <td>@@refUrl@@</td>
+        </tr>	
+        
+	</table>
+</body>
+</html>
+ SalesFoce yazarken hata oluştu <br> Hata : Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Lütfen girdiğiniz telefon numarasının formatını kontrol ediniz ve sadece rakam kullanınız.: [] <br> <html>
+<head></head>
+<body>
+	<table>
+		
+		<tr>
+			<td>Ad:</td>
+			<td>Aykut1</td>
+		</tr>
+		<tr>
+			<td>Soyad:</td>
+			<td>test1</td>
+		</tr>
+		<tr>
+			<td>Telefon:</td>
+			<td></td>
+		</tr>
+        <tr>
+            <td>il:</td>
+            <td>@@city@@</td>
+        </tr>
+		<tr>
+			<td>Mesaj:</td>
+			<td></td>
+		</tr>
+        <tr>
+            <td>�r�n:</td>
+            <td>RUN</td>
+        </tr>
+		<tr>
+			<td>E-Posta:</td>
+			<td>test@ph.com.tr</td>
+		</tr>	
+        <tr>
+            <td>Geldi�i Sayfa:</td>
+            <td>@@refUrl@@</td>
+        </tr>	
+        
+	</table>
+</body>
+</html>
+ SalesFoce yazarken hata oluştu <br> Hata : Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Lütfen girdiğiniz telefon numarasının formatını kontrol ediniz ve sadece rakam kullanınız.: [] <br> <html>
+<head></head>
+<body>
+	<table>
+		
+		<tr>
+			<td>Ad:</td>
+			<td>test</td>
+		</tr>
+		<tr>
+			<td>Soyad:</td>
+			<td>test</td>
+		</tr>
+		<tr>
+			<td>Telefon:</td>
+			<td></td>
+		</tr>
+        <tr>
+            <td>il:</td>
+            <td>@@city@@</td>
+        </tr>
+		<tr>
+			<td>Mesaj:</td>
+			<td>test test</td>
+		</tr>
+        <tr>
+            <td>�r�n:</td>
+            <td>RUN</td>
+        </tr>
+		<tr>
+			<td>E-Posta:</td>
+			<td>test@ph.com.tr</td>
+		</tr>	
+        <tr>
+            <td>Geldi�i Sayfa:</td>
+            <td>@@refUrl@@</td>
+        </tr>	
+        
+	</table>
+</body>
+</html>
+ SalesFoce yazarken hata oluştu <br> Hata : Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Lütfen girdiğiniz telefon numarasının formatını kontrol ediniz ve sadece rakam kullanınız.: [] <br> <html>
+<head></head>
+<body>
+	<table>
+		
+		<tr>
+			<td>Ad:</td>
+			<td>test</td>
+		</tr>
+		<tr>
+			<td>Soyad:</td>
+			<td>test</td>
+		</tr>
+		<tr>
+			<td>Telefon:</td>
+			<td></td>
+		</tr>
+        <tr>
+            <td>il:</td>
+            <td>@@city@@</td>
+        </tr>
+		<tr>
+			<td>Mesaj:</td>
+			<td></td>
+		</tr>
+        <tr>
+            <td>�r�n:</td>
+            <td>RUN</td>
+        </tr>
+		<tr>
+			<td>E-Posta:</td>
+			<td>test@ph.com.tr</td>
+		</tr>	
+        <tr>
+            <td>Geldi�i Sayfa:</td>
+            <td>@@refUrl@@</td>
+        </tr>	
+        
+	</table>
+</body>
+</html>
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SitefinityWebApp.Mvc.Controllers.Form.DemoRequestFormDetailController.Index(DemoRequestForm m) in C:\CS Projects\MikroYazilim\Mvc\Controllers\Form\DemoRequestFormDetailController.cs:line 82 - 6/13/2018 8:18:41 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SitefinityWebApp.Mvc.Controllers.Form.DemoRequestFormDetailController.Index(DemoRequestForm m) in C:\CS Projects\MikroYazilim\Mvc\Controllers\Form\DemoRequestFormDetailController.cs:line 82 - 6/13/2018 8:18:53 PM
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponseWrapper.Redirect(String url)
+   at Telerik.Sitefinity.Mvc.MvcResponse.Redirect(String url)
+   at SitefinityWebApp.Mvc.Controllers.Form.DemoRequestFormDetailController.Index(DemoRequestForm m) in C:\CS Projects\MikroYazilim\Mvc\Controllers\Form\DemoRequestFormDetailController.cs:line 117 - 6/13/2018 8:27:18 PM
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponseWrapper.Redirect(String url)
+   at Telerik.Sitefinity.Mvc.MvcResponse.Redirect(String url)
+   at SitefinityWebApp.Mvc.Controllers.Form.DemoRequestFormDetailController.Index(DemoRequestForm m) in C:\CS Projects\MikroYazilim\Mvc\Controllers\Form\DemoRequestFormDetailController.cs:line 117 - 6/13/2018 8:34:47 PM
+ SalesFoce yazarken hata oluştu <br> Hata : Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, Sektör: bad value for restricted picklist field: 0603: [Sector__c] <br> <html>
+<head></head>
+<body>
+	<table>
+		
+		<tr>
+			<td>Ad:</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Soyad:</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Telefon:</td>
+			<td>02222222222</td>
+		</tr>
+        <tr>
+            <td>il:</td>
+            <td></td>
+        </tr>
+		<tr>
+			<td>Mesaj:</td>
+			<td>@@mesaj@@</td>
+		</tr>
+        <tr>
+            <td>�r�n:</td>
+            <td>@@urun@@</td>
+        </tr>
+		<tr>
+			<td>E-Posta:</td>
+			<td>test@ph.com.tr</td>
+		</tr>	
+        <tr>
+            <td>Geldi�i Sayfa:</td>
+            <td>@@refUrl@@</td>
+        </tr>	
+        
+	</table>
+</body>
+</html>

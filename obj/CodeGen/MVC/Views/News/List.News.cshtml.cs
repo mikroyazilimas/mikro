@@ -178,7 +178,7 @@ WriteLiteral("></i>\r\n                                <div");
 
 WriteLiteral(" class=\"container-sub-content-item-content-right__title\"");
 
-WriteLiteral(">\r\n                                    <span>Haberi Gör</span>\r\n                 " +
+WriteLiteral(">\r\n                                    <span>Detayı Gör</span>\r\n                 " +
 "               </div>\r\n                            </div>\r\n                     " +
 "   </a>\r\n");
 

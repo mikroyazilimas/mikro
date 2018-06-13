@@ -3,9 +3,9 @@
 
 @using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post))
 {
-}
+@*}
 @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", id = "demoForm" }))
-{
+{*@
     <input type="hidden" id="00N0Y00000QeNmD" name="00N0Y00000QeNmD" value="@Model.Product">
     <input type="hidden" name="oid" value="00D0Y0000035HER">
     <input type="hidden" id="00N0Y00000QeNcc" name="00N0Y00000QeNcc" value="Demo Request">
@@ -18,12 +18,12 @@
                 <div class="wizard-bottom-left-content-form">
                     <div class="wizard-bottom-left-content-form-row">
                         <label for="">Adınız</label>
-                        @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*", message = "Lütfen İsminizi Giriniz" })
+                        @Html.TextBoxFor(m => m.Name, new { required = "required", placeholder = "Adınız*", message = "Lütfen İsminizi Giriniz" })
 
                     </div>
                     <div class="wizard-bottom-left-content-form-row">
                         <label for="">Soyadınız</label>
-                        @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*", message = "Lütfen Soyadınızı Giriniz" })
+                        @Html.TextBoxFor(m => m.Surname, new {  required = "required", placeholder = "Soyadınız*", message = "Lütfen Soyadınızı Giriniz" })
                     </div>
                     <div class="wizard-bottom-left-content-form-row">
                         <label for="">İl</label>
@@ -118,13 +118,13 @@
                     </div>
                     <div class="wizard-bottom-left-content-form-row">
                         <label for="">Telefon</label>
-                        @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
-                        @Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern = ".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" })
+                        @Html.TextBoxFor(m => m.phone, new { type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
+                        @Html.TextBoxFor(m => m._phone, new { Name = "_phone", id = "_phone", pattern = ".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" })
                     </div>
-                    <div class="wizard-bottom-left-content-form-row responsive-textarea">
+                    @*<div class="wizard-bottom-left-content-form-row responsive-textarea">
                         <label for="">Mesajınız</label>
-                        @Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp", placeholder = "Mesajınız" })
-                    </div>
+                        @Html.TextAreaFor(m => m.Message, new { placeholder = "Mesajınız" })
+                    </div>*@
                     <div class="wizard-bottom-left-content-form-row">
                         <div class="wizard-bottom-left-content-form-row-text">
                             <p>Kişisel Veriler Bilgilendirme Metni</p>
@@ -155,10 +155,10 @@
                     <div class="wizard-bottom-left-content-form-row">
                         <label for="Contract-demo">@Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required", message = "KVK Metnini Kabul Etmediniz" })Kişisel Veriler Bilgilendirme Metni'ni kabul ediyorum.</label>
 
+                        @*<input type="submit" name="SaveButton" value="Gönder" onclick="return formSubmit('demoForm' ,'', 'ucretsiz-demo-talep', 'ucretsiz-demo-talep');" />*@
+
+
                         <input type="submit" name="SaveButton" value="Gönder" onclick="return formSubmit('demoForm' ,'', 'ucretsiz-demo-talep', 'ucretsiz-demo-talep');" />
-
-
-                        @*<input type="submit" name="SaveButton" value="Gönder" />*@
 
                     </div>
                     <div class="errorMessage"></div>
@@ -168,7 +168,7 @@
         <div class="wizard-bottom-left-content">
             <div class="wizard-bottom-left-content-form-row contact-us-right-textarea">
                 <label for="">Mesajınız</label>
-                @Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp", placeholder = "Mesajınız", cols = "60", rows = "16" })
+                @Html.TextAreaFor(m => m.Message, new { placeholder = "Mesajınız", cols = "60", rows = "16" })
             </div>
         </div>
     </div>

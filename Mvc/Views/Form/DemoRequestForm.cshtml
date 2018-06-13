@@ -52,9 +52,12 @@
             <div class="page-section-demo-request-open-right">
                 <div class="svg-hide"><i class="fas fa-times"></i></div>
 
-                @using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post))
-                { }
-                @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",id= "demoForm" }))
+                @using (@Html.BeginForm("Index", "DemoRequestFormDetail", FormMethod.Post))
+                {
+                }
+                @*@using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",id= "demoForm" }))*@
+
+                @using (Html.BeginForm("Index", "DemoRequestFormDetail", FormMethod.Post, new { action = "/ucretsiz-demo-talep", id= "demoForm" }))
                 {
                     <div class="form">
                         <div class="page-section-demo-request-open-right-form1">
@@ -66,17 +69,14 @@
                             @Html.HiddenFor(m => m.retURL, new { Value = Const.FormReturnUrl })
 
                             <label for="">
-                                @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", message = "Lütfen İsminizi Giriniz", required = "required", placeholder = "Adınız*" })
+                                @Html.TextBoxFor(m => m.Name, new { message = "Lütfen İsminizi Giriniz", required = "required", placeholder = "Adınız*" })
                             </label>
                             <label for="">
-                                @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", message = "Lütfen Soyadınızı Giriniz", required = "required", placeholder = "Soyadınız*" })
+                                @Html.TextBoxFor(m => m.Surname, new { message = "Lütfen Soyadınızı Giriniz", required = "required", placeholder = "Soyadınız*" })
                             </label>
                             <label for="">
-<<<<<<< HEAD
-                                <select name="City" id="city" required>
-=======
-                                <select name="City" id="city" required="required "="Lütfen İl Giriniz">
->>>>>>> a02dba44d48b250e44b436636885ee644c0c65b6
+                                
+                                <select name="City" id="city" required="required" message="Lütfen İl Giriniz">
                                     <option value="">İl Seçiniz</option>
                                     <option value="İstanbul">İstanbul</option>
                                     <option value="Ankara">Ankara</option>
@@ -162,23 +162,24 @@
                                 </select>
                             </label>
                             <label for="">
-                                @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", message = "Lütfen E-Postanızı Giriniz", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" })
+                                @Html.TextBoxFor(m => m.Email, new { message = "Lütfen E-Postanızı Giriniz", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" })
                             </label>
                             <label for="">
-                                @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
-                                @Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
+                                @Html.TextBoxFor(m => m.phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
+                                @Html.TextBoxFor(m => m._phone, new { Name = "_phone", id = "_phone", message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
                             </label>
                         </div>
                         
                         <div class="page-section-demo-request-open-right-form2">
-                            <label for=""> @Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp",  placeholder = "Mesajınız" })</label>
+                            <label for=""> @Html.TextAreaFor(m => m.Message, new {placeholder = "Mesajınız" })</label>
 
                         </div>
                         <div class="page-section-demo-request-open-right-checkbox">
                             <label for="Contract-demo">@Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required" , message = "KVK Metnini Kabul Etmediniz" })<span id="Contract">6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilgilendirmeyi okudum, kabul ediyorum.</span></label>
                         </div>
                         <div class="page-section-demo-request-open-right-button">
-                            <input type="submit" name="SaveButton" value="Gönder" onclick="return formSubmit('demoForm', '', 'demo-talep-anasayfa', 'ucretsiz-demo-talep');"/>
+                            @*<input type="submit" name="SaveButton" value="Gönder" onclick="return formSubmit('demoForm', '', 'demo-talep-anasayfa', 'ucretsiz-demo-talep');"/>*@
+                            <input type="submit" name="SaveButton" value="Gönder" onclick="return formSubmit('demoForm', '', 'demo-talep-anasayfa', 'ucretsiz-demo-talep');" />
                         </div>
                     </div>
                 }

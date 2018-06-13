@@ -73,22 +73,25 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
             //mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr", "satis@mikro.com.tr", "Mert.ALANKAYA@mikro.com.tr" };
             //mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr","Mert.ALANKAYA@mikro.com.tr" };
             mail.To = new List<string>() { "aykut.saridede@ph.com.tr" };
-
+            mail.From = "no-reply@e-mail.mikro.com.tr";
+            mail.FromDisplayName = "Mikro";
             try
             {                
                 RestApiService restApi = new RestApiService();
 
                 Input_RequestForm inpt = new Input_RequestForm
                 {
-                    firstName = "test",
-                    lastName = "tes",
+                    firstName = m.Name,
+                    lastName = m.Surname,
                     email = m.Email,
-                    phone = "02122122222",
+                    phone = m._phone,
+                    city= Request.Form["City"],
                     company = "company",
                     status = "New",
                     productGroup=m.Product,
-                    formNotes="tests"
+                    formNotes=m.Message
                 };
+                inpt.phone="0"+inpt.phone.Replace("(", "").Replace(")", "").Replace(" ", "").Replace(" ", "").Replace(" ", "");
 
                 string body = String.Empty;
                 using (StreamReader sr = new StreamReader(Server.MapPath("~/Html/demo-request.html"), System.Text.Encoding.UTF8))
@@ -100,29 +103,29 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 body = body.Replace("@@mesaj@@", inpt.formNotes);
                 body = body.Replace("@@eposta@@", inpt.email);
                 body = body.Replace("@@urun@@", inpt.productGroup);
+                body = body.Replace("@@refUrl@@", m.refUrl);
+                body = body.Replace("@@city@@", inpt.city);
 
                 Output_DemoRequest resp= restApi.DemoRequestForm(inpt);
                 if (resp.isSuccess)
                 {   
-                    mail.From = "no-reply@e-mail.mikro.com.tr";
-                    mail.FromDisplayName = "Mikro";
-                    
                     mail.Body = body;
                     mail.Subject = "Demo Talep Formu";
                     bool rtn = mail.SendMail();
                     if (rtn)
                     {
-                        Response.Redirect(Names.Pages.Thanks);
+                        Response.Redirect(Names.Pages.Thanks,false);
+                        return View();
                     }
                     else
                     {
-                        logProcess.WriteLog(" Mail Gönderirken hata oluştu <br> " + body);
+                        logProcess.WriteLog("Mail Gönderirken hata oluştu <br> " + body);
                         //hata yazılıcak
                     }                    
                 }
                 else
                 {
-                    logProcess.WriteLog(" SalesFoce yazarken hata oluştu <br> " + body);
+                    logProcess.WriteLog(" SalesFoce yazarken hata oluştu <br> Hata : " + resp.message +" <br> " + body);
                     mail.Subject = "Demo Talep Formu - HATA";
                     mail.Body =body;
                     mail.SendMail();
@@ -133,11 +136,11 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
             {
                 logProcess.Create(ex);
                 mail.Subject = "Demo Talep Formu - HATA";
-                mail.Body = "Demo talep formunda deneme yapılırken hata oluştu.";
+                mail.Body = "Demo talep formunda hata oluştu.";
                 mail.SendMail();
                 //hata mail atılıcak ve yazılıcak
             }
-            return View();
+            return View(Names.PagesView.DemoRequestDetailForm, m);
         }
     }
 }

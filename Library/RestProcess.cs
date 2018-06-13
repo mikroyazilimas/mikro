@@ -141,16 +141,13 @@ namespace SitefinityWebApp.Library
             string responseStr = "";
             try
             {
+                ServicePointManager.Expect100Continue = true;
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
                 WebRequest request = WebRequest.Create(Url);
-                request.Method = Method.ToString();
-                if (!String.IsNullOrEmpty(bearerToken))
-                {
-                    request.Headers.Add(HttpRequestHeader.Authorization, "Bearer " + bearerToken);
-                }
+                request.Method = Method.ToString();                
                 if (Method == Method.POST)
                 {
-                    System.Net.ServicePointManager.Expect100Continue = true;
-                    ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+                    
                     request.ContentType = "application/x-www-form-urlencoded";
                     byte[] data = Encoding.ASCII.GetBytes(PostData);
                     request.ContentLength = data.Length;

@@ -1,0 +1,27 @@
+﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+
+<div class="landing-content">
+    @foreach (var item in Model.Items)
+    {
+    <div class="landing-content-item">
+        @foreach (var photo in item.Fields.Image)
+        {
+        <div class="landing-content-item__img">
+            <img src="@photo.Fields.MediaUrl" alt="">
+        </div>
+
+        <div class="landing-content-item-other">
+            <div class="landing-content-item-other__title">
+                <span>@Html.Raw(item.Fields.PageTitle)</span>
+            </div>
+            <div class="landing-content-item-other__description">
+                <p>@Html.Raw(item.Fields.PageDescription)</p>
+            </div>
+            <div class="landing-content-item-other__button">
+                <a href="@item.DefaultUrl">Detay<i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        }
+    </div>
+    }
+</div>

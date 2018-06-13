@@ -72,7 +72,7 @@
                                 @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", message = "Lütfen Soyadınızı Giriniz", required = "required", placeholder = "Soyadınız*" })
                             </label>
                             <label for="">
-                                <select name="City" id="city">
+                                <select name="City" id="city" required>
                                     <option value="">İl Seçiniz</option>
                                     <option value="İstanbul">İstanbul</option>
                                     <option value="Ankara">Ankara</option>

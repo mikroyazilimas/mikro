@@ -46,6 +46,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     string email = Request["email"];
                     string product = Request["00N0Y00000QeNmD"];
                     string refUrl = Request["refUrl"];
+                    string city = Request["city"];
 
                     string fileHtml, formTitle;
 
@@ -62,7 +63,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                             break;
                         default:
                             fileHtml = "contact";
-                            formTitle = "İletişim Formu";
+                            formTitle = "Bize Ulaşın Formu";
                             break;
                     }
 
@@ -70,7 +71,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
 
                     mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr", "satis@mikro.com.tr", "Mert.ALANKAYA@mikro.com.tr" };
                     //mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr","Mert.ALANKAYA@mikro.com.tr" };
-                    mail.Bcc = new List<string>() { "aykut.saridede@ph.com.tr" };
+                    //mail.Bcc = new List<string>() { "aykut.saridede@ph.com.tr" };
                     mail.From = "no-reply@e-mail.mikro.com.tr";
                     mail.FromDisplayName = "Mikro";
 
@@ -86,7 +87,8 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     body = body.Replace("@@urun@@", product);
                     body = body.Replace("@@subject@@", subject);
                     body = body.Replace("@@refUrl@@", refUrl);
-                    
+                    body = body.Replace("@@city@@", city);
+
 
                     if (formId == "productForm")
                     {

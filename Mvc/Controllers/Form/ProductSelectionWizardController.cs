@@ -30,6 +30,126 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
         }
 
         [HttpPost]
+        public ActionResult Index(ProductSelectionWizard m)
+        {
+            MailHelper mail = new MailHelper();
+            LogProcess logProcess = new LogProcess();
+            //mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr", "satis@mikro.com.tr", "Mert.ALANKAYA@mikro.com.tr" };
+            //mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr","Mert.ALANKAYA@mikro.com.tr" };
+            mail.To = new List<string>() { "aykut.saridede@ph.com.tr" };
+            mail.From = "no-reply@e-mail.mikro.com.tr";
+            mail.FromDisplayName = "Mikro";
+            try
+            {
+                RestApiService restApi = new RestApiService();
+
+                //string formId = Request["formId"];
+                //string name = Request["first_name"];
+                //string surname = Request["last_name"];
+                //string phone = Request["_phone"];
+                //string subject = Request["subject"];
+                //string message = Request["00N0Y00000QeRBp"];
+                //string email = Request["email"];
+                //string product = Request["00N0Y00000QeNmD"];
+                //string refUrl = Request["refUrl"];
+                //string city = Request["city"];
+
+                Input_RequestForm inpt = new Input_RequestForm
+                {
+                    firstName = m.Name,
+                    lastName = m.Surname,
+                    email = m.Email,
+                    phone = m._phone,
+                    company = m.CompanyName,
+                    status = "New",
+                    foundationYear=Request.Form["00N0Y00000QeNYf"],
+                    sector =!String.IsNullOrEmpty(Request.Form["00N0Y00000QeRAN"]) ? int.Parse(Request.Form["00N0Y00000QeRAN"]).ToString(): "",
+                    numberOfEmployees = Request.Form["00N0Y00000QeNYu"],
+                    currentSituation = Request.Form["00N0Y00000QeR9j"],
+                    numberOfUser = Request.Form["00N0Y00000QeNjE"],
+                    currentSoftware =Request.Form["00N0Y00000QeNlZ"],
+                    
+                };
+                inpt.phone = "0" + inpt.phone.Replace("(", "").Replace(")", "").Replace(" ", "").Replace(" ", "").Replace(" ", "");
+
+                string body = String.Empty;
+                using (StreamReader sr = new StreamReader(Server.MapPath("~/Html/product.html"), System.Text.Encoding.UTF8))
+                    body = sr.ReadToEnd();
+
+                body = body.Replace("@@ad@@", inpt.firstName);
+                body = body.Replace("@@soyad@@", inpt.lastName);
+                body = body.Replace("@@telefon@@", inpt.phone);
+                body = body.Replace("@@eposta@@", inpt.email);
+                body = body.Replace("@@city@@", inpt.city);
+
+                Output_DemoRequest resp = restApi.DemoRequestForm(inpt);
+                if (resp.isSuccess)
+                {
+                    if (true)
+                    {
+                        SFProcess sf = new SFProcess();
+                        List<FormModel> fModel = new List<FormModel>();
+                        fModel = sf.GetProductForm();
+                        string pContent = "";
+                        string nameVal = "";
+                        if (fModel != null && fModel.Count > 0)
+                        {
+                            foreach (var item in fModel)
+                            {
+                                nameVal = Request.Form["" + item.InputName + ""];
+                                if (item.InputType == Library.InputType.DropDown)
+                                {
+                                    try
+                                    {
+                                        nameVal = item.DropDownItem.Where(x => x.Value == Request.Form["" + item.InputName + ""]).FirstOrDefault().Text;
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                    }
+                                }
+                                pContent += item.LabelValue + " : " + nameVal + "</br>";
+                            }
+                        }
+
+                        body = body.Replace("@@urunler@@", pContent);
+
+
+                    }
+                    mail.Body = body;
+                    mail.Subject = "Ürün Seçme Sihirbazı";
+                    bool rtn = mail.SendMail();
+                    if (rtn)
+                    {
+                        Response.Redirect(String.Format("{0}?{1}",Names.Pages.Thanks, Request.Form["retURL"]), false);
+                        return View();
+                    }
+                    else
+                    {
+                        logProcess.WriteLog("Mail Gönderirken hata oluştu <br> " + body);
+                        //hata yazılıcak
+                    }
+                }
+                else
+                {
+                    logProcess.WriteLog(" SalesFoce yazarken hata oluştu <br> Hata : " + resp.message + " <br> " + body);
+                    mail.Subject = "Ürün Seçme Sihirbazı - HATA";
+                    mail.Body = body;
+                    mail.SendMail();
+                    //hata mail atılıcak ve yazılıcak
+                }
+            }
+            catch (Exception ex)
+            {
+                logProcess.Create(ex);
+                mail.Subject = "Ürün Seçme Sihirbazı - HATA";
+                mail.Body = "Ürün Seçme Sihirbazı formunda hata oluştu.";
+                mail.SendMail();
+                //hata mail atılıcak ve yazılıcak
+            }
+            return View(Names.PagesView.ProductSelectionWizard, m);
+        }
+
+        [HttpPost]
         public JsonResult SendMail()
         {
             try
@@ -46,6 +166,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     string email = Request["email"];
                     string product = Request["00N0Y00000QeNmD"];
                     string refUrl = Request["refUrl"];
+                    string city = Request["city"];
 
                     string fileHtml, formTitle;
 
@@ -62,7 +183,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                             break;
                         default:
                             fileHtml = "contact";
-                            formTitle = "İletişim Formu";
+                            formTitle = "Bize Ulaşın Formu";
                             break;
                     }
 
@@ -70,7 +191,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
 
                     mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr", "satis@mikro.com.tr", "Mert.ALANKAYA@mikro.com.tr" };
                     //mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr","Mert.ALANKAYA@mikro.com.tr" };
-                    mail.Bcc = new List<string>() { "aykut.saridede@ph.com.tr" };
+                    //mail.Bcc = new List<string>() { "aykut.saridede@ph.com.tr" };
                     mail.From = "no-reply@e-mail.mikro.com.tr";
                     mail.FromDisplayName = "Mikro";
 
@@ -86,7 +207,8 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     body = body.Replace("@@urun@@", product);
                     body = body.Replace("@@subject@@", subject);
                     body = body.Replace("@@refUrl@@", refUrl);
-                    
+                    body = body.Replace("@@city@@", city);
+
 
                     if (formId == "productForm")
                     {

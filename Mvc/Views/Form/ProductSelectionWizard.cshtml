@@ -2,9 +2,10 @@
 
 <div class="wizard">
     @using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post))
-    { }
-    @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", id = "productForm" }))
     {
+    @*}
+    @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", id = "productForm" }))
+    {*@
         <input type=hidden name="oid" value="00D0Y0000035HER">
         <input type="hidden" id="00N0Y00000RBugB" name="00N0Y00000RBugB" value="Pre-sales channel">
         <input type="hidden" id="00N0Y00000RE6zR" name="00N0Y00000RE6zR" />
@@ -14,7 +15,8 @@
         <input type="hidden" id="00N0Y00000SJktl" maxlength="255" name="00N0Y00000SJktl" size="20" />
         <input type="hidden" id="00N0Y00000QeNcc" name="00N0Y00000QeNcc" value="USS" />
 
-        @Html.HiddenFor(m => m.retURL, new { Value = String.Format("{0}?product={1}",Const.FormReturnUrl,"product")})
+        @*@Html.HiddenFor(m => m.retURL, new { Value = String.Format("{0}?product={1}",Const.FormReturnUrl,"product")})*@
+        @Html.HiddenFor(m => m.retURL, new { Value = String.Format("{0}product={1}", "", "product") })
 
         <div class="wizard-content">
             <div class="wizard-content__text">
@@ -79,24 +81,24 @@
                     <div class="wizard-bottom-left-content-form">
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">Adınız</label>
-                            @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*", message = "Lütfen İsminizi Giriniz" })
+                            @Html.TextBoxFor(m => m.Name, new { required = "required", placeholder = "Adınız*", message = "Lütfen İsminizi Giriniz" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">Soyadınız</label>
-                            @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*", message = "Lütfen Soyadınızı  Giriniz" })
+                            @Html.TextBoxFor(m => m.Surname, new { required = "required", placeholder = "Soyadınız*", message = "Lütfen Soyadınızı  Giriniz" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">Firmanızın Ünvanı</label>
-                            @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Firmanızın Ünvanı*", value="Seçiniz", message = "Lütfen Firmanızın Ünvanını Giriniz" })
+                            @Html.TextBoxFor(m => m.CompanyName, new {required = "required", placeholder = "Firmanızın Ünvanı*", value="Seçiniz", message = "Lütfen Firmanızın Ünvanını Giriniz" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">E-Posta</label>
-                            @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", required = "required", placeholder="E-Postanız*", message= "Lütfen E-Postanızı Giriniz" })
+                            @Html.TextBoxFor(m => m.Email, new { pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", required = "required", placeholder="E-Postanız*", message= "Lütfen E-Postanızı Giriniz" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">Telefon</label>
-                            @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
-                            @Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern = ".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" })
+                            @Html.TextBoxFor(m => m.phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
+                            @Html.TextBoxFor(m => m._phone, new { Name = "_phone", id = "_phone", pattern = ".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" })
                         </div>
                         <div class="wizard-bottom-left-content-form-row">
                             <div class="wizard-bottom-left-content-form-row-text">

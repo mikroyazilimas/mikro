@@ -13,7 +13,8 @@ namespace SitefinityWebApp.Mvc.Models.ViewModel
         public string Surname { get; set; }
         public string CompanyName { get; set; }
         public string Email { get; set; }
-        public string Phone { get; set; }
+        public string phone { get; set; }
+        public string _phone { get; set; }
         public string retURL { get; set; }
         public bool Contract { get; set; }
     }

@@ -3,7 +3,7 @@
 @using SitefinityWebApp.Mvc.Models.ViewModel;
 @using Telerik.Sitefinity.Model;
 @{
-    List<BankInfoGroup> bankInfoGroups = Model.Items.GroupBy(p => p.Fields.GroupName).Select(x => new BankInfoGroup
+    List<BankInfoGroup> bankInfoGroups = Model.Items.GroupBy(p => ((ChoiceOption)p.Fields.GroupName).Text).Select(x => new BankInfoGroup
     {
         GroupName = x.Key,
         Items = x.Select(xx => new BankInfoItem

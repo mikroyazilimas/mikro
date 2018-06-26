@@ -62,13 +62,17 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     phone = m._phone,
                     company = m.CompanyName,
                     status = "New",
-                    foundationYear=Request.Form["00N0Y00000QeNYf"],
-                    sector =!String.IsNullOrEmpty(Request.Form["00N0Y00000QeRAN"]) ? int.Parse(Request.Form["00N0Y00000QeRAN"]).ToString(): "",
+                    foundationYear = Request.Form["00N0Y00000QeNYf"],
+                    sector = !String.IsNullOrEmpty(Request.Form["00N0Y00000QeRAN"]) ? int.Parse(Request.Form["00N0Y00000QeRAN"]).ToString() : "",
                     numberOfEmployees = Request.Form["00N0Y00000QeNYu"],
                     currentSituation = Request.Form["00N0Y00000QeR9j"],
                     numberOfUser = Request.Form["00N0Y00000QeNjE"],
-                    currentSoftware =Request.Form["00N0Y00000QeNlZ"],
-                    
+                    currentSoftware = Request.Form["00N0Y00000QeNlZ"],
+                    gclid = WebTools.GetQueryStringValueFromRawUrl("gclid"),
+                    utmCampaign = WebTools.GetQueryStringValueFromRawUrl("utm_campaign"),
+                    utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium"),
+                    utmSource = WebTools.GetQueryStringValueFromRawUrl("utm_source"),
+                    leadSource = "USS",
                 };
                 inpt.phone = "0" + inpt.phone.Replace("(", "").Replace(")", "").Replace(" ", "").Replace(" ", "").Replace(" ", "");
 
@@ -120,7 +124,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     bool rtn = mail.SendMail();
                     if (rtn)
                     {
-                        Response.Redirect(String.Format("{0}?{1}",Names.Pages.Thanks, Request.Form["retURL"]), false);
+                        Response.Redirect(String.Format("{0}?{1}", Names.Pages.Thanks, Request.Form["retURL"]), false);
                         return View();
                     }
                     else
@@ -222,15 +226,15 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                             foreach (var item in fModel)
                             {
                                 nameVal = Request.Form["" + item.InputName + ""];
-                                if (item.InputType ==Library.InputType.DropDown)
+                                if (item.InputType == Library.InputType.DropDown)
                                 {
                                     try
                                     {
-                                        nameVal = item.DropDownItem.Where(x => x.Value == Request.Form["" + item.InputName + ""]).FirstOrDefault().Text;                                        
+                                        nameVal = item.DropDownItem.Where(x => x.Value == Request.Form["" + item.InputName + ""]).FirstOrDefault().Text;
                                     }
                                     catch (Exception ex)
                                     {
-                                    }                                    
+                                    }
                                 }
                                 pContent += item.LabelValue + " : " + nameVal + "</br>";
                             }
@@ -289,7 +293,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                             subject = "Bilgi talep ediyorum";
                             break;
                         case "2":
-                            mail.CC = new List<string>() { "Serpil.EREN@mikro.com.tr"};
+                            mail.CC = new List<string>() { "Serpil.EREN@mikro.com.tr" };
                             subject = "Öneri / Şikayetim var";
                             break;
                         case "3":
@@ -323,7 +327,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     body = body.Replace("@@mesaj@@", message);
                     body = body.Replace("@@eposta@@", email);
                     body = body.Replace("@@subject@@", subject);
-                    
+
 
                     mail.Body = body;
                     mail.Subject = "İletişim Formu";
@@ -340,7 +344,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 return null;
             }
 
-            
+
         }
     }
 }

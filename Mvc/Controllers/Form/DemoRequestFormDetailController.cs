@@ -3,6 +3,7 @@ using SitefinityWebApp.Library.Model;
 using SitefinityWebApp.Mvc.Models.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -76,8 +77,11 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
             mail.From = "no-reply@e-mail.mikro.com.tr";
             mail.FromDisplayName = "Mikro";
             try
-            {                
+            {
                 RestApiService restApi = new RestApiService();
+                string city = string.Empty;
+                if (!String.IsNullOrEmpty(Request.Form["City"]))
+                    city = Request.Form["City"].ToUpper(new CultureInfo("tr-TR"));
 
                 Input_RequestForm inpt = new Input_RequestForm
                 {
@@ -85,13 +89,18 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     lastName = m.Surname,
                     email = m.Email,
                     phone = m._phone,
-                    city= Request.Form["City"],
+                    city = city,
                     company = "company",
                     status = "New",
-                    productGroup=m.Product,
-                    formNotes=m.Message
+                    productGroup = m.Product,
+                    leadSource = "Demo Request",
+                    gclid = WebTools.GetQueryStringValueFromRawUrl("gclid"),
+                    utmCampaign = WebTools.GetQueryStringValueFromRawUrl("utm_campaign"),
+                    utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium"),
+                    utmSource = WebTools.GetQueryStringValueFromRawUrl("utm_source"),
+                    formNotes = m.Message
                 };
-                inpt.phone="0"+inpt.phone.Replace("(", "").Replace(")", "").Replace(" ", "").Replace(" ", "").Replace(" ", "");
+                inpt.phone = "0" + inpt.phone.Replace("(", "").Replace(")", "").Replace(" ", "").Replace(" ", "").Replace(" ", "");
 
                 string body = String.Empty;
                 using (StreamReader sr = new StreamReader(Server.MapPath("~/Html/demo-request.html"), System.Text.Encoding.UTF8))
@@ -106,31 +115,31 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 body = body.Replace("@@refUrl@@", m.refUrl);
                 body = body.Replace("@@city@@", inpt.city);
 
-                Output_DemoRequest resp= restApi.DemoRequestForm(inpt);
+                Output_DemoRequest resp = restApi.DemoRequestForm(inpt);
                 if (resp.isSuccess)
-                {   
+                {
                     mail.Body = body;
                     mail.Subject = "Demo Talep Formu";
                     bool rtn = mail.SendMail();
                     if (rtn)
                     {
-                        Response.Redirect(Names.Pages.Thanks,false);
+                        Response.Redirect(Names.Pages.Thanks, false);
                         return View();
                     }
                     else
                     {
                         logProcess.WriteLog("Mail Gönderirken hata oluştu <br> " + body);
                         //hata yazılıcak
-                    }                    
+                    }
                 }
                 else
                 {
-                    logProcess.WriteLog(" SalesFoce yazarken hata oluştu <br> Hata : " + resp.message +" <br> " + body);
+                    logProcess.WriteLog(" SalesFoce yazarken hata oluştu <br> Hata : " + resp.message + " <br> " + body);
                     mail.Subject = "Demo Talep Formu - HATA";
-                    mail.Body =body;
+                    mail.Body = body;
                     mail.SendMail();
                     //hata mail atılıcak ve yazılıcak
-                }                
+                }
             }
             catch (Exception ex)
             {

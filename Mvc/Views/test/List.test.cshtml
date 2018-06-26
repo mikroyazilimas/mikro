@@ -3,18 +3,16 @@
 @using SitefinityWebApp.Mvc.Models.ViewModel;
 @using Telerik.Sitefinity.Model;
 @{
-    List<LogoImage> LogoImageGroups = new List<LogoImage>();
-    var aa = Model.Items.GroupBy(p => ((ChoiceOption)p.Fields.Group).Text);
-    @*List<LogoImage> LogoImageGroups = Model.Items.GroupBy(p => ((ChoiceOption)p.Fields.Group).Text).Select(x => new LogoImage
+    List<LogoImage> LogoImageGroups = Model.Items.GroupBy(p => ((ChoiceOption)p.Fields.Group).Text).Select(x => new LogoImage
     {
         Group = x.Key,
         Items = x.Select(xx => new LogoImageItem
         {
             Title = xx.Fields.Title,
             File = ((Telerik.Sitefinity.Libraries.Model.Document)xx.Fields.File.DataItem).MediaUrl,
-            Image = ((Telerik.Sitefinity.Libraries.Model.Document)xx.Fields.Image.DataItem).MediaUrl
+            Image = ((Telerik.Sitefinity.Frontend.Mvc.Models.ItemViewModel[])xx.Fields.Image)[0].Fields.MediaUrl
         }).ToList()
-    }).ToList();*@
+    }).ToList();
 }
 
 <div class="logo-content">
@@ -24,7 +22,6 @@
         {
             <h2>@ItemGroup.Group</h2>
         }
-
         <div class="logo-content-item">
             @foreach (var item in ItemGroup.Items)
             {

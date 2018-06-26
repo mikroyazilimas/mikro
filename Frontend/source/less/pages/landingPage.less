@@ -6,14 +6,24 @@
     &-item{
         display: flex;
         margin-bottom: 50px;
+        @media @responsive{
+            flex-direction: column;
+        }
         &__img{
             height: 200px;
+            @media @responsive{
+                height: 185px;
+            }
             >img{
                 height: 100%;
             }
         }
         &-other{
                 margin-left: 20px;
+                @media @responsive{
+                    margin-left: 0px;
+                    margin-top: 20px;
+                }
                 &__title{
                     font-size: 16px;
                     font-weight: 700;

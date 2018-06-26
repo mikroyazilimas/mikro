@@ -206,25 +206,30 @@ function formSubmit(formId, formPost, formType, dataLayerLabel) {
                     'event': 'gaEvent'
                 });
 
-                $.ajax({
-                    type: 'POST',
-                    url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
-                    data: dt,
-                    success: function (msg) {
-                        if (msg == true) {
-                            // $('#PostControl').val('true');
-                            // return true;
-                            $('#' + formId).attr('validated', true);
-                            isFormSubmit = false;
-                            $('#' + formId).submit();
-                            formtetik = 0;
-                        } else {
-                            console.log(msg);
-                            return false;
-                        }
-                    }
-                });
-                return false;
+                $('#' + formId).attr('validated', true);
+                isFormSubmit = false;
+                $('#' + formId).submit();
+                formtetik = 0;
+
+                //$.ajax({
+                //    type: 'POST',
+                //    url: '/urun-secme-sihirbazi/SendMail?formId=' + formId,
+                //    data: dt,
+                //    success: function (msg) {
+                //        if (msg == true) {
+                //            // $('#PostControl').val('true');
+                //            // return true;
+                //            $('#' + formId).attr('validated', true);
+                //            isFormSubmit = false;
+                //            $('#' + formId).submit();
+                //            formtetik = 0;
+                //        } else {
+                //            console.log(msg);
+                //            return false;
+                //        }
+                //    }
+                //});
+                //return false;
             }
             return true;
 
@@ -639,6 +644,7 @@ $(function () {
     $(".detail-product-description-left").next(".products-container-content-right-item__title").addClass("products-detail-select")
 
     $('select').change(function () {
+        $(".wizard-form-row.company select").val(null);
         $('.wizard-form-left > div').removeClass('wizardshow');
         if ($("#00N0Y00000QeR9j option:selected").attr('data-field') != null) {
             $("." + $("#00N0Y00000QeR9j option:selected").attr('data-field')).addClass('wizardshow');

@@ -34,9 +34,9 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
         {
             MailHelper mail = new MailHelper();
             LogProcess logProcess = new LogProcess();
-            //mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr", "satis@mikro.com.tr", "Mert.ALANKAYA@mikro.com.tr" };
+            mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr", "satis@mikro.com.tr", "Mert.ALANKAYA@mikro.com.tr" };
             //mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr","Mert.ALANKAYA@mikro.com.tr" };
-            mail.To = new List<string>() { "aykut.saridede@ph.com.tr" };
+            //mail.To = new List<string>() { "aykut.saridede@ph.com.tr" };
             mail.From = "no-reply@e-mail.mikro.com.tr";
             mail.FromDisplayName = "Mikro";
             try
@@ -70,7 +70,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     currentSoftware = Request.Form["00N0Y00000QeNlZ"],
                     gclid = WebTools.GetQueryStringValueFromRawUrl("gclid"),
                     utmCampaign = WebTools.GetQueryStringValueFromRawUrl("utm_campaign"),
-                    utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium"),
+                    utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium"),  
                     utmSource = WebTools.GetQueryStringValueFromRawUrl("utm_source"),
                     leadSource = "USS",
                 };

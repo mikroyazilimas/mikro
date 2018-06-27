@@ -42,7 +42,17 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("\r\n<!-- Popup Run-->\r\n<div");
+WriteLiteral("\r\n");
+
+            
+            #line 4 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+  
+    var pField = Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields;
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\r\n\r\n<!-- Popup Run-->\r\n<div");
 
 WriteLiteral(" class=\"run-popup\"");
 
@@ -62,7 +72,16 @@ WriteLiteral(">\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__pricetext\"");
 
-WriteLiteral(">1265 TL + KDV</span>\r\n                <span");
+WriteLiteral(">");
+
+            
+            #line 13 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+                                                Write(String.Format("{0} TL + KDV", pField.PriceBuy));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</span>\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__text\"");
 
@@ -74,7 +93,16 @@ WriteLiteral(">\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__pricetext\"");
 
-WriteLiteral(">440 TL + KDV/Yıl</span>\r\n                <span");
+WriteLiteral(">");
+
+            
+            #line 17 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+                                                Write(String.Format("{0} TL + KDV/Yıl", pField.PriceRent));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</span>\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__text\"");
 
@@ -178,9 +206,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run/\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2833), Tuple.Create("\"", 2884)
-, Tuple.Create(Tuple.Create("", 2839), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-run.svg")
-, 2839), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 3010), Tuple.Create("\"", 3061)
+, Tuple.Create(Tuple.Create("", 3016), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-run.svg")
+, 3016), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -237,8 +265,8 @@ WriteLiteral(">\r\n");
 WriteLiteral("            ");
 
             
-            #line 79 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
-       Write(Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText));
+            #line 83 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+       Write(Html.Raw(pField.ShortText));
 
             
             #line default
@@ -246,13 +274,13 @@ WriteLiteral("            ");
 WriteLiteral("\r\n        </div>\r\n\r\n");
 
             
-            #line 82 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 86 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 82 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 86 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
          foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
 
@@ -270,7 +298,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n                    <span>");
 
             
-            #line 86 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 90 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
                      Write(item.Fields.Title);
 
             
@@ -285,7 +313,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 89 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 93 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
                Write(Html.Raw(item.Fields.ShortText));
 
             
@@ -294,7 +322,7 @@ WriteLiteral("                    ");
 WriteLiteral("\r\n                </div>\r\n            </div>\r\n");
 
             
-            #line 92 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
+            #line 96 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
         }
 
             

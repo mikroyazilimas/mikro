@@ -157,7 +157,7 @@ WriteLiteral("                    ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n                    \r\n                </div>\r\n                <div");
+WriteLiteral("\r\n                </div>\r\n                <div");
 
 WriteLiteral(" class=\"wizard-bottom-left-content-form-row\"");
 
@@ -170,7 +170,7 @@ WriteLiteral(">Soyadınız</label>\r\n");
 WriteLiteral("                    ");
 
             
-            #line 28 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
+            #line 27 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
                Write(Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*", message = "Lütfen Soyadınızı Giriniz" }));
 
             
@@ -189,7 +189,7 @@ WriteLiteral(">E-Postanız</label>\r\n");
 WriteLiteral("                    ");
 
             
-            #line 32 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
+            #line 31 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
                Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*", message = "Lütfen E-Postanızı Giriniz" }));
 
             
@@ -208,7 +208,7 @@ WriteLiteral(">Şirketinizin İsmi</label>\r\n");
 WriteLiteral("                    ");
 
             
-            #line 36 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
+            #line 35 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
                Write(Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Şirketinizin ismi*", message = "Lütfen Şirket İsminizi Giriniz" }));
 
             
@@ -227,7 +227,7 @@ WriteLiteral(">Telefon</label>\r\n");
 WriteLiteral("                    ");
 
             
-            #line 40 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
+            #line 39 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
                Write(Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" }));
 
             
@@ -238,7 +238,7 @@ WriteLiteral("\r\n");
 WriteLiteral("                    ");
 
             
-            #line 41 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
+            #line 40 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
                Write(Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern=".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" }));
 
             
@@ -246,7 +246,7 @@ WriteLiteral("                    ");
             #line hidden
 WriteLiteral("\r\n                </div>\r\n                <div");
 
-WriteLiteral(" class=\"wizard-bottom-left-content-form-row responsive-textarea\"");
+WriteLiteral(" class=\"wizard-bottom-left-content-form-row \"");
 
 WriteLiteral(">\r\n                    <label");
 
@@ -257,7 +257,7 @@ WriteLiteral(">Mesajınız</label>\r\n");
 WriteLiteral("                    ");
 
             
-            #line 45 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
+            #line 44 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
                Write(Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp",  placeholder = "Mesaj" }));
 
             
@@ -455,33 +455,11 @@ WriteLiteral(" onclick=\"return formSubmit(\'contactDetailForm\',\'\',\'bize-ula
 
 WriteLiteral("/>\r\n                    ");
 
-WriteLiteral("\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <di" +
-"v");
-
-WriteLiteral(" class=\"wizard-bottom-left-content\"");
-
-WriteLiteral(">\r\n        <div");
-
-WriteLiteral(" class=\"wizard-bottom-left-content-form-row contact-us-right-textarea\"");
-
-WriteLiteral(">\r\n            <label");
-
-WriteLiteral(" for=\"\"");
-
-WriteLiteral(">Mesajınız</label>\r\n            <textarea");
-
-WriteLiteral(" name=\"\"");
-
-WriteLiteral(" id=\"\"");
-
-WriteLiteral(" cols=\"70\"");
-
-WriteLiteral(" rows=\"18\"");
-
-WriteLiteral("></textarea>\r\n        </div>\r\n    </div>\r\n</div>\r\n");
+WriteLiteral("\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    \r\n<" +
+"/div>\r\n");
 
             
-            #line 89 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
+            #line 83 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
 }
 
             

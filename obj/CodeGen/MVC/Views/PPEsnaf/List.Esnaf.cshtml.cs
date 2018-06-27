@@ -27,6 +27,12 @@ namespace ASP
     using System.Web.UI;
     using System.Web.WebPages;
     
+    #line 2 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+    using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+    
+    #line default
+    #line hidden
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("RazorGenerator", "2.0.0.0")]
     [System.Web.WebPages.PageVirtualPathAttribute("~/MVC/Views/PPEsnaf/List.Esnaf.cshtml")]
     public partial class _MVC_Views_PPEsnaf_List_Esnaf_cshtml : System.Web.Mvc.WebViewPage<Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel>
@@ -36,7 +42,15 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("<!-- Popup Musavir-->\r\n<div");
+            
+            #line 3 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+  
+    var pField = Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields;
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\r\n<!-- Popup Musavir-->\r\n<div");
 
 WriteLiteral(" class=\"musavir-popup\"");
 
@@ -56,7 +70,16 @@ WriteLiteral(">\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__pricetext\"");
 
-WriteLiteral(">1290 TL + KDV</span>\r\n                <span");
+WriteLiteral(">");
+
+            
+            #line 11 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+                                                Write(String.Format("{0} TL + KDV", pField.PriceBuy));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</span>\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__text\"");
 
@@ -68,7 +91,16 @@ WriteLiteral(">\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__pricetext\"");
 
-WriteLiteral(">516 TL + KDV/Yıl</span>\r\n                <span");
+WriteLiteral(">");
+
+            
+            #line 15 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+                                                Write(String.Format("{0} TL + KDV/Yıl", pField.PriceRent));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</span>\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__text\"");
 
@@ -162,9 +194,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-musavir\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2725), Tuple.Create("\"", 2780)
-, Tuple.Create(Tuple.Create("", 2731), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-musavir.svg")
-, 2731), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2947), Tuple.Create("\"", 3002)
+, Tuple.Create(Tuple.Create("", 2953), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-musavir.svg")
+, 2953), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -219,7 +251,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("            ");
 
             
-            #line 80 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 83 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
        Write(Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText));
 
             
@@ -228,13 +260,13 @@ WriteLiteral("            ");
 WriteLiteral("\r\n        </div>\r\n\r\n");
 
             
-            #line 83 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 86 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 83 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 86 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
          foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
 
@@ -252,7 +284,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n                    <span>");
 
             
-            #line 87 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 90 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
                      Write(item.Fields.Title);
 
             
@@ -267,7 +299,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 90 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 93 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
                Write(Html.Raw(item.Fields.ShortText));
 
             
@@ -276,7 +308,7 @@ WriteLiteral("                    ");
 WriteLiteral("\r\n                </div>\r\n            </div>\r\n");
 
             
-            #line 93 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
+            #line 96 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
         }
 
             

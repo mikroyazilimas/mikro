@@ -164,9 +164,9 @@ WriteLiteral("\r\n\r\n            </div>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("\r\n</div>\r\n\r\n\r\n\r\n\r\n<style>\r\n    .owl-dots {\r\n        position: absolute;\r\n        " +
-"bottom: 0px;\r\n    }\r\n\r\n    .owl-nav {\r\n        display: none;\r\n    }\r\n\r\n    .mob" +
-"ile-banner {\r\n        display: none;\r\n    }\r\n</style>");
+WriteLiteral("</div>\r\n\r\n\r\n\r\n\r\n<style>\r\n    .owl-dots {\r\n        position: absolute;\r\n        bo" +
+"ttom: 0px;\r\n    }\r\n\r\n    .owl-nav {\r\n        display: none;\r\n    }\r\n\r\n    .mobil" +
+"e-banner {\r\n        display: none;\r\n    }\r\n</style>");
 
         }
     }

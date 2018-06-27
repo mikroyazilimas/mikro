@@ -267,17 +267,26 @@ WriteLiteral("></i></div>\r\n\r\n");
             #line hidden
             
             #line 55 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                 using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post))
-                { }
+                 using (@Html.BeginForm("Index", "DemoRequestFormDetail", FormMethod.Post))
+                {
+                }
 
             
             #line default
             #line hidden
 WriteLiteral("                ");
 
+WriteLiteral("\r\n\r\n");
+
             
-            #line 57 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                 using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",id= "demoForm" }))
+            #line 60 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+                
+            
+            #line default
+            #line hidden
+            
+            #line 60 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+                 using (Html.BeginForm("Index", "DemoRequestFormDetail", FormMethod.Post, new { action = "/ucretsiz-demo-talep", id= "demoForm" }))
                 {
 
             
@@ -332,7 +341,7 @@ WriteLiteral(">\r\n\r\n");
 WriteLiteral("                            ");
 
             
-            #line 66 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 69 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                        Write(Html.HiddenFor(m => m.retURL, new { Value = Const.FormReturnUrl }));
 
             
@@ -347,39 +356,8 @@ WriteLiteral(">\r\n");
 WriteLiteral("                                ");
 
             
-            #line 69 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                           Write(Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", message = "Lütfen İsminizi Giriniz", required = "required", placeholder = "Adınız*" }));
-
-            
-            #line default
-            #line hidden
-WriteLiteral("\r\n                            </label>\r\n                            <label");
-
-WriteLiteral(" for=\"\"");
-
-WriteLiteral(">\r\n");
-
-WriteLiteral("                                ");
-
-            
             #line 72 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                           Write(Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", message = "Lütfen Soyadınızı Giriniz", required = "required", placeholder = "Soyadınız*"}));
-
-            
-            #line default
-            #line hidden
-WriteLiteral("\r\n                            </label>\r\n                                         " +
-"               \r\n                            <label");
-
-WriteLiteral(" for=\"\"");
-
-WriteLiteral(">\r\n");
-
-WriteLiteral("                                ");
-
-            
-            #line 76 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                           Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", message = "Lütfen E-Postanızı Giriniz", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*"}));
+                           Write(Html.TextBoxFor(m => m.Name, new { message = "Lütfen İsminizi Giriniz", required = "required", placeholder = "Adınız*" }));
 
             
             #line default
@@ -393,8 +371,381 @@ WriteLiteral(">\r\n");
 WriteLiteral("                                ");
 
             
-            #line 79 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                           Write(Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" }));
+            #line 75 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+                           Write(Html.TextBoxFor(m => m.Surname, new { message = "Lütfen Soyadınızı Giriniz", required = "required", placeholder = "Soyadınız*" }));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\r\n                            </label>\r\n                            <label");
+
+WriteLiteral(" for=\"\"");
+
+WriteLiteral(">\r\n\r\n                                <select");
+
+WriteLiteral(" name=\"City\"");
+
+WriteLiteral(" id=\"city\"");
+
+WriteLiteral(" required=\"required\"");
+
+WriteLiteral(" message=\"Lütfen İl Giriniz\"");
+
+WriteLiteral(">\r\n                                    <option");
+
+WriteLiteral(" value=\"\"");
+
+WriteLiteral(">İl Seçiniz</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"İstanbul\"");
+
+WriteLiteral(">İstanbul</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Ankara\"");
+
+WriteLiteral(">Ankara</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"İzmir\"");
+
+WriteLiteral(">İzmir</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Adana\"");
+
+WriteLiteral(">Adana</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Adıyaman\"");
+
+WriteLiteral(">Adıyaman</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Afyonkarahisar\"");
+
+WriteLiteral(">Afyonkarahisar</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Ağrı\"");
+
+WriteLiteral(">Ağrı</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Aksaray\"");
+
+WriteLiteral(">Aksaray</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Amasya\"");
+
+WriteLiteral(">Amasya</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Antalya\"");
+
+WriteLiteral(">Antalya</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Ardahan\"");
+
+WriteLiteral(">Ardahan</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Artvin\"");
+
+WriteLiteral(">Artvin</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Aydın\"");
+
+WriteLiteral(">Aydın</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Balıkesir\"");
+
+WriteLiteral(">Balıkesir</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Bartın\"");
+
+WriteLiteral(">Bartın</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Batman\"");
+
+WriteLiteral(">Batman</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Bayburt\"");
+
+WriteLiteral(">Bayburt</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Bilecik\"");
+
+WriteLiteral(">Bilecik</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Bingöl\"");
+
+WriteLiteral(">Bingöl</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Bitlis\"");
+
+WriteLiteral(">Bitlis</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Bolu\"");
+
+WriteLiteral(">Bolu</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Burdur\"");
+
+WriteLiteral(">Burdur</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Bursa\"");
+
+WriteLiteral(">Bursa</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Çanakkale\"");
+
+WriteLiteral(">Çanakkale</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Çankırı\"");
+
+WriteLiteral(">Çankırı</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Çorum\"");
+
+WriteLiteral(">Çorum</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Denizli\"");
+
+WriteLiteral(">Denizli</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Diyarbakır\"");
+
+WriteLiteral(">Diyarbakır</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Düzce\"");
+
+WriteLiteral(">Düzce</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Edirne\"");
+
+WriteLiteral(">Edirne</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Elazığ\"");
+
+WriteLiteral(">Elazığ</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Erzincan\"");
+
+WriteLiteral(">Erzincan</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Erzurum\"");
+
+WriteLiteral(">Erzurum</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Eskişehir\"");
+
+WriteLiteral(">Eskişehir</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Gaziantep\"");
+
+WriteLiteral(">Gaziantep</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Giresun\"");
+
+WriteLiteral(">Giresun</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Gümüşhane\"");
+
+WriteLiteral(">Gümüşhane</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Hakkâri\"");
+
+WriteLiteral(">Hakkâri</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Hatay\"");
+
+WriteLiteral(">Hatay</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Iğdır\"");
+
+WriteLiteral(">Iğdır</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Isparta\"");
+
+WriteLiteral(">Isparta</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Kahramanmaraş\"");
+
+WriteLiteral(">Kahramanmaraş</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Karabük\"");
+
+WriteLiteral(">Karabük</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Karaman\"");
+
+WriteLiteral(">Karaman</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Kars\"");
+
+WriteLiteral(">Kars</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Kastamonu\"");
+
+WriteLiteral(">Kastamonu</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Kayseri\"");
+
+WriteLiteral(">Kayseri</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Kırıkkale\"");
+
+WriteLiteral(">Kırıkkale</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Kırklareli\"");
+
+WriteLiteral(">Kırklareli</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Kırşehir\"");
+
+WriteLiteral(">Kırşehir</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Kilis\"");
+
+WriteLiteral(">Kilis</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Kocaeli\"");
+
+WriteLiteral(">Kocaeli</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Konya\"");
+
+WriteLiteral(">Konya</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Kütahya\"");
+
+WriteLiteral(">Kütahya</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Malatya\"");
+
+WriteLiteral(">Malatya</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Manisa\"");
+
+WriteLiteral(">Manisa</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Mardin\"");
+
+WriteLiteral(">Mardin</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Mersin\"");
+
+WriteLiteral(">Mersin</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Muğla\"");
+
+WriteLiteral(">Muğla</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Muş\"");
+
+WriteLiteral(">Muş</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Nevşehir\"");
+
+WriteLiteral(">Nevşehir</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Niğde\"");
+
+WriteLiteral(">Niğde</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Ordu\"");
+
+WriteLiteral(">Ordu</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Osmaniye\"");
+
+WriteLiteral(">Osmaniye</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Rize\"");
+
+WriteLiteral(">Rize</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Sakarya\"");
+
+WriteLiteral(">Sakarya</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Samsun\"");
+
+WriteLiteral(">Samsun</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Siirt\"");
+
+WriteLiteral(">Siirt</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Sinop\"");
+
+WriteLiteral(">Sinop</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Sivas\"");
+
+WriteLiteral(">Sivas</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Şırnak\"");
+
+WriteLiteral(">Şırnak</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Tekirdağ\"");
+
+WriteLiteral(">Tekirdağ</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Tokat\"");
+
+WriteLiteral(">Tokat</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Trabzon\"");
+
+WriteLiteral(">Trabzon</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Tunceli\"");
+
+WriteLiteral(">Tunceli</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Şanlıurfa\"");
+
+WriteLiteral(">Şanlıurfa</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Uşak\"");
+
+WriteLiteral(">Uşak</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Van\"");
+
+WriteLiteral(">Van</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Yalova\"");
+
+WriteLiteral(">Yalova</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Yozgat\"");
+
+WriteLiteral(">Yozgat</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"Zonguldak\"");
+
+WriteLiteral(">Zonguldak</option>\r\n                                </select>\r\n                 " +
+"           </label>\r\n                            <label");
+
+WriteLiteral(" for=\"\"");
+
+WriteLiteral(">\r\n");
+
+WriteLiteral("                                ");
+
+            
+            #line 165 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+                           Write(Html.TextBoxFor(m => m.Email, new { message = "Lütfen E-Postanızı Giriniz", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" }));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\r\n                            </label>\r\n                            <label");
+
+WriteLiteral(" for=\"\"");
+
+WriteLiteral(">\r\n");
+
+WriteLiteral("                                ");
+
+            
+            #line 168 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+                           Write(Html.TextBoxFor(m => m.phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" }));
 
             
             #line default
@@ -404,8 +755,8 @@ WriteLiteral("\r\n");
 WriteLiteral("                                ");
 
             
-            #line 80 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                           Write(Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", message = "Lütfen Telefon Numaranızı Giriniz", pattern=".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title= "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız"}));
+            #line 169 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+                           Write(Html.TextBoxFor(m => m._phone, new { Name = "_phone", id = "_phone", message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" }));
 
             
             #line default
@@ -422,8 +773,8 @@ WriteLiteral(" for=\"\"");
 WriteLiteral("> ");
 
             
-            #line 85 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
-                                      Write(Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp",  placeholder = "Mesajınız" }));
+            #line 174 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+                                      Write(Html.TextAreaFor(m => m.Message, new {placeholder = "Mesajınız" }));
 
             
             #line default
@@ -439,7 +790,7 @@ WriteLiteral(" for=\"Contract-demo\"");
 WriteLiteral(">");
 
             
-            #line 89 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 178 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                                                   Write(Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required" , message = "KVK Metnini Kabul Etmediniz" }));
 
             
@@ -455,7 +806,9 @@ WriteLiteral(">6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilg
 
 WriteLiteral(" class=\"page-section-demo-request-open-right-button\"");
 
-WriteLiteral(">\r\n                            <input");
+WriteLiteral(">\r\n                            ");
+
+WriteLiteral("\r\n                            <input");
 
 WriteLiteral(" type=\"submit\"");
 
@@ -466,10 +819,10 @@ WriteLiteral(" value=\"Gönder\"");
 WriteLiteral(" onclick=\"return formSubmit(\'demoForm\', \'\', \'demo-talep-anasayfa\', \'ucretsiz-demo" +
 "-talep\');\"");
 
-WriteLiteral("/>\r\n                        </div>\r\n                    </div>\r\n");
+WriteLiteral(" />\r\n                        </div>\r\n                    </div>\r\n");
 
             
-            #line 95 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 185 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                 }
 
             

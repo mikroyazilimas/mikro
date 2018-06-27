@@ -27,6 +27,12 @@ namespace ASP
     using System.Web.UI;
     using System.Web.WebPages;
     
+    #line 1 "..\..\MVC\Views\HpExperience\List.MainPageExperince.cshtml"
+    using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+    
+    #line default
+    #line hidden
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("RazorGenerator", "2.0.0.0")]
     [System.Web.WebPages.PageVirtualPathAttribute("~/MVC/Views/HpExperience/List.MainPageExperince.cshtml")]
     public partial class _MVC_Views_HpExperience_List_MainPageExperince_cshtml : System.Web.Mvc.WebViewPage<dynamic>
@@ -36,7 +42,7 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral(" <!-- Deneyimler -->\r\n<div");
+WriteLiteral("<!-- Deneyimler -->\r\n<div");
 
 WriteLiteral(" class=\"page-section-experience\"");
 
@@ -82,20 +88,44 @@ WriteLiteral(">\r\n                            <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__title__first\"");
 
-WriteLiteral(">\r\n                                <span>30</span>\r\n                            <" +
-"/div>\r\n                            <div");
+WriteLiteral(">\r\n                                <span>");
+
+            
+            #line 17 "..\..\MVC\Views\HpExperience\List.MainPageExperince.cshtml"
+                                 Write(Html.Resource("HomepageExperienceYearNo","Labels"));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</span>\r\n                            </div>\r\n                            <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__title__second\"");
 
-WriteLiteral(">\r\n                                <span>Yıllık Deneyim</span>\r\n                 " +
-"           </div>\r\n                        </div>\r\n                        <div");
+WriteLiteral(">\r\n                                <span>");
+
+            
+            #line 20 "..\..\MVC\Views\HpExperience\List.MainPageExperince.cshtml"
+                                 Write(Html.Resource("HomepageExperienceYearTitle","Labels"));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</span>\r\n                            </div>\r\n                        </div>\r\n    " +
+"                    <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__text\"");
 
-WriteLiteral(">\r\n                            <p>Mikro yaklaşık 30 yıldır, kurumların iş süreçle" +
-"rine değer katan çözümler üretmeye devam ediyor.</p>\r\n                        </" +
-"div>\r\n                    </div>\r\n                </div>\r\n            </a>\r\n    " +
-"        <a");
+WriteLiteral(">\r\n                            <p>");
+
+            
+            #line 24 "..\..\MVC\Views\HpExperience\List.MainPageExperince.cshtml"
+                          Write(Html.Resource("HomepageExperienceYearDescription","Labels"));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</p>\r\n                        </div>\r\n                    </div>\r\n               " +
+" </div>\r\n            </a>\r\n            <a");
 
 WriteLiteral(" href=\"/kurumsal/hakkimizda\"");
 
@@ -125,20 +155,44 @@ WriteLiteral(">\r\n                            <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__title__first\"");
 
-WriteLiteral(">\r\n                                <span>105</span>\r\n                            " +
-"</div>\r\n                            <div");
+WriteLiteral(">\r\n                                <span>");
+
+            
+            #line 37 "..\..\MVC\Views\HpExperience\List.MainPageExperince.cshtml"
+                                 Write(Html.Resource("HomepageExperienceClientNo", "Labels"));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</span>\r\n                            </div>\r\n                            <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__title__second\"");
 
-WriteLiteral(">\r\n                                <span>Bin Müşteri</span>\r\n                    " +
-"        </div>\r\n                        </div>\r\n                        <div");
+WriteLiteral(">\r\n                                <span>");
+
+            
+            #line 40 "..\..\MVC\Views\HpExperience\List.MainPageExperince.cshtml"
+                                 Write(Html.Resource("HomepageExperienceClientTitle", "Labels"));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</span>\r\n                            </div>\r\n                        </div>\r\n    " +
+"                    <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__text\"");
 
-WriteLiteral(">\r\n                            <p>Mikro yaklaşık 30 yıldır, kurumların iş süreçle" +
-"rine değer katan çözümler üretmeye devam ediyor.</p>\r\n                        </" +
-"div>\r\n                    </div>\r\n                </div>\r\n            </a>\r\n    " +
-"        <a");
+WriteLiteral(">\r\n                            <p>");
+
+            
+            #line 44 "..\..\MVC\Views\HpExperience\List.MainPageExperince.cshtml"
+                          Write(Html.Resource("HomepageExperienceClientDescription", "Labels"));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</p>\r\n                        </div>\r\n                    </div>\r\n               " +
+" </div>\r\n            </a>\r\n            <a");
 
 WriteLiteral(" href=\"/kurumsal/hakkimizda\"");
 
@@ -168,26 +222,44 @@ WriteLiteral(">\r\n                            <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__title__first\"");
 
-WriteLiteral(">\r\n                                <span>300</span>\r\n                            " +
-"</div>\r\n                            <div");
+WriteLiteral(">\r\n                                <span>");
+
+            
+            #line 57 "..\..\MVC\Views\HpExperience\List.MainPageExperince.cshtml"
+                                 Write(Html.Resource("HomepageExperiencePartnershipNo","Labels"));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</span>\r\n                            </div>\r\n                            <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__title__second\"");
 
-WriteLiteral(">\r\n                                <span>İş Ortaklığı</span>\r\n                   " +
-"         </div>\r\n                        </div>\r\n                        <div");
+WriteLiteral(">\r\n                                <span>");
+
+            
+            #line 60 "..\..\MVC\Views\HpExperience\List.MainPageExperince.cshtml"
+                                 Write(Html.Resource("HomepageExperiencePartnershipTitle","Labels"));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</span>\r\n                            </div>\r\n                        </div>\r\n    " +
+"                    <div");
 
 WriteLiteral(" class=\"page-section-experience-right-content-item__other__text\"");
 
-WriteLiteral(@">
-                            <p>Mikro yaklaşık 30 yıldır, kurumların iş süreçlerine değer katan çözümler üretmeye devam ediyor.</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- ///// -->");
+WriteLiteral(">\r\n                            <p>");
+
+            
+            #line 64 "..\..\MVC\Views\HpExperience\List.MainPageExperince.cshtml"
+                          Write(Html.Resource("HomepageExperiencePartnershipDescription","Labels"));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</p>\r\n                        </div>\r\n                    </div>\r\n               " +
+" </div>\r\n            </a>\r\n        </div>\r\n    </div>\r\n</div>\r\n<!-- ///// -->");
 
         }
     }

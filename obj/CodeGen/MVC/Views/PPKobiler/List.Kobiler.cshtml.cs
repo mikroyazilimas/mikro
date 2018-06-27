@@ -27,6 +27,12 @@ namespace ASP
     using System.Web.UI;
     using System.Web.WebPages;
     
+    #line 2 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+    using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+    
+    #line default
+    #line hidden
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("RazorGenerator", "2.0.0.0")]
     [System.Web.WebPages.PageVirtualPathAttribute("~/MVC/Views/PPKobiler/List.Kobiler.cshtml")]
     public partial class _MVC_Views_PPKobiler_List_Kobiler_cshtml : System.Web.Mvc.WebViewPage<Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel>
@@ -36,7 +42,15 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("<!-- Overlay -->\r\n<div");
+            
+            #line 3 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+  
+    var pField = Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields;
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\r\n<!-- Overlay -->\r\n<div");
 
 WriteLiteral(" class=\"overlay\"");
 
@@ -60,7 +74,16 @@ WriteLiteral(">\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__pricetext\"");
 
-WriteLiteral(">4.313 TL + KDV</span>\r\n                <span");
+WriteLiteral(">");
+
+            
+            #line 13 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+                                                Write(String.Format("{0} TL + KDV", pField.PriceBuy));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</span>\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__text\"");
 
@@ -72,7 +95,16 @@ WriteLiteral(">\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__pricetext\"");
 
-WriteLiteral(">938 TL + KDV/Yıl</span>\r\n                <span");
+WriteLiteral(">");
+
+            
+            #line 17 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+                                                Write(String.Format("{0} TL + KDV/Yıl", pField.PriceRent));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</span>\r\n                <span");
 
 WriteLiteral(" class=\"popup-price__text\"");
 
@@ -231,7 +263,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("            ");
 
             
-            #line 79 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+            #line 83 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
        Write(Html.Raw(@Model.Items.Where(x => x.Fields.IsMainProduct == true).FirstOrDefault().Fields.ShortText));
 
             
@@ -240,13 +272,13 @@ WriteLiteral("            ");
 WriteLiteral("\r\n        </div>\r\n\r\n");
 
             
-            #line 82 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+            #line 86 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 82 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+            #line 86 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
          foreach (var item in Model.Items.Where(x => x.Fields.IsMainProduct != true))
         {
 
@@ -264,7 +296,7 @@ WriteLiteral(" class=\"products-container-content-right-item__title\"");
 WriteLiteral(">\r\n                    <span>");
 
             
-            #line 86 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+            #line 90 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
                      Write(item.Fields.Title);
 
             
@@ -279,7 +311,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 89 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+            #line 93 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
                Write(Html.Raw(item.Fields.ShortText));
 
             
@@ -288,7 +320,7 @@ WriteLiteral("                    ");
 WriteLiteral("\r\n                </div>\r\n            </div>\r\n");
 
             
-            #line 92 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
+            #line 96 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
         }
 
             

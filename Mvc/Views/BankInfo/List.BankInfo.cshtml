@@ -1,0 +1,44 @@
+﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+@using Telerik.Sitefinity.DynamicModules.Model;
+@using SitefinityWebApp.Mvc.Models.ViewModel;
+@using Telerik.Sitefinity.Model;
+@{
+    List<BankInfoGroup> bankInfoGroups = Model.Items.GroupBy(p => ((ChoiceOption)p.Fields.GroupName).Text).Select(x => new BankInfoGroup
+    {
+        GroupName = x.Key,
+        Items = x.Select(xx => new BankInfoItem
+        {
+            BranchCode = xx.Fields.BranchCode,
+            IBAN = xx.Fields.IBAN,
+            MainTitle = xx.Fields.MainTitle
+        }).ToList()
+    }).ToList();
+}
+<div class="bank-info">
+    <div class="bank-info-title">
+        <h2>Banka Bilgileri</h2>
+    </div>
+
+    <div class="bank-info-content">
+        @foreach (var bankInfoGroup in bankInfoGroups)
+        {
+            <div class="bank-info-content-section">
+                <div class="bank-info-content-maintitle">
+                    <span>@bankInfoGroup.GroupName</span>
+                </div>
+                @foreach (var item in bankInfoGroup.Items)
+                {
+                    <div class="bank-info-content-maintitle-item">
+                        <div class="bank-info-content-maintitle-item__title">
+                            <span>@item.MainTitle</span>
+                        </div>
+                        <div class="bank-info-content-maintitle-item__text">
+                            <span>@item.BranchCode</span>
+                            <span>@item.IBAN</span>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>

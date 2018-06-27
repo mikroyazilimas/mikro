@@ -93,10 +93,20 @@
 .popup-content{
     align-items: flex-start;
     padding: 30px;
+    @media @responsive{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
     &-management-left{
         width: 260px;
         height: 165px;
         margin-right: 20px;
+        @media @responsive {
+            height: auto;
+            margin-right: 0px;
+            margin-bottom: 10px;
+        }
         >img{
             height: 100%;
         }
@@ -128,6 +138,10 @@
 .mng-popup{
     width: 750px!important;
     min-height: 250px;
+    @media @responsive{
+        width: 90%!important;
+        height: 75%;
+    }
 }
 
 .mng-popup-close{

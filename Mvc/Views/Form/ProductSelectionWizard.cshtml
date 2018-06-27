@@ -52,7 +52,7 @@
                                     <option value="">Seçiniz</option>
                                     @foreach (var dItem in item.DropDownItem)
                                     {
-                                        <option value="@dItem.Value" data-field="@dItem.FieldValue">@dItem.Text</option>
+                                        <option value="@(Html.Raw(String.IsNullOrEmpty(dItem.Value) ? dItem.Text : dItem.Value))" data-field="@dItem.FieldValue">@dItem.Text</option>
                                     }
                                 </select>
                             </div>
@@ -74,8 +74,46 @@
 
             </div>
         </div>
-
+        @*<script type="text/javascript">
+            function readCookie(c_name) {
+                var c_value = document.cookie;
+                var c_start = c_value.indexOf(" " + c_name + "=");
+                if (c_start == -1) {
+                    c_start = c_value.indexOf(c_name + "=");
+                }
+                if (c_start == -1) {
+                    c_value = null;
+                } else {
+                    c_start = c_value.indexOf("=", c_start) + 1;
+                    var c_end = c_value.indexOf(";", c_start);
+                    if (c_end == -1) {
+                        c_end = c_value.length;
+                    }
+                    c_value = unescape(c_value.substring(c_start, c_end));
+                }
+                return c_value;
+            }
+            function setCookie(a, d, b) {
+                var c = new Date;
+                c.setTime(c.getTime() + 864E5 * b);
+                b = "; expires=" + c.toGMTString();
+                document.cookie = a + "=" + d + b
+            }
+            function getParam(a) {
+                return (a = RegExp("[?&]" + a + "=([^&]*)").exec(window.location.search)) && decodeURIComponent(a[1].replace(/\+/g, " "))
+            }
+            var gclid = getParam("gclid");
+            if (gclid) {
+                var gclsrc = getParam("gclsrc");
+                (!gclsrc || -1 !== gclsrc.indexOf("aw")) && setCookie("gclid", gclid, 90)
+            };
+            window.onload = function () {
+                document.getElementById('gclid').value = readCookie('gclid');
+            }
+        </script>*@
         <div class="wizard-bottom">
+            @*<input type="hidden" id="utm" name="utm" value="" />
+            <input type="hidden" id="gclid" name="gclid" value="" />*@
             <div class="wizard-bottom-left">
                 <div class="wizard-bottom-left-content">
                     <div class="wizard-bottom-left-content-form">

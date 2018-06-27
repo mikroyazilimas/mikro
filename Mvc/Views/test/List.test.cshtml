@@ -1,0 +1,40 @@
+﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+@using Telerik.Sitefinity.DynamicModules.Model;
+@using SitefinityWebApp.Mvc.Models.ViewModel;
+@using Telerik.Sitefinity.Model;
+@{
+    List<LogoImage> LogoImageGroups = Model.Items.GroupBy(p => ((ChoiceOption)p.Fields.Group).Text).Select(x => new LogoImage
+    {
+        Group = x.Key,
+        Items = x.Select(xx => new LogoImageItem
+        {
+            Title = xx.Fields.Title,
+            File = ((Telerik.Sitefinity.Libraries.Model.Document)xx.Fields.File.DataItem).MediaUrl,
+            Image = ((Telerik.Sitefinity.Frontend.Mvc.Models.ItemViewModel[])xx.Fields.Image)[0].Fields.MediaUrl
+        }).ToList()
+    }).ToList();
+}
+
+<div class="logo-content">
+    @foreach (var ItemGroup in LogoImageGroups)
+    {
+        if (ItemGroup.Group != "Empty")
+        {
+            <h2>@ItemGroup.Group</h2>
+        }
+        <div class="logo-content-item">
+            @foreach (var item in ItemGroup.Items)
+            {
+                <a href="@item.File" target="_blank">
+                    <div class="logo-content-item-img">
+                    <img src="@item.Image" alt="">
+                    </div>
+                    <div class="logo-content-item-title">
+                        <span>@item.Title</span>
+                    </div>
+                </a>
+            }
+        </div>
+    }
+
+</div>

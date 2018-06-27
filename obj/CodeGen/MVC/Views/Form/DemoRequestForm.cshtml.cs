@@ -397,9 +397,13 @@ WriteLiteral(" value=\"\"");
 
 WriteLiteral(">İl Seçiniz</option>\r\n                                    <option");
 
-WriteLiteral(" value=\"İstanbul\"");
+WriteLiteral(" value=\"İstanbulAvrupa\"");
 
-WriteLiteral(">İstanbul</option>\r\n                                    <option");
+WriteLiteral(">İstanbul Avrupa</option>\r\n                                    <option");
+
+WriteLiteral(" value=\"İstanbulAsya\"");
+
+WriteLiteral(">İstanbul Asya</option>\r\n                                    <option");
 
 WriteLiteral(" value=\"Ankara\"");
 
@@ -729,7 +733,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                                ");
 
             
-            #line 165 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 166 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                            Write(Html.TextBoxFor(m => m.Email, new { message = "Lütfen E-Postanızı Giriniz", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" }));
 
             
@@ -744,7 +748,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                                ");
 
             
-            #line 168 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 169 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                            Write(Html.TextBoxFor(m => m.phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" }));
 
             
@@ -755,7 +759,7 @@ WriteLiteral("\r\n");
 WriteLiteral("                                ");
 
             
-            #line 169 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 170 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                            Write(Html.TextBoxFor(m => m._phone, new { Name = "_phone", id = "_phone", message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" }));
 
             
@@ -773,7 +777,7 @@ WriteLiteral(" for=\"\"");
 WriteLiteral("> ");
 
             
-            #line 174 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 175 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                                       Write(Html.TextAreaFor(m => m.Message, new {placeholder = "Mesajınız" }));
 
             
@@ -790,7 +794,7 @@ WriteLiteral(" for=\"Contract-demo\"");
 WriteLiteral(">");
 
             
-            #line 178 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 179 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                                                   Write(Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required" , message = "KVK Metnini Kabul Etmediniz" }));
 
             
@@ -822,7 +826,7 @@ WriteLiteral(" onclick=\"return formSubmit(\'demoForm\', \'\', \'demo-talep-anas
 WriteLiteral(" />\r\n                        </div>\r\n                    </div>\r\n");
 
             
-            #line 185 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
+            #line 186 "..\..\MVC\Views\Form\DemoRequestForm.cshtml"
                 }
 
             

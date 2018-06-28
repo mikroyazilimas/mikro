@@ -5,8 +5,11 @@ using System.Web;
 public struct Const
 {
     public const string FormReturnUrl = "https://www.mikro.com.tr/tesekkurler";
-    public const string WSSalesforceUrlToken = "https://test.salesforce.com/services/oauth2/token";
-    public const string WSSalesforceUrl = "https://mikro--partial.cs86.my.salesforce.com/services/apexrest/MikroLeads/v1";
+    public const string WSSalesforceUrlToken = "https://www.salesforce.com/services/oauth2/token";
+    public const string WSSalesforceUrl = "https://mikro.my.salesforce.com/services/apexrest/MikroLeads/v1";
+
+    public const string WSSalesforceUrlTokenTEST = "https://test.salesforce.com/services/oauth2/token";
+    public const string WSSalesforceUrlTEST = "https://mikro--partial.cs86.my.salesforce.com/services/apexrest/MikroLeads/v1";
 }
 
 public struct Names

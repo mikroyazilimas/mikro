@@ -7,14 +7,14 @@
 
     //veriler
     List<KeyValuePair<string, string>> cities = items.Select(x => new KeyValuePair<string, string>(((ChoiceOption)x.Fields.City).Text, ((ChoiceOption)x.Fields.City).PersistedValue)).Distinct().ToList();
-    List<KeyValuePair<string, string>> countries = items.Select(x => new KeyValuePair<string, string>(((ChoiceOption)x.Fields.Country).Text, ((ChoiceOption)x.Fields.Country).PersistedValue)).Distinct().ToList();
-    List<string> dealerTypes = items.Select(x => ((ChoiceOption)x.Fields.DealerType).Text).Distinct().ToList();
+    //List<KeyValuePair<string, string>> countries = items.Select(x => new KeyValuePair<string, string>(((ChoiceOption)x.Fields.Country).Text, ((ChoiceOption)x.Fields.Country).PersistedValue)).Distinct().ToList();
+    List<string> dealerTypes = items.SelectMany(x => ((ChoiceOption[])x.Fields.DealerType).Select(p => p.Text)).Distinct().ToList();
 
     //filtrelemeler
     string title = Request.QueryString["is-ortagi"];
     string city = Request.QueryString["il"];
-    string country = Request.QueryString["ulke"];
-    string district = Request.QueryString["ilce"];
+    //string country = Request.QueryString["ulke"];
+    //string district = Request.QueryString["ilce"];
     string dealerType = Request.QueryString["bayi-tipi"];
     if (!String.IsNullOrEmpty(title))
     {
@@ -24,17 +24,17 @@
     {
         items = items.Where(p => p.Fields.City.ToString() == city).ToList();
     }
-    if (!String.IsNullOrEmpty(country))
-    {
-        items = items.Where(p => p.Fields.Country.ToString() == country).ToList();
-    }
-    if (!String.IsNullOrEmpty(district))
-    {
-        items = items.Where(p => p.Fields.Distritct.ToString() == district).ToList();
-    }
+    //if (!String.IsNullOrEmpty(country))
+    //{
+    //    items = items.Where(p => p.Fields.Country.ToString() == country).ToList();
+    //}
+    //if (!String.IsNullOrEmpty(district))
+    //{
+    //    items = items.Where(p => p.Fields.Distritct.ToString() == district).ToList();
+    //}
     if (!String.IsNullOrEmpty(dealerType))
     {
-        items = items.Where(p => p.Fields.DealerType.ToString() == dealerType).ToList();
+        items = items.Where(p => ((ChoiceOption[])p.Fields.DealerType).FirstOrDefault(pp => pp.Text == dealerType) != null).ToList();
     }
 }
 
@@ -103,11 +103,14 @@
                     </div>
                     <div class="work-partners-content-item__description">
                         <ul>
-                            <li>@Html.Raw(item.Fields.DealerType)</li>
+                            @if (((ChoiceOption[])item.Fields.DealerType).Length > 0)
+                            {
+                                <li>@Html.Raw(string.Join(", ", ((ChoiceOption[])item.Fields.DealerType).Select(x => x.Text)))</li>
+                            }
                             <li>@Html.Raw(item.Fields.AuthorizedPerson)</li>
                             <li>İl: @Html.Raw(item.Fields.City)</li>
-                            <li>İlçe: @Html.Raw(item.Fields.Distritct)</li>
-                            <li>Ülke: @Html.Raw(item.Fields.Country)</li>
+                            @*<li>İlçe: @Html.Raw(item.Fields.Distritct)</li>
+                            <li>Ülke: @Html.Raw(item.Fields.Country)</li>*@
                         </ul>
                     </div>
                     <div class="work-partners-content-item__adress">

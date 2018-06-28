@@ -5,7 +5,7 @@ using System.Web;
 public struct Const
 {
     public const string FormReturnUrl = "https://www.mikro.com.tr/tesekkurler";
-    public const string WSSalesforceUrlToken = "https://www.salesforce.com/services/oauth2/token";
+    public const string WSSalesforceUrlToken = "https://login.salesforce.com/services/oauth2/token";
     public const string WSSalesforceUrl = "https://mikro.my.salesforce.com/services/apexrest/MikroLeads/v1";
 
     public const string WSSalesforceUrlTokenTEST = "https://test.salesforce.com/services/oauth2/token";
@@ -28,7 +28,16 @@ public struct Names
         public const string WorkPartnersForm = "~/Mvc/Views/Form/WorkPartnersForm.cshtml";
 
     }
-    
+
+    public struct WSSettings
+    {
+        public const string grant_type = "password";
+        public const string client_id = "3MVG9HxRZv05HarTuyiQcrETsRw43q_plEZRNkweXDm4KmovEnoWJXMFgISas3mE_Bnyi2rEQ4YaaRbiy2wj.";
+        public const string client_secret = "9115095582394842352";
+        public const string username = "tolga.dokuzer%40mikro.com.tr";
+        public const string password = "Mikroint1HGP9cnHHE2jutAyxCtTxrCyCZ";
+    }
+
     public struct WSFields
     {
         public const string MessageCode = "/404";

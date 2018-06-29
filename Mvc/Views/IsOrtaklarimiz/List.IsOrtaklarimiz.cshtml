@@ -6,7 +6,7 @@
     var items = Model.Items.OrderBy(x => (Lstring)x.Fields.Title).ToList();
 
     //veriler
-    List<KeyValuePair<string, string>> cities = items.Select(x => new KeyValuePair<string, string>(((ChoiceOption)x.Fields.City).Text, ((ChoiceOption)x.Fields.City).PersistedValue)).Distinct().ToList();
+    List<KeyValuePair<string, string>> cities = items.Select(x => new KeyValuePair<string, string>(((ChoiceOption)x.Fields.City).Text, ((ChoiceOption)x.Fields.City).PersistedValue)).Distinct().OrderBy(x=>x.Key).ToList();
     //List<KeyValuePair<string, string>> countries = items.Select(x => new KeyValuePair<string, string>(((ChoiceOption)x.Fields.Country).Text, ((ChoiceOption)x.Fields.Country).PersistedValue)).Distinct().ToList();
     List<string> dealerTypes = items.SelectMany(x => ((ChoiceOption[])x.Fields.DealerType).Select(p => p.Text)).Distinct().ToList();
 
@@ -18,6 +18,7 @@
     string dealerType = Request.QueryString["bayi-tipi"];
     if (!String.IsNullOrEmpty(title))
     {
+        title = title.ToUpper();
         items = items.Where(p => p.Fields.Title.ToString().Contains(title)).ToList();
     }
     if (!String.IsNullOrEmpty(city))
@@ -86,7 +87,7 @@
         {
             <option data-country-id="@cities[i].Value.Split('_')[0]" @(Request.QueryString["il"] == cities[i].Key ? "selected" : "") value="@cities[i].Key">@cities[i].Key</option>
 }
-                <option data-country-id="az" value="Baku">Bakü</option>
+                @*<option data-country-id="az" value="Baku">Bakü</option>*@
             </select>
             @*<input name="ilce" type="text" placeholder="İlçe arayın" value="@(Request.QueryString["ilce"])" />*@
             <input name="is-ortagi" type="text" placeholder="İş ortağı arayın" value="@(Request.QueryString["is-ortagi"])" />

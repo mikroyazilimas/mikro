@@ -19,6 +19,11 @@
     if (!String.IsNullOrEmpty(title))
     {
         title=title.Replace("i","İ").ToUpper();
+        title = title.Replace("ğ", "Ğ").ToUpper();
+        title = title.Replace("ş", "Ş").ToUpper();
+        title = title.Replace("ü", "Ü").ToUpper();
+        title = title.Replace("ç", "Ç").ToUpper();
+        title = title.Replace("ö", "Ö").ToUpper();
         items = items.Where(p => p.Fields.Title.ToString().Contains(title)).ToList();
     }
     if (!String.IsNullOrEmpty(city))

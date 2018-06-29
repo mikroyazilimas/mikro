@@ -3,6 +3,7 @@
 @using SitefinityWebApp.Mvc.Models.ViewModel;
 @using Telerik.Sitefinity.Model;
 @{
+    List<KeyValuePair<string, string>> groups = Model.Items.Select(p => new KeyValuePair<string, string>(((ChoiceOption)p.Fields.GroupName).Text, ((ChoiceOption)p.Fields.GroupName).PersistedValue)).Distinct().ToList();
     List<LogoImage> LogoImageGroups = Model.Items.GroupBy(p => ((ChoiceOption)p.Fields.GroupName).Text).Select(x => new LogoImage
     {
         Group = x.Key,
@@ -12,7 +13,7 @@
             File = ((Telerik.Sitefinity.Libraries.Model.Document)xx.Fields.File.DataItem).MediaUrl,
             Image = ((Telerik.Sitefinity.Frontend.Mvc.Models.ItemViewModel)xx.Fields.Image).Fields.MediaUrl
         }).ToList()
-    }).ToList();
+    }).OrderBy(p => groups.FirstOrDefault(pp => pp.Key == p.Group).Value).ToList();
 }
 <div class="container-sub">
 

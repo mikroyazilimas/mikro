@@ -18,7 +18,7 @@
     string dealerType = Request.QueryString["bayi-tipi"];
     if (!String.IsNullOrEmpty(title))
     {
-        title = title.ToUpper();
+        title=title.Replace("i","İ").ToUpper();
         items = items.Where(p => p.Fields.Title.ToString().Contains(title)).ToList();
     }
     if (!String.IsNullOrEmpty(city))

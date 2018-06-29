@@ -98,7 +98,6 @@
                                     <div class="page-section-contact-container-area-right-content-phone contact-right-span-space">
                                         <div class="page-section-contact-container-area-right-content-phone__icon"><i class="fas fa-phone"></i></div>
                                         <div class="page-section-contact-container-area-right-content-phone__text">
-                                            <span class="phone-hide-pbx" data-pbx="+90 (212) 806 45 45 (PBX)">+90 (212) 806 Tıklayınız (PBX)</span>
                                             <span class="phone-hide" data-phone="+90 (850) 225 10 10 (Çağrı Merkezi)">+90 (850) 225 Tıklayınız (Çağrı Merkezi)</span>
                                         </div>
                                     </div>

@@ -68,7 +68,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     currentSituation = Request.Form["00N0Y00000QeR9j"],
                     numberOfUser = Request.Form["00N0Y00000QeNjE"],
                     currentSoftware = Request.Form["00N0Y00000QeNlZ"],
-                    gclid = WebTools.GetQueryStringValueFromRawUrl("gclid"),
+                    gclid = WebTools.GetQueryStringValueFromRawUrl("gclid") ?? WebTools.GetCookieValue(Names.Cookie.Gclid),
                     utmCampaign = WebTools.GetQueryStringValueFromRawUrl("utm_campaign"),
                     utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium"),  
                     utmSource = WebTools.GetQueryStringValueFromRawUrl("utm_source"),

@@ -17,10 +17,8 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
         public ActionResult Index()
         {
             try
-            {   
-
-                ContactForm m = new ContactForm() { };                
-
+            {
+                ContactForm m = new ContactForm() { };
                 return View(Names.PagesView.ContactForm, m);
             }
             catch (Exception ex)
@@ -29,8 +27,5 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
             }
             return View();
         }
-
-
-        
     }
 }

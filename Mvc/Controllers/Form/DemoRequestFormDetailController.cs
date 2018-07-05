@@ -28,7 +28,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
 
                 DemoRequestForm m = new DemoRequestForm()
                 {
-                    refUrl = Request.UrlReferrer.ToString(),
+                    refUrl = Request.UrlReferrer != null ? Request.UrlReferrer.ToString() : Request.Url.ToString().Split('?')[0],
                     Product = Request.QueryString["product"]
                 };
 
@@ -94,7 +94,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     status = "New",
                     productGroup = m.Product,
                     leadSource = "Demo Request",
-                    gclid = WebTools.GetQueryStringValueFromRawUrl("gclid"),
+                    gclid = WebTools.GetQueryStringValueFromRawUrl("gclid") ?? WebTools.GetCookieValue(Names.Cookie.Gclid),
                     utmCampaign = WebTools.GetQueryStringValueFromRawUrl("utm_campaign"),  
                     utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium"),
                     utmSource = WebTools.GetQueryStringValueFromRawUrl("utm_source"),

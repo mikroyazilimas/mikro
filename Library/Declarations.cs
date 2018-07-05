@@ -14,6 +14,11 @@ public struct Const
 
 public struct Names
 {
+    public struct Cookie
+    {
+        public const string Gclid = "gclid";
+    }
+
     public struct PagesView
     {
         public const string DemoRequestForm = "~/Mvc/Views/Form/DemoRequestForm.cshtml";

@@ -19,3 +19,5 @@ App_Data/Sitefinity/Logs/*
 bin/Release/PublishOutput/*
 web.config
 Frontend/Yönetim.rar
+bin/SitefinityWebApp.dll
+bin/SitefinityWebApp.pdb

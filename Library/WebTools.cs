@@ -15,5 +15,30 @@ namespace SitefinityWebApp.Library
             var queryStringCollection = HttpUtility.ParseQueryString((currentUri).Query);
             return queryStringCollection.Get(queryStringKey);
         }
+
+        public static void DeleteCookie(string cookieName)
+        {
+            HttpCookie cookie = new HttpCookie(cookieName);
+            cookie.Value = "";
+            cookie.Expires = DateTime.Now.AddDays(-1d);
+            HttpContext.Current.Response.Cookies.Add(cookie);
+        }
+
+        public static void SetCookie(string cookieName, string value, DateTime expireDate)
+        {
+            HttpCookie cookie = new HttpCookie(cookieName);
+            cookie.Value = value;
+            cookie.Expires = expireDate;
+            HttpContext.Current.Response.Cookies.Add(cookie);
+        }
+
+        public static string GetCookieValue(string cookieName)
+        {
+            string retVal = string.Empty;
+            HttpCookie cookie = HttpContext.Current.Request.Cookies[cookieName];
+            if (cookie != null)
+                retVal = cookie.Value;
+            return retVal;
+        }
     }
 }

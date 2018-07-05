@@ -8,7 +8,8 @@
     //veriler
     List<KeyValuePair<string, string>> cities = items.Select(x => new KeyValuePair<string, string>(((ChoiceOption)x.Fields.City).Text, ((ChoiceOption)x.Fields.City).PersistedValue)).Distinct().OrderBy(x=>x.Key).ToList();
     //List<KeyValuePair<string, string>> countries = items.Select(x => new KeyValuePair<string, string>(((ChoiceOption)x.Fields.Country).Text, ((ChoiceOption)x.Fields.Country).PersistedValue)).Distinct().ToList();
-    List<string> dealerTypes = items.SelectMany(x => ((ChoiceOption[])x.Fields.DealerType).Select(p => p.Text)).Distinct().ToList();
+    List<string> partnerLogosFilter = items.SelectMany(x => ((ChoiceOption[])x.Fields.PartnerLogos).Select(p => p.Text)).Distinct().ToList();
+    
 
     //filtrelemeler
     string title = Request.QueryString["is-ortagi"];
@@ -40,7 +41,7 @@
     //}
     if (!String.IsNullOrEmpty(dealerType))
     {
-        items = items.Where(p => ((ChoiceOption[])p.Fields.DealerType).FirstOrDefault(pp => pp.Text == dealerType) != null).ToList();
+        items = items.Where(p => ((ChoiceOption[])p.Fields.PartnerLogos).FirstOrDefault(pp => pp.Text == dealerType) != null).ToList();
     }
 }
 
@@ -74,9 +75,9 @@
         <form method="get" action="">
             <select name="bayi-tipi">
                 <option value="">İş Ortağı Segmenti</option>
-                @for (int i = 0; i < dealerTypes.Count; i++)
+                @for (int i = 0; i < partnerLogosFilter.Count; i++)
         {
-            <option @(Request.QueryString["bayi-tipi"] == dealerTypes[i] ? "selected" : "") value="@dealerTypes[i]">@dealerTypes[i]</option>
+            <option @(Request.QueryString["bayi-tipi"] == partnerLogosFilter[i] ? "selected" : "") value="@partnerLogosFilter[i]">@partnerLogosFilter[i]</option>
 }
             </select>
             @* <select name="ulke">
@@ -130,7 +131,7 @@
                 @for (int i = 0; i < partnerLogos.Count; i++)
                 {
                     <div class="work-partners-content-item-right__img">
-                        <img src="/images/default-source/logolar/partner/@(partnerLogos[i].PersistedValue).png" />
+                        <img src="/images/default-source/logolar/partner/@(partnerLogos[i].PersistedValue).png" alt="@partnerLogos[i].PersistedValue"/>
                     </div>
                 }
             </div>

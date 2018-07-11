@@ -70,11 +70,35 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     currentSoftware = Request.Form["00N0Y00000QeNlZ"],
                     gclid = WebTools.GetQueryStringValueFromRawUrl("gclid") ?? WebTools.GetCookieValue(Names.Cookie.Gclid),
                     utmCampaign = WebTools.GetQueryStringValueFromRawUrl("utm_campaign"),
-                    utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium"),  
+                    utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium"),
                     utmSource = WebTools.GetQueryStringValueFromRawUrl("utm_source"),
                     leadSource = "USS",
                 };
                 inpt.phone = "0" + inpt.phone.Replace("(", "").Replace(")", "").Replace(" ", "").Replace(" ", "").Replace(" ", "");
+
+                //db --start
+                SFProcess process = new SFProcess();
+                process.SaveProductWizardForm(new ProductWizardFormModel
+                {
+                    City = inpt.city,
+                    Company = inpt.company,
+                    CurrentSituation = inpt.currentSituation,
+                    CurrentSoftware = inpt.currentSoftware,
+                    Email = inpt.email,
+                    FirstName = inpt.firstName,
+                    FoundationYear = inpt.foundationYear,
+                    GClid = inpt.gclid,
+                    IPAddress = WebTools.GetIpAddress,
+                    LastName = inpt.lastName,
+                    NumberOfEmployees = inpt.numberOfEmployees,
+                    NumberOfUser = inpt.numberOfUser,
+                    Phone = inpt.phone,
+                    Sector = inpt.sector,
+                    UtmCampaign = inpt.utmCampaign,
+                    UtmMedium = inpt.utmMedium,
+                    UtmSource = inpt.utmSource
+                });
+                //db --end
 
                 string body = String.Empty;
                 using (StreamReader sr = new StreamReader(Server.MapPath("~/Html/product.html"), System.Text.Encoding.UTF8))
@@ -316,6 +340,42 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     mail.From = "no-reply@e-mail.mikro.com.tr";
                     mail.FromDisplayName = "Mikro";
 
+                    //db --start
+                    Input_RequestForm inpt = new Input_RequestForm
+                    {
+                        firstName = name,
+                        lastName = surname,
+                        email = email,
+                        phone = phone,
+                        company = "company",
+                        status = "New",
+                        leadSource = "Contact Form",
+                        gclid = WebTools.GetQueryStringValueFromRawUrl("gclid") ?? WebTools.GetCookieValue(Names.Cookie.Gclid),
+                        utmCampaign = WebTools.GetQueryStringValueFromRawUrl("utm_campaign"),
+                        utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium"),
+                        utmSource = WebTools.GetQueryStringValueFromRawUrl("utm_source"),
+                        formNotes = message
+                    };
+
+                    SFProcess process = new SFProcess();
+                    process.SaveContactForm(new ContactFormModel
+                    {
+                        City = inpt.city,
+                        Company = inpt.company,
+                        Email = inpt.email,
+                        FirstName = inpt.firstName,
+                        GClid = inpt.gclid,
+                        IPAddress = WebTools.GetIpAddress,
+                        LastName = inpt.lastName,
+                        Phone = inpt.phone,
+                        UtmCampaign = inpt.utmCampaign,
+                        UtmMedium = inpt.utmMedium,
+                        UtmSource = inpt.utmSource,
+                        Message = inpt.formNotes,
+                        Subject = subject
+                    });
+                    //db --end
+
                     string body = String.Empty;
                     using (StreamReader sr = new StreamReader(Server.MapPath("~/Html/contact.html"), System.Text.Encoding.UTF8))
                         body = sr.ReadToEnd();
@@ -332,19 +392,20 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     mail.Body = body;
                     mail.Subject = "İletişim Formu";
                     bool rtn = mail.SendMail();
+
+                    if (rtn)
+                    {
+                        RestApiService restApi = new RestApiService();
+                        inpt.phone = "0" + inpt.phone.Replace("(", "").Replace(")", "").Replace(" ", "").Replace(" ", "").Replace(" ", "");
+                        Output_DemoRequest resp = restApi.DemoRequestForm(inpt);
+                    }
                 }
-
-
-
-
                 return Json(true);
             }
             catch (Exception ex)
             {
                 return null;
             }
-
-
         }
     }
 }

@@ -10,6 +10,7 @@ using Telerik.Sitefinity.GenericContent.Model;
 using Telerik.Sitefinity.Model;
 using Telerik.Sitefinity.Modules.Forms;
 using Telerik.Sitefinity.RelatedData;
+using Telerik.Sitefinity.Security;
 using Telerik.Sitefinity.Utilities.TypeConverters;
 
 namespace SitefinityWebApp.Library
@@ -127,7 +128,124 @@ namespace SitefinityWebApp.Library
                 }
             }
         }
-        
 
+
+        public bool SaveProductWizardForm(ProductWizardFormModel model)
+        {
+            bool retVal = false;
+            try
+            {
+                DynamicModuleManager dynamicModuleManager = DynamicModuleManager.GetManager(providerName);
+                dynamicModuleManager.Provider.SuppressSecurityChecks = true;
+                Type productWizardFormType = TypeResolutionService.ResolveType("Telerik.Sitefinity.DynamicTypes.Model.Products.ProductWizardForm");
+                string guid = Guid.NewGuid().ToString();
+                DateTime now = DateTime.Now;
+
+                DynamicContent formItem = dynamicModuleManager.CreateDataItem(productWizardFormType);        
+                formItem.SetValue("Title", string.Format("{0} {1} - {2}", model.FirstName, model.LastName, now.ToString()));
+                formItem.UrlName = guid;
+                formItem.SetValue("FirstName", model.FirstName);
+                formItem.SetValue("LastName", model.LastName);
+                formItem.SetValue("Email", model.Email);
+                formItem.SetValue("Phone", model.Phone);
+                formItem.SetValue("CompanyName", model.Company);
+                formItem.SetValue("FoundationYear", model.FoundationYear);
+                formItem.SetValue("Sector", model.Sector);
+                formItem.SetValue("IPAddress", model.IPAddress);
+                formItem.SetValue("NumberOfEmployees", model.NumberOfEmployees);
+                formItem.SetValue("CurrentSituation", model.CurrentSituation);
+                formItem.SetValue("NumberOfUser", model.NumberOfUser);
+                formItem.SetValue("Gclid", model.GClid);
+                formItem.SetValue("UtmCampaign", model.UtmCampaign);
+                formItem.SetValue("UtmMedium", model.UtmMedium);
+                formItem.SetValue("UtmSource", model.UtmSource);
+                formItem.SetValue("CurrentSoftware", model.CurrentSoftware);
+                formItem.SetValue("Owner", SecurityManager.GetCurrentUserId());
+                formItem.SetValue("PublicationDate", DateTime.Now);
+                dynamicModuleManager.Lifecycle.Publish(formItem);
+                formItem.ApprovalWorkflowState = "Published";
+                dynamicModuleManager.SaveChanges();   
+            }
+            catch (Exception)
+            { }
+
+            return retVal;
+        }
+
+        public bool SaveDemoRequestForm(DemoRequestFormModel model)
+        {
+            bool retVal = false;
+            try
+            {
+                DynamicModuleManager dynamicModuleManager = DynamicModuleManager.GetManager(providerName);
+                dynamicModuleManager.Provider.SuppressSecurityChecks = true;
+                Type demoRequestFormType = TypeResolutionService.ResolveType("Telerik.Sitefinity.DynamicTypes.Model.Products.DemoRequestForm");
+                string guid = Guid.NewGuid().ToString();
+                DateTime now = DateTime.Now;
+
+                DynamicContent formItem = dynamicModuleManager.CreateDataItem(demoRequestFormType);
+                formItem.SetValue("Title", string.Format("{0} {1} - {2}", model.FirstName, model.LastName, now.ToString()));
+                formItem.UrlName = guid;
+                formItem.SetValue("FirstName", model.FirstName);
+                formItem.SetValue("LastName", model.LastName);
+                formItem.SetValue("Email", model.Email);
+                formItem.SetValue("Phone", model.Phone);
+                formItem.SetValue("City", model.City);
+                formItem.SetValue("ProductGroup", model.ProductGroup);
+                formItem.SetValue("Gclid", model.GClid);
+                formItem.SetValue("UtmCampaign", model.UtmCampaign);
+                formItem.SetValue("UtmMedium", model.UtmMedium);
+                formItem.SetValue("UtmSource", model.UtmSource);
+                formItem.SetValue("Message", model.Message);
+                formItem.SetValue("IPAddress", model.IPAddress);            
+                formItem.SetValue("Owner", SecurityManager.GetCurrentUserId());
+                formItem.SetValue("PublicationDate", DateTime.Now);
+                dynamicModuleManager.Lifecycle.Publish(formItem);
+                formItem.ApprovalWorkflowState = "Published";
+                dynamicModuleManager.SaveChanges();
+            }
+            catch (Exception)
+            { }
+
+            return retVal;
+        }
+
+        public bool SaveContactForm(ContactFormModel model)
+        {
+            bool retVal = false;
+            try
+            {
+                DynamicModuleManager dynamicModuleManager = DynamicModuleManager.GetManager(providerName);
+                dynamicModuleManager.Provider.SuppressSecurityChecks = true;
+                Type demoRequestFormType = TypeResolutionService.ResolveType("Telerik.Sitefinity.DynamicTypes.Model.Contact.ContactForm");
+                string guid = Guid.NewGuid().ToString();
+                DateTime now = DateTime.Now;
+
+                DynamicContent formItem = dynamicModuleManager.CreateDataItem(demoRequestFormType);
+                formItem.SetValue("Title", string.Format("{0} {1} - {2}", model.FirstName, model.LastName, now.ToString()));
+                formItem.UrlName = guid;
+                formItem.SetValue("FirstName", model.FirstName);
+                formItem.SetValue("LastName", model.LastName);
+                formItem.SetValue("Email", model.Email);
+                formItem.SetValue("Phone", model.Phone);                     
+                formItem.SetValue("CompanyName", model.Company);                  
+                formItem.SetValue("Gclid", model.GClid);
+                formItem.SetValue("UtmCampaign", model.UtmCampaign);
+                formItem.SetValue("UtmMedium", model.UtmMedium);
+                formItem.SetValue("UtmSource", model.UtmSource);
+                formItem.SetValue("Subject", model.Subject);
+                formItem.SetValue("Message", model.Message);
+                formItem.SetValue("IPAddress", model.IPAddress);
+                formItem.SetValue("Owner", SecurityManager.GetCurrentUserId());
+                formItem.SetValue("PublicationDate", DateTime.Now);
+                dynamicModuleManager.Lifecycle.Publish(formItem);
+                formItem.ApprovalWorkflowState = "Published";
+                dynamicModuleManager.SaveChanges();
+            }
+            catch (Exception)
+            { }
+
+            return retVal;
+        }
     }
 }

@@ -48,7 +48,7 @@
                         {
                             <div class="wizard-form-row @item.InputClass @String.Format(item.InputNotVisible? "wizardhide" : "")">
                                 <label>@item.LabelValue<span>@item.LabelValueShort</span></label>
-                                <select id="@item.InputName" name="@item.InputName"  messages="Lütfen Şirketinizin Kuruluş Yılını Giriniz">
+                                <select id="@item.InputName" name="@item.InputName"  messages="">
                                     <option value="">Seçiniz</option>
                                     @foreach (var dItem in item.DropDownItem)
                                     {

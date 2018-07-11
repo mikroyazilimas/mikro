@@ -76,6 +76,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
             //mail.To = new List<string>() { "aykut.saridede@ph.com.tr" };
             mail.From = "no-reply@e-mail.mikro.com.tr";
             mail.FromDisplayName = "Mikro";
+            string body = String.Empty;
             try
             {
                 RestApiService restApi = new RestApiService();
@@ -102,7 +103,27 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 };
                 inpt.phone = "0" + inpt.phone.Replace("(", "").Replace(")", "").Replace(" ", "").Replace(" ", "").Replace(" ", "");
 
-                string body = String.Empty;
+                //db --start
+                SFProcess process = new SFProcess();
+                process.SaveDemoRequestForm(new DemoRequestFormModel
+                {
+                    City = inpt.city,
+                    Company = inpt.company,                 
+                    Email = inpt.email,
+                    FirstName = inpt.firstName,          
+                    GClid = inpt.gclid,
+                    IPAddress = WebTools.GetIpAddress,
+                    LastName = inpt.lastName,               
+                    Phone = inpt.phone,    
+                    UtmCampaign = inpt.utmCampaign,
+                    UtmMedium = inpt.utmMedium,
+                    UtmSource = inpt.utmSource,
+                    Message = inpt.formNotes,
+                    ProductGroup = inpt.productGroup
+                });
+                //db --end
+
+                body = String.Empty;
                 using (StreamReader sr = new StreamReader(Server.MapPath("~/Html/demo-request.html"), System.Text.Encoding.UTF8))
                     body = sr.ReadToEnd();
 
@@ -145,7 +166,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
             {
                 logProcess.Create(ex);
                 mail.Subject = "Demo Talep Formu - HATA";
-                mail.Body = "Demo talep formunda hata oluştu.";
+                mail.Body = body;
                 mail.SendMail();
                 //hata mail atılıcak ve yazılıcak
             }

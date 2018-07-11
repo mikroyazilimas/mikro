@@ -5903,7 +5903,7 @@ $jscomp.polyfill("Array.prototype.find", function (a) { return a ? a : function 
                     (b = b.recursive) ? (a.push(e.charAt(d)), n = { digit: e.charAt(d), pattern: c }) : a.push(f || b ? c + "?" : c)) : a.push(e.charAt(d).replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&")); a = a.join(""); n && (a = a.replace(new RegExp("(" + n.digit + "(.*" + n.digit + ")?)"), "($1)?").replace(new RegExp(n.digit, "g"), n.pattern)); return new RegExp(a)
             }, destroyEvents: function () { b.off("input keydown keyup paste drop blur focusout ".split(" ").join(".mask ")) }, val: function (a) {
                 var c = b.is("input") ? "val" : "text"; if (0 < arguments.length) {
-                    if (b[c]() !== a) b[c](a);
+                    if (b[c]() !== a) b[c](a); 
                     c = b
                 } else c = b[c](); return c
             }, calculateCaretPosition: function () {
@@ -6519,8 +6519,12 @@ $(function () {
 
     $(".detail-product-description-left").next(".products-container-content-right-item__title").addClass("products-detail-select")
 
+	$("select#00N0Y00000QeR9j").change(function () {
+		$(".wizard-form-row.company select").val(null);
+	});
+	
     $('select').change(function () {
-        $(".wizard-form-row.company select").val(null);
+        //$(".wizard-form-row.company select").val(null);
         $('.wizard-form-left > div').removeClass('wizardshow');
         if ($("#00N0Y00000QeR9j option:selected").attr('data-field') != null) {
             $("." + $("#00N0Y00000QeR9j option:selected").attr('data-field')).addClass('wizardshow');

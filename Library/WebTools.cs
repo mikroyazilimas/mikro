@@ -16,6 +16,17 @@ namespace SitefinityWebApp.Library
             return queryStringCollection.Get(queryStringKey);
         }
 
+        public static string GetIpAddress
+        {
+            get
+            {
+                string ipAddress;
+                try { ipAddress = HttpContext.Current.Request.ServerVariables["REMOTE_ADDR"]; }
+                catch { ipAddress = "0"; }
+                return ipAddress;
+            }
+        }
+
         public static void DeleteCookie(string cookieName)
         {
             HttpCookie cookie = new HttpCookie(cookieName);

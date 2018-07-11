@@ -3,8 +3,8 @@
 
 @using (@Html.BeginForm("Index", "ContactForm", FormMethod.Post))
 { }
-@*@using (Html.BeginForm("Index", "ContactFormDetail", FormMethod.Post, new { id= "contactDetailForm" }))*@
-@using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", id = "contactDetailForm" }))
+@*@using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", id = "contactDetailForm" }))*@
+@using (Html.BeginForm("Index", "ContactFormDetail", FormMethod.Post, new { id= "contactDetailForm" }))
 {
     <input type=hidden name="oid" value="00D0Y0000035HER">
     <input type="hidden" id="00N0Y00000RE6zR" name="00N0Y00000RE6zR" />
@@ -21,28 +21,28 @@
             <div class="wizard-bottom-left-content-form">
                 <div class="wizard-bottom-left-content-form-row">
                     <label for="">Adınız</label>
-                    @Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*", message ="Lütfen İsminizi Giriniz"})
+                    @Html.TextBoxFor(m => m.Name, new { @*Name = "first_name", id = "first_name",*@ required = "required", placeholder = "Adınız*", message ="Lütfen İsminizi Giriniz"})
                 </div>
                 <div class="wizard-bottom-left-content-form-row">
                     <label for="">Soyadınız</label>
-                    @Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*", message = "Lütfen Soyadınızı Giriniz" })
+                    @Html.TextBoxFor(m => m.Surname, new { @*Name = "last_name", id = "last_name",*@ required = "required", placeholder = "Soyadınız*", message = "Lütfen Soyadınızı Giriniz" })
                 </div>
                 <div class="wizard-bottom-left-content-form-row">
                     <label for="">E-Postanız</label>
-                    @Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*", message = "Lütfen E-Postanızı Giriniz" })
+                    @Html.TextBoxFor(m => m.Email, new { @*Name = "email", id = "email", required = "required",*@ pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*", message = "Lütfen E-Postanızı Giriniz" })
                 </div>
                 <div class="wizard-bottom-left-content-form-row">
                     <label for="">Şirketinizin İsmi</label>
-                    @Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Şirketinizin ismi*", message = "Lütfen Şirket İsminizi Giriniz" })
+                    @Html.TextBoxFor(m => m.CompanyName, new { @*Name = "company", id = "company",*@ required = "required", placeholder = "Şirketinizin ismi*", message = "Lütfen Şirket İsminizi Giriniz" })
                 </div>
                 <div class="wizard-bottom-left-content-form-row">
                     <label for="">Telefon</label>
-                    @Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
-                    @Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern=".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" })
+                    @*@Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })*@
+                    @Html.TextBoxFor(m => m._phone, new { pattern=".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" })
                 </div>
                 <div class="wizard-bottom-left-content-form-row ">
                     <label for="">Mesajınız</label>
-                    @Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp", placeholder = "Mesaj" })
+                    @Html.TextAreaFor(m => m.Message, new { @*Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp",*@ placeholder = "Mesaj" })
                 </div>
                 <div class="wizard-bottom-left-content-form-row">
                     <div class="wizard-bottom-left-content-form-row-text">

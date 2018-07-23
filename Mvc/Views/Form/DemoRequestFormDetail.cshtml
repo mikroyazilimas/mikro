@@ -1,7 +1,7 @@
 ﻿@model SitefinityWebApp.Mvc.Models.ViewModel.DemoRequestForm
 
-
-@using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post))
+<form></form>
+@using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post, new { id = "demoForm" }))
 {
 @*}
 @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", id = "demoForm" }))

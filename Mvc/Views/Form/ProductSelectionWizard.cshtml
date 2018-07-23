@@ -1,7 +1,8 @@
 ﻿@model SitefinityWebApp.Mvc.Models.ViewModel.ProductSelectionWizard
 
+<form></form>
 <div class="wizard">
-    @using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post))
+    @using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post, new { id = "productForm" }))
     {
     @*}
     @using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", id = "productForm" }))

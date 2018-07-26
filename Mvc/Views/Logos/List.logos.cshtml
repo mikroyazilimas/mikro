@@ -1,28 +1,49 @@
 ﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
-    
-   
+@using Telerik.Sitefinity.DynamicModules.Model;
+@using SitefinityWebApp.Mvc.Models.ViewModel;
+@{
+    List<KeyValuePair<string, List<KeyValuePair<string, string>>>> items = Model.Items.OrderBy(p => p.Fields.GroupOrder).GroupBy(p => p.Fields.Group.ToString()).Select(x => new KeyValuePair<string, List<KeyValuePair<string, string>>>
+    (
+        x.Key,
+        x.Select(xx => new KeyValuePair<string, string>
+        (
+            xx.Fields.ImageTitle,
+            ((Telerik.Sitefinity.Frontend.Mvc.Models.ItemViewModel)xx.Fields.Image).Fields.MediaUrl
+        )).ToList()
+    )).ToList();
+}
 
-        <div class="logo-title">
-            <h2>MİKRO YAZILIM'DA DEĞİŞİM DÖNEMİ!</h2>
-        </div>
-        <div class="logo-content">
-            @foreach (var item in Model.Items)
-            {
-            <div class="logo-content-item">
-                @foreach (var photo in item.Fields.Image)
+<style type="text/css">
+    .logo-content-item {
+        display: inline-block;
+    }
+</style>
+
+<div class="logo-title">
+    <h2>MİKRO YAZILIM'DA DEĞİŞİM DÖNEMİ!</h2>
+</div>
+<div class="logo-content">
+    @foreach (var item in items)
+    {
+        <div class="logo-content-item-group" style="width:100%;padding: 0px 10px;margin-bottom: 40px;">
+            <h2 style="border-bottom:1px solid #ccc;/* margin-bottom:30px; */padding-bottom:5px;">@item.Key</h2>
+            <div class="logo-content-items">
+                @foreach (var photo in item.Value)
                 {
-                <a href="@photo.Fields.MediaUrl" download>
-                    <div class="logo-content-item-img">
-                        <img src="@photo.Fields.MediaUrl" alt="">
+                    <div class="logo-content-item">
+                        <a href="@photo.Value" download>
+                            <div class="logo-content-item-img">
+                                <img src="@photo.Value" style="border: 1px solid #cecece;" alt="">
+                            </div>
+                            <div class="logo-content-item-title">
+                                <span>@photo.Key</span>
+                            </div>
+                        </a>
                     </div>
-                    <div class="logo-content-item-title">
-                        <span>@item.Fields.ImageTitle</span>
-                    </div>
-                </a>
                 }
             </div>
-            }
-
         </div>
+    }
+</div>
 
-    
+

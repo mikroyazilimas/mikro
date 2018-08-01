@@ -115,7 +115,7 @@
                                 <li>@Html.Raw(string.Join(", ", ((ChoiceOption[])item.Fields.DealerType).Select(x => x.Text)))</li>
                             }
                             <li>@Html.Raw(item.Fields.AuthorizedPerson)</li>
-                            <li>İl: @Html.Raw(item.Fields.City)</li>
+                            <li>İl: @Html.Raw(item.Fields.City.ToString() == "Seçiniz" ? "-" : item.Fields.City.ToString())</li>
                             @*<li>İlçe: @Html.Raw(item.Fields.Distritct)</li>
                             <li>Ülke: @Html.Raw(item.Fields.Country)</li>*@
                         </ul>

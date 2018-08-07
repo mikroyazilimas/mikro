@@ -1,9 +1,9 @@
-﻿<div class="page-top-breadcrumb test" itemprop="breadcrumb">
+﻿<div class="page-top-breadcrumb" itemprop="breadcrumb" style="display:none">
     @{string pageTitle = ""; string pageCat = ""; }
     @for (int i = 0; i < Model.SiteMapNodes.Count; i++)
     {
         var node = Model.SiteMapNodes[i];
-        
+
         if (i == Model.SiteMapNodes.Count - 1 && Model.ShowCurrentPageInTheEnd)
         {
             pageTitle = node.Title;
@@ -17,3 +17,36 @@
         }
     }
 </div>
+
+
+<style type="text/css">
+    nav.breadcrumb { }
+
+    nav.breadcrumb ol { display: flex; line-height: 30px; }
+    nav.breadcrumb ol li {  }
+    nav.breadcrumb ol li a, nav.breadcrumb ol li span { line-height: 30px; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: #fff; text-decoration: none; font-style: italic; font-size: 12px; }
+    nav.breadcrumb ol li:last-child a { }
+    nav.breadcrumb ol li a:after { content: " >"; margin-left: 5px; margin-right: 5px; }
+</style>
+
+
+<nav role="navigation" class="breadcrumb" itemscope itemtype="http://schema.org/Breadcrumb">
+    <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+        @for (int i = 0; i < Model.SiteMapNodes.Count; i++)
+        {
+            var node = Model.SiteMapNodes[i];
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                @if (i == Model.SiteMapNodes.Count - 1 && Model.ShowCurrentPageInTheEnd)
+                {
+                    pageTitle = node.Title;
+                    <span> @node.Title</span>
+                }
+                else
+                {
+                    <a itemprop="item" href="@node.Url"><span itemprop="name">@node.Title</span></a>
+                }
+                <meta itemprop="position" content="@(i+1)" />
+            </li>
+        }
+    </ol>
+</nav>

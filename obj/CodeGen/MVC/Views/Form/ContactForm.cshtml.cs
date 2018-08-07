@@ -48,7 +48,7 @@ WriteLiteral("\r\n");
 
             
             #line 6 "..\..\MVC\Views\Form\ContactForm.cshtml"
- using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", id = "contactForm" }))
+ using (Html.BeginForm(null, null, FormMethod.Post, new { action = "/iletisim/bize-ulasin/Index/", id = "contactForm" }))
 {
 
 
@@ -103,6 +103,20 @@ Write(Html.HiddenFor(m => m.retURL, new { Value = Const.FormReturnUrl }));
             
             #line 12 "..\..\MVC\Views\Form\ContactForm.cshtml"
                                                                        
+    
+            
+            #line default
+            #line hidden
+            
+            #line 13 "..\..\MVC\Views\Form\ContactForm.cshtml"
+Write(Html.HiddenFor(m => m.IsShowcase, new { Value = true }));
+
+            
+            #line default
+            #line hidden
+            
+            #line 13 "..\..\MVC\Views\Form\ContactForm.cshtml"
+                                                            
 
 
 
@@ -130,8 +144,14 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 19 "..\..\MVC\Views\Form\ContactForm.cshtml"
-               Write(Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*", message="Lütfen İsminizi Giriniz" }));
+            #line 20 "..\..\MVC\Views\Form\ContactForm.cshtml"
+               Write(Html.TextBoxFor(m => m.Name, new { 
+            
+            #line default
+            #line hidden
+            
+            #line 20 "..\..\MVC\Views\Form\ContactForm.cshtml"
+                                                                                                    required = "required", placeholder = "Adınız*", message="Lütfen İsminizi Giriniz" }));
 
             
             #line default
@@ -141,8 +161,14 @@ WriteLiteral("\r\n");
 WriteLiteral("                    ");
 
             
-            #line 20 "..\..\MVC\Views\Form\ContactForm.cshtml"
-               Write(Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*" , message = "Lütfen Soyadınızı Giriniz" }));
+            #line 21 "..\..\MVC\Views\Form\ContactForm.cshtml"
+               Write(Html.TextBoxFor(m => m.Surname, new { 
+            
+            #line default
+            #line hidden
+            
+            #line 21 "..\..\MVC\Views\Form\ContactForm.cshtml"
+                                                                                                     required = "required", placeholder = "Soyadınız*" , message = "Lütfen Soyadınızı Giriniz" }));
 
             
             #line default
@@ -156,8 +182,14 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 24 "..\..\MVC\Views\Form\ContactForm.cshtml"
-               Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required" , pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*", message = "Lütfen E-Posta Giriniz" }));
+            #line 25 "..\..\MVC\Views\Form\ContactForm.cshtml"
+               Write(Html.TextBoxFor(m => m.Email, new { 
+            
+            #line default
+            #line hidden
+            
+            #line 25 "..\..\MVC\Views\Form\ContactForm.cshtml"
+                                                                                           required = "required" , pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*", message = "Lütfen E-Posta Giriniz" }));
 
             
             #line default
@@ -171,8 +203,14 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 27 "..\..\MVC\Views\Form\ContactForm.cshtml"
-               Write(Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", maxlength = "13", pattern=".{0}|.{13,13}",  required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", type = "text", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" }));
+            #line 28 "..\..\MVC\Views\Form\ContactForm.cshtml"
+               Write(Html.TextBoxFor(m => m._phone, new { 
+            
+            #line default
+            #line hidden
+            
+            #line 28 "..\..\MVC\Views\Form\ContactForm.cshtml"
+                                                                                            maxlength = "13", pattern=".{0}|.{13,13}",  required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", type = "text", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" }));
 
             
             #line default
@@ -321,9 +359,9 @@ WriteLiteral(">\r\n\r\n                ");
 
 WriteLiteral("\r\n                <select required");
 
-WriteLiteral(" id=\"subject\"");
+WriteLiteral(" id=\"Subject\"");
 
-WriteLiteral(" name=\"subject\"");
+WriteLiteral(" name=\"Subject\"");
 
 WriteLiteral(" message=\"Lütfen Gönderim Sebebini Seçiniz\"");
 
@@ -356,8 +394,14 @@ WriteLiteral(">Teşekkür etmek istiyorum</option>\r\n                </select>\
 WriteLiteral("                ");
 
             
-            #line 68 "..\..\MVC\Views\Form\ContactForm.cshtml"
-           Write(Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp", placeholder = "Mesajınız" }));
+            #line 69 "..\..\MVC\Views\Form\ContactForm.cshtml"
+           Write(Html.TextAreaFor(m => m.Message, new { 
+            
+            #line default
+            #line hidden
+            
+            #line 69 "..\..\MVC\Views\Form\ContactForm.cshtml"
+                                                                                                              placeholder = "Mesajınız" }));
 
             
             #line default
@@ -538,7 +582,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                    ");
 
             
-            #line 100 "..\..\MVC\Views\Form\ContactForm.cshtml"
+            #line 101 "..\..\MVC\Views\Form\ContactForm.cshtml"
                Write(Html.CheckBoxFor(m => m.Contract, new { required = "required", id = "Contract-hp", message = "KVK Metnini Kabul Etmediniz" }));
 
             
@@ -570,7 +614,7 @@ WriteLiteral(" class=\"errorMessage\"");
 WriteLiteral("></div>\r\n\r\n            </div>\r\n            \r\n        </div>\r\n    </div>\r\n");
 
             
-            #line 113 "..\..\MVC\Views\Form\ContactForm.cshtml"
+            #line 114 "..\..\MVC\Views\Form\ContactForm.cshtml"
 
 
 

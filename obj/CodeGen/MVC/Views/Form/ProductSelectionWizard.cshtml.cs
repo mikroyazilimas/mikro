@@ -421,7 +421,7 @@ WriteAttribute("name", Tuple.Create(" name=\"", 3338), Tuple.Create("\"", 3360)
 , 3345), false)
 );
 
-WriteLiteral("  messages=\"Lütfen Şirketinizin Kuruluş Yılını Giriniz\"");
+WriteLiteral("  messages=\"\"");
 
 WriteLiteral(">\r\n                                    <option");
 
@@ -445,14 +445,14 @@ WriteLiteral(">Seçiniz</option>\r\n");
             #line hidden
 WriteLiteral("                                        <option");
 
-WriteAttribute("value", Tuple.Create(" value=\"", 3655), Tuple.Create("\"", 3736)
+WriteAttribute("value", Tuple.Create(" value=\"", 3613), Tuple.Create("\"", 3694)
             
             #line 55 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-, Tuple.Create(Tuple.Create("", 3663), Tuple.Create<System.Object, System.Int32>(Html.Raw(String.IsNullOrEmpty(dItem.Value) ? dItem.Text : dItem.Value)
+, Tuple.Create(Tuple.Create("", 3621), Tuple.Create<System.Object, System.Int32>(Html.Raw(String.IsNullOrEmpty(dItem.Value) ? dItem.Text : dItem.Value)
             
             #line default
             #line hidden
-, 3663), false)
+, 3621), false)
 );
 
 WriteLiteral(" data-field=\"");

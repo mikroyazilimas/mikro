@@ -69,9 +69,9 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     numberOfUser = Request.Form["00N0Y00000QeNjE"],
                     currentSoftware = Request.Form["00N0Y00000QeNlZ"],
                     gclid = WebTools.GetQueryStringValueFromRawUrl("gclid") ?? WebTools.GetCookieValue(Names.Cookie.Gclid),
-                    utmCampaign = WebTools.GetQueryStringValueFromRawUrl("utm_campaign"),
-                    utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium"),
-                    utmSource = WebTools.GetQueryStringValueFromRawUrl("utm_source"),
+                    utmCampaign = WebTools.GetQueryStringValueFromRawUrl("utm_campaign") ?? WebTools.GetCookieValue(Names.Cookie.UtmCampaign),
+                    utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium") ?? WebTools.GetCookieValue(Names.Cookie.UtmMedium),
+                    utmSource = WebTools.GetQueryStringValueFromRawUrl("utm_source") ?? WebTools.GetCookieValue(Names.Cookie.UtmSource),
                     leadSource = "USS",
                 };
                 inpt.phone = "0" + inpt.phone.Replace("(", "").Replace(")", "").Replace(" ", "").Replace(" ", "").Replace(" ", "");

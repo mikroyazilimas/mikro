@@ -17,6 +17,9 @@ public struct Names
     public struct Cookie
     {
         public const string Gclid = "gclid";
+        public const string UtmCampaign = "utm_campaign";
+        public const string UtmMedium = "utm_medium";
+        public const string UtmSource = "utm_source";
     }
 
     public struct PagesView

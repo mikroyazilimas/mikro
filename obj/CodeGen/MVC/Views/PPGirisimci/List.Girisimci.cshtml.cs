@@ -180,7 +180,7 @@ WriteLiteral(">\r\n            <a");
 
 WriteLiteral(" href=\"/ucretsiz-demo-talep?product=RUN\"");
 
-WriteLiteral(">Demo Talep Formu</a>\r\n        </div>\r\n        <div");
+WriteLiteral(">Ücretsiz demo talep formu</a>\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"close-popup\"");
 
@@ -206,9 +206,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run/\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 3010), Tuple.Create("\"", 3061)
-, Tuple.Create(Tuple.Create("", 3016), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-run.svg")
-, 3016), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 3019), Tuple.Create("\"", 3070)
+, Tuple.Create(Tuple.Create("", 3025), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-run.svg")
+, 3025), false)
 );
 
 WriteLiteral(" alt=\"\"");

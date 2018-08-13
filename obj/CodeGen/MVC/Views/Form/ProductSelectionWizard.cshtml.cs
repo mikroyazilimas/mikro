@@ -36,28 +36,28 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("<div");
+WriteLiteral("<form></form>\r\n<div");
 
 WriteLiteral(" class=\"wizard\"");
 
 WriteLiteral(">\r\n");
 
             
-            #line 4 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 5 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
     
             
             #line default
             #line hidden
             
-            #line 4 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-     using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post))
+            #line 5 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+     using (@Html.BeginForm("Index", "DemoRequestForm", FormMethod.Post, new { id = "productForm" }))
     {
     
             
             #line default
             #line hidden
             
-            #line 8 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 9 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
        
 
             
@@ -162,28 +162,28 @@ WriteLiteral(" value=\"USS\"");
 WriteLiteral(" />\r\n");
 
             
-            #line 17 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 18 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
 
         
             
             #line default
             #line hidden
             
-            #line 18 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 19 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                                                                                                                          
         
             
             #line default
             #line hidden
             
-            #line 19 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 20 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
    Write(Html.HiddenFor(m => m.retURL, new { Value = String.Format("{0}product={1}", "", "product") }));
 
             
             #line default
             #line hidden
             
-            #line 19 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 20 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                                                                                                       
 
 
@@ -214,13 +214,13 @@ WriteLiteral(" class=\"wizard-form-left\"");
 WriteLiteral(">\r\n\r\n\r\n");
 
             
-            #line 31 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 32 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                 
             
             #line default
             #line hidden
             
-            #line 31 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 32 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                  if (Model.FormItems != null && Model.FormItems.Count > 0)
                 {
                     foreach (var item in Model.FormItems)
@@ -235,34 +235,34 @@ WriteLiteral("                            <input");
 
 WriteLiteral(" type=\"hidden\"");
 
-WriteAttribute("id", Tuple.Create(" id=\"", 2170), Tuple.Create("\"", 2190)
+WriteAttribute("id", Tuple.Create(" id=\"", 2213), Tuple.Create("\"", 2233)
             
-            #line 37 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-, Tuple.Create(Tuple.Create("", 2175), Tuple.Create<System.Object, System.Int32>(item.InputName
+            #line 38 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+, Tuple.Create(Tuple.Create("", 2218), Tuple.Create<System.Object, System.Int32>(item.InputName
             
             #line default
             #line hidden
-, 2175), false)
+, 2218), false)
 );
 
-WriteAttribute("name", Tuple.Create(" name=\"", 2191), Tuple.Create("\"", 2213)
+WriteAttribute("name", Tuple.Create(" name=\"", 2234), Tuple.Create("\"", 2256)
             
-            #line 37 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-, Tuple.Create(Tuple.Create("", 2198), Tuple.Create<System.Object, System.Int32>(item.InputName
+            #line 38 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+, Tuple.Create(Tuple.Create("", 2241), Tuple.Create<System.Object, System.Int32>(item.InputName
             
             #line default
             #line hidden
-, 2198), false)
+, 2241), false)
 );
 
-WriteAttribute("value", Tuple.Create(" value=\"", 2214), Tuple.Create("\"", 2238)
+WriteAttribute("value", Tuple.Create(" value=\"", 2257), Tuple.Create("\"", 2281)
             
-            #line 37 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-                    , Tuple.Create(Tuple.Create("", 2222), Tuple.Create<System.Object, System.Int32>(item.InputValue
+            #line 38 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+                    , Tuple.Create(Tuple.Create("", 2265), Tuple.Create<System.Object, System.Int32>(item.InputValue
             
             #line default
             #line hidden
-, 2222), false)
+, 2265), false)
 );
 
 WriteLiteral(" required=\"required\"");
@@ -270,7 +270,7 @@ WriteLiteral(" required=\"required\"");
 WriteLiteral(" />\r\n");
 
             
-            #line 38 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 39 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
 
                         }
                         else if (item.InputType == SitefinityWebApp.Library.InputType.TextBox)
@@ -281,28 +281,28 @@ WriteLiteral(" />\r\n");
             #line hidden
 WriteLiteral("                            <div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 2448), Tuple.Create("\"", 2544)
-, Tuple.Create(Tuple.Create("", 2456), Tuple.Create("wizard-form-row", 2456), true)
+WriteAttribute("class", Tuple.Create(" class=\"", 2491), Tuple.Create("\"", 2587)
+, Tuple.Create(Tuple.Create("", 2499), Tuple.Create("wizard-form-row", 2499), true)
             
-            #line 42 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-, Tuple.Create(Tuple.Create(" ", 2471), Tuple.Create<System.Object, System.Int32>(item.InputClass
-            
-            #line default
-            #line hidden
-, 2472), false)
-            
-            #line 42 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-, Tuple.Create(Tuple.Create(" ", 2488), Tuple.Create<System.Object, System.Int32>(String.Format(item.InputNotVisible? "wizardhide" : "")
+            #line 43 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+, Tuple.Create(Tuple.Create(" ", 2514), Tuple.Create<System.Object, System.Int32>(item.InputClass
             
             #line default
             #line hidden
-, 2489), false)
+, 2515), false)
+            
+            #line 43 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+, Tuple.Create(Tuple.Create(" ", 2531), Tuple.Create<System.Object, System.Int32>(String.Format(item.InputNotVisible? "wizardhide" : "")
+            
+            #line default
+            #line hidden
+, 2532), false)
 );
 
 WriteLiteral(" >\r\n                                <label>");
 
             
-            #line 43 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 44 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                                   Write(item.LabelValue);
 
             
@@ -311,7 +311,7 @@ WriteLiteral(" >\r\n                                <label>");
 WriteLiteral("<span>");
 
             
-            #line 43 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 44 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                                                         Write(item.LabelValueShort);
 
             
@@ -321,24 +321,24 @@ WriteLiteral("</span></label>\r\n                                <input");
 
 WriteLiteral(" type=\"text\"");
 
-WriteAttribute("id", Tuple.Create(" id=\"", 2698), Tuple.Create("\"", 2718)
+WriteAttribute("id", Tuple.Create(" id=\"", 2741), Tuple.Create("\"", 2761)
             
-            #line 44 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-, Tuple.Create(Tuple.Create("", 2703), Tuple.Create<System.Object, System.Int32>(item.InputName
+            #line 45 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+, Tuple.Create(Tuple.Create("", 2746), Tuple.Create<System.Object, System.Int32>(item.InputName
             
             #line default
             #line hidden
-, 2703), false)
+, 2746), false)
 );
 
-WriteAttribute("name", Tuple.Create(" name=\"", 2719), Tuple.Create("\"", 2741)
+WriteAttribute("name", Tuple.Create(" name=\"", 2762), Tuple.Create("\"", 2784)
             
-            #line 44 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-, Tuple.Create(Tuple.Create("", 2726), Tuple.Create<System.Object, System.Int32>(item.InputName
+            #line 45 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+, Tuple.Create(Tuple.Create("", 2769), Tuple.Create<System.Object, System.Int32>(item.InputName
             
             #line default
             #line hidden
-, 2726), false)
+, 2769), false)
 );
 
 WriteLiteral(" value=\"\"");
@@ -353,7 +353,7 @@ WriteLiteral(" \"[0-9]+\" message=\"Lütfen Şirketinizin Kuruluş Yılını Gir
 "             </div>\r\n");
 
             
-            #line 46 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 47 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                         }
                         else if (item.InputType == SitefinityWebApp.Library.InputType.DropDown)
                         {
@@ -363,28 +363,28 @@ WriteLiteral(" \"[0-9]+\" message=\"Lütfen Şirketinizin Kuruluş Yılını Gir
             #line hidden
 WriteLiteral("                            <div");
 
-WriteAttribute("class", Tuple.Create(" class=\"", 3079), Tuple.Create("\"", 3175)
-, Tuple.Create(Tuple.Create("", 3087), Tuple.Create("wizard-form-row", 3087), true)
+WriteAttribute("class", Tuple.Create(" class=\"", 3122), Tuple.Create("\"", 3218)
+, Tuple.Create(Tuple.Create("", 3130), Tuple.Create("wizard-form-row", 3130), true)
             
-            #line 49 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-, Tuple.Create(Tuple.Create(" ", 3102), Tuple.Create<System.Object, System.Int32>(item.InputClass
-            
-            #line default
-            #line hidden
-, 3103), false)
-            
-            #line 49 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-, Tuple.Create(Tuple.Create(" ", 3119), Tuple.Create<System.Object, System.Int32>(String.Format(item.InputNotVisible? "wizardhide" : "")
+            #line 50 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+, Tuple.Create(Tuple.Create(" ", 3145), Tuple.Create<System.Object, System.Int32>(item.InputClass
             
             #line default
             #line hidden
-, 3120), false)
+, 3146), false)
+            
+            #line 50 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+, Tuple.Create(Tuple.Create(" ", 3162), Tuple.Create<System.Object, System.Int32>(String.Format(item.InputNotVisible? "wizardhide" : "")
+            
+            #line default
+            #line hidden
+, 3163), false)
 );
 
 WriteLiteral(">\r\n                                <label>");
 
             
-            #line 50 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 51 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                                   Write(item.LabelValue);
 
             
@@ -393,7 +393,7 @@ WriteLiteral(">\r\n                                <label>");
 WriteLiteral("<span>");
 
             
-            #line 50 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 51 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                                                         Write(item.LabelValueShort);
 
             
@@ -401,27 +401,27 @@ WriteLiteral("<span>");
             #line hidden
 WriteLiteral("</span></label>\r\n                                <select");
 
-WriteAttribute("id", Tuple.Create(" id=\"", 3317), Tuple.Create("\"", 3337)
+WriteAttribute("id", Tuple.Create(" id=\"", 3360), Tuple.Create("\"", 3380)
             
-            #line 51 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-, Tuple.Create(Tuple.Create("", 3322), Tuple.Create<System.Object, System.Int32>(item.InputName
-            
-            #line default
-            #line hidden
-, 3322), false)
-);
-
-WriteAttribute("name", Tuple.Create(" name=\"", 3338), Tuple.Create("\"", 3360)
-            
-            #line 51 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-, Tuple.Create(Tuple.Create("", 3345), Tuple.Create<System.Object, System.Int32>(item.InputName
+            #line 52 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+, Tuple.Create(Tuple.Create("", 3365), Tuple.Create<System.Object, System.Int32>(item.InputName
             
             #line default
             #line hidden
-, 3345), false)
+, 3365), false)
 );
 
-WriteLiteral("  messages=\"Lütfen Şirketinizin Kuruluş Yılını Giriniz\"");
+WriteAttribute("name", Tuple.Create(" name=\"", 3381), Tuple.Create("\"", 3403)
+            
+            #line 52 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+, Tuple.Create(Tuple.Create("", 3388), Tuple.Create<System.Object, System.Int32>(item.InputName
+            
+            #line default
+            #line hidden
+, 3388), false)
+);
+
+WriteLiteral("  messages=\"\"");
 
 WriteLiteral(">\r\n                                    <option");
 
@@ -430,13 +430,13 @@ WriteLiteral(" value=\"\"");
 WriteLiteral(">Seçiniz</option>\r\n");
 
             
-            #line 53 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 54 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                                     
             
             #line default
             #line hidden
             
-            #line 53 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 54 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                                      foreach (var dItem in item.DropDownItem)
                                     {
 
@@ -445,20 +445,20 @@ WriteLiteral(">Seçiniz</option>\r\n");
             #line hidden
 WriteLiteral("                                        <option");
 
-WriteAttribute("value", Tuple.Create(" value=\"", 3655), Tuple.Create("\"", 3736)
+WriteAttribute("value", Tuple.Create(" value=\"", 3656), Tuple.Create("\"", 3737)
             
-            #line 55 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-, Tuple.Create(Tuple.Create("", 3663), Tuple.Create<System.Object, System.Int32>(Html.Raw(String.IsNullOrEmpty(dItem.Value) ? dItem.Text : dItem.Value)
+            #line 56 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+, Tuple.Create(Tuple.Create("", 3664), Tuple.Create<System.Object, System.Int32>(Html.Raw(String.IsNullOrEmpty(dItem.Value) ? dItem.Text : dItem.Value)
             
             #line default
             #line hidden
-, 3663), false)
+, 3664), false)
 );
 
 WriteLiteral(" data-field=\"");
 
             
-            #line 55 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 56 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                                                                                                                                          Write(dItem.FieldValue);
 
             
@@ -469,7 +469,7 @@ WriteLiteral("\"");
 WriteLiteral(">");
 
             
-            #line 55 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 56 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                                                                                                                                                             Write(dItem.Text);
 
             
@@ -478,7 +478,7 @@ WriteLiteral(">");
 WriteLiteral("</option>\r\n");
 
             
-            #line 56 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 57 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                                     }
 
             
@@ -487,7 +487,7 @@ WriteLiteral("</option>\r\n");
 WriteLiteral("                                </select>\r\n                            </div>\r\n");
 
             
-            #line 59 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 60 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                         }
                     }
                 }
@@ -504,13 +504,13 @@ WriteLiteral(">\r\n\r\n                </div>\r\n\r\n                ");
 WriteLiteral("\r\n\r\n\r\n\r\n            </div>\r\n        </div>\r\n");
 
             
-            #line 77 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 78 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 113 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 114 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                    
 
             
@@ -547,7 +547,7 @@ WriteLiteral(">Adınız</label>\r\n");
 WriteLiteral("                            ");
 
             
-            #line 122 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 123 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                        Write(Html.TextBoxFor(m => m.Name, new { required = "required", placeholder = "Adınız*", message = "Lütfen İsminizi Giriniz" }));
 
             
@@ -566,7 +566,7 @@ WriteLiteral(">Soyadınız</label>\r\n");
 WriteLiteral("                            ");
 
             
-            #line 126 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 127 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                        Write(Html.TextBoxFor(m => m.Surname, new { required = "required", placeholder = "Soyadınız*", message = "Lütfen Soyadınızı  Giriniz" }));
 
             
@@ -585,7 +585,7 @@ WriteLiteral(">Firmanızın Ünvanı</label>\r\n");
 WriteLiteral("                            ");
 
             
-            #line 130 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 131 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                        Write(Html.TextBoxFor(m => m.CompanyName, new {required = "required", placeholder = "Firmanızın Ünvanı*", value="Seçiniz", message = "Lütfen Firmanızın Ünvanını Giriniz" }));
 
             
@@ -604,7 +604,7 @@ WriteLiteral(">E-Posta</label>\r\n");
 WriteLiteral("                            ");
 
             
-            #line 134 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 135 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                        Write(Html.TextBoxFor(m => m.Email, new { pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", required = "required", placeholder="E-Postanız*", message= "Lütfen E-Postanızı Giriniz" }));
 
             
@@ -623,7 +623,7 @@ WriteLiteral(">Telefon</label>\r\n");
 WriteLiteral("                            ");
 
             
-            #line 138 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 139 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                        Write(Html.TextBoxFor(m => m.phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" }));
 
             
@@ -634,7 +634,7 @@ WriteLiteral("\r\n");
 WriteLiteral("                            ");
 
             
-            #line 139 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 140 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                        Write(Html.TextBoxFor(m => m._phone, new { Name = "_phone", id = "_phone", pattern = ".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" }));
 
             
@@ -794,7 +794,7 @@ WriteLiteral(">\r\n");
 WriteLiteral("                                ");
 
             
-            #line 170 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 171 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
                            Write(Html.CheckBoxFor(m => m.Contract, new { required="required", message = "KVK Metnini Kabul Etmediniz" }));
 
             
@@ -826,7 +826,7 @@ WriteLiteral(" alt=\"\"");
 WriteLiteral(">\r\n            </div>\r\n        </div>\r\n");
 
             
-            #line 183 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 184 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
     }
 
             

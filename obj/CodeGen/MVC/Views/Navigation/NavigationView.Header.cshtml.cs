@@ -284,7 +284,7 @@ WriteLiteral(" class=\"page-mega-navigation-content-section\"");
 
 WriteLiteral(">\r\n            <a");
 
-WriteLiteral(" href=\"#\"");
+WriteLiteral(" href=\"/kurumsal/hakkimizda\"");
 
 WriteLiteral(" class=\"page-mega-navigation-content-section__grouptitle\"");
 
@@ -305,7 +305,7 @@ WriteLiteral(" class=\"page-mega-navigation-content-section\"");
 
 WriteLiteral(">\r\n            <a");
 
-WriteLiteral(" href=\"#\"");
+WriteLiteral(" href=\"/urunler-ve-hizmetler/genel-bakis\"");
 
 WriteLiteral(" class=\"page-mega-navigation-content-section__grouptitle\"");
 

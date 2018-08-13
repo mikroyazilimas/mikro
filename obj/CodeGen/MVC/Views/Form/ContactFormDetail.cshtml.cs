@@ -36,11 +36,11 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("\r\n");
+WriteLiteral("<form></form>\r\n");
 
             
             #line 4 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
- using (@Html.BeginForm("Index", "ContactForm", FormMethod.Post))
+ using (@Html.BeginForm("Index", "ContactForm", FormMethod.Post, new { id = "contactDetailForm" }))
 { }
 
             
@@ -50,7 +50,7 @@ WriteLiteral("\r\n");
 
             
             #line 7 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
- using (Html.BeginForm(null, null, FormMethod.Post, new { action = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", id = "contactDetailForm" }))
+ using (Html.BeginForm("Index", "ContactFormDetail", FormMethod.Post, new { id= "contactDetailForm" }))
 {
 
             
@@ -154,7 +154,13 @@ WriteLiteral("                    ");
 
             
             #line 24 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
-               Write(Html.TextBoxFor(m => m.Name, new { Name = "first_name", id = "first_name", required = "required", placeholder = "Adınız*", message ="Lütfen İsminizi Giriniz"}));
+               Write(Html.TextBoxFor(m => m.Name, new { 
+            
+            #line default
+            #line hidden
+            
+            #line 24 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
+                                                                                                    required = "required", placeholder = "Adınız*", message ="Lütfen İsminizi Giriniz"}));
 
             
             #line default
@@ -173,7 +179,13 @@ WriteLiteral("                    ");
 
             
             #line 28 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
-               Write(Html.TextBoxFor(m => m.Surname, new { Name = "last_name", id = "last_name", required = "required", placeholder = "Soyadınız*", message = "Lütfen Soyadınızı Giriniz" }));
+               Write(Html.TextBoxFor(m => m.Surname, new { 
+            
+            #line default
+            #line hidden
+            
+            #line 28 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
+                                                                                                     required = "required", placeholder = "Soyadınız*", message = "Lütfen Soyadınızı Giriniz" }));
 
             
             #line default
@@ -192,7 +204,13 @@ WriteLiteral("                    ");
 
             
             #line 32 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
-               Write(Html.TextBoxFor(m => m.Email, new { Name = "email", id = "email", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*", message = "Lütfen E-Postanızı Giriniz" }));
+               Write(Html.TextBoxFor(m => m.Email, new { 
+            
+            #line default
+            #line hidden
+            
+            #line 32 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
+                                                                                                                  pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*", message = "Lütfen E-Postanızı Giriniz" }));
 
             
             #line default
@@ -211,7 +229,13 @@ WriteLiteral("                    ");
 
             
             #line 36 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
-               Write(Html.TextBoxFor(m => m.CompanyName, new { Name = "company", id = "company", required = "required", placeholder = "Şirketinizin ismi*", message = "Lütfen Şirket İsminizi Giriniz" }));
+               Write(Html.TextBoxFor(m => m.CompanyName, new { 
+            
+            #line default
+            #line hidden
+            
+            #line 36 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
+                                                                                                     required = "required", placeholder = "Şirketinizin ismi*", message = "Lütfen Şirket İsminizi Giriniz" }));
 
             
             #line default
@@ -224,24 +248,15 @@ WriteLiteral(">\r\n                    <label");
 
 WriteLiteral(" for=\"\"");
 
-WriteLiteral(">Telefon</label>\r\n");
+WriteLiteral(">Telefon</label>\r\n                    ");
 
-WriteLiteral("                    ");
-
-            
-            #line 40 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
-               Write(Html.TextBoxFor(m => m.Phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" }));
-
-            
-            #line default
-            #line hidden
 WriteLiteral("\r\n");
 
 WriteLiteral("                    ");
 
             
             #line 41 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
-               Write(Html.TextBoxFor(m => m.Phone, new { Name = "_phone", id = "_phone", pattern=".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" }));
+               Write(Html.TextBoxFor(m => m._phone, new { pattern=".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" }));
 
             
             #line default
@@ -260,7 +275,13 @@ WriteLiteral("                    ");
 
             
             #line 45 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
-               Write(Html.TextAreaFor(m => m.Message, new { Name = "00N0Y00000QeRBp", id = "00N0Y00000QeRBp", placeholder = "Mesaj" }));
+               Write(Html.TextAreaFor(m => m.Message, new { 
+            
+            #line default
+            #line hidden
+            
+            #line 45 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
+                                                                                                                  placeholder = "Mesaj" }));
 
             
             #line default

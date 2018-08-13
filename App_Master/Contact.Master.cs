@@ -11,11 +11,19 @@ namespace SitefinityWebApp.App_Master
     public partial class Contact : System.Web.UI.MasterPage
     {
         public bool IsDesignMode { get; set; }
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!String.IsNullOrEmpty(Request.QueryString["gclid"]))
                 WebTools.SetCookie(Names.Cookie.Gclid, Request.QueryString["gclid"], DateTime.Now.AddHours(1));
+
+            if (!String.IsNullOrEmpty(Request.QueryString["utm_campaign"]))
+                WebTools.SetCookie(Names.Cookie.UtmCampaign, Request.QueryString["utm_campaign"], DateTime.Now.AddHours(1));
+
+            if (!String.IsNullOrEmpty(Request.QueryString["utm_medium"]))
+                WebTools.SetCookie(Names.Cookie.UtmMedium, Request.QueryString["utm_medium"], DateTime.Now.AddHours(1));
+
+            if (!String.IsNullOrEmpty(Request.QueryString["utm_source"]))
+                WebTools.SetCookie(Names.Cookie.UtmSource, Request.QueryString["utm_source"], DateTime.Now.AddHours(1));
 
             if (Request.Url.ToString().IndexOf("Action/Edit") != -1 || Request.Url.ToString().IndexOf("Template") != -1)
                 IsDesignMode = true;

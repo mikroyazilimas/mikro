@@ -24,7 +24,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
             ProductSelectionWizard m = new ProductSelectionWizard()
             {
                 FormItems = sf.GetProductForm()
-            };
+            }; 
 
             return View(Names.PagesView.ProductSelectionWizard, m);
         }
@@ -299,14 +299,14 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
         {
             try
             {
-                if (!String.IsNullOrEmpty(Request["first_name"]) && !String.IsNullOrEmpty(Request["last_name"]) && !String.IsNullOrEmpty(Request["phone"]) && !String.IsNullOrEmpty(Request["subject"]) && !String.IsNullOrEmpty(Request["00N0Y00000QeRBp"]) && !String.IsNullOrEmpty(Request["email"]))
+                if (!String.IsNullOrEmpty(Request["Name"]) && !String.IsNullOrEmpty(Request["Surname"]) && !String.IsNullOrEmpty(Request["_phone"]) && !String.IsNullOrEmpty(Request["Subject"]) && !String.IsNullOrEmpty(Request["Email"]))
                 {
-                    string name = Request["first_name"];
-                    string surname = Request["last_name"];
-                    string phone = Request["phone"];
-                    string subject = Request["subject"];
-                    string message = Request["00N0Y00000QeRBp"];
-                    string email = Request["email"];
+                    string name = Request["Name"];
+                    string surname = Request["Surname"];
+                    string phone = Request["_phone"];
+                    string subject = Request["Subject"];
+                    string message = Request["Message"];
+                    string email = Request["Email"];
 
                     MailHelper mail = new MailHelper();
                     mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr", "Mert.ALANKAYA@mikro.com.tr" };
@@ -351,9 +351,9 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                         status = "New",
                         leadSource = "Contact Form",
                         gclid = WebTools.GetQueryStringValueFromRawUrl("gclid") ?? WebTools.GetCookieValue(Names.Cookie.Gclid),
-                        utmCampaign = WebTools.GetQueryStringValueFromRawUrl("utm_campaign"),
-                        utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium"),
-                        utmSource = WebTools.GetQueryStringValueFromRawUrl("utm_source"),
+                        utmCampaign = WebTools.GetQueryStringValueFromRawUrl("utm_campaign") ?? WebTools.GetCookieValue(Names.Cookie.UtmCampaign),
+                        utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium") ?? WebTools.GetCookieValue(Names.Cookie.UtmMedium),
+                        utmSource = WebTools.GetQueryStringValueFromRawUrl("utm_source") ?? WebTools.GetCookieValue(Names.Cookie.UtmSource),
                         formNotes = message
                     };
 

@@ -19,24 +19,18 @@
         })(window, document, 'script', 'dataLayer', 'GTM-PF4LDGM');</script>
     <!-- End Google Tag Manager -->
     <telerik:RadCodeBlock ID="codeBlock" runat="server">
-        <%
-            if (IsDesignMode == false)
-            {
-        %>
-        <script defer src="/Frontend/dist/javascript/mikro-yazilim.js"></script>
-        <%
-            }
-            else
-            {
-        %>
-        <style>
-            .page-open-menu {
-                max-height: 750px !important;
-            }
-        </style>
-        <%
-            }
-        %>
+        <% if (IsDesignMode == false) { %>
+            <script defer src="/Frontend/dist/javascript/mikro-yazilim.js"></script>
+            <% if (!String.IsNullOrEmpty(NoIndex)) { %>
+                <meta name="robots" content="noindex" />
+            <% } %>
+        <% } else { %>
+            <style>
+                .page-open-menu {
+                    max-height: 750px !important;
+                }
+            </style>
+        <% } %>
     </telerik:RadCodeBlock>
 </head>
 <body>

@@ -10,6 +10,7 @@ namespace SitefinityWebApp.App_Master
 {
     public partial class Page : System.Web.UI.MasterPage
     {
+        public string NoIndex { get; set; }
         public bool IsDesignMode { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -29,6 +30,9 @@ namespace SitefinityWebApp.App_Master
                 IsDesignMode = true;
             else
                 IsDesignMode = false;
+
+            if (Request.Url.ToString().TrimEnd('/').Contains("is-ortaklarimiz/"))
+                NoIndex = "<meta name=\"robots\" content=\"noindex\">";
         }
     }
 }

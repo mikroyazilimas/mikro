@@ -445,7 +445,6 @@ WriteLiteral(">Seçiniz</option>\r\n");
             #line hidden
 WriteLiteral("                                        <option");
 
-<<<<<<< HEAD
 WriteAttribute("value", Tuple.Create(" value=\"", 3656), Tuple.Create("\"", 3737)
             
             #line 56 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
@@ -454,16 +453,6 @@ WriteAttribute("value", Tuple.Create(" value=\"", 3656), Tuple.Create("\"", 3737
             #line default
             #line hidden
 , 3664), false)
-=======
-WriteAttribute("value", Tuple.Create(" value=\"", 3613), Tuple.Create("\"", 3694)
-            
-            #line 55 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-, Tuple.Create(Tuple.Create("", 3621), Tuple.Create<System.Object, System.Int32>(Html.Raw(String.IsNullOrEmpty(dItem.Value) ? dItem.Text : dItem.Value)
-            
-            #line default
-            #line hidden
-, 3621), false)
->>>>>>> 72ff397507617094fbb2fec2faff15a8ac1a2a7e
 );
 
 WriteLiteral(" data-field=\"");
@@ -843,7 +832,7 @@ WriteLiteral(">\r\n            </div>\r\n        </div>\r\n");
             
             #line default
             #line hidden
-WriteLiteral("</div>");
+WriteLiteral("\r\n</div>");
 
         }
     }

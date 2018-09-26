@@ -35,7 +35,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
         {
             LogProcess logProcess = new LogProcess();
             MailHelper mail = new MailHelper();
-            mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr", "Mert.ALANKAYA@mikro.com.tr" };
+            mail.To = new List<string>() { "no-reply@e-mail.mikro.com.tr", "Mert.ALANKAYA@mikro.com.tr", "satis@mikro.com.tr" };
             mail.From = "no-reply@e-mail.mikro.com.tr";
             mail.FromDisplayName = "Mikro";
             try
@@ -93,7 +93,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 if (resp.isSuccess)
                 {
                     mail.Body = body;
-                    mail.Subject = "İletişim Formu";
+                    mail.Subject = "Bize Ulaşın Formu";
                     bool rtn = mail.SendMail();
                     if (true)
                     {

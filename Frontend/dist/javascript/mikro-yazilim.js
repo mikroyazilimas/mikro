@@ -6106,15 +6106,13 @@ function formSubmit(formId, formPost, formType, dataLayerLabel) {
                 //    }
                 //});
                 //return false;
+				
+				return true;
             }
-            return true;
-
         }
         else {
             console.log('form tetiklenemez');
         }
-
-        
     });
 }
 

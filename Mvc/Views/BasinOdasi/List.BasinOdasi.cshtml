@@ -1,5 +1,8 @@
 ﻿@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
 
+<style type="text/css">
+    .container-sub-content-item-content-left a { text-decoration: none; color: #3b475a; }
+</style>
 
 <div class="container-sub">
     
@@ -10,18 +13,20 @@
             <div class="container-sub-content-item">
                 <div class="container-sub-content-item-content">
                     <div class="container-sub-content-item-content-left">
-                        <div class="container-sub-content-item-content-left__date">
-                            @if (item.Fields.FileDateTime != null && (DateTime?)item.Fields.FileDateTime != null)
-                            {
-                                <span>@(((DateTime?)item.Fields.FileDateTime).Value.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("tr-TR")))</span>
-                            }
-                        </div>
-                        <div class="container-sub-content-item-content-left__title">
-                            <span>@item.Fields.Title</span>
-                        </div>
-                        <div class="container-sub-content-item-content-left__text">
-                            <span>@item.Fields.ShortText</span>
-                        </div>
+                        <a href="@String.Format("{0}", item.DefaultUrl)" target="_blank">
+                            <div class="container-sub-content-item-content-left__date">
+                                @if (item.Fields.FileDateTime != null && (DateTime?)item.Fields.FileDateTime != null)
+                                {
+                                    <span>@(((DateTime?)item.Fields.FileDateTime).Value.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("tr-TR")))</span>
+                                }
+                            </div>
+                            <div class="container-sub-content-item-content-left__title">
+                                <span>@item.Fields.Title</span>
+                            </div>
+                            <div class="container-sub-content-item-content-left__text">
+                                <span>@item.Fields.ShortText</span>
+                            </div>
+                        </a>
                     </div>
                     <a href="@String.Format("{0}", item.DefaultUrl)" target="_blank">
                         <div class="container-sub-content-item-content-right">

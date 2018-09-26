@@ -36,7 +36,12 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("\r\n\r\n<div");
+WriteLiteral("<style");
+
+WriteLiteral(" type=\"text/css\"");
+
+WriteLiteral(">\r\n    .container-sub-content-item-content-left a { text-decoration: none; color:" +
+" #3b475a; }\r\n</style>\r\n\r\n<div");
 
 WriteLiteral(" class=\"container-sub\"");
 
@@ -47,13 +52,13 @@ WriteLiteral(" class=\"container-sub-content\"");
 WriteLiteral(">\r\n        <!-- DÖNGÜ -->\r\n");
 
             
-            #line 8 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
+            #line 10 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
         
             
             #line default
             #line hidden
             
-            #line 8 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
+            #line 10 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
          foreach (var item in Model.Items.OrderByDescending(x => (DateTime?)x.Fields.DateTime))
         {
 
@@ -72,31 +77,45 @@ WriteLiteral(">\r\n                    <div");
 
 WriteLiteral(" class=\"container-sub-content-item-content-left\"");
 
-WriteLiteral(">\r\n                        <div");
+WriteLiteral(">\r\n                        <a");
+
+WriteAttribute("href", Tuple.Create(" href=\"", 621), Tuple.Create("\"", 728)
+            
+            #line 15 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
+, Tuple.Create(Tuple.Create("", 628), Tuple.Create<System.Object, System.Int32>(String.Format("/docs/default-source/basin-bultenleri/{0}.{1}", item.Fields.MediaFileUrlName, "pdf")
+            
+            #line default
+            #line hidden
+, 628), false)
+);
+
+WriteLiteral(" target=\"_blank\"");
+
+WriteLiteral(">\r\n                            <div");
 
 WriteLiteral(" class=\"container-sub-content-item-content-left__date\"");
 
 WriteLiteral(">\r\n");
 
             
-            #line 14 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
-                            
+            #line 17 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
+                                
             
             #line default
             #line hidden
             
-            #line 14 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
-                             if (item.Fields.DateTime != null && (DateTime?)item.Fields.DateTime != null)
-                            {
+            #line 17 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
+                                 if (item.Fields.DateTime != null && (DateTime?)item.Fields.DateTime != null)
+                                {
 
             
             #line default
             #line hidden
-WriteLiteral("                                <span>");
+WriteLiteral("                                    <span>");
 
             
-            #line 16 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
-                                  Write(((DateTime?)item.Fields.DateTime).Value.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("tr-TR")));
+            #line 19 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
+                                      Write(((DateTime?)item.Fields.DateTime).Value.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("tr-TR")));
 
             
             #line default
@@ -104,49 +123,49 @@ WriteLiteral("                                <span>");
 WriteLiteral(" </span>\r\n");
 
             
-            #line 17 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
-                            }
+            #line 20 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
+                                }
 
             
             #line default
             #line hidden
-WriteLiteral("                        </div>\r\n                        <div");
+WriteLiteral("                            </div>\r\n                            <div");
 
 WriteLiteral(" class=\"container-sub-content-item-content-left__title\"");
 
-WriteLiteral(">\r\n                            <span>");
-
-            
-            #line 20 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
-                             Write(item.Fields.Title);
-
-            
-            #line default
-            #line hidden
-WriteLiteral("</span>\r\n                        </div>\r\n                        <div");
-
-WriteLiteral(" class=\"container-sub-content-item-content-left__text\"");
-
-WriteLiteral(">\r\n                            <span>");
+WriteLiteral(">\r\n                                <span>");
 
             
             #line 23 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
-                             Write(item.Fields.ShortText);
+                                 Write(item.Fields.Title);
 
             
             #line default
             #line hidden
-WriteLiteral("</span>\r\n                        </div>\r\n                    </div>\r\n            " +
-"        <a");
+WriteLiteral("</span>\r\n                            </div>\r\n                            <div");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 1330), Tuple.Create("\"", 1437)
+WriteLiteral(" class=\"container-sub-content-item-content-left__text\"");
+
+WriteLiteral(">\r\n                                <span>");
+
             
             #line 26 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
-, Tuple.Create(Tuple.Create("", 1337), Tuple.Create<System.Object, System.Int32>(String.Format("/docs/default-source/basin-bultenleri/{0}.{1}", item.Fields.MediaFileUrlName, "pdf")
+                                 Write(item.Fields.ShortText);
+
             
             #line default
             #line hidden
-, 1337), false)
+WriteLiteral("</span>\r\n                            </div>\r\n                        </a>\r\n      " +
+"              </div>\r\n                    <a");
+
+WriteAttribute("href", Tuple.Create(" href=\"", 1685), Tuple.Create("\"", 1792)
+            
+            #line 30 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
+, Tuple.Create(Tuple.Create("", 1692), Tuple.Create<System.Object, System.Int32>(String.Format("/docs/default-source/basin-bultenleri/{0}.{1}", item.Fields.MediaFileUrlName, "pdf")
+            
+            #line default
+            #line hidden
+, 1692), false)
 );
 
 WriteLiteral(" target=\"_blank\"");
@@ -163,18 +182,18 @@ WriteLiteral("></i>\r\n                            <div");
 
 WriteLiteral(" class=\"container-sub-content-item-content-right__title\"");
 
-WriteLiteral(">\r\n                                <span>Bülteni Gör</span>\r\n                    " +
-"        </div>\r\n                        </div>\r\n                    </a>\r\n      " +
-"          </div>\r\n            </div>\r\n");
+WriteLiteral(">\r\n                                <span>Detayı Gör</span>\r\n                     " +
+"       </div>\r\n                        </div>\r\n                    </a>\r\n       " +
+"         </div>\r\n            </div>\r\n");
 
             
-            #line 36 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
+            #line 40 "..\..\MVC\Views\DocumentsList\List.PressRoomList.cshtml"
         }
 
             
             #line default
             #line hidden
-WriteLiteral("        \r\n        <!-- //// -->\r\n    </div>\r\n</div>");
+WriteLiteral("\r\n        <!-- //// -->\r\n    </div>\r\n</div>");
 
         }
     }

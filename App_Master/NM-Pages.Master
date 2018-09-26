@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link rel="stylesheet" href="/Frontend/dist/css/app.css">
+    <link rel="stylesheet" href="/Frontend/dist/css/style.css">
     <link href="/Frontend/dist/images/favicon.ico" rel="shortcut icon">
       <script>var dataLayer = [];</script>
     <!-- Google Tag Manager -->
@@ -21,6 +22,7 @@
     <telerik:RadCodeBlock ID="codeBlock" runat="server">
         <% if (IsDesignMode == false) { %>
             <script defer src="/Frontend/dist/javascript/mikro-yazilim.js"></script>
+            <script defer src="/Frontend/dist/javascript/script.js"></script>
             <% if (!String.IsNullOrEmpty(NoIndex)) { %>
                 <meta name="robots" content="noindex" />
             <% } %>
@@ -35,6 +37,23 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <div class="loading-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="gooey">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                        <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                    </filter>
+                </defs>
+            </svg>
+            <div class="blob blob-0"></div>
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+            <div class="blob blob-4"></div>
+            <div class="blob blob-5"></div>
+        </div>
         <asp:ContentPlaceHolder ID="NavigationPlaceHolder" runat="server">
         </asp:ContentPlaceHolder>
         <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">

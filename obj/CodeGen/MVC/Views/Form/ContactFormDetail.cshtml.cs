@@ -40,7 +40,7 @@ WriteLiteral("<form></form>\r\n");
 
             
             #line 4 "..\..\MVC\Views\Form\ContactFormDetail.cshtml"
- using (@Html.BeginForm("Index", "ContactForm", FormMethod.Post, new { id = "contactDetailForm" }))
+ using (@Html.BeginForm("Index", "ContactForm", FormMethod.Post, new { id = "contactDetailForm2" }))
 { }
 
             

@@ -1,0 +1,76 @@
+----------------------------------------
+Timestamp: 1.6.2018 11:35:22
+
+Message: Db Migration Complexity: Complex
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.6.2018 11:35:22
+
+Message: -- dropping table [ısortaklarimiz_ısortaklarimiz]
+DROP TABLE [ısortaklarimiz_ısortaklarimiz]
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.6.2018 11:36:28
+
+Message: Db Migration Complexity: Complex
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.6.2018 11:36:28
+
+Message: -- dropping table [ısortaklarimiz_workpartners]
+DROP TABLE [ısortaklarimiz_workpartners]
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.6.2018 11:50:36
+
+Message: Db Migration Complexity: Trivial
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.6.2018 11:50:36
+
+Message: Adding a foreign key constraint(s) to a new table(s), the create table statement(s) is included as well.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.6.2018 11:50:36
+
+Message: Adding a new table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.6.2018 11:50:36
+
+Message: -- Telerik.Sitefinity.DynamicTypes.Model.IsOrtaklarimiz.Isortaklarimiz
+CREATE TABLE [ısortaklarimiz_ısortaklarimiz] (
+    [base_id] uniqueidentifier NOT NULL,
+    [Title] NVARCHAR(255) NULL,             -- Isortaklarimiz.Title
+    [Phone] NVARCHAR(255) NULL,             -- Isortaklarimiz.Phone
+    [Distritct] NVARCHAR(255) NULL,         -- Isortaklarimiz.Distritct
+    [DealerType] NVARCHAR(255) NULL,        -- Isortaklarimiz.DealerType
+    [Country] NVARCHAR(255) NULL,           -- Isortaklarimiz.Country
+    [City] NVARCHAR(255) NULL,              -- Isortaklarimiz.City
+    [AuthorizedPerson] NVARCHAR(255) NULL,  -- Isortaklarimiz.AuthorizedPerson
+    CONSTRAINT [pk_ısrtklrmz_ısrtklrm_C963F977] PRIMARY KEY ([base_id])
+)
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.6.2018 11:50:36
+
+Message: ALTER TABLE [ısortaklarimiz_ısortaklarimiz] ADD CONSTRAINT [ref_ısrtklrmz_ısrtklr_A34C0AA7] FOREIGN KEY ([base_id]) REFERENCES [sf_dynamic_content]([base_id]) ON DELETE CASCADE
+
+
+----------------------------------------

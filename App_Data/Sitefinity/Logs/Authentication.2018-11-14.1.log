@@ -1,0 +1,31 @@
+----------------------------------------
+ActivityId: 800042ac-0002-fc00-b63f-84710c7967bb
+
+Timestamp: 1.6.2018 11:19:46
+
+Message: User login failed with exception: IDX10311: RequireNonce is 'true' (default) but validationContext.Nonce is null. A nonce cannot be validated. If you don't need to check the nonce, set OpenIdConnectProtocolValidator.RequireNonce to 'false'.
+
+Category: Authentication
+
+Priority: -1
+
+EventId: 1
+
+Severity: Information
+
+Title:
+
+Machine: PT-02
+
+App Domain: /LM/W3SVC/2/ROOT-1-131723237589968886
+
+ProcessId: 29432
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:39836
+
+Extended Properties: 
+----------------------------------------

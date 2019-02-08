@@ -1,0 +1,84 @@
+----------------------------------------
+Timestamp: 1.11.2018 11:08:41
+
+Message: Db Migration Complexity: Trivial
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.11.2018 11:08:41
+
+Message: Adding a foreign key constraint(s) to a new table(s), the create table statement(s) is included as well.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.11.2018 11:08:41
+
+Message: Adding a new table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.11.2018 11:08:41
+
+Message: -- Telerik.Sitefinity.DynamicTypes.Model.YazilimProgramlari.Yazilimprogramlari
+CREATE TABLE [yazilimprogramlari_yazilimprogramlari] (
+    [base_id] uniqueidentifier NOT NULL,
+    [Title] NVARCHAR(255) NULL,             -- Yazilimprogramlari.Title
+    [PageTitle] NVARCHAR(255) NULL,         -- Yazilimprogramlari.PageTitle
+    [PageDescription] NVARCHAR(MAX) NULL,   -- Yazilimprogramlari.PageDescription
+    CONSTRAINT [pk_yzlmprgrmlr_yzlmpr_52418252] PRIMARY KEY ([base_id])
+)
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.11.2018 11:08:41
+
+Message: ALTER TABLE [yazilimprogramlari_yazilimprogramlari] ADD CONSTRAINT [ref_yzlmprgrmlr_yzlmp_95634CC5] FOREIGN KEY ([base_id]) REFERENCES [sf_dynamic_content]([base_id]) ON DELETE CASCADE
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.11.2018 11:21:55
+
+Message: Db Migration Complexity: Trivial
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.11.2018 11:21:55
+
+Message: Adding a foreign key constraint(s) to a new table(s), the create table statement(s) is included as well.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.11.2018 11:21:55
+
+Message: Adding a new table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.11.2018 11:21:55
+
+Message: -- Telerik.Sitefinity.DynamicTypes.Model.Kampanyalar.Kampanyalarlist
+CREATE TABLE [kampanyalar_kampanyalarlist] (
+    [base_id] uniqueidentifier NOT NULL,
+    [Title] NVARCHAR(255) NULL,             -- Kampanyalarlist.Title
+    [PageTitle] NVARCHAR(255) NULL,         -- Kampanyalarlist.PageTitle
+    [PageDescription] NVARCHAR(MAX) NULL,   -- Kampanyalarlist.PageDescription
+    CONSTRAINT [pk_kampanyalar_kampanyalarlist] PRIMARY KEY ([base_id])
+)
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1.11.2018 11:21:55
+
+Message: ALTER TABLE [kampanyalar_kampanyalarlist] ADD CONSTRAINT [ref_kmpnylr_kmpnylrls_27D70369] FOREIGN KEY ([base_id]) REFERENCES [sf_dynamic_content]([base_id]) ON DELETE CASCADE
+
+
+----------------------------------------

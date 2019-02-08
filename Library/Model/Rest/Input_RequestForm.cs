@@ -49,10 +49,9 @@ namespace SitefinityWebApp.Library.Model
         public string sector { get; set; }
         [DataMember]
         public string currentSituation { get; set; }
-        
 
-
-
+        [DataMember]
+        public string izinDurumu { get; set; }
     }
 }
 

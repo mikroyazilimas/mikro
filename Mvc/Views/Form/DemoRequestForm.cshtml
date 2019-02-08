@@ -17,16 +17,14 @@
 
                 </div>
                 <div class="wizard-bottom-left-content-form-row ">
-                    <p style="display: block;
-    font-size: 15px;
-    margin-bottom: 20px;">
+                    <p style="display: block;font-size: 15px;margin-bottom: 20px;">
                         İş Ortağımız size uygulamalı Mikro Yazılım programları sunumu yapacak. Programlarımızla tanışarak, işletmenizin ihtiyaçlarını en doğru şekilde karşılayacak ürünü tespit edebilirsiniz.
                     </p>
-                    <div class="wizard-bottom-left-content-form-row-text flex">
+                    @*<div class="wizard-bottom-left-content-form-row-text flex">
                         <p>Kişisel Veriler Bilgilendirme Metni</p>
                         <svg class="svg-inline--fa fa-caret-down fa-w-10" aria-hidden="true" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg><!-- <i class="fas fa-caret-down"></i> -->
-                    </div>
-                    <div class="wizard-bottom-left-content-form-row-text__hide">
+                    </div>*@
+                    @*<div class="wizard-bottom-left-content-form-row-text__hide">
                         <p>İşbu 6698 Sayılı Kişisel Verilerin Korunması Kanunu ile yürürlükteki yasal mevzuata uygun olarak ve 6698 sayılı Kişisel Verilerin Korunması Kanunu <b>(“Kanun”) </b> kapsamında <b>“Veri Sorumlusu” </b> sıfatıyla Mikro Yazılımevi Yazılım Hizmetleri Bilgisayar Sanayi ve Ticaret A.Ş.’ye <b>(“Şirket”) </b>  ait www.mikro.com.tr alan adlı internet sitesinin kullanması ile bağlantılı olarak elde edilen ve tarafımızca sağlanan verilerin toplanması, işlenmesi ve kullanım türü, derecesi ve amacı ile ilgili olarak siz kullanıcılarımıza bilgilendirme yapılması amaçlanmaktadır.</p>
                         <p>www.mikro.com.tr alan adlı internet sitesi Mikro Yazılımevi Yazılım Hizmetleri Bilgisayar Sanayi ve Ticaret A.Ş. tarafından işletilmektedir. Şirket kullanıcıların kişisel verilerinin yönetilmesinde sorumlu kuruluştur. İşbu madde kapsamındaki bilgilendirme 6698 sayılı “Kişisel Verilerin Korunması Kanunu” kapsamında yapılmaktadır.</p>
                         <p>Kişisel verilerinizinin, gizli bilgilerinizin korunmasını ve gizli tutulmasını ciddiye almaktayız. Kanun ve ilgili mevzuat hükümlerine tarafımızca, çalışanlarımızca ve servis sağlayıcılarımızca görevlerini yerlerine getirirlerken gizliliklerine mutlaka dikkat edilmesini ve yalnızca sizlere bildirdiğimiz amaçlarla kullanılmasını sağlamak üzere teknik ve idari önlemleri almaktayız.</p>
@@ -45,7 +43,7 @@
                         <p>Çerezler tarafından verileriniz toplanmadan internet sitemizi görüntülemek istiyorsanız seçiminizi cihazınızın/tarayıcınızın ayarlarından her zaman değiştirebilirsiniz. Çerezlerin kullanımını durdurduğunuzda internet sitemizde her türlü işlemi belirli özelliklerinin çalışmayabileceğini lütfen unutmayınız.</p>
                         <p><b>Açık Rıza</b></p>
                         <p>Sizler, internet sitemize girerek tarafımıza sağlamış olduğunuz kişisel verilerinizin Kanun’a ve işbu 6698 Sayılı Kişisel Verilerin Korunması Kanunu’ne uygun bir şekilde ve belirtilen amaçlarla işlenebileceğini bilmekte, kabul etmekte ve ayrıca işbu 6698 Sayılı Kişisel Verilerin Korunması Kanunu ile Kanun kapsamında yapılması gereken aydınlatma yükümlülüğü yerine getirildiğini, Sözleşme’yi okuduğunuzu, anladığınızı, haklarınızın ve yükümlülüklerinin bilincinde olduğunuzu beyan etmektesiniz.</p>
-                    </div>
+                    </div>*@
                 </div>
             </div>
 
@@ -165,27 +163,41 @@
                             <label for="">
                                 @Html.TextBoxFor(m => m.Email, new { message = "Lütfen E-Postanızı Giriniz", required = "required", pattern = @"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", placeholder = "E-Postanız*" })
                             </label>
-                            <label for="">
-                                @Html.TextBoxFor(m => m.phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
-                                @Html.TextBoxFor(m => m._phone, new { Name = "_phone", id = "_phone", message = "Lütfen Telefon Numaranızı Giriniz", pattern = ".{0}|.{13,13}", required = "required", maxlength = "16", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız" })
-                            </label>
+                            
                         </div>
                         
                         <div class="page-section-demo-request-open-right-form2">
-                            <label for=""> @Html.TextAreaFor(m => m.Message, new {placeholder = "Mesajınız" })</label>
+                            <label for="">
+                                @Html.TextBoxFor(m => m.phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
+                                @Html.TextBoxFor(m => m._phone, new
+                           {
+                               Name = "_phone",
+                               id = "_phone",
+                               message = "Lütfen Telefon Numaranızı Giriniz", @*pattern = ".{0}|.{13,13}",*@ required = "required",
+                               maxlength = "16",
+                               placeholder = "Telefon Numaranız*",
+                               @class = "phones number",
+                               title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız"
+                           })
+                            </label>
+                            <label for=""> @Html.TextAreaFor(m => m.Message, new {placeholder = "Mesajınız", maxlength = 1999 })</label>
 
                         </div>
-                        <div class="page-section-demo-request-open-right-checkbox">
-                            <label for="Contract-demo">@Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required" , message = "KVK Metnini Kabul Etmediniz" })<span id="Contract">6698 Sayılı Kişisel Verilerin Korunması Kanunu hakkında bilgilendirmeyi okudum, kabul ediyorum.</span></label>
+                        <div class="page-section-demo-request-open-right-checkbox one">
+                            <label for="Contract-demo">@Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required" , message = "KVK Metnini Kabul Etmediniz" })
+                            <span id="Contract"><a href="/kisisel-verilerin-korunması-kanunu" target="_blank" class="contract-link">6698 sayılı Kişisel Verilerin Korunması</a> Kanununa ait bilgilendirmeyi okudum onaylıyorum.</span></label>
                         </div>
+                        <div class="page-section-demo-request-open-right-checkbox">
+                            <label for="IsAllowData">@Html.CheckBoxFor(m => m.IsAllowData, new { Name = "IsAllowData", id = "IsAllowData" })
+                            <span id="Contract2">Tarafıma Mikro Yazılım ve grup şirketleri tarafından reklam, pazarlama, tanıtım ve bilgilendirme amaçlı SMS, e-posta ve telefon yoluyla elektronik ileti gönderilmesine onay verdiğimi beyan ediyorum.</span></label>
+                        </div>
+
                         <div class="page-section-demo-request-open-right-button">
                             @*<input type="submit" name="SaveButton" value="Gönder" onclick="return formSubmit('demoForm', '', 'demo-talep-anasayfa', 'ucretsiz-demo-talep');"/>*@
                             <input type="submit" name="SaveButton" value="Gönder" onclick="return formSubmit('demoForm', '', 'demo-talep-anasayfa', 'ucretsiz-demo-talep');" />
                         </div>
                     </div>
                 }
-
-
             </div>
         </div>
     </div>

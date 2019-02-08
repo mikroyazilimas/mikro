@@ -41,6 +41,24 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
             try
             {
                 RestApiService restApi = new RestApiService();
+
+                string gclid = WebTools.GetQueryStringValueFromUrlReferrer("gclid") ?? WebTools.GetQueryStringValueFromRawUrl("gclid");
+                string utm_campaign = WebTools.GetQueryStringValueFromUrlReferrer("utm_campaign") ?? WebTools.GetQueryStringValueFromRawUrl("utm_campaign");
+                string utm_medium = WebTools.GetQueryStringValueFromUrlReferrer("utm_medium") ?? WebTools.GetQueryStringValueFromRawUrl("utm_medium");
+                string utm_source = WebTools.GetQueryStringValueFromUrlReferrer("utm_source") ?? WebTools.GetQueryStringValueFromRawUrl("utm_source");
+
+                if (String.IsNullOrEmpty(gclid))
+                    gclid = WebTools.GetCookieValue(Names.Cookie.Gclid);
+
+                if (String.IsNullOrEmpty(utm_campaign))
+                    utm_campaign = WebTools.GetCookieValue(Names.Cookie.UtmCampaign);
+
+                if (String.IsNullOrEmpty(utm_medium))
+                    utm_medium = WebTools.GetCookieValue(Names.Cookie.UtmMedium);
+
+                if (String.IsNullOrEmpty(utm_source))
+                    utm_source = WebTools.GetCookieValue(Names.Cookie.UtmSource);
+
                 Input_RequestForm inpt = new Input_RequestForm
                 {
                     firstName = m.Name,
@@ -50,11 +68,12 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     company = m.CompanyName ?? "company",
                     status = "New",
                     leadSource = "Contact Form",
-                    gclid = WebTools.GetQueryStringValueFromRawUrl("gclid") ?? WebTools.GetCookieValue(Names.Cookie.Gclid),
-                    utmCampaign = WebTools.GetQueryStringValueFromRawUrl("utm_campaign") ?? WebTools.GetCookieValue(Names.Cookie.UtmCampaign),  
-                    utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium") ?? WebTools.GetCookieValue(Names.Cookie.UtmMedium),
-                    utmSource = WebTools.GetQueryStringValueFromRawUrl("utm_source") ?? WebTools.GetCookieValue(Names.Cookie.UtmSource),
-                    formNotes = m.Message
+                    gclid = gclid,
+                    utmCampaign = utm_campaign,  
+                    utmMedium = utm_medium,
+                    utmSource = utm_source,
+                    formNotes = m.Message,
+                    izinDurumu = m.IsAllowData ? "Izinli" : "Izinsiz"
                 };
                 inpt.phone = "0" + inpt.phone.Replace("(", "").Replace(")", "").Replace(" ", "").Replace(" ", "").Replace(" ", "");
 
@@ -122,6 +141,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 //mail.Body = "Demo talep formunda hata oluştu.";
                 //mail.SendMail();
                 //hata mail atılıcak ve yazılıcak
+                Response.Redirect(Names.Pages.Thanks, false);
             }
 
             if (Request.UrlReferrer != null)

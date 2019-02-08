@@ -54,9 +54,6 @@ namespace SitefinityWebApp.Library
             {
                 return false;
             }
-
         }
-
-
     }
 }

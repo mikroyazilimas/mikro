@@ -54,6 +54,23 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 //string refUrl = Request["refUrl"];
                 //string city = Request["city"];
 
+                string gclid = WebTools.GetQueryStringValueFromUrlReferrer("gclid") ?? WebTools.GetQueryStringValueFromRawUrl("gclid");
+                string utm_campaign = WebTools.GetQueryStringValueFromUrlReferrer("utm_campaign") ?? WebTools.GetQueryStringValueFromRawUrl("utm_campaign");
+                string utm_medium = WebTools.GetQueryStringValueFromUrlReferrer("utm_medium") ?? WebTools.GetQueryStringValueFromRawUrl("utm_medium");
+                string utm_source = WebTools.GetQueryStringValueFromUrlReferrer("utm_source") ?? WebTools.GetQueryStringValueFromRawUrl("utm_source");
+
+                if (String.IsNullOrEmpty(gclid))
+                    gclid = WebTools.GetCookieValue(Names.Cookie.Gclid);
+
+                if (String.IsNullOrEmpty(utm_campaign))
+                    utm_campaign = WebTools.GetCookieValue(Names.Cookie.UtmCampaign);
+
+                if (String.IsNullOrEmpty(utm_medium))
+                    utm_medium = WebTools.GetCookieValue(Names.Cookie.UtmMedium);
+
+                if (String.IsNullOrEmpty(utm_source))
+                    utm_source = WebTools.GetCookieValue(Names.Cookie.UtmSource);
+
                 Input_RequestForm inpt = new Input_RequestForm
                 {
                     firstName = m.Name,
@@ -68,11 +85,12 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     currentSituation = Request.Form["00N0Y00000QeR9j"],
                     numberOfUser = Request.Form["00N0Y00000QeNjE"],
                     currentSoftware = Request.Form["00N0Y00000QeNlZ"],
-                    gclid = WebTools.GetQueryStringValueFromRawUrl("gclid") ?? WebTools.GetCookieValue(Names.Cookie.Gclid),
-                    utmCampaign = WebTools.GetQueryStringValueFromRawUrl("utm_campaign") ?? WebTools.GetCookieValue(Names.Cookie.UtmCampaign),
-                    utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium") ?? WebTools.GetCookieValue(Names.Cookie.UtmMedium),
-                    utmSource = WebTools.GetQueryStringValueFromRawUrl("utm_source") ?? WebTools.GetCookieValue(Names.Cookie.UtmSource),
+                    gclid = gclid,
+                    utmCampaign = utm_campaign,
+                    utmMedium = utm_medium,
+                    utmSource = utm_source,
                     leadSource = "USS",
+                    izinDurumu = m.IsAllowData ? "Izinli" : "Izinsiz"
                 };
                 inpt.phone = "0" + inpt.phone.Replace("(", "").Replace(")", "").Replace(" ", "").Replace(" ", "").Replace(" ", "");
 
@@ -159,18 +177,20 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 }
                 else
                 {
+                    mail.To = new List<string>() { "emre.gultekin@h.com.tr" };
                     logProcess.WriteLog(" SalesFoce yazarken hata oluştu <br> Hata : " + resp.message + " <br> " + body);
                     mail.Subject = "Ürün Seçme Sihirbazı - HATA";
-                    mail.Body = body;
+                    mail.Body = resp.MessageCode + " - " + resp.message;
                     mail.SendMail();
                     //hata mail atılıcak ve yazılıcak
                 }
             }
             catch (Exception ex)
             {
+                mail.To = new List<string>() { "emre.gultekin@h.com.tr" };
                 logProcess.Create(ex);
                 mail.Subject = "Ürün Seçme Sihirbazı - HATA";
-                mail.Body = "Ürün Seçme Sihirbazı formunda hata oluştu.";
+                mail.Body = ex.Message.ToString();
                 mail.SendMail();
                 //hata mail atılıcak ve yazılıcak
             }
@@ -321,7 +341,7 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                             subject = "Öneri / Şikayetim var";
                             break;
                         case "3":
-                            mail.CC = new List<string>() { "urungelistirme@mikro.com.tr" };
+                            mail.CC = new List<string>() { "urunonerileri@mikro.com.tr" };
                             subject = "Ürünlerle ilgili önerim var";
                             break;
                         case "4":

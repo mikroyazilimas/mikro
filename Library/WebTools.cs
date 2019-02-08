@@ -16,6 +16,20 @@ namespace SitefinityWebApp.Library
             return queryStringCollection.Get(queryStringKey);
         }
 
+        public static string GetQueryStringValueFromUrlReferrer(string queryStringKey)
+        {
+            if (HttpContext.Current.Request.UrlReferrer != null)
+            {
+                var currentUri = new Uri(HttpContext.Current.Request.UrlReferrer.ToString());
+                var queryStringCollection = HttpUtility.ParseQueryString((currentUri).Query);
+                return queryStringCollection.Get(queryStringKey);
+            }
+            else
+            {
+                return "";
+            }
+        }
+
         public static string GetIpAddress
         {
             get

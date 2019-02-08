@@ -63,7 +63,6 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 Response.Redirect(Names.Pages.ErrorPage, false);
             }
             return View();
-
         }
 
         [HttpPost]
@@ -84,6 +83,23 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 if (!String.IsNullOrEmpty(Request.Form["City"]))
                     city = Request.Form["City"].ToUpper(new CultureInfo("tr-TR"));
 
+                string gclid = WebTools.GetQueryStringValueFromUrlReferrer("gclid") ?? WebTools.GetQueryStringValueFromRawUrl("gclid");
+                string utm_campaign = WebTools.GetQueryStringValueFromUrlReferrer("utm_campaign") ?? WebTools.GetQueryStringValueFromRawUrl("utm_campaign");
+                string utm_medium = WebTools.GetQueryStringValueFromUrlReferrer("utm_medium") ?? WebTools.GetQueryStringValueFromRawUrl("utm_medium");
+                string utm_source = WebTools.GetQueryStringValueFromUrlReferrer("utm_source") ?? WebTools.GetQueryStringValueFromRawUrl("utm_source");
+
+                if (String.IsNullOrEmpty(gclid))
+                    gclid = WebTools.GetCookieValue(Names.Cookie.Gclid);
+
+                if (String.IsNullOrEmpty(utm_campaign))
+                    utm_campaign = WebTools.GetCookieValue(Names.Cookie.UtmCampaign);
+
+                if (String.IsNullOrEmpty(utm_medium))
+                    utm_medium = WebTools.GetCookieValue(Names.Cookie.UtmMedium);
+
+                if (String.IsNullOrEmpty(utm_source))
+                    utm_source = WebTools.GetCookieValue(Names.Cookie.UtmSource);
+
                 Input_RequestForm inpt = new Input_RequestForm
                 {
                     firstName = m.Name,
@@ -95,11 +111,12 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                     status = "New",
                     productGroup = m.Product,
                     leadSource = "Demo Request",
-                    gclid = WebTools.GetQueryStringValueFromRawUrl("gclid") ?? WebTools.GetCookieValue(Names.Cookie.Gclid),
-                    utmCampaign = WebTools.GetQueryStringValueFromRawUrl("utm_campaign") ?? WebTools.GetCookieValue(Names.Cookie.UtmCampaign),  
-                    utmMedium = WebTools.GetQueryStringValueFromRawUrl("utm_medium") ?? WebTools.GetCookieValue(Names.Cookie.UtmMedium),
-                    utmSource = WebTools.GetQueryStringValueFromRawUrl("utm_source") ?? WebTools.GetCookieValue(Names.Cookie.UtmSource),
-                    formNotes = m.Message
+                    gclid = gclid,
+                    utmCampaign = utm_campaign,  
+                    utmMedium = utm_medium,
+                    utmSource = utm_source,
+                    formNotes = m.Message,
+                    izinDurumu = m.IsAllowData ? "Izinli" : "Izinsiz"
                 };
                 inpt.phone = "0" + inpt.phone.Replace("(", "").Replace(")", "").Replace(" ", "").Replace(" ", "").Replace(" ", "");
 
@@ -155,19 +172,22 @@ namespace SitefinityWebApp.Mvc.Controllers.Form
                 }
                 else
                 {
+                    mail.To = new List<string>() { "emre.gultekin@h.com.tr" };
                     logProcess.WriteLog(" SalesFoce yazarken hata oluştu <br> Hata : " + resp.message + " <br> " + body);
                     mail.Subject = "Demo Talep Formu - HATA";
-                    mail.Body = body;
+                    mail.Body = resp.MessageCode + " - " + resp.message;
                     mail.SendMail();
                     //hata mail atılıcak ve yazılıcak
                 }
             }
             catch (Exception ex)
             {
+                mail.To = new List<string>() { "emre.gultekin@h.com.tr" };
                 logProcess.Create(ex);
                 mail.Subject = "Demo Talep Formu - HATA";
-                mail.Body = body;
+                mail.Body = ex.ToString();
                 mail.SendMail();
+                Response.Redirect(Names.Pages.Thanks, false);
                 //hata mail atılıcak ve yazılıcak
             }
             return View(Names.PagesView.DemoRequestDetailForm, m);

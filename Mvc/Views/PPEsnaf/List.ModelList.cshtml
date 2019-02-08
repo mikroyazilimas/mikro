@@ -59,7 +59,6 @@
 </div>
 <!--Popup Finish-->
 
-
 <div class="detail-product">
     <div class="detail-product-content">
 
@@ -98,6 +97,10 @@
             <div class="products-container-content-left-button product-detail-content-buttons">
                 <a href="/ucretsiz-demo-talep" title="demo" class="products-container-content-left-button__demo">Ücretsiz Demo <span><i class="fas fa-arrow-right"></i></span></a>
                 <a href="#" title="Fiyat ve Nasıl Satın Alabilirim" class="products-container-content-left-button__price" id="musavir">Fiyat ve Nasıl Satın Alabilirim <span><i class="fas fa-arrow-right"></i></span></a></a>
+                @if (!String.IsNullOrEmpty(pField.YoutubeVideoLink))
+                {
+                    <a href="@Html.Raw(pField.YoutubeVideoLink)" data-fancybox="video" title="Ürün Videosu" class="products-container-content-left-button__download product-video" target="_blank">Ürün Videosu</a>
+                }
             </div>
         </div>
     </div>

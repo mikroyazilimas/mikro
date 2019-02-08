@@ -28,11 +28,15 @@
             <% } %>
         <% } else { %>
             <style>
+                .page-footer { height:44px !important;  }
                 .page-open-menu {
                     max-height: 750px !important;
                 }
             </style>
         <% } %>
+    </telerik:RadCodeBlock>
+    <telerik:RadCodeBlock ID="RadCodeBlock2" runat="server">
+        <%=CanonicalUrl %>
     </telerik:RadCodeBlock>
 </head>
 <body>
@@ -108,5 +112,17 @@
         <asp:ContentPlaceHolder ID="FooterPlaceHolder" runat="server">
         </asp:ContentPlaceHolder>
     </form>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            $(document).ready(function () {
+                $(".phones.number").on("blur", function () {
+                    if ($(this).val().length < 13) {
+                        $(this).val("");
+                    }
+                });
+            });
+        }
+    </script>
 </body>
 </html>

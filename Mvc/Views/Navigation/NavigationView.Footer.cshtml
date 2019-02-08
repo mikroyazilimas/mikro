@@ -1,8 +1,12 @@
-﻿<div class="page-footer">
+﻿<style type="text/css">
+    .page-footer { height: 44px; }
+    @Html.Raw("@media only screen and (max-width: 768px)  { .page-footer { height: auto !important; } } ")
+</style>
+<div class="page-footer">
     <div class="page-footer-partition"></div>
     <div class="page-footer-text">
         <div class="page-footer-text-company">
-            <span>Mikro Yazılımevi A.Ş. © 2018</span>
+            <span>Mikro Yazılımevi A.Ş. © @DateTime.Now.Year</span>
         </div>
         <div class="page-footer-text-menu">
             <!--<a href="/iletisim">İletişim</a>
@@ -10,13 +14,13 @@
             <a href="/site-haritasi">Site Haritası</a>
         </div>
         <div class="page-footer-text-icons">
+            <img src="/Frontend/dist/images/yerli-uretim-logo.png" alt="yerli-uretim-logo" style="margin-right: 10px;margin-top: -1px;height: 38px;" />
             <a href="http://forum.mikro.com.tr" target="_blank">Forum</a>
             <a href="http://blog.mikro.com.tr" target="_blank">Blog</a>
             <a href="https://www.facebook.com/mikroyazilimas" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://twitter.com/mikroyazilimas" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.linkedin.com/company/2955583/?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2955583%2Cidx%3A1-1-1%2CtarId%3A1445523595929%2Ctas%3AMikro%20Y" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://www.youtube.com/channel/UCWSwAVu6dwATfiTAo6KYAvg" target="_blank"><i class="fab fa-youtube"></i></a>
-
         </div>
     </div>
 </div>

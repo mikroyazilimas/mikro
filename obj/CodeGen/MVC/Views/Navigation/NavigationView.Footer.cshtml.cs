@@ -36,7 +36,22 @@ namespace ASP
         }
         public override void Execute()
         {
-WriteLiteral("<div");
+WriteLiteral("<style");
+
+WriteLiteral(" type=\"text/css\"");
+
+WriteLiteral(">\r\n    .page-footer { height: 44px; }\r\n");
+
+WriteLiteral("    ");
+
+            
+            #line 3 "..\..\MVC\Views\Navigation\NavigationView.Footer.cshtml"
+Write(Html.Raw("@media only screen and (max-width: 768px)  { .page-footer { height: auto !important; } } "));
+
+            
+            #line default
+            #line hidden
+WriteLiteral("\r\n</style>\r\n<div");
 
 WriteLiteral(" class=\"page-footer\"");
 
@@ -52,8 +67,16 @@ WriteLiteral(">\r\n        <div");
 
 WriteLiteral(" class=\"page-footer-text-company\"");
 
-WriteLiteral(">\r\n            <span>Mikro Yazılımevi A.Ş. © 2018</span>\r\n        </div>\r\n       " +
-" <div");
+WriteLiteral(">\r\n            <span>Mikro Yazılımevi A.Ş. © ");
+
+            
+            #line 9 "..\..\MVC\Views\Navigation\NavigationView.Footer.cshtml"
+                                     Write(DateTime.Now.Year);
+
+            
+            #line default
+            #line hidden
+WriteLiteral("</span>\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"page-footer-text-menu\"");
 
@@ -66,7 +89,15 @@ WriteLiteral(">Site Haritası</a>\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"page-footer-text-icons\"");
 
-WriteLiteral(">\r\n            <a");
+WriteLiteral(">\r\n            <img");
+
+WriteLiteral(" src=\"/Frontend/dist/images/yerli-uretim-logo.png\"");
+
+WriteLiteral(" alt=\"yerli-uretim-logo\"");
+
+WriteLiteral(" style=\"margin-right: 10px;margin-top: -1px;height: 38px;\"");
+
+WriteLiteral(" />\r\n            <a");
 
 WriteLiteral(" href=\"http://forum.mikro.com.tr\"");
 
@@ -120,7 +151,7 @@ WriteLiteral("><i");
 
 WriteLiteral(" class=\"fab fa-youtube\"");
 
-WriteLiteral("></i></a>\r\n\r\n        </div>\r\n    </div>\r\n</div>");
+WriteLiteral("></i></a>\r\n        </div>\r\n    </div>\r\n</div>");
 
         }
     }

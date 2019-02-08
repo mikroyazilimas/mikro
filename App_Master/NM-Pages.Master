@@ -8,31 +8,36 @@
     <link rel="stylesheet" href="/Frontend/dist/css/app.css">
     <link rel="stylesheet" href="/Frontend/dist/css/style.css">
     <link href="/Frontend/dist/images/favicon.ico" rel="shortcut icon">
-      <script>var dataLayer = [];</script>
+    <script>var dataLayer = [];</script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PF4LDGM');</script>
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-PF4LDGM');</script>
     <!-- End Google Tag Manager -->
     <telerik:RadCodeBlock ID="codeBlock" runat="server">
-        <% if (IsDesignMode == false) { %>
-            <script defer src="/Frontend/dist/javascript/mikro-yazilim.js"></script>
-            <script defer src="/Frontend/dist/javascript/script.js"></script>
-            <% if (!String.IsNullOrEmpty(NoIndex)) { %>
-                <meta name="robots" content="noindex" />
-            <% } %>
-        <% } else { %>
-            <style>
-                .page-open-menu {
-                    max-height: 750px !important;
-                }
-            </style>
+        <% if (IsDesignMode == false)
+            { %>
+        <script defer src="/Frontend/dist/javascript/mikro-yazilim.js"></script>
+        <script defer src="/Frontend/dist/javascript/script.js"></script>
+        <% if (!String.IsNullOrEmpty(NoIndex))
+            { %>
+        <meta name="robots" content="noindex" />
         <% } %>
+        <% }
+        else
+        { %>
+        <style>
+            .page-open-menu { max-height: 750px !important; }
+        </style>
+        <% } %>
+    </telerik:RadCodeBlock>
+    <telerik:RadCodeBlock ID="RadCodeBlock2" runat="server">
+        <%=CanonicalUrl %>
     </telerik:RadCodeBlock>
 </head>
 <body>
@@ -57,27 +62,45 @@
         <asp:ContentPlaceHolder ID="NavigationPlaceHolder" runat="server">
         </asp:ContentPlaceHolder>
         <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
-        <div class="page-container">
-            <div class="page-top">
-                <div class="page-top-img"></div>
-                <h1><%=Page.Title.ToString() %></h1>
-                <asp:ContentPlaceHolder ID="cpBreadcrumb" runat="server">
-                </asp:ContentPlaceHolder>
-                <%--
+            <div class="page-container">
+                <div class="page-top">
+                    <div class="page-top-img"></div>
+                    <h1><%=Page.Title.ToString() %></h1>
+                    <asp:ContentPlaceHolder ID="cpBreadcrumb" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <%--
                 <div class="page-top-breadcrumb">
                     <a href="#">Ana Sayfa</a>
                     <a href="#">Hakkımızda</a>
                     <a href="#">Mikro Hakkında</a>
                 </div>--%>
+                </div>
+                <div class="page-content-container">
+                    <asp:ContentPlaceHolder ID="PagesContentPlaceHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
             </div>
-            <div class="page-content-container">
-                <asp:ContentPlaceHolder ID="PagesContentPlaceHolder" runat="server">
-                </asp:ContentPlaceHolder>
-            </div>
-        </div>
         </telerik:RadCodeBlock>
         <asp:ContentPlaceHolder ID="FooterPlaceHolder" runat="server">
         </asp:ContentPlaceHolder>
     </form>
+
+    <% if (IsDesignMode == false) { %>
+            <script type="text/javascript">
+            window.onload = function () {
+                $(document).ready(function () {
+                    $(".phones.number").on("blur", function () {
+                        if ($(this).val().length < 13) {
+                            $(this).val("");
+                        }
+                    });
+                });
+            }
+        </script>
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+
+        <% } %>
 </body>
 </html>

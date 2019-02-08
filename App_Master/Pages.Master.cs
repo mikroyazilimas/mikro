@@ -12,8 +12,11 @@ namespace SitefinityWebApp.App_Master
     {
         public string NoIndex { get; set; }
         public bool IsDesignMode { get; set; }
+        public string CanonicalUrl { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            CanonicalUrl = string.Format("<link rel=\"canonical\" href=\"{0}\" />", Request.Url.ToString().Split('?')[0]).TrimEnd('/');
+
             if (!String.IsNullOrEmpty(Request.QueryString["gclid"]))
                 WebTools.SetCookie(Names.Cookie.Gclid, Request.QueryString["gclid"], DateTime.Now.AddHours(1));
 

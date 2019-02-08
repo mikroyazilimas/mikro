@@ -1,0 +1,44 @@
+----------------------------------------
+Timestamp: 26.7.2018 08:09:54
+
+Message: Db Migration Complexity: Extending
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 26.7.2018 08:09:54
+
+Message: Adding a column(s) on an existing table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 26.7.2018 08:09:54
+
+Message: -- add column for field logos.Group
+ALTER TABLE [logos_ımages_logos] ADD [Group] NVARCHAR(255) NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 26.7.2018 08:36:29
+
+Message: Db Migration Complexity: Extending
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 26.7.2018 08:36:29
+
+Message: Adding a column(s) on an existing table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 26.7.2018 08:36:29
+
+Message: -- add column for field logos.GroupOrder
+ALTER TABLE [logos_ımages_logos] ADD [GroupOrder] DECIMAL(20) NULL
+
+
+----------------------------------------

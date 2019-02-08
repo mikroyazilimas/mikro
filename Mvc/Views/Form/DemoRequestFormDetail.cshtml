@@ -11,6 +11,7 @@
     <input type="hidden" id="00N0Y00000QeNcc" name="00N0Y00000QeNcc" value="Demo Request">
     @Html.HiddenFor(m => m.retURL, new { Value = Const.FormReturnUrl })
     @Html.HiddenFor(m => m.refUrl)
+    @Html.HiddenFor(m => m.Product, new { Value = Model.Product })
 
     <div class="wizard-bottom contact-us-area">
         <div class="wizard-bottom-left">
@@ -120,13 +121,13 @@
                     <div class="wizard-bottom-left-content-form-row">
                         <label for="">Telefon</label>
                         @Html.TextBoxFor(m => m.phone, new { type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
-                        @Html.TextBoxFor(m => m._phone, new { Name = "_phone", id = "_phone", pattern = ".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" })
+                        @Html.TextBoxFor(m => m._phone, new { Name = "_phone", id = "_phone", @*pattern = ".{0}|.{13,13}",*@ required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" })
                     </div>
                     @*<div class="wizard-bottom-left-content-form-row responsive-textarea">
                         <label for="">Mesajınız</label>
                         @Html.TextAreaFor(m => m.Message, new { placeholder = "Mesajınız" })
                     </div>*@
-                    <div class="wizard-bottom-left-content-form-row">
+                    @*<div class="wizard-bottom-left-content-form-row">
                         <div class="wizard-bottom-left-content-form-row-text">
                             <p>Kişisel Veriler Bilgilendirme Metni</p>
                             <svg class="svg-inline--fa fa-caret-down fa-w-10" aria-hidden="true" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg><!-- <i class="fas fa-caret-down"></i> -->
@@ -152,15 +153,18 @@
                             <p><b>Açık Rıza</b></p>
                             <p>Sizler, internet sitemize girerek tarafımıza sağlamış olduğunuz kişisel verilerinizin Kanun’a ve işbu 6698 Sayılı Kişisel Verilerin Korunması Kanunu’ne uygun bir şekilde ve belirtilen amaçlarla işlenebileceğini bilmekte, kabul etmekte ve ayrıca işbu 6698 Sayılı Kişisel Verilerin Korunması Kanunu ile Kanun kapsamında yapılması gereken aydınlatma yükümlülüğü yerine getirildiğini, Sözleşme’yi okuduğunuzu, anladığınızı, haklarınızın ve yükümlülüklerinin bilincinde olduğunuzu beyan etmektesiniz.</p>
                         </div>
-                    </div>
+                    </div>*@
                     <div class="wizard-bottom-left-content-form-row">
-                        <label for="Contract-demo">@Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required", message = "KVK Metnini Kabul Etmediniz" })Kişisel Veriler Bilgilendirme Metni'ni kabul ediyorum.</label>
-
+                        <label for="Contract-demo">
+                            @Html.CheckBoxFor(m => m.Contract, new { Name = "Contract", id = "Contract-demo", required = "required", message = "KVK Metnini Kabul Etmediniz" })
+                            <a href="/kisisel-verilerin-korunması-kanunu" target="_blank" class="contract-link-2">6698 sayılı Kişisel Verilerin Korunması</a> Kanununa ait bilgilendirmeyi okudum onaylıyorum.
+                        </label>
+                        <label for="IsAllowData">
+                            @Html.CheckBoxFor(m => m.IsAllowData, new { Name = "IsAllowData", id = "IsAllowData",  message = "" })
+                            Tarafıma Mikro Yazılım ve grup şirketleri tarafından reklam, pazarlama, tanıtım ve bilgilendirme amaçlı SMS, e-posta ve telefon yoluyla elektronik ileti gönderilmesine onay verdiğimi beyan ediyorum.
+                        </label>
                         @*<input type="submit" name="SaveButton" value="Gönder" onclick="return formSubmit('demoForm' ,'', 'ucretsiz-demo-talep', 'ucretsiz-demo-talep');" />*@
-
-
                         <input type="submit" name="SaveButton" value="Gönder" onclick="return formSubmit('demoForm' ,'', 'ucretsiz-demo-talep', 'ucretsiz-demo-talep');" />
-
                     </div>
                     <div class="errorMessage"></div>
                 </div>
@@ -169,7 +173,7 @@
         <div class="wizard-bottom-left-content">
             <div class="wizard-bottom-left-content-form-row contact-us-right-textarea">
                 <label for="">Varsa mesajınız</label>
-                @Html.TextAreaFor(m => m.Message, new { placeholder = "Mesajınız", cols = "60", rows = "16" })
+                @Html.TextAreaFor(m => m.Message, new { placeholder = "Mesajınız", cols = "60", rows = "16", maxlength = 1999 })
             </div>
         </div>
     </div>

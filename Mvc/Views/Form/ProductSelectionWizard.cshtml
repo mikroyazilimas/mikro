@@ -137,9 +137,9 @@
                         <div class="wizard-bottom-left-content-form-row">
                             <label for="">Telefon</label>
                             @Html.TextBoxFor(m => m.phone, new { Name = "phone", id = "phone", type = "hidden", required = "required", placeholder = "Telefon Numaranız*", @class = "normal_phone" })
-                            @Html.TextBoxFor(m => m._phone, new { Name = "_phone", id = "_phone", pattern = ".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" })
+                            @Html.TextBoxFor(m => m._phone, new { Name = "_phone", id = "_phone", @*pattern = ".{0}|.{13,13}",*@ required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" })
                         </div>
-                        <div class="wizard-bottom-left-content-form-row">
+                        @*<div class="wizard-bottom-left-content-form-row">
                             <div class="wizard-bottom-left-content-form-row-text">
                                 <p>Kişisel Veriler Bilgilendirme Metni</p>
                                 <i class="fas fa-caret-down"></i>
@@ -165,11 +165,15 @@
                                 <p><b>Açık Rıza</b></p>
                                 <p>Sizler, internet sitemize girerek tarafımıza sağlamış olduğunuz kişisel verilerinizin Kanun’a ve işbu 6698 Sayılı Kişisel Verilerin Korunması Kanunu’ne uygun bir şekilde ve belirtilen amaçlarla işlenebileceğini bilmekte, kabul etmekte ve ayrıca işbu 6698 Sayılı Kişisel Verilerin Korunması Kanunu ile Kanun kapsamında yapılması gereken aydınlatma yükümlülüğü yerine getirildiğini, Sözleşme’yi okuduğunuzu, anladığınızı, haklarınızın ve yükümlülüklerinin bilincinde olduğunuzu beyan etmektesiniz.</p>
                             </div>
-                        </div>
-                        <div class="wizard-bottom-left-content-form-row">
+                        </div>*@
+                        <div class="wizard-bottom-left-content-form-row check-items">
                             <label for="Contract">
                                 @Html.CheckBoxFor(m => m.Contract, new { required="required", message = "KVK Metnini Kabul Etmediniz" })
-                                Kişisel Veriler Bilgilendirme Metni'ni Kabul Ediyorum
+                                <a href="/kisisel-verilerin-korunması-kanunu" target="_blank" class="contract-link-2">6698 sayılı Kişisel Verilerin Korunması</a> Kanununa ait bilgilendirmeyi okudum onaylıyorum.
+                            </label>
+                            <label for="check2">
+                                @Html.CheckBoxFor(m => m.IsAllowData, new { id = "check2" })
+                                Tarafıma Mikro Yazılım ve grup şirketleri tarafından reklam, pazarlama, tanıtım ve bilgilendirme amaçlı SMS, e-posta ve telefon yoluyla elektronik ileti gönderilmesine onay verdiğimi beyan ediyorum.
                             </label>
                             
                             <input type="submit" name="SaveButton" value="Gönder"  onclick="formSubmit('productForm', true, 'ussform', 'urun-secme-sihirbazi');" />
@@ -182,5 +186,4 @@
             </div>
         </div>
     }
-
 </div>

@@ -1,4 +1,10 @@
-﻿.page-footer { margin-bottom:-100px; }
+﻿.page-footer { margin-bottom: -100px; }
+a.desktop-banner { width: 100%; }
+
+* {
+    text-decoration: none !important;
+}
+
 @media only screen and (max-width: 768px) {
     .page-footer { display: block; height: auto; }
     .page-footer-text-menu { width: 100%; margin: auto; display: block; clear: both; }
@@ -87,4 +93,28 @@
     50% { -webkit-transform: translateX(4.5rem) scale(0.6); transform: translateX(4.5rem) scale(0.6); }
     75% { -webkit-transform: translateX(7.5rem) scale(0.5); transform: translateX(7.5rem) scale(0.5); }
     95% { -webkit-transform: translateX(0rem) scale(1); transform: translateX(0rem) scale(1); }
+}
+
+.detail-product-content__img { width: 300px; }
+
+.detail-product-content__img img { width: 100%; }
+
+.contract-link { display: contents; color: #d8d8d8; }
+.contract-link-2 { color: #333; }
+.hp-contract-2 > input { width: 43px; }
+.wizard-bottom-left-content-form-row.check-items > label { font-size: 12px; font-weight: 700; margin-bottom: 5px; color: #34495e; }
+.page-section-demo-request-open-right-checkbox.one { margin-bottom: 5px; }
+.page-section-demo-request-open-right-checkbox span { width: calc(100% - 20px) }
+
+.wizard-bottom-left-content-form-row > [for=IsAllowData],
+.wizard-bottom-left-content-form-row > [for=Contract-demo] { font-size: 13px; font-weight: 400; letter-spacing: -.35px; line-height: 19px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: 5px; height: 40px; }
+.wizard-bottom-left-content-form-row > [for=IsAllowData] {margin-bottom:25px; }
+
+.wizard-bottom-left-content-form-row > [for=IsAllowData] input,
+.wizard-bottom-left-content-form-row > [for=Contract-demo] input { margin-right: 10px }
+.page-section-contact-container-area-left-form-textbox select option { color:#333;}
+
+@media only screen and (max-width: 768px) {
+    .hp-contract-2 > input { width: 33px; }
+    .wizard-bottom-left-content-form-row.check-items > label { text-align: left; }
 }

@@ -11,35 +11,39 @@
     <script>var dataLayer = [];</script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PF4LDGM');</script>
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-PF4LDGM');</script>
     <!-- End Google Tag Manager -->
     <telerik:RadCodeBlock ID="codeBlock" runat="server">
-        <% if (IsDesignMode == false) { %>
-            <script defer src="/Frontend/dist/javascript/mikro-yazilim.js"></script>
-            <script defer src="/Frontend/dist/javascript/script.js"></script>
-            <% if (!String.IsNullOrEmpty(NoIndex)) { %>
-                <meta name="robots" content="noindex" />
-            <% } %>
-        <% } else { %>
-            <style>
-                .page-open-menu {
-                    max-height: 750px !important;
-                }
-            </style>
+        <% if (IsDesignMode == false)
+            { %>
+        <script defer src="/Frontend/dist/javascript/mikro-yazilim.js"></script>
+        <script defer src="/Frontend/dist/javascript/script.js"></script>
+        <% if (!String.IsNullOrEmpty(NoIndex))
+            { %>
+        <meta name="robots" content="noindex" />
+        <% } %>
+        <% }
+        else
+        { %>
+        <style>
+            .page-open-menu { max-height: 750px !important; }
+        </style>
         <% } %>
     </telerik:RadCodeBlock>
+    <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
+        <%=CanonicalUrl %>
+    </telerik:RadCodeBlock>
     <style>
-        body {
-            padding-bottom: 90px;
-        }
-        .page-footer { margin-bottom:0px !important; }
-        .page-section-demo-request { height:108px; }
+        body { padding-bottom: 90px; }
+        .page-footer { margin-bottom: 17px !important; }
+        .page-section-demo-request { height: 108px; }
+
         @media only screen and (max-width: 768px) {
             .page-footer { margin-bottom: -54px !important; }
         }
@@ -109,8 +113,9 @@
                                     <div class="page-section-contact-container-area-right-content-adress">
                                         <div class="page-section-contact-container-area-right-content-adress__icon"><i class="fas fa-map-marker-alt"></i></div>
                                         <div class="page-section-contact-container-area-right-content-adress__text">
-                                        <span><asp:Label runat="server" Text='<%$ Resources:Labels, HomepageAdress%>'></asp:Label></span>
-                                            
+                                            <span>
+                                                <asp:Label runat="server" Text='<%$ Resources:Labels, HomepageAdress%>'></asp:Label></span>
+
                                         </div>
                                     </div>
                                     <div class="page-section-contact-container-area-right-content-phone contact-right-span-space">
@@ -142,7 +147,17 @@
         <asp:ContentPlaceHolder ID="FooterPlaceHolder" runat="server">
         </asp:ContentPlaceHolder>
     </form>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            $(document).ready(function () {
+                $(".phones.number").on("blur", function () {
+                    if ($(this).val().length < 13) {
+                        $(this).val("");
+                    }
+                });
+            });
+        }
+    </script>
 </body>
-
-
 </html>

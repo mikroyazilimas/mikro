@@ -1,0 +1,180 @@
+----------------------------------------
+ActivityId: 0a51cb68-71f8-4104-8077-ddaf2f2e74a5
+
+Timestamp: 12/13/2018 10:39:32 AM
+
+Message: HandlingInstanceID: 1c2a0220-fa5d-4f8a-b207-283f669ffd9a
+An exception of type 'System.Reflection.TargetInvocationException' occurred and was caught.
+-------------------------------------------------------------------------------------------
+12/13/2018 13:39:32
+Type : System.Reflection.TargetInvocationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Exception has been thrown by the target of an invocation.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Object InvokeMethod(System.Object, System.Object[], System.Signature, Boolean)
+HResult : -2146232828
+Stack Trace :    at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.CallHandleUnknownAction(String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+   at Telerik.Sitefinity.Frontend.Mvc.Infrastructure.Routing.FeatherActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+
+Additional Info:
+
+MachineName : TR-IST-2-WKD005
+TimeStamp : 12/13/2018 10:39:32 AM
+FullName : Telerik.Sitefinity.Utilities, Version=10.2.6602.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/16/ROOT-2-131891711087093254
+ThreadIdentity : Anonymous
+WindowsIdentity : IIS APPPOOL\mikro.local
+Requested URL : http://localhost:808/kurumsal/basin-odasi/basinda-mikro/2018/04/09/mikro-yazilim-2015-hedeflerini-gecti-2016-ya-buyume-beklentisi-ile-giriyor-global
+	Inner Exception
+	---------------
+	Type : Microsoft.CSharp.RuntimeBinder.RuntimeBinderException, Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Message : 'Telerik.Sitefinity.Frontend.Mvc.Models.DynamicDataItemFieldAccessor' does not contain a definition for 'FileDateTime'
+	Source : Anonymously Hosted DynamicMethods Assembly
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : System.Object CallSite.Target(System.Runtime.CompilerServices.Closure, System.Runtime.CompilerServices.CallSite, System.Object)
+	HResult : -2146233088
+	Stack Trace :    at CallSite.Target(Closure , CallSite , Object )
+	   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+	   at ASP._MVC_Views_BasinOdasi_List_BasinOdasi_cshtml.<>c.<Execute>b__1_0(ItemViewModel x) in D:\CS Projects\Github\MikroYazilim\obj\CodeGen\MVC\MVC\Views\BasinOdasi\List.BasinOdasi.cshtml:line 11
+	   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+	   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+	   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+	   at ASP._MVC_Views_BasinOdasi_List_BasinOdasi_cshtml.Execute() in D:\CS Projects\Github\MikroYazilim\obj\CodeGen\MVC\MVC\Views\BasinOdasi\List.BasinOdasi.cshtml:line 11
+	   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+	   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+	   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+	   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: TR-IST-2-WKD005
+
+App Domain: /LM/W3SVC/16/ROOT-2-131891711087093254
+
+ProcessId: 17184
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:2892
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: ffe5d3ef-a3ad-4869-869a-a671979742c2
+
+Timestamp: 12/13/2018 10:44:29 AM
+
+Message: HandlingInstanceID: 44f128d8-9662-406b-96bf-c49ce693a0d0
+An exception of type 'System.Reflection.TargetInvocationException' occurred and was caught.
+-------------------------------------------------------------------------------------------
+12/13/2018 13:44:29
+Type : System.Reflection.TargetInvocationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Exception has been thrown by the target of an invocation.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Object InvokeMethod(System.Object, System.Object[], System.Signature, Boolean)
+HResult : -2146232828
+Stack Trace :    at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.CallHandleUnknownAction(String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+   at Telerik.Sitefinity.Frontend.Mvc.Infrastructure.Routing.FeatherActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+
+Additional Info:
+
+MachineName : TR-IST-2-WKD005
+TimeStamp : 12/13/2018 10:44:29 AM
+FullName : Telerik.Sitefinity.Utilities, Version=10.2.6602.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/16/ROOT-3-131891713520188068
+ThreadIdentity : Anonymous
+WindowsIdentity : IIS APPPOOL\mikro.local
+Requested URL : http://localhost:808/kurumsal/basin-odasi/basinda-mikro/2018/04/09/mikro-yazilim-2015-hedeflerini-gecti-2016-ya-buyume-beklentisi-ile-giriyor-global
+	Inner Exception
+	---------------
+	Type : Microsoft.CSharp.RuntimeBinder.RuntimeBinderException, Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Message : 'Telerik.Sitefinity.Frontend.Mvc.Models.DynamicDataItemFieldAccessor' does not contain a definition for 'FileDateTime'
+	Source : Anonymously Hosted DynamicMethods Assembly
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : System.Object CallSite.Target(System.Runtime.CompilerServices.Closure, System.Runtime.CompilerServices.CallSite, System.Object)
+	HResult : -2146233088
+	Stack Trace :    at CallSite.Target(Closure , CallSite , Object )
+	   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+	   at ASP._MVC_Views_BasinOdasi_List_BasinOdasi_cshtml.<>c.<Execute>b__1_0(ItemViewModel x) in D:\CS Projects\Github\MikroYazilim\obj\CodeGen\MVC\MVC\Views\BasinOdasi\List.BasinOdasi.cshtml:line 11
+	   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+	   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count)
+	   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+	   at ASP._MVC_Views_BasinOdasi_List_BasinOdasi_cshtml.Execute() in D:\CS Projects\Github\MikroYazilim\obj\CodeGen\MVC\MVC\Views\BasinOdasi\List.BasinOdasi.cshtml:line 11
+	   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+	   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+	   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+	   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+	   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: TR-IST-2-WKD005
+
+App Domain: /LM/W3SVC/16/ROOT-3-131891713520188068
+
+ProcessId: 17184
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:16016
+
+Extended Properties: 
+----------------------------------------

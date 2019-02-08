@@ -320,6 +320,27 @@ WriteLiteral("            ");
             
             #line default
             #line hidden
+WriteLiteral("\r\n        </div>\r\n\t\t<div");
+
+WriteLiteral(" class=\"page-mega-navigation-content-section\"");
+
+WriteLiteral(">\r\n            <a");
+
+WriteLiteral(" href=\"/yazilim-programlari\"");
+
+WriteLiteral(" class=\"page-mega-navigation-content-section__grouptitle\"");
+
+WriteLiteral("><span>Yazılım Programları</span></a>\r\n");
+
+WriteLiteral("            ");
+
+            
+            #line 88 "..\..\MVC\Views\Navigation\NavigationView.Header.cshtml"
+       Write(GetMegaMenu("yazilim-programlari"));
+
+            
+            #line default
+            #line hidden
 WriteLiteral("\r\n        </div>\r\n        <div");
 
 WriteLiteral(" class=\"page-mega-navigation-content-section\"");
@@ -335,7 +356,7 @@ WriteLiteral("><span>E-Dönüşüm</span></a>\r\n");
 WriteLiteral("            ");
 
             
-            #line 88 "..\..\MVC\Views\Navigation\NavigationView.Header.cshtml"
+            #line 92 "..\..\MVC\Views\Navigation\NavigationView.Header.cshtml"
        Write(GetMegaMenu("e-donusum"));
 
             
@@ -356,7 +377,7 @@ WriteLiteral("><span>İş Ortakları</span></a>\r\n");
 WriteLiteral("            ");
 
             
-            #line 92 "..\..\MVC\Views\Navigation\NavigationView.Header.cshtml"
+            #line 96 "..\..\MVC\Views\Navigation\NavigationView.Header.cshtml"
        Write(GetMegaMenu("is-ortaklari"));
 
             
@@ -377,13 +398,13 @@ WriteLiteral("><span>İletişim</span></a>\r\n");
 WriteLiteral("            ");
 
             
-            #line 96 "..\..\MVC\Views\Navigation\NavigationView.Header.cshtml"
+            #line 100 "..\..\MVC\Views\Navigation\NavigationView.Header.cshtml"
        Write(GetMegaMenu("iletisim"));
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n        </div>\r\n\r\n        ");
+WriteLiteral("\r\n        </div>\r\n\t\t\r\n\r\n        ");
 
 WriteLiteral("\r\n        ");
 

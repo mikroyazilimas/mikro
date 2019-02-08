@@ -1,0 +1,309 @@
+----------------------------------------
+ActivityId: 8000000d-0003-ff00-b63f-84710c7967bb
+
+Timestamp: 1.8.2018 13:36:24
+
+Message: HandlingInstanceID: 4dbb0a26-f452-46a0-a52e-5676257e9364
+An exception of type 'System.IO.FileNotFoundException' occurred and was caught.
+-------------------------------------------------------------------------------
+08/01/2018 16:36:23
+Type : System.IO.FileNotFoundException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Could not find file 'D:\CS Projects\Github\MikroYazilim\App_Data\Sitefinity\Search\arama\_1u.cfs'.
+Source : Telerik.Sitefinity.Utilities
+Help link : 
+FileName : D:\CS Projects\Github\MikroYazilim\App_Data\Sitefinity\Search\arama\_1u.cfs
+FusionLog : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Object Run(Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexCommit)
+HResult : -2147024894
+Stack Trace :    at Telerik.Sitefinity.Utilities.Lucene.Net.Index.SegmentInfos.FindSegmentsFile.Run(IndexCommit commit)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.DirectoryReader.Open(Directory directory, IndexDeletionPolicy deletionPolicy, IndexCommit commit, Boolean readOnly, Int32 termInfosIndexDivisor)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexReader.Open(String path, Boolean readOnly)
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : PT-08
+TimeStamp : 1.8.2018 13:36:23
+FullName : Telerik.Sitefinity.Utilities, Version=10.2.6602.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/4/ROOT-1-131776038720136070
+ThreadIdentity : batuhan.goksu@ph.com.tr
+WindowsIdentity : PH\emreg
+Requested URL : http://localhost:60001/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: PT-08
+
+App Domain: /LM/W3SVC/4/ROOT-1-131776038720136070
+
+ProcessId: 5000
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-2
+
+Win32 ThreadId:15644
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 8000000d-0003-ff00-b63f-84710c7967bb
+
+Timestamp: 1.8.2018 13:36:24
+
+Message: HandlingInstanceID: 7f1c5a2b-a073-4e44-8d16-a1d46cb8f495
+An exception of type 'System.IO.FileNotFoundException' occurred and was caught.
+-------------------------------------------------------------------------------
+08/01/2018 16:36:24
+Type : System.IO.FileNotFoundException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Could not find file 'D:\CS Projects\Github\MikroYazilim\App_Data\Sitefinity\Search\arama\_1o.cfs'.
+Source : mscorlib
+Help link : 
+FileName : D:\CS Projects\Github\MikroYazilim\App_Data\Sitefinity\Search\arama\_1o.cfs
+FusionLog : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void WinIOError(Int32, System.String)
+HResult : -2147024894
+Stack Trace :    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Store.SimpleFSDirectory.SimpleFSIndexInput.Descriptor..ctor(FileInfo file, FileAccess mode)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Store.SimpleFSDirectory.OpenInput(String name, Int32 bufferSize)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.CompoundFileReader..ctor(Directory dir, String name, Int32 readBufferSize)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.SegmentReader.CoreReaders..ctor(Directory dir, SegmentInfo si, Int32 readBufferSize, Int32 termsIndexDivisor)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.SegmentReader.Get(Boolean readOnly, Directory dir, SegmentInfo si, Int32 readBufferSize, Boolean doOpenStores, Int32 termInfosIndexDivisor)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexWriter.ReaderPool.Get(SegmentInfo info, Boolean doOpenStores, Int32 readBufferSize, Int32 termsIndexDivisor)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexWriter.ReaderPool.Get(SegmentInfo info, Boolean doOpenStores)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.DocumentsWriter.ApplyDeletes(SegmentInfos infos)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexWriter.ApplyDeletes()
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexWriter.DoFlushInternal(Boolean flushDocStores, Boolean flushDeletes)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexWriter.DoFlush(Boolean flushDocStores, Boolean flushDeletes)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexWriter.CloseInternal(Boolean waitForMerges)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexWriter.Close(Boolean waitForMerges)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexWriter.Close()
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.UpdateIndex(String indexName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : PT-08
+TimeStamp : 1.8.2018 13:36:24
+FullName : Telerik.Sitefinity.Utilities, Version=10.2.6602.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/4/ROOT-1-131776038720136070
+ThreadIdentity : batuhan.goksu@ph.com.tr
+WindowsIdentity : PH\emreg
+Requested URL : http://localhost:60001/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: PT-08
+
+App Domain: /LM/W3SVC/4/ROOT-1-131776038720136070
+
+ProcessId: 5000
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-3
+
+Win32 ThreadId:15640
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 8000000d-0003-ff00-b63f-84710c7967bb
+
+Timestamp: 1.8.2018 13:40:03
+
+Message: HandlingInstanceID: f8a312be-b921-47ae-b56a-95c6893b8f2e
+An exception of type 'System.IO.FileNotFoundException' occurred and was caught.
+-------------------------------------------------------------------------------
+08/01/2018 16:40:03
+Type : System.IO.FileNotFoundException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Could not find file 'D:\CS Projects\Github\MikroYazilim\App_Data\Sitefinity\Search\arama\_1u.cfs'.
+Source : Telerik.Sitefinity.Utilities
+Help link : 
+FileName : D:\CS Projects\Github\MikroYazilim\App_Data\Sitefinity\Search\arama\_1u.cfs
+FusionLog : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Object Run(Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexCommit)
+HResult : -2147024894
+Stack Trace :    at Telerik.Sitefinity.Utilities.Lucene.Net.Index.SegmentInfos.FindSegmentsFile.Run(IndexCommit commit)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.DirectoryReader.Open(Directory directory, IndexDeletionPolicy deletionPolicy, IndexCommit commit, Boolean readOnly, Int32 termInfosIndexDivisor)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexReader.Open(String path, Boolean readOnly)
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : PT-08
+TimeStamp : 1.8.2018 13:40:03
+FullName : Telerik.Sitefinity.Utilities, Version=10.2.6602.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/4/ROOT-1-131776038720136070
+ThreadIdentity : batuhan.goksu@ph.com.tr
+WindowsIdentity : PH\emreg
+Requested URL : http://localhost:60001/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: PT-08
+
+App Domain: /LM/W3SVC/4/ROOT-1-131776038720136070
+
+ProcessId: 5000
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-4
+
+Win32 ThreadId:15636
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 8000000d-0003-ff00-b63f-84710c7967bb
+
+Timestamp: 1.8.2018 13:46:35
+
+Message: HandlingInstanceID: 9f7313cf-20ef-4e19-b487-bcbf965b12eb
+An exception of type 'System.IO.FileNotFoundException' occurred and was caught.
+-------------------------------------------------------------------------------
+08/01/2018 16:46:35
+Type : System.IO.FileNotFoundException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Could not find file 'D:\CS Projects\Github\MikroYazilim\App_Data\Sitefinity\Search\arama\_1u.cfs'.
+Source : Telerik.Sitefinity.Utilities
+Help link : 
+FileName : D:\CS Projects\Github\MikroYazilim\App_Data\Sitefinity\Search\arama\_1u.cfs
+FusionLog : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Object Run(Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexCommit)
+HResult : -2147024894
+Stack Trace :    at Telerik.Sitefinity.Utilities.Lucene.Net.Index.SegmentInfos.FindSegmentsFile.Run(IndexCommit commit)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.DirectoryReader.Open(Directory directory, IndexDeletionPolicy deletionPolicy, IndexCommit commit, Boolean readOnly, Int32 termInfosIndexDivisor)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexReader.Open(String path, Boolean readOnly)
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : PT-08
+TimeStamp : 1.8.2018 13:46:35
+FullName : Telerik.Sitefinity.Utilities, Version=10.2.6602.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/4/ROOT-1-131776038720136070
+ThreadIdentity : batuhan.goksu@ph.com.tr
+WindowsIdentity : PH\emreg
+Requested URL : http://localhost:60001/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: PT-08
+
+App Domain: /LM/W3SVC/4/ROOT-1-131776038720136070
+
+ProcessId: 5000
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-7
+
+Win32 ThreadId:15612
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+ActivityId: 8000000d-0003-ff00-b63f-84710c7967bb
+
+Timestamp: 1.8.2018 13:59:15
+
+Message: HandlingInstanceID: 4636c3e9-9247-41cb-9264-881631a26b5a
+An exception of type 'System.IO.FileNotFoundException' occurred and was caught.
+-------------------------------------------------------------------------------
+08/01/2018 16:59:15
+Type : System.IO.FileNotFoundException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Could not find file 'D:\CS Projects\Github\MikroYazilim\App_Data\Sitefinity\Search\arama\_1u.cfs'.
+Source : Telerik.Sitefinity.Utilities
+Help link : 
+FileName : D:\CS Projects\Github\MikroYazilim\App_Data\Sitefinity\Search\arama\_1u.cfs
+FusionLog : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Object Run(Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexCommit)
+HResult : -2147024894
+Stack Trace :    at Telerik.Sitefinity.Utilities.Lucene.Net.Index.SegmentInfos.FindSegmentsFile.Run(IndexCommit commit)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.DirectoryReader.Open(Directory directory, IndexDeletionPolicy deletionPolicy, IndexCommit commit, Boolean readOnly, Int32 termInfosIndexDivisor)
+   at Telerik.Sitefinity.Utilities.Lucene.Net.Index.IndexReader.Open(String path, Boolean readOnly)
+   at Telerik.Sitefinity.Services.Search.Data.LuceneSearchService.RemoveDocuments(String catalogueName, IEnumerable`1 documents)
+   at Telerik.Sitefinity.Services.Search.Publishing.SearchIndexingTask.RunTask(Object[] args)
+
+Additional Info:
+
+MachineName : PT-08
+TimeStamp : 1.8.2018 13:59:15
+FullName : Telerik.Sitefinity.Utilities, Version=10.2.6602.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/4/ROOT-1-131776038720136070
+ThreadIdentity : batuhan.goksu@ph.com.tr
+WindowsIdentity : PH\emreg
+Requested URL : http://localhost:60001/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: PT-08
+
+App Domain: /LM/W3SVC/4/ROOT-1-131776038720136070
+
+ProcessId: 5000
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: BackgroundTasksService-Thread-8
+
+Win32 ThreadId:15616
+
+Extended Properties: 
+----------------------------------------

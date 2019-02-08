@@ -445,16 +445,6 @@ WriteLiteral(">Seçiniz</option>\r\n");
             #line hidden
 WriteLiteral("                                        <option");
 
-<<<<<<< HEAD
-WriteAttribute("value", Tuple.Create(" value=\"", 3656), Tuple.Create("\"", 3737)
-            
-            #line 56 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-, Tuple.Create(Tuple.Create("", 3664), Tuple.Create<System.Object, System.Int32>(Html.Raw(String.IsNullOrEmpty(dItem.Value) ? dItem.Text : dItem.Value)
-            
-            #line default
-            #line hidden
-, 3664), false)
-=======
 WriteAttribute("value", Tuple.Create(" value=\"", 3662), Tuple.Create("\"", 3743)
             
             #line 56 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
@@ -463,7 +453,6 @@ WriteAttribute("value", Tuple.Create(" value=\"", 3662), Tuple.Create("\"", 3743
             #line default
             #line hidden
 , 3670), false)
->>>>>>> 75c66ec00fa60b96551f8f7a720cbaf1c7d417f5
 );
 
 WriteLiteral(" data-field=\"");
@@ -646,155 +635,22 @@ WriteLiteral("                            ");
 
             
             #line 140 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
-                       Write(Html.TextBoxFor(m => m._phone, new { Name = "_phone", id = "_phone", pattern = ".{0}|.{13,13}", required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" }));
+                       Write(Html.TextBoxFor(m => m._phone, new { Name = "_phone", id = "_phone", 
+            
+            #line default
+            #line hidden
+            
+            #line 140 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+                                                                                                                                 required = "required", placeholder = "Telefon Numaranız*", @class = "phones number", title = "Telefon numaranızı başında 0 olmadan 10 hane olacak şekilde yazınız", message = "Lütfen Telefon Numaranızı Giriniz" }));
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n                        </div>\r\n                        <div");
+WriteLiteral("\r\n                        </div>\r\n                        ");
 
-WriteLiteral(" class=\"wizard-bottom-left-content-form-row\"");
+WriteLiteral("\r\n                        <div");
 
-WriteLiteral(">\r\n                            <div");
-
-WriteLiteral(" class=\"wizard-bottom-left-content-form-row-text\"");
-
-WriteLiteral(">\r\n                                <p>Kişisel Veriler Bilgilendirme Metni</p>\r\n  " +
-"                              <i");
-
-WriteLiteral(" class=\"fas fa-caret-down\"");
-
-WriteLiteral("></i>\r\n\r\n                            </div>\r\n                            <div");
-
-WriteLiteral(" class=\"wizard-bottom-left-content-form-row-text__hide\"");
-
-WriteLiteral(">\r\n                                <p>İşbu 6698 Sayılı Kişisel Verilerin Korunmas" +
-"ı Kanunu ile yürürlükteki yasal mevzuata uygun olarak ve 6698 sayılı Kişisel Ver" +
-"ilerin Korunması Kanunu <b>(“Kanun”) </b> kapsamında <b>“Veri Sorumlusu” </b> sı" +
-"fatıyla Mikro Yazılımevi Yazılım Hizmetleri Bilgisayar Sanayi ve Ticaret A.Ş.’ye" +
-" <b>(“Şirket”) </b>  ait www.mikro.com.tr alan adlı internet sitesinin kullanmas" +
-"ı ile bağlantılı olarak elde edilen ve tarafımızca sağlanan verilerin toplanması" +
-", işlenmesi ve kullanım türü, derecesi ve amacı ile ilgili olarak siz kullanıcıl" +
-"arımıza bilgilendirme yapılması amaçlanmaktadır.</p>\r\n                          " +
-"      <p>www.mikro.com.tr alan adlı internet sitesi Mikro Yazılımevi Yazılım Hiz" +
-"metleri Bilgisayar Sanayi ve Ticaret A.Ş. tarafından işletilmektedir. Şirket kul" +
-"lanıcıların kişi  sel verilerinin yönetilmesinde sorumlu kuruluştur. İşbu madde " +
-"kapsamındaki bilgilendirme 6698 sayılı “Kişisel Verilerin Korunması Kanunu” kaps" +
-"amında yapılmaktadır.</p>\r\n                                <p>Kişisel verilerini" +
-"zinin, gizli bilgilerinizin korunmasını ve gizli tutulmasını ciddiye almaktayız." +
-" Kanun ve ilgili mevzuat hükümlerine tarafımızca, çalışanlarımızca ve servis sağ" +
-"layıcılarımızca görevlerini yerlerine getirirlerken gizliliklerine mutlaka dikka" +
-"t edilmesini ve yalnızca sizlere bildirdiğimiz amaçlarla kullanılmasını sağlamak" +
-" üzere teknik ve idari önlemleri almaktayız.</p>\r\n                              " +
-"  <p>Kişisel verilerin işlenmesi, kişisel verilerin tamamen ve kısmen otomatik o" +
-"lan (çerezler) ya da herhangi bir veri kayıt sisteminin parçası olmak kaydıyla o" +
-"tomatik olmayan yollarla elde edilmesi, kaydedilmesi, depolanması, muhafaza edil" +
-"mesi, değiştirilmesi, yeniden düzenlenmesi, açıklanması, aktarılması, devralınma" +
-"sı, elde edilebilir hale getirilmesi, sınıflandırılması ya da kullanılmasının en" +
-"gellenmesi gibi kişilere ait veriler üzerinde gerçekleştirilen her türlü işlemi " +
-"ifade etmektedir.</p>\r\n                                <p>İnternet sitesine üyel" +
-"iği kapsamında bizlere sağladığınız bilgileriniz, buna ek olarak mal ve hizmet a" +
-"lımlarınız sırasında çerezler ve benzeri yöntemler aracılığı edinilen bilgiler; " +
-"bizim tarafımızdan, mevcut ve ilerideki iştiraklerimiz, bağlı şirketlerimiz, his" +
-"sedarlarımız, iş ortaklarımız, haleflerimiz, hizmet ve faaliyetlerimiz ile yan h" +
-"izmetlerimizi yürütmek üzere hizmet aldığımız, işbirliği yaptığımız, yurt içinde" +
-" ve/veya yurtdışında faaliyet gösteren program ortağı kuruluşlar ve diğer üçüncü" +
-" kişiler (hukuk ve vergi danışmanlarımız, bankalar, bağımsız denetçiler dahil ve" +
-" fakat bunlarla sınırlı olmamak üzere, sizlere hizmet sunabilmemiz için işbirliğ" +
-"i yaptığımız veya yapabileceğimiz hizmet tedarikçileri) ve/veya bunların belirle" +
-"yecekleri üçüncü kişiler/kuruluşlar tarafından muhtelif mal ve hizmetlerin sağla" +
-"nması ve her türlü bilgilendirme, reklam-tanıtım, promosyon, satış, pazarlama ve" +
-" üyelik uygulamaları amaçlı yapılacak elektronik ve diğer ticari-sosyal iletişim" +
-"ler için, belirtilenler ve halefleri nezdinde süresiz olarak veya öngörecekleri " +
-"süre ile kayda alınabilecek, basılı/manyetik arşivlerde saklanabilecek, gerekli " +
-"görülen hallerde güncellenebilecek, paylaşılabilecek, aktarılabilecek, transfer " +
-"edilebilecek, kullanılabilecek ve Kanun’un 5. ve 6. maddelerinde belirtilen kişi" +
-"sel veri işleme şartları ve amaçları dahilinde işlenebilecektir. Buna ek olarak " +
-"Kanun dahil ilgili mevzuat hükümleri dahilinde zorunlu olması durumunda bazı uyg" +
-"ulamalar ve işlemler için ayrıca ilave izniniz de gerekebilecektir. Bu durumlard" +
-"a sizlerle iletişime geçilecek ve sizlerin açık rızaları rica edilecektir. Bu ve" +
-"rilere ek olarak bizlere iletmiş olduğunuz kişisel verileriniz hukukun gerekli k" +
-"ıldığı durumlarda resmi kurum/kuruluşlar, mahkemeler tarafından talep edilmesi h" +
-"alinde ilgili merci ve mahkemelere iletilebilecektir. </p>\r\n\r\n                  " +
-"              <p>Kişisel verileriniz internet sitemizde siz kullanıcılarımıza da" +
-"ha iyi hizmet sunabilmesi, hizmetlerimizin iyileştirebilmesi, ayrıca bu konuda i" +
-"zin vermiş olmanız durumunda pazarlama faaliyetlerinde kullanılabilmesi, ürün/hi" +
-"zmet teklifi, her türlü bilgilendirme, reklam-tanıtım, promosyon, satış, pazarla" +
-"ma, mağaza kartı, kredi kartı ve üyelik uygulamaları, modelleme, raporlama, skor" +
-"lama, internet sitesinin kullanımını kolaylaştırılması, kullanıcılarının ilgi al" +
-"anlarına ve tercihlerine yönelik tarafımızca veya iştiraklerimiz tarafından yapı" +
-"lacak geliştirme çalışmalarda kullanılabilecektir. İnternet sitesi üzerinde yapt" +
-"ığınız hareketlerin çerezler ve benzeri yöntemlerle izlenebileceğini, kaydının t" +
-"utulabileceğini, istatistiki veya yukarıda bahsedilen amaçlarla kullanılabilecek" +
-"tir. Ancak buna ek olarak önemle belirtmek isteriz ki internet sitemize üyelik, " +
-"ürün veya hizmetlerimizin satın alınması ve bilgi güncelleme amaçlı girilen bilg" +
-"iler, kredi kartı ve banka kartlarına ait gizli bilgiler diğer internet kullanıc" +
-"ıları tarafından görüntülenemez.</p>\r\n\r\n                                <p>Ebeve" +
-"yninin veya velisinin izni olmadan küçüklerin kişisel verilerini göndermemeleri " +
-"gerekmektedir.</p>\r\n                                <p>Şirket’e ait internet sit" +
-"esinin, durumun niteliğine göre diğer internet sitelerine bağlantılar içermesi h" +
-"alinde bu sitelerin operatörlerinin veri koruma hükümlerine uygun olup olmamalar" +
-"ı hususunda hiçbir taahhütte bulunmamaktayız. Şirket, link veya benzeri başka yö" +
-"ntemlerle bağlantı verdiği sitelerin içeriklerinden hiçbir zaman sorumlu değildi" +
-"r.</p>\r\n                                <p>6698 Sayılı Kişisel Verilerin Korunma" +
-"sı Kanunu’nun 11. maddesi uyarınca; kişisel verilerinizin işlenip işlenmediğini " +
-"öğrenme, kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme, kişisel v" +
-"erilerinizin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığı" +
-"nı öğrenme, yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçün" +
-"cü kişileri bilme, kişisel verilerinizin eksik veya yanlış işlenmiş olması halin" +
-"de bunların düzeltilmesini isteme ve bu kapsamda yapılan işleme ilişkin olarak k" +
-"işisel verilerinizin aktarıldığı üçüncü kişilere bildirilmesini isteme, Kanun’un" +
-" ve ilgili sair mevzuat hükümlerine uygun olarak işlenmiş olmasına rağmen, işlen" +
-"mesini gerektiren sebeplerin ortadan kalkması halinde kişisel verilerin silinmes" +
-"ini veya yok edilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerini" +
-"zin aktarıldığı üçüncü kişilere bildirilmesini isteme, işlenen verilerin münhası" +
-"ran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonu" +
-"cun ortaya çıkmasına itiraz etme, kişisel verilerinizin Kanun’a aykırı olarak iş" +
-"lenmesi sebebiyle zarara uğramanız halinde zararın giderilmesini talep etme hakl" +
-"arına sahipsiniz. Kişisel veri sahipleri olarak, az önce saymış olduğumuz haklar" +
-"ınıza ilişkin taleplerinizi, söz konusu yöntemlerle Şirket’e iletmeniz durumunda" +
-" Şirketimiz talebin niteliğine göre en kısa sürede ve en geç otuz gün içinde ücr" +
-"etsiz olarak sonuçlandıracaktır. Ancak, işlemin ayrıca bir maliyeti gerektirmesi" +
-" halinde Kişisel Verileri Koruma Kurulunca belirlenen tarifedeki ücret alınabili" +
-"r.</p>\r\n                                <p>Kanun’un 13. maddesinin 1. fıkrası ge" +
-"reğince, yukarıda belirtilen haklarınızı kullanmak ile ilgili talebinizi, yazılı" +
-" olarak veya Kişisel Verileri Koruma Kurulu’nun belirlediği diğer yöntemlerle Şi" +
-"rket’e iletebilirsiniz. Kişisel Verileri Koruma Kurulu tarafından şu aşamada ilg" +
-"ili haklarınızın kullanımına ilişkin herhangi bir yöntem belirlemediği için, baş" +
-"vurunuzu Kanun gereğince, yazılı olarak Şirket’e iletmeniz gerekmektedir. </p>\r\n" +
-"                                <p><b>Çerezler</b></p>\r\n                        " +
-"        <p>İnternet sitemizde; IP adresi, kullanılan tarayıcı, bilgisayarınızdak" +
-"i işletim sistemi, internet bağlantınız, site kullanımları hakkındaki bilgiler g" +
-"ibi belirli verileri otomatik olarak elde etmemize yardımcı olan çerezler (cooki" +
-"e) bulunmaktadır. Söz konusu çerezler bir internet sayfası sunucusu tarafından s" +
-"abit sürücünüze iletilen küçük metin dosyalarıdır ve sitemizde bulunan çerezler," +
-" bilgisayarınız için zararlı sayılabilecek virüsler göndermek için kullanılmamak" +
-"tadır. </p>\r\n                                <p>Çerezler genellikle bilgisayarın" +
-"ızda saklanarak, internet sitemizde yapmış olduğunuz işlemler, gezintileriniz es" +
-"nasındaki tıklamalarınızın kaydedilmesi yolu ile internet sitesini hangi zaman d" +
-"ilimi içerisinde, ne kadar süre ile kaç kişinin kullandığı, bir kişinin internet" +
-" sitesini hangi amaçlarla, kaç kez ziyaret ettiği ve site üzerinde ne kadar vaki" +
-"t harcadığı hakkında istatistiksel bilgileri elde etmek ve kullanıcı sayfalarınd" +
-"an dinamik olarak reklam ve içerik üretilmesine yardımcı olmak amacı ile sağlanm" +
-"aktadır. İnternet sitemizi kullanarak kullanılan çerezleri onaylamış olursunuz. " +
-"Şirket, söz konusu çerezler aracılığı ile verilerinizi işleyebilir ve elde edile" +
-"n bilgileri analiz etme amacı ile bu kapsamda yurtiçinde ve yurtdışında üçüncü k" +
-"işilere aktarabilir.</p>\r\n                                <p>Çerezler tarafından" +
-" verileriniz toplanmadan internet sitemizi görüntülemek istiyorsanız seçiminizi " +
-"cihazınızın/tarayıcınızın ayarlarından her zaman değiştirebilirsiniz. Çerezlerin" +
-" kullanımını durdurduğunuzda internet sitemizde her türlü işlemi belirli özellik" +
-"lerinin çalışmayabileceğini lütfen unutmayınız.</p>\r\n                           " +
-"     <p><b>Açık Rıza</b></p>\r\n                                <p>Sizler, interne" +
-"t sitemize girerek tarafımıza sağlamış olduğunuz kişisel verilerinizin Kanun’a v" +
-"e işbu 6698 Sayılı Kişisel Verilerin Korunması Kanunu’ne uygun bir şekilde ve be" +
-"lirtilen amaçlarla işlenebileceğini bilmekte, kabul etmekte ve ayrıca işbu 6698 " +
-"Sayılı Kişisel Verilerin Korunması Kanunu ile Kanun kapsamında yapılması gereken" +
-" aydınlatma yükümlülüğü yerine getirildiğini, Sözleşme’yi okuduğunuzu, anladığın" +
-"ızı, haklarınızın ve yükümlülüklerinin bilincinde olduğunuzu beyan etmektesiniz." +
-"</p>\r\n                            </div>\r\n                        </div>\r\n      " +
-"                  <div");
-
-WriteLiteral(" class=\"wizard-bottom-left-content-form-row\"");
+WriteLiteral(" class=\"wizard-bottom-left-content-form-row check-items\"");
 
 WriteLiteral(">\r\n                            <label");
 
@@ -811,9 +667,36 @@ WriteLiteral("                                ");
             
             #line default
             #line hidden
-WriteLiteral("\r\n                                Kişisel Veriler Bilgilendirme Metni\'ni Kabul Ed" +
-"iyorum\r\n                            </label>\r\n                            \r\n    " +
-"                        <input");
+WriteLiteral("\r\n                                <a");
+
+WriteLiteral(" href=\"/kisisel-verilerin-korunması-kanunu\"");
+
+WriteLiteral(" target=\"_blank\"");
+
+WriteLiteral(" class=\"contract-link-2\"");
+
+WriteLiteral(">6698 sayılı Kişisel Verilerin Korunması</a> Kanununa ait bilgilendirmeyi okudum " +
+"onaylıyorum.\r\n                            </label>\r\n                            " +
+"<label");
+
+WriteLiteral(" for=\"check2\"");
+
+WriteLiteral(">\r\n");
+
+WriteLiteral("                                ");
+
+            
+            #line 175 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+                           Write(Html.CheckBoxFor(m => m.IsAllowData, new { id = "check2" }));
+
+            
+            #line default
+            #line hidden
+WriteLiteral(@"
+                                Tarafıma Mikro Yazılım ve grup şirketleri tarafından reklam, pazarlama, tanıtım ve bilgilendirme amaçlı SMS, e-posta ve telefon yoluyla elektronik ileti gönderilmesine onay verdiğimi beyan ediyorum.
+                            </label>
+                            
+                            <input");
 
 WriteLiteral(" type=\"submit\"");
 
@@ -837,13 +720,13 @@ WriteLiteral(" alt=\"\"");
 WriteLiteral(">\r\n            </div>\r\n        </div>\r\n");
 
             
-            #line 184 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
+            #line 188 "..\..\MVC\Views\Form\ProductSelectionWizard.cshtml"
     }
 
             
             #line default
             #line hidden
-WriteLiteral("\r\n</div>");
+WriteLiteral("</div>");
 
         }
     }

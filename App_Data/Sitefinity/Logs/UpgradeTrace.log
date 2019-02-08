@@ -1,0 +1,88 @@
+----------------------------------------
+Timestamp: 15.11.2018 07:47:32
+
+Message: Db Migration Complexity: Extending
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 15.11.2018 07:47:32
+
+Message: Adding a column(s) on an existing table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 15.11.2018 07:47:32
+
+Message: -- add column for field PPGirisimci.YoutubeVideoLink
+ALTER TABLE [products_ppgirisimci] ADD [YoutubeVideoLink] NVARCHAR(255) NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 15.11.2018 07:48:51
+
+Message: Db Migration Complexity: Extending
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 15.11.2018 07:48:51
+
+Message: Adding a column(s) on an existing table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 15.11.2018 07:48:51
+
+Message: -- add column for field PPEsnaf.YoutubeVideoLink
+ALTER TABLE [products_ppesnaf] ADD [YoutubeVideoLink] NVARCHAR(255) NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 15.11.2018 07:49:27
+
+Message: Db Migration Complexity: Extending
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 15.11.2018 07:49:27
+
+Message: Adding a column(s) on an existing table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 15.11.2018 07:49:27
+
+Message: -- add column for field PPKobiler.YoutubeVideoLink
+ALTER TABLE [products_ppkobiler] ADD [YoutubeVideoLink] NVARCHAR(255) NULL
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 15.11.2018 07:49:53
+
+Message: Db Migration Complexity: Extending
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 15.11.2018 07:49:53
+
+Message: Adding a column(s) on an existing table(s).
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 15.11.2018 07:49:53
+
+Message: -- add column for field PPBuyukIsletmeler.YoutubeVideoLink
+ALTER TABLE [products_ppbuyukisletmeler] ADD [YoutubeVideoLink] NVARCHAR(255) NULL
+
+
+----------------------------------------

@@ -17,5 +17,6 @@ namespace SitefinityWebApp.Mvc.Models.ViewModel
         public string _phone { get; set; }
         public string retURL { get; set; }
         public bool Contract { get; set; }
+        public bool IsAllowData { get; set; }
     }
 }

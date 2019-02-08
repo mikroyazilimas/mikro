@@ -28,6 +28,7 @@ public struct Names
         public const string DemoRequestDetailForm = "~/Mvc/Views/Form/DemoRequestFormDetail.cshtml";
         public const string ProductSelectionWizard = "~/Mvc/Views/Form/ProductSelectionWizard.cshtml";
         public const string ContactForm = "~/Mvc/Views/Form/ContactForm.cshtml";
+        public const string ContactFormCampaign = "~/Mvc/Views/Form/ContactFormCampaign.cshtml";
         public const string ContactFormDetail = "~/Mvc/Views/Form/ContactFormDetail.cshtml";
         public const string ProductProposal = "~/Mvc/Views/General/ProductProposal.cshtml";
         public const string SiteMap = "~/Mvc/Views/General/SiteMap.cshtml";
@@ -43,7 +44,8 @@ public struct Names
         public const string client_id = "3MVG9HxRZv05HarTuyiQcrETsRw43q_plEZRNkweXDm4KmovEnoWJXMFgISas3mE_Bnyi2rEQ4YaaRbiy2wj.";
         public const string client_secret = "9115095582394842352";
         public const string username = "tolga.dokuzer%40mikro.com.tr";
-        public const string password = "Mikroint1HGP9cnHHE2jutAyxCtTxrCyCZ";
+        //public const string password = "Mikroint1HGP9cnHHE2jutAyxCtTxrCyCZ";
+        public const string password = "MikroAdmin1JkyMWCx2BHrQrsmAoZIUw6rA";
     }
 
     public struct WSFields

@@ -122,7 +122,9 @@ WriteLiteral(" src=\"/Frontend/dist/images/run-big-banner.png\"");
 
 WriteLiteral(" alt=\"#\"");
 
-WriteLiteral(">\r\n    </div>\r\n</div>\r\n\r\n<div");
+WriteLiteral(">\r\n        ");
+
+WriteLiteral("\r\n    </div>\r\n</div>\r\n\r\n<div");
 
 WriteLiteral(" class=\"responsive-new-product\"");
 
@@ -142,9 +144,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 3933), Tuple.Create("\"", 3987)
-, Tuple.Create(Tuple.Create("", 3939), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-run.png")
-, 3939), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 4179), Tuple.Create("\"", 4233)
+, Tuple.Create(Tuple.Create("", 4185), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-run.png")
+, 4185), false)
 );
 
 WriteLiteral(" alt=\"#\"");
@@ -161,9 +163,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-jump\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 4182), Tuple.Create("\"", 4237)
-, Tuple.Create(Tuple.Create("", 4188), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-jump.png")
-, 4188), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 4428), Tuple.Create("\"", 4483)
+, Tuple.Create(Tuple.Create("", 4434), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-jump.png")
+, 4434), false)
 );
 
 WriteLiteral(" alt=\"#\"");
@@ -180,9 +182,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-fly\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 4430), Tuple.Create("\"", 4484)
-, Tuple.Create(Tuple.Create("", 4436), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-fly.png")
-, 4436), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 4676), Tuple.Create("\"", 4730)
+, Tuple.Create(Tuple.Create("", 4682), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-fly.png")
+, 4682), false)
 );
 
 WriteLiteral(" alt=\"#\"");

@@ -53,7 +53,6 @@
 
     <!--Popup Finish-->
 
-
     <div class="detail-product">
         <div class="detail-product-content">
 
@@ -79,6 +78,10 @@
                     <a href="/iletisim/bize-ulasin" title="demo" class="products-container-content-left-button__demo">Ücretsiz Demo <span><i class="fas fa-arrow-right"></i></span></a>
                     <a href="#" title="Fiyat ve Nasıl Satın Alabilirim" class="products-container-content-left-button__price" id="fly">Fiyat ve Nasıl Satın Alabilirim <span><i class="fas fa-arrow-right"></i></span></a>
                     <a href="https://www.mikro.com.tr/docs/default-source/brosurler/mikro_fly_brosur_r.pdf?sfvrsn=ce23c828_2" title="Ürün Broşürü" class="products-container-content-left-button__download">Ürün Broşürü<span><i class="fas fa-arrow-down"></i></span></a>
+                    @if (!String.IsNullOrEmpty(pField.YoutubeVideoLink))
+                    {
+                        <a href="@Html.Raw(pField.YoutubeVideoLink)" data-fancybox="video" title="Ürün Videosu" class="products-container-content-left-button__download product-video" target="_blank">Ürün Videosu</a>
+                    }
                 </div>
             </div>
         </div>

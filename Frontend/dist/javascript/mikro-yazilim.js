@@ -6491,12 +6491,16 @@ $(function () {
     });
 
     $(".homepage-new-product-item").hover(function () {
+        console.log("sadf")
+
         $(this).animate({
             marginLeft: 0,
         }, 500, function () {
             $(this).find('.homepage-new-product-item-link').fadeIn();
-        });
-        $('.homepage-new-product-right-wrapper > img').attr('src', $(this).data('image'))
+            });
+        $('.homepage-new-product-right-wrapper > iframe').attr('src', $(this).attr('data-video'))
+
+    //    $('.homepage-new-product-right-wrapper > img').attr('src', $(this).data('image'))
     }, function () {
         $(this).animate({
             marginLeft: -220,

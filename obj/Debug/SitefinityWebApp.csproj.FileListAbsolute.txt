@@ -33,3 +33,18 @@ D:\CS Projects\Github\MikroYazilim\obj\Debug\SitefinityWebApp.csproj.CoreCompile
 D:\CS Projects\Github\MikroYazilim\obj\Debug\SitefinityWebApp.csproj.CopyComplete
 D:\CS Projects\Github\MikroYazilim\obj\Debug\SitefinityWebApp.dll
 D:\CS Projects\Github\MikroYazilim\obj\Debug\SitefinityWebApp.pdb
+D:\Repostories\MikroYazilim\bin\SitefinityWebApp.ResourcePackages.Bootstrap.dll
+D:\Repostories\MikroYazilim\bin\SitefinityWebApp.ResourcePackages.Bootstrap.pdb
+D:\Repostories\MikroYazilim\bin\SitefinityWebApp.dll.config
+D:\Repostories\MikroYazilim\bin\SitefinityWebApp.dll
+D:\Repostories\MikroYazilim\bin\SitefinityWebApp.pdb
+D:\Repostories\MikroYazilim\bin\WindowsAzureTelemetryEvents.dll
+D:\Repostories\MikroYazilim\bin\EnvDTE.dll
+D:\Repostories\MikroYazilim\bin\WindowsAzureEventSource.dll
+D:\Repostories\MikroYazilim\bin\stdole.dll
+D:\Repostories\MikroYazilim\obj\Debug\SitefinityWebApp.csprojAssemblyReference.cache
+D:\Repostories\MikroYazilim\obj\Debug\SitefinityWebApp.dll.licenses
+D:\Repostories\MikroYazilim\obj\Debug\SitefinityWebApp.csproj.CoreCompileInputs.cache
+D:\Repostories\MikroYazilim\obj\Debug\SitefinityWebApp.csproj.CopyComplete
+D:\Repostories\MikroYazilim\obj\Debug\SitefinityWebApp.dll
+D:\Repostories\MikroYazilim\obj\Debug\SitefinityWebApp.pdb

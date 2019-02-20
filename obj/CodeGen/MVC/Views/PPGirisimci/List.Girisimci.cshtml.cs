@@ -97,7 +97,7 @@ WriteLiteral(">");
 
             
             #line 17 "..\..\MVC\Views\PPGirisimci\List.Girisimci.cshtml"
-                                                Write(String.Format("{0} TL + KDV/Yıl", pField.PriceRent));
+                                                Write(String.Format("{0} TL + KDV/Ay", pField.PriceRent));
 
             
             #line default
@@ -206,9 +206,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run/\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 3019), Tuple.Create("\"", 3070)
-, Tuple.Create(Tuple.Create("", 3025), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-run.svg")
-, 3025), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 3018), Tuple.Create("\"", 3069)
+, Tuple.Create(Tuple.Create("", 3024), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-run.svg")
+, 3024), false)
 );
 
 WriteLiteral(" alt=\"\"");

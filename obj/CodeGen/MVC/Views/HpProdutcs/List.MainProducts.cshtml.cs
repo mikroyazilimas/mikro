@@ -56,6 +56,8 @@ WriteLiteral(" class=\"homepage-new-product-item\"");
 
 WriteLiteral(" data-image=\"/Frontend/dist/images/run-big-banner.png\"");
 
+WriteLiteral(" data-video=\"https://www.youtube.com/embed/RfYirFK_w8s?controls=0\"");
+
 WriteLiteral(">\r\n                <img");
 
 WriteLiteral(" src=\"/Frontend/dist/images/run-banner.png\"");
@@ -77,6 +79,8 @@ WriteLiteral(">\r\n            <div");
 WriteLiteral(" class=\"homepage-new-product-item\"");
 
 WriteLiteral(" data-image=\"/Frontend/dist/images/jump-big-banner.png\"");
+
+WriteLiteral(" data-video=\"https://www.youtube.com/embed/c1Bz4M1ixWQ?controls=0\"");
 
 WriteLiteral(">\r\n                <img");
 
@@ -100,6 +104,8 @@ WriteLiteral(" class=\"homepage-new-product-item\"");
 
 WriteLiteral(" data-image=\"/Frontend/dist/images/fly-big-banner.png\"");
 
+WriteLiteral(" data-video=\"https://www.youtube.com/embed/c1Bz4M1ixWQ?controls=0\"");
+
 WriteLiteral(">\r\n                <img");
 
 WriteLiteral(" src=\"/Frontend/dist/images/fly-banner.png\"");
@@ -116,15 +122,21 @@ WriteLiteral(">Detay</a>\r\n            </div>\r\n        </a>\r\n    </div>\r\n
 
 WriteLiteral(" class=\"homepage-new-product-right-wrapper\"");
 
-WriteLiteral(">\r\n        <img");
-
-WriteLiteral(" src=\"/Frontend/dist/images/run-big-banner.png\"");
-
-WriteLiteral(" alt=\"#\"");
-
 WriteLiteral(">\r\n        ");
 
-WriteLiteral("\r\n    </div>\r\n</div>\r\n\r\n<div");
+WriteLiteral("\r\n        <iframe");
+
+WriteLiteral(" width=\"560\"");
+
+WriteLiteral(" height=\"315\"");
+
+WriteLiteral(" src=\"https://www.youtube.com/embed/RfYirFK_w8s?controls=0\"");
+
+WriteLiteral(" frameborder=\"0\"");
+
+WriteLiteral(" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"");
+
+WriteLiteral(" allowfullscreen></iframe>\r\n    </div>\r\n</div>\r\n\r\n<div");
 
 WriteLiteral(" class=\"responsive-new-product\"");
 
@@ -144,9 +156,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-run\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 4179), Tuple.Create("\"", 4233)
-, Tuple.Create(Tuple.Create("", 4185), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-run.png")
-, 4185), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 4359), Tuple.Create("\"", 4413)
+, Tuple.Create(Tuple.Create("", 4365), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-run.png")
+, 4365), false)
 );
 
 WriteLiteral(" alt=\"#\"");
@@ -163,9 +175,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-jump\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 4428), Tuple.Create("\"", 4483)
-, Tuple.Create(Tuple.Create("", 4434), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-jump.png")
-, 4434), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 4608), Tuple.Create("\"", 4663)
+, Tuple.Create(Tuple.Create("", 4614), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-jump.png")
+, 4614), false)
 );
 
 WriteLiteral(" alt=\"#\"");
@@ -182,9 +194,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-fly\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 4676), Tuple.Create("\"", 4730)
-, Tuple.Create(Tuple.Create("", 4682), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-fly.png")
-, 4682), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 4856), Tuple.Create("\"", 4910)
+, Tuple.Create(Tuple.Create("", 4862), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/homepage/Homepage-fly.png")
+, 4862), false)
 );
 
 WriteLiteral(" alt=\"#\"");

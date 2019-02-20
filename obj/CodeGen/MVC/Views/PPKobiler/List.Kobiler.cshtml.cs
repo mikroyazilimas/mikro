@@ -99,7 +99,7 @@ WriteLiteral(">");
 
             
             #line 17 "..\..\MVC\Views\PPKobiler\List.Kobiler.cshtml"
-                                                Write(String.Format("{0} TL + KDV/Yıl", pField.PriceRent));
+                                                Write(String.Format("{0} TL + KDV/Ay", pField.PriceRent));
 
             
             #line default

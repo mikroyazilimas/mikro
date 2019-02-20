@@ -101,7 +101,7 @@ WriteLiteral(">");
 
             
             #line 19 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
-                                                Write(String.Format("{0} TL + KDV/Yıl", pField.PriceRent));
+                                                Write(String.Format("{0} TL + KDV/Ay", pField.PriceRent));
 
             
             #line default
@@ -219,14 +219,14 @@ WriteLiteral(" class=\"detail-product-content__img\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2943), Tuple.Create("\"", 2969)
+WriteAttribute("src", Tuple.Create(" src=\"", 2942), Tuple.Create("\"", 2968)
             
             #line 70 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 2949), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 2948), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
             
             #line default
             #line hidden
-, 2949), false)
+, 2948), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -324,14 +324,14 @@ WriteLiteral("></i></span></a>\r\n");
             #line hidden
 WriteLiteral("                    <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 4158), Tuple.Create("\"", 4199)
+WriteAttribute("href", Tuple.Create(" href=\"", 4157), Tuple.Create("\"", 4198)
             
             #line 89 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 4165), Tuple.Create<System.Object, System.Int32>(Html.Raw(pField.YoutubeVideoLink)
+, Tuple.Create(Tuple.Create("", 4164), Tuple.Create<System.Object, System.Int32>(Html.Raw(pField.YoutubeVideoLink)
             
             #line default
             #line hidden
-, 4165), false)
+, 4164), false)
 );
 
 WriteLiteral(" data-fancybox=\"video\"");
@@ -449,14 +449,14 @@ WriteLiteral(" class=\"detail-product-description-right-content\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 5532), Tuple.Create("\"", 5560)
+WriteAttribute("src", Tuple.Create(" src=\"", 5531), Tuple.Create("\"", 5559)
             
             #line 127 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 5538), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 5537), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 5538), false)
+, 5537), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -497,14 +497,14 @@ WriteLiteral(" class=\"management-services-item\"");
 
 WriteLiteral(">\r\n            <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 5866), Tuple.Create("\"", 5969)
+WriteAttribute("href", Tuple.Create(" href=\"", 5865), Tuple.Create("\"", 5968)
             
             #line 139 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 5873), Tuple.Create<System.Object, System.Int32>(item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-jump/")
+, Tuple.Create(Tuple.Create("", 5872), Tuple.Create<System.Object, System.Int32>(item.DefaultUrl.Replace("urunler-ve-hizmetler/genel-bakis/","urunler-ve-hizmetler/mikro-jump/")
             
             #line default
             #line hidden
-, 5873), false)
+, 5872), false)
 );
 
 WriteLiteral(">\r\n                <div");
@@ -531,14 +531,14 @@ WriteLiteral(">\r\n");
             #line hidden
 WriteLiteral("                            <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 6243), Tuple.Create("\"", 6271)
+WriteAttribute("src", Tuple.Create(" src=\"", 6242), Tuple.Create("\"", 6270)
             
             #line 145 "..\..\MVC\Views\PPKobiler\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 6249), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 6248), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 6249), false)
+, 6248), false)
 );
 
 WriteLiteral(" alt=\"\"");

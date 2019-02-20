@@ -6491,7 +6491,6 @@ $(function () {
     });
 
     $(".homepage-new-product-item").hover(function () {
-        console.log("sadf")
 
         $(this).animate({
             marginLeft: 0,

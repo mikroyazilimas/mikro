@@ -101,7 +101,7 @@ WriteLiteral(">");
 
             
             #line 18 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
-                                                Write(String.Format("{0} TL + KDV/Yıl", pField.PriceRent));
+                                                Write(String.Format("{0} TL + KDV/Ay", pField.PriceRent));
 
             
             #line default
@@ -203,14 +203,14 @@ WriteLiteral(" class=\"detail-product-content__img\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2822), Tuple.Create("\"", 2848)
+WriteAttribute("src", Tuple.Create(" src=\"", 2821), Tuple.Create("\"", 2847)
             
             #line 70 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 2828), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 2827), Tuple.Create<System.Object, System.Int32>(pht.Fields.MediaUrl
             
             #line default
             #line hidden
-, 2828), false)
+, 2827), false)
 );
 
 WriteLiteral(" alt=\"\"");
@@ -352,14 +352,14 @@ WriteLiteral("></i></span></a></a>\r\n");
             #line hidden
 WriteLiteral("                    <a");
 
-WriteAttribute("href", Tuple.Create(" href=\"", 4277), Tuple.Create("\"", 4318)
+WriteAttribute("href", Tuple.Create(" href=\"", 4276), Tuple.Create("\"", 4317)
             
             #line 102 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 4284), Tuple.Create<System.Object, System.Int32>(Html.Raw(pField.YoutubeVideoLink)
+, Tuple.Create(Tuple.Create("", 4283), Tuple.Create<System.Object, System.Int32>(Html.Raw(pField.YoutubeVideoLink)
             
             #line default
             #line hidden
-, 4284), false)
+, 4283), false)
 );
 
 WriteLiteral(" data-fancybox=\"video\"");
@@ -474,14 +474,14 @@ WriteLiteral(" class=\"detail-product-description-right-content\"");
 
 WriteLiteral(">\r\n                    <img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 5595), Tuple.Create("\"", 5623)
+WriteAttribute("src", Tuple.Create(" src=\"", 5594), Tuple.Create("\"", 5622)
             
             #line 141 "..\..\MVC\Views\PPEsnaf\List.ModelList.cshtml"
-, Tuple.Create(Tuple.Create("", 5601), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
+, Tuple.Create(Tuple.Create("", 5600), Tuple.Create<System.Object, System.Int32>(photo.Fields.MediaUrl
             
             #line default
             #line hidden
-, 5601), false)
+, 5600), false)
 );
 
 WriteLiteral(" alt=\"\"");

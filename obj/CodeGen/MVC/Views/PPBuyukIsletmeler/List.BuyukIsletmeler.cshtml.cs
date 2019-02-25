@@ -177,14 +177,14 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-fly/\"");
 
 WriteLiteral(" class=\"products-container-content-left__text\"");
 
-WriteLiteral(">\r\n                <span>Büyük İşletmeler için</span>\r\n                <span>Mikr" +
-"o Fly</span>\r\n            </a>\r\n            <div");
+WriteLiteral(">\r\n                <span>Mikro Fly\'ı Daha Detaylı</span>\r\n                <span>İ" +
+"nceleyin</span>\r\n            </a>\r\n            <div");
 
 WriteLiteral(" class=\"products-container-content-left-button\"");
 
 WriteLiteral(">\r\n                <a");
 
-WriteLiteral(" href=\"/iletisim/bize-ulasin?product=FLY\"");
+WriteLiteral(" href=\"/ucretsiz-demo-talep?product=FLY\"");
 
 WriteLiteral(" title=\"Ücretsiz Demo\"");
 

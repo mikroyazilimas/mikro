@@ -95,7 +95,7 @@ WriteLiteral(">");
 
             
             #line 15 "..\..\MVC\Views\PPEsnaf\List.Esnaf.cshtml"
-                                                Write(String.Format("{0} TL + KDV/Yıl", pField.PriceRent));
+                                                Write(String.Format("{0} TL + KDV/Ay", pField.PriceRent));
 
             
             #line default
@@ -194,9 +194,9 @@ WriteLiteral(" href=\"/urunler-ve-hizmetler/mikro-musavir\"");
 
 WriteLiteral("><img");
 
-WriteAttribute("src", Tuple.Create(" src=\"", 2947), Tuple.Create("\"", 3002)
-, Tuple.Create(Tuple.Create("", 2953), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-musavir.svg")
-, 2953), false)
+WriteAttribute("src", Tuple.Create(" src=\"", 2946), Tuple.Create("\"", 3001)
+, Tuple.Create(Tuple.Create("", 2952), Tuple.Create<System.Object, System.Int32>(Href("~/Frontend/dist/images/products/mikro-musavir.svg")
+, 2952), false)
 );
 
 WriteLiteral(" alt=\"\"");
